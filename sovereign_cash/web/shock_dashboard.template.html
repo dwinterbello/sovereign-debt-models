@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Shock scenarios</title>
+<script src="https://cdn.plot.ly/plotly-3.7.0.min.js" charset="utf-8"></script>
+<style>
+:root { --ink:#1d2433; --muted:#5d667a; --paper:#fff; --panel:#f5f7fa; --rule:#d8dde6;
+  --up:#b4432e; --down:#2f6f8f; --base:#8a93a6; --focus:#2f6f8f; }
+* { box-sizing: border-box; }
+body { margin:0; font:14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper);
+  font-variant-numeric: tabular-nums; }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.proof { padding:8px 20px; background:var(--panel); border-bottom:1px solid var(--rule); color:var(--muted); font-size:13px; }
+.proof b { color:var(--ink); font-weight:600; }
+.proof a { color:var(--down); }
+header { display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px; padding:14px 20px 0; }
+header h1 { font-size:20px; font-weight:650; margin:0; letter-spacing:-.01em; }
+.countries { display:flex; flex-wrap:wrap; gap:4px; }
+.countries button { border:1px solid var(--rule); background:var(--paper); border-radius:6px; padding:5px 10px; cursor:pointer; }
+.countries button[aria-pressed="true"] { background:var(--ink); color:#fff; border-color:var(--ink); }
+.actions { margin-left:auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.actions select, .actions button { border:1px solid var(--rule); background:var(--paper); border-radius:6px; padding:5px 10px; }
+.actions button { cursor:pointer; }
+.measure { padding:4px 20px 0; color:var(--muted); }
+.layout { display:grid; grid-template-columns: 300px 1fr; gap:24px; padding:16px 20px 32px; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .actions { margin-left:0; } }
+aside { display:flex; flex-direction:column; gap:18px; }
+.ctl { border-top:1px solid var(--rule); padding-top:12px; }
+.ctl[hidden] { display:none; }
+.ctl h2 { font-size:15px; font-weight:600; margin:0 0 2px; display:flex; justify-content:space-between; align-items:baseline; }
+.ctl h2 output { font-weight:600; }
+.ctl .src { color:var(--muted); font-size:12.5px; margin:0 0 8px; }
+.ctl input[type=range] { width:100%; accent-color: var(--ink); }
+.seg { display:inline-flex; border:1px solid var(--rule); border-radius:6px; overflow:hidden; margin-top:8px; }
+.seg button { border:0; background:var(--paper); padding:4px 10px; cursor:pointer; }
+.seg button[aria-pressed="true"] { background:var(--panel); font-weight:600; }
+.seg button:disabled { color:#b5bccb; cursor:not-allowed; }
+.ctl select { width:100%; margin-top:8px; border:1px solid var(--rule); border-radius:6px; padding:4px 8px; background:var(--paper); }
+.check { display:flex; gap:8px; align-items:flex-start; }
+.note { color:var(--muted); font-size:12.5px; }
+main { min-width:0; display:flex; flex-direction:column; gap:22px; }
+.status { margin:0; color:var(--muted); }
+.status.err-inline { color:#7a1f12; }
+.tiles { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:12px; }
+@media (max-width: 1100px) { .tiles { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+.tile { border:1px solid var(--rule); border-radius:3px; padding:12px 14px; background:var(--paper); min-width:0; }
+.tile .k { font-size:12.5px; color:var(--muted); margin:0 0 4px; }
+.tile .v { font-size:24px; font-weight:650; letter-spacing:-.01em; margin:0; line-height:1.15; }
+.tile .s { font-size:12.5px; color:var(--muted); margin:4px 0 0; }
+.tile .v.up { color:var(--up); } .tile .v.down { color:var(--down); }
+.card { border:1px solid var(--rule); border-radius:3px; padding:14px 16px 8px; background:var(--paper); min-width:0; }
+.card-head { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:8px 16px; }
+.card-head h3 { margin:0; }
+.card-head .sub { margin:2px 0 0; color:var(--muted); font-size:12.5px; max-width:80ch; }
+.legend { display:flex; flex-wrap:wrap; gap:4px 16px; margin:10px 0 0; padding:0; list-style:none; font-size:12.5px; color:var(--muted); }
+.legend li { display:flex; align-items:center; gap:6px; }
+.legend .sw { width:18px; height:0; border-top:2px solid; display:inline-block; }
+.legend .sw.dash { border-top-style:dashed; }
+.legend .sw.area { height:10px; border:0; border-radius:2px; }
+.chart { width:100%; height:420px; }
+.chart.mid { height:340px; }
+.chart.minichart { height:210px; }
+.minis { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:12px; margin-top:10px; }
+.mini { border:1px solid var(--rule); border-radius:3px; padding:10px 12px 4px; }
+.mini h4 { font-size:13.5px; margin:0; font-weight:600; display:flex; justify-content:space-between; gap:8px; }
+.mini h4 span { font-weight:600; }
+.mini h4 span.up { color:var(--up); } .mini h4 span.down { color:var(--down); }
+.mini .m { font-size:12px; color:var(--muted); margin:2px 0 0; }
+.empty { display:flex; align-items:center; justify-content:center; height:140px; color:var(--muted); border:1px dashed var(--rule); border-radius:8px; margin-top:10px; }
+h3 { font-size:15px; margin:0 0 6px; font-weight:600; }
+table { border-collapse:collapse; width:100%; font-size:13.5px; }
+th, td { padding:6px 10px; text-align:right; border-bottom:1px solid var(--rule); white-space:nowrap; }
+th:first-child, td:first-child { text-align:left; white-space:normal; }
+thead th { font-weight:600; color:var(--muted); border-bottom:1px solid var(--ink); }
+tr.total td { font-weight:650; border-top:1px solid var(--ink); }
+tr.sub td:first-child { padding-left:22px; color:var(--muted); }
+td.up { color:var(--up); } td.down { color:var(--down); }
+.tablewrap { overflow-x:auto; }
+details { border-top:1px solid var(--rule); padding-top:10px; }
+summary { cursor:pointer; font-weight:600; }
+.chan { display:grid; grid-template-columns: 1fr 120px; gap:4px 12px; padding:8px 0; border-bottom:1px solid var(--rule); }
+.chan .badge { display:inline-block; font-size:12px; padding:1px 6px; border-radius:4px; background:var(--panel); border:1px solid var(--rule); margin-right:6px; }
+.chan .m { color:var(--muted); font-size:12.5px; grid-column: 1 / -1; }
+.chan label { font-size:12.5px; color:var(--muted); text-align:right; }
+.err { padding:10px 20px; background:#fbeaea; color:#7a1f12; }
+@media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
+</style></head>
+<body>
+<script type="application/json" id="pack">__PACK__</script>
+<div class="proof" id="proof"></div>
+<header>
+  <h1>Shock scenarios</h1>
+  <div class="countries" id="countries" role="group" aria-label="Country"></div>
+  <div class="actions">
+    <label for="preset" class="note">Preset</label>
+    <select id="preset"></select>
+    <button id="reset" type="button">Reset</button>
+    <button id="copy" type="button">Copy link</button>
+    <button id="csv" type="button">Download CSV</button>
+  </div>
+</header>
+<p class="measure" id="measure"></p>
+<div class="layout">
+  <aside id="controls"></aside>
+  <main>
+    <p class="status" id="status" aria-live="polite"></p>
+    <div class="tiles" id="tiles" aria-live="polite"></div>
+    <section class="card">
+      <div class="card-head">
+        <div><h3 id="hero-title"></h3><p class="sub" id="hero-sub"></p></div>
+        <div><div class="seg" role="group" aria-label="Legislated policy" id="polswitch"></div>
+          <div class="seg" role="group" aria-label="Units" id="units"></div></div>
+      </div>
+      <div id="hero" class="chart" role="img" aria-label="Outturn, baseline and scenario over time"></div>
+    </section>
+    <section class="card" id="policy-card">
+      <div class="card-head"><div><h3>Legislated policy, measure by measure</h3><p class="sub" id="policy-sub"></p></div></div>
+      <div id="policy-wrap"><div id="policy" class="chart mid" role="img" aria-label="Effect of each legislated measure on the measure, stacked, each year"></div></div>
+      <p class="note" id="policy-src"></p>
+    </section>
+    <section class="card" id="bridge-card">
+      <div class="card-head"><div><h3 id="bridge-title">Against the budgetary authority</h3><p class="sub" id="bridge-sub"></p></div></div>
+      <div id="bridge-wrap"><div id="bridge" class="chart mid" role="img" aria-label="Our forecast minus the authority's, by line"></div></div>
+      <ul class="note" id="bridge-why"></ul>
+    </section>
+    <section class="card">
+      <div class="card-head"><div><h3>What moves it</h3><p class="sub">Change against the baseline by shock, stacked; the black line is the net total.</p></div></div>
+      <div id="drivers-wrap"><div id="drivers" class="chart mid" role="img" aria-label="Change from baseline by shock over time"></div></div>
+    </section>
+    <section class="card">
+      <div class="card-head"><div><h3>Line by line</h3><p class="sub" id="lines-sub"></p></div></div>
+      <div class="minis" id="minis"></div>
+    </section>
+    <section class="card">
+      <h3>Every number</h3>
+      <div class="tablewrap"><table id="table"></table></div>
+    </section>
+    <section class="card">
+      <h3>Same shock, every country</h3>
+      <p class="note">Change over each country's four years, and the same change as a share of GDP a year on average so countries compare. Where a shock has no channel for a country, the row says so.</p>
+      <div class="tablewrap"><table id="cross"></table></div>
+    </section>
+    <details id="channels"><summary>Channels and multipliers</summary><div id="chanlist"></div></details>
+  </main>
+</div>
+<script type="module">
+__ENGINE__
+
+const PACK = JSON.parse(document.getElementById("pack").textContent);
+const DRIVERS = PACK.drivers;
+const ORDER = Object.keys(PACK.countries);
+const SYMBOL = { EUR: "€", GBP: "£", USD: "$", SEK: "SEK ", NOK: "NOK ", JPY: "¥" };
+const COLORS = { up: "#b4432e", down: "#2f6f8f", base: "#D95319", ink: "#000000", muted: "#5d667a", rule: "#d8dde6",
+  grid: "#e3e3e3", panel: "#f2f2f2", scen: "#0072BD", fill: "rgba(0,114,189,0.14)" };
+// one fixed colour per shock, whatever else is on (categorical order, CVD-checked)
+const DRIVER_COLOR = { ngdp: "#0072BD", cpi: "#D95319", rates: "#EDB120", r3m: "#EDB120", r10y: "#7E2F8E",
+  brent: "#77AC30", feedback: "#4DBEEE" };
+// legislated-policy groups: named measures in fixed order, then the two 'other' groups in greys
+const POLICY_COLOR = ["#0072BD", "#D95319", "#EDB120", "#7E2F8E", "#77AC30", "#4DBEEE"];
+const POLICY_OTHER = { other_tax: "#b0b0b0", other_spend: "#6e6e6e", other_indirect: "#d4d4d4" };
+const DRIVER_ORDER = ["ngdp", "cpi", "rates", "r3m", "r10y", "brent"];
+const CURVE = ["r3m", "r10y"];
+
+let state = defaultState(ORDER.includes("uk") ? "uk" : ORDER[0]);
+
+function defaultState(cc) {
+  return { cc, units: "bn", curve: "parallel", policy: true, shocks: { ngdp: { size: 0, mode: "growth" }, cpi: { size: 0, mode: "growth" },
+    rates: { size: 0 }, r3m: { size: 0 }, r10y: { size: 0 }, brent: { size: 0 }, methods: {}, scale: {}, feedback: false } };
+}
+const country = () => PACK.countries[state.cc];
+// legislated policy on top of our model: a fixed line (never shocked), on the total and on the line it sits in
+const hasPolicy = (c) => !!(c.policy && c.policy.total);
+const polOn = (c) => hasPolicy(c) && state.policy;
+const polOf = (c, key = "total") => {
+  if (!polOn(c)) return c.periods.map(() => 0);
+  if (key === "total") return c.policy.total;
+  return (c.policy.by_line && c.policy.by_line[key]) || c.periods.map(() => 0);
+};
+const driversOf = (c) => DRIVER_ORDER.filter((d) => c.channels.some((ch) => ch.driver === d));
+const methodsOf = (c, d) => [...new Set(c.channels.filter((ch) => ch.driver === d && ch.method_group).map((ch) => ch.method_group))];
+const modesOf = (c, d) => (c.modes && c.modes[d]) || ["level", "growth"];
+
+function fmt(v, c, { sign = true, dp } = {}) {
+  if (v === null || v === undefined || !Number.isFinite(v)) return "—";
+  const a = Math.abs(v);
+  const d = dp ?? (a >= 1000 ? 0 : a >= 100 ? 1 : 2);
+  const s = a.toLocaleString("en-GB", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const sym = SYMBOL[c.ccy] ?? c.ccy + " ";
+  const pre = v < 0 ? "−" : sign && v > 0 ? "+" : "";
+  return `${pre}${sym}${s}bn`;
+}
+const pct = (v) => (Number.isFinite(v) ? `${v < 0 ? "−" : v > 0 ? "+" : ""}${Math.abs(v).toFixed(2)}%` : "—");
+
+// effective shocks for a country: coerce unavailable modes, drop unknown method choices
+function shocksFor(c, s) {
+  const out = JSON.parse(JSON.stringify(s));
+  // one way of moving yields at a time: a parallel shift, or the 3m and 10y anchors
+  if (state.curve === "anchors") out.rates = { size: 0 };
+  else { out.r3m = { size: 0 }; out.r10y = { size: 0 }; }
+  for (const d of ["ngdp", "cpi"]) {
+    const ms = modesOf(c, d);
+    if (out[d] && !ms.includes(out[d].mode)) out[d].mode = ms[0];
+  }
+  const m = {};
+  for (const d of DRIVER_ORDER) {
+    const opts = methodsOf(c, d);
+    if (opts.length) m[d] = opts.includes(s.methods[d]) ? s.methods[d] : (c.default_methods || {})[d] || opts[0];
+  }
+  out.methods = m;
+  return out;
+}
+
+function proofLine() {
+  const ck = PACK.checks || {};
+  const errs = [];
+  for (const [cc, r] of Object.entries(ck)) {
+    if (cc.startsWith("_")) continue;
+    if (r.vs_full_model_bn) r.vs_full_model_bn.forEach((x) => errs.push(x.max_abs_err));
+    if (r.vs_published_table_bn) Object.values(r.vs_published_table_bn).forEach((x) => errs.push(x));
+    if (cc === "uk") Object.values(r).forEach((x) => x && x.max_abs_err_bn !== undefined && errs.push(x.max_abs_err_bn));
+  }
+  const worst = errs.length ? Math.max(...errs) : NaN;
+  const checked = Object.keys(ck).filter((c) => !c.startsWith("_")).map((c) => c.toUpperCase()).join(", ");
+  const ri = ck._rates_interpolation;
+  const riWorst = ri && !ri.error ? Math.max(...Object.values(ri).map((x) => x.pct_of_interest)) : NaN;
+  const rates = Number.isFinite(riWorst) ? ` Yield shocks between the model's 100bp runs are within <b>${riWorst.toFixed(2)}%</b> of the interest bill.` : "";
+  const el = document.getElementById("proof");
+  el.innerHTML = Number.isFinite(worst)
+    ? `This page recomputes the models, it does not approximate them: re-running the full models for ${checked} on random shocks gives the same answer to within <b>${worst.toExponential(0)} bn</b>.${rates} Built ${PACK.built_at.slice(0, 10)}, model version ${PACK.model_vintage}, debt book as of ${PACK.debt_book_asof ?? "—"}. <a href="methodology.html#part-shock" class="eqlink">See every equation</a>`
+    : `Built ${PACK.built_at.slice(0, 10)}, model version ${PACK.model_vintage}. <a href="methodology.html#part-shock" class="eqlink">See every equation</a>`;
+}
+
+function renderCountries() {
+  const box = document.getElementById("countries");
+  box.innerHTML = "";
+  for (const cc of ORDER) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = PACK.countries[cc].name; b.setAttribute("aria-pressed", String(cc === state.cc));
+    b.onclick = () => { state.cc = cc; render(); };
+    box.appendChild(b);
+  }
+}
+
+function slider(d, c) {
+  const meta = DRIVERS[d];
+  const s = state.shocks[d];
+  const wrap = document.createElement("div");
+  wrap.className = "ctl";
+  const unit = meta.unit === "bp" ? "bp" : meta.unit;
+  const show = (v) => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v)}${unit === "bp" ? "bp" : unit === "pp" ? "pp" : "%"}`;
+  const srcs = [...new Set(c.channels.filter((ch) => ch.driver === d).map((ch) => ch.badge))].join(", ");
+  wrap.innerHTML = `<h2><label for="s-${d}">${meta.label}</label><output id="o-${d}">${show(s.size)}</output></h2>
+    <p class="src">${srcs}</p>
+    <input id="s-${d}" type="range" min="${meta.range[0]}" max="${meta.range[1]}" step="${meta.step}" value="${s.size}">`;
+  const input = wrap.querySelector("input");
+  input.oninput = () => { s.size = Number(input.value); wrap.querySelector("output").textContent = show(s.size); compute(); };
+  if (meta.modes) {
+    const ms = modesOf(c, d);
+    const seg = document.createElement("div");
+    seg.className = "seg"; seg.setAttribute("role", "group"); seg.setAttribute("aria-label", `${meta.label} shock type`);
+    for (const [m, label] of [["growth", "Every year"], ["level", "One-off level"]]) {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = label;
+      b.setAttribute("aria-pressed", String(shocksFor(c, state.shocks)[d].mode === m));
+      b.disabled = !ms.includes(m);
+      if (b.disabled) b.title = "Not published for this country";
+      b.onclick = () => { s.mode = m; render(); };
+      seg.appendChild(b);
+    }
+    wrap.appendChild(seg);
+  }
+  const opts = methodsOf(c, d);
+  if (opts.length > 1) {
+    const sel = document.createElement("select");
+    sel.setAttribute("aria-label", `${meta.label} method`);
+    const chosen = shocksFor(c, state.shocks).methods[d];
+    for (const o of opts) {
+      const ch = c.channels.find((x) => x.driver === d && x.method_group === o);
+      const op = new Option(o === "book" ? (c.cc === "uk" ? "Our model: ISIN book + QE reserves" : "Our model: ISIN book")
+        : o === "model" ? `Our model: share of ${d === "ngdp" ? "nominal GDP" : "the price level"}` : `Published: ${ch.badge}`, o, false, o === chosen);
+      sel.appendChild(op);
+    }
+    sel.onchange = () => { state.shocks.methods[d] = sel.value; compute(); };
+    wrap.appendChild(sel);
+  }
+  return wrap;
+}
+
+function curveToggle(c) {
+  const wrap = document.createElement("div");
+  wrap.className = "ctl";
+  const has = CURVE.every((d) => c.channels.some((ch) => ch.driver === d));
+  wrap.innerHTML = `<h2>Bond yields</h2><p class="src">${has ? "Move the whole curve, or set the 3-month and 10-year points and let the rest follow history." : "Only parallel shifts for this country."}</p>`;
+  const seg = document.createElement("div");
+  seg.className = "seg"; seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "How yields move");
+  for (const [m, label] of [["parallel", "Parallel shift"], ["anchors", "3-month and 10-year"]]) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String(state.curve === m));
+    b.disabled = m === "anchors" && !has;
+    b.onclick = () => { state.curve = m; render(); };
+    seg.appendChild(b);
+  }
+  wrap.appendChild(seg);
+  return wrap;
+}
+
+function renderControls() {
+  const c = country();
+  const box = document.getElementById("controls");
+  box.innerHTML = "";
+  for (const d of driversOf(c)) {
+    if (d === "rates") box.appendChild(curveToggle(c));
+    if (d === "rates" && state.curve === "anchors") continue;
+    if (CURVE.includes(d) && state.curve !== "anchors") continue;
+    box.appendChild(slider(d, c));
+  }
+  const fb = document.createElement("div");
+  fb.className = "ctl";
+  if (c.feedback) {
+    fb.innerHTML = `<label class="check"><input type="checkbox" id="fb" ${state.shocks.feedback ? "checked" : ""}>
+      <span><b>Borrow the extra interest</b><br><span class="note">Interest on the extra debt the scenario creates, at ${c.feedback.rate_pct[0].toFixed(2)}% (marginal new-issue rate, plus the yield shock).</span></span></label>`;
+    fb.querySelector("input").onchange = (e) => { state.shocks.feedback = e.target.checked; compute(); };
+  } else {
+    fb.innerHTML = `<p class="note">${c.model && c.model.note ? c.model.note : "Interest on extra borrowing is not modelled separately here."}</p>`;
+  }
+  box.appendChild(fb);
+}
+
+function renderPresets() {
+  const sel = document.getElementById("preset");
+  sel.innerHTML = "";
+  sel.appendChild(new Option("Custom", ""));
+  for (const p of PACK.presets) sel.appendChild(new Option(p.label, p.id));
+  sel.onchange = () => {
+    const p = PACK.presets.find((x) => x.id === sel.value);
+    if (!p) return;
+    const keep = state.cc;
+    state = defaultState(keep);
+    for (const [k, v] of Object.entries(p.shocks)) {
+      if (k === "feedback") state.shocks.feedback = v;
+      else state.shocks[k] = { ...state.shocks[k], ...v };
+    }
+    state.curve = CURVE.some((d) => p.shocks[d]) ? "anchors" : "parallel";
+    render();
+    sel.value = p.id;
+  };
+}
+
+function periodSum(arr) { return arr.reduce((a, b) => a + b, 0); }
+const nz = (arr) => arr && arr.some((v) => Math.abs(v) > 1e-9);
+
+function compute() {
+  const c = country();
+  const st = document.getElementById("status");
+  let r;
+  try { r = evaluate(PACK, state.cc, shocksFor(c, state.shocks)); }
+  catch (e) { st.className = "status err-inline"; st.textContent = `This combination cannot be evaluated: ${e.message}`; return; }
+  st.className = "status";
+  st.textContent = nz(r.delta) ? "" : "No shock applied yet: the scenario sits on the baseline. Move a slider or pick a preset.";
+  lastResult = r;
+  renderUnits(c);
+  drawTiles(c, r);
+  renderPolicySwitch(c);
+  drawHero(c, r);
+  drawPolicy(c);
+  drawBridge(c);
+  drawDrivers(c, r);
+  drawLines(c, r);
+  drawTable(c, r);
+  drawCross();
+  writeHash();
+}
+let lastResult = null;
+
+// ---- units: local-currency bn or % of each year's GDP
+const useGdp = (c) => state.units === "gdp" && Array.isArray(c.gdp) && c.gdp.every(Number.isFinite);
+function renderUnits(c) {
+  const box = document.getElementById("units");
+  box.innerHTML = "";
+  const can = Array.isArray(c.gdp) && c.gdp.every(Number.isFinite);
+  for (const [u, label] of [["bn", `${(SYMBOL[c.ccy] ?? c.ccy + " ").trim()}bn`], ["gdp", "% of GDP"]]) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String((useGdp(c) ? "gdp" : "bn") === u));
+    b.disabled = u === "gdp" && !can;
+    b.onclick = () => { state.units = u; compute(); };
+    box.appendChild(b);
+  }
+}
+const vfmt = (c, v, { sign = false } = {}) => (useGdp(c)
+  ? (Number.isFinite(v) ? `${v < 0 ? "−" : sign && v > 0 ? "+" : ""}${Math.abs(v).toFixed(2)}%` : "—")
+  : fmt(v, c, { sign }));
+const yTitle = (c) => (useGdp(c) ? "% of GDP" : c.unit);
+
+// ---- the series one chart draws: outturn, then baseline and scenario, on one category axis
+function seriesFor(c, r, key) {
+  const h = c.history || null;
+  const hpAll = h ? h.periods : [];
+  const hv0 = h ? (key === "total" ? h.total : h.lines[key]) : null;
+  const hv = hv0 && hv0.some((v) => v !== null && v !== undefined) ? hv0 : null;
+  const stub = h && h.stub ? (key === "total" ? h.stub.total : h.stub.lines[key]) : null;
+  const base = key === "total" ? r.baseline : c.baseline.lines[key];
+  const add = key === "total" ? r.delta : base.map((_, i) => (r.delta_by_line[key] ? r.delta_by_line[key][i] : 0)
+    + (key === "interest" ? r.feedback[i] : 0));
+  const full = (arr) => arr.map((v, i) => (i === 0 && Number.isFinite(stub) ? v + stub : v));
+  const pol = polOf(c, key);
+  const withPol = base.map((v, i) => v + pol[i]);
+  const b = full(withPol), sc = full(withPol.map((v, i) => v + add[i]));
+  const nopol = pol.some((v) => Math.abs(v) > 1e-9) ? full(base) : null;
+  const g = useGdp(c);
+  const hg = h && h.gdp ? h.gdp : [];
+  const scaleH = (v, i) => (v === null || v === undefined ? null : g ? (Number.isFinite(hg[i]) ? (100 * v) / hg[i] : null) : v);
+  const scaleF = (v, i) => (g ? (100 * v) / c.gdp[i] : v);
+  const hp = hv ? hpAll : []; // a line without outturn on its definition draws the forecast only
+  const hist = hv ? hv.map(scaleH) : [];
+  return {
+    x: [...hp, ...c.periods],
+    nh: hp.length,
+    hasHist: !!hv,
+    hist,
+    base: b.map(scaleF),
+    nopol: nopol ? nopol.map(scaleF) : null,
+    scen: sc.map(scaleF),
+    delta: add.map(scaleF),
+    stub: Number.isFinite(stub) ? h.stub.months : null,
+  };
+}
+
+// MATLAB-style axes: boxed, ticks inside on all four sides, light grid, default colour order
+const FONT = "Helvetica, Arial, sans-serif";
+const AX = "#262626";
+function baseLayout(c, extra = {}) {
+  const axis = { showline: true, linecolor: AX, linewidth: 1, mirror: "ticks", ticks: "inside", ticklen: 5, tickwidth: 1,
+    tickcolor: AX, showgrid: true, gridcolor: "#e3e3e3", gridwidth: 1, zeroline: false, fixedrange: true,
+    tickfont: { family: FONT, size: 11, color: AX }, title: { font: { family: FONT, size: 12, color: AX }, standoff: 8 } };
+  const ex = extra.xaxis || {}, ey = extra.yaxis || {};
+  return {
+    margin: { l: 66, r: 18, t: 40, b: 50 },
+    font: { family: FONT, size: 11, color: AX },
+    paper_bgcolor: "#fff", plot_bgcolor: "#fff", showlegend: true,
+    legend: { orientation: "h", x: 0, xanchor: "left", y: 1.015, yanchor: "bottom", bgcolor: "#fff", bordercolor: AX,
+      borderwidth: 0.75, font: { family: FONT, size: 11, color: AX }, itemwidth: 36, traceorder: "normal" },
+    hovermode: "x unified",
+    hoverlabel: { bgcolor: "#fff", bordercolor: AX, font: { family: FONT, size: 11.5, color: AX } },
+    ...extra,
+    xaxis: { ...axis, type: "category", ...ex, title: { ...axis.title, ...(ex.title || {}) } },
+    yaxis: { ...axis, separatethousands: true, ticksuffix: useGdp(c) ? "%" : "", automargin: true, ...ey,
+      title: { ...axis.title, ...(ey.title || {}) } },
+  };
+}
+const CONFIG = { displayModeBar: false, responsive: true };
+const xTitle = (c) => c.period_kind.charAt(0).toUpperCase() + c.period_kind.slice(1);
+
+// traces shared by the main figure and the line-by-line panels
+function pathTraces(c, s, { mini = false } = {}) {
+  const nh = s.nh;
+  const pad = (arr, from) => s.x.map((_, i) => (i < from ? null : arr[i - from]));
+  const join = s.hasHist && nh ? s.hist[nh - 1] : null;
+  // baseline and scenario start from the last outturn so the lines join
+  const withJoin = (arr) => { const out = pad(arr, nh); if (join !== null && nh) out[nh - 1] = join; return out; };
+  const hist = s.x.map((_, i) => (i < nh ? s.hist[i] : null));
+  const t = (arr, i) => (arr[i] === null || arr[i] === undefined ? "" : vfmt(c, arr[i]));
+  const label0 = (i) => (s.stub && i === nh ? ` (${monthName(s.stub[0])}–${monthName(s.stub[1])} outturn + forecast)` : "");
+  const base = withJoin(s.base), scen = withJoin(s.scen);
+  const lw = mini ? 1.25 : 1.5;
+  const out = [];
+  const pol = !!s.nopol;
+  if (s.hasHist) out.push({ type: "scatter", mode: "lines+markers", name: "Outturn", x: s.x, y: hist,
+    line: { color: COLORS.ink, width: lw }, marker: { size: mini ? 3 : 4.5, color: COLORS.ink },
+    hovertemplate: s.x.map((_, i) => (i < nh ? `Outturn  <b>${t(hist, i)}</b><extra></extra>` : "<extra></extra>")),
+    connectgaps: false });
+  if (pol) {
+    const np = withJoin(s.nopol);
+    out.push({ type: "scatter", mode: "lines", name: "Our model, no policy change", x: s.x, y: np,
+      line: { color: COLORS.muted, width: lw, dash: "dot" },
+      hovertemplate: s.x.map((_, i) => (i >= nh ? `No policy change  ${t(np, i)}<extra></extra>` : "<extra></extra>")) });
+  }
+  const bname = pol ? "Our model + legislated policy" : "Baseline";
+  out.push({ type: "scatter", mode: "lines", name: bname, x: s.x, y: base,
+    line: { color: COLORS.base, width: pol ? lw + 0.5 : lw, dash: pol ? "solid" : "dash" },
+    hovertemplate: s.x.map((_, i) => (i >= nh ? `${pol ? "With policy" : "Baseline"}  ${t(base, i)}${label0(i)}<extra></extra>` : "<extra></extra>")) });
+  // no shock: the scenario is the baseline, so it is not drawn over it (both baselines stay visible)
+  if (!s.delta.some((v) => Math.abs(v) > 1e-9)) return out;
+  out.push({ type: "scatter", mode: "lines+markers", name: "Scenario", x: s.x, y: scen, fill: "tonexty",
+    fillcolor: COLORS.fill, line: { color: COLORS.scen, width: mini ? 1.5 : 2 },
+    marker: { size: mini ? 4 : 6, color: "#fff", line: { color: COLORS.scen, width: 1.5 } },
+    hovertemplate: s.x.map((_, i) => (i >= nh
+      ? `Scenario  <b>${t(scen, i)}</b>   change ${vfmt(c, s.delta[i - nh], { sign: true })}<extra></extra>` : "<extra></extra>")) });
+  return out;
+}
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const monthName = (ym) => MONTHS[Number(ym.slice(5, 7)) - 1];
+
+// the forecast years: a light patch and a dotted divider, as MATLAB's xregion/xline
+function forecastShade(s) {
+  return [
+    { type: "rect", xref: "x", yref: "paper", x0: s.nh - 0.5, x1: s.x.length - 0.5, y0: 0, y1: 1,
+      fillcolor: COLORS.panel, line: { width: 0 }, layer: "below" },
+    { type: "line", xref: "x", yref: "paper", x0: s.nh - 0.5, x1: s.nh - 0.5, y0: 0, y1: 1,
+      line: { color: AX, width: 1, dash: "dot" }, layer: "below" },
+  ];
+}
+
+function drawHero(c, r) {
+  const s = seriesFor(c, r, "total");
+  document.getElementById("hero-title").textContent = c.measure;
+  const h = c.history;
+  document.getElementById("hero-sub").textContent =
+    `${h ? `Outturn: ${h.source}. ` : ""}Forecast: ${c.baseline.source}.` +
+    (polOn(c) ? ` Baseline: our model plus legislated policy (${c.policy.n_measures} costed measures, fixed as costed; shocks act on the model, not on the measures); the dotted line is our model with no policy change; the switch above moves the scenario onto either.` : "") +
+    (s.stub ? ` ${c.periods[0]} is ${monthName(s.stub[0])}–${monthName(s.stub[1])} outturn plus the forecast for the rest of the year; the shock only touches the forecast months.` : "") +
+    " Shading: scenario minus baseline.";
+  const last = s.x.length - 1;
+  const ann = [];
+  if (s.nh) ann.push({ x: s.nh - 0.45, y: 0.985, xref: "x", yref: "paper", text: "<i>Forecast</i>", showarrow: false,
+    xanchor: "left", yanchor: "top", font: { size: 11, color: AX } });
+  const shapes = s.nh ? forecastShade(s) : [];
+  if (nz(r.delta)) {
+    // the final-year gap as a bracket at the right edge, labelled at its midpoint
+    const yb = s.base[s.base.length - 1], ys = s.scen[s.scen.length - 1];
+    shapes.push({ type: "line", xref: "x", yref: "y", x0: last + 0.22, x1: last + 0.22, y0: yb, y1: ys, line: { color: AX, width: 1 } });
+    for (const yv of [yb, ys]) shapes.push({ type: "line", xref: "x", yref: "y", x0: last + 0.16, x1: last + 0.28, y0: yv, y1: yv, line: { color: AX, width: 1 } });
+    ann.push({ x: s.x.length - 0.5, y: (yb + ys) / 2, xref: "x", yref: "y", showarrow: false, xanchor: "left", xshift: 6,
+      text: `Δ ${s.x[last]}<br><b>${vfmt(c, s.delta[s.delta.length - 1], { sign: true })}</b>`, align: "left",
+      font: { size: 11.5, color: AX } });
+  }
+  Plotly.react("hero", pathTraces(c, s), baseLayout(c, {
+    shapes, annotations: ann, margin: { l: 66, r: nz(r.delta) ? 92 : 18, t: 40, b: 50 },
+    xaxis: { title: { text: xTitle(c) }, range: [-0.5, s.x.length - 0.5] }, yaxis: { title: { text: yTitle(c) } } }), CONFIG);
+}
+
+function renderPolicySwitch(c) {
+  const box = document.getElementById("polswitch");
+  box.innerHTML = "";
+  box.style.display = hasPolicy(c) ? "" : "none";
+  box.style.marginRight = "8px";
+  if (!hasPolicy(c)) return;
+  for (const [v, label] of [[true, "With legislated policy"], [false, "No policy change"]]) {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String(state.policy === v));
+    b.onclick = () => { state.policy = v; compute(); };
+    box.appendChild(b);
+  }
+}
+
+function drawPolicy(c) {
+  const card = document.getElementById("policy-card");
+  const wrap = document.getElementById("policy-wrap");
+  if (!hasPolicy(c)) {
+    if (document.getElementById("policy")) Plotly.purge("policy");
+    card.style.display = "none";
+    return;
+  }
+  card.style.display = "";
+  const p = c.policy;
+  const g = useGdp(c);
+  const sc = (arr) => arr.map((v, i) => (g ? (100 * v) / c.gdp[i] : v));
+  document.getElementById("policy-sub").textContent =
+    `Effect of each legislated measure on the ${c.measure.split(" (")[0].toLowerCase()}, on top of our no-policy-change model: above zero adds to borrowing, below zero reduces it. ` +
+    `A measure already in force in ${p.base_period_label || "the base year"} counts only by how far it moves off its share of GDP or prices; later measures count in full. Black line: net total. ${p.n_measures} measures from ${p.events.join("; ")}.`;
+  document.getElementById("policy-src").innerHTML = "Sources: " + p.sources.map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.title}</a>`).join("; ") + ".";
+  if (!document.getElementById("policy")) wrap.innerHTML = `<div id="policy" class="chart mid" role="img" aria-label="Effect of each legislated measure, stacked, each year"></div>`;
+  let k = 0;
+  const traces = p.groups.map((gr) => {
+    const col = gr.netting ? "#ffffff" : gr.other ? (POLICY_OTHER[gr.id] || "#8c8c8c") : POLICY_COLOR[k++ % POLICY_COLOR.length];
+    const y = sc(gr.values);
+    const kind = gr.head === "tax" ? "tax" : "spending";
+    const what = gr.other ? `${gr.n} smaller ${kind} measures` : `${kind}${gr.n > 1 ? `, ${gr.n} measures` : ""}`;
+    const detail = gr.detail && !gr.other ? `<br><span style="font-size:10.5px">${gr.detail.slice(0, 90).replaceAll("<", "&lt;")}${gr.detail.length > 90 ? "…" : ""}</span>` : "";
+    return { type: "bar", name: gr.label, x: c.periods, y, marker: gr.netting
+        ? { color: col, line: { color: AX, width: 1 }, pattern: { shape: "/", fgcolor: "#6e6e6e", size: 6, solidity: 0.25 } }
+        : { color: col, line: { color: "#fff", width: 1 } },
+      customdata: y.map((v) => vfmt(c, v, { sign: true })),
+      hovertemplate: `${gr.label} (${what})  <b>%{customdata}</b>${detail}<extra></extra>` };
+  });
+  const tot = sc(p.total);
+  traces.push({ type: "scatter", mode: "lines+markers", name: "Net, all measures", x: c.periods, y: tot,
+    line: { color: AX, width: 1.5 }, marker: { size: 7, color: AX, symbol: "diamond" },
+    customdata: tot.map((v) => vfmt(c, v, { sign: true })), hovertemplate: `<b>Net  %{customdata}</b><extra></extra>` });
+  Plotly.react("policy", traces, baseLayout(c, {
+    barmode: "relative", bargap: 0.45,
+    xaxis: { title: { text: xTitle(c) }, showgrid: false },
+    yaxis: { title: { text: `Effect on the measure, ${yTitle(c)}` }, zeroline: true, zerolinecolor: AX, zerolinewidth: 1 },
+  }), CONFIG);
+}
+
+function drawBridge(c) {
+  const card = document.getElementById("bridge-card");
+  const b = (PACK.authority_bridge || {})[c.cc];
+  if (!b) { if (document.getElementById("bridge")) Plotly.purge("bridge"); card.style.display = "none"; return; }
+  card.style.display = "";
+  const g = useGdp(c);
+  const why = document.getElementById("bridge-why");
+  if (b.total_only) {
+    document.getElementById("bridge-title").textContent = `Against ${b.label}`;
+    document.getElementById("bridge-sub").textContent = "The government's plan has no line split we can match, so only the totals are compared: plan (grey) and ours with legislated policy (orange).";
+    why.innerHTML = "";
+    const pi = b.periods.map((p, i) => i).filter((i) => b.authority[i] !== null && b.authority[i] !== undefined);
+    const sc = (v, i) => (g ? (100 * v) / c.gdp[i] : v);
+    Plotly.react("bridge", [
+      { type: "bar", name: b.label.split(",")[0].split(" (")[0], x: pi.map((i) => b.periods[i]), y: pi.map((i) => sc(b.authority[i], i)), marker: { color: "#b0b0b0" } },
+      { type: "bar", name: "Ours + legislated policy", x: pi.map((i) => b.periods[i]), y: pi.map((i) => sc(b.ours[i], i)), marker: { color: COLORS.base } },
+    ], baseLayout(c, { barmode: "group", bargap: 0.35, xaxis: { title: { text: xTitle(c) }, showgrid: false }, yaxis: { title: { text: yTitle(c) } } }), CONFIG);
+    return;
+  }
+  document.getElementById("bridge-title").textContent = `Against ${b.label}`;
+  document.getElementById("bridge-sub").textContent =
+    `Our forecast with legislated policy minus ${b.label}'s, split by line on their published numbers. Above zero: that line makes our deficit larger. ` +
+    `"Definitions" is the difference already in the last outturn year (${b.base_year}), grown with GDP: lines measured differently, not a forecast difference. The bars add up to the diamonds.`;
+  const lab = { receipts: "Receipts", primary: "Spending ex interest", interest: "Interest" };
+  const x = b.rows.map((r) => r.period);
+  const sc = (v, r) => (g ? (100 * v) / r.gdp : v);
+  const traces = ["receipts", "primary", "interest"].map((k, i) => ({ type: "bar", name: lab[k], x,
+    y: b.rows.map((r) => sc(r.lines[k].forecast, r)), marker: { color: POLICY_COLOR[i], line: { color: "#fff", width: 1 } },
+    customdata: b.rows.map((r) => `ours ${vfmt(c, sc(r.lines[k].ours, r))}, theirs ${vfmt(c, sc(r.lines[k].authority, r))}`),
+    hovertemplate: `${lab[k]}  <b>%{y:.1f}</b>  (%{customdata})<extra></extra>` }));
+  traces.push({ type: "bar", name: "Definitions", x, y: b.rows.map((r) => sc(["receipts", "primary", "interest"].reduce((a, k) => a + r.lines[k].definitions, 0), r)),
+    marker: { color: POLICY_OTHER.other_tax, line: { color: "#fff", width: 1 } }, hovertemplate: "Definitions  %{y:.1f}<extra></extra>" });
+  traces.push({ type: "scatter", mode: "lines+markers", name: "Ours minus theirs", x, y: b.rows.map((r) => sc(r.gap, r)),
+    line: { color: AX, width: 1.5 }, marker: { size: 7, color: AX, symbol: "diamond" },
+    customdata: b.rows.map((r) => `ours ${vfmt(c, sc(r.ours, r))}, theirs ${vfmt(c, sc(r.authority, r))}`),
+    hovertemplate: "<b>Gap  %{y:.1f}</b>  (%{customdata})<extra></extra>" });
+  Plotly.react("bridge", traces, baseLayout(c, { barmode: "relative", bargap: 0.45,
+    xaxis: { title: { text: xTitle(c) }, showgrid: false },
+    yaxis: { title: { text: `Ours minus theirs, ${yTitle(c)}` }, zeroline: true, zerolinecolor: AX, zerolinewidth: 1 } }), CONFIG);
+  why.innerHTML = Object.entries(b.reasons).map(([k, t]) => `<li><b>${lab[k]}.</b> ${t}</li>`).join("") +
+    `<li>Source: <a href="${b.url}" target="_blank" rel="noopener">${b.source}</a>.</li>`;
+}
+
+function drawDrivers(c, r) {
+  const wrap = document.getElementById("drivers-wrap");
+  const g = useGdp(c);
+  const sc = (arr) => arr.map((v, i) => (g ? (100 * v) / c.gdp[i] : v));
+  const ser = [];
+  for (const d of DRIVER_ORDER) if (nz(r.delta_by_driver[d])) ser.push([DRIVERS[d].label, sc(r.delta_by_driver[d]), DRIVER_COLOR[d]]);
+  if (nz(r.feedback)) ser.push(["Interest on extra debt", sc(r.feedback), DRIVER_COLOR.feedback]);
+  if (!ser.length) {
+    if (document.getElementById("drivers")) Plotly.purge("drivers");
+    wrap.innerHTML = `<div class="empty">No shock applied. Each shock you set adds its own segment to the bars.</div>`;
+    return;
+  }
+  if (!document.getElementById("drivers")) wrap.innerHTML = `<div id="drivers" class="chart mid" role="img" aria-label="Change from baseline by shock, stacked, each year"></div>`;
+  // stacked: positive contributions build up from zero, negative ones down; the line is the net total
+  const traces = ser.map(([name, y, col]) => ({ type: "bar", name, x: c.periods, y,
+    marker: { color: col, line: { color: AX, width: 0.75 } },
+    hovertemplate: `${name}  %{customdata}<extra></extra>`, customdata: y.map((v) => vfmt(c, v, { sign: true })) }));
+  const tot = sc(r.delta);
+  traces.push({ type: "scatter", mode: "lines+markers", name: "Total", x: c.periods, y: tot,
+    line: { color: AX, width: 1.5 }, marker: { size: 7, color: AX, symbol: "diamond" },
+    hovertemplate: `<b>Total  %{customdata}</b><extra></extra>`, customdata: tot.map((v) => vfmt(c, v, { sign: true })) });
+  Plotly.react("drivers", traces, baseLayout(c, {
+    barmode: "relative", bargap: 0.45,
+    xaxis: { title: { text: xTitle(c) }, showgrid: false },
+    yaxis: { title: { text: `Change vs baseline, ${yTitle(c)}` }, zeroline: true, zerolinecolor: AX, zerolinewidth: 1 },
+  }), CONFIG);
+}
+
+function drawLines(c, r) {
+  const box = document.getElementById("minis");
+  const hl = c.history ? Object.keys(c.history.lines) : [];
+  const missing = c.lines.filter((ln) => !hl.includes(ln.id)).map((ln) => ln.label.toLowerCase());
+  document.getElementById("lines-sub").textContent =
+    "Each line of the identity on its own scale: outturn (black), baseline (orange: dashed, or solid with legislated policy, when our model alone is the grey dotted line), scenario (blue, once a shock is set). Receipts reduce the measure, spending adds to it." +
+    (c.lines.some((l) => l.perimeter) ? " The perimeter line is the part of the published measure outside the modelled lines, forecast on its own; shocks act on the modelled lines." : "") +
+    (c.lines.some((l) => l.id === "interest") && c.feedback ? " Interest includes interest on extra debt when that switch is on." : "") +
+    (c.history && missing.length ? ` No outturn is drawn for ${missing.join(", ")}: the published history is on a different definition.` : "");
+  for (const ln of c.lines) {
+    let el = document.getElementById(`mini-${ln.id}`);
+    if (!el || el.dataset.cc !== c.cc) {
+      if (!box.dataset.cc || box.dataset.cc !== c.cc) { box.querySelectorAll(".chart").forEach((d) => Plotly.purge(d)); box.innerHTML = ""; box.dataset.cc = c.cc; }
+      el = document.createElement("div");
+      el.className = "mini"; el.id = `mini-${ln.id}`; el.dataset.cc = c.cc;
+      el.innerHTML = `<h4>${ln.label}<span></span></h4><p class="m" ${ln.note ? `title="${ln.note.replaceAll('"', "&quot;")}"` : ""}>${ln.perimeter ? "Part of the measure outside the modelled lines; no shock acts on it" : `${ln.sign > 0 ? "Adds to" : "Subtracts from"} the measure`}</p><div class="chart minichart"></div>`;
+      box.appendChild(el);
+    }
+    const s = seriesFor(c, r, ln.id);
+    const d = s.delta.reduce((a, b) => a + b, 0);
+    const span = el.querySelector("h4 span");
+    const contrib = ln.sign * d; // effect on the measure
+    span.className = Math.abs(d) < 1e-9 ? "" : contrib > 0 ? "up" : "down";
+    span.textContent = Math.abs(d) < 1e-9 ? "" : `${vfmt(c, d / (useGdp(c) ? c.periods.length : 1), { sign: true })}${useGdp(c) ? " a year" : " total"}`;
+    Plotly.react(el.querySelector(".chart"), pathTraces(c, s, { mini: true }), baseLayout(c, {
+      showlegend: false, margin: { l: 54, r: 14, t: 8, b: 30 }, shapes: s.nh ? forecastShade(s) : [],
+      font: { family: FONT, size: 10, color: AX },
+      xaxis: { tickangle: 0, nticks: 6, automargin: true, tickfont: { size: 10 }, range: [-0.5, s.x.length - 0.5] },
+      yaxis: { tickfont: { size: 10 }, rangemode: "normal" } }), CONFIG);
+  }
+}
+
+function drawTiles(c, r) {
+  const p0 = c.periods[0], pN = c.periods[c.periods.length - 1];
+  const pol = polOf(c);
+  const d = periodSum(r.delta), b = periodSum(r.baseline) + periodSum(pol);
+  const g = c.gdp ? periodSum(c.gdp) : NaN;
+  const dir = (v) => (v > 1e-9 ? "up" : v < -1e-9 ? "down" : "");
+  let k = 0;
+  r.delta.forEach((v, i) => { if (Math.abs(v) > Math.abs(r.delta[k])) k = i; });
+  const last = r.scenario.length - 1;
+  const tiles = [
+    [`Change, ${p0} to ${pN}`, fmt(d, c), dir(d), `against a baseline of ${fmt(b, c, { sign: false })}`],
+    ["Change, % of GDP a year", Number.isFinite(g) ? pct((100 * d) / g) : "—", dir(d), Number.isFinite(g) ? "averaged over the four years" : "GDP not in the pack"],
+    ["Largest year", nz(r.delta) ? fmt(r.delta[k], c) : "—", dir(r.delta[k]), nz(r.delta) ? c.periods[k] : "no shock applied"],
+    [`${c.measure.split(" (")[0]}, ${pN}`, fmt(r.scenario[last] + pol[last], c, { sign: false }), "",
+      `baseline ${fmt(r.baseline[last] + pol[last], c, { sign: false })}${polOn(c) ? ", with legislated policy" : ""}`],
+  ];
+  document.getElementById("tiles").innerHTML = tiles.map(([kk, v, cls, sub]) =>
+    `<div class="tile"><p class="k">${kk}</p><p class="v ${cls}">${v}</p><p class="s">${sub}</p></div>`).join("");
+}
+
+function rows(c, r) {
+  const pol = polOf(c);
+  const out = polOn(c)
+    ? [["Our model, no policy change", r.baseline, "base"], ["  Legislated policy", pol, "sub"],
+      ["Baseline with legislated policy", r.baseline.map((v, i) => v + pol[i]), "base"]]
+    : [["Baseline", r.baseline, "base"]];
+  for (const d of DRIVER_ORDER) {
+    if (r.delta_by_driver[d] && r.delta_by_driver[d].some((v) => Math.abs(v) > 1e-9)) out.push([`  ${DRIVERS[d].label}`, r.delta_by_driver[d], "sub"]);
+  }
+  if (r.feedback.some((v) => v !== 0)) out.push(["  Interest on extra debt", r.feedback, "sub"]);
+  out.push(["Change", r.delta, "total"]);
+  for (const ln of c.lines) {
+    const v = r.delta_by_line[ln.id];
+    if (v && v.some((x) => Math.abs(x) > 1e-12)) out.push([`  of which ${ln.label.toLowerCase()} (${ln.sign > 0 ? "adds" : "subtracts"})`, v.map((x) => ln.sign * x), "sub"]);
+  }
+  out.push(["Scenario", r.scenario.map((v, i) => v + pol[i]), "base"]);
+  if (c.gdp) out.push(["Change, % of that year's GDP", r.delta.map((v, i) => (100 * v) / c.gdp[i]), "pct"]);
+  return out;
+}
+
+function drawTable(c, r) {
+  const t = document.getElementById("table");
+  const head = `<thead><tr><th>${c.unit}</th>${c.periods.map((p, i) => `<th>${p}${i === 0 && c.history && c.history.stub && c.months ? `<br><span class="note">${monthName(c.months[0])}–Dec</span>` : ""}</th>`).join("")}<th>Total</th></tr></thead>`;
+  const body = rows(c, r).map(([label, vals, kind]) => {
+    const tot = kind === "pct" ? NaN : vals.reduce((a, b) => a + b, 0);
+    const cell = (v) => {
+      const cls = kind === "sub" || kind === "total" ? (v > 1e-9 ? "up" : v < -1e-9 ? "down" : "") : "";
+      const txt = kind === "pct" ? pct(v) : fmt(v, c, { sign: kind !== "base" });
+      return `<td class="${cls}">${txt}</td>`;
+    };
+    return `<tr class="${kind}"><td>${label.trim()}</td>${vals.map(cell).join("")}${kind === "pct" ? "<td></td>" : cell(tot)}</tr>`;
+  }).join("");
+  t.innerHTML = head + `<tbody>${body}</tbody>`;
+}
+
+function drawCross() {
+  const t = document.getElementById("cross");
+  const head = `<thead><tr><th>Country</th><th>Measure</th><th>Horizon</th><th>Change, all years</th><th>% of GDP a year</th><th>Rates method</th></tr></thead>`;
+  const body = ORDER.map((cc) => {
+    const c = PACK.countries[cc];
+    const s = shocksFor(c, state.shocks);
+    let r;
+    try { r = evaluate(PACK, cc, s); } catch (e) { return `<tr><td>${c.name}</td><td colspan="5">${e.message}</td></tr>`; }
+    const eff = shocksFor(c, state.shocks);
+    const used = DRIVER_ORDER.filter((d) => eff[d] && eff[d].size);
+    const missing = used.filter((d) => !c.channels.some((ch) => ch.driver === d));
+    const d = r.delta.reduce((a, b) => a + b, 0);
+    const g = c.gdp ? c.gdp.reduce((a, b) => a + b, 0) : NaN;
+    const cls = d > 1e-9 ? "up" : d < -1e-9 ? "down" : "";
+    const rm = s.methods.rates ? (s.methods.rates === "book" ? "ISIN book" : "published") : "—";
+    return `<tr><td>${c.name}</td><td>${c.measure}</td><td>${c.periods[0]}–${c.periods[c.periods.length - 1]}</td>
+      <td class="${cls}">${fmt(d, c)}${missing.length ? ` <span class="note">(no ${missing.map((m) => DRIVERS[m].label.toLowerCase()).join(", ")} channel)</span>` : ""}</td>
+      <td class="${cls}">${Number.isFinite(g) ? pct((100 * d) / g) : "—"}</td><td>${rm}</td></tr>`;
+  }).join("");
+  t.innerHTML = head + `<tbody>${body}</tbody>`;
+}
+
+function renderChannels() {
+  const c = country();
+  const box = document.getElementById("chanlist");
+  const chosen = shocksFor(c, state.shocks).methods;
+  box.innerHTML = `<p class="note">Each line is one channel in the pack. The multiplier stresses that channel's response (1 = as estimated or published).</p>`;
+  for (const ch of c.channels) {
+    if (ch.method_group && chosen[ch.driver] !== ch.method_group) continue;
+    if (state.curve === "anchors" ? ch.driver === "rates" : CURVE.includes(ch.driver)) continue;
+    const k = state.shocks.scale[ch.id] ?? 1;
+    const el = document.createElement("div");
+    el.className = "chan";
+    el.innerHTML = `<div><span class="badge">${ch.badge}</span>${DRIVERS[ch.driver].label} → ${(c.lines.find((l) => l.id === ch.line) || {}).label || ch.line}</div>
+      <label>×<output>${k.toFixed(2)}</output><input type="range" min="0" max="2" step="0.05" value="${k}" aria-label="Multiplier for ${ch.id}"></label>
+      <div class="m">${ch.method}. Source: ${ch.url ? `<a href="${ch.url}" target="_blank" rel="noopener">${ch.source}</a>` : ch.source}</div>`;
+    const inp = el.querySelector("input");
+    inp.oninput = () => { state.shocks.scale[ch.id] = Number(inp.value); el.querySelector("output").textContent = Number(inp.value).toFixed(2); compute(); };
+    box.appendChild(el);
+  }
+}
+
+function render() {
+  const c = country();
+  renderCountries();
+  document.getElementById("measure").textContent = `${c.measure}, ${c.unit}, ${c.period_kind}. Shocks start ${c.onset.slice(0, 7)}; history is never shocked. Baseline: ${c.baseline.source}.`;
+  renderControls();
+  renderChannels();
+  document.getElementById("preset").value = "";
+  compute();
+}
+
+function writeHash() {
+  try { history.replaceState(null, "", "#" + btoa(unescape(encodeURIComponent(JSON.stringify(state))))); } catch (e) { /* sandboxed frame */ }
+}
+function readHash() {
+  try {
+    const h = location.hash.slice(1);
+    if (!h) return;
+    const s = JSON.parse(decodeURIComponent(escape(atob(h))));
+    if (s && PACK.countries[s.cc]) state = { ...defaultState(s.cc), ...s, shocks: { ...defaultState(s.cc).shocks, ...s.shocks } };
+    if (state.curve !== "anchors") state.curve = "parallel";
+    if (state.units !== "gdp") state.units = "bn";
+    if (state.policy !== false) state.policy = true;
+  } catch (e) { /* ignore a malformed link */ }
+}
+
+function downloadCsv() {
+  const c = country(), r = lastResult;
+  if (!r) return;
+  const lines = [[c.unit, ...c.periods, "Total"].join(",")];
+  for (const [label, vals, kind] of rows(c, r)) {
+    const tot = kind === "pct" ? "" : vals.reduce((a, b) => a + b, 0).toFixed(6);
+    lines.push([`"${label.trim()}"`, ...vals.map((v) => v.toFixed(6)), tot].join(","));
+  }
+  lines.push("", `"shocks","${JSON.stringify(shocksFor(c, state.shocks)).replaceAll('"', '""')}"`, `"pack built","${PACK.built_at}"`, `"model version","${PACK.model_vintage}"`);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
+  a.download = `shock_${state.cc}_${PACK.built_at.slice(0, 10)}.csv`;
+  a.click();
+}
+
+document.getElementById("reset").onclick = () => { state = defaultState(state.cc); render(); };
+document.getElementById("copy").onclick = async (e) => {
+  try { await navigator.clipboard.writeText(location.href); e.target.textContent = "Link copied"; }
+  catch (err) { e.target.textContent = "Copy the address bar"; }
+  setTimeout(() => (e.target.textContent = "Copy link"), 2000);
+};
+document.getElementById("csv").onclick = downloadCsv;
+
+if (Object.keys(PACK.errors || {}).length) {
+  const div = document.createElement("div");
+  div.className = "err";
+  div.textContent = "Not built this run: " + Object.entries(PACK.errors).map(([k, v]) => `${k.toUpperCase()} (${v})`).join("; ");
+  document.body.insertBefore(div, document.body.firstChild);
+}
+readHash();
+proofLine();
+// inside the Sovereign financing hub, open the Methodology tab rather than leaving the hub
+document.querySelectorAll(".eqlink").forEach((a) => a.addEventListener("click", (e) => {
+  try { if (window.top !== window.self && window.top.location.pathname.endsWith("financing_dashboard.html")) {
+    e.preventDefault(); window.top.location.hash = "methods"; } } catch (err) { /* different origin: follow the link */ }
+}));
+renderPresets();
+render();
+</script>
+</body></html>

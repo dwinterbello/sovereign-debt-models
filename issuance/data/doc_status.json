@@ -1,0 +1,31 @@
+{
+  "_note": "One row per official document the forward depends on. 'expected' is the first day it can appear; 'incorporated' is the date its numbers were written into issuance/forward.py (empty until then). When a document is incorporated, add the next instance of it.",
+  "docs": [
+    {"id": "us_refunding_2026q4", "country": "US", "name": "Treasury quarterly refunding statement (Nov 2026)",
+     "expected": "2026-11-04", "incorporated": "", "updates": "US_MONTHS sizes and source labels Nov 2026 to Jan 2027; steady months after"},
+    {"id": "uk_dmo_minutes_2026q3", "country": "UK", "name": "DMO quarterly consultation minutes (Nov 2026)",
+     "expected": "2026-11-16", "incorporated": "", "updates": "UK_SYNDICATIONS, UK_TENDERS, UK_Q4_MENU"},
+    {"id": "uk_dmo_calendar_2027q1", "country": "UK", "name": "DMO auction calendar Jan-Mar 2027",
+     "expected": "2026-11-27", "incorporated": "", "updates": "UK_CALENDAR Jan-Mar ISINs and sizes, UK_TENDERS"},
+    {"id": "uk_remit_revision_2026", "country": "UK", "name": "DMO remit revision at the Autumn Budget",
+     "expected": "2026-11-20", "incorporated": "", "updates": "UK_REMIT_MN"},
+    {"id": "fr_aft_programme_2027", "country": "FR", "name": "AFT 2027 financing programme (detailed)",
+     "expected": "2026-12-01", "incorporated": "", "updates": "FR_PROGRAMME_NEXT_MN, syndication plans"},
+    {"id": "de_issuance_plan_2027", "country": "DE", "name": "Finanzagentur 2027 issuance plan and Q1 calendar",
+     "expected": "2026-12-10", "incorporated": "", "updates": "DE_CALENDAR Q1 2027, DE_NET_BORROWING, new long lines in the replay"},
+    {"id": "it_mef_guidelines_2027", "country": "IT", "name": "MEF Linee Guida 2027 and Q1 programme",
+     "expected": "2026-12-10", "incorporated": "", "updates": "IT supplement (it_supplement.json), IT_H2_MN replacement for 2027"},
+    {"id": "jp_frn_terms", "country": "JP", "name": "MoF terms for the first floating-rate JGB (2y, 6m T-bill + spread; ~2 months before first issue)",
+     "expected": "2026-11-01", "incorporated": "", "updates": "jp_forward: add the floater (size, month, whether it displaces fixed 2y); near-zero rate DV01"},
+    {"id": "jp_mof_plan_fy2027", "country": "JP", "name": "MoF FY2027 JGB issuance plan (and FY2026 revised column)",
+     "expected": "2026-12-20", "incorporated": "", "updates": "jp_forward PLAN_MN, PLAN_MONTHS, PLAN_LEA_FY_MN, PLAN_FY, PLAN_ASOF; floater sizes"},
+    {"id": "jp_lea_2027q1", "country": "JP", "name": "MoF liquidity enhancement amounts Jan-Mar 2027",
+     "expected": "2026-12-22", "incorporated": "", "updates": "automatic (jp_calendar.fetch_lea_amounts); check the scrape picked it up"},
+    {"id": "us_refunding_2027q1", "country": "US", "name": "Treasury quarterly refunding statement (Feb 2027)",
+     "expected": "2027-02-03", "incorporated": "", "updates": "US_MONTHS Feb-Apr 2027"},
+    {"id": "uk_remit_2027_28", "country": "UK", "name": "DMO remit 2027-28",
+     "expected": "2027-03-10", "incorporated": "", "updates": "UK_REMIT_MN, UK_FY_END, UK_CALENDAR Apr-Jun 2027"},
+    {"id": "de_calendar_2027q2", "country": "DE", "name": "Finanzagentur Q2 2027 issuance calendar",
+     "expected": "2027-03-20", "incorporated": "", "updates": "DE_CALENDAR Q2 2027"}
+  ]
+}

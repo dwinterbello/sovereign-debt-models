@@ -1,0 +1,670 @@
+{
+  "note": "Italy DFP/DEF category paths for bottom-up macro baseline. Cash-account lines map to BdI Tavola 1. Macro = DFP Tav. II.1.2.2 NGDP + WEO/HICP for CPI. Fabbisogno plan levels stay in it/events.py PLAN. Vintages (DEF 2021/2024, DFP 2025/2026) are point-in-time: at origin t use the latest vintage with published<=t that carries calendar year Y. No IRPEF/IRES/IVA in DFP/DEF cash Tavole — Finanze erarial cassa XLSX inventoried separately (perimeter ≠ BdI tax_rev). DEF 2022/2023 Sez-II PDF not at RGS DEF/{y}/Sez-II path; no XLSX Tavole pre-DFP.",
+  "vintage": "2026-04-22",
+  "source": "DFP 2026 (CdM 22-Apr-2026) Tavole XLSX; DFP 2025 (CdM 9-Apr-2025) Tavole XLSX; DEF 2024/2021 Sez II PDF cash tables IV.2-2 hand-entered from RGS PDFs",
+  "macro": {
+    "source": "DFP Tav. II.1.2.2 PIL nominale (tendenziale); CPI from IMF WEO when DFP silent",
+    "unit": "EUR mn level / percent YoY",
+    "years": {
+      "2025": {
+        "ngdp_mn": 2258048.7,
+        "vintage": "DFP 2026 Tab III.2-2"
+      },
+      "2026": {
+        "ngdp_mn": 2313093.65,
+        "vintage": "DFP 2026 Tav. II.1.2.2"
+      },
+      "2027": {
+        "ngdp_mn": 2372795.41,
+        "vintage": "DFP 2026 Tav. II.1.2.2"
+      },
+      "2028": {
+        "ngdp_mn": 2432726.6,
+        "vintage": "DFP 2026 Tav. II.1.2.2"
+      },
+      "2029": {
+        "ngdp_mn": 2497312.68,
+        "vintage": "DFP 2026 Tav. II.1.2.2"
+      }
+    }
+  },
+  "categories_cash_central": {
+    "source": "DFP Tab III.1-4 (outturn) / Tab III.2-2 (previsioni) — Conto consolidato di cassa delle Amministrazioni centrali",
+    "unit": "EUR mn, calendar year",
+    "map_to_bdi": {
+      "tributari": "tax_rev",
+      "incassi_correnti_ex_tributari": "other_rev",
+      "pagamenti_correnti_ex_interest": "primary",
+      "interessi_passivi": "interest",
+      "pagamenti_conto_capitale": "cap_exp",
+      "treasury_bal": null
+    },
+    "years": {
+      "2023": {
+        "tributari": 490598.0,
+        "incassi_correnti": 588587.0,
+        "incassi_correnti_ex_tributari": 97989.0,
+        "pagamenti_correnti": 624812.0,
+        "interessi_passivi": 73998.0,
+        "pagamenti_correnti_ex_interest": 550814.0,
+        "pagamenti_conto_capitale": 89543.0,
+        "saldo": -107876.0,
+        "vintage": "DFP 2026 Tab III.1-4 outturn"
+      },
+      "2024": {
+        "tributari": 522746.03,
+        "incassi_correnti": 622277.26,
+        "incassi_correnti_ex_tributari": 99531.23,
+        "pagamenti_correnti": 633399.25,
+        "interessi_passivi": 82558.73,
+        "pagamenti_correnti_ex_interest": 550840.52,
+        "pagamenti_conto_capitale": 116761.73,
+        "saldo": -124562.9,
+        "vintage": "DFP 2026 Tab III.1-4 outturn"
+      },
+      "2025": {
+        "tributari": 534173.08,
+        "incassi_correnti": 635613.75,
+        "incassi_correnti_ex_tributari": 101440.67,
+        "pagamenti_correnti": 638917.24,
+        "interessi_passivi": 89775.4,
+        "pagamenti_correnti_ex_interest": 549141.84,
+        "pagamenti_conto_capitale": 129341.52,
+        "saldo": -122642.0,
+        "vintage": "DFP 2026 Tab III.1-4 / III.2-2"
+      },
+      "2026": {
+        "tributari": 545627.66,
+        "incassi_correnti": 645895.6,
+        "incassi_correnti_ex_tributari": 100267.94,
+        "pagamenti_correnti": 652835.49,
+        "interessi_passivi": 95597.31,
+        "pagamenti_correnti_ex_interest": 557238.18,
+        "pagamenti_conto_capitale": 141810.38,
+        "saldo": -131738.33,
+        "vintage": "DFP 2026 Tab III.2-2 previsioni"
+      },
+      "2027": {
+        "tributari": 564847.78,
+        "incassi_correnti": 671038.18,
+        "incassi_correnti_ex_tributari": 106190.4,
+        "pagamenti_correnti": 659687.13,
+        "interessi_passivi": 99107.56,
+        "pagamenti_correnti_ex_interest": 560579.57,
+        "pagamenti_conto_capitale": 117080.1,
+        "saldo": -109670.54,
+        "vintage": "DFP 2026 Tab III.2-2 previsioni"
+      }
+    }
+  },
+  "national_accounts_central": {
+    "source": "DFP Tab I.1-4 (outturn) / I.2-3 (previsioni) Conto economico delle Amministrazioni centrali (accrual; not cash)",
+    "note": "Dirette/indirette only — no IRPEF/IRES/IVA lines in Tavole XLSX or PDF cash/accrual tables. Cash path uses Tributari. Accrual/cash Tributarie÷Tributari ≈ 0.93 on 2025–27; not a BdI monthly map.",
+    "years": {
+      "2023": {
+        "imposte_dirette": 295665,
+        "imposte_indirette": 232825,
+        "tributarie": 530026,
+        "vintage": "DFP 2026 Tab I.1-4"
+      },
+      "2024": {
+        "imposte_dirette": 315370,
+        "imposte_indirette": 246797,
+        "tributarie": 563910,
+        "vintage": "DFP 2026 Tab I.1-4"
+      },
+      "2025": {
+        "imposte_dirette": 316557,
+        "imposte_indirette": 254615,
+        "tributarie": 574208,
+        "vintage": "DFP 2026 Tab I.1-4 / I.2-3"
+      },
+      "2026": {
+        "imposte_dirette": 320043,
+        "imposte_indirette": 262289,
+        "tributarie": 584259,
+        "vintage": "DFP 2026 Tab I.2-3"
+      },
+      "2027": {
+        "imposte_dirette": 329555,
+        "imposte_indirette": 271975,
+        "tributarie": 603451,
+        "vintage": "DFP 2026 Tab I.2-3"
+      },
+      "2028": {
+        "imposte_dirette": 338146,
+        "imposte_indirette": 275526,
+        "tributarie": 615298,
+        "vintage": "DFP 2026 Tab I.2-3"
+      },
+      "2029": {
+        "imposte_dirette": 350782,
+        "imposte_indirette": 284401,
+        "tributarie": 636516,
+        "vintage": "DFP 2026 Tab I.2-3"
+      }
+    }
+  },
+  "capital_cash_sublines": {
+    "source": "DFP Tab III.1-4 / III.2-2 pagamenti in conto capitale breakdown (EUR mn). Inventory only — no BdI monthly split for IFL vs transfers; not wired.",
+    "note": "RRF/edilizi bonuses sit mainly in trasferimenti a famiglie; path peaks 2026 then falls. Single Apr-2026 vintage → PRE origins have no point-in-time prior DFPs in repo.",
+    "years": {
+      "2023": {
+        "pagamenti_conto_capitale": 89543,
+        "investimenti_fissi_lordi": 25440,
+        "trasferimenti_famiglie": 20310,
+        "trasferimenti_imprese": 27735
+      },
+      "2024": {
+        "pagamenti_conto_capitale": 116761.73,
+        "investimenti_fissi_lordi": 29461.01,
+        "trasferimenti_famiglie": 40837,
+        "trasferimenti_imprese": 26125.31
+      },
+      "2025": {
+        "pagamenti_conto_capitale": 129341.52,
+        "investimenti_fissi_lordi": 34464.8,
+        "trasferimenti_famiglie": 42242,
+        "trasferimenti_imprese": 24086.24
+      },
+      "2026": {
+        "pagamenti_conto_capitale": 141810.38,
+        "investimenti_fissi_lordi": 37754.35,
+        "trasferimenti_famiglie": 44476.68,
+        "trasferimenti_imprese": 25289.11
+      },
+      "2027": {
+        "pagamenti_conto_capitale": 117080.1,
+        "investimenti_fissi_lordi": 40123.16,
+        "trasferimenti_famiglie": 27786.73,
+        "trasferimenti_imprese": 21780.45
+      }
+    }
+  },
+  "manoeuvre_tax_effects": {
+    "source": "DFP 2026 PDF Tavola R1 (manovra 2026–28 net effects on PA deficit, EUR mn) — not cash IRPEF/IRES/IVA paths",
+    "note": "Narrative IRPEF/IRES/IVA only; discrete manoeuvre deltas too small vs OOS MAE (~€10bn) and known only from Apr-2026.",
+    "years": {
+      "2026": {
+        "irpef_aliquota_2_mn": -2901
+      },
+      "2027": {
+        "irpef_aliquota_2_mn": -2976
+      },
+      "2028": {
+        "irpef_aliquota_2_mn": -2985
+      }
+    }
+  },
+  "dfp_known_from": {
+    "rule": "At origin t, year-Y annual = latest vintage with published<=t that contains Y. Share path fires when every horizon calendar year has such an annual. Publication dates: DEF 2021≈15-Apr-2021; DEF 2024 CdM 9-Apr-2024; DFP 2025 CdM 9-Apr-2025; DFP 2026 CdM 22-Apr-2026.",
+    "month": 4
+  },
+  "elasticities": {
+    "tax_rev": {
+      "driver": "ngdp",
+      "beta": 0.55,
+      "clip": "PRE-support max |NGDP YoY| on clean PRE origins (~2.5pp)",
+      "rule": "smly × (1 + 0.55 × clip(NGDP YoY_{t−1})); retune 2026-10-20e — PRE +6.4% / OOS −8.6% vs prod"
+    },
+    "primary": {
+      "driver": "cpi",
+      "beta": 0.35,
+      "rule": "smly × (1 + 0.35 × HICP YoY_{t−1}); CPI unclipped"
+    },
+    "interest": {
+      "driver": null,
+      "rule": "smly — stock×rate (debt_country_annual × eff-rate OLS on macro rates) PRE −11%; SARIMAX+rates alone PRE 4.9%; with PRE-scaled treasury both sx and smly clear PRE; smly preferred (lower OOS)"
+    },
+    "other_rev": {
+      "driver": null,
+      "rule": "smly — DFP other current receipts have no single determinant; transfers/EU volatile"
+    },
+    "cap_exp": {
+      "driver": "ngdp",
+      "beta": 0.2,
+      "clip": "same PRE-support NGDP clip as tax",
+      "rule": "smly × (1 + 0.2 × clip(NGDP YoY_{t−1})); DFP_SHARE=False (share path OOS disaster)"
+    },
+    "treasury_bal": {
+      "driver": null,
+      "scale": 0.94,
+      "rule": "smly × 0.94 — no DFP/MEF published treasury path; partite finanziarie ≠ BdI treasury_bal"
+    }
+  },
+  "frontier_inventory_2026_10_20": {
+    "verdict": "Prior pass: NO-SHIP change. Superseded by vintages pass 2026-10-20b — see score_note / frontier_inventory_2026_10_20b",
+    "tax_split": {
+      "found": "Accrual imposte dirette/indirette in Tab I.1-4 / I.2-3 (hand-entered). PDF mentions IRPEF/IRES/IVA in narrative + Tavola R1 manoeuvre deltas only — no cash IRPEF/IRES/IVA table in Tavole or PDF. MEF fabbisogno monthly = headline only. BdI T1 = aggregate tax_rev. No Eurostat tax-by-type cache in data/it.",
+      "tried": "0.55/0.45 dirette×clip(NGDP)+indirette×CPI β grids; both-on-NGDP ≡ SHIP",
+      "block": "CPI-leg splits PRE edge 2.8–4.2% (<5%). Identical-NGDP split is not a new model. Accrual→cash without monthly cash split is lookahead if 2025–29 shares used on PRE."
+    },
+    "treasury_capital": {
+      "found": "DFP cash pagamenti_conto_capitale + IFL/famiglie/imprese sublines (inventory). Partite finanziarie net ≪ BdI treasury_bal (e.g. 2023 +0.3 vs +60.8 bn). No treasury line in DFP cash map.",
+      "tried": "Per-year DFP share allocation for cap (relax all-years gate); cap_scale×0.9",
+      "block": "Partial DFP cap OOS −91% to −102% (single Apr-2026 vintage on late OOS). No historical DFP vintages for PRE point-in-time. cap_scale is smly rebrand; OOS −18.5% vs SHIP −7.4%."
+    },
+    "interest": {
+      "found": "debt_country_annual IT debt_bn + BdI interest → effective rate; DFP interessi_passivi when known; interest_split rates macro",
+      "tried": "stock×rate OLS (SE-style); stock×trailing-eff + 0.3·Δrates (AR)",
+      "block": "OLS stock×rate PRE −11% (2 worse h). AR clears PRE +5.1% / OOS −4.5% vs prod but worse OOS than SHIP (−7.4%). Among clearers SHIP wins."
+    }
+  },
+  "score_note": {
+    "ship": true,
+    "selection": "PRE gate (≥5% edge, ≤1 worse h, OOS ≤+25%); among clearers prefer lower OOS",
+    "before": {
+      "pre_mean": 5.221,
+      "pre_vs_prod_pct": 5.38,
+      "oos_mean": 10.435,
+      "oos_vs_prod_pct": -7.41,
+      "spec": "βt0.45/βp0.4 clip NGDP, interest smly, treas×0.96, cap smly"
+    },
+    "after": {
+      "pre_mean": 5.166,
+      "pre_vs_prod_pct": 6.4,
+      "oos_mean": 10.298,
+      "oos_vs_prod_pct": -8.6,
+      "spec": "βt0.55/βp0.35 clip NGDP, interest smly, treas×0.94, cap×NGDP 0.2"
+    },
+    "frontier_pass": "2026-10-20e retune — β_tax 0.55 / β_pri 0.35 / treas×0.94 / cap×NGDP 0.2; PRE +6.4% / OOS −8.6%. Prior 2026-10-20b: DFP_SHARE=False.",
+    "oos_diagnosis": "OOS 12m category MAE: treasury_bal~41, cap_exp~28, tax_rev~22 (NGDP clipped vs OOS NGDP~8%), primary~20, interest~13, residual~3.7. Residual share |r|/|cash|~10% hist — not the binding gap.",
+    "trials_rejected_oos_search": [
+      "soft/asymm/wider NGDP clip — PRE clear, OOS worse",
+      "interest smly alone — PRE 4.9%",
+      "treas×0.85..0.92 — PRE fail; ×0.96 PRE-opt",
+      "cap/other NGDP β on locked base — no material OOS win",
+      "βt0.6/βp0.4 PRE-max under lock — PRE +7.0% but OOS −5.6% vs −7.4% for shipped pair",
+      "tax split dirette×NGDP+indirette×CPI — PRE <5%",
+      "interest stock×rate OLS — PRE −11%",
+      "interest stock×AR+Δrates — PRE clear but OOS worse than SHIP",
+      "DFP cap partial-year allocation — OOS −90%+",
+      "DFP partite finanziarie as treasury — series mismatch vs BdI",
+      "residual smly×0.5–0.9 / zero / trail12 / smly−trail — fail PRE or dominated by smly×1 (overnight 2026-10-20)"
+    ],
+    "residual_screen_2026_10_20": {
+      "locked": "smly × 1.0",
+      "pre_mean": 5.166,
+      "oos_mean": 10.298,
+      "trials": {
+        "smly_0.9": "PRE 5.245 (+4.9%) — fail gate",
+        "smly_0.8": "PRE 5.340 (+3.2%) — fail",
+        "zero": "PRE 6.221 (−12.7%) — fail",
+        "trail12": "PRE 5.300 (+3.9%, 2 worse h) — fail",
+        "smly_debias": "PRE 6.122 (−10.9%) — fail"
+      },
+      "verdict": "NO-SHIP change — residual stays smly×1"
+    },
+    "vintages_pass": {
+      "dfp_share": false,
+      "coverage_if_on": {
+        "PRE": {
+          "n": 50,
+          "fire": 0
+        },
+        "OOS": {
+          "n": 43,
+          "fire": 39
+        }
+      },
+      "full_share_oos": 50.846,
+      "other_rev_only_oos": 10.713,
+      "ship_oos": 10.435,
+      "verdict": "NO-SHIP change — among clearers locked SHIP wins"
+    }
+  },
+  "vintages": [
+    {
+      "id": "DEF_2021",
+      "published": "2021-04-15",
+      "doc": "DEF 2021 Sezione II",
+      "file": "data/it/plan/DEF21-Sez-II.pdf",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/Attivit--i/Contabilit_e_finanza_pubblica/DEF/2021/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf",
+      "tables": "IV.2-2 Conto consolidato di cassa Amministrazioni centrali — previsioni (hand-entered EUR mn)",
+      "years": {
+        "2020": {
+          "tributari": 383176,
+          "incassi_correnti": 455878,
+          "incassi_correnti_ex_tributari": 72702,
+          "pagamenti_correnti": 577667,
+          "interessi_passivi": 65768,
+          "pagamenti_correnti_ex_interest": 511899,
+          "pagamenti_conto_capitale": 33991,
+          "saldo": -158579
+        },
+        "2021": {
+          "tributari": 414866,
+          "incassi_correnti": 491935,
+          "incassi_correnti_ex_tributari": 77069,
+          "pagamenti_correnti": 599481,
+          "interessi_passivi": 66994,
+          "pagamenti_correnti_ex_interest": 532487,
+          "pagamenti_conto_capitale": 57287,
+          "saldo": -178287
+        },
+        "2022": {
+          "tributari": 426412,
+          "incassi_correnti": 512379,
+          "incassi_correnti_ex_tributari": 85967,
+          "pagamenti_correnti": 564522,
+          "interessi_passivi": 61251,
+          "pagamenti_correnti_ex_interest": 503271,
+          "pagamenti_conto_capitale": 55304,
+          "saldo": -100889
+        },
+        "2023": {
+          "tributari": 442182,
+          "incassi_correnti": 540979,
+          "incassi_correnti_ex_tributari": 98797,
+          "pagamenti_correnti": 564206,
+          "interessi_passivi": 60274,
+          "pagamenti_correnti_ex_interest": 503932,
+          "pagamenti_conto_capitale": 56724,
+          "saldo": -80671
+        },
+        "2024": {
+          "tributari": 456827,
+          "incassi_correnti": 548368,
+          "incassi_correnti_ex_tributari": 91541,
+          "pagamenti_correnti": 553129,
+          "interessi_passivi": 60382,
+          "pagamenti_correnti_ex_interest": 492747,
+          "pagamenti_conto_capitale": 52263,
+          "saldo": -55634
+        }
+      }
+    },
+    {
+      "id": "DEF_2024",
+      "published": "2024-04-09",
+      "doc": "DEF 2024 Sezione II",
+      "file": "data/it/plan/DEF24-Sez-II.pdf",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/Attivit--i/Contabilit_e_finanza_pubblica/DEF/2024/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf",
+      "tables": "IV.2-2 previsioni (hand-entered EUR mn); CdM 9-Apr-2024",
+      "years": {
+        "2023": {
+          "tributari": 491905,
+          "incassi_correnti": 588846,
+          "incassi_correnti_ex_tributari": 96941,
+          "pagamenti_correnti": 624213,
+          "interessi_passivi": 74066,
+          "pagamenti_correnti_ex_interest": 550147,
+          "pagamenti_conto_capitale": 91096,
+          "saldo": -107486
+        },
+        "2024": {
+          "tributari": 501738,
+          "incassi_correnti": 597760,
+          "incassi_correnti_ex_tributari": 96022,
+          "pagamenti_correnti": 629026,
+          "interessi_passivi": 85153,
+          "pagamenti_correnti_ex_interest": 543873,
+          "pagamenti_conto_capitale": 125700,
+          "saldo": -154553
+        },
+        "2025": {
+          "tributari": 513561,
+          "incassi_correnti": 608690,
+          "incassi_correnti_ex_tributari": 95129,
+          "pagamenti_correnti": 629087,
+          "interessi_passivi": 91080,
+          "pagamenti_correnti_ex_interest": 538007,
+          "pagamenti_conto_capitale": 134180,
+          "saldo": -146708
+        },
+        "2026": {
+          "tributari": 526180,
+          "incassi_correnti": 620847,
+          "incassi_correnti_ex_tributari": 94667,
+          "pagamenti_correnti": 634104,
+          "interessi_passivi": 98198,
+          "pagamenti_correnti_ex_interest": 535906,
+          "pagamenti_conto_capitale": 130397,
+          "saldo": -127862
+        },
+        "2027": {
+          "tributari": 543525,
+          "incassi_correnti": 637673,
+          "incassi_correnti_ex_tributari": 94148,
+          "pagamenti_correnti": 639736,
+          "interessi_passivi": 102853,
+          "pagamenti_correnti_ex_interest": 536883,
+          "pagamenti_conto_capitale": 87311,
+          "saldo": -90304
+        }
+      }
+    },
+    {
+      "id": "DFP_2025",
+      "published": "2025-04-09",
+      "doc": "DFP 2025 Sezione II Tavole",
+      "file": "data/it/plan/Tavole_DFP-2025.xlsx",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/attivita_istituzionali/previsione/contabilit_e_finanza_pubblica/documento_di_finanza_pubblica/Tavole_del_quadro_macro_econ_dei_conti_econ_e_di_cassa_DFP-2025.xlsx",
+      "tables": "III.1-4 outturn / III.2-2 previsioni (XLSX levels block)",
+      "pdf": "data/it/plan/DFP25-Sez-II.pdf",
+      "years": {
+        "2022": {
+          "tributari": 463469.0,
+          "incassi_correnti": 553807.0,
+          "incassi_correnti_ex_tributari": 90338.0,
+          "pagamenti_correnti": 579228.0,
+          "interessi_passivi": 64106.0,
+          "pagamenti_correnti_ex_interest": 515122.0,
+          "pagamenti_conto_capitale": 64627.0,
+          "saldo": -64717.0
+        },
+        "2023": {
+          "tributari": 490598.0,
+          "incassi_correnti": 588590.0,
+          "incassi_correnti_ex_tributari": 97992.0,
+          "pagamenti_correnti": 624812.0,
+          "interessi_passivi": 73998.0,
+          "pagamenti_correnti_ex_interest": 550814.0,
+          "pagamenti_conto_capitale": 89543.0,
+          "saldo": -107873.0
+        },
+        "2024": {
+          "tributari": 519191.0,
+          "incassi_correnti": 621835.0,
+          "incassi_correnti_ex_tributari": 102644.0,
+          "pagamenti_correnti": 633122.0,
+          "interessi_passivi": 82559.0,
+          "pagamenti_correnti_ex_interest": 550563.0,
+          "pagamenti_conto_capitale": 116607.0,
+          "saldo": -124563.0
+        },
+        "2025": {
+          "tributari": 529184.0,
+          "incassi_correnti": 627155.0,
+          "incassi_correnti_ex_tributari": 97971.0,
+          "pagamenti_correnti": 636269.0,
+          "interessi_passivi": 89794.0,
+          "pagamenti_correnti_ex_interest": 546475.0,
+          "pagamenti_conto_capitale": 130020.0,
+          "saldo": -129508.0
+        },
+        "2026": {
+          "tributari": 538416.0,
+          "incassi_correnti": 634771.0,
+          "incassi_correnti_ex_tributari": 96355.0,
+          "pagamenti_correnti": 635237.0,
+          "interessi_passivi": 93832.0,
+          "pagamenti_correnti_ex_interest": 541405.0,
+          "pagamenti_conto_capitale": 139913.0,
+          "saldo": -123188.0
+        },
+        "2027": {
+          "tributari": 556018.0,
+          "incassi_correnti": 651806.0,
+          "incassi_correnti_ex_tributari": 95788.0,
+          "pagamenti_correnti": 656227.0,
+          "interessi_passivi": 98377.0,
+          "pagamenti_correnti_ex_interest": 557850.0,
+          "pagamenti_conto_capitale": 99062.0,
+          "saldo": -103558.0
+        }
+      }
+    },
+    {
+      "id": "DFP_2026",
+      "published": "2026-04-22",
+      "doc": "DFP 2026 Sezione II Tavole",
+      "file": "data/it/plan/Tavole-DFP-2026-Sezione-II.xlsx",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/attivita_istituzionali/previsione/contabilit_e_finanza_pubblica/documento_di_finanza_pubblica/Tavole-DFP-2026-Sezione-II.xlsx",
+      "tables": "III.1-4 outturn / III.2-2 previsioni (XLSX levels block)",
+      "pdf": "data/it/plan/DFP26-file-unico.pdf",
+      "years": {
+        "2023": {
+          "tributari": 490598.0,
+          "incassi_correnti": 588587.0,
+          "incassi_correnti_ex_tributari": 97989.0,
+          "pagamenti_correnti": 624812.0,
+          "interessi_passivi": 73998.0,
+          "pagamenti_correnti_ex_interest": 550814.0,
+          "pagamenti_conto_capitale": 89543.0,
+          "saldo": -107876.0
+        },
+        "2024": {
+          "tributari": 522746.03,
+          "incassi_correnti": 622277.26,
+          "incassi_correnti_ex_tributari": 99531.23,
+          "pagamenti_correnti": 633399.25,
+          "interessi_passivi": 82558.73,
+          "pagamenti_correnti_ex_interest": 550840.52,
+          "pagamenti_conto_capitale": 116761.73,
+          "saldo": -124562.9
+        },
+        "2025": {
+          "tributari": 534173.08,
+          "incassi_correnti": 635613.75,
+          "incassi_correnti_ex_tributari": 101440.67,
+          "pagamenti_correnti": 638917.24,
+          "interessi_passivi": 89775.4,
+          "pagamenti_correnti_ex_interest": 549141.84,
+          "pagamenti_conto_capitale": 129341.52,
+          "saldo": -122642.0
+        },
+        "2026": {
+          "tributari": 545627.66,
+          "incassi_correnti": 645895.6,
+          "incassi_correnti_ex_tributari": 100267.94,
+          "pagamenti_correnti": 652835.49,
+          "interessi_passivi": 95597.31,
+          "pagamenti_correnti_ex_interest": 557238.18,
+          "pagamenti_conto_capitale": 141810.38,
+          "saldo": -131738.33
+        },
+        "2027": {
+          "tributari": 564847.78,
+          "incassi_correnti": 671038.18,
+          "incassi_correnti_ex_tributari": 106190.4,
+          "pagamenti_correnti": 659687.13,
+          "interessi_passivi": 99107.56,
+          "pagamenti_correnti_ex_interest": 560579.57,
+          "pagamenti_conto_capitale": 117080.1,
+          "saldo": -109670.54
+        },
+        "2028": {
+          "tributari": 575908.62,
+          "incassi_correnti": 677771.98,
+          "incassi_correnti_ex_tributari": 101863.36,
+          "pagamenti_correnti": 663161.72,
+          "interessi_passivi": 102074.35,
+          "pagamenti_correnti_ex_interest": 561087.37,
+          "pagamenti_conto_capitale": 86762.57,
+          "saldo": -71983.87
+        },
+        "2029": {
+          "tributari": 596719.61,
+          "incassi_correnti": 699180.39,
+          "incassi_correnti_ex_tributari": 102460.78,
+          "pagamenti_correnti": 675310.49,
+          "interessi_passivi": 106312.51,
+          "pagamenti_correnti_ex_interest": 568997.98,
+          "pagamenti_conto_capitale": 75828.8,
+          "saldo": -47665.94
+        }
+      }
+    }
+  ],
+  "fetch_log": {
+    "DFP_2026_xlsx": "HIT https://www.rgs.mef.gov.it/.../Tavole-DFP-2026-Sezione-II.xlsx",
+    "DFP_2025_xlsx": "HIT .../Tavole_del_quadro_macro_econ_dei_conti_econ_e_di_cassa_DFP-2025.xlsx",
+    "DEF_2024_sez_ii_pdf": "HIT .../DEF/2024/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf (no XLSX Tavole)",
+    "DEF_2021_sez_ii_pdf": "HIT .../DEF/2021/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf",
+    "DEF_2020_sez_ii_pdf": "HIT .../DEF/2020/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf (outturn IV.1-4 only — no IV.2-2 forecast)",
+    "DEF_2022_sez_ii": "MISS RGS DEF/2022/Sez-II-*.pdf (HTML 404); DT year page has Programma di Stabilità / PNR only — no Sez II cash Tavole XLSX",
+    "DEF_2023_sez_ii": "MISS RGS DEF/2023/Sez-II-*.pdf; DT year page same gap",
+    "NADEF_archiv": "MEF nadef/index.html lists 2011–2023 HTML stubs; no machine-readable cash central Tavole linked",
+    "finanze_cassa_xlsx": "HIT https://www.finanze.gov.it/.../Base_dati_entrate_CP_CS_x_DPF_aggiornata_agosto2026_cassa.xlsx (IRPEF/IRES/IVA monthly 2002→; erarial totale ~+4% vs BdI tax_rev — not identity-compatible levels)",
+    "mef_fabbisogno_monthly": "existing it/sources.py — headline only, no tax split",
+    "bdi_t1": "existing — aggregate tax_rev only"
+  },
+  "finanze_tax_cassa": {
+    "file": "data/it/tax/Base_dati_entrate_cassa_agosto2026.xlsx",
+    "url": "https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/entrate_tributarie_2026/Base_dati_entrate_CP_CS_x_DPF_aggiornata_agosto2026_cassa.xlsx",
+    "note": "Erarial cash IRPEF/IRES/IVA monthly. Annual totale ≈ BdI tax_rev × 1.04 — different perimeter; not wired as BdI tax_rev levels. Shape-only split not yet PRE-cleared.",
+    "span": "2002-01 → 2026-08"
+  },
+  "frontier_inventory_2026_10_20b": {
+    "verdict": "NO-SHIP change — SHIP intact at OOS 10.435 (−7.4%). Vintages added; share allocation rejected.",
+    "vintages_added": [
+      {
+        "id": "DEF_2021",
+        "published": "2021-04-15",
+        "file": "data/it/plan/DEF21-Sez-II.pdf",
+        "years": "2020–2024"
+      },
+      {
+        "id": "DEF_2024",
+        "published": "2024-04-09",
+        "file": "data/it/plan/DEF24-Sez-II.pdf",
+        "years": "2023–2027"
+      },
+      {
+        "id": "DFP_2025",
+        "published": "2025-04-09",
+        "file": "data/it/plan/Tavole_DFP-2025.xlsx",
+        "years": "2022–2027"
+      },
+      {
+        "id": "DFP_2026",
+        "published": "2026-04-22",
+        "file": "data/it/plan/Tavole-DFP-2026-Sezione-II.xlsx",
+        "years": "2023–2029"
+      }
+    ],
+    "dfp_share_trials": {
+      "full_all_cats": "OOS 50.85 (+351%) — fail band",
+      "soft_0.25": "OOS 16.81 — fail band",
+      "soft_0.5": "OOS 27.76 — fail band",
+      "tax_rev_only": "OOS 64.43",
+      "cap_exp_only": "OOS 49.43",
+      "primary_only": "OOS 62.72",
+      "interest_only": "OOS 14.25 — fail band",
+      "other_rev_only": "clears PRE+OOS band but OOS 10.71 > SHIP 10.435 — reject"
+    },
+    "pre_coverage": "0/50 clean PRE origins — May–Dec-2021 vintages known but every such origin touches COVID EXCL",
+    "oos_coverage_if_on": "39/43 OOS origins",
+    "tax_split": {
+      "found": "Finanze Base_dati_*_cassa.xlsx IRPEF/IRES/IVA monthly 2002→",
+      "block": "Erarial totale ≈ BdI tax_rev × 1.04 — levels not identity-safe; not wired"
+    },
+    "def_gap": {
+      "missing": "DEF 2022/2023 Sez II PDF/XLSX at RGS DEF/{y}/Sez-II-* and DT documenti_programmatici year pages (Programma di Stabilità / PNR only). DEF 2020 PDF has IV.1-4 outturn only (no IV.2-2 forecast)."
+    },
+    "urls_tried": {
+      "DFP_2026_xlsx": "HIT https://www.rgs.mef.gov.it/.../Tavole-DFP-2026-Sezione-II.xlsx",
+      "DFP_2025_xlsx": "HIT .../Tavole_del_quadro_macro_econ_dei_conti_econ_e_di_cassa_DFP-2025.xlsx",
+      "DEF_2024_sez_ii_pdf": "HIT .../DEF/2024/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf (no XLSX Tavole)",
+      "DEF_2021_sez_ii_pdf": "HIT .../DEF/2021/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf",
+      "DEF_2020_sez_ii_pdf": "HIT .../DEF/2020/Sez-II-AnalisiETendenzeDellaFinanzaPubblica.pdf (outturn IV.1-4 only — no IV.2-2 forecast)",
+      "DEF_2022_sez_ii": "MISS RGS DEF/2022/Sez-II-*.pdf (HTML 404); DT year page has Programma di Stabilità / PNR only — no Sez II cash Tavole XLSX",
+      "DEF_2023_sez_ii": "MISS RGS DEF/2023/Sez-II-*.pdf; DT year page same gap",
+      "NADEF_archiv": "MEF nadef/index.html lists 2011–2023 HTML stubs; no machine-readable cash central Tavole linked",
+      "finanze_cassa_xlsx": "HIT https://www.finanze.gov.it/.../Base_dati_entrate_CP_CS_x_DPF_aggiornata_agosto2026_cassa.xlsx (IRPEF/IRES/IVA monthly 2002→; erarial totale ~+4% vs BdI tax_rev — not identity-compatible levels)",
+      "mef_fabbisogno_monthly": "existing it/sources.py — headline only, no tax split",
+      "bdi_t1": "existing — aggregate tax_rev only"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Tooling for the whole repo. Dependencies stay in requirements.txt.
+# pytest settings stay per folder (us/fiscal/pytest.ini sets that suite's import root).
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [
+    ".venv", "**/experiments/**", "**/cache/**", "**/derived/**", "**/__pycache__/**",
+]
+
+[tool.ruff.lint]
+# pyflakes, pycodestyle errors, import order, bugbear, pyupgrade
+select = ["F", "E", "I", "B", "UP"]
+ignore = ["E501", "B008", "B905"]  # zip(strict=) is not required here
+
+[tool.ruff.lint.isort]
+known-first-party = ["sovereign_cash", "issuance", "us", "uk_flows", "correlations", "portal"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true
+# strict where the code is new; the rest of the repo is checked as it is touched
+files = ["sovereign_cash/scenarios/engine.py", "sovereign_cash/equations", "sovereign_cash/web/pages.py"]

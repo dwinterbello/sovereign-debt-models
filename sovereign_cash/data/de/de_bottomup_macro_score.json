@@ -1,0 +1,492 @@
+{
+  "ship": true,
+  "ship_reason": "PRE mean MAE macro 6.20 vs live/v1 6.61 (6.2% better), worse at 0/4 horizons; SHIP",
+  "version": "v2_macro",
+  "edge": 0.05,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "production_benchmark": "v1 bottom_up Soll\u00d7hist then smly",
+  "planhc_note": "not PRE-gated; a priori debt-brake / Sonderverm\u00f6gen pin; score-table residual only when macro ships",
+  "open_mode": "soll",
+  "open_ytd_weight_exp": 0.2,
+  "open_ytd_weight_rev": 0.05,
+  "later_rev_beta": 1.0,
+  "later_primary_beta": 0.0,
+  "later_interest_beta": 2.0,
+  "later_interest_mode": "coupon_stock",
+  "t1_sozial_wages_beta": 0.35,
+  "pre_mean_macro": 6.195103711343862,
+  "pre_mean_production": 6.607136949232755,
+  "oos_mean_macro": 7.36657896281845,
+  "oos_mean_production": 10.005296483098995,
+  "pre_by_h": {
+    "1": {
+      "n": 30,
+      "macro": 2.745648394957053,
+      "production": 2.904627225833346
+    },
+    "3": {
+      "n": 28,
+      "macro": 3.9934330398875573,
+      "production": 4.2249822162425525
+    },
+    "6": {
+      "n": 25,
+      "macro": 6.000089584639898,
+      "production": 6.372175965773509
+    },
+    "12": {
+      "n": 19,
+      "macro": 12.041243825890936,
+      "production": 12.926762389081611
+    }
+  },
+  "oos_by_h": {
+    "1": {
+      "n": 42,
+      "macro": 4.163046657798759,
+      "production": 4.484313176125035
+    },
+    "3": {
+      "n": 40,
+      "macro": 6.498306131073282,
+      "production": 6.990806380267388
+    },
+    "6": {
+      "n": 37,
+      "macro": 7.003517946171721,
+      "production": 8.621977152491896
+    },
+    "12": {
+      "n": 31,
+      "macro": 11.801445116230038,
+      "production": 19.924089223511665
+    }
+  },
+  "authority": {
+    "open_year": "open soll: Ausgaben \u00d7 (80% hist + 20% YTD); Einnahmen \u00d7 (95% hist + 5% YTD)",
+    "later_revenue": "smly \u00d7 (1 + 1.0\u00b7NGDP_yoy)",
+    "later_primary": "smly \u00d7 (1 + w_sozial\u00b70.35\u00b7wages[y\u22121]); w_sozial from BMF MB T1 Aufgabenbereiche (primary ex t1_zins)",
+    "later_interest": "debt-book annual[y\u22121] \u00d7 carve month-share \u00d7 FA stock YoY^\u0394y \u00d7 (1 + 2.0\u00b7rates[y\u22121]/100)",
+    "leaf_priors": "a priori (Lohn/USt 1.0 NGDP, KSt 1.2, spend 1.0 CPI) \u2014 audit only",
+    "macro": {
+      "source": "AMECO/Eurostat nominal GDP YoY; IMF WEO / Eurostat HICP; Eurostat namq D1 wages; Finanzagentur stock + debt-book effective interest rate",
+      "unit": "percent, calendar year",
+      "drivers": {
+        "ngdp": "nominal GDP YoY (Steuerabsch\u00e4tzung activity base; proxy for wages/profits/VAT)",
+        "cpi": "CPI / HICP (audit leaf prior on spend; production later primary CPI \u03b2=0)",
+        "wages": "Eurostat namq_10_gdp D1 compensation-of-employees YoY (T1 sozial overlay)",
+        "employment": "Eurostat namq_10_pe EMP_DC \u2014 tried on T1 sozial; PRE clears, OOS does not beat wages",
+        "rates": "central-government interest / debt \u00d7 100 (scales coupon-calendar interest)",
+        "fa_stock": "Finanzagentur total federal debt stock YoY (compounds later-year interest level)"
+      }
+    },
+    "plan_json": "special funds only (no PRE-clearing macro driver)",
+    "bmf_mb_tables": "T0 Bundeshaushalt totals (used); T1 Aufgabenbereiche (sozial share \u00d7 wages); T2 \u00f6konomische Arten (spend leaves); T3 Steuerarten (tax leaves); no Sonderverm\u00f6gen tables in HTML set",
+    "benchmark": "live core = v1 bottom_up Soll\u00d7hist-ratio then smly"
+  },
+  "rejects": [
+    "Leaf Soll\u00d7ratio open-year (unscaled) \u2014 PRE MAE ~4\u00d7 worse than aggregate Soll pin",
+    "Leaf month-shares on aggregate Soll pin \u2014 PRE edge 4.2% (<5%)",
+    "Scaled leaf Steuerarten renormalized to annual Soll/Ist pin \u2014 no-op on cumulative MAE (rest-of-year totals match pin; CORE leaves fire on \u226420% of PRE windows)",
+    "Later-year \u03a3 category smly \u2014 worse than v1 aggregate smly (coverage/residual)",
+    "Later-year category\u00d7NGDP/CPI OLS elasticity \u2014 unfit on PRE (Steuerarten from 2017; need \u22656 years)",
+    "Pure YTD Ist/Soll ratio (w=1) \u2014 PRE mean ~2\u00d7 worse than hist",
+    "Equal open YTD w=0.15 + later primary CPI \u03b2=0.5 \u2014 cleared PRE but OOS 8.89 vs 7.54 for asymmetric/\u03b2_p=0",
+    "Later-year primary CPI \u03b2\u2208{0.25,0.5,0.75,1.0} \u2014 PRE-ok subset; all worse OOS than \u03b2=0",
+    "Primary later on NGDP instead of CPI \u2014 no OOS gain over CPI grid once \u03b2_p=0",
+    "Interest smly\u00d7rates bi=1 \u2014 cleared; coupon\u00d7FA-stock bi\u2208{0\u20262} better OOS (ship bi=2)",
+    "BMF Zinsausgaben leaf as interest \u2014 PRE fails (~\u221260% edge)",
+    "Special-fund borrowing drivers \u2014 SVIK/SVBw zero in PRE; FMS/WSF flat beats smly OOS but no PRE-clearing driver for plan funds; plan.json annuals only",
+    "T1 \u03a3 category smly / free-level paths \u2014 PRE fails or worse\u22641 violated; renorm-to-primary annual pin = cumulative MAE no-op (OOS ties prior ship)",
+    "T1 sozial\u00d7employment overlay \u2014 PRE clears but OOS \u22657.45 (no beat vs coupon\u00d7stock ship)",
+    "T1 sozial\u00d7NGDP / rest\u00d7CPI overlays \u2014 PRE clears; OOS worse than wages \u03b2=0.35",
+    "T1 sozial\u00d7wages \u03b2=1.0 \u2014 PRE +6.7% but OOS 7.54 > 7.45 prior",
+    "Aggregate YoY NGDP/CPI on revenue/primary without open-year blend \u2014 loses/ties PRE",
+    "Monthly SARIMAX + HICP/NGDP \u2014 not selected on PRE (v1 note)"
+  ],
+  "category_audit": [
+    {
+      "category": "lohnsteuer",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "veranlagte_est",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "nicht_veranlagte",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "abgeltung",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "kst",
+      "driver": "ngdp",
+      "prior_beta": 1.2,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.2 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "ust",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "gewerbeumlage",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "soli",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "energie",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "tabak",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "versicherung",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "strom",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "kfz",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "alkohol",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "kaffee",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "luft",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "sonstige_bundessteuern",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 90,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "mindeststeuer",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 1,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "konsolidierung",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 0,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "ergaenzung",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 17,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "bne_eu",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 17,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "mwst_eu",
+      "driver": "ngdp",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on ngdp",
+      "production_role": "feeds aggregate revenue prior (NGDP \u03b2=1.0 on total Einnahmen)",
+      "n_months": 17,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "kunststoff_eu",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 0,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "opnv",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 17,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "kfz_lkw",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 17,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "sonstige_einnahmen",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "smly / plan only; not in aggregate macro scale",
+      "n_months": 110,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "personal",
+      "driver": "cpi",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on cpi",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "sachaufwand",
+      "driver": "cpi",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on cpi",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "zins",
+      "driver": "rates",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on rates",
+      "production_role": "carved via interest_split; later coupon\u00d7FA-stock \u00d7 (1 + 2.0\u00b7rates)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "zuweisungen",
+      "driver": "cpi",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on cpi",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "sonst_vermoegen",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "investiv",
+      "driver": "cpi",
+      "prior_beta": 1.0,
+      "rule": "open-year: soll (spend 80% hist+20% YTD; rev 95% hist+5% YTD); later leaf prior \u03b2=1.0 on cpi",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "global",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "open-year aggregate pin; later smly (no determinant)",
+      "production_role": "feeds aggregate primary; later smly \u00d7 T1 sozial\u00d7wages overlay (\u03b2=0.35)",
+      "n_months": 103,
+      "authority": "BMF Monatsbericht T1/T2/T3; priors a priori"
+    },
+    {
+      "category": "t1_allg_dienste",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_bildung",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_sozial",
+      "driver": "wages",
+      "prior_beta": 0.35,
+      "rule": "later primary \u00d7 (1 + share\u00b70.35\u00b7wages); share=0.538",
+      "production_role": "SHIPPED: weight on later primary growth",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_gesundheit",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_wohnen",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_ernaehrung",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_energie_gewerbe",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_verkehr",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    },
+    {
+      "category": "t1_allg_finanz",
+      "driver": NaN,
+      "prior_beta": NaN,
+      "rule": "T1 share inventory only; not a free leaf path",
+      "production_role": "T1 top-level; share used only for sozial weight",
+      "n_months": 116,
+      "authority": "BMF Monatsbericht T1 Ausgaben nach Aufgabenbereichen"
+    }
+  ]
+}

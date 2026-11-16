@@ -1,0 +1,207 @@
+{
+ "asof": "2026-11-12",
+ "levels_bn": {
+  "rev_UB": 1653.754,
+  "rev_CB": 702.068,
+  "rev_CBSP": 644.997,
+  "rev_GCF": 31.88,
+  "rev_TRI": 11.568,
+  "repo_UB": 1276.976,
+  "repo_CB": 711.243,
+  "repo_CBSP": 132.76,
+  "repo_GCF": 16.655,
+  "repo_TRI": 1285.761,
+  "rev_sum": 3044.2670000000003,
+  "repo_sum": 3423.3950000000004
+ },
+ "ub_share": {
+  "rev": 0.5432355309176231,
+  "repo": 0.37301450752834536
+ },
+ "ub_share_1y_ago": {
+  "rev": 0.5263852611924574,
+  "repo": 0.3723044379251617
+ },
+ "ub_share_first": {
+  "rev": 0.6047145371214641,
+  "repo": 0.4718680853079434
+ },
+ "netting_capacity_bn": 1276.976,
+ "sizing": [
+  {
+   "migration": 0.5,
+   "im_rate": 0.01,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 8.26877,
+   "repo_cost_bp": 0.5
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.01,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 8.26877,
+   "repo_cost_bp": 1.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.01,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 8.26877,
+   "repo_cost_bp": 1.5
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.02,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 1.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.02,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 2.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.02,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 3.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.04,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 2.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.04,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 4.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.04,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 6.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.06,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 49.61261999999999,
+   "repo_cost_bp": 3.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.06,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 49.61261999999999,
+   "repo_cost_bp": 6.0
+  },
+  {
+   "migration": 0.5,
+   "im_rate": 0.06,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 49.61261999999999,
+   "repo_cost_bp": 9.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.01,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 0.5
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.01,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 1.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.01,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 16.53754,
+   "repo_cost_bp": 1.5
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.02,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 1.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.02,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 2.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.02,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 33.07508,
+   "repo_cost_bp": 3.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.04,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 66.15016,
+   "repo_cost_bp": 2.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.04,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 66.15016,
+   "repo_cost_bp": 4.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.04,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 66.15016,
+   "repo_cost_bp": 6.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.06,
+   "fund_spread_bp": 50.0,
+   "margin_bn": 99.22523999999999,
+   "repo_cost_bp": 3.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.06,
+   "fund_spread_bp": 100.0,
+   "margin_bn": 99.22523999999999,
+   "repo_cost_bp": 6.0
+  },
+  {
+   "migration": 1.0,
+   "im_rate": 0.06,
+   "fund_spread_bp": 150.0,
+   "margin_bn": 99.22523999999999,
+   "repo_cost_bp": 9.0
+  }
+ ],
+ "central": {
+  "im_rate": 0.02,
+  "fund_spread_bp": 100.0,
+  "migration": 1.0,
+  "margin_bn": 33.07508,
+  "repo_cost_bp": 2.0
+ }
+}

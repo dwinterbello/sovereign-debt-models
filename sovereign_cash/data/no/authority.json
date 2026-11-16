@@ -1,0 +1,40 @@
+{
+  "note": "Norway fiscal authority paths for bottom-up macro (v2). Cash identity is Norges Bank Tab4 → Tab1 government accounts. MoF National Budget / petroleum fund annuals are not yet machine-readable here; live category history is Tab4. Macro determinants: SSB mainland GDP (09190), Brent (FRED DCOILBRENTEU / correlations panel), NB policy rate.",
+  "non_oil_deficit": {
+    "source": "MoF National Budget / Revised National Budget (strukturelt, oljekorrigert underskudd) — hand-enter when scraped",
+    "unit": "NOK bn, calendar year",
+    "years": {},
+    "note": "Empty until MoF tables are entered. Beyond-NB path does not pin to MoF annuals yet; NB liquidity forecast pins inside its published horizon."
+  },
+  "macro": {
+    "mainland_gdp": {
+      "source": "SSB table 09190 Makrost=bnpb.nr23_9fn ContentsCode=Priser (current prices, NOK mn, quarterly)",
+      "cache": "data/no/mainland_gdp.parquet",
+      "use": "YoY of monthly-ffilled level → additive residual driver for mainland Tab4 lines"
+    },
+    "brent": {
+      "source": "FRED DCOILBRENTEU / correlations/derived/macro_panel_monthly.csv brent_usd",
+      "use": "12m YoY → unit pass-through on oil_tax and sdfi (petroleum cash)"
+    },
+    "policy_rate": {
+      "source": "Norges Bank IR B.KPRA.SD.R (data/no/policy_rate.parquet)",
+      "use": "12m change screened for other_net; PRE category MAE does not beat smly — left smly"
+    }
+  },
+  "elasticities": {
+    "source": "Agency priors + PRE-gated expanding OLS (additive residual on driver). No MoF ready-reckoner coefficients published in-repo.",
+    "oil_tax": {"driver": "brent_yoy", "rule": "unit_mult", "note": "Petroleum tax cash scales with oil price YoY on smly base; a priori (category MAE also beats smly)"},
+    "sdfi": {"driver": "brent_yoy", "rule": "unit_mult", "note": "SDFI a priori unit_mult with oil_tax (category MAE loses to smly; gating sdfi to smly kills headline PRE)"},
+    "vat": {"driver": "mainland_gdp_yoy", "rule": "add_expanding", "weight": 0.5, "note": "PRE category MAE beats smly; residual × MAINLAND_RESID_WEIGHT"},
+    "tax_net": {"driver": "mainland_gdp_yoy", "rule": "add_expanding", "weight": 0.5, "note": "PRE category MAE beats smly; residual × MAINLAND_RESID_WEIGHT"},
+    "nav": {"driver": "mainland_gdp_yoy", "rule": "add_expanding", "weight": 0.5, "note": "PRE category MAE beats smly; residual × MAINLAND_RESID_WEIGHT"},
+    "health": {"driver": "mainland_gdp_yoy", "rule": "add_expanding", "weight": 0.5, "note": "PRE category MAE beats smly; residual × MAINLAND_RESID_WEIGHT"},
+    "customs_excise": {"driver": "mainland_gdp_yoy", "rule": "smly", "note": "Expanding OLS loses PRE category MAE to smly — calendar/excise steps dominate"},
+    "local_authorities": {"driver": "mainland_gdp_yoy", "rule": "add_expanding", "weight": 0.5, "note": "With MAINLAND_RESID_WEIGHT=0.5, PRE category MAE beats smly (at w=1 it lost)"},
+    "other_net": {"driver": "policy_rate_d12", "rule": "smly", "note": "Heterogeneous residual (incl. interest/one-offs); rate OLS loses PRE"}
+  },
+  "nb_pin": {
+    "source": "Norges Bank LIQUIDITY_FORECAST FCAST_S vintages",
+    "rule": "Inside the latest vintage path, cash_requirement_bottomup_bn = production NB residual. Macro Tab4 sum only beyond that horizon."
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><title>Sovereign financing</title><style>
+html, body { height: 100%; margin: 0; }
+body { font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1d2433; }
+.hub { display: flex; flex-direction: column; height: 100%; }
+nav { display: flex; gap: 2px; padding: 6px 12px 0; background: #f5f7fa; }
+nav.main { border-bottom: 1px solid #d8dde6; }
+nav.sub { display: none; border-bottom: 1px solid #d8dde6; padding-top: 0; }
+nav.sub.on { display: flex; }
+nav a { font: 600 11px/1 ui-monospace, Menlo, monospace; letter-spacing: .06em; text-transform: uppercase;
+  color: #6b7385; padding: 8px 12px; border: 1px solid transparent; border-bottom: none; text-decoration: none; cursor: pointer; }
+nav.sub a { text-transform: none; letter-spacing: 0; font-weight: 600; }
+nav a.on { color: #1d2433; border-color: #d8dde6; background: #fff; margin-bottom: -1px; }
+main { flex: 1; position: relative; }
+main iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: none; }
+main iframe.on { display: block; }
+</style></head>
+<body><div class="hub">
+<nav class="main"><a data-g="overview" href="#overview">Overview</a><a data-g="shocks" href="#shocks">Shock scenarios</a><a data-g="methods" href="#methods">Methodology</a><a data-g="us" href="#us">US</a><a data-g="cash" href="#cash">Cash</a><a data-g="debt" href="#debt">Debt stock</a></nav>
+<nav class="sub" id="sub-us"><a data-k="us-cash" data-g="us" href="#us-cash">Cash</a><a data-k="us-flows" data-g="us" href="#us-flows">Flows</a><a data-k="us-ceiling" data-g="us" href="#us-ceiling">Ceiling</a></nav><nav class="sub" id="sub-cash"><a data-k="fytd" data-g="cash" href="#fytd">FYTD</a><a data-k="uk" data-g="cash" href="#uk">UK</a><a data-k="de" data-g="cash" href="#de">Germany</a><a data-k="fr" data-g="cash" href="#fr">France</a><a data-k="it" data-g="cash" href="#it">Italy</a><a data-k="se" data-g="cash" href="#se">Sweden</a><a data-k="no" data-g="cash" href="#no">Norway</a><a data-k="es" data-g="cash" href="#es">Spain</a></nav>
+<main><iframe id="f-overview" data-src="sovereign_cash_overview.html" title="Overview"></iframe><iframe id="f-shocks" data-src="shock_dashboard.html" title="Shock scenarios"></iframe><iframe id="f-methods" data-src="methodology.html" title="Methodology"></iframe><iframe id="f-us-cash" data-src="../us/fiscal/tga_deficit_dashboard.html" title="Cash"></iframe><iframe id="f-us-flows" data-src="../us/fiscal/tga_components_dashboard.html" title="Flows"></iframe><iframe id="f-us-ceiling" data-src="../us/fiscal/tga_ceiling_dashboard.html" title="Ceiling"></iframe><iframe id="f-fytd" data-src="fytd_cash_dashboard.html" title="FYTD"></iframe><iframe id="f-uk" data-src="uk_cash_dashboard.html" title="UK"></iframe><iframe id="f-de" data-src="de_cash_dashboard.html" title="Germany"></iframe><iframe id="f-fr" data-src="fr_cash_dashboard.html" title="France"></iframe><iframe id="f-it" data-src="it_cash_dashboard.html" title="Italy"></iframe><iframe id="f-se" data-src="se_cash_dashboard.html" title="Sweden"></iframe><iframe id="f-no" data-src="no_cash_dashboard.html" title="Norway"></iframe><iframe id="f-es" data-src="es_cash_dashboard.html" title="Spain"></iframe><iframe id="f-debt" data-src="debt_supply_dashboard.html" title="Debt stock"></iframe></main>
+</div>
+<script>
+const DEFAULT = {'overview': 'overview', 'shocks': 'shocks', 'methods': 'methods', 'us': 'us-cash', 'cash': 'fytd', 'debt': 'debt'};
+const GROUP = {'overview': 'overview', 'shocks': 'shocks', 'methods': 'methods', 'us-cash': 'us', 'us-flows': 'us', 'us-ceiling': 'us', 'fytd': 'cash', 'uk': 'cash', 'de': 'cash', 'fr': 'cash', 'it': 'cash', 'se': 'cash', 'no': 'cash', 'es': 'cash', 'debt': 'debt'};
+function show(raw) {
+  let k = raw && GROUP[raw] ? raw : (raw && DEFAULT[raw] ? DEFAULT[raw] : "overview");
+  const g = GROUP[k];
+  document.querySelectorAll("nav.main a").forEach(a => a.classList.toggle("on", a.dataset.g === g));
+  document.querySelectorAll("nav.sub").forEach(n => n.classList.toggle("on", n.id === "sub-" + g));
+  document.querySelectorAll("nav.sub a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
+  document.querySelectorAll("main iframe").forEach(f => {
+    const on = f.id === "f-" + k;
+    if (on && !f.getAttribute("src")) f.src = f.dataset.src;
+    f.classList.toggle("on", on);
+  });
+}
+window.addEventListener("hashchange", () => show(location.hash.slice(1)));
+show(location.hash.slice(1));
+</script></body></html>

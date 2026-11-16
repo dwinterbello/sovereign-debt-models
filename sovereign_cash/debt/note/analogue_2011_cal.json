@@ -1,0 +1,42 @@
+{
+  "asof": "2026-10-24",
+  "sources": {
+    "spreads": "issuance/cache/egb_daily.parquet (CNBC vendor 10y closes; FR−DE)",
+    "holders": "IMF Sovereign Debt Investor Base (Arslanalp–Tsuda) via issuance.imf_investor_base.wide",
+    "cover": "issuance/cache/ops_fr.parquet / ops_it.parquet (btc; IT values >20 treated as ×100)"
+  },
+  "spreads_bp_10y_vs_bund": {
+    "IT_peak_2011": 552,
+    "ES_peak_2011": 486,
+    "FR_peak_2011": 208,
+    "FR_peak_2011_date": "2011-11-17",
+    "FR_H2_2011_mean": 75,
+    "FR_2026_06_end": 66,
+    "FR_live_tape_note": 175
+  },
+  "imf_foreign_private_d4q_pct_gdp": {
+    "IT_2011Q3": -5.4,
+    "IT_2011Q4": -7.5,
+    "IT_2012Q1": -11.8,
+    "ES_2011Q4": -3.9,
+    "ES_2012Q1": -10.0,
+    "FR_2011Q4": -0.8,
+    "FR_2012Q1": 3.4
+  },
+  "imf_foreign_private_share_pct_of_gg": {
+    "IT_2011Q2": 36,
+    "IT_2012Q1": 25,
+    "ES_2011Q2": 33,
+    "ES_2012Q1": 17,
+    "FR_2011Q2": 32,
+    "FR_2011Q4": 29,
+    "FR_2025Q4": 36
+  },
+  "auction_cover_size_weighted_medium_long": {
+    "FR_H2_2011": 2.3,
+    "FR_Aug_Oct_2026": 2.51,
+    "FR_Oct_2026_note": 2.29,
+    "IT_2011_median": 1.35
+  },
+  "verdict": "FR 2026 = IT/ES-2011 buyer-stack geometry + FR-2011 spread level. Not IT-2011 spread level. FR-2011 was sympathy (foreign sleeve did not exit OATs)."
+}

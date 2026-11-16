@@ -1,0 +1,82 @@
+{
+ "unit": "EUR bn, calendar years; values are each item's effect on borrowing (+ adds), or for a spending plan its level",
+ "items": [
+  {
+   "label": "Defence ramp (NATO definition)",
+   "head": "spend",
+   "kind": "level",
+   "values": {
+    "2025": 98,
+    "2026": 126,
+    "2027": 160,
+    "2028": 171,
+    "2029": 181,
+    "2030": 201
+   },
+   "event": "Finanzplan 2026-2030 (cabinet 6 July 2026); defence exempt from the debt rule (Art. 109/115 GG, March 2025)",
+   "source": "Finanzplan 2026-2030: federal defence spending on the NATO definition (Einzelplan 14, Sondervermögen Bundeswehr and other defence items), as charted in KfW Research, Chartbook Bundeshaushalt, August 2026",
+   "url": "https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/KfW-Research-Chartbook/KfW-Research-Chartbook-Bundeshaushalt-August-2026.pdf"
+  },
+  {
+   "label": "Infrastructure special fund (SVIK)",
+   "head": "spend",
+   "kind": "level",
+   "grow": false,
+   "values": {
+    "2026": 58.1,
+    "2027": 54.9,
+    "2028": 56.7,
+    "2029": 57.9,
+    "2030": 52.2
+   },
+   "event": "Finanzplan 2026-2030 under the SVIK law (2025)",
+   "source": "Regierungsentwurf 2027 and Finanzplan to 2030, SVIK outflows as reported by the Bundestag (hib 553/2026). Held flat in money in the model's base (the special funds run at their run-rate), so not grown",
+   "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1193844"
+  },
+  {
+   "label": "Investment tax programme (depreciation, corporate tax cut)",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2025": 0.2,
+    "2026": 1.287,
+    "2027": 3.153,
+    "2028": 6.22,
+    "2029": 7.412
+   },
+   "event": "Gesetz für ein steuerliches Investitionssofortprogramm (July 2025)",
+   "source": "Bundestag Haushaltsausschuss report BT-Drs. 21/643 (the law as adopted): federal (Bund) revenue loss, cash years",
+   "url": "https://dserver.bundestag.de/btd/21/006/2100643.pdf"
+  },
+  {
+   "label": "Compensating municipalities for the tax programme (VAT share)",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2025": 0.248,
+    "2026": 1.616,
+    "2027": 3.804,
+    "2028": 4.921,
+    "2029": 2.95,
+    "2030": 0.0
+   },
+   "event": "FAG-Änderungsgesetz 2025 (municipal VAT fixed amounts raised, borne by the Bund)",
+   "source": "Bundestag Haushaltsausschuss report BT-Drs. 21/2253 on the FAG amendment (BT-Drs. 21/1892): the Bund's VAT loss from compensating municipalities, 13,539m over 2025-2029",
+   "url": "https://dserver.bundestag.de/btd/21/022/2102253.pdf"
+  },
+  {
+   "label": "Mütterrente III (Bund tax-financed grant)",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2027": 5.0,
+    "2028": 10.0,
+    "2029": 5.0,
+    "2030": 5.0
+   },
+   "event": "Rentenpaket 2025 / Mütterrente III (in force 1 Jan 2027; first payments 2028 with 2027 back-pay)",
+   "source": "Deutsche Rentenversicherung: ~€5bn a year from tax-financed Bund grant. 2028 carries 2027 arrears (~€10bn that year); thereafter ~€5bn. Bundesrechnungshof confirms the same order of magnitude",
+   "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2025/250806-statement-rentenpaket-muetterrente-III"
+  }
+ ]
+}

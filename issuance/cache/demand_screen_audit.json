@@ -1,0 +1,148 @@
+{
+  "asof": "2026-10-25",
+  "method": {
+    "buyer_tape": "evidence.verdict on \u2212flow \u2192 y[t+1:t+4]; forward link = \u03b2>0, t\u22652, loo, p_chance\u22640.10, oos_r2>0",
+    "flow_score": "matched f3l2 |t|\u22652 right sign (demand\u2191 \u2192 yield\u2193) or PRE t<-1; FR alone HAC(3)",
+    "habitat": "price_response HAC on 3m flow vs 3m \u0394sleeve-yield; EA private cells empty by construction",
+    "national_holders": "same evidence._fit on \u2212\u0394 share (4q FR / 12m IT) \u2192 next yield/spread change"
+  },
+  "buyer_tape": {
+    "forward_links_n": 4,
+    "forward_links_countries": [
+      "JP"
+    ],
+    "ea_shss_n_quarters": 18,
+    "ea_forward_links": 0,
+    "promote_for_FR_OAT_Bund": false
+  },
+  "habitat": {
+    "ea_legs": [
+      "official",
+      "supply"
+    ],
+    "ea_habitat_true_rows": 0,
+    "sensitive_only": "JP (regional_banks, trust_banks, agri_fin, mutual_aid)",
+    "promote_for_FR_OAT_Bund": false
+  },
+  "flow_score": {
+    "cached_gate": [
+      {
+        "signal": "score",
+        "t_full": -2.28,
+        "t_pre": -1.92,
+        "r_full": -0.146,
+        "ship": true,
+        "reason": "|t|\u22652 right sign"
+      },
+      {
+        "signal": "score_int",
+        "t_full": -1.76,
+        "t_pre": -1.3,
+        "r_full": -0.114,
+        "ship": true,
+        "reason": "PRE t<-1"
+      },
+      {
+        "signal": "score_long",
+        "t_full": 0.71,
+        "t_pre": 0.63,
+        "r_full": 0.024,
+        "ship": false,
+        "reason": "fail"
+      }
+    ],
+    "FR_alone_f3l2": {
+      "sprde": {
+        "score_t": 0.86,
+        "foreign_t": 1.34,
+        "auction_t": 0.23,
+        "official_t": -0.19
+      },
+      "lvl10": {
+        "score_t": 0.03,
+        "foreign_t": -0.95,
+        "auction_t": 0.92,
+        "official_t": -0.22
+      }
+    },
+    "promote_FR_spread_signal": false,
+    "note": "Pooled score ships; FR cross-section vs OAT\u2013Bund is null / wrong-sign \u2014 do not quote FR z as edge"
+  },
+  "national_holders_forward": [
+    {
+      "verdict": "no link",
+      "t": 1.104,
+      "beta_bp": 2.105,
+      "n_obs": 45,
+      "oos_r2": NaN,
+      "p_chance": 0.522,
+      "cc": "FR",
+      "y": "y10",
+      "holder": "rest_of_world"
+    },
+    {
+      "verdict": "no link",
+      "t": -0.058,
+      "beta_bp": -0.026,
+      "n_obs": 45,
+      "oos_r2": NaN,
+      "p_chance": 0.391,
+      "cc": "FR",
+      "y": "sprde",
+      "holder": "rest_of_world"
+    },
+    {
+      "verdict": "no link",
+      "t": -1.334,
+      "beta_bp": -1.619,
+      "n_obs": 305,
+      "oos_r2": 0.004,
+      "p_chance": 0.184,
+      "cc": "IT",
+      "y": "y10",
+      "holder": "rest_of_world"
+    },
+    {
+      "verdict": "no link",
+      "t": -0.152,
+      "beta_bp": -0.131,
+      "n_obs": 305,
+      "oos_r2": -0.006,
+      "p_chance": 0.569,
+      "cc": "IT",
+      "y": "sprde",
+      "holder": "rest_of_world"
+    }
+  ],
+  "FR_DET_descriptive_corr_dshare_dy": {
+    "y10": {
+      "full": {
+        "r": 0.026,
+        "n": 70
+      },
+      "2010-12": {
+        "r": -0.66,
+        "n": 12
+      },
+      "2022+": {
+        "r": -0.125,
+        "n": 18
+      }
+    },
+    "sprde": {
+      "full": {
+        "r": -0.138,
+        "n": 70
+      },
+      "2010-12": {
+        "r": -0.048,
+        "n": 12
+      },
+      "2022+": {
+        "r": -0.659,
+        "n": 18
+      }
+    }
+  },
+  "verdict": "FAIL promote. buyer_tape and habitat give no FR/EA predictive edge. National nonres share (DET/TCCE) fails evidence forward gate on y10 and sprde. Flow-score pooled ships; FR-alone vs OAT\u2013Bund does not. Keep DET/TCCE/BE paths as descriptive live tape only."
+}

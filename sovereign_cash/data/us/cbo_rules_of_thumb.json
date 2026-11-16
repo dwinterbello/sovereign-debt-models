@@ -1,0 +1,398 @@
+{
+ "source": "CBO, How Changes in Economic Conditions Might Affect the Federal Budget: 2026 to 2036 (April 2026), Tables 1-3",
+ "url": "https://www.cbo.gov/publication/62257",
+ "pdf": "https://www.cbo.gov/system/files/2026-04/62257-Rules-of-Thumb.pdf",
+ "retrieved": "2026-10-29",
+ "units": "USD bn, federal fiscal year (Oct-Sep). Sign: + = higher receipts / higher outlays; deficit_increase is + when the deficit rises (CBO prints the reverse).",
+ "asterisk_rule": "CBO '*' (between -0.5 and +0.5bn) stored as 0",
+ "shock_size_pp": 0.1,
+ "shock_start": "2026-01",
+ "years": [
+  2026,
+  2027,
+  2028,
+  2029,
+  2030,
+  2031,
+  2032,
+  2033,
+  2034,
+  2035,
+  2036
+ ],
+ "table1_2036_gaps_pct": {
+  "productivity": {
+   "real_gdp": -1.3,
+   "nominal_gdp": -1.3,
+   "labor_force": -0.2,
+   "t10_pp": -0.12,
+   "gdp_price": 0.0,
+   "eci": -1.1
+  },
+  "labor_force": {
+   "real_gdp": -0.8,
+   "nominal_gdp": -0.8,
+   "labor_force": -1.0,
+   "t10_pp": -0.07,
+   "gdp_price": 0.0,
+   "eci": 0.3
+  },
+  "rates": {
+   "real_gdp": 0.0,
+   "nominal_gdp": 0.0,
+   "labor_force": 0.0,
+   "t10_pp": 0.1,
+   "gdp_price": 0.0,
+   "eci": 0.0
+  },
+  "inflation_and_rates": {
+   "real_gdp": 0.0,
+   "nominal_gdp": 1.1,
+   "labor_force": 0.0,
+   "t10_pp": 0.1,
+   "gdp_price": 1.1,
+   "eci": 1.1
+  }
+ },
+ "scenarios": {
+  "productivity": {
+   "description": "Productivity growth 0.1pp slower each year from Jan 2026; unemployment and inflation unchanged",
+   "lines": {
+    "revenues": [
+     -5,
+     -13,
+     -21,
+     -31,
+     -41,
+     -52,
+     -64,
+     -76,
+     -90,
+     -105,
+     -122
+    ],
+    "outlays_mandatory": [
+     0,
+     -1,
+     -2,
+     -2,
+     -3,
+     -4,
+     -5,
+     -6,
+     -8,
+     -9,
+     -11
+    ],
+    "net_interest_rates": [
+     -1,
+     -4,
+     -9,
+     -14,
+     -19,
+     -25,
+     -31,
+     -37,
+     -43,
+     -49,
+     -56
+    ],
+    "net_interest_debt_service": [
+     0,
+     0,
+     1,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10
+    ],
+    "deficit_increase": [
+     4,
+     8,
+     12,
+     15,
+     20,
+     26,
+     31,
+     38,
+     46,
+     55,
+     65
+    ]
+   },
+   "totals_2027_2036": {
+    "revenues": -614,
+    "outlays_mandatory": -51,
+    "net_interest_rates": -287,
+    "net_interest_debt_service": 40,
+    "deficit_increase": 317
+   }
+  },
+  "labor_force": {
+   "description": "Labor force growth 0.1pp slower each year from Jan 2026; unemployment rate unchanged",
+   "lines": {
+    "revenues": [
+     -2,
+     -5,
+     -9,
+     -12,
+     -17,
+     -22,
+     -27,
+     -33,
+     -40,
+     -47,
+     -55
+    ],
+    "outlays_mandatory": [
+     0,
+     1,
+     1,
+     2,
+     2,
+     3,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "net_interest_rates": [
+     0,
+     -2,
+     -5,
+     -7,
+     -10,
+     -13,
+     -16,
+     -20,
+     -23,
+     -26,
+     -30
+    ],
+    "net_interest_debt_service": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     2,
+     2,
+     3,
+     4,
+     6
+    ],
+    "deficit_increase": [
+     2,
+     4,
+     5,
+     7,
+     10,
+     12,
+     16,
+     20,
+     25,
+     31,
+     37
+    ]
+   },
+   "totals_2027_2036": {
+    "revenues": -266,
+    "outlays_mandatory": 33,
+    "net_interest_rates": -153,
+    "net_interest_debt_service": 20,
+    "deficit_increase": 166
+   }
+  },
+  "rates": {
+   "description": "All interest rates 0.1pp higher in every year from Jan 2026; inflation and real variables unchanged",
+   "lines": {
+    "revenues": [
+     -2,
+     -2,
+     -2,
+     -1,
+     0,
+     0,
+     1,
+     1,
+     2,
+     2,
+     2
+    ],
+    "net_interest_rates": [
+     6,
+     13,
+     19,
+     23,
+     27,
+     31,
+     35,
+     39,
+     42,
+     45,
+     49
+    ],
+    "net_interest_debt_service": [
+     0,
+     1,
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     9,
+     11,
+     14
+    ],
+    "deficit_increase": [
+     8,
+     16,
+     21,
+     26,
+     31,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60
+    ]
+   },
+   "totals_2027_2036": {
+    "revenues": 4,
+    "net_interest_rates": 323,
+    "net_interest_debt_service": 60,
+    "deficit_increase": 379
+   }
+  },
+  "inflation_and_rates": {
+   "description": "All wage and price indexes 0.1pp faster and all interest rates 0.1pp higher each year from Jan 2026; real variables unchanged",
+   "lines": {
+    "revenues": [
+     2,
+     8,
+     15,
+     22,
+     29,
+     37,
+     45,
+     54,
+     63,
+     73,
+     83
+    ],
+    "outlays_mandatory": [
+     0,
+     3,
+     7,
+     11,
+     16,
+     21,
+     27,
+     33,
+     39,
+     46,
+     53
+    ],
+    "outlays_discretionary": [
+     0,
+     1,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     15,
+     17,
+     20
+    ],
+    "net_interest_rates": [
+     6,
+     13,
+     19,
+     23,
+     27,
+     31,
+     35,
+     39,
+     42,
+     45,
+     49
+    ],
+    "net_interest_inflation": [
+     2,
+     3,
+     1,
+     1,
+     2,
+     2,
+     1,
+     1,
+     1,
+     2,
+     2
+    ],
+    "net_interest_debt_service": [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3,
+     5,
+     6,
+     8,
+     9,
+     11
+    ],
+    "deficit_increase": [
+     6,
+     11,
+     16,
+     20,
+     24,
+     29,
+     33,
+     38,
+     42,
+     46,
+     51
+    ],
+    "net_interest_subtotal": [
+     8,
+     16,
+     21,
+     26,
+     31,
+     36,
+     41,
+     46,
+     51,
+     56,
+     62
+    ]
+   },
+   "totals_2027_2036": {
+    "revenues": 429,
+    "outlays_mandatory": 257,
+    "outlays_discretionary": 96,
+    "net_interest_rates": 323,
+    "net_interest_inflation": 16,
+    "net_interest_debt_service": 48,
+    "deficit_increase": 311,
+    "net_interest_subtotal": 387
+   }
+  }
+ },
+ "notes": {
+  "inflation_and_rates.net_interest_inflation": "derived as net_interest_subtotal - net_interest_rates - net_interest_debt_service; CBO rounds each line, so single years can differ by 1bn from the printed row"
+ }
+}

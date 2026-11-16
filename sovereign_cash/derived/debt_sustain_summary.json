@@ -1,0 +1,53 @@
+{
+  "asof": "2026-10-25",
+  "peers": [
+    "us",
+    "uk",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "jp",
+    "se"
+  ],
+  "horizon": 10,
+  "path_defs": {
+    "baseline": {
+      "rm_bp": 0,
+      "g_pp": 0.0,
+      "pb": "now",
+      "note": "Market r, WEO g, today's primary"
+    },
+    "plan": {
+      "rm_bp": 0,
+      "g_pp": 0.0,
+      "pb": "plan",
+      "note": "Same r/g, 2029 planned primary"
+    },
+    "soft": {
+      "rm_bp": -50,
+      "g_pp": 0.5,
+      "pb": "now",
+      "note": "\u221250bp r, +0.5pp g"
+    },
+    "stagflation": {
+      "rm_bp": 150,
+      "g_pp": -1.0,
+      "pb": "now",
+      "note": "+150bp r, \u22121pp g"
+    },
+    "austerity": {
+      "rm_bp": 0,
+      "g_pp": 0.0,
+      "pb": "halfway",
+      "note": "Primary halfway to debt-stabilising"
+    },
+    "politics_fail": {
+      "rm_bp": 100,
+      "g_pp": -0.5,
+      "pb": "now",
+      "note": "+100bp r, \u22120.5pp g, no PB move"
+    }
+  },
+  "honesty": "pressure is a cross-section rank, not a predicted break yield; panel has no stable 10y level beta on private supply"
+}

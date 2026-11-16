@@ -1,0 +1,100 @@
+{
+  "note": "Sweden fiscal authority paths. NBR annuals and borrowing plan from Riksgälden Statsupplåning. Monthly CH1089 splits primary / net lending / interest. Live cash = Riksgälden annual NBR × PRE seasonal month shape. v2 macro bottom-up: Budgetprop + KI + Statskontoret annuals, SCB categories × macro / CAT_SEAS month shape; RG pin only after category sum. SHIP=False (anchored PRE).",
+  "nbr_annual_balance": {
+    "source": "Riksgälden Statsupplåning – prognos och analys (Tabell 3 budget balance = −NBR)",
+    "unit": "SEK bn, calendar year (positive = surplus / negative = deficit)",
+    "years": {
+      "2025": {"bn": -103.0, "vintage": "Statsupplåning 2025:2 (last outcome 2025-10)"},
+      "2026": {"bn": -196.0, "vintage": "Statsupplåning 2026:1 (2026-05-28; last outcome 2026-04)"},
+      "2027": {"bn": -208.0, "vintage": "Statsupplåning 2026:1 (2026-05-28)"}
+    }
+  },
+  "nbr_components": {
+    "source": "Riksgälden QlikView Webb_Upplaning CH1089",
+    "unit": "SEK mn monthly, NBR sign (+ = borrowing)",
+    "rows": {
+      "Primärt saldo": "nbr_primary",
+      "Nettoutlåning till myndigheter m.fl.": "nbr_net_lending",
+      "Räntor på statsskulden": "nbr_interest",
+      "Nettolånebehov": "nbr"
+    },
+    "identity": "nbr = nbr_primary + nbr_net_lending + nbr_interest (resid ≤ 1 mn)"
+  },
+  "budgetprop": {
+    "source": "2026 års ekonomiska vårproposition (Spring Fiscal Policy Bill) — Statens budget i siffror / regeringen.se",
+    "vintage": "Vårpropositionen 2026",
+    "vintage_date": "2026-04-15",
+    "unit": "SEK bn, calendar year",
+    "url": "https://www.regeringen.se/sveriges-regering/finansdepartementet/statens-budget/statens-budget-i-siffror/",
+    "years": {
+      "2025": {
+        "tax_rev_bn": 1349.0,
+        "total_income_bn": 1304.0,
+        "spend_ex_interest_bn": 1372.0,
+        "interest_bn": 30.0,
+        "net_lending_bn": -1.0,
+        "cash_correction_bn": 4.0,
+        "budget_balance_bn": -102.0,
+        "note": "2025 labelled outturn in spring bill tables"
+      },
+      "2026": {
+        "tax_rev_bn": 1406.0,
+        "total_income_bn": 1357.0,
+        "spend_ex_interest_bn": 1502.0,
+        "interest_bn": 26.0,
+        "net_lending_bn": 15.0,
+        "cash_correction_bn": -2.0,
+        "budget_balance_bn": -184.0
+      },
+      "2027": {
+        "tax_rev_bn": 1488.0,
+        "total_income_bn": 1415.0,
+        "spend_ex_interest_bn": 1526.0,
+        "interest_bn": 31.0,
+        "net_lending_bn": 40.0,
+        "cash_correction_bn": 0.0,
+        "budget_balance_bn": -182.0
+      }
+    },
+    "primary_spend_bn_note": "Utgifter exkl. statsskuldsräntor (incl. anslagsbehållningar). Maps to SCB exp − CH1089 interest.",
+    "macro_determinants": {
+      "source": "same bill / Finance Ministry forecast assumptions (hand summary)",
+      "note": "Category elasticities fitted on Eurostat NGDP / HICP / D1 wages and debt-book effective rates; bill does not publish a ready-reckoner matrix."
+    }
+  },
+  "ki": {
+    "source": "Konjunkturinstitutet Prognosdatabasen — F3328 Statens budgetsaldo; F3304 Statens finanser (NR perimeter)",
+    "vintage": "KI prognos September 2026",
+    "vintage_date": "2026-09-16",
+    "unit": "SEK bn, calendar year",
+    "url": "http://prognos.konj.se/PxWeb/pxweb/sv/SenastePrognosen/",
+    "years": {
+      "2024": {"budget_balance_bn": -104.3, "tax_rev_bn": 1338.8, "interest_bn": 22.2},
+      "2025": {"budget_balance_bn": -101.9, "tax_rev_bn": 1356.7, "interest_bn": 19.9},
+      "2026": {"budget_balance_bn": -140.2, "tax_rev_bn": 1423.2, "interest_bn": 23.5},
+      "2027": {"budget_balance_bn": -142.2, "tax_rev_bn": 1516.5, "interest_bn": 32.2}
+    },
+    "note": "F3328Lbsminus = cash budgetsaldo (comparable to −NBR). F3304 tax/interest are national-accounts state finances, not Budgetprop cash lines — used as cross-check / macro context only. KI 2026 saldo (−140) sits between Budgetprop (−184) and Riksgälden (−196)."
+  },
+  "statskontoret": {
+    "source": "Statskontoret Prognos för statens budget och de offentliga finanserna",
+    "vintage": "Juni 2026 (Tabell 1 / 10)",
+    "vintage_date": "2026-06-17",
+    "unit": "SEK bn",
+    "years": {
+      "2025": {"budget_balance_bn": -102.0, "tax_rev_bn": 1366.0, "spend_ex_interest_bn": 1372.0, "interest_bn": 30.0, "net_lending_bn": -1.0},
+      "2026": {"budget_balance_bn": -209.0, "tax_rev_bn": 1406.0, "spend_ex_interest_bn": 1466.0, "interest_bn": 29.0, "net_lending_bn": 41.0},
+      "2027": {"budget_balance_bn": -174.0, "tax_rev_bn": 1485.0, "spend_ex_interest_bn": 1505.0, "interest_bn": 35.0, "net_lending_bn": 55.0}
+    },
+    "note": "Broader / more negative 2026 saldo than Budgetprop and KI; not used as the live RG pin."
+  },
+  "borrowing_plan": {
+    "source": "Riksgälden Statsupplåning 2026:1 Tabell 1 / 11",
+    "unit": "SEK bn",
+    "nominal_bonds": {"2026": 220.0, "2027": 240.0},
+    "linkers": {"2026": 6.0, "2027": 6.0},
+    "fx_bonds": {"2026": 19.0, "2027": 19.0},
+    "bill_stock_end": {"2026": 238.0, "2027": 233.0},
+    "liq_mgmt_stock_end": {"2026": 173.0, "2027": 151.0}
+  }
+}

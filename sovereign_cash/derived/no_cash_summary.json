@@ -1,0 +1,837 @@
+{
+  "country": "no",
+  "ccy": "NOK",
+  "asof": "2026-11",
+  "asof_partial": true,
+  "asof_last_complete_month": "2026-10",
+  "asof_daily": "2026-11-10",
+  "sources": [
+    {
+      "name": "Norges Bank LIQUIDITY_STATISTICS (government accounts, Tab4 specification, government securities, GPFG FX), business-daily, accumulated from 1 Jan",
+      "url": "https://data.norges-bank.no/api/data/LIQUIDITY_STATISTICS/?format=csv&startPeriod=2000-01-01&locale=en",
+      "frequency": "business daily (published Mon/Thu)",
+      "lag_days": 2,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank LIQUIDITY_FORECAST (realised + forecast structural liquidity, every vintage since 2014)",
+      "url": "https://data.norges-bank.no/api/data/LIQUIDITY_FORECAST/?format=csv&startPeriod=2000-01-01&locale=en",
+      "frequency": "daily path, vintages twice weekly",
+      "lag_days": 1,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank NOWA",
+      "url": "https://data.norges-bank.no/api/data/SHORT_RATES/B.NOWA.ON.R?format=csv&startPeriod=2011-01-01&locale=en",
+      "frequency": "business daily",
+      "lag_days": 1,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank policy rate",
+      "url": "https://data.norges-bank.no/api/data/IR/B.KPRA.SD.R?format=csv&startPeriod=2011-01-01&locale=en",
+      "frequency": "business daily",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank FX transactions for the GPFG, monthly announcement",
+      "url": "https://data.norges-bank.no/api/data/ANN_FX_SPU/?format=csv&startPeriod=2000-01-01&locale=en",
+      "frequency": "monthly",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank government securities primary market (per ISIN, outstanding, own holdings, maturity)",
+      "url": "https://data.norges-bank.no/api/data/GOVT_PRIMARY_MARKET/?format=csv&startPeriod=2000-01-01&locale=en",
+      "frequency": "per transaction",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank, Strategy and borrowing programme for 2026 (calendars, programme, bill-stock aim) — published 2025-12-12",
+      "url": "https://www.norges-bank.no/contentassets/448f83ba654342209816b66109d78cd9/strategy-and-borrowing-program-2026.pdf",
+      "frequency": "hand-entered in sovereign_cash/no/debt_calendar.json",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Norges Bank, Quarterly information Q4 2026 (bond borrowing interval) — published 2026-09-29",
+      "url": "https://www.norges-bank.no/en/topics/government-debt/borrowing-programme-reports/2026/information-q4-2026/",
+      "frequency": "hand-entered in sovereign_cash/no/debt_calendar.json",
+      "lag_days": 0,
+      "verified": true
+    }
+  ],
+  "buffer": "Consolidated NOK position of the Treasury's accounts and the GPFG krone account at Norges Bank (transfers between them are internal to Norges Bank and invisible here). Level not published; Δbuffer = −(government-account + government-securities + GPFG FX + transfer-financing liquidity effects), so the history identity holds by construction.",
+  "identity_resid_bn": 0.0,
+  "structural_crosscheck_resid_bn": {
+    "max_abs": 12.37,
+    "median_abs": 0.0,
+    "n_months": 153,
+    "months_abs_gt_0p5bn": {
+      "2014-12": -1.14,
+      "2015-01": 1.14,
+      "2016-03": 3.64,
+      "2016-04": -3.66,
+      "2016-12": -2.74,
+      "2017-01": 2.45,
+      "2017-12": -1.14,
+      "2018-01": 1.14,
+      "2018-12": -3.34,
+      "2019-01": 3.34,
+      "2019-07": 1.0,
+      "2019-08": -1.0,
+      "2020-04": -0.54,
+      "2020-12": 1.08,
+      "2021-01": -1.08,
+      "2021-03": 4.16,
+      "2021-04": -4.16,
+      "2021-12": -1.71,
+      "2022-01": 1.71,
+      "2022-12": -4.62,
+      "2023-01": 4.62,
+      "2023-12": -5.5,
+      "2024-01": 5.5,
+      "2024-12": -0.85,
+      "2025-01": 0.86,
+      "2025-12": -12.37,
+      "2026-01": 12.37
+    }
+  },
+  "score": [
+    {
+      "window": "PRE",
+      "h": "1bd",
+      "model": 1.52,
+      "benchmark": 9.27,
+      "flat": 8.11,
+      "n": 534,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "5bd",
+      "model": 3.8,
+      "benchmark": 13.96,
+      "flat": 22.73,
+      "n": 529,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "10bd",
+      "model": 5.35,
+      "benchmark": 15.3,
+      "flat": 31.99,
+      "n": 517,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "20bd",
+      "model": 7.92,
+      "benchmark": 18.22,
+      "flat": 29.24,
+      "n": 497,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "60bd",
+      "model": 12.04,
+      "benchmark": 26.43,
+      "flat": 45.14,
+      "n": 414,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "1bd",
+      "model": 1.64,
+      "benchmark": 17.41,
+      "flat": 14.36,
+      "n": 510,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "5bd",
+      "model": 4.55,
+      "benchmark": 28.75,
+      "flat": 33.14,
+      "n": 508,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "10bd",
+      "model": 8.29,
+      "benchmark": 33.06,
+      "flat": 43.15,
+      "n": 498,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "20bd",
+      "model": 12.99,
+      "benchmark": 42.0,
+      "flat": 48.76,
+      "n": 480,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "60bd",
+      "model": 24.64,
+      "benchmark": 48.32,
+      "flat": 52.05,
+      "n": 398,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same weekday a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "m+1",
+      "model": 9.21,
+      "benchmark": 17.01,
+      "flat": 23.66,
+      "n": 55,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "m+2",
+      "model": 9.72,
+      "benchmark": 17.51,
+      "flat": 23.58,
+      "n": 50,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "PRE",
+      "h": "m+3",
+      "model": 12.15,
+      "benchmark": 18.21,
+      "flat": 25.07,
+      "n": 45,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "m+1",
+      "model": 12.38,
+      "benchmark": 36.84,
+      "flat": 43.45,
+      "n": 56,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "m+2",
+      "model": 15.21,
+      "benchmark": 37.77,
+      "flat": 40.11,
+      "n": 51,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    },
+    {
+      "window": "OOS",
+      "h": "m+3",
+      "model": 18.68,
+      "benchmark": 38.46,
+      "flat": 35.91,
+      "n": 46,
+      "model_name": "Norges Bank structural-liquidity forecast",
+      "benchmark_name": "same calendar month a year earlier (change)",
+      "unit": "NOK bn, MAE of change in structural liquidity from the vintage anchor"
+    }
+  ],
+  "score_note": "Norges Bank's structural-liquidity forecast, every vintage since 2014. Business-day rows: change from the vintage's last realised day; benchmark the same weekday a year earlier. Month rows: change over month m from the last vintage before m−k+1; benchmark the same calendar month a year earlier. Flat = no change. PRE 2014–2019, OOS 2022→.",
+  "own_forecast_score": "unscored: this page's Δbuffer path is Norges Bank's structural path less this page's securities and fund-FX assumptions; only Norges Bank's structural forecast is scored",
+  "cash_requirement_naive_score": [
+    {
+      "window": "PRE",
+      "n": 72,
+      "same_month_last_year": 13.56,
+      "same_month_3y_mean": 15.79,
+      "zero": 24.57
+    },
+    {
+      "window": "OOS",
+      "n": 58,
+      "same_month_last_year": 44.77,
+      "same_month_3y_mean": 41.74,
+      "zero": 43.46
+    }
+  ],
+  "bottom_up": {
+    "ship": true,
+    "ship_reason": "PRE gate passed",
+    "edge": 0.05,
+    "version": "v2_macro",
+    "mainland_resid_weight": 0.5,
+    "horizons": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "rule_map": {
+      "customs_excise": "smly",
+      "vat": "add_expanding",
+      "tax_net": "add_expanding",
+      "nav": "add_expanding",
+      "local_authorities": "add_expanding",
+      "oil_tax": "unit_mult",
+      "health": "add_expanding",
+      "sdfi": "unit_mult",
+      "other_net": "smly"
+    },
+    "category_driver_table": [
+      {
+        "category": "customs_excise",
+        "driver": "gdp_yoy",
+        "rule": "smly",
+        "pre_mae": 2.59,
+        "pre_mae_smly": 2.59
+      },
+      {
+        "category": "vat",
+        "driver": "gdp_yoy",
+        "rule": "add_expanding",
+        "pre_mae": 4.6,
+        "pre_mae_smly": 4.78
+      },
+      {
+        "category": "tax_net",
+        "driver": "gdp_yoy",
+        "rule": "add_expanding",
+        "pre_mae": 2.58,
+        "pre_mae_smly": 2.93
+      },
+      {
+        "category": "nav",
+        "driver": "gdp_yoy",
+        "rule": "add_expanding",
+        "pre_mae": 1.41,
+        "pre_mae_smly": 1.88
+      },
+      {
+        "category": "local_authorities",
+        "driver": "gdp_yoy",
+        "rule": "add_expanding",
+        "pre_mae": 0.39,
+        "pre_mae_smly": 0.53
+      },
+      {
+        "category": "oil_tax",
+        "driver": "brent_yoy",
+        "rule": "unit_mult",
+        "pre_mae": 2.74,
+        "pre_mae_smly": 3.92
+      },
+      {
+        "category": "health",
+        "driver": "gdp_yoy",
+        "rule": "add_expanding",
+        "pre_mae": 6.87,
+        "pre_mae_smly": 6.94
+      },
+      {
+        "category": "sdfi",
+        "driver": "brent_yoy",
+        "rule": "unit_mult",
+        "pre_mae": 1.58,
+        "pre_mae_smly": 0.74
+      },
+      {
+        "category": "other_net",
+        "driver": "pol_d12",
+        "rule": "smly",
+        "pre_mae": 5.27,
+        "pre_mae_smly": 5.27
+      }
+    ],
+    "pre_beyond_nb": {
+      "1": {
+        "bottom_up": 6.37,
+        "production_smly": 6.73,
+        "n": 6
+      },
+      "3": {
+        "bottom_up": 5.98,
+        "production_smly": 6.73,
+        "n": 6
+      },
+      "6": {
+        "bottom_up": 5.85,
+        "production_smly": 6.73,
+        "n": 6
+      },
+      "12": {
+        "bottom_up": 5.59,
+        "production_smly": 6.73,
+        "n": 6
+      }
+    },
+    "oos_beyond_nb": {
+      "1": {
+        "bottom_up": 14.45,
+        "production_smly": 14.97,
+        "n": 3
+      },
+      "3": {
+        "bottom_up": 13.49,
+        "production_smly": 14.97,
+        "n": 3
+      },
+      "6": {
+        "bottom_up": 14.51,
+        "production_smly": 14.97,
+        "n": 3
+      },
+      "12": {
+        "bottom_up": 15.77,
+        "production_smly": 14.97,
+        "n": 3
+      }
+    },
+    "pre_mean_mae": {
+      "bottom_up": 5.95,
+      "production_smly": 6.73
+    },
+    "oos_mean_mae": {
+      "bottom_up": 14.55,
+      "production_smly": 14.97
+    },
+    "rejects": [
+      "v1 Tab4 smly / cal5 / pace_dev / petro_yoy: PRE edge <5% (see no_bottomup_score.json)",
+      "uniform mainland GDP unit/half pass-through on all tax lines: worse PRE mean than smly",
+      "annual mainland GDP × month share for tax lines: PRE MAE 9.2 vs smly 6.7",
+      "additive Brent lag-6 OLS on oil only: ships PRE but residual smly share ~88% of perimeter",
+      "PRE-gated add_expanding on mainland without petroleum unit: loses PRE headline",
+      "policy_rate Δ12 on other_net: loses PRE category MAE to smly",
+      "category-gate sdfi to smly (unit hurts leaf MAE): headline PRE collapses (−6.7%)",
+      "oil_tax=smly + sdfi unit: better PRE than baseline but contradicts oil leaf MAE",
+      "petro unit only / all mainland smly: PRE ~10% but drops mainland×macro mission",
+      "fitted Brent β via pct_change OLS: PRE MAE >20",
+      "brent lag ≥2 / clip ≤0.3 / joint β≠1 grid: either fails gate or PRE-tunes elasticity",
+      "beating NB inside its published window: disallowed"
+    ],
+    "authority_series": [
+      {
+        "name": "Norges Bank LIQUIDITY_STATISTICS Tab4",
+        "use": "category history / identity"
+      },
+      {
+        "name": "Norges Bank LIQUIDITY_FORECAST FCAST_S",
+        "use": "NB coverage pin + live residual inside path",
+        "vintage": "2026-11-12"
+      },
+      {
+        "name": "SSB 09190 mainland GDP (bnpb.nr23_9fn)",
+        "path": "data/no/mainland_gdp.parquet",
+        "use": "mainland_gdp_yoy driver"
+      },
+      {
+        "name": "Brent USD (FRED DCOILBRENTEU / correlations panel)",
+        "use": "brent_yoy unit_mult on oil_tax/sdfi"
+      },
+      {
+        "name": "Norges Bank policy rate",
+        "use": "screened for other_net; not selected"
+      },
+      {
+        "name": "data/no/authority.json",
+        "use": "elasticity / MoF placeholder vintages"
+      }
+    ],
+    "note": "Beyond-NB PRE targets are January-only (NB path ends 31 Dec). Hybrid ties production inside the NB window by construction."
+  },
+  "forward": {
+    "window": "2026-12..2026-12",
+    "horizon_end": "2030-12",
+    "full_forward_window": "2026-12..2030-12",
+    "scenario_window": "2027-01..2030-12",
+    "nb_horizon": {
+      "window": "2026-12..2026-12",
+      "months": 1,
+      "cash_requirement_bn": 61.7,
+      "oil_fund_legs_bn": -4.8,
+      "bond_gross_bn": 7.5,
+      "bond_redemption_bn": 0.0,
+      "bond_buyback_bn": 0.0,
+      "net_bonds_bn": 7.5,
+      "bill_gross_bn": 6.0,
+      "bill_redemption_bn": 12.0,
+      "net_bills_bn": -6.0,
+      "securities_other_bn": 0.0,
+      "structural_change_fc_bn": 64.3,
+      "buffer_change_bn": -65.0
+    },
+    "scenario": {
+      "window": "2027-01..2030-12",
+      "months": 48,
+      "cash_requirement_bn": -110.6,
+      "oil_fund_legs_bn": -211.7,
+      "bond_gross_bn": 420.0,
+      "bond_redemption_bn": 234.5,
+      "bond_buyback_bn": 0.0,
+      "net_bonds_bn": 185.5,
+      "bill_gross_bn": 34.0,
+      "bill_redemption_bn": 34.0,
+      "net_bills_bn": 0.0,
+      "securities_other_bn": 0.0,
+      "structural_change_fc_bn": 0.0,
+      "buffer_change_bn": 84.4
+    },
+    "partial_month": {
+      "month": "2026-11",
+      "source": "outcome_to_2026-11-10+nb_stat_s_to_2026-11-11",
+      "bdays_observed": 7,
+      "bdays_in_month": 21,
+      "cash_requirement_bn": 7.2,
+      "gov_liquidity_effect_bn": 6.5,
+      "buffer_change_bn": -6.5
+    },
+    "nb_vintage": {
+      "vintage": "2026-11-12",
+      "anchor": "2026-11-11",
+      "anchor_level_bn": 117.1,
+      "path_end": "2026-12-31",
+      "path_end_level_bn": 184.2,
+      "spu_announced_month": "2026-11",
+      "spu_announced_nok_mn_per_day": 300,
+      "spu_previous_nok_mn_per_day": 300,
+      "bill_stock_market_now_bn": 38.0,
+      "transfer_financing_trailing3m_bn": -2.11
+    },
+    "nb_covered_months": [
+      "2026-12"
+    ],
+    "structural_liquidity_now_bn": 117.1,
+    "structural_liquidity_now_date": "2026-11-11",
+    "structural_liquidity_year_end_fc_bn": 184.2,
+    "structural_liquidity_incl_cb_certificates_year_end_fc_bn": 117.2,
+    "structural_liquidity_incl_cb_certificates_vintage": "2026-11-12",
+    "total_liquidity_now_bn": 34.8,
+    "cb_certificates_outstanding_bn": 65.8,
+    "cb_certificates_first_date": "2026-05-07",
+    "f_loans_bn": 0.0,
+    "f_deposits_bn": 8.0,
+    "f_operations_active_365d": true,
+    "gpfg_fx": {
+      "announced_month": "2026-11",
+      "announced_nok_mn_per_day": 300,
+      "nb_buys_fx": true,
+      "previous_nok_mn_per_day": 300,
+      "forward_basis": "announced month, then the latest announcement carried",
+      "ytd_year": 2026,
+      "oil_fund_legs_ytd_bn": 72.2
+    },
+    "ngb": {
+      "year": 2026,
+      "issued_ytd_bn": 101.0,
+      "programme_bn": [
+        100.0,
+        110.0
+      ],
+      "programme_path_bn": 108.5,
+      "quarter_guidance": [
+        {
+          "year": 2026,
+          "quarter": 4,
+          "bn": [
+            16.0,
+            19.0
+          ],
+          "auctions": 4,
+          "path_bn": 7.5
+        }
+      ],
+      "next_programme_published": false,
+      "scenario_basis": "scenario: no 2027 programme yet; 2026 midpoint × 2023–2025 month shares"
+    },
+    "next_redemption": {
+      "instr": "NGB 02/2027",
+      "isin": "NO0010786288",
+      "maturity": "2027-02-17",
+      "market_now_bn": 47.5,
+      "central_bn": 45.2,
+      "low_bn": 35.0,
+      "high_bn": 47.5,
+      "expected_buyback_bn": 2.3,
+      "expected_in_path_bn": 0.0,
+      "buyback_dates": [
+        "2026-11-25"
+      ],
+      "share_median": 0.041,
+      "share_min": 0.0,
+      "share_max": 0.227,
+      "n_hist": 8,
+      "hist_from": 2015,
+      "days_left": 99
+    },
+    "bills": {
+      "market_stock_now_bn": 38.0,
+      "stock_horizon_end_bn": 32.0,
+      "aim_end_year_bn": 34.0,
+      "aim_range_bn": [
+        30.0,
+        40.0
+      ],
+      "calendar_auctions_left": 2,
+      "net_horizon_bn": -6.0
+    },
+    "calendar_next": [
+      {
+        "date": "2026-11-11",
+        "event": "NGB auction",
+        "instrument": "line announced two business days before",
+        "size_bn": NaN,
+        "basis": "guidance midpoint ÷ auction dates"
+      },
+      {
+        "date": "2026-11-16",
+        "event": "T-bill auction",
+        "instrument": "NTB 03/2027",
+        "size_bn": 2.0,
+        "basis": "published calendar"
+      },
+      {
+        "date": "2026-11-25",
+        "event": "NGB auction",
+        "instrument": "line announced two business days before",
+        "size_bn": NaN,
+        "basis": "guidance midpoint ÷ auction dates"
+      },
+      {
+        "date": "2026-11-25",
+        "event": "NGB buyback",
+        "instrument": "NGB 02/2027",
+        "size_bn": 2.25,
+        "basis": "median historical share (4%)"
+      },
+      {
+        "date": "2026-12-02",
+        "event": "NGB auction",
+        "instrument": "line announced two business days before",
+        "size_bn": 3.75,
+        "basis": "guidance midpoint ÷ auction dates"
+      },
+      {
+        "date": "2026-12-09",
+        "event": "NGB auction",
+        "instrument": "line announced two business days before",
+        "size_bn": 3.75,
+        "basis": "guidance midpoint ÷ auction dates"
+      },
+      {
+        "date": "2026-12-14",
+        "event": "T-bill auction (new 12m)",
+        "instrument": "NTB 12/2027",
+        "size_bn": 6.0,
+        "basis": "published calendar"
+      },
+      {
+        "date": "2026-12-16",
+        "event": "T-bill maturity",
+        "instrument": "NTB 12/2026",
+        "size_bn": 12.0,
+        "basis": "market amount incl. calendar taps"
+      },
+      {
+        "date": "2027-02-17",
+        "event": "NGB maturity",
+        "instrument": "NGB 02/2027",
+        "size_bn": 45.22,
+        "basis": "market amount less expected buybacks"
+      }
+    ],
+    "ladder": [
+      {
+        "instr": "NTB 12/2026",
+        "isin": "NO0013708610",
+        "type": "bill",
+        "maturity": "2026-12-16",
+        "market_bn": 12.0,
+        "own_bn": 6.0
+      },
+      {
+        "instr": "NGB 02/2027",
+        "isin": "NO0010786288",
+        "type": "bond",
+        "maturity": "2027-02-17",
+        "market_bn": 47.48,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NTB 03/2027",
+        "isin": "NO0013737973",
+        "type": "bill",
+        "maturity": "2027-03-17",
+        "market_bn": 12.0,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NTB 06/2027",
+        "isin": "NO0013756163",
+        "type": "bill",
+        "maturity": "2027-06-16",
+        "market_bn": 8.0,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NTB 09/2027",
+        "isin": "NO0013769612",
+        "type": "bill",
+        "maturity": "2027-09-15",
+        "market_bn": 6.0,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 04/2028",
+        "isin": "NO0010821598",
+        "type": "bond",
+        "maturity": "2028-04-26",
+        "market_bn": 55.44,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 09/2029",
+        "isin": "NO0010844079",
+        "type": "bond",
+        "maturity": "2029-09-06",
+        "market_bn": 69.57,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 08/2030",
+        "isin": "NO0010875230",
+        "type": "bond",
+        "maturity": "2030-08-19",
+        "market_bn": 62.0,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 09/2031",
+        "isin": "NO0010930522",
+        "type": "bond",
+        "maturity": "2031-09-17",
+        "market_bn": 44.36,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 05/2032",
+        "isin": "NO0012440397",
+        "type": "bond",
+        "maturity": "2032-05-18",
+        "market_bn": 47.09,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 08/2033",
+        "isin": "NO0012837642",
+        "type": "bond",
+        "maturity": "2033-08-15",
+        "market_bn": 55.1,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 04/2034",
+        "isin": "NO0013148338",
+        "type": "bond",
+        "maturity": "2034-04-13",
+        "market_bn": 48.43,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 06/2035",
+        "isin": "NO0013475558",
+        "type": "bond",
+        "maturity": "2035-06-12",
+        "market_bn": 59.51,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 06/2036",
+        "isin": "NO0013713123",
+        "type": "bond",
+        "maturity": "2036-06-03",
+        "market_bn": 53.8,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 05/2039",
+        "isin": "NO0013238246",
+        "type": "bond",
+        "maturity": "2039-05-31",
+        "market_bn": 29.88,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 10/2042",
+        "isin": "NO0012712506",
+        "type": "bond",
+        "maturity": "2042-10-06",
+        "market_bn": 19.07,
+        "own_bn": 4.0
+      },
+      {
+        "instr": "NGB 09/2046",
+        "isin": "NO0013770305",
+        "type": "bond",
+        "maturity": "2046-09-24",
+        "market_bn": 11.96,
+        "own_bn": 4.0
+      }
+    ],
+    "ladder_asof": "2026-11-11"
+  },
+  "nowa_dropped": {
+    "reason": "NOWA − policy rate is noise at this resolution; chart removed",
+    "median_bp_2022on": 0.0,
+    "sd_bp_2022on": 0.63
+  },
+  "notes": [
+    "History from Jan-2008; Norges Bank forecast vintages from Jan-2014. Nov-2026 is partial: 7 of 21 business days observed; the rest is Norges Bank's realised structural liquidity, booked to fiscal flows.",
+    "Inside Norges Bank's path, fiscal flows are a residual: Norges Bank's structural-liquidity change less this page's NGB, T-bill, fund-FX and notes-and-coins paths. Not an official forecast; shown as a total only.",
+    "After 31 Dec 2026 the chart shows a scenario: fiscal flows are Tab4×macro (mainland GDP + Brent; SHIP); NGB gross 2026 programme midpoint × 2023–2025 month shares (no 2027 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2028 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2029 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2030 programme yet); T-bill maturities rolled at constant stock; oil-fund FX at the latest announcement.",
+    "Bottom-up Tab4×macro (v2): SHIP — PRE mean MAE 5.95 vs production smly 6.73 on beyond-NB months (PRE gate passed). cash_requirement_bottomup_bn replaces the live path beyond NB. v1 Tab4 smly rejected.",
+    "Buybacks: median share of the market amount bought back in the last 99 days before maturity, 8 bonds since 2015: 4% (range 0–23%).",
+    "Central-bank certificates since May-2026 drain reserves; total liquidity = structural liquidity less certificates and F-deposits plus F-loans.",
+    "Norges Bank's two datasets agree month by month: median gap 0.00bn; 27 of 153 months above 0.5bn, 20 of them December/January (31 December is not a statistics business day).",
+    "NOWA − policy rate since 2022: median 0.00bp, sd 0.63bp; not charted."
+  ]
+}

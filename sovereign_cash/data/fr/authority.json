@@ -1,0 +1,311 @@
+{
+  "note": "France fiscal authority paths. Macro = DG Trésor RESF (annexed to PLF). State deficit = Budget/PLF solde budgétaire hors FMI (déficit à financer in the financing table) — same concept as the SMB cash requirement. Debt charge and +100bp triangle = AFT. Financing totals (besoin, BTF, net MLT) stay in plan.json. Category annuals = PLF équilibre / Voies et moyens (net State taxes). Not AMECO/WEO.",
+  "state_deficit": {
+    "source": "PLF tableau de financement / solde budgétaire de l'État (hors opérations FMI)",
+    "unit": "EUR bn, calendar year (positive = deficit to finance)",
+    "years": {
+      "2025": {
+        "bn": 124.7,
+        "vintage": "outturn (SMB full year; authority path starts at PLF vintages)"
+      },
+      "2026": {
+        "bn": 137.2,
+        "vintage": "PLF 2027 revised (LFI 2026 was 124.4)"
+      },
+      "2027": {
+        "bn": 156.4,
+        "vintage": "PLF 2027 déficit à financer"
+      }
+    },
+    "note": "v2 soft-pins the category path to these totals (SOFT_PIN_ALPHA=1) when the PLF vintage is known at the origin (Oct Y−1). Live forward uses the same pin inside bottom_up_macro; plan.json déficit_to_finance matches. AFT's besoin = deficit + amortisation + other treasury needs."
+  },
+  "macro": {
+    "source": "DG Trésor Rapport économique, social et financier (RESF)",
+    "unit": "percent, calendar year",
+    "years": {
+      "2025": {
+        "real_growth": 0.7,
+        "cpi": 1.1,
+        "masse_salariale": 1.6,
+        "vintage": "RESF PLF 2026 (15-Oct-2025); superseded for 2026 by RESF 2027"
+      },
+      "2026": {
+        "real_growth": 0.5,
+        "cpi": 2.1,
+        "masse_salariale": 1.6,
+        "vintage": "RESF PLF 2027 (6-Oct-2026); government update 11-Sep-2026; masse salariale from RESF/PLF text"
+      },
+      "2027": {
+        "real_growth": 1.0,
+        "cpi": 1.8,
+        "masse_salariale": 2.4,
+        "vintage": "RESF PLF 2027 (6-Oct-2026); masse salariale +2.4% RESF text"
+      }
+    },
+    "ngdp_rule": "real_growth + cpi (no separate nominal GDP print used; RESF frames receipts on activity + prices)",
+    "rfn_elasticity_note": "Voies et moyens PLF 2026: RFN spontaneous elasticity to NGDP 1.2 (2025) / 0.5 (2026). IR PAS tracks masse salariale; TVA tracks emplois taxables ≈ NGDP; IS tracks bénéfice fiscal ≈ NGDP lag."
+  },
+  "elasticities": {
+    "source": "RESF / Voies priors. Open-year growth OFF except remboursements_locaux (same-year CPI). 2023 PLF exécution fill + AFT 2024 charge 50.1 — PRE-gated; among clearers best OOS. 2022 fill documented but not pinned (OOS regress). Tax leaf growth fails worse_h; aggregate growth blocked; triangle inert with remb.",
+    "ship_knobs": {
+      "share_k": 5,
+      "soft_pin_alpha": 1.0,
+      "int_smly_w": 1.0,
+      "grow_keys": [
+        "remboursements_locaux"
+      ],
+      "grow_same_year": true,
+      "use_ols": false,
+      "charge_2024": 50.1,
+      "plf_pin_years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "note": "SOFT_PIN_ALPHA=1 (PLF solde pin when known). PRE flat vs α=0; OOS 8.88→8.06. Categories keep the monthly shape; pin removes annual level drift vs déficit à financer. Open-year tax leaf growth still fails PRE — hold + remb CPI only."
+    },
+    "ir": {
+      "driver": "masse_salariale",
+      "epsilon": 1.0,
+      "note": "PAS / salaires déclarés track masse salariale (Voies et moyens); open-year hold"
+    },
+    "is": {
+      "driver": "ngdp",
+      "epsilon": 1.0,
+      "lag": 1,
+      "note": "bénéfice fiscal ≈ nominal activity; open-year hold"
+    },
+    "tva": {
+      "driver": "ngdp",
+      "epsilon": 1.0,
+      "note": "emplois taxables; RESF medium-term ε≈1; open-year hold"
+    },
+    "accises": {
+      "driver": "real_growth",
+      "epsilon": 0.5,
+      "note": "energy volumes; clears PRE alone but remb+int1 wins OOS"
+    },
+    "autres_fiscales": {
+      "driver": "ngdp",
+      "epsilon": 1.0,
+      "note": "mixed; NGDP prior; open-year hold"
+    },
+    "non_fiscal": {
+      "driver": null,
+      "epsilon": null,
+      "note": "discrete one-offs (PNRR, CDC, BdF) — PLF path when known; else hold"
+    },
+    "credits_ministeriels": {
+      "driver": "cpi",
+      "epsilon": 1.0,
+      "note": "nominal spending; PDE freeze years pinned by PLF; open-year growth clears PRE but OOS worse than remb+AFT50.1 hold"
+    },
+    "cas_pensions": {
+      "driver": "masse_salariale",
+      "epsilon": 1.0,
+      "note": "employer contributions; open-year hold"
+    },
+    "remboursements_locaux": {
+      "driver": "cpi",
+      "epsilon": 1.0,
+      "note": "SHIP leaf: same-year CPI prior when PLF unknown"
+    },
+    "psr": {
+      "driver": "ngdp",
+      "epsilon": 1.0,
+      "note": "CT + UE; UE path discrete when PLF known; open-year hold"
+    },
+    "charge": {
+      "driver": "rates",
+      "epsilon": null,
+      "note": "AFT charge budgétaire when known (2024 exécution 50.1); else hold; month carve 100% smly"
+    },
+    "solde_comptes_speciaux": {
+      "driver": null,
+      "epsilon": null,
+      "note": "PLF path when known (2024−27); else SMB moy mean"
+    },
+    "solde_budgets_annexes": {
+      "driver": null,
+      "epsilon": null,
+      "note": "PLF path when known; else 0 / last-year"
+    }
+  },
+  "categories": {
+    "source": "PLF équilibre / Voies et moyens / chiffres clés / CdC NEB / AFT charge (recettes nettes État; crédits hors FdC)",
+    "unit": "EUR bn, calendar year",
+    "known_from_month": 10,
+    "note": "PLF for year Y treated as known from October Y−1 (budget deposit). Values are net State perimeter (RFN after R&D État). Pinned: 2023 (PLF 2025) + 2024–27. 2022 exécution lives in published_execution (pin raises OOS). Extracts: data/fr/plf_extracts/.",
+    "years": {
+      "2023": {
+        "vintage": "PLF 2025 exposé équilibre — exécution 2023; tax split CdC NEB 2024 / Voies PLF 2025",
+        "ir": 88.6,
+        "is": 56.8,
+        "tva": 95.2,
+        "accises": 16.8,
+        "autres_fiscales": 65.5,
+        "non_fiscal": 25.1,
+        "credits_ministeriels": 336.1,
+        "charge": 54.8,
+        "cas_pensions": 52.1,
+        "remboursements_locaux": 5.1,
+        "psr": 68.1,
+        "solde_comptes_speciaux": -5.1,
+        "solde_budgets_annexes": 0.3,
+        "recettes_fiscales_nettes": 322.9,
+        "note": "PLF 2025 table: crédits 336.1, charge yc SNCF 54.8, amort covid 6.6 + CAS contrib 45.5 → cas_pensions 52.1, remb locaux 5.1, PSR 68.1. Identity → déficit 173.0."
+      },
+      "2024": {
+        "vintage": "PLF 2026 chiffres clés spend + Voies tax; remb locaux CdC 5.0; charge AFT exécution 50.1",
+        "ir": 88.0,
+        "is": 57.4,
+        "tva": 96.8,
+        "accises": 20.2,
+        "autres_fiscales": 63.3,
+        "non_fiscal": 23.2,
+        "credits_ministeriels": 327.0,
+        "charge": 50.1,
+        "cas_pensions": 52.9,
+        "remboursements_locaux": 5.0,
+        "psr": 67.8,
+        "solde_comptes_speciaux": -2.3,
+        "solde_budgets_annexes": 0.4,
+        "recettes_fiscales_nettes": 325.7,
+        "note": "PDE crédits 327.0, PSR 67.8, BA 0.4, CS −2.3 from PLF 2026 chiffres clés; remb locaux 5.0 CdC; charge AFT 50.1; cas_pensions residual to dépenses 502.8"
+      },
+      "2025": {
+        "vintage": "PLF 2027 équilibre — exécution 2025",
+        "ir": 94.9,
+        "is": 59.9,
+        "tva": 98.1,
+        "accises": 25.2,
+        "autres_fiscales": 78.3,
+        "non_fiscal": 24.0,
+        "credits_ministeriels": 328.8,
+        "charge": 51.6,
+        "cas_pensions": 49.1,
+        "remboursements_locaux": 4.5,
+        "psr": 69.0,
+        "solde_comptes_speciaux": -2.3,
+        "solde_budgets_annexes": 0.5,
+        "recettes_fiscales_nettes": 356.4
+      },
+      "2026": {
+        "vintage": "PLF 2027 révisé (deposit ~Oct-2026)",
+        "ir": 96.8,
+        "is": 60.3,
+        "tva": 99.7,
+        "accises": 21.6,
+        "autres_fiscales": 79.3,
+        "non_fiscal": 33.6,
+        "credits_ministeriels": 337.4,
+        "charge": 62.6,
+        "cas_pensions": 51.6,
+        "remboursements_locaux": 4.3,
+        "psr": 72.6,
+        "solde_comptes_speciaux": 0.2,
+        "solde_budgets_annexes": 0.4,
+        "recettes_fiscales_nettes": 357.7,
+        "note": "charge uses AFT 62.6 (PLF table shows 63.4)"
+      },
+      "2027": {
+        "vintage": "PLF 2027 (deposit ~Oct-2026)",
+        "ir": 102.5,
+        "is": 58.5,
+        "tva": 107.0,
+        "accises": 23.5,
+        "autres_fiscales": 84.2,
+        "non_fiscal": 16.7,
+        "credits_ministeriels": 345.4,
+        "charge": 72.9,
+        "cas_pensions": 52.3,
+        "remboursements_locaux": 4.3,
+        "psr": 74.0,
+        "solde_comptes_speciaux": 0.0,
+        "solde_budgets_annexes": 0.2,
+        "recettes_fiscales_nettes": 375.7
+      }
+    },
+    "published_execution": {
+      "note": "Complete exécution rows kept for documentation / share priors. 2022 new-perimeter fill clears PRE but raises OOS vs 2023-only (9.09 alone / 8.97 with AFT50.1) — not pinned into the live path.",
+      "years": {
+        "2022": {
+          "vintage": "CdC NEB 2022 recettes (new-perimeter RFN) + AFT charge + AN remb locaux; spend residual to déficit 151.4",
+          "ir": 89.0,
+          "is": 62.1,
+          "tva": 100.8,
+          "accises": 18.0,
+          "autres_fiscales": 60.3,
+          "non_fiscal": 23.9,
+          "credits_ministeriels": 340.6,
+          "charge": 51.5,
+          "cas_pensions": 46.3,
+          "remboursements_locaux": 7.0,
+          "psr": 67.2,
+          "solde_comptes_speciaux": 6.7,
+          "solde_budgets_annexes": 0.3,
+          "recettes_fiscales_nettes": 330.3,
+          "note": "RFN 330.3 = old 323.3 + remb locaux 7.0 (LOLF reform comparable). charge AFT net budgetary 51.5 (pgm117 50.7 + SNCF). cas=44.4 contributions + 1.9 amort covid. PSR CT+UE 43.0+24.2. CS +6.7 CdC."
+        }
+      }
+    }
+  },
+  "debt_charge": {
+    "source": "AFT / LFI charge budgétaire de la dette (programme 117)",
+    "unit": "EUR bn, calendar year",
+    "years": {
+      "2021": {
+        "bn": 38.5,
+        "vintage": "AFT key figures — exécution (net budgetary)"
+      },
+      "2022": {
+        "bn": 51.5,
+        "vintage": "AFT key figures — exécution (net budgetary; pgm117 50.7)"
+      },
+      "2023": {
+        "bn": 54.8,
+        "vintage": "AFT key figures / PLF 2025 — exécution yc SNCF"
+      },
+      "2024": {
+        "bn": 50.1,
+        "vintage": "AFT key figures — exécution 2024 (net budgetary); supersedes PLF chiffres 46.9"
+      },
+      "2025": {
+        "bn": 53.5,
+        "vintage": "LFI 2025"
+      },
+      "2026": {
+        "bn": 62.6,
+        "vintage": "AFT update 29-Sep-2026 (LFI 2026 was 59.3)"
+      },
+      "2027": {
+        "bn": 72.9,
+        "vintage": "AFT PLF 2027 release 29-Sep-2026"
+      }
+    },
+    "note": "AFT net budgetary cost when available; categories.years[*].charge may use PLF chiffres for the same year when that is the équilibre source (e.g. 2024 PLF 46.9 vs AFT 50.1)."
+  },
+  "rate_shock": {
+    "source": "AFT: permanent +100bp parallel shift vs reference curve (Senate Rapport général PLF 2026 / Rapport sur la dette)",
+    "unit": "EUR bn extra charge de la dette",
+    "triangle": {
+      "1": 3.2,
+      "5": 23.5,
+      "9": 33.5
+    },
+    "note": "Interpolate linearly in years from the published 1/5/9 points for scenario years beyond year 1."
+  },
+  "rate_assumptions_plf2026": {
+    "source": "PLF 2026 Rapport sur la dette (Senate)",
+    "btf_3m_end": {
+      "2025": 2.0,
+      "2026": 2.25
+    },
+    "oat_10y_end": {
+      "2025": 3.7,
+      "2026": 3.8
+    }
+  }
+}

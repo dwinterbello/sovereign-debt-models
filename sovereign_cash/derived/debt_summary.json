@@ -1,0 +1,90 @@
+{
+ "asof": "2026-11-15",
+ "vintages": {
+  "ameco": "EC AMECO (2026-11-15)",
+  "cao_baseline": "CAO 2026-07",
+  "cao_growth1": "CAO 2026-07",
+  "cao_growth2": "CAO 2026-07",
+  "cbo": "CBO 2026-02",
+  "eurostat": "Eurostat gov_10a_main",
+  "nb_debt": "Norges Bank key figures",
+  "nb_interest": "Norges Bank primary market",
+  "obr": "OBR EFO October 2026",
+  "oecd": "Economic Outlook 119",
+  "official_stock": "INSEE / AFT negotiable debt",
+  "uk_hist": "ONS public sector finances",
+  "uk_uplift": "ONS RPI",
+  "us_hist": "Treasury MTS Table 9",
+  "weo": "IMF WEO (datamapper, 2026-11-15)"
+ },
+ "bu_fiscal": {
+  "uk": {
+   "ship": false,
+   "reason": "UK BU not shipped"
+  },
+  "fr": {
+   "ship": true,
+   "origin": "2026-09-01",
+   "source": "fr.bottom_up_macro.category_annuals"
+  },
+  "it": {
+   "ship": false,
+   "reason": "PRE mean MAE macro 6.76 vs production 5.52 (-22.5% better), worse at 1/4 horizons; OOS 11.25 vs 11.27; NGDP clip \u00b12.49pp PRE-support; \u03b2_tax=0.55 \u03b2_pri=0.35; treas\u00d70.94; cap\u00d7NGDP 0.2; interest=isin_curve; need \u22655% PRE edge, \u22641 worse horizon, OOS \u2264+25%"
+  },
+  "de": {
+   "ship": true,
+   "origin": "2026-08-01",
+   "source": "de.bottom_up_macro.revenue_interest_paths"
+  }
+ },
+ "gov_curve": {
+  "uk": {
+   "asof": "2026-11-12",
+   "source": "BoE nominal spot zero"
+  },
+  "uk_real": {
+   "asof": "2026-11-12",
+   "source": "BoE real spot zero"
+  },
+  "us": {
+   "asof": "2026-11-06",
+   "source": "Fed GSW SVENY zero"
+  },
+  "us_real": {
+   "asof": "2026-11-06",
+   "source": "GSW nominal par minus par breakeven, bootstrapped"
+  },
+  "de": {
+   "asof": "2026-11-13",
+   "source": "Bundesbank BBSIS zero"
+  },
+  "jp": {
+   "asof": "2026-11-12",
+   "source": "MoF JGB par, bootstrapped"
+  },
+  "es": {
+   "asof": "2026-11-15",
+   "source": "TradingView cash par, bootstrapped"
+  },
+  "fr": {
+   "asof": "2026-11-15",
+   "source": "TradingView cash par, bootstrapped"
+  },
+  "it": {
+   "asof": "2026-11-15",
+   "source": "TradingView cash par, bootstrapped"
+  },
+  "fr_real": {
+   "asof": "2026-10-15",
+   "source": "nominal zero minus linker-auction breakevens"
+  },
+  "it_real": {
+   "asof": "2026-10-28",
+   "source": "nominal zero minus linker-auction breakevens"
+  },
+  "jp_real": {
+   "asof": "2026-08-12",
+   "source": "nominal zero minus a single-tenor linker breakeven"
+  }
+ }
+}

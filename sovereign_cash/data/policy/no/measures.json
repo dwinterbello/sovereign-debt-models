@@ -1,0 +1,29 @@
+{
+ "unit": "NOK bn, calendar years; + adds to the general government deficit (lowers the surplus)",
+ "note": "Norway budgets one year at a time: no budget after 2026 is law, so the 2026 loosening is held at its 2026 level, except the temporary fuel duty cut, which ends in 2026.",
+ "items": [
+  {
+   "label": "Temporary fuel duty cut (April to 1 September 2026)",
+   "head": "tax",
+   "kind": "effect",
+   "event": "Revised national budget 2026",
+   "values": {
+    "2026": 5.5,
+    "2027": 0.0
+   },
+   "source": "Meld. St. 2 (2025-2026), chapter 3: NOK 5.5bn in 2026; the cut is temporary, reversed on 1 September 2026 (Altinget, citing the Ministry of Finance); Storting recommendation Innst. 450 S (2025-2026)",
+   "url": "https://www.regjeringen.no/no/dokumenter/meld.-st.-2-20252026/id3159616/?ch=3"
+  },
+  {
+   "label": "Other 2026 budget loosening (budget impulse)",
+   "head": "spend",
+   "kind": "effect",
+   "event": "Revised national budget 2026",
+   "values": {
+    "2026": 35.9
+   },
+   "source": "Meld. St. 2 (2025-2026), chapter 3: budget impulse 0.9% of mainland trend GDP (NOK 4,599bn) = NOK 41.4bn, less the fuel duty cut",
+   "url": "https://www.regjeringen.no/no/dokumenter/meld.-st.-2-20252026/id3159616/?ch=3"
+  }
+ ]
+}

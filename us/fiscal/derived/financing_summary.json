@@ -1,0 +1,156 @@
+{
+ "asof": "2026-11-12",
+ "resid_daily_sd_bn": 31.898017209212153,
+ "resid_quarter_max_abs_bn": 2126.8062046798495,
+ "quarterly": {
+  "2022-03-31": {
+   "drift_public_bn": 170.8,
+   "soma_net_bn": 151.8,
+   "buyback_bn": 0.0,
+   "nonmkt": 10.8,
+   "resid_bn": 8.3
+  },
+  "2022-06-30": {
+   "drift_public_bn": 118.9,
+   "soma_net_bn": 115.4,
+   "buyback_bn": 0.0,
+   "nonmkt": -3.8,
+   "resid_bn": 7.3
+  },
+  "2022-09-30": {
+   "drift_public_bn": 47.0,
+   "soma_net_bn": 35.3,
+   "buyback_bn": 0.0,
+   "nonmkt": 5.1,
+   "resid_bn": 6.7
+  },
+  "2022-12-31": {
+   "drift_public_bn": -19.0,
+   "soma_net_bn": -10.8,
+   "buyback_bn": 0.0,
+   "nonmkt": -6.3,
+   "resid_bn": -1.9
+  },
+  "2023-03-31": {
+   "drift_public_bn": -40.2,
+   "soma_net_bn": -45.2,
+   "buyback_bn": 0.0,
+   "nonmkt": -0.0,
+   "resid_bn": 5.0
+  },
+  "2023-06-30": {
+   "drift_public_bn": -44.9,
+   "soma_net_bn": -37.5,
+   "buyback_bn": 0.0,
+   "nonmkt": -11.1,
+   "resid_bn": 3.7
+  },
+  "2023-09-30": {
+   "drift_public_bn": -36.3,
+   "soma_net_bn": -38.6,
+   "buyback_bn": 0.0,
+   "nonmkt": -0.8,
+   "resid_bn": 3.0
+  },
+  "2023-12-31": {
+   "drift_public_bn": -88.3,
+   "soma_net_bn": -73.4,
+   "buyback_bn": 0.0,
+   "nonmkt": -13.3,
+   "resid_bn": -1.6
+  },
+  "2024-03-31": {
+   "drift_public_bn": -81.9,
+   "soma_net_bn": -77.1,
+   "buyback_bn": 0.0,
+   "nonmkt": -6.9,
+   "resid_bn": 2.1
+  },
+  "2024-06-30": {
+   "drift_public_bn": -54.2,
+   "soma_net_bn": -52.6,
+   "buyback_bn": 8.0,
+   "nonmkt": 0.4,
+   "resid_bn": 6.0
+  },
+  "2024-09-30": {
+   "drift_public_bn": -22.5,
+   "soma_net_bn": 1.7,
+   "buyback_bn": 33.6,
+   "nonmkt": 8.3,
+   "resid_bn": 1.1
+  },
+  "2024-12-31": {
+   "drift_public_bn": -67.9,
+   "soma_net_bn": -19.6,
+   "buyback_bn": 36.1,
+   "nonmkt": -17.4,
+   "resid_bn": 5.2
+  },
+  "2025-03-31": {
+   "drift_public_bn": -44.5,
+   "soma_net_bn": 15.3,
+   "buyback_bn": 47.0,
+   "nonmkt": -17.3,
+   "resid_bn": 4.5
+  },
+  "2025-06-30": {
+   "drift_public_bn": -27.3,
+   "soma_net_bn": 38.9,
+   "buyback_bn": 65.5,
+   "nonmkt": -2.3,
+   "resid_bn": 1.5
+  },
+  "2025-09-30": {
+   "drift_public_bn": 24.8,
+   "soma_net_bn": 48.8,
+   "buyback_bn": 21.6,
+   "nonmkt": -3.6,
+   "resid_bn": 1.2
+  },
+  "2025-12-31": {
+   "drift_public_bn": -18.0,
+   "soma_net_bn": 37.7,
+   "buyback_bn": 47.2,
+   "nonmkt": -8.8,
+   "resid_bn": 0.3
+  },
+  "2026-03-31": {
+   "drift_public_bn": 40.7,
+   "soma_net_bn": 98.1,
+   "buyback_bn": 53.6,
+   "nonmkt": -3.6,
+   "resid_bn": -0.2
+  },
+  "2026-06-30": {
+   "drift_public_bn": 88.6,
+   "soma_net_bn": 171.5,
+   "buyback_bn": 87.8,
+   "nonmkt": 5.6,
+   "resid_bn": -0.8
+  },
+  "2026-09-30": {
+   "drift_public_bn": 102.2,
+   "soma_net_bn": 167.9,
+   "buyback_bn": 52.0,
+   "nonmkt": -11.8,
+   "resid_bn": -1.9
+  },
+  "2026-12-31": {
+   "drift_public_bn": 1981.9,
+   "soma_net_bn": -113.8,
+   "buyback_bn": 25.6,
+   "nonmkt": -5.5,
+   "resid_bn": 2126.8
+  }
+ },
+ "forward_63bd_bn": {
+  "soma_bn": 225.7,
+  "soma_purchases_bn": 35.4,
+  "buyback_bn": -61.9,
+  "nonmkt_bn": -3.0,
+  "drift_bn": 196.2
+ },
+ "soma_asof": "2026-11-10",
+ "soma_purchase_pace_bn_day": 2.619801646153846
+}

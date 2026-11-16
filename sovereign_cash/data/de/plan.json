@@ -1,0 +1,9 @@
+{
+ "note": "Federal credit-market borrowing plan, EUR bn: core budget Nettokreditaufnahme + Sondervermoegen Infrastruktur und Klimaneutralitaet (SVIK) + Sondervermoegen Bundeswehr (SVBw). Same totals as issuance/forward.py DE_NET_BORROWING.",
+ "years": {
+  "2026": {"core": 98.0, "infrastruktur": 58.1, "bundeswehr": 25.5, "total": 181.6,
+           "source": "Bundeshaushalt 2026 Soll (core NKA 98.0; Wirtschaftsplaene SVIK 58.1, SVBw 25.5)"},
+  "2027": {"core": 118.7, "infrastruktur": 54.9, "bundeswehr": 30.0, "total": 203.6,
+           "source": "Regierungsentwurf Bundeshaushalt 2027, cabinet 6 Jul 2026, BT-Drs. 21/7300"}
+ }
+}

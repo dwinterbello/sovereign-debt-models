@@ -1,0 +1,110 @@
+{
+  "es": {
+    "cc": "es",
+    "param": "LEAF_BLEND",
+    "locked": 0.7,
+    "incumbent": 0.7,
+    "reason": "LEAF_BLEND=0.7 ships on rest-of-year gate; shipping set [0.5, 0.6, 0.7, 0.8, 1.0]; best PRE among ships = 0.8 @ 0.1404",
+    "prod_pre": 0.1587,
+    "prod_oos": 0.3205,
+    "grid": [
+      {
+        "blend": 0.5,
+        "ship": true,
+        "reason": "PRE 0.142 vs seas_add_3 0.159; OOS 0.368 vs 0.320",
+        "pre": 0.1415,
+        "oos": 0.3678
+      },
+      {
+        "blend": 0.6,
+        "ship": true,
+        "reason": "PRE 0.141 vs seas_add_3 0.159; OOS 0.365 vs 0.320",
+        "pre": 0.1411,
+        "oos": 0.3646
+      },
+      {
+        "blend": 0.7,
+        "ship": true,
+        "reason": "PRE 0.141 vs seas_add_3 0.159; OOS 0.361 vs 0.320",
+        "pre": 0.1408,
+        "oos": 0.3615
+      },
+      {
+        "blend": 0.8,
+        "ship": true,
+        "reason": "PRE 0.140 vs seas_add_3 0.159; OOS 0.358 vs 0.320",
+        "pre": 0.1404,
+        "oos": 0.3583
+      },
+      {
+        "blend": 1.0,
+        "ship": true,
+        "reason": "PRE 0.142 vs seas_add_3 0.159; OOS 0.352 vs 0.320",
+        "pre": 0.1418,
+        "oos": 0.3519
+      }
+    ]
+  },
+  "no": {
+    "cc": "no",
+    "param": "MAINLAND_RESID_WEIGHT",
+    "locked": 0.5,
+    "incumbent": 0.5,
+    "reason": "MAINLAND_RESID_WEIGHT=0.5 ships; shipping set [0.0, 0.25, 0.5, 0.75, 1.0]; best PRE among ships = 1.0 @ 5.855 (live score_beyond_nb)",
+    "source": "live score_beyond_nb",
+    "grid": [
+      {
+        "weight": 0.0,
+        "ship": true,
+        "reason": "PRE gate passed",
+        "pre": 6.043,
+        "pre_smly": 6.73,
+        "oos": 14.938,
+        "oos_smly": 14.97
+      },
+      {
+        "weight": 0.25,
+        "ship": true,
+        "reason": "PRE gate passed",
+        "pre": 5.992,
+        "pre_smly": 6.73,
+        "oos": 14.748,
+        "oos_smly": 14.97
+      },
+      {
+        "weight": 0.5,
+        "ship": true,
+        "reason": "PRE gate passed",
+        "pre": 5.948,
+        "pre_smly": 6.73,
+        "oos": 14.555,
+        "oos_smly": 14.97
+      },
+      {
+        "weight": 0.75,
+        "ship": true,
+        "reason": "PRE gate passed",
+        "pre": 5.902,
+        "pre_smly": 6.73,
+        "oos": 14.365,
+        "oos_smly": 14.97
+      },
+      {
+        "weight": 1.0,
+        "ship": true,
+        "reason": "PRE gate passed",
+        "pre": 5.855,
+        "pre_smly": 6.73,
+        "oos": 14.175,
+        "oos_smly": 14.97
+      }
+    ]
+  },
+  "de": {
+    "cc": "de",
+    "param": "OPEN_MODE / OPEN_YTD_WEIGHT_*",
+    "locked": "soll + hist/YTD 80/20 spend, 95/5 revenue",
+    "reason": "Scored in experiments/de_post2020_open_year.md: dropping Soll doubles OOS error; hist_year clears PRE slightly then collapses OOS. Weights are part of the shipped Soll path, not free parameters without a test.",
+    "source": "sovereign_cash/experiments/de_post2020_open_year.md"
+  }
+}

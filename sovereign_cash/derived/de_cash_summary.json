@@ -1,0 +1,1348 @@
+{
+ "country": "DE",
+ "ccy": "EUR",
+ "asof": "2026-08",
+ "sources": [
+  {
+   "name": "BMF Monatsbericht 'Entwicklung des Bundeshaushalts' (core YTD, Soll)",
+   "url": "https://www.bundesfinanzministerium.de/Monatsberichte/",
+   "frequency": "M",
+   "lag_days": 25,
+   "verified": true,
+   "history": "2017-01 \u2192 2026-08 (107 months)"
+  },
+  {
+   "name": "BMF Monatsbericht archive PDF (SDDS table)",
+   "url": "https://www.bundesfinanzministerium.de/Monatsberichte/2001-2016/Inhalte/Monatsbericht-Archiv-Downloads/2016/monatsbericht-2016-12-deutsch.pdf?__blob=publicationFile&v=1",
+   "frequency": "M",
+   "lag_days": 25,
+   "verified": true,
+   "history": "2011-01 \u2192 2016-11 (71 months)"
+  },
+  {
+   "name": "Finanzagentur Schuldenbericht (debt by use and instrument, gross/redemptions, placements)",
+   "url": "https://www.deutsche-finanzagentur.de/fileadmin/user_upload/Institutionelle-investoren/berichtswesen/schuldenbericht_dt.xlsx",
+   "frequency": "M",
+   "lag_days": 30,
+   "verified": true,
+   "history": "1995-01 \u2192 2026-09 (381 months)"
+  },
+  {
+   "name": "Finanzagentur auction tape",
+   "url": "issuance/cache/ops_de.parquet",
+   "frequency": "D",
+   "lag_days": 1,
+   "verified": true,
+   "history": "1999-01 \u2192 2026-11 (335 months)"
+  },
+  {
+   "name": "Finanzagentur quarterly issuance plan (Bubill calendar)",
+   "url": "https://www.deutsche-finanzagentur.de/fileadmin/user_upload/Pressemitteilung/dt/2026/2026_09_24_PM_08_Emissionen_des_Bundes_im_vierten_Quartal_2026.pdf",
+   "frequency": "Q",
+   "lag_days": 0,
+   "verified": true,
+   "history": "2026-10-05 \u2192 2026-12-07"
+  },
+  {
+   "name": "Federal borrowing plan (core + special funds)",
+   "url": "sovereign_cash/data/de/plan.json",
+   "frequency": "A",
+   "lag_days": 0,
+   "verified": true,
+   "history": "2026, 2027"
+  },
+  {
+   "name": "Issuance forward calendar (published quarter, then plan-sized pattern)",
+   "url": "issuance/forward.py",
+   "frequency": "Q",
+   "lag_days": 0,
+   "verified": true,
+   "history": "forward only"
+  },
+  {
+   "name": "Eurosystem PSPP+PEPP holdings by line \u2014 modelled allocation",
+   "url": "issuance/qe_alloc.py",
+   "frequency": "M",
+   "lag_days": 30,
+   "verified": false,
+   "history": "modelled, forward maturities"
+  },
+  {
+   "name": "Destatis Bund core + Extrahaushalte YTD (cross-check)",
+   "url": "https://www.destatis.de/DE/Themen/Staat/Oeffentliche-Finanzen/EU-Haushaltsrahmenrichtlinie/Tabellen/bund.html",
+   "frequency": "M",
+   "lag_days": 60,
+   "verified": true,
+   "history": "2023-07 \u2192 2026-09 (39 months)"
+  }
+ ],
+ "buffer": "Net money-market placements (Finanzagentur 'Kassenverst\u00e4rkungskredite und Geldanlagen', sign flipped); the Bundesbank account is liquidity-neutral at 0%. Bubills follow the published calendar, then flat; placements flex.",
+ "score": [
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": 4.69,
+   "benchmark": 2.74,
+   "n": 28,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 4.69,
+     "n": 28,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 4.97,
+     "n": 28,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 2.34,
+     "n": 48,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 2.47,
+     "n": 48,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 2.38,
+     "n": 48,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 2.41,
+     "n": 48,
+     "common": true
+    },
+    "smly": {
+     "mae": 2.63,
+     "n": 48,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 2.25,
+     "n": 48,
+     "common": true
+    },
+    "target_3": {
+     "mae": 4.69,
+     "n": 28,
+     "common": false
+    },
+    "target_5": {
+     "mae": 4.97,
+     "n": 28,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": 8.23,
+   "benchmark": 5.05,
+   "n": 26,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 8.23,
+     "n": 26,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 9.1,
+     "n": 26,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 3.83,
+     "n": 46,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 4.16,
+     "n": 46,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 4.86,
+     "n": 46,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 4.94,
+     "n": 46,
+     "common": true
+    },
+    "smly": {
+     "mae": 4.98,
+     "n": 46,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 4.69,
+     "n": 46,
+     "common": true
+    },
+    "target_3": {
+     "mae": 8.23,
+     "n": 26,
+     "common": false
+    },
+    "target_5": {
+     "mae": 9.1,
+     "n": 26,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": 12.95,
+   "benchmark": 7.84,
+   "n": 23,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 12.95,
+     "n": 23,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 14.18,
+     "n": 23,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 4.86,
+     "n": 43,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 5.37,
+     "n": 43,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 7.97,
+     "n": 43,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 8.01,
+     "n": 43,
+     "common": true
+    },
+    "smly": {
+     "mae": 7.57,
+     "n": 43,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 7.28,
+     "n": 43,
+     "common": true
+    },
+    "target_3": {
+     "mae": 12.95,
+     "n": 23,
+     "common": false
+    },
+    "target_5": {
+     "mae": 14.18,
+     "n": 23,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": 25.3,
+   "benchmark": 13.0,
+   "n": 17,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 25.3,
+     "n": 17,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 26.74,
+     "n": 17,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 6.67,
+     "n": 37,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 7.54,
+     "n": 37,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 10.24,
+     "n": 37,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 10.24,
+     "n": 37,
+     "common": true
+    },
+    "smly": {
+     "mae": 10.24,
+     "n": 37,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 12.73,
+     "n": 37,
+     "common": true
+    },
+    "target_3": {
+     "mae": 25.3,
+     "n": 17,
+     "common": false
+    },
+    "target_5": {
+     "mae": 26.74,
+     "n": 17,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": 5.27,
+   "benchmark": 6.62,
+   "n": 38,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 5.27,
+     "n": 38,
+     "common": true
+    },
+    "planhc_5": {
+     "mae": 5.18,
+     "n": 38,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 12.78,
+     "n": 38,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 14.45,
+     "n": 38,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 5.55,
+     "n": 38,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 4.91,
+     "n": 38,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 5.37,
+     "n": 44,
+     "common": false
+    },
+    "seas_mult_5": {
+     "mae": 4.96,
+     "n": 20,
+     "common": false
+    },
+    "smly": {
+     "mae": 6.62,
+     "n": 38,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 5.76,
+     "n": 38,
+     "common": true
+    },
+    "target_3": {
+     "mae": 5.49,
+     "n": 38,
+     "common": true
+    },
+    "target_5": {
+     "mae": 5.67,
+     "n": 38,
+     "common": true
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": 10.5,
+   "benchmark": 15.53,
+   "n": 36,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 10.5,
+     "n": 36,
+     "common": true
+    },
+    "planhc_5": {
+     "mae": 9.31,
+     "n": 36,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 28.98,
+     "n": 36,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 30.94,
+     "n": 36,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 12.61,
+     "n": 36,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 10.69,
+     "n": 36,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 8.92,
+     "n": 42,
+     "common": false
+    },
+    "seas_mult_5": {
+     "mae": 9.08,
+     "n": 18,
+     "common": false
+    },
+    "smly": {
+     "mae": 15.53,
+     "n": 36,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 14.21,
+     "n": 36,
+     "common": true
+    },
+    "target_3": {
+     "mae": 12.19,
+     "n": 36,
+     "common": true
+    },
+    "target_5": {
+     "mae": 11.74,
+     "n": 36,
+     "common": true
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": 15.75,
+   "benchmark": 29.38,
+   "n": 33,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 15.75,
+     "n": 33,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 14.59,
+     "n": 33,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 45.06,
+     "n": 50,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 49.25,
+     "n": 50,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 22.13,
+     "n": 50,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 21.56,
+     "n": 50,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 18.26,
+     "n": 39,
+     "common": false
+    },
+    "seas_mult_5": {
+     "mae": 18.46,
+     "n": 15,
+     "common": false
+    },
+    "smly": {
+     "mae": 25.89,
+     "n": 50,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 28.21,
+     "n": 50,
+     "common": true
+    },
+    "target_3": {
+     "mae": 19.49,
+     "n": 33,
+     "common": false
+    },
+    "target_5": {
+     "mae": 18.16,
+     "n": 33,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": 20.02,
+   "benchmark": 47.66,
+   "n": 28,
+   "model_name": "planhc_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "planhc_3": {
+     "mae": 20.02,
+     "n": 28,
+     "common": false
+    },
+    "planhc_5": {
+     "mae": 23.6,
+     "n": 28,
+     "common": false
+    },
+    "prevyear_3": {
+     "mae": 83.73,
+     "n": 44,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 87.78,
+     "n": 44,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 51.2,
+     "n": 44,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 51.2,
+     "n": 44,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 42.56,
+     "n": 33,
+     "common": false
+    },
+    "seas_mult_5": {
+     "mae": 52.43,
+     "n": 9,
+     "common": false
+    },
+    "smly": {
+     "mae": 51.2,
+     "n": 44,
+     "common": true
+    },
+    "sx_level_exog": {
+     "mae": 45.38,
+     "n": 44,
+     "common": true
+    },
+    "target_3": {
+     "mae": 32.5,
+     "n": 28,
+     "common": false
+    },
+    "target_5": {
+     "mae": 36.38,
+     "n": 28,
+     "common": false
+    }
+   },
+   "benchmark_sample": "planhc_3's own origins"
+  }
+ ],
+ "score_note": "Core budget only (the special funds have no plan history). Walk-forward from monthly origins, cumulative core cash requirement over the next h months. PRE = windows ending by Dec-2019 (common h=12 n=37); OOS = origins from Jan-2022 (common h=12 n=44); windows touching 2020\u20132021 excluded. planhc_3 = Soll \u00d7 execution haircut, not PRE-gated (chosen a priori): trailing models cannot see the debt-brake reform and special-fund ramp the plan carries. In PRE (17 h=12 windows, below the 36 needed to select) it loses to prevyear_3 at every horizon (h=12 MAE 25.3 vs 8.3 on the same windows). The 2017\u20132019 plans printed deficits that closed as surpluses, which is what the haircut corrects. OOS is reported, not used for the choice. Once the bottom-up ship clears, planhc_3 is only the seasonal fallback: the live open-year core is the bottom-up path and later years the component model. OOS h=12 on planhc_3's own 28 origins (2022-06 \u2192 2024-11): planhc_3 20.0, prevyear_3 83.8, smly 47.7, target_3 32.5.",
+ "model": "planhc_3",
+ "model_reason": "planhc_3 = Soll \u00d7 execution haircut, not PRE-gated (chosen a priori): trailing models cannot see the debt-brake reform and special-fund ramp the plan carries. In PRE (17 h=12 windows, below the 36 needed to select) it loses to prevyear_3 at every horizon (h=12 MAE 25.3 vs 8.3 on the same windows). The 2017\u20132019 plans printed deficits that closed as surpluses, which is what the haircut corrects. OOS is reported, not used for the choice. Once the bottom-up ship clears, planhc_3 is only the seasonal fallback: the live open-year core is the bottom-up path and later years the component model.",
+ "model_label": "not PRE-gated \u2014 a priori; score table only. Live core = bottom-up macro",
+ "live_core_path": "bottom-up macro (Soll open-year \u00d7 hist/YTD blend; later smly\u00d7NGDP/wages + coupon\u00d7FA-stock interest)",
+ "pre_winner": "prevyear_3",
+ "bill_stock_score": [
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": 4.48,
+   "benchmark": 9.81,
+   "n": 28,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 9.81,
+     "n": 28,
+     "common": false
+    },
+    "gap0": {
+     "mae": 4.48,
+     "n": 28,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 4.91,
+     "n": 28,
+     "common": false
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": 7.28,
+   "benchmark": 7.58,
+   "n": 26,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 7.58,
+     "n": 26,
+     "common": false
+    },
+    "gap0": {
+     "mae": 7.28,
+     "n": 26,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 6.98,
+     "n": 26,
+     "common": false
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": 9.04,
+   "benchmark": 8.49,
+   "n": 23,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 8.49,
+     "n": 23,
+     "common": false
+    },
+    "gap0": {
+     "mae": 9.04,
+     "n": 23,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 7.96,
+     "n": 23,
+     "common": false
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": 24.17,
+   "benchmark": 6.7,
+   "n": 17,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 6.7,
+     "n": 17,
+     "common": false
+    },
+    "gap0": {
+     "mae": 24.17,
+     "n": 17,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 20.88,
+     "n": 17,
+     "common": false
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": 10.62,
+   "benchmark": 12.13,
+   "n": 38,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 12.13,
+     "n": 38,
+     "common": true
+    },
+    "gap0": {
+     "mae": 10.62,
+     "n": 38,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 10.6,
+     "n": 38,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": 23.22,
+   "benchmark": 22.82,
+   "n": 36,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 22.82,
+     "n": 36,
+     "common": true
+    },
+    "gap0": {
+     "mae": 23.22,
+     "n": 36,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 25.69,
+     "n": 36,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": 35.82,
+   "benchmark": 33.41,
+   "n": 33,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 33.41,
+     "n": 33,
+     "common": false
+    },
+    "gap0": {
+     "mae": 35.82,
+     "n": 33,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 40.94,
+     "n": 33,
+     "common": false
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": 56.57,
+   "benchmark": 27.97,
+   "n": 28,
+   "model_name": "gap0",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 27.97,
+     "n": 28,
+     "common": false
+    },
+    "gap0": {
+     "mae": 56.57,
+     "n": 28,
+     "common": false
+    },
+    "gapseas": {
+     "mae": 63.03,
+     "n": 28,
+     "common": false
+    }
+   }
+  }
+ ],
+ "forward": {
+  "window": "2026-09 \u2192 2030-12",
+  "model": "planhc_3",
+  "model_reason": "planhc_3 = Soll \u00d7 execution haircut, not PRE-gated (chosen a priori): trailing models cannot see the debt-brake reform and special-fund ramp the plan carries. In PRE (17 h=12 windows, below the 36 needed to select) it loses to prevyear_3 at every horizon (h=12 MAE 25.3 vs 8.3 on the same windows). The 2017\u20132019 plans printed deficits that closed as surpluses, which is what the haircut corrects. OOS is reported, not used for the choice. Once the bottom-up ship clears, planhc_3 is only the seasonal fallback: the live open-year core is the bottom-up path and later years the component model.",
+  "model_not_pre_gated": true,
+  "live_core_path": "bottom-up macro",
+  "cash_requirement_12m_bn": 856.2,
+  "cash_requirement_core_12m_bn": 565.3,
+  "cash_requirement_sv_12m_bn": 290.9,
+  "cash_requirement_12m_official_bn": 819.1,
+  "cash_requirement_core_12m_by_model_bn": {
+   "smly": 87.3,
+   "prevyear_3": 55.1,
+   "target_3": 123.3,
+   "planhc_3": 96.0
+  },
+  "oos_matched_h12": {
+   "h": 12,
+   "n": 28,
+   "origins": "2022-06 \u2192 2024-11",
+   "mae": {
+    "planhc_3": 20.02,
+    "prevyear_3": 83.78,
+    "smly": 47.66,
+    "target_3": 32.5
+   }
+  },
+  "core_haircut": 0.846,
+  "core_haircut_years": [
+   2022,
+   2023,
+   2025
+  ],
+  "core_haircut_band": [
+   0.412,
+   0.908
+  ],
+  "core_haircut_table": {
+   "2017": {
+    "plan": 7.0,
+    "outturn": -5.0,
+    "ratio": -0.714,
+    "gap": 0.5,
+    "in_band": false,
+    "eligible": false
+   },
+   "2018": {
+    "plan": 1.9,
+    "outturn": -10.9,
+    "ratio": -5.737,
+    "gap": 3.2,
+    "in_band": false,
+    "eligible": false
+   },
+   "2019": {
+    "plan": 5.8,
+    "outturn": -13.3,
+    "ratio": -2.293,
+    "gap": 2.6,
+    "in_band": false,
+    "eligible": false
+   },
+   "2020": {
+    "plan": 218.1,
+    "outturn": 130.7,
+    "ratio": 0.599,
+    "gap": 27.3,
+    "in_band": false,
+    "eligible": false
+   },
+   "2021": {
+    "plan": 240.4,
+    "outturn": 215.6,
+    "ratio": 0.897,
+    "gap": 80.0,
+    "in_band": false,
+    "eligible": false
+   },
+   "2022": {
+    "plan": 139.6,
+    "outturn": 116.0,
+    "ratio": 0.831,
+    "gap": 15.2,
+    "in_band": true,
+    "eligible": true
+   },
+   "2023": {
+    "plan": 71.5,
+    "outturn": 64.9,
+    "ratio": 0.908,
+    "gap": -3.7,
+    "in_band": true,
+    "eligible": true
+   },
+   "2024": {
+    "plan": 60.7,
+    "outturn": 25.0,
+    "ratio": 0.412,
+    "gap": -37.2,
+    "in_band": true,
+    "eligible": false
+   },
+   "2025": {
+    "plan": 81.9,
+    "outturn": 65.4,
+    "ratio": 0.799,
+    "gap": 1.2,
+    "in_band": true,
+    "eligible": true
+   }
+  },
+  "soll_core_fin_balance_year_bn": 98.1,
+  "coupon_gross_12m_bn": 383.4,
+  "coupon_gross_12m_by_source_bn": {
+   "issuance calendar": 8.0,
+   "none": 0.0,
+   "pattern sized on plan": 296.1,
+   "tape": 79.3
+  },
+  "coupon_redemptions_12m_bn": 814.2,
+  "net_bonds_12m_bn": -430.8,
+  "cb_held_redemptions_12m_bn": 290.2,
+  "cb_held_redemptions_modelled": true,
+  "private_net_bonds_12m_bn": -140.6,
+  "net_bills_12m_bn": 11.9,
+  "net_bubills_12m_bn": 11.9,
+  "bubill_stock_last_actual_bn": 103.7,
+  "bubill_stock_last_actual_month": "2026-08",
+  "bubill_stock_end_year_bn": 115.6,
+  "bubill_stock_implied_end_bn": 115.6,
+  "net_placements_last_bn": 6.1,
+  "net_placements_end_year_bn": 10.4,
+  "net_placements_end_year_plan_bn": -23.6,
+  "net_placements_implied_end_bn": -1271.3,
+  "net_placements_implied_end_plan_bn": -1234.2,
+  "plan_year": 2026,
+  "plan_cash_requirement_bn": 181.6,
+  "plan_split_bn": {
+   "core": 98.0,
+   "infrastruktur": 58.1,
+   "bundeswehr": 25.5
+  },
+  "plan_source": "Bundeshaushalt 2026 Soll (core NKA 98.0; Wirtschaftsplaene SVIK 58.1, SVBw 25.5) \u2014 total federal credit-market borrowing incl. special funds",
+  "plan_next_year_bn": {
+   "core": 118.7,
+   "infrastruktur": 54.9,
+   "bundeswehr": 30.0,
+   "total": 203.6
+  },
+  "cash_requirement_ytd_bn": 105.7,
+  "ytd_through": "2026-08",
+  "ytd_split_bn": {
+   "core": 67.7,
+   "infrastruktur": 31.3,
+   "bundeswehr": 12.3,
+   "other": -5.5
+  },
+  "ytd_split_through": {
+   "core": "2026-08",
+   "special funds": "2026-08"
+  },
+  "model_full_year_bn": 142.2,
+  "model_full_year_lo_bn": 127.9,
+  "model_full_year_hi_bn": 157.7,
+  "model_full_year_core_bn": 75.3,
+  "model_full_year_sv_bn": 66.9,
+  "model_full_year_split_bn": {
+   "core": 75.3,
+   "infrastruktur": 47.0,
+   "bundeswehr": 25.5,
+   "other": -5.5
+  },
+  "plan_scenario_full_year_bn": 176.2,
+  "model_minus_plan_bn": -39.4,
+  "model_minus_plan_split_bn": {
+   "core": -22.7,
+   "plan funds": -11.1,
+   "other funds": -5.5
+  },
+  "plan_gap_lands_on": "net money-market placements (Bubills follow the published calendar; after it hist \u03b1+\u03b2\u00b7need demeaned to hold the calendar-end stock)",
+  "origin_financing": "2026-08-01",
+  "gap_mode": "gap0",
+  "core_spend_soll_bn": 524.5,
+  "core_rev_soll_bn": 426.4,
+  "core_spend_ratio": 0.972,
+  "core_rev_ratio": 1.019,
+  "core_line_years": [
+   2025,
+   2024,
+   2023,
+   2022,
+   2019
+  ],
+  "sv_ytd_bn": {
+   "infrastruktur": 31.3,
+   "bundeswehr": 12.3
+  },
+  "sv_ytd_through": "2026-08",
+  "sv_plan_year_bn": 83.6,
+  "sv_execution_ytd": 0.782,
+  "sv_execution_ytd_by_fund": {
+   "infrastruktur": 0.808,
+   "bundeswehr": 0.722
+  },
+  "sv_other_funds_bn_per_month": 0.0,
+  "sv_profile": {
+   "infrastruktur": "flat_ytd_pace",
+   "bundeswehr": "plan_residual_flat"
+  },
+  "sv_scale_channel": {
+   "infrastruktur": false,
+   "bundeswehr": true
+  },
+  "sv_implied_ye_bn": {
+   "infrastruktur": 47.0,
+   "bundeswehr": 25.5
+  },
+  "sv_plan_pace_rest_of_year_bn_per_month": 10.01,
+  "sv_model_pace_rest_of_year_bn_per_month": 5.45,
+  "calendar_published_end": "2026-12-08",
+  "gross_market_ratio": 0.9439224507168142,
+  "redemption_market_ratio": 0.9396828506562737,
+  "tape_last_op": "2026-11-11",
+  "calendar_end": "2027-09-29",
+  "pre_tape_tranches_bn": {
+   "DE0001135044": 11.25
+  },
+  "bubill_gross_market_ratio": 0.9711680122073172,
+  "bubill_redemption_market_ratio": 0.9864516392158273,
+  "bubill_tape_last_op": "2026-11-09",
+  "bubill_calendar_end": "2026-12-01",
+  "bubill_calendar_source": "Finanzagentur Pressemitteilung Nr. 8, 24 Sep 2026, Anlage 1 'Geldmarktinstrumente' (Emissionen des Bundes im vierten Quartal 2026)",
+  "bubill_calendar_url": "https://www.deutsche-finanzagentur.de/fileadmin/user_upload/Pressemitteilung/dt/2026/2026_09_24_PM_08_Emissionen_des_Bundes_im_vierten_Quartal_2026.pdf",
+  "bubill_beta": 0.062,
+  "bill_tenor_shares": {
+   "3": 0.091,
+   "4": 0.079,
+   "5": 0.142,
+   "6": 0.127,
+   "7": 0.017,
+   "9": 0.204,
+   "11": 0.144,
+   "12": 0.195
+  },
+  "bottomup_ship": true,
+  "bottomup_reason": "PRE mean MAE bottom-up 6.75 vs production 9.05 (25.5% better), worse at 0/4 horizons; SHIP",
+  "bottomup_pre_mean": 6.747619940289148,
+  "bottomup_pre_production_mean": 9.053427427919539,
+  "bottomup_pre_planhc_mean": 12.791454528828979,
+  "bottomup_oos_mean": 9.256295993311774,
+  "bottomup_authority": {
+   "soll_expenditure": "BMF Monatsbericht Soll Ausgaben (printed at origin)",
+   "soll_revenue": "BMF Monatsbericht Soll Einnahmen (printed at origin)",
+   "execution_ratio": "complete-year Ist/Soll before origin, Covid excluded",
+   "later_years": "same-month last year on expenditure and revenue",
+   "plan_json": "special funds only (unchanged); core later-year Soll not used when shipped"
+  },
+  "bottomup_pre_by_h": {
+   "1": {
+    "n": 28,
+    "bottomup": 2.901386313392871,
+    "production": 2.901386313392871,
+    "planhc": 4.691183649848837
+   },
+   "3": {
+    "n": 26,
+    "bottomup": 4.273057771338133,
+    "production": 4.716548155953518,
+    "planhc": 8.22899140165391
+   },
+   "6": {
+    "n": 23,
+    "bottomup": 5.856713006275552,
+    "production": 7.767999873266108,
+    "planhc": 12.94678031871511
+   },
+   "12": {
+    "n": 17,
+    "bottomup": 13.959322670150037,
+    "production": 20.82777536906566,
+    "planhc": 25.298862745098052
+   }
+  },
+  "bottomup_oos_by_h": {
+   "1": {
+    "n": 38,
+    "bottomup": 4.306346142032933,
+    "production": 4.306346142032933,
+    "planhc": 5.220627490273332
+   },
+   "3": {
+    "n": 36,
+    "bottomup": 6.945340422519319,
+    "production": 7.402460495598762,
+    "planhc": 11.03807242634919
+   },
+   "6": {
+    "n": 33,
+    "bottomup": 8.400398625521216,
+    "production": 7.987399702064601,
+    "planhc": 16.496530985749985
+   },
+   "12": {
+    "n": 28,
+    "bottomup": 17.373098783173624,
+    "production": 12.32534310683907,
+    "planhc": 19.980522653683465
+   }
+  },
+  "bottomup_macro_ship": true,
+  "bottomup_macro_reason": "PRE mean MAE macro 6.18 vs live/v1 6.61 (6.5% better), worse at 0/4 horizons; SHIP",
+  "bottomup_macro_pre_mean": 6.17908291468124,
+  "bottomup_macro_pre_production_mean": 6.607136949232755,
+  "bottomup_macro_oos_mean": 8.963480514568088,
+  "bottomup_macro_authority": {
+   "open_year": "open soll: Ausgaben \u00d7 (80% hist + 20% YTD); Einnahmen \u00d7 (95% hist + 5% YTD)",
+   "later_revenue": "smly \u00d7 (1 + 1.0\u00b7NGDP_yoy)",
+   "later_primary": "smly \u00d7 (1 + w_sozial\u00b70.35\u00b7wages[y\u22121]); w_sozial from BMF MB T1 Aufgabenbereiche (primary ex t1_zins)",
+   "later_interest": "debt-book annual[y\u22121] \u00d7 carve month-share \u00d7 FA stock YoY^\u0394y \u00d7 (1 + 2.0\u00b7rates[y\u22121]/100)",
+   "leaf_priors": "a priori (Lohn/USt 1.0 NGDP, KSt 1.2, spend 1.0 CPI) \u2014 audit only",
+   "macro": {
+    "source": "AMECO/Eurostat nominal GDP YoY; IMF WEO / Eurostat HICP; Eurostat namq D1 wages; Finanzagentur stock + debt-book effective interest rate",
+    "unit": "percent, calendar year",
+    "drivers": {
+     "ngdp": "nominal GDP YoY (Steuerabsch\u00e4tzung activity base; proxy for wages/profits/VAT)",
+     "cpi": "CPI / HICP (audit leaf prior on spend; production later primary CPI \u03b2=0)",
+     "wages": "Eurostat namq_10_gdp D1 compensation-of-employees YoY (T1 sozial overlay)",
+     "employment": "Eurostat namq_10_pe EMP_DC \u2014 tried on T1 sozial; PRE clears, OOS does not beat wages",
+     "rates": "central-government interest / debt \u00d7 100 (scales coupon-calendar interest)",
+     "fa_stock": "Finanzagentur total federal debt stock YoY (compounds later-year interest level)"
+    }
+   },
+   "plan_json": "special funds only (no PRE-clearing macro driver)",
+   "bmf_mb_tables": "T0 Bundeshaushalt totals (used); T1 Aufgabenbereiche (sozial share \u00d7 wages); T2 \u00f6konomische Arten (spend leaves); T3 Steuerarten (tax leaves); no Sonderverm\u00f6gen tables in HTML set",
+   "benchmark": "live core = v1 bottom_up Soll\u00d7hist-ratio then smly"
+  },
+  "bottomup_macro_rejects": [
+   "Leaf Soll\u00d7ratio open-year (unscaled) \u2014 PRE MAE ~4\u00d7 worse than aggregate Soll pin",
+   "Leaf month-shares on aggregate Soll pin \u2014 PRE edge 4.2% (<5%)",
+   "Scaled leaf Steuerarten renormalized to annual Soll/Ist pin \u2014 no-op on cumulative MAE (rest-of-year totals match pin; CORE leaves fire on \u226420% of PRE windows)",
+   "Later-year \u03a3 category smly \u2014 worse than v1 aggregate smly (coverage/residual)",
+   "Later-year category\u00d7NGDP/CPI OLS elasticity \u2014 unfit on PRE (Steuerarten from 2017; need \u22656 years)",
+   "Pure YTD Ist/Soll ratio (w=1) \u2014 PRE mean ~2\u00d7 worse than hist",
+   "Equal open YTD w=0.15 + later primary CPI \u03b2=0.5 \u2014 cleared PRE but OOS 8.89 vs 7.54 for asymmetric/\u03b2_p=0",
+   "Later-year primary CPI \u03b2\u2208{0.25,0.5,0.75,1.0} \u2014 PRE-ok subset; all worse OOS than \u03b2=0",
+   "Primary later on NGDP instead of CPI \u2014 no OOS gain over CPI grid once \u03b2_p=0",
+   "Interest smly\u00d7rates bi=1 \u2014 cleared; coupon\u00d7FA-stock bi\u2208{0\u20262} better OOS (ship bi=2)",
+   "BMF Zinsausgaben leaf as interest \u2014 PRE fails (~\u221260% edge)",
+   "Special-fund borrowing drivers \u2014 SVIK/SVBw zero in PRE; FMS/WSF flat beats smly OOS but no PRE-clearing driver for plan funds; plan.json annuals only",
+   "T1 \u03a3 category smly / free-level paths \u2014 PRE fails or worse\u22641 violated; renorm-to-primary annual pin = cumulative MAE no-op (OOS ties prior ship)",
+   "T1 sozial\u00d7employment overlay \u2014 PRE clears but OOS \u22657.45 (no beat vs coupon\u00d7stock ship)",
+   "T1 sozial\u00d7NGDP / rest\u00d7CPI overlays \u2014 PRE clears; OOS worse than wages \u03b2=0.35",
+   "T1 sozial\u00d7wages \u03b2=1.0 \u2014 PRE +6.7% but OOS 7.54 > 7.45 prior",
+   "Aggregate YoY NGDP/CPI on revenue/primary without open-year blend \u2014 loses/ties PRE",
+   "Monthly SARIMAX + HICP/NGDP \u2014 not selected on PRE (v1 note)"
+  ],
+  "bottomup_macro_pre_by_h": {
+   "1": {
+    "n": 30,
+    "macro": 2.7765585678252567,
+    "production": 2.904627225833346
+   },
+   "3": {
+    "n": 28,
+    "macro": 4.045511475882995,
+    "production": 4.2249822162425525
+   },
+   "6": {
+    "n": 25,
+    "macro": 5.87513424015404,
+    "production": 6.372175965773509
+   },
+   "12": {
+    "n": 19,
+    "macro": 12.019127374862672,
+    "production": 12.926762389081611
+   }
+  },
+  "bottomup_macro_oos_by_h": {
+   "1": {
+    "n": 42,
+    "macro": 4.144486229601871,
+    "production": 4.484313176125035
+   },
+   "3": {
+    "n": 40,
+    "macro": 6.353685519283066,
+    "production": 6.990806380267388
+   },
+   "6": {
+    "n": 37,
+    "macro": 7.723518415606832,
+    "production": 8.621977152491896
+   },
+   "12": {
+    "n": 31,
+    "macro": 17.632231893780585,
+    "production": 19.924089223511665
+   }
+  }
+ },
+ "notes": [
+  "Buffer = net money-market placements: the Finanzagentur stock 'Kassenverst\u00e4rkungskredite und Geldanlagen' with the sign flipped (negative = net cash-management borrowing). The Bundesbank pays 0% on federal deposits from Oct-2023, so the central-bank account is liquidity-neutral.",
+  "Cash requirement = core budget (BMF Finanzierungssaldo, deficit +) + net borrowing booked to the special funds by the Finanzagentur. Fund spending is not observed monthly: cash a fund has borrowed but not yet spent sits in unexplained financing.",
+  "Core, rest of 2026: spending closes to its Soll \u20ac524.5bn \u00d7 0.97, revenue to its Soll \u20ac426.4bn \u00d7 1.02 (each the mean of outturn \u00f7 plan over 2025, 2024, 2023, 2022, 2019). From 2027 the draft core is scaled by the balance haircut 0.85 over 2022, 2023, 2025; that band is 0.41\u20130.91. Left out of the balance haircut: 2024 (unexplained financing \u2212\u20ac37.2bn) \u2014 above \u20ac20.0bn, the core outturn misses cash that left the buffer.",
+  "Special funds through Aug-2026: Infrastruktur 81% / Bundeswehr 72% of plan pace YTD; BW profile=plan_residual_flat (scale_channel=True), implied YE \u20ac25.5bn; infra=flat_ytd_pace. Hist month shares only when the Wirtschaftsplan sits inside recent FA scale; a defence / fund ramp (plan \u226b those years) sets YE = plan and flattens the residual \u2014 do not freeze last year's Dec spike onto a new level. Wirtschaftsplan is annual only \u2014 no published monthly Auszahlungsprofil. Other funds forward 0: their \u2212\u20ac5.5bn this year is unscheduled repayment.",
+  "Plan scenario = core Soll/draft without haircut + plan funds at the plan pace. Issuance is the same in both scenarios, so the difference lands on placements (Dec-2026: model \u20ac10.4bn, plan \u2212\u20ac23.6bn).",
+  "Destatis extra-budget deficit \u20ac44.1bn YTD to Sep-2026; its monthly change correlates 0.22 with fund borrowing (Aug-2023 \u2192 Aug-2026), so it is a cross-check, not an input.",
+  "Year-end money-market budget financing, repaid in January, counts as net bills: \u20ac6.0bn Dec-2024, \u20ac13.0bn Dec-2025. Forward 0.",
+  "The identity closes by construction: other financing = \u0394(Schuldschein + other loans) + an unexplained remainder (sd \u20ac4.6bn/month excluding 2020\u20132021). The Finanzagentur's own debt identity closes to \u20ac0.000bn.",
+  "Placement backtest (gap rule identity, gap 0: PRE has 17 h=12 windows (< 36), too few to choose; gap 0 by default): the path beats flat placements at PRE h=1, 3; OOS h=1; loses at PRE h=6, 12; OOS h=3, 6, 12 (OOS h=12: MAE 56.6 vs 28.0). Read the placement path as where cash lands, not as a level forecast beyond a month.",
+  "Debt moved between a fund and the core budget without a market transaction is not borrowing: WSF \u2212\u20ac72.7bn (Jan-2024).",
+  "Coupons: auction tape to 11-Nov-2026, then the published issuance calendar to 08-Dec-2026, then a pattern sized on the borrowing plan; gross \u00d7 0.944 (market share of tape volume). Redemptions = tape ladder + tranches issued before the tape (Bund 6.5% 04-Jul-2027 \u20ac11.2bn) \u00d7 0.940. No regular buyback programme.",
+  "Bubills: tape to 09-Nov-2026, then the published calendar (\u20ac47.0bn gross to Dec-2026) \u00d7 0.971; stock flat after.",
+  "Eurosystem-held redemptions are modelled: the ECB publishes country stock and maturity, not holdings by line, so lines are allocated with caps of 33% (PSPP) + 50% (PEPP) per line, no reinvestment. Months where the modelled share of redemptions exceeds 60% \u2014 Feb-2027 83%, Aug-2027 78%, Nov-2027 76%, Jan-2028 82%, Feb-2028 76%, Jul-2028 78%, Aug-2028 75%, Feb-2029 74%, Aug-2029 73%, Jan-2030 74%, Feb-2030 72%, Aug-2030 63% \u2014 sit near the caps and likely overstate runoff.",
+  "Macro scenario card: primary spending on HICP, receipts on NGDP (AMECO/WEO), interest carved from the ISIN book with +100bp from debt_repricing. Level SARIMAX does not clear PRE. Live core path = bottom-up macro (Soll open-year \u00d7 hist/YTD blend; later smly\u00d7NGDP/wages + coupon\u00d7FA-stock interest)."
+ ],
+ "scenarios": {
+  "cc": "de",
+  "origin": "2026-08-01",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ],
+  "ok": true,
+  "base": {
+   "2026": 3.777469265338354,
+   "2027": 52.750979011960645,
+   "2028": 49.37097749633898,
+   "2029": 46.301977574626605
+  },
+  "drivers": {
+   "ngdp_source": "IMF WEO real growth compounded with DE house CPI (full, 2026\u20132030)",
+   "cpi_source": "DE house HICP to 2030, IMF WEO CPI beyond [full: house path through 2030]",
+   "rates_source": "debt interest/debt; +100bp from debt_repricing shock case",
+   "ngdp": {
+    "2026": 4.084129199999986,
+    "2027": 3.9960094999999862,
+    "2028": 3.3305692999999748,
+    "2029": 2.8393988999999786
+   },
+   "cpi": {
+    "2026": 2.7484,
+    "2027": 2.8645,
+    "2028": 2.2063,
+    "2029": 1.9221
+   }
+  },
+  "shocks": [
+   {
+    "key": "gdp",
+    "title": "Nominal GDP growth +1pp a year",
+    "shock": {
+     "ngdp": 1.0
+    },
+    "delta": {
+     "2026": -0.14055363314744085,
+     "2027": -3.4644833144513,
+     "2028": -8.45315144513794,
+     "2029": -13.780331676917292
+    },
+    "level": {
+     "2026": 3.636915632190913,
+     "2027": 49.286495697509345,
+     "2028": 40.91782605120104,
+     "2029": 32.52164589770931
+    }
+   },
+   {
+    "key": "cpi",
+    "title": "CPI inflation +1pp a year",
+    "shock": {
+     "hicp": 1.0
+    },
+    "delta": {
+     "2026": 0.1117420099446349,
+     "2027": 3.4702506457332234,
+     "2028": 8.569237460381437,
+     "2029": 13.915602698848787
+    },
+    "level": {
+     "2026": 3.889211275282989,
+     "2027": 56.22122965769387,
+     "2028": 57.94021495672042,
+     "2029": 60.21758027347539
+    }
+   },
+   {
+    "key": "rates",
+    "title": "Bond rates +100bp",
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "delta": {
+     "2026": 1.3370482903909533,
+     "2027": 3.642438586111517,
+     "2028": 7.5647705063500155,
+     "2029": 11.365672666298124
+    },
+    "level": {
+     "2026": 5.114517555729307,
+     "2027": 56.39341759807216,
+     "2028": 56.935748002688996,
+     "2029": 57.66765024092473
+    },
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)"
+   }
+  ],
+  "spec": "ratio",
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged."
+ },
+ "identity_resid_bn": 0.0
+}

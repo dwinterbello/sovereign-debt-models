@@ -1,0 +1,132 @@
+{
+ "unit": "EUR bn, calendar years; effects on general government net borrowing (indebitamento netto) as costed, applied to the state-sector borrowing requirement",
+ "event": "Legge di bilancio 2026 (L. 30 dicembre 2025, n. 199)",
+ "items": [
+  {
+   "label": "IRPEF: second bracket 35% to 33%",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2026": 2.869,
+    "2027": 2.9625,
+    "2028": 2.9625
+   }
+  },
+  {
+   "label": "Temporary 2026 labour tax reliefs",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2026": 2.4652,
+    "2027": 0.0
+   }
+  },
+  {
+   "label": "Tax settlement (rottamazione quinquies)",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2026": 1.478,
+    "2027": 0.0
+   }
+  },
+  {
+   "label": "Banks and insurers: IRAP rise, one-offs, loss cap, SSN advance",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2026": -5.405,
+    "2027": -1.745,
+    "2028": -1.075
+   }
+  },
+  {
+   "label": "Severance funds (TFR) to INPS",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2026": -1.861,
+    "2027": -1.867,
+    "2028": -2.154
+   }
+  },
+  {
+   "label": "Health service (SSN) refinancing",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2026": 2.382,
+    "2027": 2.631,
+    "2028": 2.633
+   }
+  },
+  {
+   "label": "Southern ZES investment tax credit",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2026": 2.3,
+    "2027": 1.0,
+    "2028": 0.75
+   }
+  },
+  {
+   "label": "Pension age: one month later in 2027",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2026": 0.0,
+    "2027": 1.1,
+    "2028": 0.475
+   }
+  },
+  {
+   "label": "PNRR reprogramming",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2026": -4.783,
+    "2027": -0.727,
+    "2028": -0.081
+   }
+  },
+  {
+   "label": "Ministry spending cuts and fund drawdowns",
+   "head": "spend",
+   "kind": "effect",
+   "values": {
+    "2026": -4.181,
+    "2027": -2.633,
+    "2028": -2.783
+   }
+  },
+  {
+   "label": "Other measures (net)",
+   "head": "spend",
+   "kind": "effect",
+   "values": {},
+   "residual": true
+  },
+  {
+   "label": "PNRR / Superbonus temporary spending run-off (vs persistence)",
+   "head": "spend",
+   "kind": "effect",
+   "extra": true,
+   "event": "DFP 2026: PNRR capital and Superbonus household transfers wind down after 2026",
+   "values": {
+    "2027": -28.0,
+    "2028": -32.0,
+    "2029": -32.0
+   },
+   "source": "MEF DFP April 2026: central capital payments 141.8 → 117.1 (−24.7) and household transfers 44.5 → 27.8 (−16.7) as the RRF / Superbonus expire. Our monthly share model persists those lines; this extra nets the cliff against that persistence so the cash board does not carry ended programmes forward. Outside the UPB 2026 budget-law residual",
+   "url": "https://www.mef.gov.it/"
+  }
+ ],
+ "total_ex_interest": {
+  "2026": 0.7726,
+  "2027": 5.5662,
+  "2028": 6.4651
+ },
+ "source": "Ufficio parlamentare di bilancio, Focus 1/2026, La legge di bilancio per il 2026 (February 2026): effects on net borrowing excluding the extra interest, Tab. 1 and the measures in the text; 'Other measures' is the published total less the named items; 2028 held thereafter. The PNRR/Superbonus run-off line is an extra model correction, not part of the UPB residual",
+ "url": "https://www.upbilancio.it/wp-content/uploads/2026/02/Focus-1_2026-LB.pdf"
+}

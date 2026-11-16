@@ -1,0 +1,169 @@
+{
+  "ship": false,
+  "ship_reason": "PRE mean MAE bottom-up 6.67 does not beat production smly 6.73 by ≥5%",
+  "edge": 0.05,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "rule_map": {
+    "customs_excise": "petro_yoy",
+    "vat": "smly",
+    "tax_net": "pace_dev",
+    "nav": "petro_yoy",
+    "local_authorities": "petro_yoy",
+    "oil_tax": "petro_yoy",
+    "health": "smly",
+    "sdfi": "petro_yoy",
+    "other_net": "pace_dev"
+  },
+  "component_mae_pre_beyond_nb": {
+    "customs_excise": {
+      "smly": 2.41,
+      "mean3y": 3.84,
+      "cal5": 4.21,
+      "pace_dev": 1.31,
+      "petro_yoy": 1.3
+    },
+    "vat": {
+      "smly": 0.26,
+      "mean3y": 0.43,
+      "cal5": 0.5,
+      "pace_dev": 1.39,
+      "petro_yoy": 0.37
+    },
+    "tax_net": {
+      "smly": 3.82,
+      "mean3y": 7.56,
+      "cal5": 11.5,
+      "pace_dev": 3.22,
+      "petro_yoy": 3.88
+    },
+    "nav": {
+      "smly": 1.78,
+      "mean3y": 3.93,
+      "cal5": 6.25,
+      "pace_dev": 1.33,
+      "petro_yoy": 1.03
+    },
+    "local_authorities": {
+      "smly": 0.53,
+      "mean3y": 1.08,
+      "cal5": 2.09,
+      "pace_dev": 0.39,
+      "petro_yoy": 0.37
+    },
+    "oil_tax": {
+      "smly": 0.59,
+      "mean3y": 0.64,
+      "cal5": 0.59,
+      "pace_dev": 1.99,
+      "petro_yoy": 0.54
+    },
+    "health": {
+      "smly": 3.67,
+      "mean3y": 5.4,
+      "cal5": 4.35,
+      "pace_dev": 3.79,
+      "petro_yoy": 5.46
+    },
+    "sdfi": {
+      "smly": 0.81,
+      "mean3y": 1.08,
+      "cal5": 1.08,
+      "pace_dev": 0.73,
+      "petro_yoy": 0.7
+    },
+    "other_net": {
+      "smly": 6.93,
+      "mean3y": 6.52,
+      "cal5": 8.58,
+      "pace_dev": 6.05,
+      "petro_yoy": 7.99
+    }
+  },
+  "pre_beyond_nb": {
+    "1": {
+      "bottom_up": 6.22,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "3": {
+      "bottom_up": 7.47,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "6": {
+      "bottom_up": 8.08,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "12": {
+      "bottom_up": 4.93,
+      "production_smly": 6.73,
+      "n": 6
+    }
+  },
+  "oos_beyond_nb": {
+    "1": {
+      "bottom_up": 10.42,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "3": {
+      "bottom_up": 5.34,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "6": {
+      "bottom_up": 13.89,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "12": {
+      "bottom_up": 11.96,
+      "production_smly": 14.97,
+      "n": 3
+    }
+  },
+  "pre_mean_mae": {
+    "bottom_up": 6.67,
+    "production_smly": 6.73
+  },
+  "oos_mean_mae": {
+    "bottom_up": 10.4,
+    "production_smly": 14.97
+  },
+  "rejects": [
+    "uniform cal5 / mean3y / pace_dev on all Tab4: worse PRE mean than smly",
+    "petro_yoy on oil_tax/sdfi + cal5 on rest: worse PRE mean than smly",
+    "per-component PRE argmin map: PRE mean improves <5% vs smly and loses at h=3/6",
+    "beating NB inside its published window: disallowed (lookahead / overlap)"
+  ],
+  "authority_series": [
+    {
+      "name": "Norges Bank LIQUIDITY_STATISTICS Tab4 (govt accounts specification)",
+      "use": "component history for bottom-up"
+    },
+    {
+      "name": "Norges Bank LIQUIDITY_STATISTICS Tab1 linje01 government accounts",
+      "use": "headline cash_requirement actual"
+    },
+    {
+      "name": "Norges Bank LIQUIDITY_FORECAST FCAST_S / STAT_S vintages",
+      "use": "NB coverage mask + live residual inside path",
+      "vintage": "2026-10-19"
+    },
+    {
+      "name": "Norges Bank FX transactions for the GPFG (monthly)",
+      "use": "financing path only (unchanged vs production)"
+    },
+    {
+      "name": "Norges Bank government securities primary market + debt_calendar.json",
+      "use": "NGB / T-bill financing (unchanged vs production)"
+    }
+  ],
+  "note": "Beyond-NB PRE targets are January only (NB path ends 31 Dec). Hybrid ties production inside the NB window by construction."
+}

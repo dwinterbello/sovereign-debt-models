@@ -1,0 +1,1194 @@
+{
+ "country": "FR",
+ "ccy": "EUR",
+ "asof": "2026-09",
+ "sources": [
+  {
+   "name": "SMB State deficit via INSEE BDM (YTD solde g\u00e9n\u00e9ral d'ex\u00e9cution)",
+   "url": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001717255",
+   "frequency": "M",
+   "lag_days": 40,
+   "verified": true,
+   "history": "Jan-2009 \u2192 Sep-2026"
+  },
+  {
+   "name": "AFT negotiable debt outstanding via INSEE BDM (BTF / >1y / indexed)",
+   "url": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001711532",
+   "frequency": "M",
+   "lag_days": 30,
+   "verified": true,
+   "history": "Jan-2009 \u2192 Sep-2026"
+  },
+  {
+   "name": "AFT outstanding by line (OAT / OAT\u20aci / OATi)",
+   "url": "https://www.aft.gouv.fr/en/encours-detaille-oat",
+   "frequency": "D",
+   "lag_days": 1,
+   "verified": true,
+   "history": "snapshot 12-Nov-2026"
+  },
+  {
+   "name": "AFT linker index coefficients",
+   "url": "https://www.aft.gouv.fr/en/oateuroi-key-figures",
+   "frequency": "M",
+   "lag_days": 0,
+   "verified": true,
+   "history": "to 01-Dec-2026"
+  },
+  {
+   "name": "AFT auctions and syndications (tape + auction history)",
+   "url": "https://www.aft.gouv.fr",
+   "frequency": "D",
+   "lag_days": 1,
+   "verified": true,
+   "history": "OAT to 05-Nov-2026, BTF to 09-Nov-2026"
+  },
+  {
+   "name": "PLF/AFT financement (plan.json): d\u00e9ficit \u00e0 financer, besoin, BTF, charge",
+   "url": "https://www.budget.gouv.fr/",
+   "frequency": "A",
+   "lag_days": 0,
+   "verified": true,
+   "history": "PLF/AFT 01-Oct-2026"
+  },
+  {
+   "name": "Eurosystem PSPP+PEPP holdings by ISIN (estimated allocation)",
+   "url": "issuance/cache/official_isin_flow.parquet",
+   "frequency": "M",
+   "lag_days": 30,
+   "verified": false,
+   "history": "snapshot 2026-10"
+  }
+ ],
+ "buffer": "Banque de France Treasury account pinned at EUR 120-160mn since May-2023 (surplus placed in market): liquidity-neutral. BTF is the flex; forward BTF follows the AFT year-end path and Treasury placements (buffer_change_bn) take the model's departure from it.",
+ "score": [
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": 3.57,
+   "benchmark": 3.45,
+   "n": 72,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 5.62,
+     "n": 72,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 4.45,
+     "n": 72,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 4.23,
+     "n": 72,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 4.58,
+     "n": 72,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 3.51,
+     "n": 72,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 4.02,
+     "n": 72,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 3.57,
+     "n": 72,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 3.86,
+     "n": 72,
+     "common": true
+    },
+    "smly": {
+     "mae": 3.45,
+     "n": 72,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": 5.58,
+   "benchmark": 6.31,
+   "n": 70,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 10.39,
+     "n": 70,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 7.51,
+     "n": 70,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 7.0,
+     "n": 70,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 7.53,
+     "n": 70,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 5.75,
+     "n": 70,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 6.12,
+     "n": 70,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 5.58,
+     "n": 70,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 6.25,
+     "n": 70,
+     "common": true
+    },
+    "smly": {
+     "mae": 6.31,
+     "n": 70,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": 7.58,
+   "benchmark": 7.87,
+   "n": 67,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 15.3,
+     "n": 67,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 10.32,
+     "n": 67,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 9.16,
+     "n": 67,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 9.91,
+     "n": 67,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 7.67,
+     "n": 67,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 8.14,
+     "n": 67,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 7.58,
+     "n": 67,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 8.38,
+     "n": 67,
+     "common": true
+    },
+    "smly": {
+     "mae": 7.87,
+     "n": 67,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": 11.23,
+   "benchmark": 11.23,
+   "n": 61,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 25.35,
+     "n": 61,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 15.76,
+     "n": 61,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 12.67,
+     "n": 61,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 13.17,
+     "n": 61,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 11.23,
+     "n": 61,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 11.23,
+     "n": 61,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 11.23,
+     "n": 61,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 11.23,
+     "n": 61,
+     "common": true
+    },
+    "smly": {
+     "mae": 11.23,
+     "n": 61,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": 6.1,
+   "benchmark": 6.34,
+   "n": 56,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 7.86,
+     "n": 56,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 7.23,
+     "n": 56,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 8.16,
+     "n": 56,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 7.76,
+     "n": 56,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 6.04,
+     "n": 56,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 5.99,
+     "n": 56,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 6.1,
+     "n": 56,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 6.06,
+     "n": 56,
+     "common": true
+    },
+    "smly": {
+     "mae": 6.34,
+     "n": 56,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": 11.4,
+   "benchmark": 11.1,
+   "n": 54,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 13.7,
+     "n": 54,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 12.57,
+     "n": 54,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 14.43,
+     "n": 54,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 13.77,
+     "n": 54,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 10.49,
+     "n": 54,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 10.53,
+     "n": 54,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 11.4,
+     "n": 54,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 11.72,
+     "n": 54,
+     "common": true
+    },
+    "smly": {
+     "mae": 11.1,
+     "n": 54,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": 16.15,
+   "benchmark": 16.4,
+   "n": 51,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 18.75,
+     "n": 51,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 17.02,
+     "n": 51,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 20.94,
+     "n": 51,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 20.58,
+     "n": 51,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 14.91,
+     "n": 51,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 15.6,
+     "n": 51,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 16.15,
+     "n": 51,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 16.48,
+     "n": 51,
+     "common": true
+    },
+    "smly": {
+     "mae": 16.4,
+     "n": 51,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": 25.32,
+   "benchmark": 25.32,
+   "n": 45,
+   "model_name": "seas_mult_3",
+   "benchmark_name": "smly",
+   "all_mae": {
+    "annual_comp_floor_3": {
+     "mae": 26.67,
+     "n": 45,
+     "common": true
+    },
+    "annual_comp_unit_3": {
+     "mae": 28.94,
+     "n": 45,
+     "common": true
+    },
+    "prevyear_3": {
+     "mae": 28.42,
+     "n": 45,
+     "common": true
+    },
+    "prevyear_5": {
+     "mae": 27.84,
+     "n": 45,
+     "common": true
+    },
+    "seas_add_3": {
+     "mae": 25.32,
+     "n": 45,
+     "common": true
+    },
+    "seas_add_5": {
+     "mae": 25.32,
+     "n": 45,
+     "common": true
+    },
+    "seas_mult_3": {
+     "mae": 25.32,
+     "n": 45,
+     "common": true
+    },
+    "seas_mult_5": {
+     "mae": 25.32,
+     "n": 45,
+     "common": true
+    },
+    "smly": {
+     "mae": 25.32,
+     "n": 45,
+     "common": true
+    }
+   }
+  }
+ ],
+ "score_note": "Walk-forward, monthly origins. PRE = windows ending by Dec-2019 (h=12 n=61); OOS = origins from Jan-2022 (h=12 n=45); windows touching 2020-21 excluded. Production: multiplicative seasonal, 3y, lowest mean PRE MAE. At h=12 every trailing-level model forecasts the trailing 12-month sum, so h=12 scores tie by construction.",
+ "bill_stock_score": [
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": 7.63,
+   "benchmark": 3.31,
+   "n": 71,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 3.31,
+     "n": 71,
+     "common": true
+    },
+    "gap0": {
+     "mae": 18.11,
+     "n": 71,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 7.63,
+     "n": 71,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": 11.51,
+   "benchmark": 6.82,
+   "n": 69,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 6.82,
+     "n": 69,
+     "common": true
+    },
+    "gap0": {
+     "mae": 14.55,
+     "n": 69,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 11.51,
+     "n": 69,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": 11.43,
+   "benchmark": 10.34,
+   "n": 66,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 10.34,
+     "n": 66,
+     "common": true
+    },
+    "gap0": {
+     "mae": 19.67,
+     "n": 66,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 11.43,
+     "n": 66,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": 12.6,
+   "benchmark": 15.19,
+   "n": 60,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 15.19,
+     "n": 60,
+     "common": true
+    },
+    "gap0": {
+     "mae": 22.83,
+     "n": 60,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 12.6,
+     "n": 60,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": 12.16,
+   "benchmark": 3.37,
+   "n": 56,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 3.37,
+     "n": 56,
+     "common": true
+    },
+    "gap0": {
+     "mae": 16.82,
+     "n": 56,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 12.16,
+     "n": 56,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": 15.41,
+   "benchmark": 6.72,
+   "n": 54,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 6.72,
+     "n": 54,
+     "common": true
+    },
+    "gap0": {
+     "mae": 17.92,
+     "n": 54,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 15.41,
+     "n": 54,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": 18.58,
+   "benchmark": 10.66,
+   "n": 51,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 10.66,
+     "n": 51,
+     "common": true
+    },
+    "gap0": {
+     "mae": 24.95,
+     "n": 51,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 18.58,
+     "n": 51,
+     "common": true
+    }
+   }
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": 21.97,
+   "benchmark": 18.43,
+   "n": 45,
+   "model_name": "gapseas",
+   "benchmark_name": "flat",
+   "all_mae": {
+    "flat": {
+     "mae": 18.43,
+     "n": 45,
+     "common": true
+    },
+    "gap0": {
+     "mae": 26.51,
+     "n": 45,
+     "common": true
+    },
+    "gapseas": {
+     "mae": 21.97,
+     "n": 45,
+     "common": true
+    }
+   }
+  }
+ ],
+ "forward": {
+  "window": "2026-10 \u2192 2030-12",
+  "model": "seas_mult_3",
+  "model_reason": "lowest mean PRE MAE over h=[1, 3, 6, 12] (h=12 windows: 61); runner-up 'seas_add_3' is 0.05bn behind on PRE",
+  "cash_requirement_12m_bn": 767.4,
+  "cash_requirement_trailing_12m_bn": 128.5,
+  "oat_gross_12m_bn": 456.6,
+  "oat_redemptions_12m_bn": 988.0,
+  "oat_buybacks_12m_bn": 61.8,
+  "net_bonds_12m_bn": -531.4,
+  "cb_held_redemptions_12m_bn": 317.9,
+  "cb_held_basis": "estimated: Eurosystem ISIN allocation (snapshot 2026-10) scaled to AFT outstanding net of buybacks, linkers at index ratio",
+  "private_net_bonds_12m_bn": -213.5,
+  "net_bills_12m_bn": 77.9,
+  "other_fin_12m_bn": -26.7,
+  "placements_12m_bn": -1247.5,
+  "btf_stock_last_actual_bn": 217.7,
+  "btf_stock_last_actual_month": "2026-09",
+  "btf_stock_from_auctions_bn": 201.2,
+  "btf_stock_from_auctions_month": "2026-11",
+  "btf_stock_end_year_bn": 205.5,
+  "btf_stock_implied_end_bn": 295.6,
+  "plan_btf_stock_end_year_bn": 205.5,
+  "placements_dec_bn": 21.5,
+  "placements_dec_decomposition_bn": {
+   "net_oat": 21.5,
+   "deficit": -0.0,
+   "other_fin": 0.0,
+   "btf": 0.0
+  },
+  "btf_anchors": {
+   "2026-12": 205.5,
+   "2027-12": 207.7
+  },
+  "plan_year": 2026,
+  "plan_cash_requirement_bn": 137.2,
+  "plan_source": "PLF 2027 (r\u00e9vis\u00e9; LFI 2026 was 124.4 / \u2212124.2 hors FMI)",
+  "plan_besoin_bn": 311.7,
+  "plan_amortisation_bn": 175.8,
+  "plan_other_needs_bn": -1.3,
+  "plan_net_mlt_issuance_bn": 310.0,
+  "plan_other_resources_bn": -10.2,
+  "plan_other_fin_implied_bn": -6.6,
+  "plan_next_year": {
+   "deficit_to_finance": 156.4,
+   "deficit_vintage": "PLF 2027 tableau de financement (d\u00e9ficit \u00e0 financer)",
+   "deficit_gg_pct_gdp": 5.0,
+   "deficit_gg_vintage": "PLF 2027 solde public target (\u20ac54bn package; Assembly path risks ~5.4)",
+   "update": "PLF 2027 + AFT besoins",
+   "update_date": "2026-10-01",
+   "besoin": 339.7,
+   "amortisation": 195.2,
+   "amortisation_vintage": "AFT PLF 2027 (2026 amortisation 175.8 + 19.4)",
+   "charge_dette_bn": 72.9,
+   "charge_dette_vintage": "AFT / PLF 2027",
+   "plafond_net_mlt": 160.5,
+   "net_mlt_issuance": 340.0,
+   "btf_change": 2.2,
+   "other_resources": -5.0,
+   "deficit_plus_other_needs_bn": 144.5
+  },
+  "cash_requirement_ytd_bn": 159.2,
+  "ytd_through": "2026-09",
+  "model_full_year_bn": 137.2,
+  "model_full_year_oos_mae_bn": 11.4,
+  "model_full_year_oos_mae_h": 3,
+  "plan_gap_lands_on": "BTF (AFT revises the BTF change)",
+  "programme": {
+   "year": 2026,
+   "asof": "2026-09-30",
+   "programme_bn": 310.0,
+   "done_share": 0.85,
+   "net_done_bn": 263.5,
+   "gross_bn": 307.977,
+   "buybacks_bn": 44.477,
+   "ratio": 1.1688,
+   "net_left_bn": 46.5
+  },
+  "oat_reconciliation": {
+   "year": 2026,
+   "net_oat_bn": 155.75,
+   "programme_bn": 310.0,
+   "amortisation_bn": 175.8,
+   "amortisation_vintage": "LFI 2026 / AFT update",
+   "indexation_bn": 7.53,
+   "accrual_bn": 6.13,
+   "uplift_bn": 4.28,
+   "indexation_paid_bn": 2.88,
+   "expected_bn": 141.73,
+   "gap_bn": 14.02,
+   "within_tol": false,
+   "tol_bn": 5.0
+  },
+  "oat_stock_jumps": [
+   {
+    "month": "2026-01",
+    "net_bn": 59.1,
+    "gross_bn": 39.7,
+    "prior_month": "2025-12",
+    "prior_net_bn": -21.2,
+    "prior_gross_bn": 5.1
+   }
+  ],
+  "onc_added_bn": {},
+  "other_fin_basis": {
+   "2026": "plan_remaining",
+   "2027": "other_resources",
+   "2028": "other_resources",
+   "2029": "other_resources",
+   "2030": "other_resources"
+  },
+  "other_fin_realised_ytd_bn": 0.1,
+  "gap_mode": "gapseas",
+  "buybacks_forward_by_year_bn": {
+   "2026": 4.4,
+   "2027": 57.4,
+   "2028": 0.0,
+   "2029": 0.0,
+   "2030": 0.0
+  },
+  "btf_tape_last_op": "2026-11-09",
+  "oat_tape_last_op": "2026-11-05",
+  "btf_supplement_used": [],
+  "financing_observed_months": [],
+  "oat_ladder_lines": [
+   {
+    "isin": "FR0013200813",
+    "line": "OAT 0.25% 25 November 2026",
+    "maturity": "2026-11-25",
+    "nominal_bn": 36.448,
+    "coef": 1.0,
+    "redemption_bn": 36.448,
+    "cb_cash_bn": 20.891
+   },
+   {
+    "isin": "FR0014003513",
+    "line": "OAT 0.00% 25 February 2027",
+    "maturity": "2027-02-25",
+    "nominal_bn": 34.958,
+    "coef": 1.0,
+    "redemption_bn": 34.958,
+    "cb_cash_bn": 12.161
+   },
+   {
+    "isin": "FR0013250560",
+    "line": "OAT 1.00% 25 May 2027",
+    "maturity": "2027-05-25",
+    "nominal_bn": 37.954,
+    "coef": 1.0,
+    "redemption_bn": 37.954,
+    "cb_cash_bn": 20.913
+   },
+   {
+    "isin": "FR0011008705",
+    "line": "OAT\u20aci 1.85% 25 July 2027",
+    "maturity": "2027-07-25",
+    "nominal_bn": 21.737,
+    "coef": 1.4596,
+    "redemption_bn": 31.728,
+    "cb_cash_bn": 17.82
+   },
+   {
+    "isin": "FR001400NBC6",
+    "line": "OAT 2.50 % 24 September 2027",
+    "maturity": "2027-09-24",
+    "nominal_bn": 27.797,
+    "coef": 1.0,
+    "redemption_bn": 27.797,
+    "cb_cash_bn": 1.615
+   },
+   {
+    "isin": "FR0011317783",
+    "line": "OAT 2.75% 25 October 2027",
+    "maturity": "2027-10-25",
+    "nominal_bn": 56.295,
+    "coef": 1.0,
+    "redemption_bn": 56.295,
+    "cb_cash_bn": 28.446
+   },
+   {
+    "isin": "FR001400AIN5",
+    "line": "OAT 0.75% 25 February 2028",
+    "maturity": "2028-02-25",
+    "nominal_bn": 44.788,
+    "coef": 1.0,
+    "redemption_bn": 44.788,
+    "cb_cash_bn": 5.044
+   },
+   {
+    "isin": "FR0013238268",
+    "line": "OATi 0.10% 1 March 2028",
+    "maturity": "2028-03-01",
+    "nominal_bn": 17.412,
+    "coef": 1.2883,
+    "redemption_bn": 22.432,
+    "cb_cash_bn": 10.541
+   },
+   {
+    "isin": "FR0000571226",
+    "line": "OAT zero coupon 28 March 2028",
+    "maturity": "2028-03-28",
+    "nominal_bn": 0.046,
+    "coef": 1.0,
+    "redemption_bn": 0.046,
+    "cb_cash_bn": 0.0
+   },
+   {
+    "isin": "FR0013286192",
+    "line": "OAT 0.75% 25 May 2028",
+    "maturity": "2028-05-25",
+    "nominal_bn": 65.752,
+    "coef": 1.0,
+    "redemption_bn": 65.752,
+    "cb_cash_bn": 28.78
+   },
+   {
+    "isin": "FR001400XLW2",
+    "line": "OAT 2.40% 24 September 2028",
+    "maturity": "2028-09-24",
+    "nominal_bn": 48.096,
+    "coef": 1.0,
+    "redemption_bn": 48.096,
+    "cb_cash_bn": 0.544
+   },
+   {
+    "isin": "FR0013341682",
+    "line": "OAT 0.75% 25 November 2028",
+    "maturity": "2028-11-25",
+    "nominal_bn": 62.095,
+    "coef": 1.0,
+    "redemption_bn": 62.095,
+    "cb_cash_bn": 26.594
+   },
+   {
+    "isin": "FR001400HI98",
+    "line": "OAT 2.75% 25 FEBRUARY 2029",
+    "maturity": "2029-02-25",
+    "nominal_bn": 63.538,
+    "coef": 1.0,
+    "redemption_bn": 63.538,
+    "cb_cash_bn": 1.936
+   },
+   {
+    "isin": "FR0013410552",
+    "line": "OAT\u20aci 0.10% 1 MARCH 2029",
+    "maturity": "2029-03-01",
+    "nominal_bn": 24.041,
+    "coef": 1.3935,
+    "redemption_bn": 33.502,
+    "cb_cash_bn": 9.069
+   },
+   {
+    "isin": "FR0000571218",
+    "line": "OAT 5.50% 25 April 2029",
+    "maturity": "2029-04-25",
+    "nominal_bn": 44.515,
+    "coef": 1.0,
+    "redemption_bn": 44.515,
+    "cb_cash_bn": 18.169
+   },
+   {
+    "isin": "FR0013407236",
+    "line": "OAT 0.50% 25 May 2029",
+    "maturity": "2029-05-25",
+    "nominal_bn": 58.805,
+    "coef": 1.0,
+    "redemption_bn": 58.805,
+    "cb_cash_bn": 23.688
+   },
+   {
+    "isin": "FR0000186413",
+    "line": "OATi 3.40% 25 July 2029",
+    "maturity": "2029-07-25",
+    "nominal_bn": 10.176,
+    "coef": 1.6913,
+    "redemption_bn": 17.21,
+    "cb_cash_bn": 8.78
+   },
+   {
+    "isin": "FR0014016G71",
+    "line": "OAT 2.40% 24 September 2029",
+    "maturity": "2029-09-24",
+    "nominal_bn": 32.737,
+    "coef": 1.0,
+    "redemption_bn": 32.737,
+    "cb_cash_bn": 0.257
+   },
+   {
+    "isin": "FR0013451507",
+    "line": "OAT 0.00% 25 NOVEMBER 2029",
+    "maturity": "2029-11-25",
+    "nominal_bn": 49.931,
+    "coef": 1.0,
+    "redemption_bn": 49.931,
+    "cb_cash_bn": 21.959
+   },
+   {
+    "isin": "FR001400PM68",
+    "line": "OAT 2.75% 25 FEBRUARY 2030",
+    "maturity": "2030-02-25",
+    "nominal_bn": 60.789,
+    "coef": 1.0,
+    "redemption_bn": 60.789,
+    "cb_cash_bn": 0.746
+   },
+   {
+    "isin": "FR0011883966",
+    "line": "OAT 2.50% 25 May 2030",
+    "maturity": "2030-05-25",
+    "nominal_bn": 73.381,
+    "coef": 1.0,
+    "redemption_bn": 73.381,
+    "cb_cash_bn": 29.473
+   },
+   {
+    "isin": "FR0011982776",
+    "line": "OAT\u20aci 0.70% 25 July 2030",
+    "maturity": "2030-07-25",
+    "nominal_bn": 17.232,
+    "coef": 1.5283,
+    "redemption_bn": 26.335,
+    "cb_cash_bn": 13.501
+   },
+   {
+    "isin": "FR0013516549",
+    "line": "OAT 0.00% 25 November 2030",
+    "maturity": "2030-11-25",
+    "nominal_bn": 58.857,
+    "coef": 1.0,
+    "redemption_bn": 58.857,
+    "cb_cash_bn": 16.958
+   }
+  ],
+  "index_ratio_basis": {
+   "FR0011008705": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.42548 at 2026-12-01 \u00d7 1.0373/yr to 2027-07-25",
+   "FR0013238268": "2026-11_coef_oati-janvier27.xls: 1.23916 at 2027-01-01 \u00d7 1.0340/yr to 2028-03-01",
+   "FR0013410552": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.28342 at 2026-12-01 \u00d7 1.0373/yr to 2029-03-01",
+   "FR0000186413": "2026-11_coef_oati-janvier27.xls: 1.55240 at 2027-01-01 \u00d7 1.0340/yr to 2029-07-25",
+   "FR0011982776": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.33719 at 2026-12-01 \u00d7 1.0373/yr to 2030-07-25",
+   "FR0014001N38": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.27282 at 2026-12-01 \u00d7 1.0373/yr to 2031-07-25",
+   "FR0014003N51": "2026-11_coef_oati-janvier27.xls: 1.19095 at 2027-01-01 \u00d7 1.0340/yr to 2032-03-01",
+   "FR0000188799": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.64866 at 2026-12-01 \u00d7 1.0373/yr to 2032-07-25",
+   "FR001400JI88": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.15652 at 2026-12-01 \u00d7 1.0373/yr to 2034-07-25",
+   "FR0013524014": "2026-11_coef_oati-janvier27.xls: 1.18752 at 2027-01-01 \u00d7 1.0340/yr to 2036-03-01",
+   "FR0013327491": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.31156 at 2026-12-01 \u00d7 1.0373/yr to 2036-07-25",
+   "FR001401B0I4": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.03658 at 2026-12-01 \u00d7 1.0373/yr to 2037-03-01",
+   "FR001400AQH0": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.24973 at 2026-12-01 \u00d7 1.0373/yr to 2038-07-25",
+   "FR001400IKW5": "2026-11_coef_oati-janvier27.xls: 1.09298 at 2027-01-01 \u00d7 1.0340/yr to 2039-03-01",
+   "FR0010447367": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.52718 at 2026-12-01 \u00d7 1.0373/yr to 2040-07-25",
+   "FR001400QCA1": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.08794 at 2026-12-01 \u00d7 1.0373/yr to 2043-07-25",
+   "FR0013209871": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.33087 at 2026-12-01 \u00d7 1.0373/yr to 2047-07-25",
+   "FR0014008181": "2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx: 1.24973 at 2026-12-01 \u00d7 1.0373/yr to 2053-07-25"
+  },
+  "bottom_up_ship": true,
+  "bottomup_macro_ship": true,
+  "bottomup_pre_mean": 7.438884333411053,
+  "bottomup_oos_mean": 8.040233619779904,
+  "bottomup_pre_production_mean": 8.13395728723582,
+  "bottomup_oos_production_mean": 14.735725381947073,
+  "bottomup_reason": "PRE bu 7.44 vs prod 8.13 (+8.5% rel, worse_h=1); OOS 8.04 vs 14.74; SHIP",
+  "cash_requirement_bottomup_12m_bn": 602.5
+ },
+ "notes": [
+  "Cash requirement = SMB State deficit (solde g\u00e9n\u00e9ral d'ex\u00e9cution, special accounts included). The AFT besoin (\u20ac311.7bn) adds amortisation (\u20ac175.8bn) and other treasury needs (\u2212\u20ac1.3bn).",
+  "Cash path = bottom-up SMB components (recettes/primary seas_mult_3, AFT charge \u00d7 month share, speciaux moy) then closed to the published State deficit (PLF/LFI solde hors FMI = d\u00e9ficit \u00e0 financer); 2026 = \u20ac137.2bn (PLF 2027 (r\u00e9vis\u00e9; LFI 2026 was 124.4 / \u2212124.2 hors FMI)). AFT publishes besoin / amortisation / BTF / charge; the deficit split is in the PLF financing table (update 01-Oct-2026).",
+  "Banque de France account pinned since May-2023: Treasury placements sit inside other financing on history and are shown separately on forecast months.",
+  "AFT/INSEE OAT stock Jan-2026: net \u20ac59.1bn vs gross \u20ac39.7bn, after Dec-2025 net \u2212\u20ac21.2bn vs gross \u20ac5.1bn. Kept as published; the swing sits in other financing.",
+  "2026 net OAT \u20ac155.7bn vs programme \u2212 amortisation \u00b1 indexation \u20ac141.7bn (indexation +\u20ac7.5bn): gap +\u20ac14.0bn, beyond the \u20ac5.0bn tolerance. The stock grew more than the programme arithmetic allows; candidates are buybacks of 2026 lines after the LFI 2026 / AFT update amortisation figure and the stock swing above.",
+  "Linker index ratios: AFT file 2026-10_coef_oatei_d%C3%A9cembre_2026.xlsx (to 01-Dec-2026), extrapolated at trailing inflation-reference growth.",
+  "BTF forward steps to the AFT year-end level rather than to the identity: the identity path (identity + seasonal gap) beats a flat stock only at PRE h=12.",
+  "Authority stack: DG Tr\u00e9sor RESF (growth/CPI) + PLF category totals as year pins where known + AFT charge / +100bp triangle (interest). Live cash = PLF\u00d7RESF category path (no LFI solde re-pin). Scenario card = model-implied \u0394 off that path."
+ ],
+ "scenarios": {
+  "cc": "fr",
+  "origin": "2026-09-01",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ],
+  "ok": true,
+  "base": {
+   "2026": -25.04823873167003,
+   "2027": 135.76984949774362,
+   "2028": 135.06397535361432,
+   "2029": 133.2580673724416
+  },
+  "drivers": {
+   "ngdp_source": "DG Tr\u00e9sor Rapport \u00e9conomique, social et financier (RESF) (real + CPI); IMF WEO real growth compounded with FR house CPI (full, 2028\u20132030)",
+   "cpi_source": "DG Tr\u00e9sor Rapport \u00e9conomique, social et financier (RESF); FR house HICP to 2030, IMF WEO CPI beyond [full: house path through 2030] on 2028\u20132030",
+   "rates_source": "AFT +100bp triangle (1y/5y/9y)",
+   "ngdp": {
+    "2026": 2.6,
+    "2027": 2.8,
+    "2028": 2.6130556000000027,
+    "2029": 2.2236254000000066
+   },
+   "cpi": {
+    "2026": 2.1,
+    "2027": 1.8,
+    "2028": 1.3963,
+    "2029": 1.1114
+   }
+  },
+  "shocks": [
+   {
+    "key": "gdp",
+    "title": "Nominal GDP growth +1pp a year",
+    "shock": {
+     "ngdp": 1.0
+    },
+    "delta": {
+     "2026": -0.04546065799168986,
+     "2027": -2.679555633626677,
+     "2028": -6.888908725845226,
+     "2029": -11.336920482257213
+    },
+    "level": {
+     "2026": -25.09369938966172,
+     "2027": 133.09029386411694,
+     "2028": 128.1750666277691,
+     "2029": 121.92114689018437
+    }
+   },
+   {
+    "key": "cpi",
+    "title": "CPI inflation +1pp a year",
+    "shock": {
+     "hicp": 1.0
+    },
+    "delta": {
+     "2026": 0.03359959768334164,
+     "2027": 3.001436376074764,
+     "2028": 7.959425564345082,
+     "2029": 13.084087507645961
+    },
+    "level": {
+     "2026": -25.014639133986687,
+     "2027": 138.77128587381839,
+     "2028": 143.0234009179594,
+     "2029": 146.34215488008755
+    }
+   },
+   {
+    "key": "rates",
+    "title": "Bond rates +100bp",
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "delta": {
+     "2026": 0.26666666666666666,
+     "2027": 3.6229166666666663,
+     "2028": 8.697916666666666,
+     "2029": 13.772916666666669
+    },
+    "level": {
+     "2026": -24.781572065003363,
+     "2027": 139.3927661644103,
+     "2028": 143.76189202028098,
+     "2029": 147.03098403910826
+    },
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)"
+   }
+  ],
+  "spec": "ratio",
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged."
+ },
+ "identity_resid_bn": 0.0
+}

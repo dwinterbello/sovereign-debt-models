@@ -1,0 +1,935 @@
+{
+  "country": "se",
+  "ccy": "SEK",
+  "asof": "2026-10",
+  "sources": [
+    {
+      "name": "Riksgälden net borrowing requirement / budget balance, monthly (QlikView Webb_Upplaning CH1089)",
+      "url": "https://www.riksgalden.se/en/statistics/statistics-on-central-government-borrowing/net-borrowing-requirement/",
+      "frequency": "monthly",
+      "lag_days": 7,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden central-government debt change by instrument (Webb_Upplaning CH1044)",
+      "url": "https://www.riksgalden.se/en/statistics/statistics-regarding-swedens-central-government-debt/",
+      "frequency": "monthly",
+      "lag_days": 7,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden auction results (webb auktionsresultat CH926)",
+      "url": "https://www.riksgalden.se/en/statistics/statistics-regarding-government-securities/auction-results/",
+      "frequency": "per auction",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden outstanding government securities (webb_upplaning_daglig CH1073)",
+      "url": "https://www.riksgalden.se/en/statistics/statistics-regarding-government-securities/outstanding-government-securities/",
+      "frequency": "daily snapshot",
+      "lag_days": 1,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden monthly outcome press releases (outcome, own monthly forecast, cumulative deviation), MFN feed",
+      "url": "https://mfn.se/all/a/riksgalden.json",
+      "frequency": "monthly",
+      "lag_days": 7,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden Statsupplåning 2026:1 (2026-05-28): annual forecast, borrowing plan and year-end stocks (hand-entered)",
+      "url": "https://www.riksgalden.se/contentassets/27fcc0e426c54e508344a41630b84c99/statsupplaning-2026-1.pdf",
+      "frequency": "semi-annual",
+      "lag_days": 0,
+      "verified": true
+    },
+    {
+      "name": "Riksgälden outcome releases: timing items within the forecast year (hand-entered, dated)",
+      "url": "https://mfn.se/a/riksgalden/deficit-for-swedish-central-government-in-july-2026",
+      "frequency": "as announced",
+      "lag_days": 0,
+      "verified": true
+    }
+  ],
+  "buffer": "Riksgälden net liquidity-management position (repos, deposits, on-tap bills, FX commercial paper); Δbuffer = − net borrowing in liquidity-management instruments. The level is Riksgälden's end-2025 stock (SEK 137bn) plus cumulated flows.",
+  "identity_resid_bn": 0.0005,
+  "score": [
+    {
+      "window": "PRE",
+      "h": 1,
+      "model": 11.3,
+      "benchmark": 12.33,
+      "benchmark_name": "same month last year",
+      "n": 96,
+      "riksgalden": 8.52,
+      "model_on_rg_months": 11.21,
+      "n_rg": 90,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "PRE",
+      "h": 3,
+      "model": 11.1,
+      "benchmark": 12.33,
+      "benchmark_name": "same month last year",
+      "n": 96,
+      "riksgalden": 8.52,
+      "model_on_rg_months": 10.98,
+      "n_rg": 90,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "PRE",
+      "h": 6,
+      "model": 11.27,
+      "benchmark": 12.33,
+      "benchmark_name": "same month last year",
+      "n": 96,
+      "riksgalden": 8.52,
+      "model_on_rg_months": 11.08,
+      "n_rg": 90,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "PRE",
+      "h": 12,
+      "model": 11.45,
+      "benchmark": 12.33,
+      "benchmark_name": "same month last year",
+      "n": 96,
+      "riksgalden": 8.52,
+      "model_on_rg_months": 11.3,
+      "n_rg": 90,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "OOS",
+      "h": 1,
+      "model": 13.91,
+      "benchmark": 15.06,
+      "benchmark_name": "same month last year",
+      "n": 58,
+      "riksgalden": 11.59,
+      "model_on_rg_months": 13.91,
+      "n_rg": 58,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "OOS",
+      "h": 3,
+      "model": 14.13,
+      "benchmark": 15.06,
+      "benchmark_name": "same month last year",
+      "n": 58,
+      "riksgalden": 11.59,
+      "model_on_rg_months": 14.13,
+      "n_rg": 58,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "OOS",
+      "h": 6,
+      "model": 14.32,
+      "benchmark": 15.06,
+      "benchmark_name": "same month last year",
+      "n": 58,
+      "riksgalden": 11.59,
+      "model_on_rg_months": 14.32,
+      "n_rg": 58,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    },
+    {
+      "window": "OOS",
+      "h": 12,
+      "model": 15.58,
+      "benchmark": 15.06,
+      "benchmark_name": "same month last year",
+      "n": 58,
+      "riksgalden": 11.59,
+      "model_on_rg_months": 15.58,
+      "n_rg": 58,
+      "model_name": "seas_k5_a0.5_mean",
+      "unit": "bn SEK, MAE of monthly budget balance"
+    }
+  ],
+  "skill_verdict": "PRE: the model loses to Riksgälden at every horizon (11.0–11.3 vs 8.5) and beats same-month-last-year at every horizon. OOS: the model loses to Riksgälden at every horizon (13.9–15.6 vs 11.6) and does not beat same-month-last-year at h=12 (15.58 vs 15.06).",
+  "score_note": "Walk-forward monthly origins, target months PRE 2012-01..2019-12 / OOS 2022-01→. Model chosen on PRE: 5-year same-month mean, half level shift. Riksgälden's forecast is the one in its latest report before each month (1–6 months ahead), so it has no single horizon. The model only supplies the month shape; the level is Riksgälden's.",
+  "oos_h12": {
+    "model": 15.58,
+    "same_month_last_year": 15.06,
+    "model_beats_smly": false
+  },
+  "shipped_forward_score": [
+    {
+      "vintage": "Statsupplåning 2025:2",
+      "origin": "2025-10",
+      "targets": "2025-11..2026-10",
+      "n": 12,
+      "shipped": 8.37,
+      "model": 15.12,
+      "smly": 15.15
+    },
+    {
+      "vintage": "Statsupplåning 2026:1",
+      "origin": "2026-04",
+      "targets": "2026-05..2026-10",
+      "n": 6,
+      "shipped": 12.43,
+      "model": 17.01,
+      "smly": 22.18
+    },
+    {
+      "vintage": "pooled",
+      "origin": "",
+      "targets": "",
+      "n": 18,
+      "shipped": 9.72,
+      "model": 15.75,
+      "smly": 17.5
+    }
+  ],
+  "shipped_forward_score_note": "Shipped forward = Riksgälden annual total with the model's month shape, scored from each archived report on every month with an outcome since. All OOS; n is small.",
+  "allocation": {
+    "chosen": "uniform",
+    "selection": "Lowest PRE MAE vs outcomes, rest of year anchored to the sum of Riksgälden's published monthly forecasts (origins Jun–Sep).",
+    "pre_oos_vs_outcome": {
+      "uniform": {
+        "OOS": 11.8,
+        "PRE": 9.54
+      },
+      "err_share": {
+        "OOS": 12.2,
+        "PRE": 9.59
+      },
+      "abs_share": {
+        "OOS": 12.92,
+        "PRE": 10.45
+      },
+      "hist_share": {
+        "OOS": 24.57,
+        "PRE": 14.69
+      }
+    },
+    "pre_oos_vs_riksgalden_path": {
+      "abs_share": {
+        "OOS": 9.98,
+        "PRE": 7.9
+      },
+      "err_share": {
+        "OOS": 9.83,
+        "PRE": 7.82
+      },
+      "hist_share": {
+        "OOS": 21.69,
+        "PRE": 13.83
+      },
+      "uniform": {
+        "OOS": 10.19,
+        "PRE": 8.28
+      }
+    },
+    "pre_oos_realised_annual_anchor": {
+      "uniform": {
+        "OOS": 11.88,
+        "PRE": 10.36
+      },
+      "err_share": {
+        "OOS": 12.2,
+        "PRE": 10.55
+      },
+      "abs_share": {
+        "OOS": 13.23,
+        "PRE": 11.09
+      },
+      "hist_share": {
+        "OOS": 34.9,
+        "PRE": 14.46
+      }
+    }
+  },
+  "selection_table": {
+    "seas_k5_a0.5_mean": {
+      "OOS": 14.54,
+      "PRE": 11.34
+    },
+    "seas_k3_a0.5_median": {
+      "OOS": 15.58,
+      "PRE": 11.37
+    },
+    "seas_k3_a0_median": {
+      "OOS": 15.07,
+      "PRE": 11.51
+    },
+    "seas_k5_a0.5_median": {
+      "OOS": 15.27,
+      "PRE": 11.7
+    },
+    "seas_k5_a0_mean": {
+      "OOS": 14.69,
+      "PRE": 11.73
+    },
+    "seas_k5_a1_mean": {
+      "OOS": 14.75,
+      "PRE": 11.74
+    },
+    "seas_k3_a1_median": {
+      "OOS": 16.86,
+      "PRE": 11.79
+    },
+    "seas_k5_a1_median": {
+      "OOS": 15.25,
+      "PRE": 11.91
+    }
+  },
+  "selection_labels": {
+    "seas_k5_a0.5_mean": "5-year same-month mean, half level shift",
+    "seas_k3_a0.5_median": "3-year same-month median, half level shift",
+    "seas_k3_a0_median": "3-year same-month median, no level shift",
+    "seas_k5_a0.5_median": "5-year same-month median, half level shift",
+    "seas_k5_a0_mean": "5-year same-month mean, no level shift",
+    "seas_k5_a1_mean": "5-year same-month mean, full level shift",
+    "seas_k3_a1_median": "3-year same-month median, full level shift",
+    "seas_k5_a1_median": "5-year same-month median, full level shift"
+  },
+  "bottom_up": {
+    "ship": false,
+    "ship_reason": "PRE anchored mean MAE bottom-up 10.567 does not beat production 10.045 by ≥5%",
+    "edge": 0.05,
+    "horizons": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "production_model": "seas_k5_a0.5_mean",
+    "allocation_method": "uniform",
+    "component_params": {
+      "nbr_primary": {
+        "name": "smly",
+        "k": 1,
+        "a": 0.0,
+        "f": "mean"
+      },
+      "nbr_net_lending": {
+        "name": "seas_k5_a0_median",
+        "k": 5,
+        "a": 0.0,
+        "f": "median"
+      },
+      "nbr_interest": {
+        "name": "seas_k3_a0.5_mean",
+        "k": 3,
+        "a": 0.5,
+        "f": "mean"
+      }
+    },
+    "component_mae_pre": {
+      "nbr_primary": {
+        "smly": 6.195,
+        "seas_k5_a0.5_mean": 6.414,
+        "chosen": 6.195,
+        "chosen_name": "smly"
+      },
+      "nbr_net_lending": {
+        "smly": 8.829,
+        "seas_k5_a0.5_mean": 8.212,
+        "chosen": 6.933,
+        "chosen_name": "seas_k5_a0_median"
+      },
+      "nbr_interest": {
+        "smly": 1.82,
+        "seas_k5_a0.5_mean": 1.833,
+        "chosen": 1.645,
+        "chosen_name": "seas_k3_a0.5_mean"
+      }
+    },
+    "identity_resid_bn": 0.001,
+    "pre_unanchored": {
+      "1": {
+        "bottom_up": 10.135,
+        "production": 11.301,
+        "n": 96
+      },
+      "3": {
+        "bottom_up": 10.128,
+        "production": 11.096,
+        "n": 96
+      },
+      "6": {
+        "bottom_up": 10.111,
+        "production": 11.268,
+        "n": 96
+      },
+      "12": {
+        "bottom_up": 10.043,
+        "production": 11.445,
+        "n": 96
+      }
+    },
+    "oos_unanchored": {
+      "1": {
+        "bottom_up": 14.62,
+        "production": 13.914,
+        "n": 58
+      },
+      "3": {
+        "bottom_up": 14.535,
+        "production": 14.131,
+        "n": 58
+      },
+      "6": {
+        "bottom_up": 14.521,
+        "production": 14.323,
+        "n": 58
+      },
+      "12": {
+        "bottom_up": 14.602,
+        "production": 15.576,
+        "n": 58
+      }
+    },
+    "pre_anchored": {
+      "1": {
+        "bottom_up": 8.256,
+        "production": 8.94,
+        "n": 31
+      },
+      "3": {
+        "bottom_up": 10.916,
+        "production": 9.637,
+        "n": 31
+      },
+      "6": {
+        "bottom_up": 12.529,
+        "production": 11.557,
+        "n": 7
+      }
+    },
+    "oos_anchored": {
+      "1": {
+        "bottom_up": 12.96,
+        "production": 13.536,
+        "n": 16
+      },
+      "3": {
+        "bottom_up": 14.635,
+        "production": 10.338,
+        "n": 16
+      },
+      "6": {
+        "bottom_up": 19.31,
+        "production": 14.916,
+        "n": 4
+      }
+    },
+    "pre_mean_mae_unanchored": {
+      "bottom_up": 10.104,
+      "production": 11.277
+    },
+    "oos_mean_mae_unanchored": {
+      "bottom_up": 14.57,
+      "production": 14.486
+    },
+    "pre_mean_mae_anchored": {
+      "bottom_up": 10.567,
+      "production": 10.045
+    },
+    "oos_mean_mae_anchored": {
+      "bottom_up": 15.635,
+      "production": 12.93
+    },
+    "rejects": [
+      "same seasonal params on all three components: identical to headline seasonal (no gain)",
+      "interest prior-year annual pin × seasonal: PRE unanchored 10.31 vs plain 10.10",
+      "RG-anchored bottom-up shape (uniform): PRE mean loses to production anchored shape",
+      "monthly MoM/YoY SARIMAX on NBR: already rejected repo-wide for SE-class seasonals"
+    ],
+    "authority_series": [
+      {
+        "name": "Riksgälden CH1089 Primärt saldo / Nettoutlåning / Räntor",
+        "use": "bottom-up component history",
+        "path": "data/se/nbr_monthly.csv"
+      },
+      {
+        "name": "Riksgälden Statsupplåning annual budget balance / NBR",
+        "use": "live-path annual pin (unchanged when NO-SHIP)",
+        "years": {
+          "2025": {
+            "bn": -103.0,
+            "vintage": "Statsupplåning 2025:2 (last outcome 2025-10)"
+          },
+          "2026": {
+            "bn": -196.0,
+            "vintage": "Statsupplåning 2026:1 (2026-05-28; last outcome 2026-04)"
+          },
+          "2027": {
+            "bn": -208.0,
+            "vintage": "Statsupplåning 2026:1 (2026-05-28)"
+          }
+        }
+      },
+      {
+        "name": "Riksgälden monthly outcome forecast (MFN press releases)",
+        "use": "RG rest-of-year total for anchored PRE gate"
+      },
+      {
+        "name": "Riksgälden Statsupplåning borrowing plan (SGB / bills / liq)",
+        "use": "financing path only (unchanged)"
+      }
+    ],
+    "note": "Unanchored bottom-up beats unanchored production on PRE (~10% relative) via smly primary + median lending + level-shifted interest; the live path is RG-anchored and that gate fails, so the live cash-requirement path is unchanged."
+  },
+  "bottom_up_macro": {
+    "ship": false,
+    "ship_reason": "PRE anchored mean MAE macro 10.349 does not beat production 10.045 by ≥5%",
+    "version": "v2_macro",
+    "edge": 0.05,
+    "horizons": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "production_model": "seas_k5_a0.5_mean",
+    "allocation_method": "uniform",
+    "identity_resid_bn": 0.076,
+    "category_drivers": {
+      "tax_rev": {
+        "driver": "ngdp+wages",
+        "rule": "CAT_SEAS(1, 0.0, 'mean') month shape × lag-1 macro annual; Budgetprop/KI tax rescale when vintage ≤ origin",
+        "pre_mae_macro": 6.503,
+        "pre_mae_smly": 5.144,
+        "series": "SCB BudgetStatForvM total revenue"
+      },
+      "primary_spend": {
+        "driver": "cpi",
+        "rule": "CAT_SEAS(3, 0.5, 'mean') month shape × lag-1 macro annual; Budgetprop/KI tax rescale when vintage ≤ origin",
+        "pre_mae_macro": 4.534,
+        "pre_mae_smly": 3.948,
+        "series": "SCB exp − CH1089 interest − net lending"
+      },
+      "net_lending": {
+        "driver": "None (Budgetprop / KI annual when vintage ≤ origin; else CAT_SEAS)",
+        "rule": "seas_k5_a0_median / authority annual × month shares",
+        "pre_mae_macro": 6.933,
+        "pre_mae_smly": 8.829,
+        "series": "CH1089 Nettoutlåning / Budgetprop nettoutlåning",
+        "justification": "agency deposits/loans are discrete one-offs; no continuous determinant"
+      },
+      "interest": {
+        "driver": "debt_stock × effective_rate (tried); shipped = PRE seas_k3_a0.5_mean",
+        "rule": "CAT_SEAS interest; stock×rate annual → shares rejected on PRE",
+        "pre_mae_macro": 12.662,
+        "pre_mae_smly": 11.319,
+        "pre_mae_seas": 1.645,
+        "series": "CH1089 Räntor på statsskulden"
+      }
+    },
+    "pre_unanchored": {
+      "1": {
+        "bottom_up": 13.863,
+        "production": 11.301,
+        "n": 96
+      },
+      "3": {
+        "bottom_up": 11.01,
+        "production": 11.096,
+        "n": 96
+      },
+      "6": {
+        "bottom_up": 10.391,
+        "production": 11.268,
+        "n": 96
+      },
+      "12": {
+        "bottom_up": 10.043,
+        "production": 11.445,
+        "n": 96
+      }
+    },
+    "oos_unanchored": {
+      "1": {
+        "bottom_up": 22.634,
+        "production": 13.914,
+        "n": 58
+      },
+      "3": {
+        "bottom_up": 17.568,
+        "production": 14.131,
+        "n": 58
+      },
+      "6": {
+        "bottom_up": 15.792,
+        "production": 14.323,
+        "n": 58
+      },
+      "12": {
+        "bottom_up": 15.129,
+        "production": 15.576,
+        "n": 58
+      }
+    },
+    "pre_anchored": {
+      "1": {
+        "bottom_up": 8.571,
+        "production": 8.94,
+        "n": 31
+      },
+      "3": {
+        "bottom_up": 10.895,
+        "production": 9.637,
+        "n": 31
+      },
+      "6": {
+        "bottom_up": 11.581,
+        "production": 11.557,
+        "n": 7
+      }
+    },
+    "oos_anchored": {
+      "1": {
+        "bottom_up": 13.348,
+        "production": 13.536,
+        "n": 16
+      },
+      "3": {
+        "bottom_up": 13.102,
+        "production": 10.338,
+        "n": 16
+      },
+      "6": {
+        "bottom_up": 17.525,
+        "production": 14.916,
+        "n": 4
+      }
+    },
+    "pre_mean_mae_unanchored": {
+      "bottom_up": 11.327,
+      "production": 11.277
+    },
+    "oos_mean_mae_unanchored": {
+      "bottom_up": 17.781,
+      "production": 14.486
+    },
+    "pre_mean_mae_anchored": {
+      "bottom_up": 10.349,
+      "production": 10.045
+    },
+    "oos_mean_mae_anchored": {
+      "bottom_up": 14.658,
+      "production": 12.93
+    },
+    "rejects": [
+      "v1 CH1089 component seasonals under RG pin: anchored PRE 10.567 vs production 10.045",
+      "SCB smly×NGDP/CPI (prior v2): anchored PRE ~16.8; lag-1 NGDP/tax YoY corr ~0.18",
+      "interest stock×rate annual (shares or seasonal renormalised): anchored PRE 11.1–13.2",
+      "category PRE seasonals + macro annual: anchored PRE ~10.35 (best honest; still <5%)",
+      "prod↔v1 shape blend α=0.20: anchored PRE 9.882 — beats prod by ~1.6% only; forbidden as seasonal rebrand",
+      "tax/spend calendar shares × last annual: anchored PRE 10.076",
+      "Statskontoret / KI annuals change open-year levels only; RG-anchored gate is shape-only"
+    ],
+    "cat_seas": {
+      "tax_rev": {
+        "k": 1,
+        "a": 0.0,
+        "f": "mean"
+      },
+      "primary_spend": {
+        "k": 3,
+        "a": 0.5,
+        "f": "mean"
+      },
+      "net_lending": {
+        "k": 5,
+        "a": 0.0,
+        "f": "median"
+      },
+      "interest": {
+        "k": 3,
+        "a": 0.5,
+        "f": "mean"
+      }
+    },
+    "authority_tables": [
+      {
+        "name": "Budgetpropositionen / Ekonomiska vårpropositionen — inkomster, utgifter, UO26, nettoutlåning",
+        "vintage": "Vårpropositionen 2026",
+        "path": "data/se/authority.json#budgetprop"
+      },
+      {
+        "name": "Konjunkturinstitutet F3328 budgetsaldo / F3304 skatter & ränteutgifter",
+        "vintage": "KI prognos September 2026",
+        "path": "data/se/authority.json#ki"
+      },
+      {
+        "name": "Statskontoret prognos statens budget (juni 2026)",
+        "vintage": "Juni 2026 (Tabell 1 / 10)",
+        "path": "data/se/authority.json#statskontoret"
+      },
+      {
+        "name": "SCB BudgetStatForvM central government budget monthly revenue/expenditure",
+        "path": "data/se/scb_budget_monthly.parquet"
+      },
+      {
+        "name": "Riksgälden CH1089 Primärt saldo / Nettoutlåning / Räntor",
+        "path": "data/se/nbr_monthly.csv"
+      },
+      {
+        "name": "Eurostat namq_10_gdp NGDP + D1 wages; prc_hicp_midx CPI; debt-book effective rates",
+        "use": "macro drivers"
+      },
+      {
+        "name": "Riksgälden Statsupplåning annual NBR (pin after category sum)",
+        "use": "RG rest-of-year / annual anchor only after macro category path"
+      }
+    ],
+    "note": "Category×macro alternate; live cash stays RG×seasonal. Anchored PRE gate is shape-only under the RG rest-of-year total — authority annuals do not move it."
+  },
+  "bill_stock_check": {
+    "end_2024": {
+      "implied_bn": 112.9,
+      "riksgalden_bn": 113.0
+    },
+    "end_2025": {
+      "implied_bn": 172.7,
+      "riksgalden_bn": 173.0
+    }
+  },
+  "liq_mgmt_stock_check": {
+    "end_2024": {
+      "implied_bn": 133.6,
+      "riksgalden_bn": 134.0
+    },
+    "end_2025": {
+      "implied_bn": 137.0,
+      "riksgalden_bn": 137.0
+    }
+  },
+  "forward": {
+    "plan_year": 2026,
+    "plan_cash_requirement_bn": 196.0,
+    "plan_source": "Riksgälden Statsupplåning 2026:1 (2026-05-28): net borrowing requirement SEK 196bn",
+    "plan_report_date": "2026-05-28",
+    "cash_requirement_ytd_bn": 8.2,
+    "ytd_through": "2026-10",
+    "riksgalden_ytd_deviation_bn": 39.8,
+    "riksgalden_ytd_deviation_asof": "2026-11-06",
+    "borrowing_vs_riksgalden_path_ytd_bn": -39.8,
+    "timing_items_bn": 15.0,
+    "timing_items": [
+      {
+        "item": "EU Recovery and Resilience Facility payment",
+        "planned_month": "2026-07",
+        "expected_year": 2026,
+        "amount_bn": 15.0,
+        "announced": "2026-08-07",
+        "received_month": null,
+        "source": "https://mfn.se/a/riksgalden/deficit-for-swedish-central-government-in-july-2026"
+      }
+    ],
+    "borrowing_vs_riksgalden_path_ex_timing_bn": -54.8,
+    "model_full_year_bn": 141.2,
+    "plan_consistent_full_year_bn": 141.2,
+    "plan_consistent_basis": "Riksgälden Statsupplåning 2026:1 full year less its YTD deviation from its own monthly path, excluding announced timing items",
+    "pure_model_full_year_bn": 97.6,
+    "rest_of_year_implied_bn": 133.0,
+    "rest_of_year_same_months_last_year_bn": 123.3,
+    "plan_gap_lands_on": "liquidity management (bonds and bills on plan): end-2026 stock SEK 21bn vs plan SEK 173bn",
+    "next_report": "2026-11-26",
+    "next_outcome": {
+      "month": "2026-11",
+      "date": "2026-12-07"
+    },
+    "forward_basis": "Riksgälden annual totals (2026, 2027) with the YTD deviation ex timing carried in 2026; month shape from the PRE-selected seasonal model, gap allocated 'uniform' (PRE-selected). Post-plan years carry last plan issuance / bill-stock and the unanchored seasonal cash path through 2030-12.",
+    "rest_of_2026": {
+      "window": "2026-11..2026-12",
+      "cash_requirement_bn": 133.0,
+      "budget_balance_bn": -133.0,
+      "budget_balance_model_unanchored_bn": -89.4,
+      "bond_gross_bn": 36.4,
+      "bond_redemption_bn": 0.4,
+      "net_bonds_bn": 36.1,
+      "bond_gross_nominal_bn": 35.7,
+      "bond_redemption_nominal_bn": 0.0,
+      "net_bonds_nominal_bn": 35.7,
+      "net_bonds_linker_bn": 0.8,
+      "net_bonds_fx_bn": -0.4,
+      "bill_gross_bn": 67.4,
+      "net_bills_bn": 25.1,
+      "other_fin_bn": 0.1,
+      "liquidity_mgmt_need_bn": 71.7
+    },
+    "next_12m": {
+      "window": "2026-11..2027-10",
+      "cash_requirement_bn": 231.8,
+      "budget_balance_bn": -231.8,
+      "budget_balance_model_unanchored_bn": -89.1,
+      "bond_gross_bn": 262.5,
+      "bond_redemption_bn": 0.4,
+      "net_bonds_bn": 262.2,
+      "bond_gross_nominal_bn": 237.5,
+      "bond_redemption_nominal_bn": 0.0,
+      "net_bonds_nominal_bn": 237.5,
+      "net_bonds_linker_bn": 6.0,
+      "net_bonds_fx_bn": 18.6,
+      "bill_gross_bn": 455.6,
+      "net_bills_bn": 22.1,
+      "other_fin_bn": 0.1,
+      "liquidity_mgmt_need_bn": -52.5
+    },
+    "window": "2026-11..2027-10",
+    "horizon_end": "2030-12",
+    "full_forward_window": "2026-11..2030-12",
+    "gdp_bn": 6791.836,
+    "net_bonds_plus_bills_12m_pct_gdp": 4.19,
+    "budget_balance_12m_bn": -231.8,
+    "cash_requirement_12m_bn": 231.8,
+    "net_bonds_12m_bn": 262.2,
+    "net_bonds_nominal_12m_bn": 237.5,
+    "net_bonds_linker_12m_bn": 6.0,
+    "net_bonds_fx_12m_bn": 18.6,
+    "net_bills_12m_bn": 22.1,
+    "liquidity_mgmt_need_12m_bn": -52.5,
+    "implied_net_bills_12m_bn_if_liq_mgmt_flat": -30.5,
+    "bill_stock": {
+      "snapshot_date": "2026-11-15",
+      "snapshot_bill_stock_bn": 232.8,
+      "bill_stock_end_last_outcome_bn": 212.8,
+      "bill_stock_end_last_outcome_trade_bn": 212.8,
+      "bill_stock_end_last_auction_month_bn": 212.8,
+      "auction_observed_months": [],
+      "tenor_profile_months": {
+        "3": 0.462,
+        "4": 0.022,
+        "5": 0.05,
+        "6": 0.063,
+        "7": 0.083,
+        "8": 0.093,
+        "9": 0.04,
+        "10": 0.05,
+        "11": 0.053,
+        "12": 0.086
+      },
+      "bill_calendar": {
+        "cadence_days": 14,
+        "next_dates": [
+          "2026-11-24",
+          "2026-12-08",
+          "2027-01-19",
+          "2027-02-02",
+          "2027-02-16",
+          "2027-03-02"
+        ],
+        "mean_size_bn": {
+          "2026": 23.7,
+          "2027": 21.78,
+          "2028": 22.13,
+          "2029": 20.94,
+          "2030": 21.25
+        }
+      },
+      "nominal_calendar": {
+        "cadence_days": 7,
+        "breaks": [
+          [
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          [
+            [
+              12,
+              17
+            ],
+            [
+              1,
+              14
+            ]
+          ]
+        ],
+        "next_dates": [
+          "2026-11-18",
+          "2026-11-25",
+          "2026-12-02",
+          "2026-12-09",
+          "2026-12-16",
+          "2027-01-20"
+        ],
+        "by_year": {
+          "2026": {
+            "plan_bn": 220.0,
+            "settled_or_announced_bn": 194.3,
+            "auctions_left": 5,
+            "size_per_auction_bn": 5.14
+          },
+          "2027": {
+            "plan_bn": 240.0,
+            "settled_or_announced_bn": 0.0,
+            "auctions_left": 44,
+            "size_per_auction_bn": 5.455
+          },
+          "2028": {
+            "plan_bn": 240.0,
+            "settled_or_announced_bn": 0.0,
+            "auctions_left": 44,
+            "size_per_auction_bn": 5.455
+          },
+          "2029": {
+            "plan_bn": 240.0,
+            "settled_or_announced_bn": 0.0,
+            "auctions_left": 43,
+            "size_per_auction_bn": 5.581
+          },
+          "2030": {
+            "plan_bn": 240.0,
+            "settled_or_announced_bn": 0.0,
+            "auctions_left": 43,
+            "size_per_auction_bn": 5.581
+          }
+        }
+      },
+      "fx_bond_month": 6,
+      "horizon_end": "2030-12",
+      "end_2026_path_bn": 237.9,
+      "riksgalden_plan_end_2026_bn": 238.0
+    },
+    "liq_mgmt_stock": {
+      "end_2025_riksgalden_bn": 137.0,
+      "last_outcome_month": "2026-10",
+      "last_outcome_implied_bn": -50.4,
+      "end_2026_implied_bn": 21.4,
+      "riksgalden_plan_end_2026_bn": 173.0
+    },
+    "budget_balance_ytd_2026_bn": -8.2,
+    "unanchored_model_rest_of_2026_bn": -89.4,
+    "riksgalden_implied_rest_of_2026_bn": -133.0,
+    "riksgalden_annual_2026_bn": -196.0,
+    "riksgalden_annual_2027_bn": -208.0,
+    "riksgalden_vintage": "Statsupplåning 2026:1 (2026-05-28)"
+  },
+  "notes": [
+    "Sign convention: net borrowing requirement and all financing lines + = borrowing (deficit); the budget balance is the same number with the opposite sign.",
+    "Financing is Riksgälden's net borrowing at nominal amount by instrument; FX and inflation revaluation are removed by the source. Redemptions = gross − net, so they also absorb switches and buybacks.",
+    "Nominal SGBs: settled and announced auctions, then a 7-day auction calendar (breaks 08 Jul–05 Aug; 17 Dec–14 Jan, public holidays skipped) with one size per year that lands on Riksgälden's plan (2026: 5 × SEK 5.14bn, 2027: 44 × SEK 5.46bn, 2028: 44 × SEK 5.46bn, 2029: 43 × SEK 5.58bn, 2030: 43 × SEK 5.58bn).",
+    "T-bills: an auction every 14 days on the observed weekday (same breaks rule). Each rolls what matured since the last one plus an even step toward Riksgälden's planned year-end stock; new issues mature on the third Wednesday with the tenor mix of the last 24 months. Liquidity management absorbs the rest.",
+    "Linkers: the plan spread over the months that had linker auctions in the past year; one FX bond a year in June (month of the latest FX issue). Redemptions from the outstanding list.",
+    "Stock checks against Riksgälden year-end outcomes: end-2024 bills 112.9 vs 113, liquidity management 133.6 vs 134; end-2025 bills 172.7 vs 173, liquidity management 137.0 vs 137.",
+    "Timing items excluded from the YTD deviation (SEK +39.8bn balance terms, release 2026-11-06): EU Recovery and Resilience Facility payment SEK 15bn, planned 2026-07, now expected in 2026 (release 2026-08-07).",
+    "Bottom-up CH1089 baseline: NO-SHIP — PRE anchored mean MAE 10.567 vs production 10.045 (PRE anchored mean MAE bottom-up 10.567 does not beat production 10.045 by ≥5%). Unanchored PRE 10.104 vs 11.277. Alternate bottom-up cash-requirement column does not replace the live path when NO-SHIP.",
+    "Bottom-up macro (Budgetprop/SCB×drivers) v2: NO-SHIP — PRE anchored mean MAE 10.349 vs production 10.045 (PRE anchored mean MAE macro 10.349 does not beat production 10.045 by ≥5%)."
+  ]
+}

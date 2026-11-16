@@ -1,0 +1,17 @@
+{
+ "curve": "    long_fwd  long_mean  long_dev    long_bp    all_fwd     all_bp   joint_bp\ncc                                                                           \nus  1.321407   1.051681  0.269727   3.034013   4.492941   0.735491   2.485887\nuk  0.964223   2.143008 -1.178784 -13.259530   3.817712  -0.409070  -9.315302\nde  1.310630   0.365260  0.945371  10.633984   5.213506  11.057539  13.394435\nfr  1.841382   1.512918  0.328464   3.694726   7.497706  11.186691   8.708852\nit  1.411301   1.301190  0.110111   1.238582   8.237128  14.084592   8.625069\njp  2.385416   3.215262 -0.829846  -9.334504  11.868912        NaN        NaN\nse       NaN        NaN       NaN        NaN        NaN        NaN        NaN\nno       NaN        NaN       NaN        NaN        NaN        NaN        NaN",
+ "curve_slope_bp_per_pp": 11.248478904194066,
+ "curve_slope_t": 4.314985878728106,
+ "next12": "           window  private_net_bn  ...  reinvest_90_pct_gdp  reinvest_90_vs_buy\ncc                                 ...                                         \nus  Oct-26\u2013Sep-27     1540.461310  ...             7.829684            0.883525\nuk  Oct-26\u2013Sep-27      126.216735  ...             4.636765            0.458316\nde  Sep-26\u2013Aug-27      229.029174  ...             5.380779            1.119730\nfr  Sep-26\u2013Aug-27      238.169231  ...             8.877527            1.238428\nit  Oct-26\u2013Sep-27      200.290872  ...             9.658239            1.153071\nse  Oct-26\u2013Sep-27      240.219161  ...             3.926470            1.122109\nno  Nov-26\u2013Oct-27       54.801961  ...             1.091757            0.480718\n\n[7 rows x 15 columns]",
+ "path2029": "    year  debt_pct_gdp  ...  d_roll_recession_pp  d_net_recession_pct_gdp\ncc                      ...                                              \nus  2030    108.915847  ...             3.079393                      0.0\nuk  2030     93.882089  ...             1.059659                      0.0\nde  2030     55.311703  ...             1.137820                      0.0\nfr  2030    103.387361  ...             1.103251                      0.0\nit  2030    105.721624  ...             0.922991                      0.0\nse  2030     22.621757  ...             1.709994                      0.0\nno  2030     13.167588  ...             1.279417                      0.0\n\n[7 rows x 8 columns]",
+ "peers": [
+  "us",
+  "uk",
+  "de",
+  "fr",
+  "it",
+  "se",
+  "no"
+ ],
+ "plan": "    gap_bn  ...                                           plan_src\ncc          ...                                                   \nus     NaN  ...                        TBAC refunding / TGA target\nuk  -3.338  ...               OBR / DMO remit CGNCR (ex NRAM etc.)\nde -39.400  ...  Bundeshaushalt 2026 Soll (core NKA 98.0; Wirts...\nfr   0.000  ...  PLF 2027 (r\u00e9vis\u00e9; LFI 2026 was 124.4 / \u2212124.2 ...\nit   1.100  ...  DFP 2026 (Documento di finanza pubblica, CdM 2...\nse -40.400  ...  Riksg\u00e4lden Statsuppl\u00e5ning 2026:1 (2026-05-28):...\nno     NaN  ...                                                   \n\n[7 rows x 7 columns]"
+}

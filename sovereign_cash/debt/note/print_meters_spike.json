@@ -1,0 +1,21 @@
+{
+  "fr": {
+    "usable_monthly_gg": false,
+    "have": "SMB State cash (solde g\u00e9n\u00e9ral) \u2014 Ex1c; GG Maastricht annual in plan.json / Ex1d",
+    "missing": "No stable monthly GG/Maastricht path in sovereign_cash/data/fr",
+    "action": "Keep Ex1d annual politics; do not invent monthly Maastricht"
+  },
+  "it": {
+    "usable_monthly_gg": false,
+    "have": "BdI/MEF fabbisogno settore statale monthly (cash-ish) \u2014 Ex1c",
+    "missing": "Maastricht / ind. netto is quarterly / annual; not a monthly print meter here",
+    "action": "No Phase-2 IT accrued engine"
+  },
+  "de": {
+    "usable_monthly_gg": false,
+    "have": "BMF Finanzierungssaldo + Sonderverm\u00f6gen Kredit (cash); Destatis extra-budget weak cross-check (corr ~0.22)",
+    "missing": "No clean monthly Maastricht GG series wired for print surprise",
+    "action": "No Phase-2 DE accrued engine"
+  },
+  "verdict": "FR/IT/DE: no usable monthly GG print meter in-repo. Phase 2 stays ES B.9 only; FR politics remains Ex1d annual."
+}

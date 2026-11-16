@@ -1,0 +1,366 @@
+{
+ "note": "OBR's assessment of Government decisions at each fiscal event since the October 2024 forecast, £bn, + increases borrowing; and the Government's departmental spending plans (DEL) as of Budget 2026. Taxes: the OBR's totals for every event (Budgets 2025 and 2026 broken down by HMT's scorecard measures plus the OBR's adjustments). Spending: departmental budgets enter as the planned levels (they already carry every event's DEL decisions); annually managed spending (welfare, pensions, student loans and the like) enters as each event's decisions. Indirect effects: the OBR's, for every event.",
+ "events": [
+  {
+   "key": "ab24",
+   "event": "Autumn Budget 2024 (30 October 2024)",
+   "first_fy": 2024,
+   "source": "Autumn Budget 2024, Table 1.2 (OBR)",
+   "url": "https://assets.publishing.service.gov.uk/media/672b9695fbd69e1861921c63/Autumn_Budget_2024_Accessible.pdf",
+   "components": {
+    "Autumn Budget 2024: tax decisions": [
+     "tax",
+     [
+      -1.2,
+      -24.0,
+      -34.8,
+      -39.1,
+      -39.7,
+      -41.2
+     ]
+    ],
+    "Autumn Budget 2024: non-scorecard changes": [
+     "spend",
+     [
+      -1.0,
+      -4.7,
+      -2.9,
+      -3.2,
+      -3.0,
+      -2.9
+     ]
+    ],
+    "Autumn Budget 2024: indirect effects": [
+     "indirect",
+     [
+      -4.1,
+      -5.9,
+      -4.8,
+      -2.0,
+      1.9,
+      5.9
+     ]
+    ],
+    "Autumn Budget 2024: other decisions (welfare and other AME)": [
+     "spend",
+     [
+      1.2,
+      3.8,
+      2.4,
+      0.1,
+      -2.3,
+      -4.1
+     ]
+    ]
+   }
+  },
+  {
+   "key": "ss25",
+   "event": "Spring Statement 2025 (26 March 2025)",
+   "first_fy": 2024,
+   "source": "Spring Statement 2025, Table 1.3 (OBR) and Table 3.1 (measures 10-17 and 27)",
+   "url": "https://assets.publishing.service.gov.uk/media/67e3ec2df356a2dc0e39b488/E03274109_HMT_Spring_Statement_Mar_25_Web_Accessible_.pdf",
+   "components": {
+    "Spring Statement 2025: tax decisions": [
+     "tax",
+     [
+      -0.1,
+      -1.0,
+      -1.4,
+      -1.6,
+      -1.9,
+      -2.2
+     ]
+    ],
+    "Spring Statement 2025: welfare reforms (PIP, UC health element, fraud)": [
+     "spend",
+     [
+      0.0,
+      -0.11,
+      -0.14,
+      -1.845,
+      -3.6,
+      -4.785
+     ]
+    ],
+    "Spring Statement 2025: local government support": [
+     "spend",
+     [
+      1.215,
+      0.915,
+      -0.42,
+      -0.42,
+      -0.17,
+      -0.055
+     ]
+    ],
+    "Spring Statement 2025: indirect effects": [
+     "indirect",
+     [
+      0.4,
+      -1.6,
+      -2.0,
+      -2.9,
+      -3.4,
+      -3.4
+     ]
+    ]
+   }
+  },
+  {
+   "key": "b25",
+   "event": "Budget 2025 (26 November 2025)",
+   "first_fy": 2025,
+   "scorecard": "budget_2025",
+   "source": "Budget 2025, Table 1.2 (OBR) and Table 4.1 (HMT scorecard)",
+   "url": "https://assets.publishing.service.gov.uk/media/69286818a245b0985f0341f3/E03444720_Budget_2025_Web_Accessible.pdf",
+   "obr_tax": [
+    -1.3,
+    -0.7,
+    -6.1,
+    -13.9,
+    -26.1,
+    -29.8
+   ],
+   "components": {
+    "Budget 2025: indirect effects": [
+     "indirect",
+     [
+      0.2,
+      -2.0,
+      1.3,
+      3.9,
+      5.2,
+      5.4
+     ]
+    ]
+   },
+   "ame_from_scorecard": true
+  },
+  {
+   "key": "sf26",
+   "event": "Spring Forecast 2026 (March 2026)",
+   "first_fy": 2025,
+   "source": "OBR EFO March 2026, Table B.1",
+   "url": "https://assets.publishing.service.gov.uk/media/69a6d7b62e1f4fbda4252208/economic-and-fiscal-outlook-march-2026-web-accessible.pdf",
+   "components": {
+    "Spring Forecast 2026: tax decisions": [
+     "tax",
+     [
+      0.1,
+      0.6,
+      0.6,
+      0.6,
+      0.5,
+      0.5
+     ]
+    ],
+    "Spring Forecast 2026: indirect effects": [
+     "indirect",
+     [
+      0.1,
+      0.4,
+      0.4,
+      -1.8,
+      0.3,
+      0.5
+     ]
+    ]
+   }
+  },
+  {
+   "key": "b26",
+   "event": "Budget 2026 (October 2026)",
+   "first_fy": 2026,
+   "scorecard": "budget_2026",
+   "source": "OBR EFO October 2026, Table 3.1, and HMT Budget 2026 Table 6.1",
+   "url": "https://assets.publishing.service.gov.uk/media/6ae4a7a9ec36e258a1998484/economic-and-fiscal-outlook-october-2026-web-accessible.pdf",
+   "obr_tax": [
+    1.7,
+    -0.3,
+    -3.1,
+    -5.8,
+    -6.6,
+    -7.5
+   ],
+   "components": {
+    "Budget 2026: council tax rebate (£100, bands A-D)": [
+     "spend",
+     [
+      2.6,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    ],
+    "Budget 2026: other annually managed spending decisions": [
+     "spend",
+     [
+      -2.2,
+      1.7,
+      0.9,
+      0.6,
+      0.6,
+      0.6
+     ]
+    ],
+    "Budget 2026: indirect effects": [
+     "indirect",
+     [
+      -1.3,
+      3.5,
+      1.7,
+      1.4,
+      1.4,
+      2.4
+     ]
+    ]
+   }
+  }
+ ],
+ "obr_totals": {
+  "ab24": [
+   19.6,
+   28.9,
+   27.6,
+   31.4,
+   37.6,
+   36.0
+  ],
+  "ss25": [
+   1.2,
+   -0.6,
+   -1.1,
+   -2.3,
+   -6.0,
+   -9.7
+  ],
+  "b25": [
+   3.9,
+   3.9,
+   11.2,
+   2.9,
+   -9.6,
+   -12.6
+  ],
+  "sf26": [
+   -3.9,
+   3.8,
+   2.3,
+   3.7,
+   5.7,
+   6.2
+  ],
+  "b26": [
+   6.3,
+   7.0,
+   2.1,
+   -2.6,
+   -3.5,
+   -9.3
+  ]
+ },
+ "del_plans": {
+  "source": "OBR EFO October 2026, Table A.7: PSCE in RDEL + PSGI in CDEL + unfunded public service pensions (moved out of RDEL from 2027-28 by the pensions valuation)",
+  "url": "https://assets.publishing.service.gov.uk/media/6ae4a7a9ec36e258a1998484/economic-and-fiscal-outlook-october-2026-web-accessible.pdf",
+  "first_fy": 2025,
+  "rdel": [
+   526.6,
+   555.5,
+   554.6,
+   573.0,
+   584.8,
+   604.8,
+   620.9
+  ],
+  "cdel": [
+   122.2,
+   127.7,
+   130.2,
+   131.7,
+   133.7,
+   136.9,
+   141.4
+  ],
+  "unfunded_pensions": [
+   -0.4,
+   -1.1,
+   14.3,
+   14.9,
+   14.9,
+   14.9,
+   15.1
+  ]
+ },
+ "ame_keys": [
+  "Universal Credit",
+  "Child Benefit",
+  "Carer",
+  "Housing Benefit",
+  "Pension Credit",
+  "Personal Independence",
+  "Winter Fuel",
+  "Health and Disability Benefits",
+  "DWP Fraud",
+  "Student Loans",
+  "student loans",
+  "National Insurance",
+  "Welfare",
+  "Parental Pay",
+  "Defined Benefit Pensions",
+  "British Coal",
+  "Renewables Obligation",
+  "Sizewell C",
+  "Infected Blood",
+  "Higher Education",
+  "Lifetime ISA",
+  "First Time Buyer ISA",
+  "Your First Home",
+  "Compensation Payments"
+ ],
+ "obr_forecast": {
+  "vintage": "OBR EFO October 2026",
+  "first_fy": 2025,
+  "source": "OBR EFO October 2026, Tables A.5, A.7 and A.9",
+  "url": "https://assets.publishing.service.gov.uk/media/6ae4a7a9ec36e258a1998484/economic-and-fiscal-outlook-october-2026-web-accessible.pdf",
+  "receipts": [
+   1231,
+   1316,
+   1392,
+   1449,
+   1513,
+   1571,
+   1629
+  ],
+  "tme": [
+   1366,
+   1449,
+   1504,
+   1549,
+   1587,
+   1638,
+   1698
+  ],
+  "interest": [
+   108.7,
+   123.9,
+   134.0,
+   139.0,
+   147.4,
+   149.6,
+   160.0
+  ],
+  "psnb": [
+   134.3,
+   133.2,
+   112.0,
+   99.5,
+   73.8,
+   66.9,
+   68.3
+  ],
+  "interest_label": "central government debt interest, net of the APF"
+ }
+}

@@ -1,0 +1,9 @@
+# data pulls and their logs travel as zips, not commits
+data_pull_*.zip
+pull_log_*.txt
+pull_manifest.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/

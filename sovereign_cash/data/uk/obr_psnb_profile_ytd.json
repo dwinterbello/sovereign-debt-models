@@ -1,0 +1,12 @@
+{
+  "fy": "2026-27",
+  "obr_efo": "October 2026",
+  "annual_psnb_bn": 133.2,
+  "through": "2026-09",
+  "ytd_profile_bn": 91.8,
+  "ytd_outturn_bn": 97.8,
+  "ytd_gap_bn": 6.0,
+  "ytd_profile_vs": "March 2026",
+  "source": "ONS Public sector finances September 2026: FY-to-Sep borrowing £97.8bn, £6.0bn above the OBR March profile. October EFO annual PSNB £133.2bn (was March £115.5bn). October monthly profile xlsx not yet stubbed — YTD gap still vs March until next PSF.",
+  "note": "Full OBR monthly-profile xlsx is bot-walled. Update this stub on each PSF release from the ONS vs OBR table. Chart month path uses hist shares × annual, rescaled so YTD matches ytd_profile_bn."
+}

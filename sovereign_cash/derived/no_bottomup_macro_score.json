@@ -1,0 +1,184 @@
+{
+  "ship": true,
+  "ship_reason": "PRE gate passed",
+  "edge": 0.05,
+  "version": "v2_macro",
+  "mainland_resid_weight": 0.5,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "rule_map": {
+    "customs_excise": "smly",
+    "vat": "add_expanding",
+    "tax_net": "add_expanding",
+    "nav": "add_expanding",
+    "local_authorities": "add_expanding",
+    "oil_tax": "unit_mult",
+    "health": "add_expanding",
+    "sdfi": "unit_mult",
+    "other_net": "smly"
+  },
+  "category_driver_table": [
+    {
+      "category": "customs_excise",
+      "driver": "gdp_yoy",
+      "rule": "smly",
+      "pre_mae": 2.59,
+      "pre_mae_smly": 2.59
+    },
+    {
+      "category": "vat",
+      "driver": "gdp_yoy",
+      "rule": "add_expanding",
+      "pre_mae": 4.6,
+      "pre_mae_smly": 4.78
+    },
+    {
+      "category": "tax_net",
+      "driver": "gdp_yoy",
+      "rule": "add_expanding",
+      "pre_mae": 2.58,
+      "pre_mae_smly": 2.93
+    },
+    {
+      "category": "nav",
+      "driver": "gdp_yoy",
+      "rule": "add_expanding",
+      "pre_mae": 1.41,
+      "pre_mae_smly": 1.88
+    },
+    {
+      "category": "local_authorities",
+      "driver": "gdp_yoy",
+      "rule": "add_expanding",
+      "pre_mae": 0.39,
+      "pre_mae_smly": 0.53
+    },
+    {
+      "category": "oil_tax",
+      "driver": "brent_yoy",
+      "rule": "unit_mult",
+      "pre_mae": 2.74,
+      "pre_mae_smly": 3.92
+    },
+    {
+      "category": "health",
+      "driver": "gdp_yoy",
+      "rule": "add_expanding",
+      "pre_mae": 6.87,
+      "pre_mae_smly": 6.94
+    },
+    {
+      "category": "sdfi",
+      "driver": "brent_yoy",
+      "rule": "unit_mult",
+      "pre_mae": 1.58,
+      "pre_mae_smly": 0.74
+    },
+    {
+      "category": "other_net",
+      "driver": "pol_d12",
+      "rule": "smly",
+      "pre_mae": 5.27,
+      "pre_mae_smly": 5.27
+    }
+  ],
+  "pre_beyond_nb": {
+    "1": {
+      "bottom_up": 6.37,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "3": {
+      "bottom_up": 5.98,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "6": {
+      "bottom_up": 5.85,
+      "production_smly": 6.73,
+      "n": 6
+    },
+    "12": {
+      "bottom_up": 5.59,
+      "production_smly": 6.73,
+      "n": 6
+    }
+  },
+  "oos_beyond_nb": {
+    "1": {
+      "bottom_up": 14.45,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "3": {
+      "bottom_up": 13.49,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "6": {
+      "bottom_up": 14.51,
+      "production_smly": 14.97,
+      "n": 3
+    },
+    "12": {
+      "bottom_up": 15.77,
+      "production_smly": 14.97,
+      "n": 3
+    }
+  },
+  "pre_mean_mae": {
+    "bottom_up": 5.95,
+    "production_smly": 6.73
+  },
+  "oos_mean_mae": {
+    "bottom_up": 14.55,
+    "production_smly": 14.97
+  },
+  "rejects": [
+    "v1 Tab4 smly / cal5 / pace_dev / petro_yoy: PRE edge <5% (see no_bottomup_score.json)",
+    "uniform mainland GDP unit/half pass-through on all tax lines: worse PRE mean than smly",
+    "annual mainland GDP × month share for tax lines: PRE MAE 9.2 vs smly 6.7",
+    "additive Brent lag-6 OLS on oil only: ships PRE but residual smly share ~88% of perimeter",
+    "PRE-gated add_expanding on mainland without petroleum unit: loses PRE headline",
+    "policy_rate Δ12 on other_net: loses PRE category MAE to smly",
+    "category-gate sdfi to smly (unit hurts leaf MAE): headline PRE collapses (−6.7%)",
+    "oil_tax=smly + sdfi unit: better PRE than baseline but contradicts oil leaf MAE",
+    "petro unit only / all mainland smly: PRE ~10% but drops mainland×macro mission",
+    "fitted Brent β via pct_change OLS: PRE MAE >20",
+    "brent lag ≥2 / clip ≤0.3 / joint β≠1 grid: either fails gate or PRE-tunes elasticity",
+    "beating NB inside its published window: disallowed"
+  ],
+  "authority_series": [
+    {
+      "name": "Norges Bank LIQUIDITY_STATISTICS Tab4",
+      "use": "category history / identity"
+    },
+    {
+      "name": "Norges Bank LIQUIDITY_FORECAST FCAST_S",
+      "use": "NB coverage pin + live residual inside path",
+      "vintage": "2026-11-12"
+    },
+    {
+      "name": "SSB 09190 mainland GDP (bnpb.nr23_9fn)",
+      "path": "data/no/mainland_gdp.parquet",
+      "use": "mainland_gdp_yoy driver"
+    },
+    {
+      "name": "Brent USD (FRED DCOILBRENTEU / correlations panel)",
+      "use": "brent_yoy unit_mult on oil_tax/sdfi"
+    },
+    {
+      "name": "Norges Bank policy rate",
+      "use": "screened for other_net; not selected"
+    },
+    {
+      "name": "data/no/authority.json",
+      "use": "elasticity / MoF placeholder vintages"
+    }
+  ],
+  "note": "Beyond-NB PRE targets are January-only (NB path ends 31 Dec). Hybrid ties production inside the NB window by construction."
+}

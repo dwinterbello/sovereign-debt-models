@@ -1,0 +1,26 @@
+{
+ "event": "Public Law 119-21 (2025 reconciliation act), enacted 4 July 2025",
+ "source": "CBO, Estimated Budgetary Effects of Public Law 119-21, 21 July 2025 (cost estimate 61570), relative to CBO's January 2025 baseline; conventional estimate, no debt service or macroeconomic feedback",
+ "url": "https://www.cbo.gov/publication/61570",
+ "copy_url": "https://www.taxpayer.net/wp-content/uploads/2025/07/OBBBA_CurentLaw.pdf",
+ "unit": "USD million, fiscal years",
+ "years": [2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034],
+ "totals": {
+  "outlays":  [-152014, 26338, 20128, -26168, -75108, -120041, -162123, -195109, -196315, -210937],
+  "revenues": [-130904, -460501, -582313, -581628, -525569, -445192, -412532, -420514, -447680, -478948],
+  "deficit":  [-21110, 486839, 602441, 555460, 450461, 325151, 250409, 225405, 251365, 268011]
+ },
+ "deficit_by_title": {
+  "I. Agriculture": [300, -7901, -10424, -14734, -15013, -14467, -13244, -14897, -15319, -15261],
+  "II. Armed Services": [2020, 41864, 44677, 24923, 17175, 9426, 4720, 2767, 1347, 623],
+  "III. Banking, Housing, and Urban Affairs": [-15, 70, 102, 139, 106, -848, -188, -313, -347, -374],
+  "IV. Commerce, Science, and Transportation": [-64, 2845, 4802, 5264, 1902, -6996, -15666, -18941, -12785, -4398],
+  "V. Energy and Natural Resources": [-156, -178, -1183, -2383, -2099, -2804, -2900, -2846, -3149, -3641],
+  "VI. Environment and Public Works": [-857, -936, -1237, -887, -570, 15, 188, 275, 275, 275],
+  "VII. Finance": [131686, 449859, 551068, 526769, 431305, 331442, 278437, 267980, 299197, 311852],
+  "VIII. Health, Education, Labor and Pensions": [-154029, -10584, -6316, -14880, -15639, -16039, -16281, -16521, -16741, -16992],
+  "IX. Homeland Security and Governmental Affairs": [5, 9511, 18265, 25317, 25414, 20262, 14787, 9351, 4194, 1805],
+  "X. Judiciary": [0, 0, 178, 321, 428, 507, 605, 707, 229, 0]
+ },
+ "note": "Signs: outlays and revenues are changes (a revenue loss is negative); deficit rows are increases (+) or decreases (-) in the deficit. Not included: tariffs (executive action, not legislation; their receipts are in the FY2026 outturn our model starts from) and appropriations (FY2026 full-year spending is in the same outturn)."
+}

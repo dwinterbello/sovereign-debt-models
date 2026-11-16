@@ -1,0 +1,1937 @@
+    <!doctype html>
+    <!-- MoBe-Redesign -->
+    <html lang="de">
+    <head>
+            <base href="https://www.bundesfinanzministerium.de/"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <!-- Matomo -->
+
+        <script>
+            const cookie = {
+                /**
+                 * set a cookie
+                 * @param {string} ckey   - key of the cookie
+                 * @param {string} cvalue - value of the cookie
+                 * @param {number} days   - time to live
+                 */
+                setCookie: function (ckey, cvalue, days) {
+                    var expires;
+                    var date;
+                    var protocol = '';
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                        expires = '; expires=' + date.toGMTString();
+                    } else {
+                        expires = '';
+                    }
+
+                    if (location.protocol === 'https:') {
+                        protocol = ';secure';
+                    }
+                    document.cookie = ckey + '=' + cvalue + expires + protocol + ';path=/';
+                },
+
+                /**
+                 * get a cookie by key
+                 * @param {string} ckey   - key of the cookie
+                 */
+                getCookie: function (ckey) {
+                    var key = ckey + '=';
+                    var ca = document.cookie.split(';');
+                    var i;
+                    var c;
+                    for (i = 0; i < ca.length; i += 1) {
+                        c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(key) === 0) {
+                            return c.substring(key.length, c.length);
+                        }
+                    }
+                    return '';
+                }
+            };
+
+            var _paq = _paq || [];
+
+            // require user consent before processing data
+            // https://developer.matomo.org/guides/tracking-javascript-guide#asking-for-consent
+
+            _paq.push(['requireConsent']);
+
+            _paq.push(['setDownloadClasses', "download"]);
+            _paq.push(['setLinkClasses', "external"]);
+            _paq.push(['enableLinkTracking']);
+            _paq.push(['trackAllContentImpressions']);
+
+            
+            _paq.push(['trackPageView', 'Entwicklung\x20des\x20Bundeshaushalts\x20bis\x20einschlie\xDFlich\x20November\x202024,Basepage,\x2FMonatsberichte\x2FAusgabe\x2F2024\x2F12\x2FInhalte\x2FKapitel\x2D4\x2DWirtschafts\x2Dund\x2DFinanzlage\x2F4\x2D3\x2Dentwicklung\x2Dbundeshaushalt\x2Dnovember\x2D2024']);
+
+            var contentTarget = document.URL;
+            if (contentTarget.indexOf(';jsessionid') > 0) {
+                contentTarget = contentTarget.substr(0, contentTarget.indexOf(';jsessionid'));
+            }
+            _paq.push(['trackContentImpression', 'Breadcrumb', '/de/Monatsbericht', contentTarget]);
+            
+
+            (function () {
+                var u = "//analytics.init.de/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', 19]);
+
+                if (cookie.getCookie('cookie-allow-tracking') === '1') {
+
+                    // Hier wird die Erlaubnis innerhalb des Matomo-Codes erteilt, dass ein User das Tracking erlaubt
+                    _paq.push(['setConsentGiven']);
+
+                    /* BMF-3759 - matomo.js wird erst bei Einwilligung geladen */
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'matomo.js';
+                    s.parentNode.insertBefore(g, s);
+
+                    // ToDo: evtl. hierüber ein nachträgliches Tracking ausführen https://developer.matomo.org/guides/spa-tracking
+                    //window._mtm.push({'event': 'DOMReady'});
+                }
+            })();
+        </script>
+        <!-- End Piwik Code -->
+    
+        <title>BMF-Monatsbericht Dezember 2024  - Entwicklung des Bundeshaushalts bis einschließlich November 2024</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="generator" content="Government Site Builder"/>
+            <meta name="google-site-verification" content="Vji7sDKOaSJDY5miF4hf6OQ2M8wr_3OBd_uAPl8Iu6k" />
+    
+    
+        <meta property="og:image" content="https://www.bundesfinanzministerium.de:80/Content/DE/Bilder/Logos/bmf-standardbild-social-media.jpg?__blob=cover&amp;v=1" />
+
+        <meta property="og:title" content="Entwicklung des Bundeshaushalts bis einschlie&#223;lich November 2024 - Bundesfinanzministerium -  BMF-Monatsbericht Dezember 2024"/>
+        <meta property="og:url" content="https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html" />
+        <meta property="og:description" content="Die aktuellen Einnahmen, Ausgaben und der Finanzierungssaldo" />
+        <meta property="og:site_name" content="Bundesministerium der Finanzen" />
+        <meta property="og:locale" content="de_DE" />
+    
+        
+    <meta name="description" content="Die aktuellen Einnahmen, Ausgaben und der Finanzierungssaldo"/>
+        <link rel="canonical" href="https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html"/>
+        <link rel="copyright" href="Web/DE/Meta/Impressum/impressum.html" type="text/html" title="Impressum"/>
+        <link rel="start" href="Web/DE/Home/home.html" type="text/html" title="Homepage"/>
+        <link rel="contents" href="Web/DE/Meta/Inhaltsuebersicht/inhaltsuebersicht.html" type="text/html" title="Übersicht"/>
+        <link rel="search" href="Web/DE/Meta/Suche/suche.html" type="text/html" title="Suche"/>
+              <script type="text/javascript">
+         var htmlClass = sessionStorage.getItem("fontSizeClass");
+         var html = document.querySelector("html")
+         
+         if (htmlClass) {
+           html.classList.add("js-text-size-big");
+         }
+      </script>
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/static/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/static/manifest.json">
+        <meta name="msapplication-config" content="/static/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/static/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
+<link rel="stylesheet" href="/static/css/vendor.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/screen.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/elements.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/print.min.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/css/mobe.min.css" type="text/css" media="screen" />
+
+        <link rel="stylesheet" href="SiteGlobals/StyleBundles/CSS/screen/hotfix_mobe_redesign.css?v=5&amp;nn=237786" type="text/css" />
+        <script>
+            var Bmf = (function (bmf) {
+    bmf.Labels = (function () {
+        return {
+            AnhaltenStarten: 'Wiedergabe anhalten/starten',
+            Ausblenden: 'ausblenden',
+            Browsertitel: 'Bundesfinanzministerium',
+            Datenschutz: 'Datenschutz',
+            Einblenden: 'einblenden',
+            Fussnote: 'Fußnote',
+            FussnoteOeffnen: 'Fußnote öffnen',
+            FussnoteSchliessen: 'Schließen',
+            MobileMenuPlus: 'Menü anzeigen',
+            MobileMenuMinus: 'Menü schliessen',
+            NavWeiter: 'Weiter',
+            NavZurueck: 'Zurück',
+            NavZurueckErsteSeite: 'Zurück zur ersten Seite',
+            SeiteDrucken: 'Seite drucken',
+            SeiteDruckenTooltip: 'Seite drucken (öffnet Dialog)',
+            Start: 'Start',
+            Stop: 'Stop',
+            TrackingDeaktivieren: 'Legen Sie diesen Schalter um, damit Sie dauerhaft nicht getrackt werden.',
+            TrackingAktivieren: 'Legen Sie diesen Schalter um, um das Tracking zu aktivieren.',
+            Untermenuepunkte: 'Untermenüpunkte'
+        };
+    }());
+
+        bmf.Labels.Browsertitel = 'BMF-Monatsbericht Dezember 2024';
+
+    bmf.Urls = {
+        Forms : {
+            Autosuggest: 'SiteGlobals/Forms/Suche/Autosuggest_Formular.html?nn=237786'
+        },
+        Docs: {
+                Monatsbericht: 'Monatsberichte/Ausgabe/2024/12/monatsbericht-12-2024.html',
+                MonatsberichtArchivBilder: {
+                    2017: {
+                        alt: 'Jahr 2017 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2017.jpg?__blob=normal&amp;v=1'
+                    },
+                    2018: {
+                        alt: 'Jahr 2018 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2018.jpg?__blob=normal&amp;v=1'
+                    },
+                    2019: {
+                        alt: 'Jahr 2019 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2019.jpg?__blob=normal&amp;v=1'
+                    },
+                    2020: {
+                        alt: 'Jahr 2020 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2020.jpg?__blob=normal&amp;v=1'
+                    },
+                    2021: {
+                        alt: 'Jahr 2021 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2021.jpg?__blob=normal&amp;v=1'
+                    },
+                    2022: {
+                        alt: 'Jahr 2022 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2022.jpg?__blob=normal&amp;v=1'
+                    },
+                    2023: {
+                        alt: 'Jahr 2023 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2023.jpg?__blob=normal&amp;v=4'
+                    },
+                    2024: {
+                        alt: 'Jahr 2024 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2024.jpg?__blob=normal&amp;v=4'
+                    }
+                },
+            Impressum: 'Web/DE/Meta/Impressum/impressum.html',
+            Datenschutz: 'Web/DE/Meta/Datenschutz/datenschutz.html',
+            TrackingBanner: 'Content/DE/Standardartikel/Meta/tracking_banner.html?view=render[ConsentBanner]'
+        }
+    }
+
+    bmf.Config = {
+        eTrackerId: 'epm1GE',
+        honeypotTimestamp: 5000
+    }
+
+    return bmf;
+}(Bmf || {}));
+
+
+var KfzStRe = (function (kfzstre) {
+    kfzstre.kfzstreLabels = (function () {
+        return {
+            '00PKWvor04112008': 'PKW EZ bis 04.11.2008',
+            '01PKWnach05112008bis30062009': 'PKW EZ 05.11.2008 bis 30.06.2009',
+            '02PKWnach01072009bis31122011': 'PKW EZ 01.07.2009 bis 31.12.2011',
+            '03PKWnach01012012bis31122013': 'PKW EZ 01.01.2012 bis 31.12.2013',
+            '04PKWnach01012014': 'PKW EZ 01.01.2014 bis 31.12.2020',
+            '05PKWnach01012021': 'PKW EZ ab 01.01.2021',
+            'Anhaenger': 'Anhänger',
+            'Elektro': 'Reine Elektrofahrzeuge',
+            'KRD': 'Motorräder',
+            'LFZ': 'Leichtfahrzeuge',
+            'LKW': 'Nutzfahrzeuge',
+            'Oldtimer': 'Oldtimer',
+            'Wohnmobil': 'Wohnmobile',
+            'Diesel': 'Diesel',
+            'Otto': 'Otto',
+            'OttoWankel': 'Otto/Wankel',
+            '3Liter': '3-Liter-Auto',
+            'Euro1vergl': 'Euro 1 und vergleichbare',
+            'Euro2': 'Euro 2',
+            'Euro3bis6': 'Euro 3 bis 6 (einschließlich D3 und D4)',
+            'keinOzonFahrver': 'Euro 0 (ehemals kein Fahrverbot bei Ozonalarm)',
+            'LFZS1': 'Euro 2 und besser',
+            'LFZS2': 'Schlechter als Euro 2',
+            'S1': 'S1',
+            'keineAuswahl': 'keine Auswahl',
+            'mindestensS2': 'S2 und besser',
+            'mindestensS4': 'mindestens S4',
+            'sonstige': 'Übrige',
+            'sonstige-G1': 'G1',
+            'S3oderS2': 'S2 oder S3',
+            'schlechterAlsS1': 'schlechter als S1',
+            '1Motorrad': 'Motorräder',
+            '0UebrigeKfz': 'Übrige Fahrzeuge',
+            'm01': 'Januar',
+            'm02': 'Februar',
+            'm03': 'März',
+            'm04': 'April',
+            'm05': 'Mai',
+            'm06': 'Juni',
+            'm07': 'Juli',
+            'm08': 'August',
+            'm09': 'September',
+            'm10': 'Oktober',
+            'm11': 'November',
+            'm12': 'Dezember',
+            'ct_hinweis_0': '',
+            'ct_hinweis_1': 'Hinweis: Reine Elektrofahrzeuge sind bei erstmaliger Zulassung bis 31.12.2030 für maximal zehn Jahre von der Steuer befreit. Die Befreiung ist begrenzt bis längstens 31.12.2035. Daran anschließend ermäßigt sich die zu zahlende Kraftfahrzeugsteuer um 50 Prozent (§ 9 Abs. 2 KraftStG). Hier wird der nach Ablauf der Steuerbefreiung anfallende ermäßigte Steuerbetrag angezeigt.'
+        };
+    }());
+    return kfzstre;
+}(KfzStRe || {}));;
+        </script>
+                <script src="Content/DE/Teaser/Suchergebnisteaser/Text-Suchergebnis/txt-suchergebnis-monatsbericht.html?nn=237786"></script>
+        
+        <script src="/static/js/mobe.js"></script>
+        <!--script src='/SiteGlobals/Functions/JavaScript/lib/jquery360.js?v=2'></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/jquery-migrate.js'></script>
+        <script src="/SiteGlobals/Functions/JavaScript/script-vendor.js?v=18"></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/hammer.js'></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/slick.js'></script>
+
+        <script data-main="SiteGlobals/Functions/JavaScript/_mobe/Init.js?v=1" src="SiteGlobals/Functions/JavaScript/require.js?v=1"></script-->
+        
+    <script>var __uzdbm_1 = "e22c20f8-ca40-48a8-83bc-180a87ee2671";var __uzdbm_2 = "Mzk1MzA1NjAtY2EzZi00MGFkLWI4NDktZmIxNzgyOWJmZmY1JDIwMy4xNDkuMjAwLjgy";var __uzdbm_3 = "7f9000e22c20f8-ca40-48a8-83bc-180a87ee26711-17908569669640-0054f599a7deaca073310";var __uzdbm_4 = "false";var __uzdbm_5 = "uzmx";var __uzdbm_6 = "7fc000534a089c-57a5-4950-a915-408d362dae5d1-17908569669640-0075bd1865102dd94ce10";var __uzdbm_7 = "bundesfinanzministerium.de";</script> <script>   (function (w, d, e, u, c, g, a, b) {     w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {       ss_cid: c,       domain_info: "auto",     };     w[g] = function (i, j) {       w["SSJSConnectorObj"][i] = j;     };     a = d.createElement(e);     a.async = true;     if (       navigator.userAgent.indexOf('MSIE') !== -1 ||       navigator.appVersion.indexOf('Trident/') > -1     ) {       u = u.replace("/advanced/", "/advanced/ie/");     }     a.src = u;     b = d.getElementsByTagName(e)[0];     b.parentNode.insertBefore(a, b);   })(     window, document, "script", "https://bundesfinanzministerium.de/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js", "ca3h", "ssConf"   );   ssConf("c1", "https://bundesfinanzministerium.de");   ssConf("c3", "c99a4269-161c-4242-a3f0-28d44fa6ce24");   ssConf("au", "bundesfinanzministerium.de");   ssConf("cu", "validate.perfdrive.com, ssc"); </script></head>
+    <body class="gsb js-on category-pages gsb r2d2 theme--mobe-3 js-off">
+    <!--<![endif]-->
+            <!-- Matomo -->
+        <noscript><p><img src="//analytics.init.de/matomo.php?idsite=19&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+        <!-- End Matomo Code -->
+    
+    
+        <a id="top" name="top"></a>
+
+<script src="SiteGlobals/Functions/JavaScript/lib/jquery-3.3.1.js?v=1&amp;nn=237786"></script>
+<script>$(function() {
+    $('#disclaimerDiv').each(function() {
+        if (getCookieValue('disclaimer') != 'approved') {
+            $(this).show();
+        }
+    });
+})
+
+function getCookieValue(a) {
+    var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+}
+
+function setDisclaimerCookie(){
+    document.cookie = "disclaimer=approved";
+    $('#disclaimerDiv').hide();
+}
+function setDisclaimerRead(){
+    $('#disclaimerDiv').hide();
+}</script>
+<nav role="navigation" aria-label="<span>Sprunglinks</span>">
+    <ul class="navSkip">
+        <li><a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html?nn=237786#Inhalt"><span>Navigation überspringen</span></a></li>
+        <li><a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html?nn=237786#Hauptmenu"><span>Navigation anspringen</span></a></li>
+        <li><a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html?nn=237786#Suche"><span>Suche anspringen</span></a></li>
+    </ul></nav>
+
+
+<header class="bmf-header" data-js-header>
+    <div class="bmf-header__container">
+        
+
+
+
+
+
+
+
+
+
+<div class="bmf-header__menu">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="bmf-menu-main" aria-labelledby="bmf-menu-main-heading" data-js-menu-main>
+    <h2 id="bmf-menu-main-heading" class="bmf-menu-main__heading">Hauptmenü</h2>
+    <button class="bmf-link bmf-link--button bmf-menu-main__menu-btn" data-js-menu-main-menu-btn="" aria-controls="bmf-menu-main-panel">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--menu" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+            <title>Menu</title>
+            <g fill-rule="evenodd">
+                <path d="M1 4H31V8H1zM1 14H31V18H1zM1 24H31V28H1z"></path>
+            </g>
+        </svg>
+
+        <span class="bmf-link-text">Menü</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+            <title>Schließen</title>
+            <g>
+                <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+            </g>
+        </svg>
+    </button>
+
+    <div id="bmf-menu-main-panel" class="bmf-menu-main__panel" data-js-menu-main-panel>
+        <div class="bmf-menu-main__panel-container">
+            <button class="bmf-link bmf-link--button bmf-link--icononly bmf-menu-main__close-btn" data-js-menu-main-close-btn="" aria-controls="bmf-menu-main-panel">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+                    <title>Schließen</title>
+                    <g>
+                        <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                        <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+                    </g>
+                </svg>
+                <span class="bmf-link-text">Menü schließen</span>
+            </button>
+
+            <div class="bmf-menu-main__panel-row">
+                <ul class="bmf-menu-main__panel-list" data-js-menu-main-panel-list>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-1" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-1">
+                                    <span class="bmf-link-text">Im Fokus: Vorläufige Haushaltsführung 2025</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-1" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-1);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Im Fokus: Vorläufige Haushaltsführung 2025</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-2a-Fokus/vorlaeufige-haushaltsfuehrung-2025.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Vorläufige Haushaltsführung 2025</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-2a-Fokus/interview-mit-corinna-westermann.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Im Interview: Corinna Westermann, Leiterin der Haushaltsabteilung</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-3" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-2">
+                                    <span class="bmf-link-text">Ein Thema – zwei Blickwinkel: Mehr Zukunft in den Staatsfinanzen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-2" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-3);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Ein Thema – zwei Blickwinkel: Mehr Zukunft in den Staatsfinanzen</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-2b-Ein-Thema-zwei-Blickwinkel/martin-werding-zukunftsorientierte-ausgaben.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Zukunftsorientierte öffentliche Ausgaben steigern und verstetigen</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-2b-Ein-Thema-zwei-Blickwinkel/jens-suedekum-spielraum-fuer-zukunftsausgaben.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Mehr fiskalischen Spielraum für Zukunftsausgaben schaffen</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-2" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-3">
+                                    <span class="bmf-link-text">Analysen und Berichte</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-3" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-2);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Analysen und Berichte</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-3-Analysen/3-1-fuenftes-steuerforum-der-finanzverwaltung.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Fünftes Steuerforum der Finanzverwaltung</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-3-Analysen/3-2-anpassungen-grundsaetze-2024-buerokratieabbau.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Anpassungen der Grundsätze 2024 – Bürokratieabbau im Fokus</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-3-Analysen/3-3-internationale-aktivitaeten-vermoegensabt.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Gemeinsam stark – die internationalen Aktivitäten der Vermögensabteilung</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-3" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="active" aria-controls="bmf-menu-main-sub-panel-4">
+                                    <span class="bmf-link-text">Aktuelle Wirtschafts- und Finanzlage</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-4" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-3);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Aktuelle Wirtschafts- und Finanzlage</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-1-ueberblick.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Überblick zur aktuellen Lage</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-2-steuereinnahmen-november-2024.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Steuereinnahmen im November 2024 und konjunkturelles Umfeld</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                        <span class="bmf-link bmf-menu-main__sub-menu-link active">
+                            <span class="bmf-link-text">Entwicklung des Bundeshaushalts bis einschließlich November 2024</span>
+                        </span>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-4-entwicklung-laenderhaushalte-oktober-2024.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Entwicklung der Kernhaushalte der Länder bis einschließlich Oktober 2024</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-5-kreditaufnahme-des-bundes.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Kreditaufnahme des Bundes und seiner Sondervermögen</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-6-europaeische-wirtschafts-und-finanzpolitik.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Europäische Wirtschafts- und Finanzpolitik</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-4" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-5">
+                                    <span class="bmf-link-text">Aktuelles aus dem BMF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-5" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-4);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Aktuelles aus dem BMF</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-5-Aktuelles-aus-dem-BMF/5-1-termine.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Termine</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-5-Aktuelles-aus-dem-BMF/5-2-publikationen.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Publikationen</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-5" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-6">
+                                    <span class="bmf-link-text">Statistiken und Dokumentationen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-6" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-5);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Statistiken und Dokumentationen</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-6-1-finanzwirtschaftliche-entwicklung.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Übersichten zur finanzwirtschaftlichen Entwicklung</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-6-2-laenderhaushalte.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Übersichten zur Entwicklung der Länderhaushalte</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-6-3-produktionspotenzial-konjunkturkomponenten.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Gesamtwirtschaftliches Produktionspotenzial und Konjunkturkomponenten des Bundes</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-6-4-kennzahlen.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Kennzahlen zur gesamtwirtschaftlichen Entwicklung</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                </ul>
+
+                <nav class="bmf-menu-meta bmf-menu-main__meta" aria-labelledby="bmf-menu-meta-heading">
+                    <h2 id="bmf-menu-meta-heading" class="bmf-menu-meta__heading">Metanavigation</h2>
+                    <ul class="bmf-menu-meta__list">
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Web/DE/Service/Publikationen/Monatsbericht/monatsbericht.html" class="bmf-link bmf-menu-meta__link bmf-menu-meta__link--all">
+                                <span class="bmf-link-text">Alle Monatsberichte</span>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-1-editorial.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">Editorial</span>
+                            </a>
+                        </li>
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-7-verzeichnis-berichte.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">Verzeichnis der Berichte</span>
+                            </a>
+                        </li>
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-8-english-version.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">English version</span>
+                            </a>
+                        </li>
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-9-hinweise.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">Hinweise</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+    <a href="/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024-pdf.pdf?__blob=publicationFile&amp;v=4" class="bmf-link bmf-link--download bmf-header__download-link"
+       download="Entwicklung des Bundeshaushalts bis einschließlich November 2024"
+       title="Download Monatbericht: Entwicklung des Bundeshaushalts bis einschließlich November 2024 (pdf, 278KB, Datei ist barrierefrei/barrierearm) "
+            
+       target="_blank">
+        <svg class="bmf-icon bmf-icon--download" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+            <path id="Vector"
+                  d="M18 15V18H6V15H4V18C4 19.1 4.9 20 6 20H18C19.1 20 20 19.1 20 18V15H18ZM17 11L15.59 9.59L13 12.17V4H11V12.17L8.41 9.59L7 11L12 16L17 11Z"
+                  fill="black"/>
+        </svg>
+        <span class="bmf-link-text">Download Artikel</span>
+    </a>
+
+
+
+
+
+
+</div>
+<h1 class="bmf-header__title-container">
+    
+        <a href="Monatsberichte/Ausgabe/2024/12/monatsbericht-12-2024.html?nn=237786" class="bmf-header__title-link">
+            <span class="bmf-header__title">BMF-Monatsbericht Dezember 2024</span>
+        </a>
+    
+</h1>
+<div class="bmf-header__group">
+
+    <a href="Web/DE/Service/Publikationen/Monatsbericht/monatsbericht.html" class="bmf-link bmf-link--more bmf-header__all-link">
+        <span class="bmf-link-text">Alle Monatsberichte</span>
+    </a>
+
+    <div class="bmf-header__logo">
+        <a href="Web/DE/Home/home.html" class="bmf-header__logo-link">
+            <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__eagle" role="img" aria-hidden="true" viewBox="0 0 30.5 28.3" width="30.5" height="28.3" focusable="false">
+                <path id="icon-logo-adler_Wappen" d="M18.4,10.8c0.1-0.3,0.1-0.6,0.1-0.9c0-0.2,0-0.4,0-0.6c2.6-0.1,4.9-1.9,4.9-4c-0.1-0.9-0.5-1.8-1.1-2.4  c0.1,0,0.2-0.1,0.3-0.1c0.8,0.8,1.4,1.8,1.4,3C23.9,8.3,21.4,10.8,18.4,10.8L18.4,10.8z M15.8,1.8c-0.1-0.3-0.1-0.5-0.3-0.8  c0-0.3,0.1-0.5,0.5-0.3c-0.3,0.3-0.1,0.7-0.1,0.7s0.5-0.2,0.4-0.5C17,1,16.5,2,15.8,1.8L15.8,1.8z M15.2,3.1  c-0.1-0.4-0.3-0.8-0.5-1.1S14,1.4,13.6,1.4c-0.3,0-0.6,0.1-0.8,0.2c-0.2-0.2-0.3-0.5-0.3-0.7c0-0.2,0.3-0.4,0.9-0.4  c1.4,0,2.2,0.6,2.2,1.6C15.4,2.5,15.3,2.8,15.2,3.1L15.2,3.1z M18.6,20.5c0.1,0,0.2,0,0.3,0.1c0.5,1.1,1.2,2.2,2,3.1l0,0l0,0  c0.7-0.1,1.4-0.2,2.1-0.2l0,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3c0,0.3-0.1,0.5-0.2,0.7c-0.4-0.3-0.9-0.5-1.4-0.5  c-0.2,0-0.4,0.1-0.6,0.1h-0.1H21l0.4,0.4c0.7,0.7,1.2,1.2,1.2,1.6c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2-0.8-0.7-1.6-1.4-2.1l-0.1-0.1v0.3  c0,0.1,0,0.4,0,0.7c0,1.2-0.1,1.4-0.6,1.4c-0.1,0-0.1,0-0.3-0.1c0.3-0.4,0.4-0.9,0.3-1.4v-0.3v-0.3c0-0.2,0-0.5,0.1-0.7v-0.1h-0.1  c-0.3-0.1-0.6-0.1-0.9-0.1c-0.5-0.1-1,0.1-1.4,0.3c-0.2-0.1-0.3-0.4-0.4-0.7c0-0.3,0.2-0.3,0.4-0.3c0.1,0,0.3,0,0.3,0.1  c0.5,0.1,1,0.1,1.5,0.1h0.1v-0.1c-0.5-1-1-1.8-1.7-2.6C18.3,20.7,18.3,20.5,18.6,20.5L18.6,20.5z M10.6,23.6L10.6,23.6L10.6,23.6  c0.5,0.1,1,0,1.6-0.1c0.1,0,0.3,0,0.3-0.1c0.2,0,0.4,0,0.4,0.3c-0.1,0.3-0.2,0.5-0.4,0.7c-0.4-0.3-0.8-0.4-1.4-0.3  c-0.3,0-0.6,0.1-0.9,0.1h-0.1H10v0.1c0.1,0.2,0.1,0.5,0.1,0.7v0.3v0.3c-0.1,0.5,0.1,1,0.3,1.4c-0.1,0-0.1,0.1-0.3,0.1  c-0.5,0-0.6-0.2-0.6-1.4c0-0.3,0-0.5,0-0.7v-0.3l-0.1,0.1c-0.7,0.5-1.2,1.2-1.4,2.1c-0.2-0.1-0.4-0.4-0.4-0.7c0-0.4,0.5-0.9,1.2-1.6  l0.4-0.4l0.1-0.1H9.3C9.1,24,8.9,24,8.7,23.9c-0.5-0.1-1,0.1-1.4,0.5C7.1,24.2,7,23.9,7,23.7c0-0.1,0-0.2,0.1-0.3  c0.1-0.1,0.1-0.1,0.3-0.1l0,0c0.7,0,1.4,0.1,2.1,0.2l0,0l0,0c0.8-1,1.4-2,2-3.1c0.1-0.1,0.2-0.1,0.3-0.1c0.3,0,0.4,0.2,0.5,0.5  C11.6,21.7,11,22.6,10.6,23.6L10.6,23.6z M6.5,5.7c0.1-1.2,0.6-2.2,1.4-3c0.1,0,0.2,0.1,0.3,0.1c-0.7,0.7-1,1.5-1.1,2.4  c0,2.2,2.3,4,5,4c0,0.2,0,0.4,0,0.6c0,0.3,0,0.6,0.1,0.9C9.2,10.8,6.5,8.3,6.5,5.7L6.5,5.7z M26.5,10.3c1.3,2.1,2.4,2.1,4,2.1  c-1-0.8-1.9-1.8-2.6-2.9l-2.4-3.9c-0.3-1.2-0.8-2.3-1.8-3.2c0.3-0.1,0.5-0.2,0.7-0.4c-1.6,0-3.2-0.8-4-0.8c-0.5-0.1-0.8,0.3-0.9,0.7  V2c0.1,0.5,0.5,1,1.5,1c0.3,0,0.5,0,0.8-0.1c0.5,0.7,0.8,1.4,0.9,2.3c0,1.7-2,3.1-4.1,3.1c-0.1,0-0.3,0-0.3,0  c-0.2-0.4-0.8-1.1-0.8-2c0-1.4,0.9-2.5,0.9-3.8c0-0.6-0.2-1.1-0.6-1.6c0.3-0.2,0.5-0.5,0.6-0.7c-0.2,0.1-0.4,0.1-0.6,0.1  c-1,0-1.8-0.3-2.6-0.3c-0.5,0-0.6,0.1-0.6,0.3c0,0.1,0,0.1,0,0.1c-0.2-0.1-0.3-0.1-0.5-0.1c-0.3-0.1-0.5-0.1-0.7-0.1  c-1,0-1.3,0.4-1.3,0.7c0.1,0.5,0.3,0.8,0.5,1.2c0.3-0.2,0.7-0.3,1-0.3c0.5,0,1,0.5,1.2,1c-0.3,0.1-0.5,0.1-0.8,0.1  c-0.6,0-1.2-0.1-1.7-0.3h-0.1c0,0.1,0.3,0.5,0.8,0.7c0.6,0.2,1.2,0.3,1.9,0.4C14.7,3.8,14.6,4,14.4,4c-0.1,0-0.1,0-0.1,0  c-0.7-0.1-1.2-0.3-1.8-0.5c0,0-0.1,0-0.1,0.1c0,0.3,0.9,1.2,1.8,1.4c-0.8,0.9-1.6,2-2,3.2c-0.1,0-0.3,0-0.3,0  c-2.1,0-4.1-1.3-4.1-3.1c0.1-0.8,0.4-1.6,0.9-2.3c0.3,0.1,0.5,0.1,0.8,0.1c0.9,0,1.4-0.5,1.5-1c0-0.5-0.4-0.8-0.8-0.8H10  C9.3,1.2,7.7,2,6.1,2c0.2,0.1,0.5,0.3,0.7,0.4C5.9,3.3,5.3,4.4,5,5.5L2.6,9.5C2,10.6,1,11.5,0,12.4c1.6,0,2.6,0.1,4-2.1l1.2-2  c0.1,0.3,0.2,0.5,0.3,0.8l-2.5,4c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1l2.2-3.5c0.1,0.2,0.3,0.3,0.5,0.5l-3,4.8  c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1L8.4,12c0.2,0.1,0.4,0.3,0.6,0.3l-3.6,5.7c-0.7,1.1-1.6,2.1-2.6,2.9  c1.6,0,2.6,0.1,4-2.1l3.7-5.9c0.2,0.1,0.5,0.2,0.7,0.3L7,19.9c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1l4.4-7.1  c0.1,0,0.1,0,0.1,0c0.1,0.3,0.2,0.7,0.2,1.1c0,2.2-1.5,4.2-3.3,5.7c0.1,0.1,0.3,0.1,0.5,0.1c0.3,0,0.5,0,0.8-0.1  c-0.5,1-1,1.9-1.8,2.7c-0.7-0.1-1.3-0.2-2-0.2c-0.6,0-0.7,0.3-0.7,0.7c0,0.5,0.2,0.9,0.5,1.2c0.1-0.3,0.3-0.7,1.4-0.7  c0,0,0.1,0,0.1,0c-0.3,0.3-1.3,1.1-1.3,1.8c0.1,0.6,0.5,1,1,1c0-0.1-0.1-0.3,0-0.3c0.1-0.6,0.4-1.1,0.8-1.6c0,0.1,0,0.2,0,0.3  c0,1.2,0.1,1.8,0.9,1.8c0.3,0,0.5-0.1,0.7-0.3c-0.4-0.4-0.7-1-0.5-1.5c0-0.2,0-0.3,0-0.6c0-0.2,0-0.3,0-0.5c0.2,0,0.4-0.1,0.6-0.1  c0,0,1.1-0.1,1.4,0.5c0.3-0.3,0.7-0.7,0.7-1.1c0-0.3-0.1-0.6-0.7-0.6c-0.2,0-0.9,0.1-1.4,0.1c0.4-0.7,0.8-1.4,1.4-2  c0.1,0.3,0.3,0.6,0.5,0.8c0.1-1,0.5-2,1-2.7c0.1,0.8,0.2,1.6,0.2,2.4c0,3-0.7,5.3-2.3,5.7c0.2,0.4,0.7,0.7,1,0.7  c0.6,0,0.8-0.7,1.2-1.2c0.2,0.5,0.6,1.6,1,1.6c0.5,0,0.9-1.1,1-1.6c0.3,0.6,0.7,1.2,1.2,1.2c0.5,0,0.8-0.3,1-0.7  c-1.6-0.5-2.3-2.7-2.3-5.7c0-0.8,0.1-1.6,0.2-2.4c0.6,0.8,0.9,1.8,1,2.7c0.3-0.2,0.5-0.5,0.5-0.8c0.5,0.7,1,1.3,1.4,2  c-0.6,0-1.2-0.1-1.4-0.1c-0.6,0-0.7,0.3-0.7,0.6c0,0.4,0.5,0.8,0.7,1.1c0.3-0.6,1.4-0.5,1.4-0.5c0.2,0,0.4,0,0.6,0.1  c0,0.2,0,0.3,0,0.5c0,0.3,0,0.4,0,0.6c0.1,0.6-0.1,1.1-0.5,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.8,0,0.9-0.6,0.9-1.8c0-0.1,0-0.2,0-0.3  c0.5,0.4,0.7,1,0.8,1.6c0,0.1,0,0.3-0.1,0.3c0.6-0.1,1-0.5,1-1c0-0.7-1-1.4-1.3-1.8c0.1,0,0.1,0,0.1,0c1,0,1.3,0.3,1.4,0.7  c0.3-0.3,0.5-0.7,0.5-1.2c0-0.3-0.1-0.7-0.7-0.7c-0.7,0-1.3,0.1-2,0.2c-0.7-0.8-1.2-1.8-1.8-2.7c0.3,0.1,0.5,0.1,0.8,0.1  c0.2,0,0.3,0,0.5-0.1c-1.8-1.5-3.3-3.5-3.3-5.7c0-0.4,0.1-0.7,0.2-1.1c0.1,0,0.1,0,0.1,0l4.6,7.1c1.3,2.1,2.4,2.1,4,2.1  c-1-0.8-1.9-1.8-2.6-2.9l-4.2-6.7c0.2-0.1,0.5-0.1,0.7-0.3l3.7,5.9c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-3.6-5.7  c0.2-0.1,0.4-0.3,0.6-0.3l2.9,4.7c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-3-4.8c0.2-0.1,0.3-0.3,0.5-0.5l2.2,3.5  c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-2.5-4c0.1-0.3,0.3-0.5,0.3-0.8L26.5,10.3z"></path>
+            </svg> <svg xmlns="http://www.w3.org/2000/svg" class="bmf-logo__flag" role="img" aria-hidden="true" viewBox="0 0 4.6 78.2" width="4.6" height="78.2" focusable="false" preserveAspectRatio="none">
+            <path id="icon-logo-flagge_gold" style="fill:#F8D200" class="st0" d="M2.6,52.1h2v26.1H0V52.1H2.6z"></path>
+            <path id="icon-logo-flagge_rot" style="fill:#E20613" d="M2.6,25.9h2v26.2H0V25.9H2.6z"></path>
+            <path id="icon-logo-flagge_schwarz" style="fill:#000" d="M4.6,0v26.1H0V0C0,0,4.6,0,4.6,0z"></path>
+        </svg> <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__text" role="img" viewBox="0 0 106.6 27.1" width="106.6" height="27.1" focusable="false">
+            <title>BundesministeriumDerFinanzen</title>
+            <path id="icon-logo-text_text" d="M68.4,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5  v5.7h-1.2v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1  c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8c0.1,0.4,0.2,0.8,0.1,1.3v4.9H68.4z M60.2,20.1  c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2  C60.9,20.3,60.6,20.1,60.2,20.1L60.2,20.1z M62.6,21.8c0,0.3,0,0.6,0,0.8c0,0.3-0.1,0.5-0.1,0.6h-3.8c0,0.7,0.2,1.4,0.6,2  c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2s0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9  c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3  c-0.4-0.1-0.7-0.4-1-0.7c-0.3-0.4-0.5-0.8-0.6-1.2c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2  s0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7C62.4,20.4,62.6,21.1,62.6,21.8L62.6,21.8z M56.3,20.1l-3,5.5l0,0  h3.2l-0.1,1h-4.8v-0.8l3.1-5.6l0,0h-2.9v-1h4.5L56.3,20.1z M49,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7H45v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9H49z M40.6,25.9c0.1,0,0.3,0,0.5-0.1s0.3-0.1,0.3-0.2c0.1-0.1,0.2-0.1,0.3-0.3c0.1-0.1,0.1-0.2,0.2-0.2  v-1.6h-0.4c-0.5,0-0.9,0.1-1.4,0.3c-0.3,0.2-0.5,0.5-0.5,0.9c0,0.3,0.1,0.6,0.3,0.8C40,25.8,40.3,25.9,40.6,25.9L40.6,25.9z   M38.3,24.9c0-0.4,0.1-0.8,0.3-1.1c0.1-0.3,0.4-0.5,0.7-0.7c0.3-0.2,0.7-0.3,1-0.4c0.4-0.1,0.8-0.1,1.2-0.1h0.4v-0.7  c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.4-0.9-0.3c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5l-0.5-0.8  c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.2,0.7-0.3s0.5-0.1,0.8-0.1c0.7-0.1,1.3,0.2,1.8,0.7  c0.5,0.6,0.7,1.3,0.6,2v3.4c0,0.3,0,0.7,0,0.9c0,0.2,0,0.4,0.1,0.6H42l-0.1-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3  c-0.1,0.1-0.2,0.3-0.3,0.3c-0.1,0.1-0.3,0.2-0.5,0.3c-0.2,0.1-0.4,0.1-0.7,0.1s-0.5-0.1-0.8-0.1c-0.3-0.1-0.5-0.3-0.7-0.5  c-0.2-0.2-0.3-0.4-0.4-0.7C38.4,25.4,38.3,25.2,38.3,24.9L38.3,24.9z M35.7,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7h-1.3v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9H35.7z M29,17.5c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7  c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3c0.1,0.2,0.3,0.4,0.3,0.7s-0.1,0.5-0.3,0.7C29.5,17.5,29.3,17.5,29,17.5z M28.4,26.8  h1.2v-7.5h-1.2V26.8z M21.7,26.8V16H27l-0.1,1h-3.8v4h3.5v1h-3.5v4.6L21.7,26.8L21.7,26.8z M17.3,20.4c-0.1-0.1-0.1-0.1-0.2-0.1  c-0.1-0.1-0.3-0.1-0.4-0.1c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.2-0.4,0.5-0.5,0.7v5.5h-1.2v-7.5h1.2v1l0,0c0.1-0.1,0.1-0.3,0.2-0.5  c0.1-0.1,0.2-0.3,0.3-0.4c0.1-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.1,0,0.3,0,0.5,0.1c0.1,0,0.2,0.1,0.3,0.1L17.3,20.4z   M10,20.1c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2  C10.7,20.3,10.3,20.1,10,20.1L10,20.1z M12.3,21.8c0,0.3,0,0.6,0,0.8c0,0.3-0.1,0.5-0.1,0.6H8.5c0,0.7,0.2,1.4,0.6,2  c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9  c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3  c-0.4-0.1-0.7-0.4-1-0.7c-0.3-0.4-0.5-0.8-0.6-1.2c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2  c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7C12.2,20.4,12.4,21.1,12.3,21.8L12.3,21.8z M3,25.9  c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.2c0.1-0.1,0.2-0.1,0.3-0.3c0.1-0.1,0.1-0.1,0.2-0.2v-4.6c-0.1-0.1-0.3-0.1-0.4-0.2  c-0.2-0.1-0.4-0.1-0.6-0.1c-0.3,0-0.6,0.1-0.8,0.1c-0.3,0.1-0.5,0.3-0.7,0.5c-0.2,0.3-0.3,0.6-0.5,0.9c-0.1,0.5-0.2,0.9-0.2,1.3  c0,0.5,0.1,0.8,0.1,1.3c0.1,0.3,0.2,0.6,0.4,0.8c0.1,0.2,0.3,0.3,0.5,0.5C2.5,25.8,2.7,25.9,3,25.9L3,25.9z M0,23.1  c0-0.7,0.1-1.3,0.3-1.9c0.2-0.5,0.5-0.8,0.8-1.2c0.3-0.3,0.7-0.5,1-0.7s0.8-0.2,1.2-0.2c0.2,0,0.4,0,0.7,0.1c0.1,0,0.3,0.1,0.5,0.1  v-3.6l1.2-0.1v11.1H4.5V26l0,0c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.3-0.3,0.3c-0.2,0.1-0.3,0.2-0.5,0.3C3.2,26.9,2.9,27,2.7,27  c-0.3,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7c-0.3-0.3-0.5-0.8-0.6-1.2C0.1,24.3,0,23.7,0,23.1L0,23.1z M101.3,11.1V6.3  c0.1-0.5-0.1-0.9-0.3-1.3c-0.2-0.3-0.5-0.5-0.8-0.4c-0.2,0-0.4,0-0.5,0.1s-0.3,0.1-0.5,0.2C99.1,5,99,5,98.9,5.1  c-0.1,0.1-0.2,0.2-0.3,0.3v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.3-0.3c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.3-0.2,0.5-0.3  c0.2-0.1,0.5-0.1,0.7-0.1c0.7-0.1,1.4,0.3,1.8,1c0.1-0.1,0.2-0.3,0.3-0.3c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.2,0.6-0.3  c0.2-0.1,0.5-0.1,0.7-0.1c1.5,0,2.3,0.8,2.3,2.6v5h-1.4V6.3c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.8,0.3  c-0.2,0.1-0.4,0.3-0.5,0.5c0,0.1,0.1,0.3,0.1,0.4c0,0.1,0,0.3,0,0.4v5L101.3,11.1z M95.4,11.1h-1.2v-0.8l0,0  c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.3,0.3-0.4,0.3c-0.2,0.1-0.4,0.2-0.6,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.6-0.1-0.9-0.1  c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.3-0.3-0.5-0.5-0.8c-0.1-0.4-0.1-0.8-0.1-1.3V3.7h1.2v4.8c-0.1,0.5,0.1,0.9,0.3,1.3  c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.7-0.1,0.9-0.3c0.2-0.1,0.4-0.3,0.6-0.5V3.7h1.2L95.4,11.1z M87.7,1.9c-0.3,0-0.5-0.1-0.7-0.3  c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3s0.3,0.4,0.3,0.7s-0.1,0.5-0.3,0.7  C88.1,1.8,87.9,1.9,87.7,1.9z M87,11.1h1.2V3.7H87V11.1z M85.8,4.8c-0.1-0.1-0.1-0.1-0.2-0.1c-0.1-0.1-0.3-0.1-0.4-0.1  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.2-0.4,0.5-0.5,0.7v5.5h-1.2V3.7h1.2v1l0,0c0.1-0.1,0.1-0.3,0.2-0.5C84,4.1,84.2,4,84.3,3.8  s0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.1,0,0.3,0,0.5,0.1c0.1,0,0.2,0.1,0.3,0.1L85.8,4.8z M78.5,4.5c-0.5,0-0.8,0.2-1,0.6  c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2C79.2,4.6,78.9,4.5,78.5,4.5L78.5,4.5z M80.8,6.2  c0,0.3,0,0.6,0,0.8s-0.1,0.5-0.1,0.6H77c0,0.7,0.2,1.4,0.6,2c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2  c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3  c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3c-0.4-0.1-0.7-0.4-1-0.7C76.3,10,76.1,9.6,76,9.2  c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2  c0.7-0.1,1.2,0.2,1.7,0.7C80.7,4.8,80.9,5.5,80.8,6.2L80.8,6.2z M74.8,4.7h-1.6v4.1c-0.1,0.4,0.1,0.7,0.2,1.1  c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.2-0.1,0.3-0.1l0.2,1c-0.1,0.1-0.3,0.1-0.4,0.2c-0.3,0.1-0.5,0.1-0.8,0.1  c-0.5,0.1-1-0.1-1.4-0.5C72,10.2,71.8,9.6,71.9,9V4.7H71V3.8l0.9-0.2L72,1.6h1.1v2.1h1.8L74.8,4.7z M69.4,5.1  c-0.1-0.1-0.3-0.3-0.5-0.4c-0.3-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.5,0.1-0.8,0.3C67.1,4.9,67,5.1,67,5.3s0.1,0.5,0.3,0.7  c0.2,0.2,0.5,0.4,0.7,0.6l0.5,0.3c0.5,0.3,0.8,0.6,1.2,1c0.3,0.4,0.5,0.8,0.5,1.4c0,0.6-0.2,1.1-0.6,1.5c-0.5,0.5-1.1,0.7-1.8,0.6  c-0.3,0-0.5,0-0.8-0.1c-0.2-0.1-0.4-0.1-0.6-0.2c-0.1-0.1-0.3-0.2-0.5-0.3c-0.1-0.1-0.2-0.2-0.3-0.3l0.6-1c0.1,0.1,0.1,0.1,0.2,0.2  c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.4,0.1,0.5,0.1c0.3,0,0.6-0.1,0.8-0.3c0.2-0.1,0.3-0.4,0.3-0.6  c0-0.1,0-0.3-0.1-0.5c-0.1-0.1-0.1-0.3-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.3C68.1,8.3,68,8.1,67.8,8l-0.5-0.3c-0.4-0.3-0.8-0.6-1.1-1  c-0.3-0.4-0.4-0.8-0.4-1.3c0-0.3,0.1-0.5,0.2-0.8c0.1-0.3,0.3-0.5,0.5-0.6c0.2-0.2,0.5-0.3,0.7-0.4c0.3-0.1,0.6-0.1,0.8-0.1  c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.1,0.5,0.2c0.1,0.1,0.3,0.1,0.4,0.3c0.1,0.1,0.2,0.2,0.3,0.2L69.4,5.1z M63.6,1.9  c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.6,0.3s0.3,0.4,0.3,0.7  s-0.1,0.5-0.3,0.7C64,1.8,63.8,1.9,63.6,1.9z M63,11.1h1.2V3.7H63V11.1z M59.8,11.1V6.3c0.1-0.5-0.1-1-0.3-1.4  c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.9,0.3C57.4,5,57.2,5.1,57,5.3v5.7h-1.2V3.7H57v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3  c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5  c0.2,0.3,0.3,0.5,0.5,0.8c0.1,0.4,0.2,0.8,0.1,1.3v4.9L59.8,11.1z M53.2,1.9c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7  s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3S54,0.7,54,1S54,1.4,53.8,1.6C53.6,1.8,53.4,1.9,53.2,1.9z   M52.5,11.1h1.2V3.7h-1.2V11.1z M45.5,11.1V6.3c0.1-0.5-0.1-0.9-0.3-1.3c-0.2-0.3-0.5-0.5-0.8-0.4c-0.2,0-0.4,0-0.5,0.1  s-0.3,0.1-0.5,0.2C43.3,5,43.2,5,43.1,5.1c-0.1,0.1-0.2,0.2-0.3,0.3v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.3-0.3  c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.5-0.1,0.7-0.1c0.7-0.1,1.4,0.3,1.8,1c0.1-0.1,0.2-0.3,0.3-0.3  c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.5-0.1,0.7-0.1c1.5,0,2.3,0.8,2.3,2.6v5h-1.2V6.3  c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.8,0.3C47.2,5,47,5.1,46.9,5.3c0,0.1,0.1,0.3,0.1,0.4  c0,0.1,0,0.3,0,0.4v5L45.5,11.1z M39.4,5.1c-0.1-0.1-0.3-0.3-0.5-0.4c-0.3-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.5,0.1-0.8,0.3  C37.1,4.9,37,5.1,37,5.3s0.1,0.5,0.3,0.7c0.2,0.2,0.5,0.4,0.7,0.6l0.5,0.3c0.5,0.3,0.8,0.6,1.2,1c0.3,0.4,0.5,0.8,0.5,1.4  c0,0.6-0.2,1.1-0.6,1.5c-0.5,0.5-1.1,0.7-1.8,0.6c-0.3,0-0.5,0-0.8-0.1c-0.2-0.1-0.4-0.1-0.6-0.2c-0.1-0.1-0.3-0.2-0.5-0.3  c-0.1-0.1-0.2-0.2-0.3-0.3l0.6-1c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.4,0.1,0.5,0.1  c0.3,0,0.6-0.1,0.8-0.3c0.2-0.1,0.3-0.4,0.3-0.6c0-0.1,0-0.3-0.1-0.5c-0.1-0.1-0.1-0.3-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.3  C38.1,8.3,38,8.1,37.8,8l-0.5-0.3c-0.4-0.3-0.8-0.6-1.1-1c-0.3-0.4-0.4-0.8-0.4-1.3c0-0.3,0.1-0.5,0.2-0.8c0.1-0.3,0.3-0.5,0.5-0.6  c0.2-0.2,0.5-0.3,0.7-0.4c0.3-0.1,0.6-0.1,0.8-0.1c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.1,0.5,0.2c0.1,0.1,0.3,0.1,0.4,0.3  c0.1,0.1,0.2,0.2,0.3,0.2L39.4,5.1z M32.1,4.5c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3  c0-0.4-0.1-0.8-0.3-1.2C32.9,4.6,32.5,4.5,32.1,4.5L32.1,4.5z M34.5,6.2c0,0.3,0,0.6,0,0.8s-0.1,0.5-0.1,0.6h-3.8  c0,0.7,0.2,1.4,0.6,2c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2c0.1-0.1,0.2-0.1,0.3-0.2  c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3  c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3c-0.4-0.1-0.7-0.4-1-0.7C30,10,29.7,9.6,29.7,9.2c-0.1-0.6-0.3-1.2-0.2-1.8  c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7  C34.4,4.8,34.5,5.5,34.5,6.2L34.5,6.2z M25.2,10.2c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.2c0.1-0.1,0.2-0.1,0.3-0.3  c0.1-0.1,0.1-0.1,0.2-0.2V4.9c-0.1-0.1-0.3-0.1-0.4-0.2c-0.2-0.1-0.4-0.1-0.6-0.1c-0.3,0-0.6,0.1-0.8,0.1c-0.3,0.1-0.5,0.3-0.7,0.5  c-0.2,0.3-0.3,0.6-0.5,0.9c-0.1,0.5-0.2,0.9-0.2,1.3c0,0.5,0.1,0.8,0.1,1.3c0.1,0.3,0.2,0.6,0.4,0.8c0.1,0.2,0.3,0.3,0.5,0.5  C24.7,10.2,24.9,10.2,25.2,10.2L25.2,10.2z M22.2,7.5c0-0.7,0.1-1.3,0.3-1.9c0.2-0.5,0.5-0.8,0.8-1.2c0.3-0.3,0.7-0.5,1-0.7  c0.4-0.1,0.8-0.2,1.2-0.2c0.2,0,0.4,0,0.7,0.1c0.1,0,0.3,0.1,0.5,0.1V0.1L27.8,0v11.1h-1.2v-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3  c-0.1,0.1-0.2,0.3-0.3,0.3c-0.2,0.1-0.3,0.2-0.5,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7  c-0.3-0.3-0.5-0.8-0.6-1.2C22.2,8.7,22.2,8.1,22.2,7.5L22.2,7.5z M19.4,11.1V6.3c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9L19.4,11.1z M13.4,11.1h-1.2v-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.3,0.3-0.4,0.3  c-0.2,0.1-0.4,0.2-0.6,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.6-0.1-0.9-0.1c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.3-0.3-0.5-0.5-0.8  C8.1,9.5,8.1,9,8.1,8.5V3.7h1.2v4.8C9.3,8.9,9.5,9.4,9.7,9.8c0.3,0.3,0.6,0.5,0.9,0.4c0.3,0,0.7-0.1,0.9-0.3  c0.2-0.1,0.4-0.3,0.6-0.5V3.7h1.2L13.4,11.1z M5.1,8.1c0-0.5-0.2-1-0.6-1.4C4,6.4,3.5,6.3,2.9,6.3H2V10h0.8C3.4,10,4,9.8,4.6,9.5  C5,9.2,5.1,8.7,5.1,8.1L5.1,8.1z M4.9,3.2c0-0.5-0.2-0.9-0.5-1.2c-0.5-0.4-1-0.5-1.6-0.5H2v3.7h0.7c0.6,0.1,1.2-0.1,1.6-0.5  C4.7,4.2,4.9,3.7,4.9,3.2L4.9,3.2z M6.3,3.1c0,0.3-0.1,0.7-0.1,1C6.1,4.4,5.9,4.6,5.7,4.8C5.6,5,5.4,5.2,5.1,5.3  C5,5.5,4.7,5.5,4.5,5.6l0,0C4.8,5.7,5,5.7,5.3,5.9c0.3,0.1,0.5,0.3,0.7,0.5C6.1,6.7,6.3,7,6.4,7.2c0.1,0.3,0.2,0.7,0.2,1  c0,0.4-0.1,0.8-0.2,1.2C6.3,9.7,6,10,5.7,10.3c-0.3,0.3-0.7,0.5-1.2,0.6C4,11,3.5,11.1,2.9,11.1H0.7V0.4h2.1c0.5,0,1.1,0.1,1.6,0.2  c0.4,0.1,0.8,0.3,1.1,0.5C5.8,1.3,6.1,1.6,6.2,2C6.2,2.3,6.3,2.7,6.3,3.1L6.3,3.1z"></path>
+        </svg> <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__text bmf-logo__text--en" role="img" viewBox="0 0 106.6 27.1" width="106.6" height="27.1" focusable="false">
+            <title>Federal Ministry of Finance</title>
+            <path id="icon-logo-text_text-en" d="M 0.7440854,11.040083 V 0.26408317 h 5.294 l -0.094,1.07700003 h -3.842 v 3.983 h 3.545 v 1.078 h -3.545 V 11.040083 Z M 12.144085,6.0740832 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 H 8.2250854 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.4599996,0.6249998 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.4059998 q 0.133,-0.109 0.2,-0.172 l 0.469,0.8899998 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.2729996,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.2489998 6.617,6.617 0 0 1 -0.219,-1.819 5.826,5.826 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.617,-1.195 2.464,2.464 0 0 1 0.906,-0.7 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.6869996,0.679 2.971,2.971 0 0 1 0.603,2.04 z m -2.3729996,-1.688 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.7329996 a 1.7,1.7 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.9049996,-0.429 z m 3.7169996,3.014 a 5.307,5.307 0 0 1 0.3,-1.905 3.512,3.512 0 0 1 0.765,-1.234 2.669,2.669 0 0 1 1.062,-0.664 3.782,3.782 0 0 1 1.187,-0.2 3.128,3.128 0 0 1 0.625,0.055 2.084,2.084 0 0 1 0.438,0.134 v -3.58800003 l 1.265,-0.141 V 11.040083 h -1.16 v -0.8 h -0.031 a 1.8,1.8 0 0 1 -0.172,0.258 1.743,1.743 0 0 1 -0.344,0.328 2.069,2.069 0 0 1 -0.547,0.281 2.274,2.274 0 0 1 -0.765,0.117 2.459,2.459 0 0 1 -1.007,-0.211 2.174,2.174 0 0 1 -0.836,-0.672 3.5,3.5 0 0 1 -0.57,-1.1869998 6.366,6.366 0 0 1 -0.21,-1.753 z m 2.967,2.6999998 a 1.674,1.674 0 0 0 0.531,-0.078 1.638,1.638 0 0 0 0.406,-0.1999998 1.726,1.726 0 0 0 0.289,-0.242 1.768,1.768 0 0 0 0.18,-0.219 v -4.615 a 1.888,1.888 0 0 0 -0.4,-0.187 1.771,1.771 0 0 0 -0.57,-0.078 2.249,2.249 0 0 0 -0.82,0.148 1.6,1.6 0 0 0 -0.664,0.492 2.546,2.546 0 0 0 -0.445,0.89 4.733,4.733 0 0 0 -0.164,1.343 5.4,5.4 0 0 0 0.133,1.3 2.435,2.435 0 0 0 0.367,0.843 1.418,1.418 0 0 0 0.531,0.461 1.442,1.442 0 0 0 0.626,0.1449998 z m 9.418,-4.0289998 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 h -3.827 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.46,0.6249998 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.4059998 q 0.133,-0.109 0.2,-0.172 l 0.469,0.8899998 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.273,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.2489998 6.617,6.617 0 0 1 -0.219,-1.819 5.826,5.826 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.614,-1.195 2.464,2.464 0 0 1 0.9,-0.692 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.687,0.679 2.971,2.971 0 0 1 0.612,2.035 z m -2.374,-1.685 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.733 a 1.7,1.7 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.905,-0.429 z m 7.356,0.266 a 0.9,0.9 0 0 0 -0.2,-0.078 1.519,1.519 0 0 0 -0.422,-0.047 1.292,1.292 0 0 0 -0.929,0.32 1.871,1.871 0 0 0 -0.476,0.7 v 5.4999998 h -1.269 V 3.5470832 h 1.156 v 1.012 h 0.031 a 2.473,2.473 0 0 1 0.2,-0.43 1.537,1.537 0 0 1 0.319,-0.375 1.388,1.388 0 0 1 0.445,-0.258 1.81,1.81 0 0 1 0.617,-0.094 1.609,1.609 0 0 1 0.43,0.047 q 0.164,0.047 0.258,0.078 z m 0.734,4.482 a 2.178,2.178 0 0 1 0.25,-1.093 2.043,2.043 0 0 1 0.672,-0.711 2.866,2.866 0 0 1 0.992,-0.39 6,6 0 0 1 1.21,-0.117 h 0.39 v -0.718 a 1.94,1.94 0 0 0 -0.338,-1.312 1.23,1.23 0 0 0 -0.945,-0.359 1.7,1.7 0 0 0 -0.937,0.242 5.624,5.624 0 0 0 -0.593,0.43 l -0.525,-0.844 a 3.921,3.921 0 0 1 0.32,-0.281 2.681,2.681 0 0 1 0.476,-0.3 3.284,3.284 0 0 1 0.64,-0.234 3.223,3.223 0 0 1 0.812,-0.094 2.269,2.269 0 0 1 1.749,0.64 2.974,2.974 0 0 1 0.593,2.062 v 3.42 q 0,0.484 0.031,0.9449998 a 5.893,5.893 0 0 0 0.062,0.617 h -1.2 l -0.047,-0.828 h -0.036 a 1.993,1.993 0 0 1 -0.187,0.32 1.544,1.544 0 0 1 -0.312,0.328 1.877,1.877 0 0 1 -0.453,0.258 1.635,1.635 0 0 1 -0.625,0.109 1.993,1.993 0 0 1 -0.789,-0.156 1.938,1.938 0 0 1 -1.062,-1.0999998 2.29,2.29 0 0 1 -0.148,-0.833 z m 2.265,1.0149998 a 1.3,1.3 0 0 0 0.469,-0.078 1.5,1.5 0 0 0 0.351,-0.1869998 1.23,1.23 0 0 0 0.25,-0.242 q 0.1,-0.133 0.18,-0.226 v -1.656 l -0.406,0.016 a 2.91,2.91 0 0 0 -1.374,0.312 0.976,0.976 0 0 0 -0.469,0.906 1.242,1.242 0 0 0 0.266,0.867 0.947,0.947 0 0 0 0.732,0.2889998 z m 5.653,-0.8629998 a 1.187,1.187 0 0 0 0.133,0.656 0.526,0.526 0 0 0 0.461,0.1869998 1.138,1.138 0 0 0 0.289,-0.031 0.988,0.988 0 0 0 0.18,-0.062 l 0.109,0.937 a 2.668,2.668 0 0 1 -0.344,0.125 2.323,2.323 0 0 1 -0.672,0.078 1.394,1.394 0 0 1 -1.031,-0.39 1.946,1.946 0 0 1 -0.39,-1.3899998 v -9.40000003 l 1.265,-0.141 z m 14.868,-9.02200003 V 11.040083 h -1.31 V 4.9650832 q 0,-0.469 0.008,-0.875 0.008,-0.406 0.023,-0.718 0.016,-0.312 0.031,-0.484 h -0.047 q -0.078,0.359 -0.32,1.163 -0.242,0.804 -0.554,1.726 l -1.78,5.2629998 h -1.078 l -1.783,-5.2629998 q -0.312,-0.922 -0.554,-1.726 -0.242,-0.804 -0.32,-1.165 h -0.047 q 0.016,0.187 0.031,0.5 0.015,0.313 0.023,0.711 0.008,0.4 0.008,0.867 v 6.0749998 h -1.311 V 0.26408317 h 1.515 l 2.546,7.43400003 q 0.172,0.515 0.3,1.007 a 5.018,5.018 0 0 1 0.164,0.851 h 0.031 a 3.888,3.888 0 0 1 0.148,-0.843 q 0.133,-0.484 0.3,-1 l 2.546,-7.45000003 h 1.421 z m 3.467,10.77599983 h -1.265 V 3.5400832 h 1.265 z m -0.625,-9.3079998 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.65600003 0.9,0.9 0 0 1 0.235,-0.64 0.816,0.816 0 0 1 0.625,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.65600003 0.8,0.8 0 0 1 -0.609,0.25 z m 6.653,9.3079998 V 6.2140832 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.7789998 h -1.265 V 3.5400832 h 1.156 v 0.846 h 0.03 a 1.535,1.535 0 0 1 0.2,-0.273 1.956,1.956 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.594,-0.283 2.275,2.275 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.9199998 h -1.265 z m 4.42,0 h -1.265 V 3.5400832 h 1.265 z m -0.625,-9.3079998 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.65600003 0.9,0.9 0 0 1 0.235,-0.64 0.816,0.816 0 0 1 0.624,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.65600003 0.8,0.8 0 0 1 -0.609,0.25 z m 5.8,3.326 a 3.185,3.185 0 0 0 -0.453,-0.383 1.412,1.412 0 0 0 -0.859,-0.242 1.122,1.122 0 0 0 -0.765,0.234 0.725,0.725 0 0 0 -0.266,0.562 1.009,1.009 0 0 0 0.242,0.695 3.423,3.423 0 0 0 0.742,0.586 l 0.469,0.281 a 4.606,4.606 0 0 1 1.2,0.976 2.036,2.036 0 0 1 0.437,1.351 2.025,2.025 0 0 1 -0.617,1.4999998 2.418,2.418 0 0 1 -1.773,0.609 3.04,3.04 0 0 1 -0.8,-0.094 3.476,3.476 0 0 1 -0.6,-0.219 1.975,1.975 0 0 1 -0.43,-0.273 2.849,2.849 0 0 1 -0.281,-0.273 l 0.609,-0.9999998 q 0.094,0.094 0.227,0.219 a 2.05,2.05 0 0 0 0.32,0.242 1.967,1.967 0 0 0 0.422,0.1999998 1.729,1.729 0 0 0 0.547,0.078 1.3,1.3 0 0 0 0.859,-0.2499998 0.768,0.768 0 0 0 0.3,-0.609 1.361,1.361 0 0 0 -0.07,-0.461 1.055,1.055 0 0 0 -0.211,-0.351 1.964,1.964 0 0 0 -0.344,-0.3 q -0.2,-0.141 -0.469,-0.312 l -0.469,-0.3 a 4.522,4.522 0 0 1 -1.1,-0.953 1.992,1.992 0 0 1 -0.4,-1.281 1.787,1.787 0 0 1 0.625,-1.382 2.243,2.243 0 0 1 0.7,-0.406 2.42,2.42 0 0 1 0.851,-0.148 2.858,2.858 0 0 1 0.75,0.086 2.243,2.243 0 0 1 0.539,0.219 2.345,2.345 0 0 1 0.368,0.267 q 0.148,0.133 0.242,0.227 z m 5.435,-0.484 h -1.64 v 4.155 a 2.031,2.031 0 0 0 0.2,1.085 0.781,0.781 0 0 0 0.687,0.2889998 1.348,1.348 0 0 0 0.484,-0.078 1.619,1.619 0 0 0 0.3,-0.1409998 l 0.172,1.0149998 a 2.162,2.162 0 0 1 -0.375,0.2 1.981,1.981 0 0 1 -0.8,0.133 1.853,1.853 0 0 1 -1.452,-0.539 2.653,2.653 0 0 1 -0.484,-1.7879998 v -4.331 h -0.907 v -0.843 l 0.906,-0.187 0.141,-2.093 h 1.124 v 2.092 h 1.8 z m 4.732,0.078 a 0.9,0.9 0 0 0 -0.2,-0.078 1.519,1.519 0 0 0 -0.422,-0.047 1.292,1.292 0 0 0 -0.929,0.32 1.871,1.871 0 0 0 -0.476,0.7 v 5.4999998 h -1.265 V 3.5470832 h 1.156 v 1.012 h 0.031 a 2.474,2.474 0 0 1 0.2,-0.43 1.537,1.537 0 0 1 0.312,-0.375 1.388,1.388 0 0 1 0.445,-0.258 1.81,1.81 0 0 1 0.617,-0.094 1.609,1.609 0 0 1 0.43,0.047 q 0.164,0.047 0.258,0.078 z m 6.247,-1.109 -2.343,7.9339998 a 5.847,5.847 0 0 1 -0.992,2.077 2.08,2.08 0 0 1 -1.694,0.7 1.2,1.2 0 0 1 -0.39,-0.055 2.119,2.119 0 0 1 -0.219,-0.086 v -1.089 q 0.078,0.031 0.2,0.07 a 1.131,1.131 0 0 0 0.328,0.039 1.256,1.256 0 0 0 1.023,-0.422 3.587,3.587 0 0 0 0.6,-1.3 l 0.109,-0.39 -2.421,-7.4809998 h 1.359 l 1.171,4.154 q 0.172,0.64 0.312,1.195 a 5.765,5.765 0 0 1 0.172,0.992 h 0.031 a 7.206,7.206 0 0 1 0.148,-0.984 q 0.117,-0.547 0.289,-1.187 l 1.062,-4.17 h 1.249 z M 0.1390854,23.043083 a 5.818,5.818 0 0 1 0.242,-1.78 3.467,3.467 0 0 1 0.656,-1.226 2.58,2.58 0 0 1 0.953,-0.7 3.043,3.043 0 0 1 2.3,0 2.4,2.4 0 0 1 0.921,0.7 3.518,3.518 0 0 1 0.617,1.226 6.2,6.2 0 0 1 0.226,1.78 6.063,6.063 0 0 1 -0.234,1.8 3.381,3.381 0 0 1 -0.648,1.226 2.488,2.488 0 0 1 -0.961,0.7 3.082,3.082 0 0 1 -1.156,0.219 3.005,3.005 0 0 1 -1.156,-0.219 2.329,2.329 0 0 1 -0.921,-0.7 3.521,3.521 0 0 1 -0.617,-1.218 6.236,6.236 0 0 1 -0.226,-1.81 z m 4.607,0 a 4.152,4.152 0 0 0 -0.437,-2.179 1.373,1.373 0 0 0 -1.218,-0.679 1.355,1.355 0 0 0 -1.21,0.679 4.214,4.214 0 0 0 -0.43,2.179 4.02,4.02 0 0 0 0.437,2.155 1.385,1.385 0 0 0 1.218,0.656 1.367,1.367 0 0 0 1.21,-0.656 4.081,4.081 0 0 0 0.426,-2.157 z m 5.9659996,-2.717 H 9.1770854 v 6.46 h -1.265 v -6.463 h -0.906 v -0.843 l 0.906,-0.172 v -1.5 a 2.86,2.86 0 0 1 0.172,-1.046 2.071,2.071 0 0 1 0.453,-0.718 1.657,1.657 0 0 1 0.656,-0.406 2.5,2.5 0 0 1 0.8,-0.125 1.9,1.9 0 0 1 0.6869996,0.109 2.272,2.272 0 0 1 0.375,0.172 l -0.266,1.046 a 1.558,1.558 0 0 0 -0.265,-0.133 1.117,1.117 0 0 0 -0.422,-0.07 0.843,0.843 0 0 0 -0.6869996,0.281 1.664,1.664 0 0 0 -0.234,1.031 v 1.343 h 1.6839996 z m 4.541,6.46 v -10.773 h 5.294 l -0.094,1.073 h -3.842 v 3.983 h 3.545 v 1.078 h -3.545 v 4.639 z m 7.965,0 h -1.265 v -7.5 h 1.265 z m -0.625,-9.308 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.656 0.9,0.9 0 0 1 0.234,-0.64 0.816,0.816 0 0 1 0.625,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.656 0.8,0.8 0 0 1 -0.609,0.253 z m 6.653,9.308 v -4.823 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.776 h -1.266 v -7.5 h 1.156 v 0.85 h 0.031 a 1.535,1.535 0 0 1 0.2,-0.273 1.957,1.957 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.593,-0.289 2.275,2.275 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.917 z m 2.719,-1.9 a 2.178,2.178 0 0 1 0.25,-1.093 2.043,2.043 0 0 1 0.672,-0.711 2.866,2.866 0 0 1 0.992,-0.39 6,6 0 0 1 1.21,-0.117 h 0.39 v -0.721 a 1.94,1.94 0 0 0 -0.336,-1.312 1.23,1.23 0 0 0 -0.945,-0.359 1.7,1.7 0 0 0 -0.937,0.242 5.624,5.624 0 0 0 -0.593,0.43 l -0.531,-0.843 a 3.92,3.92 0 0 1 0.32,-0.281 2.68,2.68 0 0 1 0.476,-0.3 3.283,3.283 0 0 1 0.64,-0.234 3.223,3.223 0 0 1 0.812,-0.094 2.269,2.269 0 0 1 1.749,0.64 2.974,2.974 0 0 1 0.593,2.062 v 3.42 q 0,0.484 0.031,0.945 a 5.893,5.893 0 0 0 0.062,0.617 h -1.2 l -0.047,-0.828 h -0.033 a 1.993,1.993 0 0 1 -0.187,0.32 1.544,1.544 0 0 1 -0.312,0.328 1.877,1.877 0 0 1 -0.453,0.258 1.635,1.635 0 0 1 -0.625,0.109 1.993,1.993 0 0 1 -0.789,-0.156 1.938,1.938 0 0 1 -1.062,-1.1 2.29,2.29 0 0 1 -0.147,-0.832 z m 2.265,1.015 a 1.3,1.3 0 0 0 0.469,-0.078 1.5,1.5 0 0 0 0.351,-0.187 1.23,1.23 0 0 0 0.25,-0.242 q 0.1,-0.133 0.18,-0.226 v -1.659 l -0.406,0.016 a 2.91,2.91 0 0 0 -1.374,0.312 0.976,0.976 0 0 0 -0.469,0.906 1.242,1.242 0 0 0 0.266,0.867 0.947,0.947 0 0 0 0.731,0.289 z m 8.5,0.89 v -4.828 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.776 h -1.271 v -7.5 h 1.156 v 0.85 h 0.031 a 1.535,1.535 0 0 1 0.2,-0.273 1.957,1.957 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.593,-0.289 2.274,2.274 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.917 h -1.262 z m 7.325,-6.044 q -0.047,-0.047 -0.148,-0.141 a 1.58,1.58 0 0 0 -0.258,-0.187 1.8,1.8 0 0 0 -0.375,-0.164 1.632,1.632 0 0 0 -0.5,-0.07 1.928,1.928 0 0 0 -0.757,0.148 1.525,1.525 0 0 0 -0.609,0.476 2.444,2.444 0 0 0 -0.406,0.851 4.72,4.72 0 0 0 -0.148,1.273 6.158,6.158 0 0 0 0.133,1.39 2.62,2.62 0 0 0 0.367,0.9 1.365,1.365 0 0 0 0.57,0.484 1.814,1.814 0 0 0 0.742,0.148 1.592,1.592 0 0 0 0.882,-0.2 3.015,3.015 0 0 0 0.429,-0.328 l 0.515,0.875 a 2.3,2.3 0 0 1 -0.226,0.226 1.951,1.951 0 0 1 -0.383,0.258 2.572,2.572 0 0 1 -0.57,0.211 3.137,3.137 0 0 1 -0.773,0.086 3.338,3.338 0 0 1 -1.171,-0.2 2.316,2.316 0 0 1 -0.953,-0.672 3.37,3.37 0 0 1 -0.651,-1.225 6.312,6.312 0 0 1 -0.234,-1.859 5.226,5.226 0 0 1 0.281,-1.827 3.4,3.4 0 0 1 0.734,-1.21 2.806,2.806 0 0 1 1.007,-0.672 3.243,3.243 0 0 1 1.859,-0.133 2.47,2.47 0 0 1 0.547,0.2 1.806,1.806 0 0 1 0.375,0.25 q 0.148,0.133 0.242,0.227 z m 6.544,1.078 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 h -3.826 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.46,0.625 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.406 q 0.133,-0.109 0.2,-0.172 l 0.469,0.89 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.273,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.249 6.617,6.617 0 0 1 -0.219,-1.819 5.827,5.827 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.617,-1.195 2.464,2.464 0 0 1 0.906,-0.7 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.687,0.679 2.971,2.971 0 0 1 0.596,2.038 z m -2.374,-1.687 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.733 a 1.706,1.706 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.911,-0.431 z" />
+        </svg> <svg xmlns="http://www.w3.org/2000/svg" class="bmf-logo__background" role="img" aria-hidden="true" viewBox="0 0 218 138">
+            <rect width="100%" height="100%" fill="#FFF" /> </svg>
+            <span class="bmf-header__logo-link-text">Zur Startseite des Bundesfinanzministeriums</span>
+        </a>
+    </div>
+</div>
+
+
+    </div>
+</header>
+
+<div class="content-outer-box" id="Inhalt" role="main">
+    <!-- calledDocument: /bmf/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024 -->
+    
+
+
+
+
+
+
+
+
+
+<div class="bmf-container-fluid bmf-container--colored">
+    <nav aria-label="Breadcrumb" class="bmf-breadcrumb" data-js-breadcrumb>
+        <ol class="bmf-breadcrumb-list" data-js-scrollhint>
+            <li class="bmf-breadcrumb-listItem">
+                <a href="Web/DE/Home/home.html" class="bmf-breadcrumb-link"
+                   aria-label="Zurück zur Startseite" tabindex="0">
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--home" aria-hidden="true" role="img" width="18" height="18" viewBox="0 0 18 18" aria-label="Startseite">
+  <title>Startseite</title>
+  <path d="M14.793 7.714c-.374.026-.658.349-.635.723v8.117H3.843V8.437c.023-.374-.26-.697-.635-.723-.375.026-.658.349-.635.723v8.84c-.002.187.064.369.186.511.112.132.276.21.449.212h11.585c.174-.002.337-.08.45-.212.121-.142.187-.324.186-.511v-8.84c.001-.187-.065-.368-.187-.51-.112-.133-.275-.21-.449-.213z" />
+  <path d="M17.743 7.222L9.4.146c-.223-.195-.547-.195-.77 0L.265 7.222c-.142.123-.234.298-.257.489-.027.193.015.39.118.554.092.156.245.263.418.294.173.03.35-.019.486-.134L9 1.68l7.961 6.745c.136.117.314.168.488.138.175-.03.328-.136.422-.293.214-.335.157-.785-.134-1.048h.006z" />
+</svg>
+
+
+                </a>
+            </li>
+            
+                
+                    <li class="bmf-breadcrumb-listItem">
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16" aria-label="Icon Weiter">
+  <title>Weiter</title>
+  <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z" />
+</svg>
+
+
+
+                        
+
+
+
+
+
+
+
+<div class="bmf-select">
+    <a href="javascript:void(0)" class="bmf-select-control" id="436062-breadcrumb" data-js-select>
+        <span class="sr-only">Aktuelle Seite</span>
+        <span class="bmf-select-title">BMF-Monatsbericht Dezember 2024</span>
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-down-circle-transparent" aria-hidden="true" role="img" width="26px" height="26px" viewBox="0 0 26 26" aria-label="arrow down circle transparent">
+  <title>Menü öffnen</title>
+  <g transform="translate(1.000000, 1.000000)">
+    <circle fill="none" stroke="#000000" stroke-width="1" cx="12" cy="12" r="12" />
+    <polygon fill="#000000" points="12 13.805 17.898 8.067 18.992 9.13 12 15.934 5.008 9.129 6.101 8.066" />
+  </g>
+</svg>
+
+
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-up-circle" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" aria-label="arrow-up-circle">
+  <title>Menü schließen</title>
+  <g>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12" />
+    <path d="M6.101,15.934l-1.093-1.063L12,8.066l6.992,6.805l-1.094,1.063L12,10.195L6.101,15.934z" />
+  </g>
+</svg>
+
+
+        <span class="sr-only">SeiteAendern</span>
+    </a>
+    <ul class="bmf-select-dropdown" aria-labelledby="436062-breadcrumb" data-js-select="dropdown">
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-1-editorial.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Editorial</span>
+                </a>
+            </li>
+        
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-2a-fokus.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Im Fokus: Vorläufige Haushaltsführung 2025</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-2b-ein-thema-zwei-blickwinkel.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Ein Thema – zwei Blickwinkel: Mehr Zukunft in den Staatsfinanzen</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-3-analysen-berichte.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Analysen und Berichte</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-4-wirtschafts-und-finanzlage.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Aktuelle Wirtschafts- und Finanzlage</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-5-aktuelles-aus-dem-bmf.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Aktuelles aus dem BMF</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-6-0-statistiken-dokumentationen.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Statistiken und Dokumentationen</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+                        <a class="bmf-breadcrumb-link" href="Monatsberichte/Ausgabe/2024/12/monatsbericht-12-2024.html?nn=237786"
+                           aria-label="BMF-Monatsbericht Dezember 2024" tabindex="0">
+                            BMF-Monatsbericht Dezember 2024
+                        </a>
+                    </li>
+                
+                    <li class="bmf-breadcrumb-listItem">
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16" aria-label="Icon Weiter">
+  <title>Weiter</title>
+  <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z" />
+</svg>
+
+
+
+                        
+
+
+
+
+
+
+<div class="bmf-select">
+    <a href="javascript:void(0)" class="bmf-select-control" id="436026-breadcrumb" data-js-select>
+        <span class="sr-only">Aktuelle Seite</span>
+        <span class="bmf-select-title">Aktuelle Wirtschafts- und Finanzlage</span>
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-down-circle-transparent" aria-hidden="true" role="img" width="26px" height="26px" viewBox="0 0 26 26" aria-label="arrow down circle transparent">
+  <title>Menü öffnen</title>
+  <g transform="translate(1.000000, 1.000000)">
+    <circle fill="none" stroke="#000000" stroke-width="1" cx="12" cy="12" r="12" />
+    <polygon fill="#000000" points="12 13.805 17.898 8.067 18.992 9.13 12 15.934 5.008 9.129 6.101 8.066" />
+  </g>
+</svg>
+
+
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-up-circle" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" aria-label="arrow-up-circle">
+  <title>Menü schließen</title>
+  <g>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12" />
+    <path d="M6.101,15.934l-1.093-1.063L12,8.066l6.992,6.805l-1.094,1.063L12,10.195L6.101,15.934z" />
+  </g>
+</svg>
+
+
+        <span class="sr-only">SeiteAendern</span>
+    </a>
+    <ul class="bmf-select-dropdown" aria-labelledby="436026-breadcrumb" data-js-select="dropdown">
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-1-ueberblick.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Überblick zur aktuellen Lage</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-2-steuereinnahmen-november-2024.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Steuereinnahmen im November 2024 und konjunkturelles Umfeld</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach" aria-current="page">
+                    
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--link-intern" aria-hidden="true" role="img" width="48" height="48" viewBox="0 0 48 48" aria-label="Icon Interner Link">
+  <title>Link (intern)</title>
+  <path d="M48 21.723L10.191 21.723 21.72 9.868 17.963 6 0 24.5 17.963 43 21.72 39.132 10.188 27.262 48 27.262z" transform="rotate(180 24 24.5)" />
+</svg>
+
+
+                    
+                    <span>Entwicklung des Bundeshaushalts bis einschließlich November 2024</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-4-entwicklung-laenderhaushalte-oktober-2024.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Entwicklung der Kernhaushalte der Länder bis einschließlich Oktober 2024</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-5-kreditaufnahme-des-bundes.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Kreditaufnahme des Bundes und seiner Sondervermögen</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-6-europaeische-wirtschafts-und-finanzpolitik.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Europäische Wirtschafts- und Finanzpolitik</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+                        <a class="bmf-breadcrumb-link" href="Monatsberichte/Ausgabe/2024/12/Kapitel/kapitel-4-wirtschafts-und-finanzlage.html?nn=237786"
+                           aria-label="Aktuelle Wirtschafts- und Finanzlage" tabindex="0">
+                            Aktuelle Wirtschafts- und Finanzlage
+                        </a>
+                    </li>
+                
+                <li class="bmf-breadcrumb-listItem bmf-breadcrumb-listItem bmf-breadcrumb-listItem--currentPage">
+                    
+                </li>
+            
+        </ol>
+    </nav>
+    <div class="bmf-reading-progressbar" js-reading-progressbar=""></div>
+</div>
+
+    <h1 class="aural">Inhalt</h1>
+    
+
+
+<div class="bmf-container-fluid bmf-container--colored">
+    <div class="bmf-intro">
+        <div class="bmf-row">
+            <div class="bmf-intro-content">
+                <h1 class="bmf-intro-title">
+                    <span class="bmf-title-text">
+                        Entwicklung des Bundeshaushalts bis einschließlich November 2024
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="content">
+    <div class="article-wrapper documentleaf basepage">
+
+        <div class="bmf-toolbox ">
+            <div class="bmf-date">
+                20.12.2024</div>
+        </div>
+    
+
+        <div class="article-content-wrapper">
+            <div class="article-text-wrapper">
+                <div class="article-text singleview ">
+
+                    
+
+                    <div class="bmf-toc">
+  <h2 class="bmf-toc-headline">Inhalt</h2>
+
+  <a href="#" id="Inhaltsverzeichnis435820"></a>
+  
+<ul class="toc">
+    <li>
+                        <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html#doc435820bodyText1">Einnahmen</a>
+      
+                          </li>
+    <li>
+                            <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html#doc435820bodyText2">Ausgaben</a>
+      
+                          </li>
+    <li>
+                            <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html#doc435820bodyText3">Finanzierungssaldo</a>
+      
+                          </li>
+  </ul>
+
+</div><a name="doc435820bodyText1"></a><h2>Einnahmen</h2>
+
+<p>Die Einnahmen des Bundeshaushalts (ohne Münzeinnahmen, Rücklagenentnahme und Einnahmen aus Krediten) beliefen sich im Zeitraum Januar bis November 2024 auf 366,3 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro. Damit lagen die Einnahmen um 10,2 Prozent (+33,9 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) höher als im gleichen Zeitraum des Vorjahres. Die Steuereinnahmen stiegen um 5,0 Prozent (+15,2 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) gegenüber dem Niveau des entsprechenden Vorjahreszeitraums. Für weitere Informationen zu den Steuereinnahmen <abbr title="siehe auch">s. a.</abbr> <a class="RichTextIntLink Basepage" href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-2-steuereinnahmen-november-2024.html" title="Steuereinnahmen im November 2024 und konjunkturelles Umfeld">„Steuereinnahmen im November 2024“</a> in dieser Ausgabe des Monatsberichts.</p>
+
+<p>Die Sonstigen Einnahmen lagen im Berichtszeitraum mit 44,4 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro um 72,7 Prozent (+18,7 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) über dem entsprechenden Vorjahresergebnis. Dabei erhöhten sich die Einnahmen aus der streckenbezogenen Maut insbesondere infolge der Erweiterung der <abbr title="Lastkraftwagen">Lkw</abbr>-Maut um eine CO<sub>2</sub>-Komponente gegenüber dem Vorjahr um 5,0 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro. Die Einnahmen aus der Veräußerung von Beteiligungen und aus der Verwertung von sonstigem Kapitalvermögen des Bundes stiegen gegenüber dem Vorjahreszeitraum um 3,5<abbr> <abbr title="Milliarden">Mrd.</abbr></abbr> Euro. Im Zusammenhang mit dem Windenergie-auf-See-Gesetz wurden Einnahmen in Höhe von 1,3 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro erzielt. Zudem wurden infolge der Auflösung des Sondervermögens „Digitale Infrastruktur“ Mittel in Höhe von 4,1 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro in den Kernhaushalt überführt, da die Finanzhilfen an die Länder zur Umsetzung des DigitalPaktes Schule sowie die Förderung des Breitband- und Giganetzausbaus nunmehr über den Kernhaushalt finanziert werden.</p>
+<p class="bmf-navtotop">
+  <a class="bmf-link bmf-link--to-top bmf-link--icononly" href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html#Inhaltsverzeichnis435820">
+    <svg aria-hidden="true" aria-label="Icon Nach oben" class="bmf-icon bmf-icon--to-top" height="44" role="img" viewBox="0 0 44 44" width="44" xmlns="http://www.w3.org/2000/svg">
+      <title>Zum Seitenanfang</title>
+      <g>
+        <circle cx="22" cy="22" fill="#FFC31D" r="22"/>
+        <path d="M23.1,31.844V16.336l5.729,5.73l1.541-1.541L22,12.157l-8.37,8.368l1.541,1.541l5.728-5.73v15.508H23.1z" fill="#001826"/>
+      </g>
+      <title>Nach oben</title>
+    </svg>
+    <span class="bmf-link-text">Zum Seitenanfang</span>
+  </a>
+</p>
+<a name="doc435820bodyText2"></a><h2>Ausgaben</h2>
+
+<p>Die Ausgaben des Bundeshaushalts betrugen von Januar bis November 2024 insgesamt 416,8 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro und stiegen damit gegenüber dem Niveau des Vorjahreszeitraums leicht (+1,0 Prozent beziehungsweise +4,2 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro). Nach ökonomischen Arten gegliedert wuchsen sowohl die investiven Ausgaben (+0,9 Prozent beziehungsweise +0,4 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) als auch die konsumtiven Ausgaben (+1,0 Prozent beziehungsweise +3,8 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) gegenüber dem Vorjahresniveau an.</p>
+
+<p>Bei den konsumtiven Ausgaben stiegen zwar sowohl die laufenden Zuweisungen und Zuschüsse (+3,1 Prozent beziehungsweise +7,9 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) als auch die Personalausgaben (+5,6 Prozent beziehungsweise +2,1 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro) gegenüber dem Vorjahr an. Die Zinsausgaben gingen dagegen im Vergleich zur Vorjahresperiode um 12,1 Prozent beziehungsweise 4,6 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro und der laufende Sachaufwand um 4,3 Prozent beziehungsweise 1,5 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro zurück. Bei den laufenden Zuweisungen und Zuschüssen gab es gegenläufige Effekte: Die Ausgaben für das Bürgergeld waren um 3,2 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro und der Zuschuss des Bundes an die allgemeine Rentenversicherung um 2,2 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro höher als vor einem Jahr. Für die Ertüchtigung von Partnerstaaten im Bereich Sicherheit, Verteidigung und Stabilisierung wurden im Vergleich zum Vorjahreszeitraum 1,6 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro mehr zur Verfügung gestellt. Die Erstattungen des Bundes für die Grundsicherung im Alter und bei Erwerbsminderung stiegen um 1,2 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro an. Dagegen wurden für die Leistungen des Bundes an den Gesundheitsfonds für durch die <abbr title="Schweres akutes Atemwegssyndrom-Coronavirus-2">SARS-CoV-2</abbr>-Pandemie verursachte Belastungen 1,4 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro weniger verausgabt als im entsprechenden Vorjahreszeitraum. Da in diesem Jahr keine Ausgaben für einen ergänzenden Bundeszuschuss an den Gesundheitsfonds und die pauschale Beteiligung des Bundes an den Aufwendungen der sozialen Pflegeversicherung veranschlagt wurden, bewirkte dies im Zeitraum Januar bis November 2024 ausgabenseitig Entlastungen von 1,8 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro beziehungsweise 1,0 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro im Vergleich zum Vorjahr.</p>
+
+<p>Die investiven Ausgaben stiegen trotz eines Sondereffektes im Vorjahr leicht. Das im Januar 2023 gewährte Darlehen an den „<span lang="en-GB" xml:lang="en-GB">Resilience and Sustainability Trust</span>“ des Internationalen Währungsfonds in Höhe von 6,3 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro, das haushaltsrechtlich als investive Ausgabe zu buchen war, entfällt in diesem Jahr. Die investiven Ausgaben lagen bei Bereinigung um diesen Effekt um 18,8 Prozent beziehungsweise 6,7 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro über denen des Vorjahres. Dies war vor allem darauf zurückzuführen, dass zur Erhöhung des Eigenkapitals der Deutschen Bahn <abbr title="Aktiengesellschaft">AG</abbr> 5,5 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro verausgabt wurden. Darüber hinaus lagen die Investitionszuschüsse an die Autobahn <abbr title="Gesellschaft mit beschränkter Haftung">GmbH</abbr> des Bundes um 0,4 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro höher als im Vorjahreszeitraum.</p>
+<p class="bmf-navtotop">
+  <a class="bmf-link bmf-link--to-top bmf-link--icononly" href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html#Inhaltsverzeichnis435820">
+    <svg aria-hidden="true" aria-label="Icon Nach oben" class="bmf-icon bmf-icon--to-top" height="44" role="img" viewBox="0 0 44 44" width="44" xmlns="http://www.w3.org/2000/svg">
+      <title>Zum Seitenanfang</title>
+      <g>
+        <circle cx="22" cy="22" fill="#FFC31D" r="22"/>
+        <path d="M23.1,31.844V16.336l5.729,5.73l1.541-1.541L22,12.157l-8.37,8.368l1.541,1.541l5.728-5.73v15.508H23.1z" fill="#001826"/>
+      </g>
+      <title>Nach oben</title>
+    </svg>
+    <span class="bmf-link-text">Zum Seitenanfang</span>
+  </a>
+</p>
+<a name="doc435820bodyText3"></a><h2>Finanzierungssaldo</h2>
+
+<p>Ende November 2024 wies der Bundeshaushalt ein Finanzierungsdefizit von 50,5 <abbr title="Milliarden"><abbr title="Milliarden">Mrd.</abbr></abbr> Euro auf.</p>
+
+<p>Die Einnahmen und Ausgaben unterliegen im Laufe des Haushaltsjahres starken Schwankungen und beeinflussen somit die eingesetzten Kassenmittel in den einzelnen Monaten in unterschiedlichem Maße. Auch der Kapitalmarktsaldo zeigt im Jahresverlauf in der Regel starke Schwankungen. Die unterjährige Entwicklung des Finanzierungssaldos und des jeweiligen Kapitalmarktsaldos sind daher keine Indikatoren, aus denen sich die erforderliche Nettokreditaufnahme und der Finanzierungssaldo am Jahresende errechnen lassen.</p>
+<div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container" data-js-richtext-table="">
+    
+        <h2 class="generic-table-headline">
+            Entwicklung des Bundeshaushalts
+        </h2>
+
+    
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable435792" data-js-richtext-table-embedded-table="">
+                <div class="table-responsive">
+                    <table><caption>Entwicklung des Bundeshaushalts</caption><tbody><tr class="table-header-row"><td class="center"></td><td class="center"><b>Ist 2023</b></td><td class="center"><b>Soll 2024¹</b></td><td class="center"><b>Ist-Entwicklung<br/>
+
+</b><b>November 2024²</b></td></tr><tr><th><b>Ausgaben (<abbr title="Milliarden">Mrd.</abbr> Euro)³</b></th><td class="right"><b>457,1</b></td><td class="right"><b>488,9</b></td><td class="right"><b>416,8</b></td></tr><tr><th><blockquote><p>Unterjährige Veränderung gegenüber Vorjahr in Prozent</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right">+1,0</td></tr><tr><th><b>Einnahmen (<abbr title="Milliarden">Mrd.</abbr> Euro)⁴</b></th><td class="right"><b>392,2</b></td><td class="right"><b>428,2</b></td><td class="right"><b>366,3</b></td></tr><tr><th><blockquote><p>Unterjährige Veränderung gegenüber Vorjahr in Prozent</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right">+10,2</td></tr><tr><th><b>Steuereinnahmen (<abbr title="Milliarden">Mrd.</abbr> Euro)</b></th><td class="right"><b>356,1</b></td><td class="right"><b>374,4</b></td><td class="right"><b>321,9</b></td></tr><tr><th><blockquote><p>Unterjährige Veränderung gegenüber Vorjahr in Prozent</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right">+5,0</td></tr><tr><th><b>Saldo der durchlaufenden Mittel (<abbr title="Milliarden">Mrd.</abbr> Euro)</b></th><td class="right"><b>0,0</b></td><td class="right"><b>0,0</b></td><td class="right"><b>0,0</b></td></tr><tr><th><b>Finanzierungssaldo (<abbr title="Milliarden">Mrd.</abbr> Euro)</b></th><td class="right"><b>-64,9</b></td><td class="right"><b>-60,7</b></td><td class="right"><b>-50,5</b></td></tr><tr><th><b>Deckung/Verwendung:</b></th><td class="right"><b>64,9</b></td><td class="right"><b>60,7</b></td><td class="right"><b>50,5</b></td></tr><tr><th><blockquote><p>Kassenmittel (<abbr title="Milliarden">Mrd.</abbr> Euro)</p>
+
+</blockquote></th><td class="right">-</td><td class="right">-</td><td class="right">49,6</td></tr><tr><th><blockquote><p>Münzeinnahmen (<abbr title="Milliarden">Mrd.</abbr> Euro)</p>
+
+</blockquote></th><td class="right">0,2</td><td class="right">0,2</td><td class="right">0,2</td></tr><tr><th><blockquote><p>Saldo der Rücklagenbewegungen⁵</p>
+
+</blockquote></th><td class="right">37,5</td><td class="right">10,2</td><td class="right">0,0</td></tr><tr><th><b>Nettokreditaufnahme/unterjähriger Kapitalmarktsaldo⁶ (<abbr title="Milliarden">Mrd.</abbr> Euro)</b></th><td class="right"><b>27,2</b></td><td class="right"><b>50,3</b></td><td class="right"><b>0,7</b></td></tr><tr class="table-footer-row"><td colspan="4">Abweichungen in den Summen durch Rundung der Zahlen möglich.</td></tr><tr class="table-footer-row"><td colspan="4">1 Einschließlich Regierungsentwurf eines Nachtrags zum Bundeshaushalt 2024 vom 17. Juli 2024.</td></tr><tr class="table-footer-row"><td colspan="4">2 Buchungsergebnisse.</td></tr><tr class="table-footer-row"><td colspan="4">3 Mit Ausnahme der Ausgaben zur Schuldentilgung am Kreditmarkt, der Zuführungen an Rücklagen und der Ausgaben zur Deckung eines kassenmäßigen Fehlbetrags. Ohne Ausgaben aus haushaltstechnischen Verrechnungen.</td></tr><tr class="table-footer-row"><td colspan="4">4 Mit Ausnahme der Einnahmen aus Krediten vom Kreditmarkt, der Entnahme aus Rücklagen und der Einnahmen aus kassenmäßigen Überschüssen sowie der Münzeinnahmen. Ohne Einnahmen aus haushaltstechnischen Verrechnungen.</td></tr><tr class="table-footer-row"><td colspan="4">5 Negative Werte stellen Rücklagenbildung dar.</td></tr><tr class="table-footer-row"><td colspan="4">6 (-) Tilgung, (+) Kreditaufnahme.</td></tr><tr class="table-footer-row"><td colspan="4">Quelle: Bundesministerium der Finanzen</td></tr></tbody></table>
+                </div>
+            </div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u07-entwicklung-bundeshaushalt.html" class="tableModalButton" data-content="embeddedTable435792" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            
+                <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            
+        </a>
+    </div>
+    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u07-entwicklung-bundeshaushalt.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable435792" aria-label="Tabelle vergrößern" title="Tabelle vergrößern" data-js-table-modal-open-btn="">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg>
+        <span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    
+        <div class="figcaption">
+            <span class="caption">
+                Tabelle 1
+            </span>
+        </div>
+    
+    
+</div><div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container" data-js-richtext-table="">
+    
+        <h2 class="generic-table-headline">
+            Entwicklung der Ausgaben des Bundeshaushalts nach Aufgabenbereichen
+        </h2>
+
+    
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable435794" data-js-richtext-table-embedded-table="">
+                <div class="table-responsive">
+                    <table><caption>Entwicklung der Ausgaben des Bundeshaushalts nach Aufgabenbereichen</caption><tbody><tr class="table-header-row"><td class="center" rowspan="3"></td><td class="center" colspan="2" rowspan="2"><b>Ist 2023</b></td><td class="center" colspan="2" rowspan="2"><b>Soll 2024¹</b></td><td class="center" colspan="2"><b>Ist-Entwicklung</b></td><td class="center" rowspan="2"><b>Unterjährige<br/>
+
+Veränderung<br/>
+
+gegenüber<br/>
+
+Vorjahr</b></td></tr><tr class="table-header-row"><td class="center"><b>November 2023</b></td><td class="center"><b>November 2024</b></td></tr><tr class="table-header-row"><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center" colspan="2"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>in Prozent</b></td></tr><tr><th><b>Allgemeine Dienste</b></th><td class="right"><b>111.314</b></td><td class="right"><b>24,4</b></td><td class="right"><b>113.938</b></td><td class="right"><b>23,3</b></td><td class="right"><b>95.990</b></td><td class="right"><b>97.768</b></td><td class="right"><b>+1,9</b></td></tr><tr><th><blockquote><p>Wirtschaftliche Zusammenarbeit und Entwicklung</p>
+
+</blockquote></th><td class="right">11.866</td><td class="right">2,6</td><td class="right">11.054</td><td class="right">2,3</td><td class="right">8.755</td><td class="right">8.460</td><td class="right">-3,4</td></tr><tr><th><blockquote><p>Verteidigung</p>
+
+</blockquote></th><td class="right">55.521</td><td class="right">12,1</td><td class="right">58.346</td><td class="right">11,9</td><td class="right">48.224</td><td class="right">48.726</td><td class="right">+1,0</td></tr><tr><th><blockquote><p>Politische Führung, zentrale Verwaltung</p>
+
+</blockquote></th><td class="right">22.243</td><td class="right">4,9</td><td class="right">23.411</td><td class="right">4,8</td><td class="right">20.613</td><td class="right">21.603</td><td class="right">+4,8</td></tr><tr><th><blockquote><p>Finanzverwaltung</p>
+
+</blockquote></th><td class="right">6.961</td><td class="right">1,5</td><td class="right">6.933</td><td class="right">1,4</td><td class="right">5.914</td><td class="right">6.352</td><td class="right">+7,4</td></tr><tr><th><b>Bildung, Wissenschaft, Forschung, Kulturelle Angelegenheiten</b></th><td class="right"><b>29.479</b></td><td class="right"><b>6,4</b></td><td class="right"><b>30.680</b></td><td class="right"><b>6,3</b></td><td class="right"><b>22.791</b></td><td class="right"><b>23.796</b></td><td class="right"><b>+4,4</b></td></tr><tr><th><blockquote><p>Förderung für Schülerinnen und Schüler, Studierende, Weiterbildungsteilnehmende</p>
+
+</blockquote></th><td class="right">5.205</td><td class="right">1,1</td><td class="right">4.338</td><td class="right">0,9</td><td class="right">4.584</td><td class="right">3.550</td><td class="right">-22,6</td></tr><tr><th><blockquote><p>Wissenschaft, Forschung, Entwicklung außerhalb der Hochschulen</p>
+
+</blockquote></th><td class="right">16.973</td><td class="right">3,7</td><td class="right">17.595</td><td class="right">3,6</td><td class="right">11.944</td><td class="right">12.364</td><td class="right">+3,5</td></tr><tr><th><b>Soziale Sicherung, Familie und Jugend, Arbeitsmarktpolitik</b></th><td class="right"><b>215.222</b></td><td class="right"><b>47,1</b></td><td class="right"><b>222.010</b></td><td class="right"><b>45,4</b></td><td class="right"><b>205.874</b></td><td class="right"><b>211.649</b></td><td class="right"><b>+2,8</b></td></tr><tr><th><blockquote><p>Sozialversicherung einschließlich Arbeitslosenversicherung</p>
+
+</blockquote></th><td class="right">136.028</td><td class="right">29,8</td><td class="right">137.841</td><td class="right">28,2</td><td class="right">132.696</td><td class="right">134.146</td><td class="right">+1,1</td></tr><tr><th><blockquote><p>darunter:</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr><tr><th><blockquote><blockquote><p>Allgemeine Rentenversicherung</p>
+
+</blockquote></blockquote></th><td class="right">103.053</td><td class="right">22,5</td><td class="right">107.556</td><td class="right">22,0</td><td class="right">101.612</td><td class="right">105.924</td><td class="right">+4,2</td></tr><tr><th><blockquote><blockquote><p>Krankenversicherung</p>
+
+</blockquote></blockquote></th><td class="right">18.968</td><td class="right">4,1</td><td class="right">16.026</td><td class="right">3,3</td><td class="right">17.538</td><td class="right">14.733</td><td class="right">-16,0</td></tr><tr><th><blockquote><p>Arbeitsmarktpolitik</p>
+
+</blockquote></th><td class="right">48.212</td><td class="right">10,5</td><td class="right">51.023</td><td class="right">10,4</td><td class="right">44.028</td><td class="right">47.944</td><td class="right">+8,9</td></tr><tr><th><blockquote><p>darunter:</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr><tr><th><blockquote><blockquote><p>Bürgergeld nach dem <abbr title="Zweites Buch Sozialgesetzbuch">SGB II</abbr></p>
+
+</blockquote></blockquote></th><td class="right">25.808</td><td class="right">5,6</td><td class="right">29.700</td><td class="right">6,1</td><td class="right">23.960</td><td class="right">27.128</td><td class="right">+13,2</td></tr><tr><th><blockquote><blockquote><p>Leistungen des Bundes für Unterkunft und Heizung nach dem <abbr title="Zweites Buch Sozialgesetzbuch">SGB II</abbr></p>
+
+</blockquote></blockquote></th><td class="right">11.576</td><td class="right">2,5</td><td class="right">11.600</td><td class="right">2,4</td><td class="right">10.640</td><td class="right">11.389</td><td class="right">+7,0</td></tr><tr><th><blockquote><p>Familienhilfe, Wohlfahrtspflege <abbr title="und ähnlich">u. ä.</abbr></p>
+
+</blockquote></th><td class="right">13.396</td><td class="right">2,9</td><td class="right">14.571</td><td class="right">3,0</td><td class="right">12.194</td><td class="right">13.252</td><td class="right">+8,7</td></tr><tr><th><blockquote><p>Soziale Leistungen nach dem <abbr title="Zwölftes Buch Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch"><abbr title="Sozialgesetzbuch">SGB</abbr></abbr></abbr></abbr></abbr></abbr></abbr></abbr> XII</abbr> und dem Asylbewerberleistungsgesetz</p>
+
+</blockquote></th><td class="right">9.873</td><td class="right">2,2</td><td class="right">10.927</td><td class="right">2,2</td><td class="right">9.872</td><td class="right">11.103</td><td class="right">+12,5</td></tr><tr><th><blockquote><p>Sonstige soziale Angelegenheiten</p>
+
+</blockquote></th><td class="right">2.240</td><td class="right">0,5</td><td class="right">1.833</td><td class="right">0,4</td><td class="right">2.049</td><td class="right">-470</td><td class="right">-122,9</td></tr><tr><th><b>Gesundheit, Umwelt, Sport, Erholung</b></th><td class="right"><b>6.561</b></td><td class="right"><b>1,4</b></td><td class="right"><b>5.486</b></td><td class="right"><b>1,1</b></td><td class="right"><b>5.141</b></td><td class="right"><b>4.916</b></td><td class="right"><b>-4,4</b></td></tr><tr><th><b>Wohnungswesen, Städtebau, Raumordnung und kommunale Gemeinschaftsdienste</b></th><td class="right"><b>3.549</b></td><td class="right"><b>0,8</b></td><td class="right"><b>4.041</b></td><td class="right"><b>0,8</b></td><td class="right"><b>2.502</b></td><td class="right"><b>3.089</b></td><td class="right"><b>+23,4</b></td></tr><tr><th><blockquote><p>Wohnungswesen, Wohnungsbauprämie</p>
+
+</blockquote></th><td class="right">2.271</td><td class="right">0,5</td><td class="right">2.745</td><td class="right">0,6</td><td class="right">1.758</td><td class="right">2.222</td><td class="right">+26,4</td></tr><tr><th><b>Ernährung, Landwirtschaft und Forsten</b></th><td class="right"><b>1.723</b></td><td class="right"><b>0,4</b></td><td class="right"><b>1.756</b></td><td class="right"><b>0,4</b></td><td class="right"><b>1.003</b></td><td class="right"><b>927</b></td><td class="right"><b>-7,6</b></td></tr><tr><th><b>Energie- und Wasserwirtschaft, Gewerbe, Dienstleistungen</b></th><td class="right"><b>14.573</b></td><td class="right"><b>3,2</b></td><td class="right"><b>13.049</b></td><td class="right"><b>2,7</b></td><td class="right"><b>12.241</b></td><td class="right"><b>5.482</b></td><td class="right"><b>-55,2</b></td></tr><tr><th><blockquote><p>Regionale Förderungsmaßnahmen</p>
+
+</blockquote></th><td class="right">1.799</td><td class="right">0,4</td><td class="right">4.447</td><td class="right">0,9</td><td class="right">1.262</td><td class="right">1.909</td><td class="right">+51,2</td></tr><tr><th><blockquote><p>Geld- und Versicherungswesen</p>
+
+</blockquote></th><td class="right">7.032</td><td class="right">1,5</td><td class="right">165</td><td class="right">0,0</td><td class="right">6.974</td><td class="right">77</td><td class="right">-98,9</td></tr><tr><th><blockquote><p>Sonstiges im Bereich Gewerbe und Dienstleistungen</p>
+
+</blockquote></th><td class="right">1.755</td><td class="right">0,4</td><td class="right">4.155</td><td class="right">0,8</td><td class="right">1.122</td><td class="right">1.239</td><td class="right">+10,4</td></tr><tr><th><b>Verkehrs- und Nachrichtenwesen</b></th><td class="right"><b>28.478</b></td><td class="right"><b>6,2</b></td><td class="right"><b>35.856</b></td><td class="right"><b>7,3</b></td><td class="right"><b>22.612</b></td><td class="right"><b>29.011</b></td><td class="right"><b>+28,3</b></td></tr><tr><th><blockquote><p>Straßen</p>
+
+</blockquote></th><td class="right">9.949</td><td class="right">2,2</td><td class="right">9.824</td><td class="right">2,0</td><td class="right">8.385</td><td class="right">8.864</td><td class="right">+5,7</td></tr><tr><th><blockquote><p>Eisenbahnen und öffentlicher Personennahverkehr</p>
+
+</blockquote></th><td class="right">10.795</td><td class="right">2,4</td><td class="right">17.884</td><td class="right">3,7</td><td class="right">7.446</td><td class="right">13.044</td><td class="right">+75,2</td></tr><tr><th><b>Allgemeine Finanzwirtschaft</b></th><td class="right"><b>46.228</b></td><td class="right"><b>10,1</b></td><td class="right"><b>62.065</b></td><td class="right"><b>12,7</b></td><td class="right"><b>44.482</b></td><td class="right"><b>40.155</b></td><td class="right"><b>-9,7</b></td></tr><tr><th><blockquote><p>Grund- und Kapitalvermögen, Sondervermögen und Finanzzuweisungen</p>
+
+</blockquote></th><td class="right">7.323</td><td class="right">1,6</td><td class="right">31.933</td><td class="right">6,5</td><td class="right">5.211</td><td class="right">5.558</td><td class="right">+6,7</td></tr><tr><th><blockquote><p>Zinsausgaben und Ausgaben im Zusammenhang mit der Schuldenaufnahme</p>
+
+</blockquote></th><td class="right">37.687</td><td class="right">8,2</td><td class="right">37.445</td><td class="right">7,7</td><td class="right">38.125</td><td class="right">33.501</td><td class="right">-12,1</td></tr><tr><th><b>Ausgaben insgesamt²</b></th><td class="right"><b>457.129</b></td><td class="right"><b>100,0</b></td><td class="right"><b>488.880</b></td><td class="right"><b>100,0</b></td><td class="right"><b>412.637</b></td><td class="right"><b>416.794</b></td><td class="right"><b>+1,0</b></td></tr><tr class="table-footer-row"><td colspan="8">1 Einschließlich Regierungsentwurf eines Nachtrags zum Bundeshaushalt 2024 vom 17. Juli 2024.</td></tr><tr class="table-footer-row"><td colspan="8">2 Mit Ausnahme der Ausgaben zur Schuldentilgung am Kreditmarkt, der Zuführungen an Rücklagen und der Ausgaben zur Deckung eines kassenmäßigen Fehlbetrags. Ohne Ausgaben aus haushaltstechnischen Verrechnungen.</td></tr><tr class="table-footer-row"><td colspan="8">Quelle: Bundesministerium der Finanzen</td></tr></tbody></table>
+                </div>
+            </div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u08-entwicklung-bundeshaushalt-nach-aufgabenbereichen.html" class="tableModalButton" data-content="embeddedTable435794" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            
+                <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            
+        </a>
+    </div>
+    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u08-entwicklung-bundeshaushalt-nach-aufgabenbereichen.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable435794" aria-label="Tabelle vergrößern" title="Tabelle vergrößern" data-js-table-modal-open-btn="">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg>
+        <span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    
+        <div class="figcaption">
+            <span class="caption">
+                Tabelle 2
+            </span>
+        </div>
+    
+    
+</div><div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container" data-js-richtext-table="">
+    
+        <h2 class="generic-table-headline">
+            Entwicklung der Ausgaben des Bundeshaushalts nach ökonomischen Arten
+        </h2>
+
+    
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable435796" data-js-richtext-table-embedded-table="">
+                <div class="table-responsive">
+                    <table><caption>Entwicklung der Ausgaben des Bundeshaushalts nach ökonomischen Arten</caption><tbody><tr class="table-header-row"><td class="center" rowspan="3"></td><td class="center" colspan="2" rowspan="2"><b>Ist 2023</b></td><td class="center" colspan="2" rowspan="2"><b>Soll 2024¹</b></td><td class="center" colspan="2"><b>Ist-Entwicklung</b></td><td class="center" rowspan="2"><b>Unterjährige<br/>
+
+Veränderung<br/>
+
+gegenüber<br/>
+
+Vorjahr</b></td></tr><tr class="table-header-row"><td class="center"><b>November<br/>
+
+2023</b></td><td class="center"><b>November<br/>
+
+2024</b></td></tr><tr class="table-header-row"><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center" colspan="2"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>in Prozent</b></td></tr><tr><th><b>Konsumtive Ausgaben</b></th><td class="right"><b>402.167</b></td><td class="right"><b>88,0</b></td><td class="right"><b>428.876</b></td><td class="right"><b>87,7</b></td><td class="right"><b>370.826</b></td><td class="right"><b>374.598</b></td><td class="right"><b>+1,0</b></td></tr><tr><th><blockquote><p><b>Personalausgaben</b></p>
+
+</blockquote></th><td class="right"><b>40.119</b></td><td class="right"><b>8,8</b></td><td class="right"><b>43.521</b></td><td class="right"><b>8,9</b></td><td class="right"><b>37.983</b></td><td class="right"><b>40.106</b></td><td class="right"><b>+5,6</b></td></tr><tr><th><blockquote><blockquote><p>Aktivbezüge</p>
+
+</blockquote></blockquote></th><td class="right">29.823</td><td class="right">6,5</td><td class="right">33.054</td><td class="right">6,8</td><td class="right">28.113</td><td class="right">29.652</td><td class="right">+5,5</td></tr><tr><th><blockquote><blockquote><p>Versorgung</p>
+
+</blockquote></blockquote></th><td class="right">10.296</td><td class="right">2,3</td><td class="right">10.468</td><td class="right">2,1</td><td class="right">9.871</td><td class="right">10.454</td><td class="right">+5,9</td></tr><tr><th><blockquote><p><b>Laufender Sachaufwand</b></p>
+
+</blockquote></th><td class="right"><b>43.654</b></td><td class="right"><b>9,5</b></td><td class="right"><b>45.038</b></td><td class="right"><b>9,2</b></td><td class="right"><b>34.911</b></td><td class="right"><b>33.401</b></td><td class="right"><b>-4,3</b></td></tr><tr><th><blockquote><blockquote><p>Unterhaltung des unbeweglichen Vermögens</p>
+
+</blockquote></blockquote></th><td class="right">1.213</td><td class="right">0,3</td><td class="right">1.214</td><td class="right">0,2</td><td class="right">1.010</td><td class="right">1.059</td><td class="right">+4,9</td></tr><tr><th><blockquote><blockquote><p>Militärische Beschaffungen</p>
+
+</blockquote></blockquote></th><td class="right">17.035</td><td class="right">3,7</td><td class="right">15.247</td><td class="right">3,1</td><td class="right">12.997</td><td class="right">11.038</td><td class="right">-15,1</td></tr><tr><th><blockquote><blockquote><p>Sonstiger laufender Sachaufwand</p>
+
+</blockquote></blockquote></th><td class="right">25.407</td><td class="right">5,6</td><td class="right">28.577</td><td class="right">5,8</td><td class="right">20.904</td><td class="right">21.304</td><td class="right">+1,9</td></tr><tr><th><blockquote><p><b>Zinsausgaben</b></p>
+
+</blockquote></th><td class="right"><b>37.648</b></td><td class="right"><b>8,2</b></td><td class="right"><b>37.409</b></td><td class="right"><b>7,7</b></td><td class="right"><b>38.089</b></td><td class="right"><b>33.467</b></td><td class="right"><b>-12,1</b></td></tr><tr><th><blockquote><p><b>Laufende Zuweisungen und Zuschüsse</b></p>
+
+</blockquote></th><td class="right"><b>278.953</b></td><td class="right"><b>61,0</b></td><td class="right"><b>301.147</b></td><td class="right"><b>61,6</b></td><td class="right"><b>258.157</b></td><td class="right"><b>266.046</b></td><td class="right"><b>+3,1</b></td></tr><tr><th><blockquote><blockquote><p>an Verwaltungen</p>
+
+</blockquote></blockquote></th><td class="right">40.672</td><td class="right">8,9</td><td class="right">51.416</td><td class="right">10,5</td><td class="right">36.540</td><td class="right">39.213</td><td class="right">+7,3</td></tr><tr><th><blockquote><blockquote><p>an andere Bereiche</p>
+
+</blockquote></blockquote></th><td class="right">238.281</td><td class="right">52,1</td><td class="right">249.732</td><td class="right">51,1</td><td class="right">221.617</td><td class="right">226.832</td><td class="right">+2,4</td></tr><tr><th><blockquote><blockquote><p>darunter:</p>
+
+</blockquote></blockquote></th><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr><tr><th><blockquote><blockquote><blockquote><p>Unternehmen</p>
+
+</blockquote></blockquote></blockquote></th><td class="right">33.130</td><td class="right">7,2</td><td class="right">38.042</td><td class="right">7,8</td><td class="right">27.675</td><td class="right">28.922</td><td class="right">+4,5</td></tr><tr><th><blockquote><blockquote><blockquote><p>Renten, Unterstützungen <abbr title="unter anderem">u. a.</abbr></p>
+
+</blockquote></blockquote></blockquote></th><td class="right">37.982</td><td class="right">8,3</td><td class="right">44.779</td><td class="right">9,2</td><td class="right">35.339</td><td class="right">38.817</td><td class="right">+9,8</td></tr><tr><th><blockquote><blockquote><blockquote><p>Sozialversicherungen</p>
+
+</blockquote></blockquote></blockquote></th><td class="right">144.498</td><td class="right">31,6</td><td class="right">143.925</td><td class="right">29,4</td><td class="right">140.291</td><td class="right">140.493</td><td class="right">+0,1</td></tr><tr><th><blockquote><p><b>Sonstige Vermögensübertragungen</b></p>
+
+</blockquote></th><td class="right"><b>1.792</b></td><td class="right"><b>0,4</b></td><td class="right"><b>1.761</b></td><td class="right"><b>0,4</b></td><td class="right"><b>1.686</b></td><td class="right"><b>1.579</b></td><td class="right"><b>-6,3</b></td></tr><tr><th><b>Investive Ausgaben</b></th><td class="right"><b>54.961</b></td><td class="right"><b>12,0</b></td><td class="right"><b>70.822</b></td><td class="right"><b>14,5</b></td><td class="right"><b>41.811</b></td><td class="right"><b>42.195</b></td><td class="right"><b>+0,9</b></td></tr><tr><th><blockquote><p><b>Finanzierungshilfen</b></p>
+
+</blockquote></th><td class="right"><b>48.260</b></td><td class="right"><b>10,6</b></td><td class="right"><b>64.303</b></td><td class="right"><b>13,2</b></td><td class="right"><b>36.702</b></td><td class="right"><b>36.525</b></td><td class="right"><b>-0,5</b></td></tr><tr><th><blockquote><blockquote><p>Zuweisungen und Zuschüsse</p>
+
+</blockquote></blockquote></th><td class="right">37.119</td><td class="right">8,1</td><td class="right">44.128</td><td class="right">9,0</td><td class="right">27.271</td><td class="right">29.935</td><td class="right">+9,8</td></tr><tr><th><blockquote><blockquote><p>Darlehensgewährungen, Gewährleistungen</p>
+
+</blockquote></blockquote></th><td class="right">9.741</td><td class="right">2,1</td><td class="right">14.551</td><td class="right">3,0</td><td class="right">9.157</td><td class="right">990</td><td class="right">-89,2</td></tr><tr><th><blockquote><blockquote><p>Erwerb von Beteiligungen, Kapitaleinlagen</p>
+
+</blockquote></blockquote></th><td class="right">1.400</td><td class="right">0,3</td><td class="right">5.624</td><td class="right">1,2</td><td class="right">275</td><td class="right">5.601</td><td class="right">X</td></tr><tr><th><blockquote><p><b>Sachinvestitionen</b></p>
+
+</blockquote></th><td class="right"><b>6.702</b></td><td class="right"><b>1,5</b></td><td class="right"><b>6.519</b></td><td class="right"><b>1,3</b></td><td class="right"><b>5.108</b></td><td class="right"><b>5.670</b></td><td class="right"><b>+11,0</b></td></tr><tr><th><blockquote><blockquote><p>Baumaßnahmen</p>
+
+</blockquote></blockquote></th><td class="right">4.135</td><td class="right">0,9</td><td class="right">3.971</td><td class="right">0,8</td><td class="right">3.281</td><td class="right">3.524</td><td class="right">+7,4</td></tr><tr><th><blockquote><blockquote><p>Erwerb von beweglichen Sachen</p>
+
+</blockquote></blockquote></th><td class="right">2.428</td><td class="right">0,5</td><td class="right">2.478</td><td class="right">0,5</td><td class="right">1.734</td><td class="right">1.894</td><td class="right">+9,2</td></tr><tr><th><blockquote><blockquote><p>Grunderwerb</p>
+
+</blockquote></blockquote></th><td class="right">139</td><td class="right">0,0</td><td class="right">70</td><td class="right">0,0</td><td class="right">92</td><td class="right">253</td><td class="right">+175,0</td></tr><tr><th><b>Globalansätze</b></th><td class="right"><b>0</b></td><td class="right"><b>0,0</b></td><td class="right"><b>-10.818</b></td><td class="right"><b>-2,2</b></td><td class="right"><b>0</b></td><td class="right"><b>0</b></td><td class="right"><b>X</b></td></tr><tr><th><b>Ausgaben insgesamt²</b></th><td class="right"><b>457.129</b></td><td class="right"><b>100,0</b></td><td class="right"><b>488.880</b></td><td class="right"><b>100,0</b></td><td class="right"><b>412.637</b></td><td class="right"><b>416.794</b></td><td class="right"><b>+1,0</b></td></tr><tr class="table-footer-row"><td colspan="8">1 Einschließlich Regierungsentwurf eines Nachtrags zum Bundeshaushalt 2024 vom 17. Juli 2024.</td></tr><tr class="table-footer-row"><td colspan="8">2 Mit Ausnahme der Ausgaben zur Schuldentilgung am Kreditmarkt, der Zuführungen an Rücklagen und der Ausgaben zur Deckung eines kassenmäßigen Fehlbetrags. Ohne Ausgaben aus haushaltstechnischen Verrechnungen.</td></tr><tr class="table-footer-row"><td colspan="8">Quelle: Bundesministerium der Finanzen</td></tr></tbody></table>
+                </div>
+            </div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u09-ausgaben-nach-oekonomischen-arten.html" class="tableModalButton" data-content="embeddedTable435796" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            
+                <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            
+        </a>
+    </div>
+    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u09-ausgaben-nach-oekonomischen-arten.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable435796" aria-label="Tabelle vergrößern" title="Tabelle vergrößern" data-js-table-modal-open-btn="">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg>
+        <span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    
+        <div class="figcaption">
+            <span class="caption">
+                Tabelle 3
+            </span>
+        </div>
+    
+    
+</div><div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container" data-js-richtext-table="">
+    
+        <h2 class="generic-table-headline">
+            Entwicklung der Einnahmen des Bundeshaushalts
+        </h2>
+
+    
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable435798" data-js-richtext-table-embedded-table="">
+                <div class="table-responsive">
+                    <table><caption>Entwicklung der Einnahmen des Bundeshaushalts</caption><tbody><tr class="table-header-row"><td class="center" rowspan="3"></td><td class="center" colspan="2" rowspan="2"><b>Ist 2023</b></td><td class="center" colspan="2" rowspan="2"><b>Soll 2024¹</b></td><td class="center" colspan="2"><b>Ist-Entwicklung</b></td><td class="center" rowspan="2"><b>Unterjährige<br/>
+
+Veränderung<br/>
+
+gegenüber<br/>
+
+Vorjahr</b></td></tr><tr class="table-header-row"><td class="center"><b>November<br/>
+
+2023</b></td><td class="center"><b>November<br/>
+
+2024</b></td></tr><tr class="table-header-row"><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>Anteil in<br/>
+
+Prozent</b></td><td class="center" colspan="2"><b>in <abbr title="Millionen">Mio.</abbr> Euro</b></td><td class="center"><b>in Prozent</b></td></tr><tr><th><b>Steuern²</b></th><td class="right"><b>356.082</b></td><td class="right"><b>90,8</b></td><td class="right"><b>374.386</b></td><td class="right"><b>87,4</b></td><td class="right"><b>306.748</b></td><td class="right"><b>321.944</b></td><td class="right"><b>+5,0</b></td></tr><tr><th>Bundesanteile an Gemeinschaftsteuern:</th><td class="right">317.036</td><td class="right">80,8</td><td class="right">333.107</td><td class="right">77,8</td><td class="right">276.378</td><td class="right">284.119</td><td class="right">+2,8</td></tr><tr><th><blockquote><p>Einkommen- und Körperschaftsteuer<br/>
+
+(einschließlich Abgeltungsteuer auf Zins- und Veräußerungserträge)</p>
+
+</blockquote></th><td class="right">175.898</td><td class="right">44,8</td><td class="right">182.708</td><td class="right">42,7</td><td class="right">143.912</td><td class="right">149.972</td><td class="right">+4,2</td></tr><tr><th><blockquote><p>davon:</p>
+
+</blockquote></th><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr><tr><th><blockquote><blockquote><p>Lohnsteuer</p>
+
+</blockquote></blockquote></th><td class="right">100.382</td><td class="right">25,6</td><td class="right">107.058</td><td class="right">25,0</td><td class="right">85.485</td><td class="right">90.046</td><td class="right">+5,3</td></tr><tr><th><blockquote><blockquote><p>Veranlagte Einkommensteuer</p>
+
+</blockquote></blockquote></th><td class="right">31.190</td><td class="right">8,0</td><td class="right">30.430</td><td class="right">7,1</td><td class="right">22.737</td><td class="right">23.282</td><td class="right">+2,4</td></tr><tr><th><blockquote><blockquote><p>Nicht veranlagte Steuer vom Ertrag</p>
+
+</blockquote></blockquote></th><td class="right">18.221</td><td class="right">4,6</td><td class="right">15.975</td><td class="right">3,7</td><td class="right">16.212</td><td class="right">14.765</td><td class="right">-8,9</td></tr><tr><th><blockquote><blockquote><p>Abgeltungsteuer auf Zins- und Veräußerungserträge</p>
+
+</blockquote></blockquote></th><td class="right">3.679</td><td class="right">0,9</td><td class="right">7.920</td><td class="right">1,8</td><td class="right">3.214</td><td class="right">7.587</td><td class="right">+136,1</td></tr><tr><th><blockquote><blockquote><p>Körperschaftsteuer</p>
+
+</blockquote></blockquote></th><td class="right">22.426</td><td class="right">5,7</td><td class="right">21.325</td><td class="right">5,0</td><td class="right">16.262</td><td class="right">14.292</td><td class="right">-12,1</td></tr><tr><th><blockquote><p>Steuern vom Umsatz</p>
+
+</blockquote></th><td class="right">138.452</td><td class="right">35,3</td><td class="right">147.660</td><td class="right">34,5</td><td class="right">130.318</td><td class="right">131.974</td><td class="right">+1,3</td></tr><tr><th><blockquote><p>Gewerbesteuerumlage</p>
+
+</blockquote></th><td class="right">2.685</td><td class="right">0,7</td><td class="right">2.739</td><td class="right">0,6</td><td class="right">2.147</td><td class="right">2.172</td><td class="right">+1,2</td></tr><tr><th>Energiesteuer</th><td class="right">36.658</td><td class="right">9,3</td><td class="right">36.400</td><td class="right">8,5</td><td class="right">29.032</td><td class="right">28.802</td><td class="right">-0,8</td></tr><tr><th>Tabaksteuer</th><td class="right">14.672</td><td class="right">3,7</td><td class="right">15.830</td><td class="right">3,7</td><td class="right">12.996</td><td class="right">13.521</td><td class="right">+4,0</td></tr><tr><th>Solidaritätszuschlag</th><td class="right">12.239</td><td class="right">3,1</td><td class="right">12.150</td><td class="right">2,8</td><td class="right">10.086</td><td class="right">10.475</td><td class="right">+3,9</td></tr><tr><th>Versicherungsteuer</th><td class="right">16.851</td><td class="right">4,3</td><td class="right">18.100</td><td class="right">4,2</td><td class="right">16.019</td><td class="right">17.309</td><td class="right">+8,1</td></tr><tr><th>Stromsteuer</th><td class="right">6.832</td><td class="right">1,7</td><td class="right">5.710</td><td class="right">1,3</td><td class="right">6.317</td><td class="right">5.214</td><td class="right">-17,5</td></tr><tr><th>Kraftfahrzeugsteuer</th><td class="right">9.514</td><td class="right">2,4</td><td class="right">9.750</td><td class="right">2,3</td><td class="right">8.898</td><td class="right">9.077</td><td class="right">+2,0</td></tr><tr><th>Alkoholsteuer inklusive Alkopopsteuer</th><td class="right">2.160</td><td class="right">0,6</td><td class="right">2.161</td><td class="right">0,5</td><td class="right">1.922</td><td class="right">1.792</td><td class="right">-6,8</td></tr><tr><th>Kaffeesteuer</th><td class="right">1.030</td><td class="right">0,3</td><td class="right">1.030</td><td class="right">0,2</td><td class="right">927</td><td class="right">896</td><td class="right">-3,3</td></tr><tr><th>Luftverkehrsteuer</th><td class="right">1.486</td><td class="right">0,4</td><td class="right">1.850</td><td class="right">0,4</td><td class="right">1.376</td><td class="right">1.684</td><td class="right">+22,4</td></tr><tr><th>Schaumweinsteuer und Zwischenerzeugnissteuer</th><td class="right">385</td><td class="right">0,1</td><td class="right">385</td><td class="right">0,1</td><td class="right">354</td><td class="right">344</td><td class="right">-2,8</td></tr><tr><th><abbr title="Europäische Union">EU</abbr>-Energiekrisenbeitrag</th><td class="right">0</td><td class="right">0,0</td><td class="right">1.000</td><td class="right">0,2</td><td class="right">0</td><td class="right">1.936</td><td class="right">X</td></tr><tr><th>Sonstige Bundessteuern</th><td class="right">2</td><td class="right">0,0</td><td class="right">2</td><td class="right">0,0</td><td class="right">0</td><td class="right">3</td><td class="right">X</td></tr><tr><th><b>Abzugsbeträge</b></th><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr><tr><th>Konsolidierungshilfen an die Länder</th><td class="right">800</td><td class="right">X</td><td class="right">800</td><td class="right">X</td><td class="right">800</td><td class="right">800</td><td class="right">0,0</td></tr><tr><th>Ergänzungszuweisungen an Länder</th><td class="right">10.883</td><td class="right">X</td><td class="right">11.052</td><td class="right">X</td><td class="right">8.086</td><td class="right">8.555</td><td class="right">+5,8</td></tr><tr><th><abbr title="Bruttonationaleinkommen">BNE</abbr>-Eigenmittel der <abbr title="Europäische Union">EU</abbr></th><td class="right">22.981</td><td class="right">X</td><td class="right">22.010</td><td class="right">X</td><td class="right">22.253</td><td class="right">16.774</td><td class="right">-24,6</td></tr><tr><th>Mehrwertsteuer-Eigenmittel der <abbr title="Europäische Union">EU</abbr></th><td class="right">5.306</td><td class="right">X</td><td class="right">5.600</td><td class="right">X</td><td class="right">4.675</td><td class="right">5.143</td><td class="right">+10,0</td></tr><tr><th>Kunststoff-Eigenmittel der <abbr title="Europäische Union">EU</abbr></th><td class="right">1.423</td><td class="right">X</td><td class="right">1.410</td><td class="right">X</td><td class="right">1.265</td><td class="right">1.302</td><td class="right">+2,9</td></tr><tr><th>Zuweisungen an Länder für <abbr title="Öffentlicher Personennahverkehr">ÖPNV</abbr></th><td class="right">12.398</td><td class="right">X</td><td class="right">13.225</td><td class="right">X</td><td class="right">11.489</td><td class="right">11.664</td><td class="right">+1,5</td></tr><tr><th>Zuweisung an die Länder für <abbr title="Kraftfahrzeug">Kfz</abbr>-Steuer und <abbr title="Lastkraftwagen">Lkw</abbr>-Maut</th><td class="right">8.992</td><td class="right">X</td><td class="right">8.992</td><td class="right">X</td><td class="right">8.992</td><td class="right">8.992</td><td class="right">0,0</td></tr><tr><th><b>Sonstige Einnahmen</b></th><td class="right"><b>36.147</b></td><td class="right"><b>9,2</b></td><td class="right"><b>53.824</b></td><td class="right"><b>12,6</b></td><td class="right"><b>25.692</b></td><td class="right"><b>44.358</b></td><td class="right"><b>+72,7</b></td></tr><tr><th>Verwaltungseinnahmen</th><td class="right">15.963</td><td class="right">4,1</td><td class="right">21.331</td><td class="right">5,0</td><td class="right">13.194</td><td class="right">22.170</td><td class="right">+68,0</td></tr><tr><th>Einnahmen aus wirtschaftlicher Tätigkeit</th><td class="right">5.177</td><td class="right">1,3</td><td class="right">4.191</td><td class="right">1,0</td><td class="right">2.950</td><td class="right">3.733</td><td class="right">+26,5</td></tr><tr><th>Zinseinnahmen</th><td class="right">2.195</td><td class="right">0,6</td><td class="right">1.932</td><td class="right">0,5</td><td class="right">1.864</td><td class="right">2.434</td><td class="right">+30,6</td></tr><tr><th>Darlehensrückflüsse, Beteiligungen, Kapitalrückzahlungen, Gewährleistungen</th><td class="right">1.561</td><td class="right">0,4</td><td class="right">1.188</td><td class="right">0,3</td><td class="right">801</td><td class="right">4.744</td><td class="right">+492,3</td></tr><tr><th>Einnahmen aus Zuweisungen und Zuschüssen</th><td class="right">10.268</td><td class="right">2,6</td><td class="right">21.857</td><td class="right">5,1</td><td class="right">5.790</td><td class="right">9.635</td><td class="right">+66,4</td></tr><tr><th><b>Einnahmen insgesamt³</b></th><td class="right"><b>392.229</b></td><td class="right"><b>100,0</b></td><td class="right"><b>428.210</b></td><td class="right"><b>100,0</b></td><td class="right"><b>332.440</b></td><td class="right"><b>366.302</b></td><td class="right"><b>+10,2</b></td></tr><tr class="table-footer-row"><td colspan="8">1 Einschließlich Regierungsentwurf eines Nachtrags zum Bundeshaushalt 2024 vom 17. Juli 2024.</td></tr><tr class="table-footer-row"><td colspan="8">2 Abweichungen zur Tabelle „Entwicklung der Steuereinnahmen (ohne reine Gemeindesteuern) im laufenden Jahr“ sind methodisch bedingt.</td></tr><tr class="table-footer-row"><td colspan="8">3 Mit Ausnahme der Einnahmen aus Krediten vom Kreditmarkt, der Entnahme aus Rücklagen und der Einnahmen aus kassenmäßigen Überschüssen sowie der Münzeinnahmen. Ohne Einnahmen aus haushaltstechnischen Verrechnungen.</td></tr><tr class="table-footer-row"><td colspan="8">Quelle: Bundesministerium der Finanzen</td></tr></tbody></table>
+                </div>
+            </div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u10-entwicklung-einnahmen.html" class="tableModalButton" data-content="embeddedTable435798" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            
+                <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            
+        </a>
+    </div>
+    <a href="Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/u10-entwicklung-einnahmen.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable435798" aria-label="Tabelle vergrößern" title="Tabelle vergrößern" data-js-table-modal-open-btn="">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg>
+        <span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    
+        <div class="figcaption">
+            <span class="caption">
+                Tabelle 4
+            </span>
+        </div>
+    
+    
+</div>
+
+                    
+                    
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bmf-toolbox bmf-toolbox--socialmedia ">
+    <div class="bmf-select bmf-select--social">
+        <a href="javascript:void(0)" class="bmf-select-control" id="social-media-links" data-js-select>
+            <span class="bmf-select-title">Die aktuelle Seite in Ihren Sozialen Netzwerken teilen.</span>
+            
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--share" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32" aria-label="Icon Teilen">
+  <title>Teilen</title>
+  <path d="M24.422,22.537c-1.007,0.023-1.981,0.349-2.801,0.933l-12.23-7.001C9.412,16.31,9.444,16.155,9.484,16     c0-0.093,0-0.372-0.093-0.467l12.23-7c0.813,0.598,1.79,0.924,2.801,0.933c2.576,0,4.666-2.09,4.666-4.668s-2.09-4.668-4.666-4.668     c-2.579,0-4.67,2.09-4.67,4.668c-0.013,0.162,0.02,0.323,0.094,0.467L7.618,12.27c-1.625-1.22-3.852-1.251-5.509-0.072     c-1.656,1.177-2.359,3.292-1.741,5.226c0.62,1.936,2.421,3.248,4.452,3.246c1.006-0.025,1.981-0.35,2.801-0.934l12.231,7.003     c0,0.188-0.094,0.28-0.094,0.468c0.002,2.576,2.095,4.666,4.672,4.663c2.576-0.003,4.664-2.093,4.662-4.671     c0-2.576-2.09-4.666-4.666-4.664L24.422,22.537z" />
+</svg>
+
+</a>
+        <ul class="bmf-select-dropdown" aria-labelledby="social-media-links">
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--facebook">
+                <a href="http://www.facebook.com/sharer.php?u=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html&t=Entwicklung des Bundeshaushalts bis einschließlich November 2024" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--facebook" aria-hidden="true" role="img" width="36" height="36" viewBox="0 0 36 36" aria-label="Icon Facebook">
+  <title>Facebook</title>
+  <path d="M13.962 19.501H10v-5.386h3.962v-4.71C13.962 5.59 16.309 2 21.886 2c1.326-.002 2.65.098 3.961.3l-.22 5.086h-3.41c-2.018 0-2.312 1.12-2.312 2.692v4.039h5.942l-.404 5.386h-5.538V34.31h-5.942L13.962 19.5z" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--twitter">
+                <a href="https://twitter.com/intent/tweet?text=Entwicklung des Bundeshaushalts bis einschließlich November 2024+https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--twitter" aria-hidden="true" role="img" width="31" height="31" viewBox="0 0 31 31" aria-label="Icon X/Twitter">
+  <title>X/Twitter</title>
+  <path fill="#000000" d="M 18.449219 13.121094 L 29.988281 0 L 27.253906 0 L 17.234375 11.390625 L 9.230469 0 L 0 0 L 12.101562 17.226562 L 0 30.984375 L 2.734375 30.984375 L 13.316406 18.953125 L 21.769531 30.984375 L 31 30.984375 Z M 14.703125 17.378906 L 13.476562 15.664062 L 3.71875 2.011719 L 7.921875 2.011719 L 15.792969 13.027344 L 17.019531 14.742188 L 27.257812 29.0625 L 23.054688 29.0625 Z M 14.703125 17.378906" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--linkedin">
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html&title=Entwicklung des Bundeshaushalts bis einschließlich November 2024" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--linkedin" aria-hidden="true" role="img" width="36" height="36" viewBox="0 0 36 36" aria-label="Icon LinkedIn">
+  <title>LinkedIn</title>
+  <path d="M25.844 11.94l.264.005c4.51 0 7.892 2.935 7.892 9.259V33h-6.856V21.995c0-2.766-.994-4.652-3.474-4.652-1.586.008-2.996 1.009-3.523 2.5-.175.538-.252 1.103-.225 1.668V33h-6.85s.09-18.64 0-20.57h6.857l-.001 2.905.09-.15c1.243-2.018 3.45-3.247 5.826-3.244zm-16.572.487V33H2.416V12.427h6.856zM5.82 2c2.105 0 3.814 1.699 3.82 3.799.006 2.1-1.692 3.808-3.798 3.82h-.045C3.692 9.608 1.994 7.9 2 5.8 2.006 3.699 3.715 2 5.82 2z" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--xing">
+                <a href="https://www.xing.com/social_plugins/share/new?h=1&url=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/12/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-november-2024.html" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--xing" aria-hidden="true" role="img" width="22" height="22" viewBox="0 0 22 22" aria-label="Icon Xing">
+  <title>Xing</title>
+  <path d="M7.399,4.944C7.243,4.603,6.91,4.367,6.521,4.354H3.34C3.33,4.353,3.318,4.353,3.306,4.353c-0.162,0-0.306,0.079-0.395,0.2  C2.87,4.625,2.846,4.709,2.846,4.799c0,0.09,0.024,0.174,0.065,0.247L5.08,8.754l-3.38,5.96c-0.04,0.07-0.064,0.155-0.064,0.245  s0.024,0.174,0.065,0.247c0.084,0.125,0.228,0.208,0.39,0.208c0.006,0,0.013,0,0.019,0h3.179c0.391-0.021,0.721-0.264,0.868-0.604  l3.432-6.066L7.399,4.944z" />
+  <path d="M20.3,0.694c0.04-0.07,0.063-0.155,0.063-0.245c0-0.09-0.023-0.174-0.064-0.247c-0.083-0.12-0.222-0.199-0.38-0.199  c-0.015,0-0.026,0.001-0.041,0.002h-3.237c-0.388,0.008-0.715,0.252-0.849,0.594L8.761,13.125l4.51,8.27  c0.154,0.351,0.492,0.59,0.889,0.603h3.172c0.01,0.001,0.021,0.001,0.033,0.001c0.158,0,0.301-0.079,0.385-0.2  c0.041-0.071,0.064-0.155,0.064-0.246c0-0.09-0.023-0.174-0.064-0.247l-4.469-8.168L20.3,0.694z" />
+</svg>
+
+</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bmf-toolbox-sharePrint">
+        <div class="bmf-printButton">
+            <a href="javascript:void(0)" class="bmf-link bmf-link--print bmf-link--icononly" data-js-print>
+                
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--print" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32" aria-label="Icon Drucken">
+  <title>Drucken</title>
+  <path d="M25.089.999V8.08l6.336-.001v16.619h-6.37v5.3H7.37v-5.3H1V8.08h6.37V.999h17.719zm4.237 9.218H3.137v12.382H7.37v-3.167h17.719v3.167h4.235l.002-12.382zm-2.429 1.99v2.392h-7.178v-2.392h7.178z" />
+</svg>
+
+<span class="bmf-link-text">Die aktuelle Seite drucken oder als PDF herunterladen.</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+    <div class="modal fade table-modal bmf-table-modal" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true" data-js-table-modal>
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close bmf-lightbox-closeButton" data-dismiss="modal" data-js-table-modal-close-btn>
+                        <span class="sr-only">Schließen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+                            <title>Schließen</title>
+                            <g>
+                                <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                                <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title aural" id="myModalLabel2">Tabelle</h2>
+                </div>
+                <div class="modal-body article-wrapper">
+                    <div class="table-body">
+                        <div class="table-container">
+                            <div class="table-responsive" data-js-table-modal-content>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade bmf-table-modal__backdrop" data-js-table-modal-backdrop></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer class="bmf-footer">
+    <div class="bmf-container">
+    </div>
+    
+    <div class="bmf-container">
+        <div class="bmf-footer-container">
+            <div class="bmf-footer-nav" role="navigation" aria-label="Fußzeile">
+                <h2 class="aural">Fußzeile</h2>
+                <ul class="bmf-footer-list">
+        <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Impressum/impressum.html" class="bmf-footer-link">Impressum</a>
+                        </li>
+            <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Datenschutz/datenschutz.html" class="bmf-footer-link">Datenschutz</a>
+                        </li>
+            <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Erklaerung-Barrierefreiheit/erklaerung-barrierefreiheit.html" class="bmf-footer-link">Erklärung zur Barrierefreiheit</a>
+                        </li>
+            </ul>
+
+            </div>
+            <div class="bmf-footer-copyright">
+                <p class="bmf-footer-copyrightText">
+                    <em>© Bundesministerium der Finanzen</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+    </html>
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+
+
+

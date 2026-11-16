@@ -1,0 +1,532 @@
+{
+ "origin": "2026-11-12",
+ "end": "2029-12-31",
+ "flow_variant": "model",
+ "tga_origin_bn": 933.127,
+ "target_date": "2026-12-31",
+ "target_bn": 850.0,
+ "fed_assets_trend_bn_per_bday": 0.20258461538462422,
+ "scenario_start": "2027-02-01",
+ "bill_reaction": {
+  "intercept": 20.15603574826945,
+  "gap": -0.014023800442558038,
+  "roll": 0.21496840071196852,
+  "y_sd": 68.24109663680372,
+  "n": 147,
+  "r2": 0.2798585255340279,
+  "source": "ols"
+ },
+ "bill_tenor_shares": {
+  "4-Week": 0.19600156516773984,
+  "6-Week": 0.15190114642313085,
+  "8-Week": 0.18326148554882973,
+  "13-Week": 0.16405340132544843,
+  "17-Week": 0.14288535370236508,
+  "26-Week": 0.14112078110685858,
+  "52-Week": 0.020776266725627643,
+  "CMB/other": 0.0
+ },
+ "scenarios": {
+  "unchanged": {
+   "quarters": {
+    "2026Q4": {
+     "op_flow_bn": -287.9,
+     "net_coupons_bn": 266.2,
+     "net_bills_bn": -176.7,
+     "private_net_bills_bn": -151.5,
+     "drift_bn": 115.3,
+     "tga_end_bn": 850.0,
+     "reserves_end_bn": 3038.7,
+     "sofr_iorb_excal_avg_bp": -2.9
+    },
+    "2027Q1": {
+     "op_flow_bn": -744.3,
+     "net_coupons_bn": 260.1,
+     "net_bills_bn": 58.9,
+     "private_net_bills_bn": 63.9,
+     "drift_bn": 186.9,
+     "tga_end_bn": 611.6,
+     "reserves_end_bn": 3289.4,
+     "sofr_iorb_excal_avg_bp": -4.1
+    },
+    "2027Q2": {
+     "op_flow_bn": -202.0,
+     "net_coupons_bn": 305.6,
+     "net_bills_bn": 113.4,
+     "private_net_bills_bn": 121.1,
+     "drift_bn": 130.9,
+     "tga_end_bn": 959.5,
+     "reserves_end_bn": 2954.5,
+     "sofr_iorb_excal_avg_bp": -3.6
+    },
+    "2027Q3": {
+     "op_flow_bn": -731.3,
+     "net_coupons_bn": 248.8,
+     "net_bills_bn": 201.6,
+     "private_net_bills_bn": 196.4,
+     "drift_bn": 142.1,
+     "tga_end_bn": 820.8,
+     "reserves_end_bn": 3106.2,
+     "sofr_iorb_excal_avg_bp": -4.7
+    },
+    "2027Q4": {
+     "op_flow_bn": -635.4,
+     "net_coupons_bn": 224.4,
+     "net_bills_bn": 219.5,
+     "private_net_bills_bn": 221.5,
+     "drift_bn": 149.7,
+     "tga_end_bn": 779.1,
+     "reserves_end_bn": 3160.7,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2028Q1": {
+     "op_flow_bn": -947.5,
+     "net_coupons_bn": 173.9,
+     "net_bills_bn": 225.2,
+     "private_net_bills_bn": 225.2,
+     "drift_bn": 127.4,
+     "tga_end_bn": 358.0,
+     "reserves_end_bn": 3594.5,
+     "sofr_iorb_excal_avg_bp": -5.4
+    },
+    "2028Q2": {
+     "op_flow_bn": -266.9,
+     "net_coupons_bn": 183.4,
+     "net_bills_bn": 316.4,
+     "private_net_bills_bn": 316.4,
+     "drift_bn": 127.2,
+     "tga_end_bn": 718.2,
+     "reserves_end_bn": 3247.0,
+     "sofr_iorb_excal_avg_bp": -4.9
+    },
+    "2028Q3": {
+     "op_flow_bn": -649.8,
+     "net_coupons_bn": 148.0,
+     "net_bills_bn": 321.6,
+     "private_net_bills_bn": 321.6,
+     "drift_bn": 128.5,
+     "tga_end_bn": 666.5,
+     "reserves_end_bn": 3311.5,
+     "sofr_iorb_excal_avg_bp": -5.9
+    },
+    "2028Q4": {
+     "op_flow_bn": -707.6,
+     "net_coupons_bn": 348.1,
+     "net_bills_bn": 277.7,
+     "private_net_bills_bn": 277.7,
+     "drift_bn": 135.0,
+     "tga_end_bn": 719.7,
+     "reserves_end_bn": 3270.9,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q1": {
+     "op_flow_bn": -1141.6,
+     "net_coupons_bn": 423.2,
+     "net_bills_bn": 144.2,
+     "private_net_bills_bn": 144.2,
+     "drift_bn": 143.1,
+     "tga_end_bn": 288.5,
+     "reserves_end_bn": 3714.6,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q2": {
+     "op_flow_bn": -390.6,
+     "net_coupons_bn": 444.3,
+     "net_bills_bn": 223.8,
+     "private_net_bills_bn": 223.8,
+     "drift_bn": 145.6,
+     "tga_end_bn": 711.7,
+     "reserves_end_bn": 3304.3,
+     "sofr_iorb_excal_avg_bp": -5.5
+    },
+    "2029Q3": {
+     "op_flow_bn": -673.0,
+     "net_coupons_bn": 485.1,
+     "net_bills_bn": 184.2,
+     "private_net_bills_bn": 184.2,
+     "drift_bn": 151.1,
+     "tga_end_bn": 859.1,
+     "reserves_end_bn": 3169.6,
+     "sofr_iorb_excal_avg_bp": -5.6
+    },
+    "2029Q4": {
+     "op_flow_bn": -855.1,
+     "net_coupons_bn": 704.9,
+     "net_bills_bn": 86.2,
+     "private_net_bills_bn": 86.2,
+     "drift_bn": 139.6,
+     "tga_end_bn": 934.7,
+     "reserves_end_bn": 3106.6,
+     "sofr_iorb_excal_avg_bp": -5.5
+    }
+   },
+   "total_12m": {
+    "op_flow_bn": -2363.1241565983673,
+    "net_coupons_bn": 1102.7658679113797,
+    "net_bills_bn": 262.01486680996504,
+    "private_net_bills_bn": 297.2511556453497,
+    "interest_bn": 745.4361642176225,
+    "bill_share": 0.19198312237567022,
+    "reserves_end_bn": 3369.5675749515513,
+    "reserves_min_bn": 2916.957925413805,
+    "end": "2027-11-10"
+   },
+   "total_24m": {
+    "op_flow_bn": -4797.389179390919,
+    "net_coupons_bn": 1983.8227763374944,
+    "net_bills_bn": 1450.4899910618938,
+    "private_net_bills_bn": 1485.2804696049707,
+    "interest_bn": 1575.8015638063753,
+    "bill_share": 0.4223523276129181,
+    "reserves_end_bn": 3247.074111741968,
+    "reserves_min_bn": 2916.957925413805,
+    "end": "2028-11-07"
+   },
+   "total_path": {
+    "op_flow_bn": -8232.998051738416,
+    "net_coupons_bn": 4215.950839006259,
+    "net_bills_bn": 2195.9744430091205,
+    "private_net_bills_bn": 2230.7649215521974,
+    "interest_bn": 2671.8548403496693,
+    "bill_share": 0.342482849756304,
+    "reserves_end_bn": 3106.5513969495682,
+    "reserves_min_bn": 2916.957925413805,
+    "end": "2029-12-31"
+   }
+  },
+  "plus5pct": {
+   "quarters": {
+    "2026Q4": {
+     "op_flow_bn": -287.9,
+     "net_coupons_bn": 266.2,
+     "net_bills_bn": -176.7,
+     "private_net_bills_bn": -151.5,
+     "drift_bn": 115.3,
+     "tga_end_bn": 850.0,
+     "reserves_end_bn": 3038.7,
+     "sofr_iorb_excal_avg_bp": -2.9
+    },
+    "2027Q1": {
+     "op_flow_bn": -744.3,
+     "net_coupons_bn": 308.4,
+     "net_bills_bn": 47.0,
+     "private_net_bills_bn": 52.0,
+     "drift_bn": 186.9,
+     "tga_end_bn": 648.1,
+     "reserves_end_bn": 3253.0,
+     "sofr_iorb_excal_avg_bp": -4.0
+    },
+    "2027Q2": {
+     "op_flow_bn": -202.0,
+     "net_coupons_bn": 360.9,
+     "net_bills_bn": 25.3,
+     "private_net_bills_bn": 33.0,
+     "drift_bn": 130.9,
+     "tga_end_bn": 963.1,
+     "reserves_end_bn": 2950.9,
+     "sofr_iorb_excal_avg_bp": -3.5
+    },
+    "2027Q3": {
+     "op_flow_bn": -732.4,
+     "net_coupons_bn": 302.9,
+     "net_bills_bn": 187.1,
+     "private_net_bills_bn": 181.9,
+     "drift_bn": 142.1,
+     "tga_end_bn": 862.9,
+     "reserves_end_bn": 3064.1,
+     "sofr_iorb_excal_avg_bp": -4.6
+    },
+    "2027Q4": {
+     "op_flow_bn": -636.6,
+     "net_coupons_bn": 279.6,
+     "net_bills_bn": 156.2,
+     "private_net_bills_bn": 158.2,
+     "drift_bn": 149.7,
+     "tga_end_bn": 811.8,
+     "reserves_end_bn": 3127.9,
+     "sofr_iorb_excal_avg_bp": -5.1
+    },
+    "2028Q1": {
+     "op_flow_bn": -949.9,
+     "net_coupons_bn": 228.2,
+     "net_bills_bn": 169.7,
+     "private_net_bills_bn": 169.7,
+     "drift_bn": 127.4,
+     "tga_end_bn": 387.2,
+     "reserves_end_bn": 3565.4,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2028Q2": {
+     "op_flow_bn": -269.4,
+     "net_coupons_bn": 238.7,
+     "net_bills_bn": 269.1,
+     "private_net_bills_bn": 269.1,
+     "drift_bn": 127.2,
+     "tga_end_bn": 752.8,
+     "reserves_end_bn": 3212.5,
+     "sofr_iorb_excal_avg_bp": -4.9
+    },
+    "2028Q3": {
+     "op_flow_bn": -652.7,
+     "net_coupons_bn": 192.1,
+     "net_bills_bn": 276.4,
+     "private_net_bills_bn": 276.4,
+     "drift_bn": 128.5,
+     "tga_end_bn": 697.1,
+     "reserves_end_bn": 3281.0,
+     "sofr_iorb_excal_avg_bp": -5.8
+    },
+    "2028Q4": {
+     "op_flow_bn": -711.5,
+     "net_coupons_bn": 401.0,
+     "net_bills_bn": 221.2,
+     "private_net_bills_bn": 221.2,
+     "drift_bn": 135.0,
+     "tga_end_bn": 742.7,
+     "reserves_end_bn": 3247.9,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q1": {
+     "op_flow_bn": -1146.5,
+     "net_coupons_bn": 477.6,
+     "net_bills_bn": 80.0,
+     "private_net_bills_bn": 80.0,
+     "drift_bn": 143.1,
+     "tga_end_bn": 297.0,
+     "reserves_end_bn": 3706.1,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q2": {
+     "op_flow_bn": -395.4,
+     "net_coupons_bn": 500.0,
+     "net_bills_bn": 153.4,
+     "private_net_bills_bn": 153.4,
+     "drift_bn": 145.6,
+     "tga_end_bn": 700.6,
+     "reserves_end_bn": 3315.3,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q3": {
+     "op_flow_bn": -678.9,
+     "net_coupons_bn": 540.9,
+     "net_bills_bn": 110.0,
+     "private_net_bills_bn": 110.0,
+     "drift_bn": 151.1,
+     "tga_end_bn": 823.8,
+     "reserves_end_bn": 3204.9,
+     "sofr_iorb_excal_avg_bp": -5.5
+    },
+    "2029Q4": {
+     "op_flow_bn": -862.2,
+     "net_coupons_bn": 770.1,
+     "net_bills_bn": 53.3,
+     "private_net_bills_bn": 53.3,
+     "drift_bn": 139.6,
+     "tga_end_bn": 924.6,
+     "reserves_end_bn": 3116.7,
+     "sofr_iorb_excal_avg_bp": -5.6
+    }
+   },
+   "total_12m": {
+    "op_flow_bn": -2364.6595241781715,
+    "net_coupons_bn": 1278.9731536350278,
+    "net_bills_bn": 87.55689343802098,
+    "private_net_bills_bn": 122.79318227340556,
+    "interest_bn": 746.8757431842871,
+    "bill_share": 0.06407242462436727,
+    "reserves_end_bn": 3369.353630179651,
+    "reserves_min_bn": 2938.386195207531,
+    "end": "2027-11-10"
+   },
+   "total_24m": {
+    "op_flow_bn": -4809.594249246615,
+    "net_coupons_bn": 2378.897197906572,
+    "net_bills_bn": 1069.574125102618,
+    "private_net_bills_bn": 1104.3646036456948,
+    "interest_bn": 1587.245182964451,
+    "bill_share": 0.3101589153333283,
+    "reserves_end_bn": 3245.120625987863,
+    "reserves_min_bn": 2938.386195207531,
+    "end": "2028-11-07"
+   },
+   "total_path": {
+    "op_flow_bn": -8269.749462358639,
+    "net_coupons_bn": 4866.651332085496,
+    "net_bills_bn": 1571.8909804056657,
+    "private_net_bills_bn": 1606.6814589487428,
+    "interest_bn": 2706.3134015568057,
+    "bill_share": 0.2441377106982899,
+    "reserves_end_bn": 3116.6857770940132,
+    "reserves_min_bn": 2938.386195207531,
+    "end": "2029-12-31"
+   }
+  },
+  "plus10pct": {
+   "quarters": {
+    "2026Q4": {
+     "op_flow_bn": -287.9,
+     "net_coupons_bn": 266.2,
+     "net_bills_bn": -176.7,
+     "private_net_bills_bn": -151.5,
+     "drift_bn": 115.3,
+     "tga_end_bn": 850.0,
+     "reserves_end_bn": 3038.7,
+     "sofr_iorb_excal_avg_bp": -2.9
+    },
+    "2027Q1": {
+     "op_flow_bn": -744.3,
+     "net_coupons_bn": 356.8,
+     "net_bills_bn": 34.0,
+     "private_net_bills_bn": 39.1,
+     "drift_bn": 186.9,
+     "tga_end_bn": 683.4,
+     "reserves_end_bn": 3217.6,
+     "sofr_iorb_excal_avg_bp": -3.9
+    },
+    "2027Q2": {
+     "op_flow_bn": -202.0,
+     "net_coupons_bn": 416.1,
+     "net_bills_bn": -49.1,
+     "private_net_bills_bn": -41.4,
+     "drift_bn": 130.9,
+     "tga_end_bn": 979.4,
+     "reserves_end_bn": 2934.6,
+     "sofr_iorb_excal_avg_bp": -3.2
+    },
+    "2027Q3": {
+     "op_flow_bn": -733.5,
+     "net_coupons_bn": 357.1,
+     "net_bills_bn": 105.5,
+     "private_net_bills_bn": 100.3,
+     "drift_bn": 142.1,
+     "tga_end_bn": 850.7,
+     "reserves_end_bn": 3076.3,
+     "sofr_iorb_excal_avg_bp": -4.4
+    },
+    "2027Q4": {
+     "op_flow_bn": -637.9,
+     "net_coupons_bn": 334.8,
+     "net_bills_bn": 153.0,
+     "private_net_bills_bn": 155.0,
+     "drift_bn": 149.7,
+     "tga_end_bn": 850.3,
+     "reserves_end_bn": 3089.5,
+     "sofr_iorb_excal_avg_bp": -5.0
+    },
+    "2028Q1": {
+     "op_flow_bn": -952.3,
+     "net_coupons_bn": 282.4,
+     "net_bills_bn": 109.3,
+     "private_net_bills_bn": 109.3,
+     "drift_bn": 127.4,
+     "tga_end_bn": 417.2,
+     "reserves_end_bn": 3535.4,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2028Q2": {
+     "op_flow_bn": -271.9,
+     "net_coupons_bn": 294.0,
+     "net_bills_bn": 195.8,
+     "private_net_bills_bn": 195.8,
+     "drift_bn": 127.2,
+     "tga_end_bn": 762.2,
+     "reserves_end_bn": 3203.1,
+     "sofr_iorb_excal_avg_bp": -4.7
+    },
+    "2028Q3": {
+     "op_flow_bn": -655.6,
+     "net_coupons_bn": 236.1,
+     "net_bills_bn": 192.2,
+     "private_net_bills_bn": 192.2,
+     "drift_bn": 128.5,
+     "tga_end_bn": 663.6,
+     "reserves_end_bn": 3314.4,
+     "sofr_iorb_excal_avg_bp": -5.6
+    },
+    "2028Q4": {
+     "op_flow_bn": -715.3,
+     "net_coupons_bn": 453.9,
+     "net_bills_bn": 236.4,
+     "private_net_bills_bn": 236.4,
+     "drift_bn": 135.0,
+     "tga_end_bn": 773.6,
+     "reserves_end_bn": 3217.0,
+     "sofr_iorb_excal_avg_bp": -5.0
+    },
+    "2029Q1": {
+     "op_flow_bn": -1151.4,
+     "net_coupons_bn": 532.1,
+     "net_bills_bn": 12.1,
+     "private_net_bills_bn": 12.1,
+     "drift_bn": 143.1,
+     "tga_end_bn": 309.6,
+     "reserves_end_bn": 3693.5,
+     "sofr_iorb_excal_avg_bp": -4.9
+    },
+    "2029Q2": {
+     "op_flow_bn": -400.3,
+     "net_coupons_bn": 555.6,
+     "net_bills_bn": 112.9,
+     "private_net_bills_bn": 112.9,
+     "drift_bn": 145.6,
+     "tga_end_bn": 723.5,
+     "reserves_end_bn": 3292.4,
+     "sofr_iorb_excal_avg_bp": -5.0
+    },
+    "2029Q3": {
+     "op_flow_bn": -684.8,
+     "net_coupons_bn": 596.7,
+     "net_bills_bn": 73.9,
+     "private_net_bills_bn": 73.9,
+     "drift_bn": 151.1,
+     "tga_end_bn": 860.4,
+     "reserves_end_bn": 3168.2,
+     "sofr_iorb_excal_avg_bp": -5.2
+    },
+    "2029Q4": {
+     "op_flow_bn": -869.4,
+     "net_coupons_bn": 835.4,
+     "net_bills_bn": 7.9,
+     "private_net_bills_bn": 7.9,
+     "drift_bn": 139.6,
+     "tga_end_bn": 973.9,
+     "reserves_end_bn": 3067.3,
+     "sofr_iorb_excal_avg_bp": -5.2
+    }
+   },
+   "total_12m": {
+    "op_flow_bn": -2366.1948917579757,
+    "net_coupons_bn": 1455.1804393586756,
+    "net_bills_bn": -74.21907182518473,
+    "private_net_bills_bn": -38.982782989800114,
+    "interest_bn": 748.3153221509519,
+    "bill_share": -0.0537444953711819,
+    "reserves_end_bn": 3356.457677299013,
+    "reserves_min_bn": 2907.4421458338065,
+    "end": "2027-11-10"
+   },
+   "total_24m": {
+    "op_flow_bn": -4821.799319102312,
+    "net_coupons_bn": 2773.971619475649,
+    "net_bills_bn": 707.071878604349,
+    "private_net_bills_bn": 741.8623571474259,
+    "interest_bn": 1598.688802122527,
+    "bill_share": 0.20312066740744295,
+    "reserves_end_bn": 3224.7535207727537,
+    "reserves_min_bn": 2907.4421458338065,
+    "end": "2028-11-07"
+   },
+   "total_path": {
+    "op_flow_bn": -8306.500872978864,
+    "net_coupons_bn": 5517.351825164731,
+    "net_bills_bn": 1007.2861150173953,
+    "private_net_bills_bn": 1042.0765935604722,
+    "interest_bn": 2740.771962763942,
+    "bill_share": 0.15438191731896747,
+    "reserves_end_bn": 3067.3415600232734,
+    "reserves_min_bn": 2907.4421458338065,
+    "end": "2029-12-31"
+   }
+  }
+ }
+}

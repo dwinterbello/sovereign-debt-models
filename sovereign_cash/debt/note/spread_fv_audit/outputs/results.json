@@ -1,0 +1,435 @@
+{
+ "specs": {
+  "preferred: int/rev gap + primary gap": {
+   "r2": 0.746,
+   "aic": 2708.8,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     79.9,
+     4.0,
+     155.8
+    ],
+    "fr_2027": [
+     85.0,
+     9.0,
+     161.0
+    ],
+    "it_2026": [
+     116.5,
+     36.8,
+     196.2
+    ],
+    "it_2027": [
+     116.6,
+     36.6,
+     196.6
+    ],
+    "es_2026": [
+     79.0,
+     2.7,
+     155.2
+    ],
+    "es_2027": [
+     75.8,
+     -0.5,
+     152.2
+    ]
+   }
+  },
+  "debt/GDP gap + primary gap": {
+   "r2": 0.625,
+   "aic": 2804.6,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     91.7,
+     -1.2,
+     184.6
+    ],
+    "fr_2027": [
+     92.1,
+     -0.7,
+     185.0
+    ],
+    "it_2026": [
+     78.5,
+     -16.5,
+     173.6
+    ],
+    "it_2027": [
+     74.5,
+     -20.4,
+     169.5
+    ],
+    "es_2026": [
+     59.9,
+     -32.4,
+     152.1
+    ],
+    "es_2027": [
+     52.1,
+     -40.2,
+     144.4
+    ]
+   }
+  },
+  "int/rev gap + own primary": {
+   "r2": 0.736,
+   "aic": 2718.5,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     80.4,
+     3.0,
+     157.9
+    ],
+    "fr_2027": [
+     86.3,
+     8.8,
+     163.9
+    ],
+    "it_2026": [
+     126.2,
+     45.0,
+     207.4
+    ],
+    "it_2027": [
+     128.1,
+     46.7,
+     209.6
+    ],
+    "es_2026": [
+     85.6,
+     7.9,
+     163.3
+    ],
+    "es_2027": [
+     85.2,
+     7.5,
+     163.0
+    ]
+   }
+  },
+  "int/rev gap + own fiscal gap": {
+   "r2": 0.748,
+   "aic": 2707.5,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     90.8,
+     14.9,
+     166.6
+    ],
+    "fr_2027": [
+     95.7,
+     19.8,
+     171.6
+    ],
+    "it_2026": [
+     141.1,
+     61.7,
+     220.5
+    ],
+    "it_2027": [
+     142.9,
+     63.3,
+     222.5
+    ],
+    "es_2026": [
+     89.3,
+     13.3,
+     165.3
+    ],
+    "es_2027": [
+     90.5,
+     14.5,
+     166.5
+    ]
+   }
+  },
+  "int/rev gap + fiscal gap by regime": {
+   "r2": 0.762,
+   "aic": 2701.1,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     73.0,
+     -2.6,
+     148.5
+    ],
+    "fr_2027": [
+     78.0,
+     2.4,
+     153.6
+    ],
+    "it_2026": [
+     131.0,
+     52.9,
+     209.1
+    ],
+    "it_2027": [
+     133.3,
+     54.9,
+     211.6
+    ],
+    "es_2026": [
+     87.8,
+     13.4,
+     162.3
+    ],
+    "es_2027": [
+     88.6,
+     14.1,
+     163.1
+    ]
+   }
+  },
+  "int/rev gap + own primary + debt>90 spline": {
+   "r2": 0.746,
+   "aic": 2719.3,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     83.6,
+     4.3,
+     162.9
+    ],
+    "fr_2027": [
+     89.6,
+     10.3,
+     169.0
+    ],
+    "it_2026": [
+     126.8,
+     44.9,
+     208.6
+    ],
+    "it_2027": [
+     128.7,
+     46.6,
+     210.7
+    ],
+    "es_2026": [
+     82.9,
+     3.6,
+     162.3
+    ],
+    "es_2027": [
+     82.1,
+     2.3,
+     161.9
+    ]
+   }
+  },
+  "lagged: int/rev gap(t-1) + primary gap(t-1)": {
+   "r2": 0.676,
+   "aic": 2768.8,
+   "n": 246,
+   "fair_tpi_pricing": {
+    "fr_2026": [
+     81.5,
+     -4.2,
+     167.2
+    ],
+    "fr_2027": [
+     78.1,
+     -7.6,
+     163.8
+    ],
+    "it_2026": [
+     91.1,
+     2.2,
+     180.0
+    ],
+    "it_2027": [
+     84.8,
+     -5.4,
+     174.9
+    ],
+    "es_2026": [
+     68.0,
+     -18.1,
+     154.0
+    ],
+    "es_2027": [
+     60.0,
+     -26.1,
+     146.2
+    ]
+   }
+  }
+ },
+ "inputs": {
+  "last_month": "2026-10",
+  "n_obs": 246
+ },
+ "preferred": {
+  "slope_int_rev_bp_per_pp_2022_26": 15.34,
+  "slope_primary_bp_per_pp": -4.96,
+  "fr_2027_crisis_pricing_2010_12": [
+   303.6,
+   226.6,
+   380.7
+  ],
+  "fr_2030_tpi_pricing": [
+   101.8,
+   25.2,
+   178.4
+  ],
+  "fr_2030_tpi_pricing_plan_primary": [
+   91.4,
+   14.8,
+   168.0
+  ],
+  "it_2027_crisis_pricing_2010_12": [
+   517.6,
+   435.1,
+   600.1
+  ],
+  "it_2030_tpi_pricing": [
+   121.2,
+   40.9,
+   201.4
+  ],
+  "it_2030_tpi_pricing_plan_primary": [
+   117.2,
+   36.8,
+   197.6
+  ],
+  "fr_2027_crisis_pricing_core_sample": [
+   135.4,
+   114.5,
+   156.3
+  ]
+ },
+ "scenario_equilibrium_change_bp": {
+  "rates +75bp": {
+   "fr": 4.0,
+   "it": 6.9,
+   "es": 0.2
+  },
+  "recession: nominal GDP -4%": {
+   "fr": 5.1,
+   "it": 4.2,
+   "es": 5.4
+  },
+  "recession with rates -75bp": {
+   "fr": 1.3,
+   "it": -2.7,
+   "es": 5.0
+  },
+  "repression: +2pp inflation, +100bp": {
+   "fr": 2.6,
+   "it": 5.0,
+   "es": -1.0
+  }
+ },
+ "cross_section_2025": {
+  "at": {
+   "actual": 38.2,
+   "fair": 57.4
+  },
+  "be": {
+   "actual": 57.5,
+   "fair": 82.4
+  },
+  "es": {
+   "actual": 60.9,
+   "fair": 82.1
+  },
+  "fi": {
+   "actual": 40.1,
+   "fair": 52.9
+  },
+  "fr": {
+   "actual": 75.7,
+   "fair": 75.3
+  },
+  "ie": {
+   "actual": 29.0,
+   "fair": 16.9
+  },
+  "it": {
+   "actual": 98.0,
+   "fair": 114.2
+  },
+  "nl": {
+   "actual": 20.5,
+   "fair": 25.4
+  },
+  "pt": {
+   "actual": 47.2,
+   "fair": 54.2
+  }
+ },
+ "post2013_year_effects": {
+  "d_ir": 23.12,
+  "se": 2.84,
+  "r2": 0.701
+ },
+ "leave_one_out_slope_2022_26": {
+  "drop_fr": 15.2,
+  "drop_it": 11.71,
+  "drop_es": 15.95,
+  "drop_be": 15.4,
+  "drop_nl": 15.41,
+  "drop_at": 15.39,
+  "drop_pt": 14.9,
+  "drop_ie": 16.36,
+  "drop_fi": 15.61
+ },
+ "country_clustered_se_slope_2022_26": 1.66,
+ "residual_ar1_by_country": {
+  "at": 0.27,
+  "be": 0.33,
+  "es": 0.56,
+  "fi": 0.72,
+  "fr": 0.54,
+  "ie": -0.31,
+  "it": 0.29,
+  "nl": 0.66,
+  "pt": 0.68
+ },
+ "oat_bund_decomposition_bp": {
+  "now": 147.5,
+  "asof": "2026-11-13",
+  "fiscal_equilibrium_2026_range_across_int_rev_specs": [
+   73,
+   91
+  ],
+  "fiscal_equilibrium_2030_preferred": 101.8,
+  "euro_area_common_move_mean_7_since_jan_aug": 9.1,
+  "euro_area_moves_since_jan_aug": {
+   "at": -0.1,
+   "be": 39.6,
+   "es": 19.8,
+   "fi": 2.3,
+   "ie": -8.7,
+   "nl": -0.1,
+   "pt": 11.2
+  },
+  "euro_area_common_move_median_7": 2.3,
+  "france_specific_premium": [
+   37,
+   65
+  ],
+  "note": "premium = now - fiscal equilibrium (highest: 2030 path; lowest: 2026 across int/rev specs) - euro-area common move (mean move since Jan-Aug of AT BE ES FI IE NL PT); a back-of-envelope split, not a regression output"
+ },
+ "market_implied_crisis_probability": {
+  "range": [
+   0.18,
+   0.28
+  ],
+  "crisis_pricing_bp": 303.6,
+  "equilibria_bp": [
+   73,
+   102
+  ],
+  "range_core_sample_crisis": [
+   1.09,
+   1.05
+  ],
+  "note": "illustrative two-state mixture, after removing the euro-area common move"
+ }
+}

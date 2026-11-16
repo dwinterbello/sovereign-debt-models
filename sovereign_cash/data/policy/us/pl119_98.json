@@ -1,0 +1,9 @@
+{
+ "event": "Public Law 119-98 (Secure America Act), enacted 10 June 2026",
+ "source": "CBO, Estimated Budgetary Effects of S. 2 / Amendment 5453, 10 June 2026; direct (mandatory) outlays only — CBO did not score discretionary appropriation effects",
+ "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2",
+ "unit": "USD million, fiscal years; deficit increase (+)",
+ "years": [2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035],
+ "outlays": [8817, 15482, 17913, 20038, 5416, 1809, 48, 18, 4, 0],
+ "note": "Front-loaded DHS / CBP / ICE direct appropriations available through FY2029. No revenue effects. Added on top of P.L. 119-21."
+}

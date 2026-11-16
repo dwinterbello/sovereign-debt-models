@@ -1,0 +1,282 @@
+{
+  "note": "OBR EFO October 2026 category levels and determinants for UK cash bottom-up macro. Years are fiscal-year starts (2024 = FY 2024-25). Elasticities from the March 2025 ready reckoner. Receipt/spend category heads still March where October table not yet re-parsed; CGNCR ex NR, PSNB, debt interest, determinants and aggregates from October EFO / Budget Annex A.",
+  "vintage": "OBR EFO October 2026",
+  "vintage_date": "2026-10-28",
+  "source": "budget_compare.json after.obr + Budget 2026 Annex A; category tax heads pending full obr_lines October parse",
+  "bottom_up_macro": {
+    "ship": true,
+    "locked": "2026-10-20e",
+    "spec": {
+      "welfare_cpi": 1.5,
+      "rdel_cpi": 0.0,
+      "rdel_gdp": 0.25,
+      "nontax_gdp": 0.0,
+      "other_tax_retail": 0.75,
+      "other_tax_equity": 0.7,
+      "cap_retail": 0.0,
+      "cap_gdp": 0.2,
+      "soft_pin_alpha": 0.12,
+      "resid_sa3": 0.0,
+      "fin_recv_pay": "grow_retail",
+      "fin_recv_pay_elas": 0.0,
+      "fin_gilt_adj": "sa3",
+      "fin_other_fin": "sa3_add_br",
+      "fin_other_fin_br": 2.0,
+      "fin_acq_sec": "trail12",
+      "fin_apf_xfer": "sa3",
+      "fin_net_lend": "sa3",
+      "fin_resid_gap": "sa3",
+      "rr_shock_fy": "2025-26",
+      "share_year": 2024
+    },
+    "pre_mean_mae": {
+      "bottom_up": 8.208,
+      "production": 9.246,
+      "edge": 0.1123,
+      "by_h": {
+        "1": 3.553,
+        "3": 6.369,
+        "6": 9.612,
+        "12": 13.296
+      },
+      "prod_by_h": {
+        "1": 4.053,
+        "3": 7.211,
+        "6": 12.016,
+        "12": 13.706
+      },
+      "worse_horizons": []
+    },
+    "oos_mean_mae": {
+      "bottom_up": 11.441,
+      "production": 19.134,
+      "by_h": {
+        "1": 5.507,
+        "3": 10.711,
+        "6": 13.714,
+        "12": 15.833
+      }
+    },
+    "residual_share_pre": 0.0691,
+    "before": {
+      "locked": "2026-10-20d",
+      "pre_mean_mae": {
+        "bottom_up": 8.438,
+        "production": 9.246,
+        "edge": 0.0874
+      },
+      "oos_mean_mae": {
+        "bottom_up": 11.605,
+        "production": 19.134
+      },
+      "spec": {
+        "soft_pin_alpha": 0.0,
+        "note": "\u03b1=0 among clearers; worse at h=12"
+      }
+    },
+    "category_drivers": {
+      "it": "Earnings level (AWE YoY) | RR PAYE: 1.13\u00d7AWE YoY",
+      "nics": "Earnings level (AWE YoY) | RR NICs: 1.53\u00d7AWE YoY",
+      "vat": "Nominal consumption (retail YoY proxy) | RR VAT: 0.75\u00d7retail YoY",
+      "ct": "Non-oil PNFC profits (GVA YoY proxy) | RR onshore CT: 0.67\u00d7GVA YoY",
+      "other_tax": "Retail YoY + equity YoY (FRED) | 0.75\u00d7retail + 0.7\u00d7equity YoY",
+      "nontax": "None (PRE-gated GVA/BR elas\u21920) | calendar-month only \u2014 GVA/Bank-Rate overlays lose OOS among PRE-clearers",
+      "welfare": "CPI YoY (benefits / triple-lock) | 1.5\u00d7CPI YoY (PRE-tuned; RR Q3 CPI + triple-lock region)",
+      "rdel_proxy": "GVA YoY | 0.25\u00d7GVA YoY (PRE-gated; CPI elas loses OOS)",
+      "interest": "Bank Rate \u0394pp + 10y gilt \u0394pp (RR triangle) | gilt lag0=0.014/lag1=0.026; BR lag0=0.070 \u00d7\u0394pp on DI level/12",
+      "cap": "GVA YoY | 0.2\u00d7GVA YoY (PRE-gated; calendar/retail lose OOS)",
+      "recv_pay": "Retail sales YoY (activity \u2192 receivable levels) | calendar \u00d7 0.0\u00d7retail YoY (PRE-gated vs sa3)",
+      "gilt_adj": "None (RR DI / gilt \u0394pp overlays lose headline PRE) | seasonal_add3 (resid_sa3=0.0)",
+      "other_fin": "Bank Rate \u0394pp (additive on sa3) | sa3 + 2.0\u00d7BR \u0394pp/12 (PRE-gated; tiny cat edge, cuts OOS)",
+      "acq_sec": "None (level noisy; equity grow loses vs trail12 OOS) | trailing-12 mean (PRE-gated vs sa3)",
+      "apf_xfer": "None (zero in PRE; QT pace raises OOS) | seasonal_add3 (resid_sa3=0.0)",
+      "net_lend": "None (CPI/GDP add raises OOS) | seasonal_add3 (resid_sa3=0.0)",
+      "resid_gap": "None (unmapped perimeter) | seasonal_add3 \u2014 soft-pin \u03b1=0.12 to remit CGNCR"
+    },
+    "note": "SHIP 2026-10-20e: soft_pin_alpha 0\u21920.12 on PRE (edge 8.7%\u219211.2%, worse=[]). Category\u00d7RR path unchanged; remit vintage soft-pulls remaining FY months."
+  },
+  "categories_bn": {
+    "income_tax_bn": {
+      "2024": 305.9,
+      "2025": 331.4,
+      "2026": 359.6,
+      "2027": 384.6,
+      "2028": 395.6,
+      "2029": 413.8,
+      "2030": 430.8
+    },
+    "nics_bn": {
+      "2024": 171.4,
+      "2025": 204.0,
+      "2026": 211.6,
+      "2027": 218.9,
+      "2028": 226.5,
+      "2029": 237.6,
+      "2030": 245.8
+    },
+    "vat_bn": {
+      "2024": 173.3,
+      "2025": 180.9,
+      "2026": 188.7,
+      "2027": 197.8,
+      "2028": 205.8,
+      "2029": 214.7,
+      "2030": 223.8
+    },
+    "corp_tax_bn": {
+      "2024": 93.2,
+      "2025": 98.8,
+      "2026": 102.5,
+      "2027": 109.1,
+      "2028": 113.4,
+      "2029": 117.8,
+      "2030": 123.2
+    },
+    "welfare_bn": {
+      "2024": 314.8,
+      "2025": 332.9,
+      "2026": 352.8,
+      "2027": 363.1,
+      "2028": 373.8,
+      "2029": 389.9,
+      "2030": 406.9
+    },
+    "rdel_bn": {
+      "2024": 493.8,
+      "2025": 522.9,
+      "2026": 548.2,
+      "2027": 563.7,
+      "2028": 581.8,
+      "2029": 594.2,
+      "2030": 614.2
+    },
+    "debt_interest_bn": {
+      "2025": 108.7,
+      "2026": 123.9,
+      "2027": 134.0,
+      "2028": 139.0,
+      "2029": 147.4,
+      "2030": 149.6,
+      "2024": 105.7
+    },
+    "fin_transactions_bn": {
+      "2024": -79.9,
+      "2025": -24.7,
+      "2026": -0.7,
+      "2027": 45.2,
+      "2028": 54.0,
+      "2029": 30.6,
+      "2030": 30.7
+    },
+    "cgncr_ex_nr_bn": {
+      "2025": 135.9,
+      "2026": 144.1,
+      "2027": 146.1,
+      "2028": 149.8,
+      "2029": 83.6,
+      "2030": 114.8,
+      "2024": 180.5
+    },
+    "receipts_current_receipts": {
+      "2025": 1231.0,
+      "2026": 1316.0,
+      "2027": 1392.0,
+      "2028": 1449.0,
+      "2029": 1513.0,
+      "2030": 1571.0,
+      "2024": 1139.0
+    }
+  },
+  "determinants": {
+    "wages_pct": {
+      "2024": 7.1,
+      "2025": 6.1,
+      "2026": 3.2,
+      "2027": 2.9,
+      "2028": 2.8,
+      "2029": 2.8,
+      "2030": 2.9
+    },
+    "awe_pct": {
+      "2025": 4.1,
+      "2026": 3.7,
+      "2027": 3.0,
+      "2028": 2.2,
+      "2029": 2.3,
+      "2030": 2.5,
+      "2024": 5.6
+    },
+    "cpi_pct": {
+      "2025": 3.4,
+      "2026": 3.1,
+      "2027": 3.4,
+      "2028": 2.1,
+      "2029": 2.1,
+      "2030": 2.0,
+      "2024": 2.4
+    },
+    "rpi_pct": {
+      "2024": 3.3,
+      "2025": 4.2,
+      "2026": 2.9,
+      "2027": 2.9,
+      "2028": 2.8,
+      "2029": 2.9,
+      "2030": 2.1
+    },
+    "bank_rate_pct": {
+      "2025": 4.0,
+      "2026": 3.9,
+      "2027": 4.8,
+      "2028": 4.8,
+      "2029": 4.7,
+      "2030": 4.7,
+      "2024": 4.9
+    },
+    "gilt_rate_pct": {
+      "2025": 4.4,
+      "2026": 5.1,
+      "2027": 5.4,
+      "2028": 5.6,
+      "2029": 5.7,
+      "2030": 5.9,
+      "2024": 4.3
+    },
+    "determinants_nominal_gdp": {
+      "2024": 5.2,
+      "2025": 4.1,
+      "2026": 3.6,
+      "2027": 3.6,
+      "2028": 3.5,
+      "2029": 3.4,
+      "2030": 3.6
+    },
+    "determinants_consumer_spending": {
+      "2024": 2.8,
+      "2025": 4.8,
+      "2026": 3.1,
+      "2027": 3.5,
+      "2028": 3.8,
+      "2029": 3.9,
+      "2030": 3.9
+    },
+    "determinants_non_oil_pnfc_profits": {
+      "2024": -0.5,
+      "2025": 1.0,
+      "2026": 3.3,
+      "2027": 4.0,
+      "2028": 4.0,
+      "2029": 4.0,
+      "2030": 4.0
+    },
+    "determinants_employment_million": {
+      "2024": 33.8,
+      "2025": 34.2,
+      "2026": 34.2,
+      "2027": 34.5,
+      "2028": 34.8,
+      "2029": 35.1,
+      "2030": 35.3
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "ship": false,
+  "ship_reason": "PRE anchored mean MAE bottom-up 10.567 does not beat production 10.045 by ≥5%",
+  "edge": 0.05,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "production_model": "seas_k5_a0.5_mean",
+  "allocation_method": "uniform",
+  "component_params": {
+    "nbr_primary": {
+      "name": "smly",
+      "k": 1,
+      "a": 0.0,
+      "f": "mean"
+    },
+    "nbr_net_lending": {
+      "name": "seas_k5_a0_median",
+      "k": 5,
+      "a": 0.0,
+      "f": "median"
+    },
+    "nbr_interest": {
+      "name": "seas_k3_a0.5_mean",
+      "k": 3,
+      "a": 0.5,
+      "f": "mean"
+    }
+  },
+  "component_mae_pre": {
+    "nbr_primary": {
+      "smly": 6.195,
+      "seas_k5_a0.5_mean": 6.414,
+      "chosen": 6.195,
+      "chosen_name": "smly"
+    },
+    "nbr_net_lending": {
+      "smly": 8.829,
+      "seas_k5_a0.5_mean": 8.212,
+      "chosen": 6.933,
+      "chosen_name": "seas_k5_a0_median"
+    },
+    "nbr_interest": {
+      "smly": 1.82,
+      "seas_k5_a0.5_mean": 1.833,
+      "chosen": 1.645,
+      "chosen_name": "seas_k3_a0.5_mean"
+    }
+  },
+  "identity_resid_bn": 0.001,
+  "pre_unanchored": {
+    "1": {
+      "bottom_up": 10.135,
+      "production": 11.301,
+      "n": 96
+    },
+    "3": {
+      "bottom_up": 10.128,
+      "production": 11.096,
+      "n": 96
+    },
+    "6": {
+      "bottom_up": 10.111,
+      "production": 11.268,
+      "n": 96
+    },
+    "12": {
+      "bottom_up": 10.043,
+      "production": 11.445,
+      "n": 96
+    }
+  },
+  "oos_unanchored": {
+    "1": {
+      "bottom_up": 14.62,
+      "production": 13.914,
+      "n": 58
+    },
+    "3": {
+      "bottom_up": 14.535,
+      "production": 14.131,
+      "n": 58
+    },
+    "6": {
+      "bottom_up": 14.521,
+      "production": 14.323,
+      "n": 58
+    },
+    "12": {
+      "bottom_up": 14.602,
+      "production": 15.576,
+      "n": 58
+    }
+  },
+  "pre_anchored": {
+    "1": {
+      "bottom_up": 8.256,
+      "production": 8.94,
+      "n": 31
+    },
+    "3": {
+      "bottom_up": 10.916,
+      "production": 9.637,
+      "n": 31
+    },
+    "6": {
+      "bottom_up": 12.529,
+      "production": 11.557,
+      "n": 7
+    }
+  },
+  "oos_anchored": {
+    "1": {
+      "bottom_up": 12.96,
+      "production": 13.536,
+      "n": 16
+    },
+    "3": {
+      "bottom_up": 14.635,
+      "production": 10.338,
+      "n": 16
+    },
+    "6": {
+      "bottom_up": 19.31,
+      "production": 14.916,
+      "n": 4
+    }
+  },
+  "pre_mean_mae_unanchored": {
+    "bottom_up": 10.104,
+    "production": 11.277
+  },
+  "oos_mean_mae_unanchored": {
+    "bottom_up": 14.57,
+    "production": 14.486
+  },
+  "pre_mean_mae_anchored": {
+    "bottom_up": 10.567,
+    "production": 10.045
+  },
+  "oos_mean_mae_anchored": {
+    "bottom_up": 15.635,
+    "production": 12.93
+  },
+  "rejects": [
+    "same seasonal params on all three components: identical to headline seasonal (no gain)",
+    "interest prior-year annual pin × seasonal: PRE unanchored 10.31 vs plain 10.10",
+    "RG-anchored bottom-up shape (uniform): PRE mean loses to production anchored shape",
+    "monthly MoM/YoY SARIMAX on NBR: already rejected repo-wide for SE-class seasonals"
+  ],
+  "authority_series": [
+    {
+      "name": "Riksgälden CH1089 Primärt saldo / Nettoutlåning / Räntor",
+      "use": "bottom-up component history",
+      "path": "data/se/nbr_monthly.csv"
+    },
+    {
+      "name": "Riksgälden Statsupplåning annual budget balance / NBR",
+      "use": "live-path annual pin (unchanged when NO-SHIP)",
+      "years": {
+        "2025": {
+          "bn": -103.0,
+          "vintage": "Statsupplåning 2025:2 (last outcome 2025-10)"
+        },
+        "2026": {
+          "bn": -196.0,
+          "vintage": "Statsupplåning 2026:1 (2026-05-28; last outcome 2026-04)"
+        },
+        "2027": {
+          "bn": -208.0,
+          "vintage": "Statsupplåning 2026:1 (2026-05-28)"
+        }
+      }
+    },
+    {
+      "name": "Riksgälden monthly outcome forecast (MFN press releases)",
+      "use": "RG rest-of-year total for anchored PRE gate"
+    },
+    {
+      "name": "Riksgälden Statsupplåning borrowing plan (SGB / bills / liq)",
+      "use": "financing path only (unchanged)"
+    }
+  ],
+  "note": "Unanchored bottom-up beats unanchored production on PRE (~10% relative) via smly primary + median lending + level-shifted interest; the live path is RG-anchored and that gate fails, so the live cash-requirement path is unchanged."
+}

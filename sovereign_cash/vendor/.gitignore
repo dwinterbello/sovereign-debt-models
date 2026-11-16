@@ -1,0 +1,5 @@
+# Large binaries fetched on build (web.pages._ensure_vendor_assets). Keep fonts tracked.
+katex.min.js
+katex.min.css
+plotly.min.js
+*.ttf

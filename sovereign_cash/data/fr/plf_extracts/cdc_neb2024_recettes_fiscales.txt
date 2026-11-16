@@ -1,0 +1,1606 @@
+FINANCES ET COMPTES PUBLICS
+
+## ANALYSE DE L’EXÉCUTION BUDGÉTAIRE 2024
+
+### Recettes fiscales de l’État
+
+Avril 2025
+
+##### Sommaire
+
+SYNTHÈSE ... 5 
+RÉCAPITULATIF DES RECOMMANDATIONS ... 9 
+INTRODUCTION ... 11 
+CHAPITRE I UNE LÉGÈRE AUGMENTATION DES ENCAISSEMENTS EN 2024 
+PORTÉE PAR DES HAUSSES D’IMPÔT ... 15 
+I - UNE DIMINUTION SPONTANÉE DES RECETTES FISCALES NETTES DE 0,2 % 
+EN 2024, EN DÉPIT D’UNE HAUSSE DU PIB EN VALEUR DE 3,5 % ... 18 
+II - UNE TVA TOUJOURS AFFAIBLIE PAR L’AFFECTATION À DES TIERS ... 23 
+III - DES HAUSSES D’IMPÔTS QUI JOUENT POSITIVEMENT SUR LES RECETTES 
+FISCALES NETTES ... 26 
+CHAPITRE II DES RECETTES FISCALES NETTES DE NOUVEAU TRÈS 
+ÉLOIGNÉES DES PRÉVISIONS ... 31 
+I - UN EFFET DE BASE DÉFAVORABLE ASSOCIÉ À L’ANNÉE 2023 DU FAIT DE 
+RÉSULTATS PLUS DÉGRADÉS QU’ATTENDU LORS DE LA PRÉPARATION 
+DE LA LOI DE FINANCES POUR 2024 ... 34 
+II - UN ÉCART IMPORTANT EN 2024, EN RAISON D’UNE ÉVOLUTION SPONTANÉE 
+PLUS FAIBLE QUE PRÉVU ET EN DÉPIT DE MESURES DE HAUSSES D’IMPÔT 
+DÉCIDÉES APRÈS LE DÉPÔT DU PLF ... 35 
+A - Une évolution spontanée bien plus faible que prévu ... 37 
+B - Des mesures de hausses d’impôt plus fortes qu’initialement envisagé ... 39 
+III - UN ÉCART À LA PRÉVISION DONT L’ORIGINE PRINCIPALE N’EST PAS 
+LA DÉGRADATION DE LA CONJONCTURE, MAIS UNE ANTICIPATION 
+INCORRECTE DU COMPORTEMENT DES ENTREPRISES ET DES MÉNAGES ... 41 
+ANNEXES ... 45 
+
+##### Synthèse
+
+Des recettes en légère augmentation après une nette baisse en 2023 Malgré une croissance économique positive en volume (+ 1,1 %) et en valeur (+ 3,5 %), les recettes fiscales nettes de l’État n’enregistrent, en 2024, qu’une légère augmentation par rapport à 2023 (+ 2,8 Md€, soit + 0,9 %), qui les porte à 325,7 Md€. Cette légère hausse, qui fait suite à une nette baisse en 2023 (- 7,4 Md€, soit - 2,2 %) est nourrie par l’évolution positive des recettes d’impôt sur les sociétés (+ 0,6 Md€, soit + 1,1 %), de TVA (+ 1,6 Md€, soit + 1,7 %) et des autres recettes fiscales (+ 2 Md€, soit + 3,1 %). En revanche, les recettes d’impôt sur le revenu (- 0,6 Md€, soit - 0,7 %) et de la fraction « produits énergétiques » de l’accise sur les énergies (- 0,8 Md€, soit - 4,8 %) sont en baisse. La relative atonie des recettes fiscales résulte notamment de la modification, à l’œuvre depuis plusieurs exercices, de la structure des recettes fiscales de l’État et du poids croissant d’impositions volatiles. En particulier, la TVA, principal impôt de rendement corrélé à la croissance économique, fait l’objet, depuis 2019, de transferts croissants aux collectivités territoriales et à la Sécurité sociale. Depuis 2022, une fraction de cette imposition, d’un montant de 4 Md€ en 2024, est venue compenser, au bénéfice du compte de concours financier (CCF) « avances à l’audiovisuel public », les pertes de recettes résultant de la suppression de la contribution à l’audiovisuel public. En conséquence de ces transferts, la TVA ne représente plus que 30 % des recettes fiscales nettes en 2024, contre 53 % en 2018, l’impôt sur les sociétés (18 % des recettes fiscales nettes de l’État en 2024, contre 9 % en 2018) et les autres recettes fiscales (21 % des recettes fiscales nettes de l’État en 2024, contre 8 % en 2018) suivant, à l’inverse, une trajectoire ascendante.
+
+L’évolution spontanée des recettes fiscales nettes est négative pour la deuxième année consécutive Les recettes fiscales nettes reculent, à législation inchangée, de 0,2 % en 2024, après avoir connu un repli de 0,7 % en 2023 et une croissance exceptionnelle de +11,5 % en 2022 et +17,8 % en 2021. L’évolution spontanée des recettes fiscales nettes s’est ainsi avérée nettement inférieure à la hausse du PIB en valeur (+3,5 %). Après avoir atteint des niveaux très élevés en 2021 (2,2) et en 2022 (2,0), puis une valeur négative en 2023 (-0,1), l’élasticité des recettes fiscales nettes au PIB se stabilise à -0,1, très en deçà de son niveau de long terme. Le repli spontané des recettes fiscales nettes résulte notamment de celui de l’impôt sur le revenu (-0,6%) et de l’impôt sur les sociétés (-0,2 %). La TVA nette a spontanément peu progressé (0,9 %), du fait d’une hausse modérée de la demande intérieure, d’une désinflation rapide et d’une hausse des remboursements de crédits de TVA.
+
+Des hausses d’impôt dont l’impact vient compenser la diminution spontanée des recettes En nette rupture avec la tendance des années 2018-2023, ce sont des hausses d’impôts qui tirent les recettes fiscales vers le haut. Les mesures nouvelles, c’est-à-dire les modifications des règles d’assiette ou de calcul de l’impôt, augmentent ces dernières à hauteur de 6,4 Md€ en 2024, au-delà de ce qui était prévu en loi de finances, tandis que les mesures de transfert – qui se traduisent par le déplacement des recettes d’un impôt (en totalité ou pour une fraction) depuis le budget général de l’État vers un autre affectataire – les diminuent de 2,8 Md€ par rapport à 2023. Ainsi, les mesures fiscales ont un impact global positif sur les recettes fiscales de l’exercice 2024 (+ 3,6 Md€ par rapport à 2023). Cet impact est le reflet de mesures diverses, jouant en sens contraires. La sortie progressive du bouclier tarifaire sur l’électricité et les gaz naturels, qui s’est traduite par un relèvement des tarifs normaux d’imposition des fractions correspondantes de l’accise sur les énergies, engendre des recettes supplémentaires s’élevant respectivement à 4,6 Md€ et à 1,3 Md€ et par rapport à 2023. En sens inverse, la poursuite du processus de suppression de la cotisation sur la valeur ajoutée des entreprises (CVAE), rééchelonné sur quatre ans 1 – alors que la loi de finances pour 2023 avait prévu son achèvement en 2024 – se traduit par des baisses graduelles de taux d’imposition jusqu’en 2027, qui entraînent une baisse des recettes nettes de 0,8 Md€, après prise en compte de l’effet retour sur l’IS. Par ailleurs, alors que la compensation aux collectivités territoriales de la budgétisation au profit de l’État des taxes locales d’électricité avait été versée, en 2023, via le compte d’avances aux collectivités territoriales, l’augmentation, en 2024, des recettes des « autres taxes intérieures », à la suite de la suppression progressive du bouclier tarifaire, a permis d’effectuer cette compensation directement depuis le budget général, l’effet sur les recettes fiscales nettes s’élevant à - 2,4 Md€.
+
+Une exécution très en deçà des prévisions Les recettes fiscales nettes de l’État devaient atteindre 348,5 Md€ selon la loi de finances initiale pour 2024. En exécution, elles s’élèvent à 325,7 Md€. L’écart de - 22,8 Md€ dépasse celui observé en 2023 (- 5,3 Md€). Il s’explique à hauteur de - 9,2 Md€ par des recettes en 2023 moins élevées qu’attendu lors de la préparation de la loi de finances pour 2024 (« effet en base ») et à hauteur de - 13,6 Md€ par des effets supplémentaires observés en 2024. Ceux-ci résultent de la conjugaison, d’une part, d’une croissance spontanée plus faible qu’attendu pour - 19,2 Md€ (l’écart par rapport aux prévisions se concentre sur trois principaux impôts : l’impôt sur les sociétés présente un écart de - 10,2 Md€, l’impôt sur le revenu de - 3,9 Md€ et la TVA de - 2,9 Md€) et d’autre part par des mesures nouvelles, de transfert et de périmètre d’un montant plus élevé qu’initialement envisagé, pour 5,6 Md€.
+
+1 La suppression de cette imposition a été repoussée en dernier lieu à l’horizon 2030 par la loi du 14 février 2025 de finances pour 2025.
+
+SYNTHÈSE
+
+Au total, en 2024, trois effets se sont donc conjugués. Il y a tout d’abord l’héritage des moins-values de recettes fiscales nettes enregistrées en 2023. Ensuite, la croissance du PIB en valeur a été inférieure aux attentes. Cet écart est toutefois resté de faible ampleur et n’a finalement eu qu’un impact limité. Enfin, et surtout, l’anticipation incorrecte des comportements des entreprises et des ménages, ainsi que des phénomènes spécifiques, tenant à la situation particulière de quelques entreprises et à la distribution des revenus imposables des ménages 2, ont conduit à un écart à la prévision très important. ⁂ L’exercice 2024 présente deux traits saillants qui appellent à la vigilance. Le premier tient à la singularité que constitue une atonie des recettes fiscales nettes revenant à l’État, pour la deuxième année consécutive, alors même que le PIB a progressé en volume et en valeur. Cette configuration est rendue possible par le poids des transferts de TVA – dont l’État reçoit, depuis 2023, moins de la moitié des recettes –, alors qu’elle constitue le principal impôt de rendement indexé sur la croissance économique. Ainsi, les mesures de transfert de TVA constituent un facteur de fragilisation des recettes fiscales de l’État. Le second point de vigilance tient à l’écart très important entre l’exécution et les prévisions, le constat étant particulièrement accusé pour l’impôt sur les sociétés, et dans une moindre mesure, pour la TVA et l’impôt sur le revenu. Ces écarts importants, qui font suite à ceux déjà observés en 2023, incitent à renforcer la transparence et la densité de l’information rendue publique après l’adoption des lois de finances. La Cour formule une recommandation en ce sens. Par ailleurs, et compte tenu du défaut d’anticipation, dans les prévisions récentes, du comportement des entreprises, des études rétrospectives pourraient être conduites auprès d’un échantillon d’entre elles afin de mieux comprendre et anticiper leur stratégie d’acompte d’impôt sur les sociétés.
+
+2 En 2023, les revenus imposables ont, dans leur ensemble, évolué plus faiblement que l’inflation. Leur dispersion (mesurée par l’écart type des revenus déclarés) a été plus forte qu’en 2022. Certains revenus ont ainsi progressé bien plus faiblement que l’inflation, ce qui a conduit, en 2024, à des restitutions importantes (hors modulation par le contribuable).
+
+##### Récapitulatif des recommandations
+
+1. (Recommandation nouvelle) : Regrouper l’ensemble des fractions de l’accise sur les 
+énergies au sein d’une seule catégorie d’impôt dans la nomenclature budgétaire (direction 
+du budget, direction générale des finances publiques). 
+2. (Recommandation nouvelle) : Rendre publique, après l’adoption de la loi de finances 
+initiale et de la loi de finances de fin de gestion, la version actualisée du fichier « Évaluation 
+des recettes du budget général » associé au tome 1 de l’annexe Voies et moyens (direction 
+du budget, direction générale du Trésor, direction générale des finances publiques). 
+3. (Recommandation nouvelle) : Conduire une étude rétrospective, éventuellement auprès 
+d’un échantillon d’entreprises, afin de mieux comprendre leur comportement en matière 
+d’ajustement de leurs acomptes d’impôt sur les sociétés (direction générale du Trésor, 
+direction générale des finances publiques). 
+
+##### Introduction
+
+En 2024, les recettes de l’État se sont élevées à 348,9 Md€, dont 325,7 Md€ de recettes fiscales nettes et 23,2 Md€ de recettes non fiscales. Les recettes fiscales nettes résultent de la différence entre les recettes fiscales brutes et les remboursements et dégrèvements d’impôts. En application de la loi organique du 28 décembre 2021 relative à la modernisation de la gestion des finances publiques, seuls les remboursements et dégrèvements d’impôts d’État sont, depuis l’exercice 2023, retirés des recettes brutes, les remboursements et dégrèvements d’impôts locaux (5 Md€ en 2024), étant désormais comptabilisés en dépenses. En 2023, le montant des recettes fiscales brutes s’est élevé à 467,2 Md€ ; celui des remboursements et dégrèvements d’impôts d’État à 141,6 Md€. Cette note analyse uniquement la prévision et l’exécution des recettes fiscales nettes : les remboursements et dégrèvements, portés par la mission budgétaire éponyme, font l’objet d’une note d’analyse spécifique. Par ailleurs, cette note porte sur les recettes fiscales comptabilisées en recettes du budget général de l’État, à l’exclusion de la fraction des recettes fiscales affectée à d’autres administrations publiques (sécurité sociale, collectivités locales, opérateurs de l’État, etc.) ou à d’autres personnes morales publiques ou privées chargées d’une mission de service public. Cela étant, les modifications apportées à la répartition des recettes fiscales sont abordées à travers l’analyse des mesures dites de « transfert ». Elles affectent principalement, en 2024, les recettes de la taxe sur la valeur ajoutée (TVA) et de la fraction « produits énergétiques » de l’accise sur les énergies (anciennement appelée taxe intérieure de consommation sur les produits énergétiques, TICPE). La légère hausse des recettes fiscales nettes au cours de l’exercice 2024 (+2,8 Md€, soit + 0,9 %) résulte de l’incidence globalement positive des mesures nouvelles et de transfert (+ 3,6 Md€), tempérée par une évolution spontanée négative (- 0,8 Md€), après la diminution de cette variable déjà observée en 2023 (- 3,6 Md€). Après un exercice 2023 déjà marqué par un écart négatif significatif entre l’exécution et les prévisions, les recettes fiscales nettes de l’année 2024 se révèlent très nettement inférieures aux prévisions de la loi de finances initiale (LFI) 3. L’écart négatif, qui s’élève à 22,8 Md€, représente 6,5 % des recettes fiscales nettes prévues dans le cadre de la LFI, soit un ratio plus de quatre fois supérieur à celui observé au titre de l’année 2023 (- 1,6 %, soit - 5,3 Md€). En revanche, l’écart avec la prévision figurant dans la loi de finances de fin de gestion (LFG) 4est positif en 2024 (+ 2,4 Md€, soit + 0,7 %), après avoir été négatif en 2023 (- 7,7 Md€, soit 2,3 %).
+
+3 Loi du 29 décembre 2023 de finances pour 2024. 
+4 Loi du 6 décembre 2024 de fin de gestion pour 2024. 
+
+Tableau n° 1 : prévision et exécution des recettes fiscales nettes de l’État en 2024 (en Md€)
+
+| | Exécution 2023 | PLF 2024 | LFI 2024 | Révisé 2024* | LFG 2024 | Exécution 2024 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Impôt net sur le revenu | 88,6 | 94,1 | 93,4 | 88,1 | 88,2 | 88,0 |
+| Impôt net sur les sociétés | 56,8 | 72,2 | 72,0 | 57,7 | 57,7 | 57,4 |
+| Accise sur les | | | | | | |
+| produits | | | | | | |
+| énergétiques (ex | 16,8 | 16,4 | 15,4 | 15,5 | 15,9 | 16,0 |
+| TICPE) | | | | | | |
+| Taxe sur la valeur ajoutée nette | 95,2 | 100,4 | 100,8 | 96,1 | 95,6 | 96,8 |
+| Autres recettes fiscales nettes | 65,5 | 66,3 | 66,9 | 65,1 | 65,9 | 67,5 |
+| Recettes fiscales nettes | 322,9 | 349,4 | 348,5 | 322,5 | 323,3 | 325,7 |
+
+Source : Cour des comptes d’après direction du budget 
+Note de lecture : en application de la loi organique du 28 décembre 2021 relative à la modernisation de la gestion des finances 
+publiques, les recettes fiscales nettes correspondent désormais à la différence entre les recettes fiscales brutes et les 
+remboursements et dégrèvements d’impôts d’État uniquement. Les remboursements et dégrèvements d’impôts locaux sont 
+comptabilisés en dépenses. 
+*Prévisions 2024 retenues par l’administration au moment de la présentation du projet de loi de finances pour 2025. 
+
+INTRODUCTION 13
+
+Graphique n° 1 : ventilation des recettes fiscales nettes en 2024 (en pourcentages)
+
+Source : Cour des comptes d’après direction du budget
+
+27%
+
+17%
+
+5%
+
+30 %
+
+21%
+
+Impôt sur le revenu net Impôt sur les sociétés net Accise sur les produits énergétiques nette Taxe sur la valeur ajoutée nette Autres recettes fiscales nettes
+
+#### Chapitre I
+
+#### Une légère augmentation des encaissements en 2024 portée par des hausses d’impôt
+
+Après une augmentation très marquée en 2021 (+ 39,8 Md€ soit + 15,5 %) et en 2022 (+ 27,5 Md€ soit + 9,3 %), le produit des recettes fiscales nettes a connu une diminution significative en 2023 (- 7,4 Md€, soit - 2,2 %), puis une légère hausse en 2024 (+ 2,8 Md€, soit
+
++ 0,9 %), qui l’a porté à 325,7 Md€.
+
+Graphique n° 2 : recettes fiscales nettes de l’État entre 2004 et 2024 (en Md€)
+
+Source : Cour des comptes d’après direction du budget
+
+Nota bene : le montant des recettes fiscales nettes de 2010 n’inclut pas le rendement de 16,6 Md€ des impôts locaux affectés transitoirement à l’État cette année-là. À compter de 2022 (trait pointillé rouge), les remboursements et dégrèvements d’impôts locaux ne sont plus déduits des recettes fiscales nettes.
+
+Ce léger ressaut est nourri par l’évolution positive des recettes d’impôt sur les sociétés (+0,6 Md€, soit + 1,1 %), de TVA (+ 1,6 Md€, soit 1,7 %) et des autres recettes fiscales (+ 2 Md€, soit + 3,1 %). En revanche, les recettes d’impôt sur le revenu (- 0,6 Md€, soit
+
+269,9
+
+276,9
+
+272,9
+
+272,3
+
+265,1
+
+214,3
+
+237,0
+
+255,0
+
+268,8
+
+284,0
+
+274,3
+
+280,1
+
+284,1
+
+295,6 295,4
+
+281,3
+
+256,0
+
+295,7
+
+330,3
+
+322,9
+
+325,7
+
+190
+
+210
+
+230
+
+250
+
+270
+
+290
+
+310
+
+330
+
+350
+
+2
+
+0
+
+0
+
+4
+
+2
+
+0
+
+0
+
+5
+
+2
+
+0
+
+0
+
+6
+
+2
+
+0
+
+0
+
+7
+
+2
+
+0
+
+0
+
+8
+
+2
+
+0
+
+0
+
+9
+
+2
+
+0
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+2
+
+0
+
+1
+
+2
+
+2
+
+0
+
+1
+
+3
+
+2
+
+0
+
+1
+
+4
+
+2
+
+0
+
+1
+
+5
+
+2
+
+0
+
+1
+
+6
+
+2
+
+0
+
+1
+
+7
+
+2
+
+0
+
+1
+
+8
+
+2
+
+0
+
+1
+
+9
+
+2
+
+0
+
+2
+
+0
+
+2
+
+0
+
+2
+
+1
+
+2
+
+0
+
+2
+
+2
+
+2
+
+0
+
+2
+
+3
+
+2
+
+0
+
+2
+
+4
+
+16 COUR DES COMPTES - 0,7 %) et de la fraction « produits énergétiques » de l’accise sur les énergies (- 0,8 Md€, soit
+
+- 4,8 %) sont en baisse.
+
+Tableau n° 2 : recettes fiscales nettes de l’État (en Md€)
+
+| | | Évolution | Mesures | | Écart 2023- |
+| --- | --- | --- | --- | --- | --- |
+| | Exécution | | nouvelles et | Exécution | |
+| | 2023 | spontanée | de transfert | 2024 | 2024 |
+| Impôt sur le revenu net | 88,6 | - 0,6 | | 0 88,0 | - 0,6 |
+| Impôt sur les sociétés net | 56,8 | - 0,1 | + | 0,7 57,4 | + 0,6 |
+| Fraction nette « énergétiques » (ex-TICPE) de l’accise sur les énergies | produits 16,8 | + 0,1 | - 0,9 | 16,0 | - 0,8 |
+| Taxe sur la valeur ajoutée nette | 95,2 | + 0,9 | + | 0,7 96,8 | + 1,6 |
+| Autres recettes fiscales nettes | 65,5 | - 1,1 | + | 3,1 67,5 | + 2,0 |
+| Recettes fiscales nettes | 322,9 | - 0,8 | + | 3,6 325,7 | + 2,8 |
+
+Source : Cour des comptes d’après documents budgétaires et direction du budget pour l’exercice 2024
+
+L’évolution des recettes fiscales nettes dépend de trois variables :
+
+- l’évolution spontanée, soit l’évolution des recettes fiscales à législation constante, en neutralisant les effets des changements de législation, qui s’élève en l’espèce à - 0,8 Md€ ;
+
+- l’incidence des mesures dites « nouvelles », c’est-à-dire les modifications des règles d’assiette ou de calcul de l’impôt – parmi lesquelles sont distinguées les mesures nouvelles issues de la LFI de l’année n et les mesures nouvelles issues des LFI des années antérieures à l’année n –, qui s’élève en l’espèce à + 6,4 Md€ ;
+
+- l’incidence des mesures de périmètre et de transfert, qui se traduisent par le déplacement des recettes d’un impôt (en totalité ou pour une fraction) depuis le budget général de l’État vers un autre affectataire, ou dans le sens inverse, qui s’élève en l’espèce à - 2,8 Md€.
+
+Graphique n° 3 : évolution des recettes fiscales nettes entre 2023 et 2024 (en Md€)
+
+Source : Cour des comptes d’après direction du budget
+
+I - Une diminution spontanée des recettes fiscales nettes de
+
+0,2 % en 2024, en dépit d’une hausse du PIB en valeur de 3,5 %
+
+Le taux d’évolution spontanée des recettes fiscales nettes de l’État s’établit à - 0,2 % en
+
+2024, après - 0,7 % 5en 2023 et une croissance exceptionnelle de + 11,5 % 6en 2022 et + 17,8 %
+
+en 2021 7.
+
+Après avoir atteint des niveaux très élevés en 2021 (2,2) et en 2022 (2,0), puis une valeur négative en 2023 (-0,1), l’élasticité des recettes fiscales nettes au PIB en valeur se stabilise à -0,1 en 2024, très en deçà de sa moyenne de longue période.
+
+Graphique n° 4 : élasticité au PIB des recettes fiscales nettes entre 2001 et 2024
+
+Note de lecture : l’élasticité très élevée en 2009 et en 2020 ne traduit pas une croissance spontanée des recettes supérieure à celle du PIB mais au contraire une chute de leur rendement plus marquée que la dégradation de la croissance au cours de ces deux années de crise. Le trait gris représente l’élasticité
+
+moyenne sur longue période (1,1).
+
+Source : ministère de l’économie, des finances et de la souveraineté industrielle et numérique, calculs
+
+Cour des comptes
+
+Le repli spontané des recettes fiscales nettes résulte notamment de celui de l’impôt sur le revenu et de l’impôt sur les sociétés, ainsi que de la faible progression spontanée de la TVA
+
+nette.
+
+5 Source : Évaluations des voies et moyens, Tome 1, PLF pour 2025.
+
+6 Source : Évaluations des voies et moyens, Tome 1, PLF pour 2024.
+
+7 Source : Évaluations des voies et moyens, Tome 1, PLF pour 2023.
+
+-2,0 -1,0
+
+0,0
+
+1,0
+
+2,0
+
+3,0
+
+4,0
+
+2
+
+0
+
+0
+
+1
+
+2
+
+0
+
+0
+
+2
+
+2
+
+0
+
+0
+
+3
+
+2
+
+0
+
+0
+
+4
+
+2
+
+0
+
+0
+
+5
+
+2
+
+0
+
+0
+
+6
+
+2
+
+0
+
+0
+
+7
+
+2
+
+0
+
+0
+
+8
+
+2
+
+0
+
+0
+
+9
+
+2
+
+0
+
+1
+
+0
+
+2
+
+0
+
+1
+
+1
+
+2
+
+0
+
+1
+
+2
+
+2
+
+0
+
+1
+
+3
+
+2
+
+0
+
+1
+
+4
+
+2
+
+0
+
+1
+
+5
+
+2
+
+0
+
+1
+
+6
+
+2
+
+0
+
+1
+
+7
+
+2
+
+0
+
+1
+
+8
+
+2
+
+0
+
+1
+
+9
+
+2
+
+0
+
+2
+
+0
+
+2
+
+0
+
+2
+
+1
+
+2
+
+0
+
+2
+
+2
+
+2
+
+0
+
+2
+
+3
+
+2
+
+0
+
+2
+
+4
+
+Données provisoires
+
+Tableau n° 3 : évolution spontanée des recettes fiscales nettes par impôt en 2024 (en Md€ et en %)
+
+En Md€ En %
+
+Impôt sur le revenu -0,6 -0,6
+
+Impôt sur les sociétés -0,1 -0,2
+
+Accise sur les produits énergétiques (ex-TICPE) 0,1 0,3
+
+TVA 0,9 0,9
+
+Autres recettes fiscales nettes -1,1 -1,6
+
+Recettes fiscales nettes -0,8 -0,2
+
+Source : ministère de l’économie, des finances et de la souveraineté industrielle et numérique, calculs Cour des comptes
+
+L’évolution spontanée de l’impôt sur le revenu est négative (-0,6 % en 2024, après +1,1 % 
+en 2023). Elle serait limitée à hauteur de 6,1 Md€ 8 par l’indexation de son barème sur la forte 
+inflation de l’année précédente. Celle-ci a pour objectif de préserver le pouvoir d’achat en 
+maintenant un taux d’imposition identique si les revenus progressent en ligne avec l’inflation 
+hors tabac. La hausse des salaires 9 est toutefois restée inférieure à l’inflation en 2023, ce qui a 
+conduit à une baisse des taux d’imposition et à un moindre solde versé en 2024 au titre des 
+revenus de l’année 2023, dans un contexte de modulation faible par les ménages de leur taux 
+de prélèvement à la source. L’administration signale par ailleurs un recours plus massif à des 
+dispositifs de réduction et crédit d’impôt. À travers l’abaissement des taux de prélèvement lors 
+de leur mise à jour automatique en septembre 2024, le recul du salaire moyen par tête réel en 
+2023 10 a également pesé sur le prélèvement à la source recouvré en 2024 ; celui-ci a également 
+pâti d’une hausse moins forte qu’en 2023 des salaires nominaux en 2024 11. Enfin, les recettes 
+d’impôt sur les plus-values immobilières ont baissé de 1,2 Md€ en 2023 à 0,9 Md€ en 2024, en 
+lien avec la diminution simultanée des prix de l’immobilier et du nombre de transactions. 
+Au total et au-delà de ces aspects techniques, la période récente montre les effets associés 
+à l’indexation d’un prélèvement, supposé être contemporain, sur l’inflation de l’année 
+précédente. Cette indexation retardée a créé un effet d’aubaine pour l’État en 2022, du fait d’une 
+
+8 Source : évaluation préalable des articles du PLF pour 2024. 
+9 Le salaire moyen par tête (SMPT) nominal a augmenté de 4,1 % dans les branches marchandes non agricoles 
+(BMNA) et de 4,1 % dans les administrations publiques (APU) en 2023 (données Insee). 
+10 Le SMPT réel a reculé de 0,8 % dans les BMNA et de 0,7 % dans les APU en 2023 (données Insee). 
+11 Le SMPT nominal a augmenté de 2,8 % dans les BMNA et de 3,8 % dans les APU en 2024 (données Insee). 
+
+20 COUR DES COMPTES forte inflation et d’une faible indexation 12 et à l’inverse en faveur des contribuables en 2024, en raison d’une faible inflation et d’une forte indexation 13.
+
+Schéma n° 1 : schéma simplifié des effets retardés sur l’impôt sur les revenus salariaux payé par les contribuables en 2024
+
+Source : Insee, Cour des comptes 
+À noter : inflation HT : inflation hors tabac ; BMNA : branches marchandes non agricoles ; SMPT : salaire 
+moyen par tête ; APU : administrations publiques. 
+
+Après un fort repli spontané en 2023 (-15,9 %), l’impôt sur les sociétés recule légèrement, hors mesures nouvelles, en 2024 (-0,2 %). Le bénéfice fiscal, en dépit de la dynamique soutenue de l’excédent brut des sociétés non financières 14, avait très peu progressé en 2023 (+0,5 % d’après les dernières estimations 15), amputé par le report des déficits passés, notamment des entreprises énergétiques. Il est prévu en recul en 2024 (-3,9 %), une évolution cette fois-ci cohérente avec la baisse de l’EBE des sociétés non-financières (SNF) 16, du fait notamment de la hausse du coût réel du travail. Dans ce contexte de dégradation de leur situation financière,
+
+12 En 2022, les recettes de l’impôt sur le revenu ont en effet été dynamiques, en raison de la hausse du taux moyen 
+d’imposition du fait de la croissance des revenus moyens réels en 2021. 
+13 Du fait de revenus moyens réels en baisse en 2023, la revalorisation du barème sur l’inflation a entraîné une 
+baisse du taux moyen d’imposition et donc un recul des recettes d’impôt sur le revenu en 2024. 
+14 La hausse de l’excédent brut d’exploitation (EBE) des sociétés non financières est estimée à 14,8 % en 2023. 
+15 L'évolution du bénéfice fiscal entre 2022 et 2023 est estimée à 4,3 % pour les sociétés non financières et -16,3 % 
+pour les sociétés financières. 
+16 Sur la base des comptes trimestriels détaillés publiés par l’Insee le 28 février 2025, l’EBE des SNF a reculé de 
+0,8 % en 2024. 
+
+UNE LÉGÈRE AUGMENTATION DES ENCAISSEMENTS EN 2024 PORTÉE PAR DES HAUSSES D’IMPÔT 21 les entreprises auraient limité les acomptes versés à l’État 17, ce qui a permis de protéger leur trésorerie 18.
+
+La fraction « produits énergétiques » de l’accise sur les énergies (ex-TICPE) progresse spontanément de 0,3 %, en raison de l’effet favorable de la baisse des prix des produits pétroliers 19 sur la consommation en volume de carburants (E10 notamment).
+
+Tableau n° 4 : mises à la consommation de carburant en 2023 et 2024 (en MhL)
+
+2023 2024
+
+Gazole 343,3 333,0
+
+SP 95-198 48,3 50,1
+
+E10 (ex SP95-10) 79,9 88,1
+
+GNR 52,2 53,3
+
+Source : ministère de l’économie, des finances et de la souveraineté industrielle et 
+numérique 
+À noter : SP 95-198 : sans plomb ; E10 : mélange de sans plomb et d’éthanol ; 
+GNR : gazole non-routier. 
+
+La TVA ne progresse que faiblement à législation inchangée en 2024 (+0,9 %). Sous l’effet d’une demande intérieure peu dynamique et d’une désinflation rapide 20, la croissance des emplois taxables a fléchi (+1,9 % en 2024, après +5,5 % en 2023). De surcroît, l’évolution spontanée de la TVA est restée inférieure à l’augmentation de sa base taxable, du fait notamment des remboursements par l’État de crédits de TVA aux entreprises (+1,7 %) 21 qui ont crû plus rapidement que la TVA brute (+1,1%) 22. La forte hausse des recettes de TVA en 2021 et en 2022, dans un contexte de rebond à la fois de la croissance et de l’inflation, a conduit à une augmentation du stock de créances de TVA. Dans un contexte de hausse des charges
+
+17 Le total des acomptes est stable par rapport à 2023, à 63,1 Md€. 
+18 L. Bach, Faibles recettes de l’impôt sur les sociétés : qui aurait pu prédire ?, Institut des politiques publiques, 
+novembre 2024. 
+19 L’indice des prix à la consommation des produits pétroliers a reculé de 4,7 % en moyenne annuelle en 2024. 
+20 L’indice des prix à la consommation a augmenté de 2,0 % en 2024, après 4,9 % en 2023 (donnée Insee). 
+21 Entre 2023 et 2024, les remboursements de crédit de TVA ont crû de 74,0 Md€ à 75,2 Md€ (+1,7%). Cette 
+évolution est très inférieure à celle des demandes de remboursements de crédits de TVA déposées par les 
+entreprises (+ 7,4 % selon les dernières données disponibles), du fait de l’analyse de leur conformité par rapport à 
+la législation fiscale conduite par les services de la DGFiP qui peut conduire à une réduction des montants 
+effectivement remboursés, liés au rejet partiel ou total de certaines demandes ou à un différé de traitement 
+budgétaire. 
+22 Entre 2023 et 2024, les recettes brutes de TVA, tous bénéficiaires confondus (y compris les montants transférés 
+aux collectivités territoriales, à la sécurité sociale et à l’audiovisuel public) ont augmenté de 286 à 289,2 Md€ 
+(+1,1 %). 
+
+22 COUR DES COMPTES d’intérêts des entreprises 23, et au moment-même où les recettes de TVA brutes augmentaient moins fortement du fait du tassement de l’activité, ces créances de TVA ont été mobilisées par les entreprises pour soutenir leur trésorerie, au détriment de celle de l’État. D’après le Gouvernement, des effets de composition entre les trois taux de TVA ont également pu jouer.
+
+Les données qui permettront une analyse précise des effets de structure 24 ne sont pas encore
+
+disponibles.
+
+Enfin, les autres recettes fiscales nettes ont reculé spontanément de 1,6 %. En particulier, les droits de mutation à titre gratuit ont baissé, à législation inchangée, de 0,3 %, après avoir progressé de 14,1 % en 2023. Cette évolution traduit notamment le retour à la normale des droits de succession (-3,9 %). Après le bond observé en 2023 sous le double effet retardé du dynamisme de la valeur du patrimoine immobilier des ménages et de la mortalité observés en
+
+2022, ils ont fléchi en 2024 en raison de la contraction du marché immobilier en 2023 et 2024
+
+et de la baisse de la mortalité en 2023.
+
+Graphique n° 5 : croissance spontanée des principaux impôts et évolution du PIB
+
+de 2014 à 2024
+
+Source : ministère de l’économie, des finances et de la souveraineté industrielle et numérique
+
+23 La part des intérêts nets versés dans l’EBE des SNF a dépassé au cours des premiers trimestres de l’année 2024 les 14 %, un niveau qu’elle n’avait pas connu, sauf très temporairement en 2008, depuis la fin des années 1990. 24 Impact sur les recettes de la TVA de la déformation entre deux années de la consommation en faveur de produits plus ou moins taxés (services immobiliers, notamment loyers, exonérés de TVA). Les effets de structure avaient été particulièrement élevés en 2021, sous l’effet d’un contrecoup de la déformation de la consommation en 2020 en faveur des dépenses incompressibles pendant les confinements.
+
+-30% -20% -10%
+
+0%
+
+10%
+
+20%
+
+30%
+
+40%
+
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024
+
+IR IS TVA TICPE PIB
+
+II - Une TVA toujours affaiblie par l’affectation à des tiers
+
+La TVA a été affectée de façon croissante, à compter de 2018, à des tiers, et en particulier aux organismes de protection sociale et aux collectivités territoriales 25. En outre, une mesure de transfert au bénéfice des entreprises de l’audiovisuel public est venue compenser, à partir de 2022 26, les pertes de recettes résultant de la suppression de la contribution à l’audiovisuel public. Par conséquent, depuis 2023, les recettes de TVA sont majoritairement affectées à d’autres personnes morales que l’État, ainsi que l’illustre le graphique n° 6.
+
+Graphique n° 6 : affectation des recettes de TVA entre 2015 et 2024
+
+Source : Cour des comptes d’après documents budgétaires Note de lecture : En 2018, 92 % des recettes de TVA abondaient le budget de l’État, 6 % étaient affectées aux organismes de protection sociale et 2 % aux collectivités territoriales.
+
+En 2024, les mesures de transfert de TVA subissent peu d’évolutions et se maintiennent donc à un niveau très élevé. Le montant de TVA affecté à l’audiovisuel public a connu cependant une augmentation de 0,2 Md€ – qui l’a portée à hauteur de 4 Md€ 27, alors que cette affectation avait été critiquée, dès 2023, tant par la Cour 28, que par le Conseil des prélèvements obligatoires (CPO), qui recommandait « d’éviter les affectations de TVA en dehors du champ
+
+25 L’augmentation de la part affectée est particulièrement significative en 2019 (transfert de TVA de 31,2 Md€ en 
+contrepartie de l’augmentation des allègements de cotisations sociales et de l’affectation à l’État d’une partie des 
+prélèvements sociaux sur les revenus du capital), et en 2021 (transferts de TVA de 9,7 Md€ aux régions afin de 
+compenser le manque à gagner, pour celles-ci, de la baisse de leur CVAE, et de 23 Md€ aux départements et aux 
+établissements publics de coopération intercommunale afin, d’une part, de financer la suppression de la taxe 
+d’habitation sur les résidences principales et, d’autre part, de compenser la réaffectation des recettes de la taxe 
+foncière sur les propriétés bâties aux communes). 
+26 Loi de finances rectificative pour 2022. 
+27 Article 162 de la loi de finances pour 2024. 
+28 Cour des comptes, Le budget de l’État en 2022. Résultats et gestion, avril 2023. 
+
+0%
+
+25%
+
+50%
+
+75%
+
+100%
+
+2015 2016 2017 2018 2019 2020 2021 2022 2023 2024
+
+Etat Collectivités territoriales Protection sociale Audiovisuel public
+
+24 COUR DES COMPTES des organismes de protection sociale et des collectivités territoriales » 29. Si l’article 2 de la loi organique relative aux lois de finances (LOLF) a été modifié, en 2024 30, afin de consolider la base juridique de ce mécanisme d’affectation d’une fraction de la TVA au secteur de l’audiovisuel public, il n’en constitue pas moins une singularité en Europe. Ces mesures de transfert ont engendré, parallèlement, une baisse très significative de la part de la TVA dans les recettes fiscales nettes de l’État à partir de l’exercice 2019, cette part s’élevant aujourd’hui à 30 %, contre 53 % en 2018. En miroir de cette décrue de la TVA, l’IS (18 % des recettes fiscales nettes de l’État en 2024, contre 9 % en 2018) et les autres recettes fiscales (21 % des recettes fiscales nettes de l’État en 2024, contre 8 % en 2018) obéissent à une trajectoire ascendante.
+
+Graphique n° 7 : part des différents impôts dans les recettes fiscales nettes de l’État entre 2017 et 2024 (en Md€)
+
+Source : Cour des comptes d’après documents budgétaires et direction du budget pour l’exercice 2024
+
+D’autres mesures de transfert affectent également le budget de l’État. La fraction de l’accise sur les énergies affectée, depuis 2015, à l’agence de financement des infrastructures de transport de France (AFITF), établissement public administratif chargé de coordonner le financement des grands projets d’infrastructures de transport, diminue ainsi de 0,3 Md€. À
+
+29 Conseil des prélèvements obligatoires, « La taxe sur la valeur ajoutée, un impôt à recentrer sur son objectif de rendement pour les finances publiques », février 2023. 30 Par la loi organique du 13 décembre 2024 portant réforme du financement de l’audiovisuel public.
+
+0%
+
+10%
+
+20%
+
+30%
+
+40%
+
+50%
+
+60%
+
+IR IS Ex-TICPE TVA Autres recettes fiscales
+
+UNE LÉGÈRE AUGMENTATION DES ENCAISSEMENTS EN 2024 PORTÉE PAR DES HAUSSES D’IMPÔT 25 compter de l’exercice 2024, une fraction de cette accise est en revanche versée aux régions pour l’exercice de leur compétence en matière de formation professionnelle continue 31, pour un montant total supplémentaire de 0,7 Md€.
+
+Enfin, après que les compensations aux collectivités territoriales en contrepartie de la budgétisation des taxes locales d’électricité ont été octroyées, en 2023, via le compte d’avances aux collectivités territoriales – la diminution des recettes liée à la mise en place du bouclier tarifaire faisant obstacle à ce que ces compensations soient effectuées depuis la ligne 1753 du budget de l’État – l’augmentation, en 2024, des recettes de cette ligne budgétaire, à la suite de la suppression progressive du bouclier tarifaire, a permis d’effectuer cette compensation directement, l’effet sur les recettes fiscales nettes s’élevant à - 2,4 Md€.
+
+Tableau n° 5 : mesures de transfert en 2024 et effets sur les recettes fiscales nettes (en Md€)
+
+| Impôt | | Mesure | Montant |
+| --- | --- | --- | --- |
+| | | Moindre transfert de TVA à l’Unedic | + 0,6 |
+| | | Transfert de TVA en compensation de la baisse des cotisations sur les travailleurs indépendants | + 0,3 |
+| TVA | | Autres transferts | à la Sécurité - 0,9 |
+| | | sociale | |
+| | | Hausse du transfert de TVA à l’audiovisuel | - 0,2 public |
+| | | Transfert aux collectivités territoriales | + 0,5 32 |
+| | | Affectation d’une fraction de cette | |
+| | | imposition aux collectivités dans le | |
+| | | cadre du financement de la | - 0,7 |
+| Fraction « produits | | formation professionnelle | |
+| énergétiques » (ex-TICPE) de | | | |
+| l’accise sur les énergies | | Diminution de la fraction de cette | + 0,3 |
+| | | imposition affectée à l’AFITF | |
+| | | Autres transferts | - 0,3 |
+| Autres RFN | | Compensation de la budgétisation des taxes locales d’électricité | - 2,4 |
+| | Total | | - 2,8 |
+
+Source : Cour des comptes d’après direction du budget
+
+31 XI de l’article 133 de la loi de finances pour 2024. 
+32 Le montant de 0,5 Md€ correspond intégralement à un ajustement technique qui vise à conserver des évolutions 
+spontanées de TVA par sous-secteur équivalentes. En effet, les transferts de TVA étant des fractions, et les mesures 
+nouvelles étant affectées en première approche à l’État, un ajustement de la répartition de l’effet des mesures 
+nouvelles par sous-secteur est opéré. 
+
+III - Des hausses d’impôts qui jouent positivement sur les recettes fiscales nettes
+
+Les modifications des règles d’assiette ou de calcul de l’impôt, ont entraîné un accroissement des recettes fiscales nettes de 6,4 Md€. Au sein de ce total, il convient de distinguer :
+
+- les mesures nouvelles spécifiquement issues de la loi de finances ou de la loi de financement de la sécurité sociale pour 2024 33 (+ 4,8 Md€). Ces mesures consistent principalement en des hausses d’impôt (+ 6,2 Md€) – notamment la suppression progressive des boucliers tarifaires sur l’électricité et sur les gaz naturels (+ 5,9 Md€) – partiellement compensées par des baisses d’impôt (- 1,5 Md€), en particulier la suppression de la CVAE à horizon 2027 (- 1,1 Md€).
+
+Enfin, ces mesures produisent des « effets retour » de + 0,1 Md€34 ;
+
+- les mesures issues des lois de finances antérieures à la loi de finances pour 2024, qui ont continué à produire des effets en 2024 (+1,3 Md€) ;
+
+- enfin, les contentieux « de série » opposant l’administration fiscale à des contribuables sont mentionnés, au sein du PLF, parmi les mesures nouvelles, affectant la catégorie des « autres recettes fiscales » (+ 0,3 Md€).
+
+Tableau n° 6 : incidence des modifications des règles d’assiette et de calcul de l’impôt sur les recettes fiscales nettes en 2024 (Md€)
+
+| | Impôt | Mesures | Véhicule législatif | Montants |
+| --- | --- | --- | --- | --- |
+| | | Création d’une déduction stock de vaches | pour LFI 2024 | - 0,1 |
+| | | Prorogation de divers crédits d’impôt | LFI 2023 | - 0,3 |
+| | IR | Prorogation du dispositif Pinel | LFI 2021 | - 0,2 |
+| | | jusqu’en 2024 | | |
+| | | Transformation du crédit | | |
+| | | d’impôt « | services à la LFI 2022 | - 0,2 |
+| Moindres recettes | | personne » contemporain | en dispositif | |
+| | | | | |
+| | Fraction « | produits | | |
+| | énergétiques | » (ex Aménagements tarifs GNR | | |
+| | TICPE) de l’accise sur | agricole | LFI 2025 | - 0,3 |
+| | les énergies | | | |
+| | | Effet retour gel des bandeaux | LFSS | 2024 - 0,1 |
+| | | | | |
+| | IS | | | |
+| | | Normalisation fiscalité énergétique – | LFI 2024 Effet retour IS | - 0,6 |
+
+33 L’une d’entre elles, l’augmentation du tarif du gazole non routier agricole de 3,86 € à 6,71 € par mégawattheure, n’a pas été appliquée, l’administration mettant en œuvre par anticipation dès 2024 la baisse annoncée par le Premier ministre en janvier 2024 mais actée rétroactivement dans la LFI 2025 (voir encadré infra). L’effet de cette mesure est inclus dans le total de 4,8 Md€ correspondant à l’effet des mesures nouvelles de la LFI 2024. 34 Ces effets sont liés aux modifications de l’assiette de certains impôts du fait des changements de taux affectant d’autres impositions. Par exemple, l’augmentation des tarifs de la composante « électricité » de l’accise sur les énergies engendre un effet retour négatif sur les recettes d’impôt sur les sociétés, dès lors qu’elle se répercute sur les charges des entreprises, et donc sur leur bénéfice fiscal.
+
+| | Impôt | Mesures | Véhicule législatif | Montants |
+| --- | --- | --- | --- | --- |
+| | | CICE hausse des taux – impact IS | LFI 2017 | - 0,1 |
+| | | Contribution temporaire de solidarité | LFI 2023 | - 0,1 |
+| | | Autres mesures | LFI 2021-2023 | - 0,2 |
+| | | Suppression de la CVAE à horizon 2027 | LFI 2024 | - 1,1 |
+| | | | | |
+| | Autres RFN | | | |
+| | | Suppression de la CVAE à horizon 2024 | LFI 2023 | - 0,4 |
+| | | Suppression de la CVAE à horizon 2027 – | LFI 2024 Effet retour IS | + 0,2 |
+| | | | | |
+| | IS | Suppression de la CVAE à horizon 2024 – | LFI 2023 effet retour IS | + 0,6 |
+| | | | | |
+| | | Impact sur l’IS de la suppression du CICE | LFI 2018 | + 1,0 |
+| | IR | Effet sur l’IR de la fiscalisation de la prime de partage de la valeur Relèvement du barème de l’indemnité kilométrique Relèvement du plafond de défiscalisation des heures supplémentaires Autres mesures | Loi du 16 août 2022 LFI 2022 LFR 2022 LFR 2020, LFI 2021-2022- 2023- | + 0,1 + 0,1 + 0,1 + 0,2 |
+| Recettes supplémentaires | Fraction « énergétiques | produits » (ex Hausse des tarifs du GNR | | |
+| | TICPE) de l’accise sur les énergies TVA Autres RFN | non-agricole Normalisation fiscalité énergétique – Renforcement du malus CO2 Évolution du bouclier tarifaire sur les gaz naturels Évolution du bouclier tarifaire sur l’électricité Contribution sur les rentes infra-marginales des producteurs d’électricité Contentieux Autres mesures | LFI 2024 LFI 2024 Effet TVA LFI 2024 LFI 2024 LFI 2024 LFI 2023 Sans objet Autres | + 0,1 + 0,6 + 0,2 + 1,3 + 4,6 + 0,5 + 0,3 + 0,3 |
+
+Source : Cour des comptes d’après direction du budget
+
+Les mesures nouvelles issues de la loi de finances ou de la loi de financement de la sécurité sociale pour 2024, et ayant eu une incidence sur les recettes fiscales en 2024, sont au
+
+nombre de six.
+
+La suppression progressive des boucliers tarifaires sur les gaz naturels et sur l’électricité 35 s’est traduite par une hausse des tarifs normaux de la fraction « gaz naturels » (ex-TICGN) de l’accise sur les énergies, de 8 € par mégawattheure 36, à compter du 1 er janvier 2024, et de la fraction « électricité » de cette accise, de 20 € par mégawattheure 37, à compter du 1 er février 2024. Elle augmente les recettes fiscales de 5,9 Md€ en 2024. L’augmentation du tarif de la fraction « produits énergétiques » (ex-TICPE) de l’accise sur les énergies sur l’achat de gazole non routier (GNR) consommé pour les besoins des travaux non-agricoles et les entreprises de travaux publics, de 5,99 € 38, engendre une hausse des recettes fiscales nettes de 0,1 Md€. La faculté octroyée aux exploitants agricoles de déduire de leur bénéfice imposable, lorsque la valeur globale des stocks de vaches est supérieure à 10 % du montant de l’année précédente, 150 € par vache inscrite en stock à la clôture de l’exercice au titre duquel la déduction est pratiquée, dans une limite de 15 000 € au total 39, diminue les recettes fiscales de 0,1 Md€. La poursuite du processus de suppression de la CVAE, rééchelonné successivement par les lois de finances pour 2024 et 2025 40 – alors que la loi de finances pour 2023 avait fixé cette suppression en 2024 – se traduit par des baisses graduelles de taux d’imposition jusqu’en 2030. Cette réforme entraîne une diminution des recettes de cet impôt de 1,1 Md€, limitée par l’impact positif de cette évolution sur les recettes d’IS, d’un montant de 0,2 Md€ 41. La limitation des réductions de cotisations maladie aux salaires compris entre 0 et 2,5 Smic, (« bandeau maladie »), et de cotisations familiales aux salaires compris entre 0 et 3,5 Smic (« bandeau famille ») 42, a un effet baissier sur les recettes d’IS (- 0,1 Md€). Le renforcement de la taxe sur les émissions de dioxyde de carbone (dite « malus CO2 »), du fait de l’abaissement du seuil plancher d’émissions à partir duquel un véhicule est soumis à cette taxe, de 123 gCO2/km à 118 gCO2/km 43, engendre des recettes supplémentaires de 0,2 Md€.
+
+35 Mise en place par l’article 29 de la loi du 30 décembre 2021 de finances pour 2022. 
+36 Arrêté du 29 décembre 2023 fixant le tarif normal d’accise sur les gaz naturels, pris en application de l’article 
+92 de la loi de finances pour 2024, lequel prévoit la faculté, pour les ministres chargés de l’économie et du budget, 
+de décider une sortie progressive du bouclier tarifaire. En application de cet arrêté, le tarif normal est passé de 
+8,37 € à 16,37€ par mégawattheure. 
+37 Arrêté du 25 janvier 2024 pris en application des I et II de l’article 92 de la loi n° 2023-1322 de finances pour 
+2024. En application de ces dispositions, les tarifs normaux d’imposition applicables aux ménages, aux petites et 
+moyennes entreprises et aux entreprises mettant en œuvre la « haute puissance » ont été portés respectivement à 
+21 €, 20,5 € et 20,5 € par mégawattheure. 
+38 B. du II de l’article 94 de la loi de finances pour 2024, qui a modifié l’article L. 312-35 du code des impositions 
+des biens et services. En application de ces dispositions, le tarif d’imposition est passé de 18,82 € à 24,81 € par 
+mégawattheure. 
+39 Article 70 de la loi de finances pour 2024. 
+40 Article 79 de la loi de finances pour 2024 et article 62 de la loi de finances pour 2025. 
+41 L’effet positif de cette réforme sur les recettes d’IS s’explique par une amélioration du résultat des entreprises 
+due à la diminution des taux d’imposition à la CVAE. 
+42 Article 20 de la loi du 26 décembre 2023 de financement de la sécurité sociale pour 2024. 
+43 Article 97 de la loi de finances pour 2024. 
+
+| | |
+| --- | --- |
+| de moteurs ne servant pas à la propulsion de véhicules, aux fins de travaux agricoles et forestiers, fait l’objet l’agriculture. Les exploitants agricoles s’approvisionnaient dans un premier temps en GNR agricole au tarif de droit commun du GNR non agricole de 24,81 €, et sollicitaient ensuite auprès de la direction générale des douanes et des droits indirects (DGDDI) un remboursement du différentiel entre leur tarif spécifique (3,86 agricole des agriculteurs, le Gouvernement a finalement annoncé, le 26 augmentation. Les dispositions du G. d’une abrogation et sont restées en vigueur. Gouvernement a également annoncé la fin du système de remboursement au profit d’une déduction fiscale en « fiscale à l’achat est entrée en vigueur le 1 système, représentant consommations de GNR effectuées en s’est élevée à 215 tarif de 3,86 cadre de remboursements puis directement, en pied de facture. Si le tarif de 3,86 réintroduit dans la l’application, pendant plus d’un an, de ce tarif, certitude, par principe, quant à l’adoption future d’une disposition législative de portée rétroactive. | L’augmentation du tarif de l’accise sur l’achat de gazole non routier agricole, une mesure nouvelle de la LFI 2024 qui n’a pas été appliquée Le gazole non routier (GNR) agricole, c’est-à-dire le gazole utilisé pour le fonctionnement d’un tarif réduit d’accise, depuis 1966, afin notamment de soutenir la mécanisation de € par mégawattheure) et le tarif d’accise de droit commun sur le GNR. Aux termes du G. de l’article 94 de la loi de finances pour 2024, le tarif applicable au GNR a été relevé de 3,86 € à 6,71 € par mégawattheure. À la suite du mouvement de contestation janvier 2024, l’abandon de cette de l’article 94 de la loi de finances n’ont pourtant pas fait l’objet En complément de l’annonce du maintien du tarif réduit à son niveau antérieur, le pied de facture », dès l’achat. Précisée dans deux décrets du 26 juin 2024, cette déduction er juillet 2024. Dans l’attente du déploiement de ce nouveau une aide à la trésorerie a été mise en place par le biais du versement d’une avance 50 % du remboursement dû en application d’un tarif de 3,86 € au titre des 2024. Versée en février 2024, cette avance de remboursement M€ 44. Ainsi, en méconnaissance de la loi de finances pour 2024, le GNR agricole a été imposé au € au cours de l’année 2024, les agriculteurs bénéficiant de cette mesure d’abord dans le € a finalement été er loi de finances pour 2025, en son article 20, avec effet rétroactif au 1 janvier 2024, a donc méconnu la loi fiscale alors applicable, sans |
+
+La multiplication, au cours des derniers exercices, des mesures portant sur les taxes énergétiques ainsi que les difficultés à prévoir leur rendement démontrent l’importance d’un suivi fin de ces lignes de recettes au fur et à mesure de l’exécution budgétaire. Or, les montants des composantes « électricité » (ex-TICFE) et « gaz naturels » (ex-TICGN) de l’accise sur les énergies sont regroupés au sein d’une ligne globale « autres taxes intérieures » (ligne 1753), qui englobe d’autres recettes fiscales, sans précision sur la nature des impositions ni sur le montant de chacune des impositions concernées 45. Au surplus, dans le PLF 2024, les recettes attendues de la suppression du bouclier tarifaire sur le tarif d’imposition du gaz naturel ont abondé une ligne de recettes « autres taxes » (ligne 1799), alors qu’elles auraient dû figurer dans les recettes de la ligne 1753, la mesure correspondante étant, au demeurant, elle-même dénommée « autres taxes », sans davantage de précision.
+
+44 Rapport général n° 144 (2024-2025) du Sénat, tome II, fascicule 1, déposé le 21 novembre 2024. 45 L’annexe Voies et Moyens au PLF 2024 comporte cependant, au paragraphe « autres taxes intérieures », un tableau détaillant les prévisions (au titre des années N et N+1) et l’exécution (au titre de l’année N-1), des composantes électricité et gaz naturels de l’accise sur les énergies.
+
+| | |
+| --- | --- |
+| biens et services prévoit, en son article L. 312-1, une accise sur les énergies, due pour les usages, en tant que carburant et en tant que combustible, de l’électricité, du gaz naturel, des charbons, et des produits énergétiques autres que le gaz naturel et les charbons. En application de cet article, les taxes intérieurs de consommation sur l’électricité (taxe intérieure de consommation finale sur l’électricité, TICFE), sur les gaz naturels (taxe intérieure de consommation sur les gaz naturels, TICGN), sur les charbons (taxe intérieure de consommation sur les houilles, lignites et coques, TICC), et sur les produits énergétiques (taxe intérieure de consommation sur les produits énergétiques, TICPE) sont remplacées par les quatre fractions de l’accise sur les énergies, respectivement sur l’électricité, les gaz naturels, les charbons et les produits énergétiques. | La création de l’accise sur les énergies Issu de l’ordonnance n° 2021-1843 du 22 décembre 2021, le code des impositions sur les |
+| « électricité énergétiques 2022. S’agissant de la fraction ancienne dénomination (TICPE) continue même de figurer dans la LFI et dans la LFG 2024, ainsi que dans la LFI pour 2025. TICFE et TICGN, rend caduque la distinction, dans la nomenclature utilisée dans les documents budgétaires, entre les composantes « recettes fiscales d’impôt énergies sous une seule catégorie pourrait donc être envisagé, tout en renforçant de budgétaires. à cet égard qu’elles « mise en œuvre au mieux dans le cadre du PLF pour 2026 | Par ailleurs, l’annexe Voies et moyens au PLF persiste à mentionner les fractions » et « gaz naturel » de l’accise sur les énergies, de même que la fraction « produits » de cette accise, sous leurs anciennes dénominations, pourtant obsolètes depuis « produits énergétiques » de l’accise sur les énergies, son pour Enfin, la création, en 2022, de l’accise sur les énergies, regroupant les anciennes TICPE, gaz naturels » et « électricité », traitées parmi les « autres », et la composante « produits énergétiques », qui fait l’objet d’une catégorie autonome. Un regroupement de l’ensemble des composantes de l’accise sur les la granularité l’information sur chacune des composantes de l’accise dans les prochains documents La direction du budget et la direction générale des finances publiques ont précisé mènent une réflexion afin de répondre à cette recommandation avec une ». |
+| ___________________________ 1. | RECOMMANDATION ___________________________ La Cour formule la recommandation suivante : (Recommandation nouvelle) : Regrouper l’ensemble des fractions de l’accise sur les énergies au sein d’une seule catégorie d’impôt dans la nomenclature budgétaire (direction du budget, direction générale des finances publiques). |
+
+#### Chapitre II
+
+#### Des recettes fiscales nettes de nouveau très éloignées
+
+#### des prévisions
+
+Les recettes fiscales nettes de l’État devaient atteindre 348,5 Md€ selon la LFI 2024. En exécution, elles s’élèvent à 325,7 Md€.
+
+Graphique n° 8 : révisions successives de l’évaluation du produit des recettes fiscales nettes pour l’année 2024 (Md€)
+
+Source : Cour des comptes
+
+Cet écart de - 22,8 Md€ par rapport à la loi de finances initiale dépasse celui observé en 
+2023, qui avait atteint - 5,3 Md€. 
+Depuis cinq ans, dans l’ensemble, les écarts entre l’exécution et la prévision des recettes 
+fiscales nettes en loi de finances sont importants, sans toutefois de biais systématique dans les 
+prévisions, à la hausse comme à la baisse, dans les prévisions ; après la chute observée en 2020, 
+l’écart a été très favorable en 2021 et 2022, puis négatif au cours des deux dernières années, 
+particulièrement en 2024. Cela rappelle le caractère exceptionnel de la période récente, marquée 
+par la crise sanitaire, puis la sortie de confinement, la crise inflationniste et la forte hausse des 
+
+349,4 348,5
+
+322,5 324,1 323,3 325,7
+
+300
+
+320
+
+340
+
+360
+
+PLF LFI PLF 2025 PLFG LFG Exécution
+
+32 COUR DES COMPTES taux d’intérêt. Un élément peut toutefois être souligné : alors qu’en 2023, la prévision s’était dégradée au fil des mois, affichant un écart particulièrement important par rapport à l’exécution en LFG (-2,3 %, cf. graphique n° 9), elle s’est améliorée au cours de l’année 2024, pour aboutir à un écart entre la LFG et l’exécution (+ 0,7%) d’une ampleur comparable à ceux constatés
+
+avant la crise sanitaire.
+
+Graphique n° 9 : révisions des recettes fiscales nettes entre l’exécution et la LFI d’une part et la LFR de fin d’année ou la LFG d’autre part (en %)
+
+Source : Cour des comptes 
+Note de lecture : en 2023, les recettes fiscales présentaient, en exécution, un écart de -1,6 % par rapport à la prévision de la 
+LFI et de -2,3 % par rapport à la prévision de la LFG. 
+
+L’écart entre l’exécution et la prévision inscrite en LFI pour 2024 s’explique à hauteur de - 9,2 Md€ par des recettes moins élevées qu’attendu en 2023 (I) 46, et à hauteur de - 13,6 Md€ par un manque à gagner supplémentaire enregistré en 2024 (II).
+
+46 La direction générale du Trésor, dans une publication récente (Trésor-Éco, Retour sur les prévisions de finances publiques pour les années 2023 et 2024, janvier 2025), estime que la surprise liée à l'année 2023 joue de manière amplifiée sur 2024, pour 10,9 Md€ supplémentaires (7,3 Md€ au titre de l’impôt sur les sociétés et 3,6 Md€ au titre de l’impôt sur le revenu), en raison des effets retardés de leur mécanique. Ainsi, la forte révision de la croissance du bénéfice fiscal en 2023 et celle du bénéfice fiscal pour 2022 conduisent à réviser la prévision d’IS de 2024 de –11,7 Md€ (au-delà de l’écart de 4,5 Md€ entre exécuté et révisé pour 2023). De même, les remontées fiscales constatées à l’été 2024 du solde de l'IR dû au titre de 2023 ont été décevantes, et la baisse du salaire réel moyen par tête en 2023 a conduit à des taux de prélèvement plus bas lors de leur mise à jour à l'été 2024. Les différents points soulevés sont exacts et mentionnés, dans cette note d’analyse de l’exécution budgétaire, comme facteurs explicatifs d’une évolution spontanée plus faible qu’attendu en 2024. Les effets retardés de 2023 sur 2024 sont toutefois complexes et nombreux ; ils ne se limitent pas aux impacts précédemment cités. Par exemple, du fait du non-respect des délais de dépôt des déclarations de successions de 6 mois, les recettes de droits de mutation à titre gratuit relatives aux successions des premiers mois de l’année 2024 sont en grande partie liées à des décès survenus en 2023 ; l’inflation observée en 2023 continue également de produire des effets sur les recettes fiscales nettes en 2024. Ne souhaitant pas présenter une vision partielle de ces effets, la Cour n’a pas repris ces éléments dans l’effet de base de 2023, qui correspond dans cette note à l’écart entre exécution et révisé pour l’année 2023.
+
+-3,5%
+
+0,4% -1,3%
+
+1,1%
+
+3,1% 2,8% -12,6%
+
+14,7%
+
+12,4% -1,6% -6,5%
+
+0,7% 0,5%
+
+-0,4%
+
+1,5%
+
+0,7% 0,7%
+
+2,7%
+
+6,5%
+
+2,4% -2,3%
+
+0,7% -15% -10% -5%
+
+0%
+
+5%
+
+10%
+
+15%
+
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Par rapport à la LFI Par rapport à la LFR ou LFG
+
+Tableau n° 7 : décomposition de l’écart entre l’exécution et les prévisions de la LFI pour 2024 (en Md€, sauf indication contraire)
+
+2024 
+LFI 2024 
+(a) 
+2024 
+Exécution 
+(b) 
+
+Écart 2024 (c) = b - a
+
+Écart 2024 (c) en valeur absolue rapporté à l’exécution 2024 (b) (en %)
+
+Effet de la 
+déviation 2023 
+(écart entre 
+exécuté et 
+révisé pour 
+2023) (d) 
+Écart 2024 
+hors 
+déviation 
+2023 
+(e) = c - d 
+
+Impôt sur le revenu 93,4 88,0 -5,4 6,1 -2,1 -3,3
+
+Impôt sur les sociétés
+
+72,0 57,4 -14,6 25,5 -4,5 -10,2
+
+Accise sur les produits énergétiques (ex TICPE)
+
+15,4 16,0 0,6 3,6 0,4 0,2
+
+TVA 100,8 96,8 -4,0 4,2 -1,1 -2,9
+
+Autres recettes fiscales nettes
+
+66,9 67,5 0,7 1,0 -1,9 2,6
+
+Dont impôt sur la fortune immobilière
+
+2,4 2,7 0,3 0,0 0,3
+
+Dont prélèvement de solidarité
+
+14,7 14,5 -0,2 0,0 -0,2
+
+Dont donations 3,9 4,9 1,0 0,5 0,5
+
+Dont successions 15,4 16,0 0,6 0,8 -0,3
+
+Dont CVAE 4,2 4,3 0,1 0,0 0,1
+
+Dont CRI 1,1 1,1 0,0 -3,1 3,1
+
+Dont autres taxes intérieures nettes (dont TICGN et TICFE)
+
+1,9 4,3 2,3 0,5 1,8
+
+Dont autres taxes (ligne 1799)
+
+3,3 0,9 -2,3 -0,1 -2,3
+
+| | | | | | | | | Écart 2024 | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | (c) | en | | | |
+| | | | | | | | | valeur | | Effet de la | | Écart 2024 |
+| | | 2024 | | 2024 | | | | absolue | | déviation 2023 | | hors |
+| | | | | | | Écart 2024 | | | | | | |
+| | | LFI 2024 | | Exécution | | | | rapporté à | | (écart entre | | déviation |
+| | | | | | | (c) = b - | a | l’exécution | | exécuté et | | 2023 |
+| | | (a) | | (b) | | | | | | révisé pour | | |
+| | | | | | | | | 2024 | (b) | | | (e) = c - d |
+| | | | | | | | | (en %) | | 2023) | (d) | |
+| | | | | | | | | | | | | |
+| | | | | | | | | | | | | |
+| Recettes nettes | fiscales | 348,5 | | 325,7 | | -22,8 | | 7,0 | | -9,2 | | -13,6 |
+
+Source : Cour des comptes
+
+I - Un effet de base défavorable associé à l’année 2023 du fait de résultats plus dégradés qu’attendu lors de la préparation de la loi de finances pour 2024
+
+Les recettes enregistrées en 2023 ont été moins élevées qu’attendu lors de la préparation de la loi de finances pour 2024, à hauteur de 9,2 Md€.
+
+Tableau n° 8 : écart entre l’exécution et la prévision révisée pour 2023 en Md€
+
+Révisé 2023 (f) Exécution 2023 (g) Écart (d) = g - f
+
+Impôt sur le revenu 90,7 88,6 -2,1
+
+Impôt sur les sociétés 61,3 56,8 -4,5
+
+16,4 16,8 0,4
+
+Accise sur les produits énergétiques (ex-TICPE)
+
+TVA 96,3 95,2 -1,1
+
+67,4 65,5 -1,9
+
+Autres recettes fiscales nettes
+
+2,4 2,4 0,0
+
+Dont impôt sur la fortune immobilière
+
+13,7 13,7 0,0
+
+Dont prélèvement de solidarité
+
+Dont donations 3,8 4,3 0,5
+
+Dont successions 15,8 16,6 0,8
+
+Révisé 2023 (f) Exécution 2023 (g) Écart (d) = g - f
+
+Dont CVAE 5,8 5,8 0,0
+
+Dont CRI 3,7 0,6 -3,1
+
+Dont autres taxes intérieures (dont TICGN et TICFE)
+
+1,4 1,9 0,5
+
+Dont autres taxes (ligne 1799)
+
+1,0 0,9 -0,1
+
+Recettes fiscales nettes 332,1 322,9 -9,2
+
+Source : Cour des comptes
+
+L’écart entre la réalisation des recettes fiscales nettes pour 2023 et l’évaluation révisée 
+utilisée lors de la préparation de la LFI 2024 s’explique principalement par un rendement 
+inférieur aux attentes de : 
+- la CRI (-3,1 Md€) 47 ; 
+- l’impôt sur les sociétés (-4,5 Md€), pénalisé par des versements de 5 ème acompte inférieurs à 
+ce qui était anticipé ; 
+- l’impôt sur le revenu (-2,1 Md€), en raison de la révision de la progression de la masse 
+salariale en fin d’année 2023 48 ; 
+- la TVA (-1,1 Md€), du fait de remboursements crédits de TVA plus dynamiques qu’anticipé. 
+
+II - Un écart important en 2024, en raison d’une évolution spontanée plus faible que prévu et en dépit de mesures de hausses d’impôt décidées après le dépôt du PLF
+
+L’écart supplémentaire enregistré en 2024 s’élève à - 13,6 Md€. Il s’explique, à hauteur de - 19,2 Md€, par une évolution spontanée plus faible qu’attendu, qui n’a été que partiellement compensée par la mise en œuvre de mesures nouvelles, de périmètre et de transfert d’un montant plus élevé qu’initialement envisagé, pour 5,6 Md€.
+
+47 Pour rappel, le produit de la CRI avait été estimé, pour 2023, à 12,3 Md€ en LFI pour 2023, sur la base des prix 
+de l’électricité d’août 2022, très élevés. Il avait été révisé à 3,7 Md€ en 2023 dans le PLF pour 2024 présenté en 
+septembre 2023, puis à 2,7 Md€ en LFG. Il a finalement atteint 0,6 Md€ en 2023. 
+48 La masse salariale était attendue en hausse de 6,5 % dans les branches marchandes non agricoles en moyenne 
+annuelle en 2023 dans le PLF pour 2024. Elle a finalement augmenté de 5,3 %. 
+
+Tableau n° 9 : décomposition de l’écart attribuable à l’année 2024 (hors déviation 2023) en Md€
+
+| | | | Effet de la révision | | |
+| --- | --- | --- | --- | --- | --- |
+| | Écart 2024 hors | | des mesures | | Effet de la révision de |
+| | | | nouvelles, de | | la croissance |
+| | déviation 2023 (e) | | périmètre et de | | spontanée (i) = e - h |
+| | | | transfert | (h) | |
+
+Impôt sur le revenu -3,3 0,7 -3,9
+
+Impôt sur les sociétés -10,2 0,0 -10,2
+
+0,2 0,1 0,0
+
+Accise sur les produits énergétiques (ex-TICPE)
+
+TVA -2,9 0,0 -2,9
+
+2,6 4,8 -2,2
+
+Autres recettes fiscales nettes
+
+0,3 0,0 0,3
+
+Dont impôt sur la fortune immobilière
+
+-0,2 0,0 -0,2
+
+Dont prélèvement de solidarité
+
+Dont donations 0,5 0,0 0,5
+
+Dont successions -0,3 0,0 -0,3
+
+Dont CVAE 0,1 -0,1 0,2
+
+Dont CRI 3,1 3,0 0,1
+
+1,8 4,7 -2,9
+
+Dont autre taxes intérieures nettes (dont TICFE, TICGN)
+
+-2,3 -2,1 -0,2
+
+Dont autres taxes (ligne 1799) 49
+
+Recettes fiscales nettes -13,6 5,6 -19,2
+
+Source : Cour des comptes
+
+49 
+Cette catégorie est constituée de 0,2 Md€ de renforcement du malus CO2 et de 1,9 Md€ correspondant à une 
+mesure désignée sous l’intitulé « autres taxes ». Ce montant correspond à la prévision de plus-value liée à 
+l’augmentation des tarifs de l’accise sur les gaz naturels (ex-TICGN). Cette plus-value a ensuite été classée dans 
+les recettes des « autres taxes intérieures » (voir supra page 30). 
+
+A - Une évolution spontanée bien plus faible que prévu
+
+Lors de la construction du PLF pour 2024, la prévision de recettes fiscales nettes pour 2024 reposait sur une hypothèse d’évolution spontanée de 5,6 % (soit +18,6 Md€), en hausse par rapport à celle observée en 2023 (estimée à -0,7 % en exécution). Compte tenu de l’hypothèse de croissance du PIB en valeur alors retenue (+ 4,0 %), l’élasticité des recettes fiscales nettes ressortait à 1,4. Elle était donc attendue à un niveau bien plus élevé que sa valeur de long terme et en rebond par rapport à 2023 50, qui faisait suite à deux années exceptionnelles (2,2 en 2021 et 2,0 en 2022).
+
+Ces prévisions ont été revues lors de la présentation du PLF initial pour 2025. La croissance spontanée des recettes fiscales nettes a été révisée en forte baisse, à -0,6 % en 2024, correspondant à une élasticité légèrement négative (- 0,2), la prévision de croissance du PIB en valeur ayant été également revue en baisse, à 3,5 %. Ces prévisions sont restées pratiquement inchangées en LFG 51.
+
+Finalement, le taux d’évolution spontanée des recettes fiscales nettes s’est établi à - 0,2 %, alors que le PIB en valeur a effectivement progressé de 3,5 %, soit une élasticité de - 0,1.
+
+Le manque-à-gagner associé à cette croissance spontanée inférieure aux attentes atteint - 19,2 Md€. La révision de la croissance du PIB en valeur, de 4,0 % à 3,5 %, a eu un effet limité, de - 1,6 Md€. L’effet de la révision de l’élasticité, qui résulte des prévisions techniques sur les différents prélèvements obligatoires, est bien plus massif, estimé à - 17,7 Md€.
+
+Jusqu’en 2016, l’élasticité des recettes fiscales nettes au PIB était inférieure à la prévision retenue en projet de loi de finances. Depuis, l’élasticité a souvent été plus haute que les estimations initiales, avec un écart particulièrement marqué en 2017, 2021 et 2022. 2017 et 2021 sont deux années durant lesquelles la croissance a redémarré. En 2024, l’évolution spontanée constatée en exécution est très inférieure à ce qui avait été prévue en projet de loi de finances. Contrairement à l’année dernière, elle est proche de la prévision inscrite en LFG.
+
+Graphique n° 10 : élasticité prévue en PLF pour l’année suivante et exécutée
+
+Source : Cour des comptes
+
+50 L’élasticité était alors attendue à 0,2 en 2023. Elle a finalement atteint -0,1 en exécution. 51 La croissance spontanée des recettes fiscales nettes a été révisée à -0,4 % et l’élasticité, du fait d’une prévision de croissance du PIB en valeur inchangée par rapport au PLF pour 2025, à -0,1.
+
+1,3
+
+0,9
+
+1,3 1,4 1,2 1,2 1,3 1,5
+
+1,1
+
+0
+
+1,4 -0,2
+
+0,7
+
+1,3
+
+2,2
+
+1,3
+
+1,1
+
+1,7
+
+2,2
+
+2,0
+
+-0,1 -0,1 -0,5
+
+0
+
+0,5
+
+1
+
+1,5
+
+2
+
+2,5
+
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Élasticité - prévision en PLF Élasticité - exécution
+
+Le détail par impôt montre que l’effet de la révision spontanée se concentre sur trois 
+grands prélèvements. 
+L’impôt sur les sociétés présente un écart majeur de - 10,2 Md€. Prévu en hausse 
+spontanée de 16,4 %, il a finalement légèrement reculé (-0,2 %), sous l’effet principalement de 
+la révision de la progression du bénéfice fiscal en 2023 et en 2024 : 
+- En 2023, la hausse du bénéfice fiscal était attendue à 14 % dans la LFI pour 2024. Alors que 
+l’excédent brut d’exploitation (EBE) des sociétés non financières (SNF) progressait de 
+14,8 %, elle a finalement atteint 0,5 % 52 d’après les dernières estimations, du fait notamment 
+des reports des déficits passés enregistrés par les entreprises énergétiques 53. Cet épisode 
+rappelle la difficulté inhérente à la prévision de l’évolution du bénéfice fiscal, qui peut 
+sensiblement s’écarter de celle de l’EBE des sociétés non financières ; 
+
+Graphique n° 11 : bénéfice fiscal et excédent brut d’exploitation des sociétés non financières (en moyenne annuelle, en %)
+
+Source : direction du budget, direction générale du Trésor et direction générale des finances publiques, Insee, Cour des comptes
+
+- En 2024, le bénéfice fiscal est attendu en recul (- 3,9 %, contre + 4,0 % attendu en LFI pour 2024), en raison d’une progression de la valeur ajoutée des sociétés non financières bien plus faible qu’attendu dans la LFI pour 2024 (+ 1,8 % contre + 3,5 %) et très inférieure à celle des rémunérations des salariés, également révisée en baisse mais dans une moindre ampleur (+ 3,4 %, attendue initialement à + 3,6 %). La détérioration de la conjoncture économique s’est traduite par un cinquième acompte dégradé.
+
+52 La hausse attendue du bénéfice fiscal a été révisée à 2,0 % dans le programme de stabilité 2024, suite à la 
+publication du 5 e acompte de 2023. 
+53 La hausse de l’EBE en 2023 s’explique en partie par celle du groupe EDF (+ 45 Md€), qui a pu reporter le déficit 
+enregistré en 2022 et ainsi minorer l’impôt payé en 2023. 
+
+-20 -10
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Bénéfice fiscal EBE des SNF
+
+Au-delà des effets associés à la révision du bénéfice fiscal estimé en 2023 et prévu en 2024, les acomptes d'impôt sur les sociétés versés par les entreprises semblent avoir été limités dans un contexte de dégradation de leur situation financière 54. L’exercice 2024 confirme, comme mentionné par la Cour dans ses observations définitives sur les prévisions de recettes fiscales publiées en décembre 2024 55, la nécessité d’étudier les comportements des entreprises vis-à-vis de l’autolimitation et du 5 ème acompte d’impôt sur les sociétés, afin de mieux les anticiper. L’écart sur l’impôt sur le revenu atteint - 3,9 Md€. Le solde perçu au titre des revenus de 2023 a été pénalisé par la révision à la baisse de la progression de la masse salariale de branches marchandes non agricoles en 2023, encore prévue à 6,5 % en 2023 dans la LFI pour 2024 et qui a finalement atteint 5,3 %. En particulier, le salaire moyen par tête n’a progressé que de 4,1 %, contre une prévision à 5,3 % dans la LFI pour 2024. Sa hausse est ainsi restée inférieure à l’inflation hors tabac en 2023 (4,8 %), qui elle avait été bien anticipée, et sur laquelle est indexé le barème. L’écart sur les remboursements de trop perçu au titre des revenus 2023 aurait également été favorisé par un recours plus important qu’anticipé des ménages aux crédits d’impôts, du fait à la fois de la hausse du nombre de bénéficiaires et de leur montant moyen. La révision de la hausse de la masse salariale en 2024, attendue à 3,6 % en LFI pour 2024 et finalement estimée à 2,7 %, a quant à elle pesé sur les prélèvements à la source de 2024. Par ailleurs, les plus-values mobilières ont été moins élevées que prévu. Enfin, l’écart sur la TVA s’élève à - 2,9 Md€. La hausse des emplois taxables a été fortement révisée en baisse en cours d’année. Attendue à 3,8 % en LFI pour 2024, elle s’est finalement élevée à 1,9 %. Deux facteurs expliquent cette révision. D’une part, la désinflation a été plus rapide que prévu. D’autre part, la composition de la croissance a été moins favorable aux recettes de TVA. Celle-ci a nettement évolué, avec une contribution plus faible de la demande intérieure privée hors stocks et à l’inverse plus forte de la demande publique et du commerce extérieur. Au total, la révision de l’évolution des emplois taxables aurait contribué au manque à gagner à hauteur de 1,8 Md€. De surcroît, la LFI pour 2024 tablait sur une progression spontanée en ligne avec celle de sa base taxable alors qu’elle lui serait finalement inférieure de 1,0 point. Cet écart contribuerait au manque à gagner à hauteur de 1,1 Md€. L’évolution spontanée des recettes fiscales nettes est donc restée inférieure à celle inscrite en LFI pour 2024, ce qui n’a été que très partiellement compensé par des hausses d’impôt décidées au cours du débat parlementaire et mises en œuvre en cours d’année.
+
+B - Des mesures de hausses d’impôt plus fortes qu’initialement envisagé
+
+Les principales révisions concernent la contribution sur la rente inframarginale des producteurs d’électricité (CRI) et l’accise sur l’électricité (ex-TICFE). L’écart entre le montant
+
+54 L. Bach, Faibles recettes de l’impôt sur les sociétés : qui aurait pu prédire ?, Institut des politiques publiques, novembre 2024. 55 Cour des comptes, La prévision des recettes fiscales de l’État entre 2014 et 2023, décembre 2024.
+
+de mesures nouvelles associé à la CRI exécuté et prévu s’élève à 3,0 Md€ 56. Bien qu’elle ne 
+soit pas revenue à son niveau avant la mise en place du bouclier tarifaire, l’augmentation de 
+l’accise sur l’électricité (ex-TICFE) s’est traduite par des recettes estimées à 3,5 Md€ en 2024 57. 
+Ces recettes ont été en grande partie minorées, pour l’État, par la compensation de la 
+budgétisation des taxes locales d'électricité (-2,4 Md€). Les mesures nouvelles, de périmètre et 
+de transfert conduisent à augmenter les recettes fiscales nettes de 3,6 Md€ en 2024, soit 5,6 
+Md€ au-dessus de la prévision de la LFI pour 2024. 
+* 
+Au total, l’écart de - 22,8 Md€ en 2024 s’explique à hauteur de - 9,2 Md€ par les 
+moins-values héritées de 2023 et à hauteur de - 13,6 Md€ par des effets supplémentaires 
+observés en 2024. L’effet de la croissance spontanée, évalué à - 19,2 Md€, est le résultat d’une 
+moindre croissance du PIB en valeur pour - 1,6 Md€ et d’une élasticité plus faible qu’attendu 
+pour - 17,7 Md€. Cela n’a été que partiellement compensé par des mesures nouvelles, de 
+périmètre et de transfert d’un montant plus élevé qu’attendu, pour 5,6 Md€. 
+
+Graphique n° 12 : recettes fiscales nettes pour l’année 2024 prévues en LFI pour 2024 et exécutées (en Md€)
+
+Source : Cour des comptes
+
+56 Deux phénomènes se sont conjugués s’agissant de la CRI : d’une part, son maintien, voté lors du débat parlementaire, en loi de finances initiale pour 2024 ; d’autre part, une erreur de prévision sur le solde des versements au titre de 2023 dus en juillet 2024. 57 La loi de finances initiale pour 2024 prévoyait la faculté pour le Gouvernement d’augmenter le taux de la TICFE en 2024, mais aucune hypothèse de hausse n’avait été intégrée dans les chiffres de recettes et de solde de l’article liminaire. Le Gouvernement a finalement relevé le taux de la TICFE au 1er février 2024.
+
+Afin de pouvoir effectuer facilement cet exercice de comparaison entre prévisions des recettes fiscales nettes et réalisation, il serait utile que les montants détaillés des mesures nouvelles soient remis à jour au moment de l’adoption de la loi de finances. Ils pourraient également être actualisés à l’occasion de la publication de la LFG, alors que les prévisions sur lesquelles elle est assise peuvent s’avérer erronées – ce fut le cas au cours de l’exercice 2023. Ainsi, afin que les informations budgétaires mises à disposition soient utiles et complètes, la Cour recommande de rendre publiques, après l’adoption de la loi de finances initiale et la loi de finances de fin de gestion, les versions actualisées du fichier « Évaluation de recettes du budget général » associé au tome 1 de l’annexe Voies et moyens.
+
+III - Un écart à la prévision dont l’origine principale n’est pas la dégradation de la conjoncture, mais une anticipation incorrecte du comportement des entreprises et des ménages
+
+En 2024, trois effets se sont donc conjugués. Il y a tout d’abord l’héritage des moindres recettes fiscales nettes enregistrées en 2023. Lors de la présentation du PLF pour 2024 en septembre 2023, l’exécution des recettes fiscales nettes n’était pas encore connue. Elle s’est révélée très en deçà des attentes, pénalisant, par effet de base, les recettes en 2024. L’environnement macroéconomique a été moins porteur qu’attendu. En particulier, dans la LFI pour 2024, la croissance du PIB en volume était attendue à 1,4 %. Elle a finalement atteint 1,1 % d’après la première estimation de l’Insee. Cet écart de -0,3 point reste toutefois de faible ampleur. Il est inférieur en valeur absolue à celui observé en moyenne sur longue période entre la prévision du Gouvernement et la réalisation. Sur vingt ans, même hors exercices 2009, 2020 et 2021 marqués par les crises financière et sanitaire, l’écart moyen entre les prévisions du Gouvernement et la croissance observée s’élève à 0,40 point 58. Cette moindre croissance a donc certes pesé sur les recettes fiscales nettes, mais ne peut à elle seule justifier un tel décalage entre les recettes fiscales nettes prévues et réalisées. Mais c’est surtout la traduction de l’environnement macroéconomique en recettes fiscales nettes qui semble avoir nourri l’écart entre prévision et réalisation, du fait notamment : - d’une anticipation imparfaite des comportements des entreprises et des ménages :
+
+• Au-delà des effets associés à la révision de l’évolution du bénéfice fiscal en 2023 et en 2024 59, et alors que leur situation financière se dégradait dans un contexte de taux d’intérêt élevés, résultat de la crise inflationniste passée, les entreprises auraient limité les acomptes d’impôt sur les sociétés versés 60 ; 
+58 Secrétariat permanent du HCFP, É. Dubois, G. Gilquin : Les prévisions macroéconomiques et de finances 
+publiques du Gouvernement et leur réalisation, Note d’étude n° 2024 - 2, Septembre 2024. 
+59 Ces effets sont détaillés page 38. 
+60 L. Bach, Faibles recettes de l’impôt sur les sociétés : qui aurait pu prédire ?, Institut des politiques publiques, 
+novembre 2024. 
+
+• Le taux d’épargne des ménages a progressé sur l’année, alors qu’un repli était anticipé en 2024, ce qui a contribué à une composition de la croissance très différente, avec une contribution moins forte qu’attendu de la demande intérieure hors stocks et plus élevée, au contraire, de la demande publique et du commerce extérieur. L’écart entre la hausse prévue et réalisée de la consommation des ménages a atteint 0,9 point, bien au-delà de l’écart moyen entre les prévisions du Gouvernement et l’évolution observée, qui s’élève à 0,60 point sur la période 2004-2023 hors exercices 2009, 2020 et 2021 61. - de des phénomènes spécifiques, liés à la situation particulière de quelques entreprises, comme par exemple celles du secteur énergétique, et à la distribution des revenus imposables des ménages. La Cour, dans ses observations définitives sur les prévisions de recettes fiscales publiées en décembre 2024 62 a recommandé que soient étudiés certains phénomènes comme les comportements des entreprises vis-à-vis de l’autolimitation et du 5 ème acompte d’impôt sur les sociétés et les choix des contribuables en matière de modulation contemporaine du prélèvement à la source de l’impôt sur le revenu. L’administration indique avoir apporté récemment des améliorations aux modèles de prévisions, passant notamment par la constitution par la DGFiP d’une base des acomptes à l’impôt sur les sociétés, en vue de travaux communs avec la direction générale du Trésor pour l’amélioration de ce pan de la prévision de l’impôt sur les sociétés net, la mise en œuvre de méthodes additionnelles d’analyse des données de l’acompte de décembre en vue des premières estimations de la croissance du bénéfice fiscal de l’année suivante, ainsi que la mobilisation des données individuelles de modulation du prélèvement à la source. Le ministère de l'Économie, des Finances et de la Souveraineté industrielle et numérique a par ailleurs annoncé début mars un plan d’action visant à améliorer le pilotage des finances publiques. Il comprend notamment le lancement d’une concertation auprès des grandes entreprises soumises au 5 ème acompte de l’impôt sur les sociétés, afin d’améliorer la qualité de la prévision. La Cour ne peut qu’encourager la poursuite et le renforcement de l’ensemble des travaux qui permettront une meilleure compréhension du comportement des ménages et des entreprises eu égard au paiement de leurs impôts et donc une meilleure prévision des recettes fiscales nettes. En particulier, si la volatilité du bénéfice fiscal rend sa prévision intrinsèquement difficile, compte tenu de l’ampleur des écarts constatés, une meilleure compréhension du comportement des entreprises en termes d’ajustement des acomptes en cours d’année (autolimitation, 5 ème acompte) devrait être recherchée par un travail d’étude rétrospective qui, en l’absence de données disponibles, pourrait reposer sur une enquête auprès d’un échantillon d’entreprises représentant une proportion significative du produit total de l’impôt. Des avancées pour l’administration pourraient également provenir d’un enrichissement de l’information déclarée par les entreprises lors de leurs paiements, permettant de mieux distinguer les acomptes « purs », l’autolimitation et le « 5ème acompte ». 
+61 É. Dubois, G. Gilquin, Op. cit. 
+62 Cour des comptes, La prévision des recettes fiscales de l’État entre 2014 et 2023, observations définitives, 
+décembre 2024. 
+
+| | |
+| --- | --- |
+| ___________________________ 2. 3. | RECOMMANDATIONS___________________________ La Cour formule les recommandations suivantes : (Recommandation nouvelle) : rendre publique, après l’adoption de la loi de finances initiale et de la loi de finances de fin de gestion, la version actualisée du fichier « Évaluation des recettes du budget général » associé au tome 1 de l’annexe Voies et moyens (direction du budget, direction générale du Trésor, direction générale des finances publiques) ; (Recommandation nouvelle) : conduire une étude rétrospective, éventuellement auprès d’un échantillon d’entreprises, afin de mieux comprendre leur comportement en matière d’ajustement de leurs acomptes d’impôt sur les sociétés (direction générale du Trésor, direction générale des finances publiques) 63. |
+
+63 Cette recommandation qui ne figurait pas dans la NEB « recettes fiscales » de 2023 est en revanche présente dans les observations définitives sur les prévisions de recettes fiscales publiées par la Cour en décembre 2024.
+
+##### Annexes
+
+Annexe n° 1 : suivi de la recommandation formulée au titre de l’exécution budgétaire 2023
+
+| | | | | | | | | Appréciation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | Recommandation formulée | | | | | | par la Cour |
+| N° | | au sein de la note | | Réponse de | | Analyse de la Cour | | du degré de |
+| | | d’exécution budgétaire | | l’administration | | | | mise en |
+| | | 2023 | | | | | | œuvre |
+
+« Conformément à la recommandation de la Cour, l’exposé général des motifs du projet de loi de fin de gestion pour 2024 a été étoffé afin de présenter les sous jacents de la révision des prévisions de recettes fiscales pour 2024 ».
+
+La mise à jour des prévisions de recettes dans l’exposé général des motifs de la LFG a été assortie de quelques éléments d’explications supplémentaires par rapport à l’exercice 2023. Toutefois, le détail, pour chaque impôt, de l’évolution de la prévision de recettes entre évolution spontanée et mesures fiscales n’est pas fourni. Afin que l’information fournie soit complète et utile, une version actualisée du fichier « Évaluation des recettes du budget général » comprenant un chiffrage de l’ensemble des mesures fiscales et de l’évolution spontanée pourrait être publié à l’occasion de la publication de la loi de finances de fin de gestion, mais aussi de la loi de finances initiale (cf. recommandation n° 2 supra).
+
+Partiellement 
+mise en 
+œuvre 
+
+Unique
+
+Enrichir les exposés généraux des motifs des projets de lois de finances rectificatives et de fin de gestion d’éléments justifiant pour chacun des principaux impôts les nouvelles estimations de recettes (direction du budget, direction générale du Trésor, direction générale des finances publiques).
+
+Annexe n° 2 : l’impôt sur le revenu
+
+Tableau n° 10 : prévision et exécution de l’impôt sur le revenu (en Md€)
+
+En %
+
+Écart 2023-2024
+
+Exécution 2023
+
+Exécution 2024
+
+PLF 2024 LFI 2024 LFG 2024
+
+88,6 94,1 93,4 88,2 88,0 - 0,6 - 0,7 %
+
+Source : Cour des comptes d’après documents budgétaires
+
+Tableau n° 11 : décomposition de l’évolution de l’impôt sur le revenu en prévision et en exécution (en Md€)
+
+| | Recettes 2023 | Évolution spontanée | Total mesures | Recettes 2024 |
+| --- | --- | --- | --- | --- |
+| PLF 2024 | 90,7 | +3,3 | + 0,1 | 94,1 |
+| Exécution | 88,6 | - 0,6 | 0 | 88,0 |
+| Écart | - 2,1 | - 3,9 | - 0,1 | - 6,1 |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Graphique n° 13 : recettes budgétaires nettes d’impôt sur le revenu entre 2007 et 2024 (en Md€)
+
+| 100,0 90,0 80,0 70,0 60,0 50,0 40,0 30,0 20,0 10,0 | 49,1 0,0 | | 51,7 | 46,7 | 47,4 | 51,5 | 59,8 | 67,0 | 69,2 | 69,3 | 71,8 | 73,0 | 73,0 | 71,7 | 74,0 | 78,7 | 89,0 | 88,6 | 88,0 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Annexe n° 3 : l’impôt sur les sociétés
+
+Tableau n° 12 : prévision et exécution de l’impôt sur les sociétés (en Md€)
+
+En %
+
+Écart 2023-2024
+
+Exécution 2023
+
+Exécution 2024
+
+PLF 2024 LFI 2024 LFG 2024
+
+56,8 72,2 72,0 57,7 57,4 + 0,6 + 1,1 %
+
+Source : Cour des comptes d’après documents budgétaires
+
+Tableau n° 13 : décomposition de l’évolution de l’impôt sur les sociétés en prévision et en exécution (en Md€)
+
+| | Recettes 2023 | Évolution spontanée | Total mesures | Recettes 2024 |
+| --- | --- | --- | --- | --- |
+| | PLF 2024 61,3 | + 10 | + 0,8 | 72,2 |
+| | Exécution 56,8 | - 0,1 | + 0,7 | 57,4 |
+| | Écart - 4,5 | - 10,1 | - 0,1 | - 14,8 |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Graphique n° 14 : recettes budgétaires nettes d’impôt sur les sociétés entre 2007 et 2024 (en Md€)
+
+| 70,0 60,0 50,0 40,0 30,0 20,0 10,0 0,0 | 51,0 | | 49,3 | 20,9 | 32,9 | 39,1 | 40,8 | 47,2 | 35,3 | 33,5 | 30,0 | 35,7 | 27,4 | 33,5 | 36,3 | 46,3 | 62,1 | 56,8 | 57,4 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Annexe n° 4 : la taxe sur la valeur ajoutée
+
+Tableau n° 14 : prévision et exécution de la taxe sur la valeur ajoutée (en Md€)
+
+En %
+
+Écart 2023-2024
+
+Exécution 2023
+
+Exécution 2024
+
+PLF 2024 LFI 2024 LFG 2024
+
+95,2 100,4 100,8 95,6 96,8 + 1,6 +1,7 %
+
+Source : Cour des comptes d’après documents budgétaires
+
+Tableau n° 15 : décomposition de l’évolution de la taxe sur la valeur ajoutée en
+
+prévision et en exécution (en Md€)
+
+| | Recettes 2023 | Évolution spontanée | Total mesures | Recettes 2024 |
+| --- | --- | --- | --- | --- |
+| PLF 2024 | 96,3 | + 3,8 | + 0,3 | 100,4 |
+| Exécution | 95,2 | + 0,9 | + 0,7 | 96,8 |
+| Écart | - 1,1 | - 2,9 | +0,4 | - 3,6 |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Graphique n° 15 : recettes budgétaires nettes de taxe sur la valeur ajoutée
+
+entre 2007 et 2024 (en Md€)
+
+| 180,0 160,0 140,0 120,0 100,0 80,0 60,0 40,0 20,0 | 131,5 0,0 | 129,9 | 118,4 | 127,3 | 131,9 | 133,4 | 136,3 | 138,4 | 141,8 | 144,4 | 152,4 | 156,7 | 129,0 | 113,8 | | 100,8 95,5 | | 95,2 | 96,8 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Annexe n° 5 : la fraction « produits énergétiques » de l’accise sur les énergies (ex-TICPE)
+
+Tableau n° 16 : prévision et exécution de la fraction « produits énergétiques » de l’accise sur les énergies (en Md€)
+
+En %
+
+| Exécution | | | PLF 2024 | | LFI 2024 | LFG 2024 | Exécution | | En % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2023 | | | | | | | 2024 | 2024 | |
+| 16,8 | | | | 16,4 | | 15,4 15,9 | 16,0 | - 0,8 | - 4,8 % |
+
+Écart 2023-
+
+Source : Cour des comptes d’après documents budgétaires
+
+Tableau n° 17 : décomposition de l’évolution de la fraction « produits énergétiques » de l’accise sur les énergies (en Md€)
+
+| | Recettes 2023 | Évolution spontanée | Total mesures | Recettes 2024 |
+| --- | --- | --- | --- | --- |
+| PLF 2024 | 16,4 | 0 | 0 | 16,4 |
+| Exécution | 16,8 | + 0,1 | - 0,9 | 16,0 |
+| Écart | + 0,4 | + 0,1 | - 0,9 | - 0,4 |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Graphique n° 16 : recettes budgétaires nettes de la fraction « produits énergétiques » de l’accise sur les énergies entre 2008 et 2024 (en Md€)
+
+| 20,0 18,0 16,0 14,0 12,0 10,0 8,0 6,0 4,0 2,0 0,0 | 15,0 | | 14,9 | 14,2 | 14,3 | 13,5 | 13,8 | 13,2 | 13,7 | 15,9 | 11,1 | 13,7 | 13,4 | 6,9 | 18,3 | 18,0 | 16,8 | 16,0 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Annexe n° 6 : les autres recettes fiscales
+
+Tableau n° 18 : prévision et exécution des autres recettes fiscales (en Md€)
+
+En %
+
+| Exécution | | PLF 2024 | | LFI 2024 | | LFG 2024 | Exécution | | | En % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2023 | | | | | | | 2024 | | 2024 | |
+| 65,5 | | 66,3 | | | 66,9 | 65,9 | 67,5 | | + | 2,0 + 3,1 % |
+
+Écart 2023-
+
+Source : Cour des comptes d’après documents budgétaires
+
+Tableau n° 19 : décomposition de l’évolution des autres recettes fiscales (en Md€)
+
+| | Recettes 2023 | Évolution spontanée | Total mesures | Recettes 2024 |
+| --- | --- | --- | --- | --- |
+| PLF 2024 | 67,4 | + 1,4 | - 2,5 | 66,3 |
+| Exécution | 65,5 | - 1,1 | + 3,1 | 67,5 |
+| Écart | - 1,9 | - 2,5 | + 5,6 | + 1,2 |
+
+Source : Cour des comptes d’après documents budgétaires
+
+Graphique n° 17 : recettes budgétaires nettes des autres recettes fiscales entre 2007 et 2024 (en Md€)
+
+| 80,0 70,0 60,0 50,0 40,0 30,0 20,0 10,0 0,0 | 40,6 | | 19,2 | 13,3 | 15,2 | 18,3 | 21,2 | 19,9 | 18,2 | 21,7 | 22,0 | 23,4 | 24,6 | 33,7 | 25,0 | 56,9 | 60,3 | 65,5 | 67,5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | | | | | |
+
+Source : Cour des comptes d’après documents budgétaires
+

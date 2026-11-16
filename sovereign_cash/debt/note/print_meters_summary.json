@@ -1,0 +1,62 @@
+{
+  "uk_ship": {
+    "model": "seas_add_3",
+    "ship_seas": true,
+    "mae_seas": 1.4411924603174604,
+    "mae_profile": 3.5579721976591583,
+    "mae_smly": 1.6880952380952383,
+    "reason": "seas PRE MAE 1.441 beats profile 3.558 by \u22653%"
+  },
+  "es_ship": {
+    "model": "seas_add_3",
+    "ship_seas": true,
+    "mae_seas": 2.6815787795992714,
+    "mae_smly": 3.009976190476191,
+    "reason": "seas PRE MAE 2.682 beats smly 3.010"
+  },
+  "uk": {
+    "cc": "uk",
+    "meter": "psnb_ex",
+    "through": "2026-09",
+    "fy": "2026-27",
+    "ytd_bn": 97.84100000000001,
+    "plan_td_bn": 91.80000000000001,
+    "gap_bn": 6.040999999999997,
+    "official_gap_bn": 6.0,
+    "annual_plan_bn": 115.5,
+    "ytd_gdp": 3.078794963123326,
+    "plan_td_gdp": 2.8887008270021908,
+    "next_month": "2026-10",
+    "next_bn": 15.741944444444442,
+    "ship": {
+      "model": "seas_add_3",
+      "ship_seas": true,
+      "mae_seas": 1.4411924603174604,
+      "mae_profile": 3.5579721976591583,
+      "mae_smly": 1.6880952380952383,
+      "reason": "seas PRE MAE 1.441 beats profile 3.558 by \u22653%"
+    }
+  },
+  "es": {
+    "cc": "es",
+    "meter": "igae_ac_b9",
+    "through": "2026-07",
+    "fy": "2026",
+    "ytd_bn": 44.576,
+    "prior_td_bn": 39.281,
+    "gap_bn": 5.295000000000002,
+    "ytd_gdp": 2.4856745278396497,
+    "prior_td_gdp": 2.190411457467455,
+    "next_month": "2026-08",
+    "next_bn": -2.0901944444444434,
+    "ship": {
+      "model": "seas_add_3",
+      "ship_seas": true,
+      "mae_seas": 2.6815787795992714,
+      "mae_smly": 3.009976190476191,
+      "reason": "seas PRE MAE 2.682 beats smly 3.010"
+    }
+  },
+  "spike": "FR/IT/DE: no usable monthly GG print meter in-repo. Phase 2 stays ES B.9 only; FR politics remains Ex1d annual.",
+  "png": "sovereign_cash/debt/note/dm_debt_outlook_print.png"
+}

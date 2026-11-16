@@ -1,0 +1,95 @@
+{
+  "note": "Germany BMF category forecasts for bottom-up macro. Open year pins aggregate Ausgaben/Einnahmen to Monatsbericht Soll (printed at origin; same annual target as production) × asymmetric hist/YTD blend — not a no-authority claim. Edge vs production = execution haircut + later-year smly×macro vs planhc. Dropping Soll (hist_year) clears PRE but OOS ~24 vs ~7.4. Later years: revenue×NGDP, primary smly × T1 sozial×wages β=0.35, interest = debt-book × FA stock × rates. Special funds in plan.json. Leaf Steuerarten audit-only.",
+  "macro": {
+    "source": "AMECO/Eurostat nominal GDP YoY; IMF WEO / Eurostat HICP; Eurostat namq D1 wages; Finanzagentur stock + debt-book effective interest rate",
+    "unit": "percent, calendar year",
+    "drivers": {
+      "ngdp": "nominal GDP YoY (Steuerabschätzung activity base; proxy for wages/profits/VAT)",
+      "cpi": "CPI / HICP (audit leaf prior on spend; production later primary CPI β=0)",
+      "wages": "Eurostat namq_10_gdp D1 compensation-of-employees YoY (T1 sozial overlay)",
+      "employment": "Eurostat namq_10_pe EMP_DC — tried on T1 sozial; PRE clears, OOS does not beat wages",
+      "rates": "central-government interest / debt × 100 (scales coupon-calendar interest)",
+      "fa_stock": "Finanzagentur total federal debt stock YoY (compounds later-year interest level)"
+    }
+  },
+  "production": {
+    "open_year_spend": "Soll × (0.80 historical Ist/Soll + 0.20 within-year run-rate Ist/(elapsed-share·Soll)), clipped [0.5, 1.5]",
+    "open_year_revenue": "Soll × (0.95 historical Ist/Soll + 0.05 within-year run-rate), clipped [0.5, 1.5]",
+    "later_revenue": "smly × (1 + 1.0 · NGDP_{t−1})",
+    "later_primary": "smly × (1 + w_sozial · 0.35 · wages_{t−1}); w_sozial ≈ 0.51–0.54 from BMF MB T1 Soziale Sicherung share of primary (ex t1_zins)",
+    "later_interest": "debt-book annual interest[y−1] × interest-carve month-share × (FA total stock YoY)^{Δy} × (1 + 2.0 · rates[y−1]/100)"
+  },
+  "elasticities_a_priori": {
+    "note": "MoF-style pass-throughs fixed before PRE score. OLS not fit inside PRE — Steuerarten panel starts 2017 (<6 clean years). Production uses aggregate path + T1 overlay; leaf βs are audit.",
+    "lohnsteuer": {"driver": "ngdp", "beta": 1.0, "basis": "wages ≈ NGDP proxy"},
+    "ust": {"driver": "ngdp", "beta": 1.0, "basis": "VAT ~ nominal activity"},
+    "kst": {"driver": "ngdp", "beta": 1.2, "basis": "corporate profits more cyclical than NGDP"},
+    "veranlagte_est": {"driver": "ngdp", "beta": 1.0},
+    "t1_sozial": {"driver": "wages", "beta": 0.35, "basis": "T1 Soziale Sicherung share × D1 wages; β from PRE-clearing grid {0…1}, min OOS"},
+    "primary_spend": {"driver": "cpi", "beta": 0.0, "basis": "homogeneous CPI prior rejected; T1 share×wages replaces it"},
+    "zins": {"driver": "rates+fa_stock", "beta": 2.0, "basis": "coupon calendar × stock path; β on rates from PRE-clearing grid {0,0.5,1,1.5,2}, min OOS"}
+  },
+  "selection_audit": {
+    "gate": "PRE mean MAE ≥5% vs v1, ≤1 worse horizon; among clearers minimize OOS mean MAE",
+    "prior_ship": {
+      "spec": "open w_exp=0.20 w_rev=0.05; later br=1.0 NGDP, bp=0.0; interest=coupon×FA-stock×(1+2.0·rates)",
+      "pre_mean": 6.26,
+      "oos_mean": 7.45,
+      "v1_pre": 6.61,
+      "v1_oos": 10.01
+    },
+    "shipped": {
+      "spec": "prior + T1 sozial share × wages β=0.35 on later primary",
+      "pre_mean": 6.20,
+      "oos_mean": 7.37,
+      "v1_pre": 6.61,
+      "v1_oos": 10.01,
+      "note": "OOS 7.45→7.37; PRE edge 5.2%→6.2%; β=0.35 min OOS on wages grid among PRE clearers"
+    },
+    "oos_error_dominance": "OOS h=12 residual still dominated by later-year primary; T1 sozial×wages cuts it further vs coupon×stock-only",
+    "trials_rejected": [
+      "Equal open YTD weights 0–0.50 × later β grid (972 cells) — best PRE-clearer OOS still behind asymmetric",
+      "Leaf month-shares × aggregate Soll — PRE edge 4.2%",
+      "Unscaled leaf Soll — PRE ~4× worse",
+      "Scaled leaf Steuerarten × prior growth renormalized to annual Soll pin — cumulative MAE no-op (annual totals pinned)",
+      "Primary later on NGDP — ties β_p=0 CPI case; no further OOS cut",
+      "Interest smly×rates bi=1 — dominated on OOS by coupon×FA-stock",
+      "BMF Zins leaf as interest path — PRE fails",
+      "Special funds — SVIK/SVBw absent in PRE; no PRE-clearing monthly driver",
+      "T1 Σ free-level category paths — PRE fails; renorm-to-primary pin = OOS no-op",
+      "T1 sozial×employment — PRE clears; OOS ≥7.45",
+      "T1 sozial×NGDP / rest×CPI / wages β=1 — PRE clears; OOS above wages β=0.35"
+    ],
+    "bmf_mb_inventory": {
+      "T0": "Entwicklung des Bundeshaushalts — used (fetch.parse_mb aggregates)",
+      "T1": "Ausgaben nach Aufgabenbereichen — used (sozial share × wages on later primary)",
+      "T2": "Ausgaben nach ökonomischen Arten — used (spend leaves)",
+      "T3": "Einnahmen / Steuerarten — used (tax leaves)",
+      "Sondervermögen": "not in Monatsbericht HTML; FA schuldenbericht + plan.json only"
+    }
+  },
+  "categories": {
+    "source": "BMF Monatsbericht — T1 Aufgabenbereiche, T2 ökonomische Arten, T3 Steuerarten",
+    "unit": "EUR bn, federal cash (Bundesanteil)",
+    "path": "data/de/bmf_mb/*.html (parsed live; Dec filled from next-year Ist)",
+    "tax_positive": [
+      "lohnsteuer", "veranlagte_est", "nicht_veranlagte", "abgeltung", "kst",
+      "ust", "gewerbeumlage", "energie", "tabak", "soli", "versicherung",
+      "strom", "kfz", "alkohol", "kaffee", "luft", "sonstige_bundessteuern"
+    ],
+    "tax_negative": [
+      "konsolidierung", "ergaenzung", "bne_eu", "mwst_eu", "kunststoff_eu",
+      "opnv", "kfz_lkw"
+    ],
+    "spend": [
+      "personal", "sachaufwand", "zins", "zuweisungen", "sonst_vermoegen",
+      "investiv", "global"
+    ],
+    "t1_aufgabenbereiche": [
+      "allg_dienste", "bildung", "sozial", "gesundheit", "wohnen",
+      "ernaehrung", "energie_gewerbe", "verkehr", "allg_finanz"
+    ],
+    "other_revenue": ["sonstige_einnahmen"],
+    "totals": ["steuern_total", "einnahmen_total", "ausgaben_total", "t1_ausgaben"]
+  }
+}

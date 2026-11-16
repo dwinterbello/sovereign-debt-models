@@ -1,0 +1,589 @@
+{
+  "asof": "2026-10-24",
+  "verdict": "FR 2026 = IT/ES-2011 buyer-stack geometry at FR-2011 spread levels. Official OAT\u2013Bund 165.8bp (23-Oct, BdF TEC\u2212BBK) sits in the FR-2011 peak zone (208.1 on 2011-11-17), not IT-2011 (~550). BdF DET: FR foreign OAT share only drifted 62\u219255 in 2011 (mild). BoI TCCE0200: IT nonres 38.3%\u219234.8%\u219231.5% (Jun-11\u2192Dec-11\u2192Mar-12) while MFI 25.4%\u219229.0%. IMF ES foreign-private 33%\u219217% (Jun-11\u2192Mar-12). EBA: FR banks absorbed in 2012, not 2011. SMP never bought FR (\u20ac0 end-2012). Live risk = IT/ES-2011 foreign blink + bank clearing that France largely skipped in 2011.",
+  "sources": {
+    "spreads": "issuance/cache/egb_daily.parquet",
+    "imf": "issuance.imf_investor_base.wide",
+    "qsa_nonres": "ECB QSA S13 F3 non-resident liabilities",
+    "bsi_banks": "ECB BSI MFIs ex NCB domestic GG debt (monthly stocks + transactions)",
+    "cover_fr_it": "issuance/cache/ops_{fr,it}.parquet",
+    "cover_es": "data/raw/es/tesoro/historico_subastas.xlsx (sheet year overrides Excel FECHA year)",
+    "smp_weekly_proxy": "ECB ILM.W.U2.C.A070100.U2.EUR",
+    "smp_country_stock": "ECB SMP_breakdown_history.csv (end-year from 2012)",
+    "banks_equity": "Yahoo EXV1.DE (iShares EURO STOXX Banks)",
+    "bdf_detention": "Banque de France DET via comptespublics.fr (+ Webstat DET2 OAT)",
+    "boi_holders": "Banca d'Italia TCCE0200 (Debito AP: settori detentori) via a2a Infostat",
+    "bde_holders": "Banco de Espa\u00f1a BE.22.44 LET+BYO tenencias (from Jan-2016); 2011 via IMF",
+    "oat_bund_official": "BdF TEC10 \u2212 Bundesbank BBSIS 10y federal zero",
+    "eba_domestic": "EBA 2013 Transparency Summary Report Table 2"
+  },
+  "spreads_bp": {
+    "FR_2011": {
+      "bp": 208.1,
+      "date": "2011-11-17"
+    },
+    "IT_2011": {
+      "bp": 552.3,
+      "date": "2011-11-09"
+    },
+    "ES_2011": {
+      "bp": 486.0,
+      "date": "2011-11-17"
+    },
+    "FR_2026_06_30": 66.0,
+    "FR_2026_09_25": 100.4,
+    "FR_live_tape_note_bp": 175,
+    "FR_official_2026_10_23": 165.8,
+    "FR_official_2026_10_22": 168.6
+  },
+  "imf_foreign_private": {
+    "IT": {
+      "2011-06-30": {
+        "d4_fpriv_gdp": 1.8,
+        "fpriv_share": 35.6,
+        "db_share": 25.4,
+        "dcb_share": 3.7
+      },
+      "2011-09-30": {
+        "d4_fpriv_gdp": -5.43,
+        "fpriv_share": 30.9,
+        "db_share": 26.3,
+        "dcb_share": 4.4
+      },
+      "2011-12-31": {
+        "d4_fpriv_gdp": -7.45,
+        "fpriv_share": 27.7,
+        "db_share": 26.0,
+        "dcb_share": 4.8
+      },
+      "2012-03-31": {
+        "d4_fpriv_gdp": -11.83,
+        "fpriv_share": 24.9,
+        "db_share": 29.0,
+        "dcb_share": 4.8
+      },
+      "2025-12-31": {
+        "d4_fpriv_gdp": 7.3,
+        "fpriv_share": 29.7,
+        "db_share": 20.0,
+        "dcb_share": 18.5
+      }
+    },
+    "ES": {
+      "2011-06-30": {
+        "d4_fpriv_gdp": 2.99,
+        "fpriv_share": 33.1,
+        "db_share": 28.5,
+        "dcb_share": 3.9
+      },
+      "2011-09-30": {
+        "d4_fpriv_gdp": -1.04,
+        "fpriv_share": 31.0,
+        "db_share": 26.4,
+        "dcb_share": 4.6
+      },
+      "2011-12-31": {
+        "d4_fpriv_gdp": -3.9,
+        "fpriv_share": 25.7,
+        "db_share": 28.7,
+        "dcb_share": 4.8
+      },
+      "2012-03-31": {
+        "d4_fpriv_gdp": -10.03,
+        "fpriv_share": 17.0,
+        "db_share": 33.5,
+        "dcb_share": 4.6
+      },
+      "2025-12-31": {
+        "d4_fpriv_gdp": 5.72,
+        "fpriv_share": 36.5,
+        "db_share": 20.2,
+        "dcb_share": 20.1
+      }
+    },
+    "FR": {
+      "2011-06-30": {
+        "d4_fpriv_gdp": -2.78,
+        "fpriv_share": 31.9,
+        "db_share": 20.2,
+        "dcb_share": 1.8
+      },
+      "2011-09-30": {
+        "d4_fpriv_gdp": -0.61,
+        "fpriv_share": 32.9,
+        "db_share": 20.5,
+        "dcb_share": 2.1
+      },
+      "2011-12-31": {
+        "d4_fpriv_gdp": -0.78,
+        "fpriv_share": 29.1,
+        "db_share": 21.0,
+        "dcb_share": 2.4
+      },
+      "2012-03-31": {
+        "d4_fpriv_gdp": 3.4,
+        "fpriv_share": 32.1,
+        "db_share": 21.1,
+        "dcb_share": 2.8
+      },
+      "2025-12-31": {
+        "d4_fpriv_gdp": 4.99,
+        "fpriv_share": 36.2,
+        "db_share": 16.7,
+        "dcb_share": 15.6
+      }
+    }
+  },
+  "qsa_nonres_share_pct": {
+    "IT": {
+      "2012-03-31": 37.2,
+      "2012-06-30": 35.4,
+      "2025-12-31": 33.1,
+      "2026-03-31": 33.9
+    },
+    "ES": {
+      "2010-12-31": 42.0,
+      "2011-06-30": 39.3,
+      "2011-12-31": 36.2,
+      "2012-03-31": 30.4,
+      "2025-12-31": 46.8,
+      "2026-03-31": 47.9
+    },
+    "FR": {
+      "2010-12-31": 64.4,
+      "2011-06-30": 63.1,
+      "2011-12-31": 61.1,
+      "2012-03-31": 61.8,
+      "2025-12-31": 58.0,
+      "2026-03-31": 59.2
+    }
+  },
+  "bsi_domestic_bank_absorption": {
+    "IT_H2_2011": {
+      "flow_sum_bn": 13.9,
+      "stock_start_bn": 246.0,
+      "stock_end_bn": 245.0
+    },
+    "ES_H2_2011": {
+      "flow_sum_bn": 14.6,
+      "stock_start_bn": 173.0,
+      "stock_end_bn": 193.0
+    },
+    "FR_H2_2011": {
+      "flow_sum_bn": 6.3,
+      "stock_start_bn": 138.0,
+      "stock_end_bn": 153.0
+    },
+    "FR_2025H2": {
+      "flow_sum_bn": 7.8,
+      "stock_start_bn": 307.0,
+      "stock_end_bn": 309.0
+    },
+    "FR_2026_YTD": {
+      "flow_sum_bn": 4.9,
+      "stock_start_bn": 317.0,
+      "stock_end_bn": 314.0
+    },
+    "DE_H2_2011": {
+      "flow_sum_bn": -13.3,
+      "stock_start_bn": 210.0,
+      "stock_end_bn": 201.0
+    }
+  },
+  "auction_cover": {
+    "FR_H2_2011": {
+      "n": 25,
+      "median": 2.41,
+      "size_weighted": 2.299678206692787,
+      "p10": 1.966
+    },
+    "FR_Aug_Oct_2026": {
+      "n": 26,
+      "median": 2.735,
+      "size_weighted": 2.510146204140937,
+      "p10": 2.225
+    },
+    "IT_H2_2011": {
+      "n": 45,
+      "median": 1.67,
+      "size_weighted": 1.6541186869296616,
+      "p10": 1.27
+    },
+    "ES_H2_2011_long": {
+      "n": 11,
+      "median": 1.8040665434380776,
+      "size_weighted": 1.8038801689108437,
+      "p10": 1.6536030341340076
+    },
+    "ES_2011_long": {
+      "n": 24,
+      "median": 1.8466649522957663,
+      "size_weighted": 1.9369861313642145,
+      "p10": 1.6724492152215107
+    }
+  },
+  "smp": {
+    "weekly_ilm": {
+      "stock_end_2010_bn": 134.8,
+      "stock_end_2011_bn": 273.9,
+      "stock_end_2012_bn": 276.8,
+      "h2_2011_sum_delta_bn": 140.1,
+      "h2_2011_max_weekly_bn": 22.0,
+      "note": "ILM A070100 = all monetary-policy securities (SMP + CBPP\u2026). Country SMP stock only from end-2012 transparency; FR was never an SMP issuer."
+    },
+    "end_2012_nominal_bn_by_issuer": {
+      "IE": 14.2,
+      "GR": 33.9,
+      "ES": 44.3,
+      "IT": 102.8,
+      "PT": 22.8,
+      "FR": 0.0,
+      "total": 218.0
+    },
+    "france_purchased": false
+  },
+  "banks_equity_exv1": {
+    "2011": {
+      "may_jul_max": 20.11,
+      "nov_dec_min": 12.07,
+      "drawdown_pct": -40.0
+    },
+    "2026": {
+      "jun_max": 41.5,
+      "sep_last": 42.73,
+      "move_pct": 3.0
+    }
+  },
+  "events_2011": [
+    [
+      "2010-05-10",
+      "SMP start"
+    ],
+    [
+      "2011-08-08",
+      "SMP reactivated (IT/ES)"
+    ],
+    [
+      "2011-11-12",
+      "Berlusconi resigns"
+    ],
+    [
+      "2011-11-17",
+      "FR\u2013Bund peak 208bp"
+    ],
+    [
+      "2011-12-21",
+      "3y LTRO #1"
+    ],
+    [
+      "2012-02-29",
+      "3y LTRO #2"
+    ],
+    [
+      "2012-07-26",
+      "Draghi \u2018whatever it takes\u2019"
+    ],
+    [
+      "2012-09-06",
+      "OMT announced"
+    ]
+  ],
+  "events_2026": [
+    [
+      "2026-06-30",
+      "OAT\u2013Bund baseline 66bp"
+    ],
+    [
+      "2026-10-22",
+      "Tape ~175bp (Europe-problem gate)"
+    ]
+  ],
+  "gaps_remaining": [
+    "No public daily/weekly foreign OAT flow (BdF DET quarterly; BoI TCCE monthly; BdE be2244 monthly from 2016).",
+    "BdE BE.22.44 holder tape starts Jan-2016 \u2014 ES 2011 crisis uses IMF (bit-identical to BoI TCCE totals for IT).",
+    "No free CDS panel (Markit/WRDS/Bloomberg only) \u2014 EXV1 equity ETF remains the stress proxy.",
+    "Weekly SMP by country during 2011 is confidential ECB research data; public = ILM aggregate + end-2012 country stock.",
+    "EBA sovereign template Dec-2011 is annual snapshots, not a monthly path.",
+    "VALM0100 is securities *issued* by residents, not holders \u2014 do not use it as a detention tape."
+  ],
+  "bdf_detention": {
+    "source": "Banque de France DET via comptespublics.fr/series/detention-dette-etat/donnees.csv (+ Webstat DET2 OAT amounts)",
+    "2010Q1": {
+      "nonres_pct": 69.31,
+      "nonres_oat_pct": 61.82,
+      "banques_oat_pct": 15.02,
+      "banque_centrale_oat_pct": 1.21,
+      "assurances_retraite_oat_pct": 17.8,
+      "encours_oat_md": 847.98,
+      "nonres_md": 889.43
+    },
+    "2011Q1": {
+      "nonres_pct": 64.44,
+      "nonres_oat_pct": 54.46,
+      "banques_oat_pct": 13.94,
+      "banque_centrale_oat_pct": 2.53,
+      "assurances_retraite_oat_pct": 24.77,
+      "encours_oat_md": 921.4,
+      "nonres_md": 866.4
+    },
+    "2011Q2": {
+      "nonres_pct": 65.44,
+      "nonres_oat_pct": 55.63,
+      "banques_oat_pct": 13.05,
+      "banque_centrale_oat_pct": 2.73,
+      "assurances_retraite_oat_pct": 23.82,
+      "encours_oat_md": 949.92,
+      "nonres_md": 915.2
+    },
+    "2011Q3": {
+      "nonres_pct": 65.89,
+      "nonres_oat_pct": 56.89,
+      "banques_oat_pct": 12.74,
+      "banque_centrale_oat_pct": 2.75,
+      "assurances_retraite_oat_pct": 23.23,
+      "encours_oat_md": 1006.88,
+      "nonres_md": 951.09
+    },
+    "2011Q4": {
+      "nonres_pct": 64.02,
+      "nonres_oat_pct": 55.22,
+      "banques_oat_pct": 13.15,
+      "banque_centrale_oat_pct": 3.18,
+      "assurances_retraite_oat_pct": 23.4,
+      "encours_oat_md": 980.67,
+      "nonres_md": 907.0
+    },
+    "2012Q1": {
+      "nonres_pct": 63.54,
+      "nonres_oat_pct": 55.15,
+      "banques_oat_pct": 12.57,
+      "banque_centrale_oat_pct": 3.21,
+      "assurances_retraite_oat_pct": 23.82,
+      "encours_oat_md": 1038.97,
+      "nonres_md": 940.89
+    },
+    "2025Q4": {
+      "nonres_pct": 56.07,
+      "nonres_oat_pct": 53.78,
+      "banques_oat_pct": 11.45,
+      "banque_centrale_oat_pct": 21.06,
+      "assurances_retraite_oat_pct": 12.02,
+      "encours_oat_md": 2331.68,
+      "nonres_md": 1416.58
+    },
+    "2026Q1": {
+      "nonres_pct": 57.5,
+      "nonres_oat_pct": 55.26,
+      "banques_oat_pct": 10.93,
+      "banque_centrale_oat_pct": 19.55,
+      "assurances_retraite_oat_pct": 11.28,
+      "encours_oat_md": 2399.67,
+      "nonres_md": 1496.33
+    },
+    "2026Q2": {
+      "nonres_pct": 59.66,
+      "nonres_oat_pct": 57.84,
+      "banques_oat_pct": 10.66,
+      "banque_centrale_oat_pct": 18.17,
+      "assurances_retraite_oat_pct": 10.84,
+      "encours_oat_md": 2440.94,
+      "nonres_md": 1586.76
+    },
+    "read": "FR nonres OAT share fell 61.8% (2010Q1) \u2192 54.5% (2011Q1) \u2192 55.2% (2011Q4) \u2014 a mild foreign step-back, not the IT/ES collapse. Stock nonres grew with the stock. Banks on OAT stuck ~13%. Central-bank OAT share 2.5% \u2192 3.2% in 2011 vs 18\u201321% in 2025-26."
+  },
+  "oat_bund_official": {
+    "source": "BdF TEC10 (Webstat) \u2212 Bundesbank BBSIS 10y federal zero",
+    "2011_peak_bp": 208.1,
+    "2011_peak_date": "2011-11-17",
+    "2026_06_30_bp": 66.0,
+    "2026_10_22_bp": 168.6,
+    "2026_10_23_bp": 165.8,
+    "note": "Desk tape ~175 on 22-Oct was ahead of the official close. Use official for the map."
+  },
+  "eba_domestic_sovereign": {
+    "source": "EBA 2013 EU-wide Transparency Summary Report Table 2 (matched to 2011 stress-test Dec-2010)",
+    "domestic_bank_share_pct_of_sovereign_held_by_eba_sample": {
+      "IT": {
+        "2010-12": 59,
+        "2011-12": 68,
+        "2012-12": 75,
+        "2013-06": 76
+      },
+      "ES": {
+        "2010-12": 78,
+        "2011-12": 83,
+        "2012-12": 86,
+        "2013-06": 89
+      },
+      "FR": {
+        "2010-12": 61,
+        "2011-12": 59,
+        "2012-12": 69,
+        "2013-06": 67
+      },
+      "DE": {
+        "2010-12": 76,
+        "2011-12": 73,
+        "2012-12": 72,
+        "2013-06": 72
+      }
+    },
+    "read": "IT domestic-bank share of EBA-sample sovereign rose 59%\u219268%\u219275% (Dec-10\u2192Dec-11\u2192Dec-12) as foreign left. ES 78\u219283\u219286. FR 61\u219259\u219269 \u2014 FR banks did not absorb in 2011 the way IT/ES did; the jump is 2012."
+  },
+  "boi_tcce0200": {
+    "source": "Banca d'Italia TCCE0200 (Debito delle Amministrazioni pubbliche: settori detentori)",
+    "unit": "\u20acbn face / % of GG debt",
+    "note": "Totals match IMF Arslanalp\u2013Tsuda GG stock (\u20ac1,921bn Dec-2010). Nonres = S2; MFI = other resident MFIs ex BoI.",
+    "snapshots": {
+      "2010-12-31": {
+        "asof": "2010-12-31",
+        "nonres_pct": 37.9,
+        "mfi_pct": 25.9,
+        "boi_pct": 3.6,
+        "nonres_bn": 727.7,
+        "mfi_bn": 498.5,
+        "total_bn": 1921.4
+      },
+      "2011-06-30": {
+        "asof": "2011-06-30",
+        "nonres_pct": 38.3,
+        "mfi_pct": 25.4,
+        "boi_pct": 3.7,
+        "nonres_bn": 757.0,
+        "mfi_bn": 502.0,
+        "total_bn": 1978.4
+      },
+      "2011-09-30": {
+        "asof": "2011-09-30",
+        "nonres_pct": 36.4,
+        "mfi_pct": 26.3,
+        "boi_pct": 4.4,
+        "nonres_bn": 713.8,
+        "mfi_bn": 514.7,
+        "total_bn": 1960.5
+      },
+      "2011-12-31": {
+        "asof": "2011-12-31",
+        "nonres_pct": 34.8,
+        "mfi_pct": 26.0,
+        "boi_pct": 4.8,
+        "nonres_bn": 686.3,
+        "mfi_bn": 513.0,
+        "total_bn": 1974.4
+      },
+      "2012-03-31": {
+        "asof": "2012-03-31",
+        "nonres_pct": 31.5,
+        "mfi_pct": 29.0,
+        "boi_pct": 4.8,
+        "nonres_bn": 637.5,
+        "mfi_bn": 586.2,
+        "total_bn": 2022.5
+      },
+      "2012-12-31": {
+        "asof": "2012-12-31",
+        "nonres_pct": 31.6,
+        "mfi_pct": 30.0,
+        "boi_pct": 4.9,
+        "nonres_bn": 648.8,
+        "mfi_bn": 616.2,
+        "total_bn": 2055.8
+      },
+      "2025-12-31": {
+        "asof": "2025-12-31",
+        "nonres_pct": 34.3,
+        "mfi_pct": 20.0,
+        "boi_pct": 18.5,
+        "nonres_bn": 1063.2,
+        "mfi_bn": 617.9,
+        "total_bn": 3097.1
+      },
+      "2026-06-30": {
+        "asof": "2026-06-30",
+        "nonres_pct": 36.2,
+        "mfi_pct": 20.2,
+        "boi_pct": 16.7,
+        "nonres_bn": 1162.7,
+        "mfi_bn": 646.9,
+        "total_bn": 3208.5
+      }
+    },
+    "read": "IT nonres share 38.3% (Jun-11) \u2192 34.8% (Dec-11) \u2192 31.5% (Mar-12); MFI 25.4% \u2192 26.0% \u2192 29.0%. Securities nonres share 46.6% \u2192 42.1% \u2192 37.7%. That is the foreign blink + bank clearing FR did not run in 2011."
+  },
+  "bde_be2244": {
+    "source": "Banco de Espa\u00f1a BE.22.44 (LET+BYO tenencias a vencimiento)",
+    "unit": "\u20acbn face / % of LET+BYO",
+    "coverage": "2016-01 \u2192 present (methodology break; no pre-2016 sector tape on WebBE)",
+    "snapshots": {
+      "2016-01-01": {
+        "asof": "2016-01-01",
+        "nonres_pct": 46.3,
+        "banks_ex_cb_pct": 22.8,
+        "cb_pct": 9.1,
+        "nonres_bn": 381.7,
+        "banks_ex_cb_bn": 188.5,
+        "total_bn": 825.1
+      },
+      "2020-01-01": {
+        "asof": "2020-01-01",
+        "nonres_pct": 49.8,
+        "banks_ex_cb_pct": 13.8,
+        "cb_pct": 21.5,
+        "nonres_bn": 489.5,
+        "banks_ex_cb_bn": 135.8,
+        "total_bn": 983.1
+      },
+      "2025-12-01": {
+        "asof": "2025-12-01",
+        "nonres_pct": 48.4,
+        "banks_ex_cb_pct": 14.5,
+        "cb_pct": 23.1,
+        "nonres_bn": 703.0,
+        "banks_ex_cb_bn": 211.3,
+        "total_bn": 1452.7
+      },
+      "2026-08-01": {
+        "asof": "2026-08-01",
+        "nonres_pct": 51.0,
+        "banks_ex_cb_pct": 14.8,
+        "cb_pct": 20.3,
+        "nonres_bn": 765.4,
+        "banks_ex_cb_bn": 221.6,
+        "total_bn": 1500.8
+      }
+    },
+    "crisis_2011_via_imf": {
+      "2010-12-31": {
+        "d4_fpriv_gdp": 3.5,
+        "fpriv_share": 35.9,
+        "db_share": 28.2,
+        "dcb_share": 4.0
+      },
+      "2011-06-30": {
+        "d4_fpriv_gdp": 2.99,
+        "fpriv_share": 33.1,
+        "db_share": 28.5,
+        "dcb_share": 3.9
+      },
+      "2011-09-30": {
+        "d4_fpriv_gdp": -1.04,
+        "fpriv_share": 31.0,
+        "db_share": 26.4,
+        "dcb_share": 4.6
+      },
+      "2011-12-31": {
+        "d4_fpriv_gdp": -3.9,
+        "fpriv_share": 25.7,
+        "db_share": 28.7,
+        "dcb_share": 4.8
+      },
+      "2012-03-31": {
+        "d4_fpriv_gdp": -10.03,
+        "fpriv_share": 17.0,
+        "db_share": 33.5,
+        "dcb_share": 4.6
+      }
+    },
+    "read": "Live ES nonres share of LET+BYO ~46% (2016) \u2192 51% (Aug-26); CB 9% \u2192 20%. For 2011 use IMF: foreign-private share 33% (Jun-11) \u2192 26% (Dec-11) \u2192 17% (Mar-12)."
+  }
+}

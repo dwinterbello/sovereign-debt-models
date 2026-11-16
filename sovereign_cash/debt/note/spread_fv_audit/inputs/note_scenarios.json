@@ -1,0 +1,59 @@
+{
+ "_source": "Note scenario grid (sovereign_cash.debt.note.scenario_grid.json, 15 Nov 2026), change vs baseline in 2030: d_ir = general-government interest / revenue, pp; d_pd = primary deficit, pp of GDP (+ = worse).",
+ "rates +75bp": {
+  "d_ir": {
+   "de": 0.49,
+   "fr": 0.75,
+   "it": 0.94,
+   "es": 0.5
+  },
+  "d_pd": {
+   "de": 0.0,
+   "fr": 0.0,
+   "it": 0.0,
+   "es": 0.0
+  }
+ },
+ "recession: nominal GDP -4%": {
+  "d_ir": {
+   "de": 0.47,
+   "fr": 0.71,
+   "it": 0.79,
+   "es": 0.74
+  },
+  "d_pd": {
+   "de": 1.75,
+   "fr": 2.04,
+   "it": 1.61,
+   "es": 2.01
+  }
+ },
+ "recession with rates -75bp": {
+  "d_ir": {
+   "de": -0.1,
+   "fr": -0.11,
+   "it": -0.23,
+   "es": 0.14
+  },
+  "d_pd": {
+   "de": 1.75,
+   "fr": 2.04,
+   "it": 1.61,
+   "es": 2.01
+  }
+ },
+ "repression: +2pp inflation, +100bp": {
+  "d_ir": {
+   "de": 0.28,
+   "fr": 0.46,
+   "it": 0.6,
+   "es": 0.2
+  },
+  "d_pd": {
+   "de": -0.39,
+   "fr": -0.43,
+   "it": -0.37,
+   "es": -0.35
+  }
+ }
+}

@@ -1,0 +1,120 @@
+# CGNCR (ex NRAM, B&B, NR) vintages, GBP bn, hand-entered from DMO remit announcements
+# (https://www.dmo.gov.uk/responsibilities/financing-remit/full-details/, PDFs under dmo.gov.uk/media/).
+# kind: plan = remit at the fiscal event before the FY; revision = in-year revision; estimate = the
+# next spring event's estimate for the FY just ending; outturn = first-published outturn (April);
+# projection = an FY beyond the remit year shown in an earlier document.
+# cgncr_ex is on the M98R basis. cgncr_reported differs where the DMO later restated the figure:
+#   2013-14 Budget/April 113.9 restated 111.0 ex B&B and NRAM (Autumn Statement 2013 table);
+#   2014-15 Budget/April 100.7 restated 107.2 with Network Rail financing inside CGNCR (AS 2014 fn 2);
+#   2015-16 Budget/April 78.9 restated 85.6 (July Budget 2015 table, "a reduction of £14.0bn").
+# comparable=0: 2012-13 remit CGNCR (outturn 112.2) is not on the current M98R basis (FY sum 98.6).
+# 2025-11-26 projection for 2026-27 = 137.2 - 3.9 (Spring Forecast 2026 para 2.35);
+# 2023-11-22 projection for 2024-25 = 142.8 - 5.8 (Budget 2024 para 28).
+fy,vintage_date,event,kind,cgncr_ex,cgncr_reported,comparable,source
+2010-11,2010-03-24,Budget 2010,plan,166.4,166.4,1,/media/gspbik4f/sa240310.pdf
+2010-11,2010-04-22,CGNCR outturn 2009-10,revision,166.4,166.4,1,/media/5eohjkad/sa220410a.pdf
+2010-11,2010-06-22,June Budget 2010,revision,146.1,146.1,1,/media/qh3fhqph/sa220610.pdf
+2010-11,2010-11-29,EFO November 2010,revision,144.2,144.2,1,/media/qckgq010/sa291110.pdf
+2010-11,2011-03-23,Budget 2011,estimate,141.2,141.2,1,/media/nyfpuzoe/sa230311.pdf
+2010-11,2011-04-21,CGNCR outturn 2010-11,outturn,139.6,139.6,1,/media/1gae3fhm/sa210411.pdf
+2011-12,2011-03-23,Budget 2011,plan,120.4,120.4,1,/media/nyfpuzoe/sa230311.pdf
+2011-12,2011-04-21,CGNCR outturn 2010-11,revision,120.4,120.4,1,/media/1gae3fhm/sa210411.pdf
+2011-12,2011-11-29,Autumn Statement 2011,revision,135.0,135.0,1,/media/skzextsr/sa291111.pdf
+2011-12,2012-03-21,Budget 2012,estimate,129.9,129.9,1,/media/fkmk0bea/sa210312.pdf
+2011-12,2012-04-24,CGNCR outturn 2011-12,outturn,126.4,126.4,1,/media/l4tbiu0l/sa240412.pdf
+2012-13,2012-03-21,Budget 2012,plan,121.0,121.0,0,/media/fkmk0bea/sa210312.pdf
+2012-13,2012-04-24,CGNCR outturn 2011-12,revision,121.0,121.0,0,/media/l4tbiu0l/sa240412.pdf
+2012-13,2012-12-05,Autumn Statement 2012,revision,106.1,106.1,0,/media/1gzfyptf/sa051212.pdf
+2012-13,2013-03-20,Budget 2013,estimate,105.1,105.1,0,/media/emgn4xpb/sa200313.pdf
+2012-13,2013-04-23,CGNCR outturn 2012-13,outturn,112.2,112.2,0,/media/swfjabmw/pr230413.pdf
+2013-14,2013-03-20,Budget 2013,plan,111.0,113.9,1,/media/emgn4xpb/sa200313.pdf
+2013-14,2013-04-23,CGNCR outturn 2012-13,revision,111.0,113.9,1,/media/swfjabmw/pr230413.pdf
+2013-14,2013-12-05,Autumn Statement 2013,revision,99.0,99.0,1,/media/w1vllxpr/sa051213.pdf
+2013-14,2014-03-19,Budget 2014,estimate,87.5,87.5,1,/media/i14dani0/sa190314.pdf
+2013-14,2014-04-23,CGNCR outturn 2013-14,outturn,80.6,80.6,1,/media/hqnic2z1/sa230414.pdf
+2014-15,2014-03-19,Budget 2014,plan,107.2,100.7,1,/media/i14dani0/sa190314.pdf
+2014-15,2014-04-23,CGNCR outturn 2013-14,revision,107.2,100.7,1,/media/hqnic2z1/sa230414.pdf
+2014-15,2014-12-03,Autumn Statement 2014,revision,102.3,102.3,1,/media/0eqlw5a5/sa031214.pdf
+2014-15,2015-03-18,Budget 2015,estimate,96.2,96.2,1,/media/fofofctr/sa180315.pdf
+2014-15,2015-04-23,CGNCR outturn 2014-15,outturn,92.3,92.3,1,/media/kbqnujxi/sa230415.pdf
+2015-16,2015-03-18,Budget 2015,plan,85.6,78.9,1,/media/fofofctr/sa180315.pdf
+2015-16,2015-04-23,CGNCR outturn 2014-15,revision,85.6,78.9,1,/media/kbqnujxi/sa230415.pdf
+2015-16,2015-07-08,July Budget 2015,revision,71.6,71.6,1,/media/zr2f5hqd/sa080715.pdf
+2015-16,2015-11-25,Autumn Statement 2015,revision,75.5,75.5,1,/media/ymndzb2m/sa251115.pdf
+2015-16,2016-03-16,Budget 2016,estimate,75.5,75.5,1,/media/x3hhbc1o/sa160316.pdf
+2015-16,2016-04-21,CGNCR outturn 2015-16,outturn,78.4,78.4,1,/media/cuthder3/pr210416.pdf
+2016-17,2016-03-16,Budget 2016,plan,62.1,62.1,1,/media/x3hhbc1o/sa160316.pdf
+2016-17,2016-04-21,CGNCR outturn 2015-16,revision,62.1,62.1,1,/media/cuthder3/pr210416.pdf
+2016-17,2016-11-23,Autumn Statement 2016,revision,85.7,85.7,1,/media/hclmsa2s/sa231116.pdf
+2016-17,2017-03-08,Budget 2017,estimate,72.5,72.5,1,/media/n0qjrjn4/sa080317.pdf
+2016-17,2017-04-25,CGNCR outturn 2016-17,outturn,71.1,71.1,1,/media/i3ooowyw/sa250417.pdf
+2017-18,2016-03-16,Budget 2016,projection,41.0,41.0,1,/media/x3hhbc1o/sa160316.pdf
+2017-18,2016-11-23,Autumn Statement 2016,projection,48.3,48.3,1,/media/hclmsa2s/sa231116.pdf
+2017-18,2017-03-08,Budget 2017,plan,47.4,47.4,1,/media/n0qjrjn4/sa080317.pdf
+2017-18,2017-04-25,CGNCR outturn 2016-17,revision,47.4,47.4,1,/media/i3ooowyw/sa250417.pdf
+2017-18,2017-11-22,Autumn Budget 2017,revision,43.4,43.4,1,/media/dmxnjjtk/pr221117.pdf
+2017-18,2018-03-13,Spring Statement 2018,estimate,40.3,40.3,1,/media/q5sbb01r/sa190318.pdf
+2017-18,2018-04-24,CGNCR outturn 2017-18,outturn,40.7,40.7,1,/media/d00phs13/sa240418.pdf
+2018-19,2016-03-16,Budget 2016,projection,32.3,32.3,1,/media/x3hhbc1o/sa160316.pdf
+2018-19,2016-11-23,Autumn Statement 2016,projection,52.9,52.9,1,/media/hclmsa2s/sa231116.pdf
+2018-19,2017-03-08,Budget 2017,projection,49.7,49.7,1,/media/n0qjrjn4/sa080317.pdf
+2018-19,2017-11-22,Autumn Budget 2017,projection,45.4,45.4,1,/media/dmxnjjtk/pr221117.pdf
+2018-19,2018-03-13,Spring Statement 2018,plan,40.6,40.6,1,/media/q5sbb01r/sa190318.pdf
+2018-19,2018-04-24,CGNCR outturn 2017-18,revision,40.6,40.6,1,/media/d00phs13/sa240418.pdf
+2018-19,2018-10-29,Autumn Budget 2018,revision,31.2,31.2,1,/media/5uskcs2t/pr291018.pdf
+2018-19,2019-03-13,Spring Statement 2019,estimate,34.0,34.0,1,/media/roncw1ir/sa130319.pdf
+2018-19,2019-04-24,CGNCR outturn 2018-19,outturn,37.3,37.3,1,/media/2ibmadjq/sa120719.pdf
+2019-20,2016-03-16,Budget 2016,projection,3.0,3.0,1,/media/x3hhbc1o/sa160316.pdf
+2019-20,2016-11-23,Autumn Statement 2016,projection,30.1,30.1,1,/media/hclmsa2s/sa231116.pdf
+2019-20,2017-03-08,Budget 2017,projection,28.8,28.8,1,/media/n0qjrjn4/sa080317.pdf
+2019-20,2017-11-22,Autumn Budget 2017,projection,46.5,46.5,1,/media/dmxnjjtk/pr221117.pdf
+2019-20,2018-03-13,Spring Statement 2018,projection,42.3,42.3,1,/media/q5sbb01r/sa190318.pdf
+2019-20,2018-10-29,Autumn Budget 2018,projection,27.6,27.6,1,/media/5uskcs2t/pr291018.pdf
+2019-20,2019-03-13,Spring Statement 2019,plan,23.7,23.7,1,/media/roncw1ir/sa130319.pdf
+2019-20,2019-04-24,CGNCR outturn 2018-19,revision,23.7,23.7,1,/media/2ibmadjq/sa120719.pdf
+2019-20,2019-11-12,Remit adjustment Nov 2019,revision,23.7,23.7,1,/media/jujfipx0/sa121119.pdf
+2019-20,2020-03-11,Budget 2020,estimate,43.1,43.1,1,/media/cn1gdqm2/sa110320a.pdf
+2019-20,2020-04-23,CGNCR outturn 2019-20,outturn,56.5,56.5,1,/media/dpun4ft0/sa230420.pdf
+2020-21,2018-10-29,Autumn Budget 2018,projection,49.1,49.1,1,/media/5uskcs2t/pr291018.pdf
+2020-21,2019-03-13,Spring Statement 2019,projection,47.2,47.2,1,/media/roncw1ir/sa130319.pdf
+2020-21,2020-03-11,Budget 2020,plan,65.3,65.3,1,/media/cn1gdqm2/sa110320a.pdf
+2020-21,2020-11-25,Spending Review 2020,revision,402.5,402.5,1,/media/eknoicso/pr251120-remit-revision.pdf
+2020-21,2021-03-03,Budget 2021,estimate,369.7,369.7,1,/media/c5ahu3rx/sa030321.pdf
+2020-21,2021-04-23,CGNCR outturn 2020-21,outturn,334.5,334.5,1,/media/erqnlfwn/pr230421.pdf
+2021-22,2020-03-11,Budget 2020,projection,73.0,73.0,1,/media/cn1gdqm2/sa110320a.pdf
+2021-22,2020-11-25,Spending Review 2020,projection,176.6,176.6,1,/media/eknoicso/pr251120-remit-revision.pdf
+2021-22,2021-03-03,Budget 2021,plan,240.4,240.4,1,/media/c5ahu3rx/sa030321.pdf
+2021-22,2021-10-27,Autumn Budget 2021,revision,157.6,157.6,1,/media/suadovyr/pr271021a.pdf
+2021-22,2022-03-23,Spring Statement 2022,estimate,109.2,109.2,1,/media/jffcfngn/sa230322.pdf
+2021-22,2022-04-26,CGNCR outturn 2021-22,outturn,129.2,129.2,1,/media/buhbty3c/pr260422.pdf
+2022-23,2021-03-03,Budget 2021,projection,127.9,127.9,1,/media/c5ahu3rx/sa030321.pdf
+2022-23,2022-03-23,Spring Statement 2022,plan,94.3,94.3,1,/media/jffcfngn/sa230322.pdf
+2022-23,2022-11-17,Autumn Statement 2022,revision,136.1,136.1,1,/media/jhebewha/sa171122.pdf
+2022-23,2023-03-15,Budget 2023,estimate,115.4,115.4,1,/media/v3eh4qxy/sa150323.pdf
+2022-23,2023-04-25,CGNCR outturn 2022-23,outturn,111.3,111.3,1,/media/kiid5x4g/pr250423-remit-revision_2.pdf
+2023-24,2023-03-15,Budget 2023,plan,159.5,159.5,1,/media/v3eh4qxy/sa150323.pdf
+2023-24,2023-11-22,Autumn Statement 2023,revision,150.5,150.5,1,/media/qrveqnje/sa221123.pdf
+2023-24,2024-03-06,Budget 2024,estimate,149.0,149.0,1,/media/ljkab3e5/sa060324.pdf
+2023-24,2024-04-23,CGNCR outturn 2023-24,outturn,158.8,158.8,1,/media/hctnznwz/sa230424_2.pdf
+2024-25,2023-11-22,Autumn Statement 2023,projection,137.0,137.0,1,/media/ljkab3e5/sa060324.pdf
+2024-25,2024-03-06,Budget 2024,plan,142.8,142.8,1,/media/ljkab3e5/sa060324.pdf
+2024-25,2024-10-30,Autumn Budget 2024,revision,165.1,165.1,1,/media/4jlk3rxj/sa301024.pdf
+2024-25,2025-03-26,Spring Statement 2025,estimate,172.6,172.6,1,/media/vggggtwy/sa260325.pdf
+2024-25,2025-04-23,CGNCR outturn 2024-25,outturn,180.5,180.5,1,/media/hlees2gj/sa230425.pdf
+2025-26,2025-03-26,Spring Statement 2025,plan,142.7,142.7,1,/media/vggggtwy/sa260325.pdf
+2025-26,2025-04-23,CGNCR outturn 2024-25,revision,142.7,142.7,1,/media/hlees2gj/sa230425.pdf
+2025-26,2025-11-26,Autumn Budget 2025,revision,149.2,149.2,1,/media/2hhipeem/sa261125b.pdf
+2025-26,2026-03-03,Spring Forecast 2026,estimate,144.7,144.7,1,/media/gnffn5rz/sa030326.pdf
+2025-26,2026-04-23,CGNCR outturn 2025-26,outturn,135.9,135.9,1,/media/ajmifgdv/pr230426_2.pdf
+2026-27,2025-03-26,Spring Statement 2025,projection,129.1,129.1,1,/media/vggggtwy/sa260325.pdf
+2026-27,2025-11-26,Autumn Budget 2025,projection,133.3,133.3,1,/media/gnffn5rz/sa030326.pdf
+2026-27,2026-03-03,Spring Forecast 2026,plan,137.2,137.2,1,/media/gnffn5rz/sa030326.pdf
+2026-27,2026-04-23,CGNCR outturn 2025-26,revision,137.2,137.2,1,/media/ajmifgdv/pr230426_2.pdf
+2027-28,2025-03-26,Spring Statement 2025,projection,137.5,137.5,1,/media/vggggtwy/sa260325.pdf
+2027-28,2026-04-23,CGNCR outturn 2025-26,projection,145.1,145.1,1,/media/ajmifgdv/pr230426_2.pdf
+2028-29,2026-04-23,CGNCR outturn 2025-26,projection,138.4,138.4,1,/media/ajmifgdv/pr230426_2.pdf
+2026-27,2026-10-28,Autumn Budget 2026,revision,144.1,144.1,1,https://www.gov.uk/government/publications/budget-2026-document
+2027-28,2026-10-28,Autumn Budget 2026,projection,146.1,146.1,1,https://www.gov.uk/government/publications/budget-2026-document
+2028-29,2026-10-28,Autumn Budget 2026,projection,149.8,149.8,1,https://www.gov.uk/government/publications/budget-2026-document
+2029-30,2026-10-28,Autumn Budget 2026,projection,83.6,83.6,1,https://www.gov.uk/government/publications/budget-2026-document
+2030-31,2026-10-28,Autumn Budget 2026,projection,114.8,114.8,1,https://www.gov.uk/government/publications/budget-2026-document

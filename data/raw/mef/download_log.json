@@ -1,0 +1,207 @@
+{
+  "exchanges": {
+    "2023": {
+      "count": 8,
+      "files": [
+        "Exchange_transaction_results_via_Bank_of_Italy_06_12_2023___PDF__47_Kb__.pdf",
+        "Exchange_transaction_results_via_electronic_trading_system_22_11_2023___PDF__37_Kb__.pdf",
+        "Exchange-transaction-results-via-Bank-of-Italy-18.10.2023.pdf",
+        "Syndicated-exchange-details-30.06.2023.pdf",
+        "Switch-Offer-28-June-2023-New-Issuance-Results-Notice.pdf",
+        "Syndicated-exchange-Results-of-the-buyback-28.06.2023-.pdf",
+        "Switch-Offer-28-June-2023-Offer-Results-Notice.pdf",
+        "Exchange-transaction-results-via-electronic-trading-system-20.01.2023.pdf"
+      ],
+      "last_updated": "2025-11-17T08:55:57.144299"
+    },
+    "2024": {
+      "count": 5,
+      "files": [
+        "Exchange_transaction_results_via_Bank_of_Italy_08_11_2024___PDF__60_Kb__.pdf",
+        "Exchange_transaction_results_via_Bank_of_Italy_21_10_2024___PDF__47_Kb__.pdf",
+        "Exchange-transaction-results-via-Bank-of-Italy-17.04.2024.pdf",
+        "Exchange-transaction-results-via-Bank-of-Italy-20.02.2024.pdf",
+        "Exchange-transaction-results-via-electronic-trading-system-17.01.2024.pdf"
+      ],
+      "last_updated": "2025-11-17T08:56:07.973401"
+    }
+  },
+  "auctions": {
+    "2025": {
+      "count": 20,
+      "files": [
+        "6_Month_BOTs_Auction_Results_26-27_11_2025___PDF__36_Kb__.pdf",
+        "12_Month_BOTs_Auction_Results_10-11_12_2025___PDF__36_Kb__.pdf",
+        "BTP_Short_Term_Auction_Results_25-26_11_2025___PDF__35_Kb__.pdf",
+        "BTP_3_Years_Auction_Results_11-12_12_2025___PDF__35_Kb__.pdf",
+        "CCTeu_Auction_Results_27-28_11_2025___PDF__35_Kb__.pdf",
+        "BTP_3_Years_Auction_Results_11_12_2025___PDF__35_Kb__.pdf",
+        "BTP_5_Years__5_years_residual_maturity__Auction_Results_11-12_12_2025___PDF__36_Kb__.pdf",
+        "BTP-3-Years-Auction-Results-13-14.05.2025.pdf",
+        "BTP_5_Years__4_years_residual_maturity__Auction_Results_11-12_12_2025___PDF__36_Kb__.pdf",
+        "BTP_5_Years__5_years_residual_maturity__Auction_Results_11_12_2025___PDF__36_Kb__.pdf",
+        "BTP_5_Years__4_years_residual_maturity__Auction_Results_11_12_2025___PDF__36_Kb__.pdf",
+        "BTP_5_Years_Auction_Results_27-28_11_2025___PDF__36_Kb__.pdf",
+        "BTP-5-Years-Auction-Results-28-29.08.2025.pdf",
+        "BTP-5-Years-Auction-Results-30-31.07.2025.pdf",
+        "BTP_10_Years_Auction_Results_27-28_11_2025___PDF__36_Kb__.pdf",
+        "BTP-5-Years-5-years-residual_maturity-Auction-Results-27-30.06.2025.pdf",
+        "BTP-5-Years-Auction-Results-27-30.06.2025.pdf",
+        "Placement_results_of_the_new_10-year_BTP_and_new_BTP_Green__08_01_2025____PDF__86_Kb__.pdf",
+        "BTP_i_5_Years_Auction_Results_25-26_11_2025___PDF__36_Kb__.pdf",
+        "BTP_i_15_Years_Auction_Results_25-26_11_2025___PDF__36_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:48:25.449278"
+    },
+    "2001": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_11-12_09_2001___PDF__51_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_28-29_06_2001___PDF__51_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:09.604035"
+    },
+    "2000": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_10-11_05_2000___PDF__55_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_30-31_05_2000___PDF__50_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:57.493317"
+    },
+    "2002": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_11-12_06_2002___PDF__20_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_27-28_06_2002___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:15.938865"
+    },
+    "2003": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-26_06_2003___PDF__20_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_27-30_06_2003___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:13.862545"
+    },
+    "2005": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_26-27_05_2005___PDF__20_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_30-31_05_2005___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:32.683896"
+    },
+    "2004": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_27-28_04_2004___PDF__20_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_28-31_05_2004___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:22.052232"
+    },
+    "2006": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_26-29_05_2006___PDF__20_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_30-31_05_2006___PDF__19_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:36.577137"
+    },
+    "2007": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_28-29_05_2007___PDF__8_Kb__.pdf",
+        "7_Year_CCT_Auction_Results_30-31_05_2007___PDF__17_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:37.990901"
+    },
+    "2009": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-26_06_2009___PDF__17_Kb__.pdf",
+        "7_Year_CCT__5_year_residual_maturity__Auction_Results_26-30_06_2009___PDF__17_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:56.341947"
+    },
+    "2008": {
+      "count": 2,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-26_06_2008___PDF__17_Kb__.pdf",
+        "7_Year_CCT__4_year_residual_maturity__Auction_Results_29-30_05_2008___PDF__8_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:51:42.354058"
+    },
+    "2010": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-28_06_2010___PDF__17_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:49:50.040691"
+    },
+    "2011": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_27-28_06_2011___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:00.457012"
+    },
+    "2012": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_26-27_06_2012___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:04.740807"
+    },
+    "2013": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-26_06_2013___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:10.785955"
+    },
+    "2014": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_27-28_05_2014___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:12.172928"
+    },
+    "2015": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_26-27_05_2015___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:25.394823"
+    },
+    "2018": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_26-27_06_2018___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:32.888068"
+    },
+    "2017": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_27-28_06_2017___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:34.093314"
+    },
+    "2019": {
+      "count": 1,
+      "files": [
+        "24_Month_CTZ_Auction_Results_25-26_06_2019___PDF__18_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:48.837143"
+    },
+    "2020": {
+      "count": 1,
+      "files": [
+        "CTZ_24_Month_Auction_Results_26-27_05_2020___PDF__35_Kb__.pdf"
+      ],
+      "last_updated": "2026-01-16T11:50:51.823064"
+    }
+  }
+}

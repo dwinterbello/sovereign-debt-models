@@ -1,0 +1,35 @@
+{
+ "unit": "EUR bn, calendar years; State budget",
+ "items": [
+  {
+   "label": "Defence: military programming law (LPM) update",
+   "head": "spend",
+   "kind": "level",
+   "values": {
+    "2024": 47.2,
+    "2025": 50.5,
+    "2026": 57.1,
+    "2027": 63.3,
+    "2028": 69.5,
+    "2029": 72.6,
+    "2030": 75.7
+   },
+   "event": "Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire",
+   "source": "Loi n° 2026-791, article 3 (amending article 4 of loi n° 2023-703): crédits de paiement of the mission Défense, EUR bn current",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833"
+  },
+  {
+   "label": "Large-company profits surcharge ends after 2026",
+   "head": "tax",
+   "kind": "effect",
+   "values": {
+    "2025": -8.0,
+    "2026": -7.3,
+    "2027": 0.0
+   },
+   "event": "Loi de finances pour 2026, art. 12: contribution exceptionnelle sur les bénéfices des grandes entreprises extended for one more year (second financial year closed from 31 December 2025), threshold raised to EUR 1.5bn of turnover",
+   "source": "Legifiscal (Sept 2026): the 2026 contribution is expected to raise EUR 7.3bn in 2026; LFI 2026 extends it for one year only (Simon Associés, Feb 2026); PLF 2027's further extension is not yet law",
+   "url": "https://www.legifiscal.fr/actualites-fiscales/4612-plf-2027-retour-contribution-exceptionnelle-benefices-grandes-entreprises-confirme.html"
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+  "es": {
+    "panel_months": 139,
+    "identity_mae_vs_pub_bn": 8.571880216026748e-15,
+    "results": {
+      "baseline_seas_add_3": {
+        "pre": 0.15873438538922147,
+        "oos": 0.3204656651250673,
+        "all": 0.2573661674714866,
+        "n_pre": 6,
+        "n_oos": 12
+      },
+      "smly_leaves": {
+        "pre": 0.1490819814173004,
+        "oos": 0.38369567878358174,
+        "all": 0.2736172946015084,
+        "n_pre": 12,
+        "n_oos": 12,
+        "pre_edge": 0.060808525816590346,
+        "clears": true
+      },
+      "tax_ngdp_0.5_spend_cpi_0.35": {
+        "pre": 0.14076797912057026,
+        "oos": 0.36145890805158776,
+        "all": 0.26592049141434015,
+        "n_pre": 12,
+        "n_oos": 12,
+        "pre_edge": 0.1131853455985421,
+        "clears": true
+      },
+      "tax_ngdp_1_spend_cpi_1": {
+        "pre": 0.15149166964469762,
+        "oos": 0.3641361281144085,
+        "all": 0.2751814075869249,
+        "n_pre": 12,
+        "n_oos": 12,
+        "pre_edge": 0.04562789421311889,
+        "clears": false
+      },
+      "totals_ngdp_cpi": {
+        "pre": 0.14708938700033933,
+        "oos": 0.3351881890703587,
+        "all": 0.2618106921953242,
+        "n_pre": 12,
+        "n_oos": 12,
+        "pre_edge": 0.07336153638248105,
+        "clears": true
+      }
+    },
+    "best": {
+      "name": "tax_ngdp_0.5_spend_cpi_0.35",
+      "pre": 0.14076797912057026,
+      "oos": 0.36145890805158776,
+      "all": 0.26592049141434015,
+      "n_pre": 12,
+      "n_oos": 12,
+      "pre_edge": 0.1131853455985421,
+      "clears": true
+    },
+    "ship": true,
+    "reason": "SHIP tax_ngdp_0.5_spend_cpi_0.35 PRE edge 11.3%"
+  },
+  "jp": {
+    "months": 29,
+    "baseline_smly": {
+      "all": 0.08633708596192198,
+      "n": 3,
+      "by_fy": {
+        "2025": 0.08633708596192198
+      }
+    },
+    "bu_tax_exp_ngdp": {
+      "all": 0.7890674766818156,
+      "n": 3,
+      "by_fy": {
+        "2025": 0.7890674766818156
+      }
+    },
+    "edge": -8.139380463105104,
+    "ship": false,
+    "reason": "NO-SHIP: MoF monthly starts FY2024 (n origins too thin for PRE gate); BU edge vs smly = -8.139380463105104 on available FY"
+  }
+}

@@ -1,0 +1,8305 @@
+    <!doctype html>
+    <html lang="de">
+    <head>
+            <base href="https://www.bundesfinanzministerium.de/"/>
+        <meta charset="UTF-8" />
+            <!-- Matomo -->
+
+        <script>
+            const cookie = {
+                /**
+                 * set a cookie
+                 * @param {string} ckey   - key of the cookie
+                 * @param {string} cvalue - value of the cookie
+                 * @param {number} days   - time to live
+                 */
+                setCookie: function (ckey, cvalue, days) {
+                    var expires;
+                    var date;
+                    var protocol = '';
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                        expires = '; expires=' + date.toGMTString();
+                    } else {
+                        expires = '';
+                    }
+
+                    if (location.protocol === 'https:') {
+                        protocol = ';secure';
+                    }
+                    document.cookie = ckey + '=' + cvalue + expires + protocol + ';path=/';
+                },
+
+                /**
+                 * get a cookie by key
+                 * @param {string} ckey   - key of the cookie
+                 */
+                getCookie: function (ckey) {
+                    var key = ckey + '=';
+                    var ca = document.cookie.split(';');
+                    var i;
+                    var c;
+                    for (i = 0; i < ca.length; i += 1) {
+                        c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(key) === 0) {
+                            return c.substring(key.length, c.length);
+                        }
+                    }
+                    return '';
+                }
+            };
+
+            var _paq = _paq || [];
+
+            // require user consent before processing data
+            // https://developer.matomo.org/guides/tracking-javascript-guide#asking-for-consent
+
+            _paq.push(['requireConsent']);
+
+            _paq.push(['setDownloadClasses', "download"]);
+            _paq.push(['setLinkClasses', "external"]);
+            _paq.push(['enableLinkTracking']);
+            _paq.push(['trackAllContentImpressions']);
+
+            
+            _paq.push(['trackPageView', 'Entwicklung\x20des\x20Bundeshaushalts\x20bis\x20einschlie\xDFlich\x20Juli\x202017,Basepage,\x2FMonatsberichte\x2F2017\x2F08\x2FInhalte\x2FKapitel\x2D4\x2DWirtschafts\x2Dund\x2DFinanzlage\x2F4\x2D3\x2Dentwicklung\x2Ddes\x2Dbundeshaushalts']);
+
+            var contentTarget = document.URL;
+            if (contentTarget.indexOf(';jsessionid') > 0) {
+                contentTarget = contentTarget.substr(0, contentTarget.indexOf(';jsessionid'));
+            }
+            _paq.push(['trackContentImpression', 'Breadcrumb', '/de/Monatsbericht', contentTarget]);
+            
+
+            (function () {
+                var u = "//analytics.init.de/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', 19]);
+
+                if (cookie.getCookie('cookie-allow-tracking') === '1') {
+
+                    // Hier wird die Erlaubnis innerhalb des Matomo-Codes erteilt, dass ein User das Tracking erlaubt
+                    _paq.push(['setConsentGiven']);
+
+                    /* BMF-3759 - matomo.js wird erst bei Einwilligung geladen */
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'matomo.js';
+                    s.parentNode.insertBefore(g, s);
+
+                    // ToDo: evtl. hierüber ein nachträgliches Tracking ausführen https://developer.matomo.org/guides/spa-tracking
+                    //window._mtm.push({'event': 'DOMReady'});
+                }
+            })();
+        </script>
+        <!-- End Piwik Code -->
+    
+        <title>BMF-Monatsbericht August 2017  - Entwicklung des Bundeshaushalts bis einschließlich Juli 2017</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="generator" content="Government Site Builder"/>
+            <meta name="google-site-verification" content="Vji7sDKOaSJDY5miF4hf6OQ2M8wr_3OBd_uAPl8Iu6k" />
+    
+    
+        <meta property="og:image" content="https://www.bundesfinanzministerium.de:80/Content/DE/Bilder/Logos/bmf-standardbild-social-media.jpg?__blob=cover&amp;v=1" />
+
+        <meta property="og:title" content="Entwicklung des Bundeshaushalts bis einschlie&#223;lich Juli 2017 - Bundesfinanzministerium -  BMF-Monatsbericht August 2017"/>
+        <meta property="og:url" content="https://www.bundesfinanzministerium.de/Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-des-bundeshaushalts.html" />
+        <meta property="og:description" content="Die Entwicklung des Bundeshaushalts im laufenden Jahr" />
+        <meta property="og:site_name" content="Bundesministerium der Finanzen" />
+        <meta property="og:locale" content="de_DE" />
+    
+        
+    <meta name="description" content="Die Entwicklung des Bundeshaushalts im laufenden Jahr"/>
+    <meta name="keywords" content="Bundeshaushalt, Ausgaben, Einnahmen, Finanzierungssaldo"/>
+        <link rel="canonical" href="https://www.bundesfinanzministerium.de/Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-des-bundeshaushalts.html"/>
+        <link rel="copyright" href="Web/DE/Meta/Impressum/impressum.html" type="text/html" title="Impressum"/>
+        <link rel="start" href="Web/DE/Home/home.html" type="text/html" title="Homepage"/>
+        <link rel="contents" href="Web/DE/Meta/Inhaltsuebersicht/inhaltsuebersicht.html" type="text/html" title="Übersicht"/>
+        <link rel="search" href="Web/DE/Meta/Suche/suche.html" type="text/html" title="Suche"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/static/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/static/manifest.json">
+        <meta name="msapplication-config" content="/static/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/static/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
+<link rel="stylesheet" href="/static/css/vendor.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/mobe-legacy.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/mobe_elements.min.css" type="text/css" media="screen" />
+<!--[if lte IE 9]><link rel="stylesheet" href="/static/css/screen_iew.min.css" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="/static/css/print.min.css" type="text/css" media="print" />
+<link rel="stylesheet" href="SiteGlobals/StyleBundles/CSS/screen/mobe_hotfix.css?v=2" type="text/css" media="screen" />
+
+        <!--[if lt IE 9]>
+            <script src=""></script>
+        <script src="SiteGlobals/Functions/JavaScript/lib/es5-shim.js?v=1&amp;nn=187524"></script>
+        <![endif]-->
+        <script>
+            var Bmf = (function (bmf) {
+    bmf.Labels = (function () {
+        return {
+            AnhaltenStarten: 'Wiedergabe anhalten/starten',
+            Ausblenden: 'ausblenden',
+            Browsertitel: 'Bundesfinanzministerium',
+            Datenschutz: 'Datenschutz',
+            Einblenden: 'einblenden',
+            Fussnote: 'Fußnote',
+            FussnoteOeffnen: 'Fußnote öffnen',
+            FussnoteSchliessen: 'Schließen',
+            MobileMenuPlus: 'Menü anzeigen',
+            MobileMenuMinus: 'Menü schliessen',
+            NavWeiter: 'Weiter',
+            NavZurueck: 'Zurück',
+            NavZurueckErsteSeite: 'Zurück zur ersten Seite',
+            SeiteDrucken: 'Seite drucken',
+            SeiteDruckenTooltip: 'Seite drucken (öffnet Dialog)',
+            Start: 'Start',
+            Stop: 'Stop',
+            TrackingDeaktivieren: 'Legen Sie diesen Schalter um, damit Sie dauerhaft nicht getrackt werden.',
+            TrackingAktivieren: 'Legen Sie diesen Schalter um, um das Tracking zu aktivieren.',
+            Untermenuepunkte: 'Untermenüpunkte'
+        };
+    }());
+
+        bmf.Labels.Browsertitel = 'BMF-Monatsbericht August 2017';
+
+    bmf.Urls = {
+        Forms : {
+            Autosuggest: 'SiteGlobals/Forms/Suche/Autosuggest_Formular.html?nn=187524'
+        },
+        Docs: {
+                Monatsbericht: 'Monatsberichte/2017/08/monatsbericht-08-2017.html',
+                MonatsberichtArchivBilder: {
+                    2017: {
+                        alt: 'Jahr 2017 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2017.jpg?__blob=normal&amp;v=1'
+                    },
+                    2018: {
+                        alt: 'Jahr 2018 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2018.jpg?__blob=normal&amp;v=1'
+                    },
+                    2019: {
+                        alt: 'Jahr 2019 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2019.jpg?__blob=normal&amp;v=1'
+                    },
+                    2020: {
+                        alt: 'Jahr 2020 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2020.jpg?__blob=normal&amp;v=1'
+                    },
+                    2021: {
+                        alt: 'Jahr 2021 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2021.jpg?__blob=normal&amp;v=1'
+                    },
+                    2022: {
+                        alt: 'Jahr 2022 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2022.jpg?__blob=normal&amp;v=1'
+                    },
+                    2023: {
+                        alt: 'Jahr 2023 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2023.jpg?__blob=normal&amp;v=4'
+                    },
+                    2024: {
+                        alt: 'Jahr 2024 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2024.jpg?__blob=normal&amp;v=4'
+                    }
+                },
+            Impressum: 'Web/DE/Meta/Impressum/impressum.html',
+            Datenschutz: 'Web/DE/Meta/Datenschutz/datenschutz.html',
+            TrackingBanner: 'Content/DE/Standardartikel/Meta/tracking_banner.html?view=render[ConsentBanner]'
+        }
+    }
+
+    bmf.Config = {
+        eTrackerId: 'epm1GE',
+        honeypotTimestamp: 5000
+    }
+
+    return bmf;
+}(Bmf || {}));
+
+
+var KfzStRe = (function (kfzstre) {
+    kfzstre.kfzstreLabels = (function () {
+        return {
+            '00PKWvor04112008': 'PKW EZ bis 04.11.2008',
+            '01PKWnach05112008bis30062009': 'PKW EZ 05.11.2008 bis 30.06.2009',
+            '02PKWnach01072009bis31122011': 'PKW EZ 01.07.2009 bis 31.12.2011',
+            '03PKWnach01012012bis31122013': 'PKW EZ 01.01.2012 bis 31.12.2013',
+            '04PKWnach01012014': 'PKW EZ 01.01.2014 bis 31.12.2020',
+            '05PKWnach01012021': 'PKW EZ ab 01.01.2021',
+            'Anhaenger': 'Anhänger',
+            'Elektro': 'Reine Elektrofahrzeuge',
+            'KRD': 'Motorräder',
+            'LFZ': 'Leichtfahrzeuge',
+            'LKW': 'Nutzfahrzeuge',
+            'Oldtimer': 'Oldtimer',
+            'Wohnmobil': 'Wohnmobile',
+            'Diesel': 'Diesel',
+            'Otto': 'Otto',
+            'OttoWankel': 'Otto/Wankel',
+            '3Liter': '3-Liter-Auto',
+            'Euro1vergl': 'Euro 1 und vergleichbare',
+            'Euro2': 'Euro 2',
+            'Euro3bis6': 'Euro 3 bis 6 (einschließlich D3 und D4)',
+            'keinOzonFahrver': 'Euro 0 (ehemals kein Fahrverbot bei Ozonalarm)',
+            'LFZS1': 'Euro 2 und besser',
+            'LFZS2': 'Schlechter als Euro 2',
+            'S1': 'S1',
+            'keineAuswahl': 'keine Auswahl',
+            'mindestensS2': 'S2 und besser',
+            'mindestensS4': 'mindestens S4',
+            'sonstige': 'Übrige',
+            'sonstige-G1': 'G1',
+            'S3oderS2': 'S2 oder S3',
+            'schlechterAlsS1': 'schlechter als S1',
+            '1Motorrad': 'Motorräder',
+            '0UebrigeKfz': 'Übrige Fahrzeuge',
+            'm01': 'Januar',
+            'm02': 'Februar',
+            'm03': 'März',
+            'm04': 'April',
+            'm05': 'Mai',
+            'm06': 'Juni',
+            'm07': 'Juli',
+            'm08': 'August',
+            'm09': 'September',
+            'm10': 'Oktober',
+            'm11': 'November',
+            'm12': 'Dezember',
+            'ct_hinweis_0': '',
+            'ct_hinweis_1': 'Hinweis: Reine Elektrofahrzeuge sind bei erstmaliger Zulassung bis 31.12.2030 für maximal zehn Jahre von der Steuer befreit. Die Befreiung ist begrenzt bis längstens 31.12.2035. Daran anschließend ermäßigt sich die zu zahlende Kraftfahrzeugsteuer um 50 Prozent (§ 9 Abs. 2 KraftStG). Hier wird der nach Ablauf der Steuerbefreiung anfallende ermäßigte Steuerbetrag angezeigt.'
+        };
+    }());
+    return kfzstre;
+}(KfzStRe || {}));;
+        </script>
+        <script data-main="SiteGlobals/Functions/JavaScript/_mobe/Init.js?v=1" src="SiteGlobals/Functions/JavaScript/require.js?v=1"></script>
+    
+    
+    
+    <script>var __uzdbm_1 = "0671a8af-0daa-415d-8768-26e2d3a8861c";var __uzdbm_2 = "ODg4MWQwNTYtY2EzZi00Mjc5LThjOWQtZTQ0NjU2NzM2NjMzJDE4Mi41NS4yNDUuMzI=";var __uzdbm_3 = "7f90000671a8af-0daa-415d-8768-26e2d3a8861c1-17908499963600-005e797904ba6c88a4410";var __uzdbm_4 = "false";var __uzdbm_5 = "uzmx";var __uzdbm_6 = "7fc000da1f809b-77de-4be1-9cfb-d6c0d5457d201-17908499963600-007063e4550427314f210";var __uzdbm_7 = "bundesfinanzministerium.de";</script> <script>   (function (w, d, e, u, c, g, a, b) {     w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {       ss_cid: c,       domain_info: "auto",     };     w[g] = function (i, j) {       w["SSJSConnectorObj"][i] = j;     };     a = d.createElement(e);     a.async = true;     if (       navigator.userAgent.indexOf('MSIE') !== -1 ||       navigator.appVersion.indexOf('Trident/') > -1     ) {       u = u.replace("/advanced/", "/advanced/ie/");     }     a.src = u;     b = d.getElementsByTagName(e)[0];     b.parentNode.insertBefore(a, b);   })(     window, document, "script", "https://bundesfinanzministerium.de/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js", "ca3h", "ssConf"   );   ssConf("c1", "https://bundesfinanzministerium.de");   ssConf("c3", "c99a4269-161c-4242-a3f0-28d44fa6ce24");   ssConf("au", "bundesfinanzministerium.de");   ssConf("cu", "validate.perfdrive.com, ssc"); </script></head>
+    
+    <!--[if IE ]>
+    <body class="gsb  js-off ie mobe">
+    <![endif]-->
+    <!--[if !IE]>-->
+    <body class="gsb  js-off mobe  ">
+    <!--<![endif]-->
+            <!-- Matomo -->
+        <noscript><p><img src="//analytics.init.de/matomo.php?idsite=19&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+        <!-- End Matomo Code -->
+    
+    
+        
+
+
+<div id="wrapperOuter">
+    <div id="wrapperInner">
+        <a id="Start"></a>
+        <h1 class="navSkip">Navigation und Service</h1>
+        <div id="wrapperDivisions">
+            <div id="wrapperHeader">
+                <div id="branding" class="container">
+                    <header role="banner" class="branding-box">
+                        <div class="mobile-addition">
+                            <a class="bmf-icon" href="Web/DE/Home/home.html">
+                                <img src="/SiteGlobals/StyleBundles/Bilder/eMagazin/BMF_logo_small-01.svg?__blob=normal&amp;v=1" alt="Zur Webseite des Bundesfinanzministeriums"
+                                     width="150" height="150"/>
+                            </a>
+                            <span class="branding-text"
+                                  data-coverurl="Monatsberichte/2017/08/monatsbericht-08-2017.html"
+                                  data-title="BMF-Monatsbericht"
+                                  data-auraltitleprefix="Zur Startseite des aktuellen">
+                                <a data-mobetargetpageidx="0" href="Monatsberichte/2017/08/monatsbericht-08-2017.html">
+                                    BMF-Monatsbericht
+                                </a>
+                            </span>
+                        </div>
+                        <div class="menu">
+                            <nav class="menu-main" role="navigation">
+                                <a id="menu-widget"
+                                   href="Monatsberichte/2017/08/Kapitel/kapitel-1-editorial.html" class="menu-text" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <div class="menu-icon">
+                                        <span class="menu-line menu-top" aria-hidden="true"></span>
+                                        <span class="menu-line menu-middle menu-backslash" aria-hidden="true"></span>
+                                        <span class="menu-line menu-middle menu-forwardslash" aria-hidden="true"></span>
+                                        <span class="menu-line menu-bottom" aria-hidden="true"></span>
+                                    </div>
+                                    <span class="menu-label">Menü</span>
+                                    <span class="aural"> / </span>
+                                    <span class="menu-close">Menü schließen</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="menu-widget">
+                                    <div class="dropdown-content">
+                                        <h2>Inhaltsverzeichnis</h2>
+                                        <ul class="chapters">
+
+                                        </ul>
+                                        <ul class="footer">
+
+                                        </ul>
+                                    </div>
+                                    <div class="menu-main-controls">
+                                        <ul>
+                                            <li class="li-up">
+                                                <a class="up" href="javascript:void(0)"
+                                                   aria-label="Im Menü nach oben scrollen"
+                                                   title="Im Menü nach oben scrollen">
+                                                </a>
+                                            </li>
+                                            <li class="li-down">
+                                                <a class="down" href="javascript:void(0)"
+                                                   aria-label="Im Menü nach unten scrollen"
+                                                   title="Im Menü nach unten scrollen">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="functions-bar">
+                                <h2 class="aural">Seite teilen und drucken</h2>
+
+                                <div class="wrapper-totop isMobile">
+                                    <div class="container">
+                                        <div class="social-list-wrapper-container">
+                                            <div class="social-list-wrapper">
+                                                <ul class="social-list">
+                                                    <li class="social-list-item share">
+                                                        <button id="social-links" class="social-button" type="button"
+                                                                data-toggle="dropdown"
+                                                                title="Seite teilen"
+                                                                aria-haspopup="true" aria-expanded="false"
+                                                                aria-label="Seite teilen">
+                                                        </button>
+                                                        <div class="dropdown-menu social-items-wrapper"
+                                                             aria-labelledby="social-links" data-parent="functions-bar">
+                                                            <div class="container">
+                                                                <div class="social-items-info-container">
+                                                                    <div class="social-items-info">
+                                                                        <h3>Seite teilen</h3>
+                                                                        <p>Die aktuelle Seite in Ihren Sozialen Netzwerken teilen.</p>
+                                                                    </div>
+                                                                    <div class="social-items">
+                                                                            
+
+<div id="social-bookmarks-vue" >
+
+</div>
+
+
+<script type="text/x-template" id="social-bookmarks-template">
+    <ul class="social-items-list">
+        <li v-for="bookmark in bookmarks" class="socialBookmark" v-bind:class="bookmark.name">
+            <a v-bind:href="createUrl(bookmark)" target="_blank" rel="noopener noreferrer" v-bind:title="bookmark.infoText">
+                <span class="aural">{{bookmark.infoText}}</span>
+                <img v-bind:src="bookmark.iconUrl" v-bind:alt="bookmark.iconAltText"/>
+                <span>{{bookmark.title}}</span>
+            </a>
+        </li>
+    </ul>
+</script>
+
+
+<script type="text/javascript">
+    var Bmf = (function (bmf) {
+        var docArea = '',
+            bookmarks = [];
+
+
+            bookmarks.push({
+                iconAltText: 'Seite auf Facebook verlinken - Öffnet neues Fenster',
+                iconUrl: '/SiteGlobals/Functions/SocialBookmarks/Icons/Facebook.svg?__blob=normal&amp;v=1',
+                infoText: 'Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.',
+                name: 'facebook',
+                title: 'Facebook',
+                urlTemplate: 'http://www.facebook.com/sharer.php?u=SB_URL&amp;t=SB_PAGETITLE'
+            });
+            bookmarks.push({
+                iconAltText: 'Seite auf X/Twitter verlinken - Öffnet neues Fenster',
+                iconUrl: '/SiteGlobals/Functions/SocialBookmarks/Icons/Twitter.svg?__blob=normal&amp;v=1',
+                infoText: 'Bei Verwendung des Links kann X/Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über X/Twitter teilen. Link öffnet sich in neuem Browserfenster.',
+                name: 'twitter',
+                title: 'X/Twitter',
+                urlTemplate: 'https://twitter.com/intent/tweet?text=SB_PAGETITLE+SB_URL'
+            });
+            bookmarks.push({
+                iconAltText: 'Seite auf Xing verlinken - Öffnet neues Fenster',
+                iconUrl: '/SiteGlobals/Functions/SocialBookmarks/Icons/Xing.svg?__blob=normal&amp;v=1',
+                infoText: 'Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.',
+                name: 'xing',
+                title: 'Xing',
+                urlTemplate: 'https://www.xing.com/social_plugins/share/new?h=1&amp;url=SB_URL'
+            });
+            bookmarks.push({
+                iconAltText: 'Seite auf Linkedin verlinken - Öffnet neues Fenster',
+                iconUrl: '/SiteGlobals/Functions/SocialBookmarks/Icons/Linkedin.svg?__blob=normal&amp;v=1',
+                infoText: 'Bei Verwendung des Links kann Linkedin den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Linkedin teilen. Link öffnet sich in neuem Browserfenster.',
+                name: 'linkedin',
+                title: 'Linkedin',
+                urlTemplate: 'https://www.linkedin.com/shareArticle?mini=true&url=SB_URL&title=SB_PAGETITLE'
+            });
+
+        bmf.SocialBookmarks = {
+            bookmarks: bookmarks,
+            docArea: docArea,
+            docTitle: 'Entwicklung des Bundeshaushalts bis einschließlich Juli 2017',
+            pageUrl: 'https://www.bundesfinanzministerium.de/Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-des-bundeshaushalts.html',
+            portalName: 'Bundesfinanzministerium'
+        };
+        return bmf;
+    }(Bmf || {}));
+</script>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="divider"></span>
+                                                    </li>
+                                                    <li class="social-list-item print">
+                                                        <button id="print-links" class="social-button" type="button"
+                                                                title="Seite drucken (öffnet Dialog)"
+                                                                aria-label="Seite drucken">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <span class="branding-text"
+                                  data-coverurl="Monatsberichte/2017/08/monatsbericht-08-2017.html"
+                                  data-title="BMF-Monatsbericht"
+                                  data-auraltitleprefix="Zur Startseite des aktuellen">
+                                <a data-mobetargetpageidx="0" href="Monatsberichte/2017/08/monatsbericht-08-2017.html">
+                                    BMF-Monatsbericht
+                                </a>
+                            </span>
+
+                            <div class="month-selection">
+                                <button id="month-selection-button"
+                                        aria-expanded="false"
+                                        aria-haspopup="true"
+                                        data-toggle="dropdown"
+                                        title="Monatsbericht auswählen"
+                                        type="button"
+                                >
+                                        <span class="current">
+                                                <span>August 2017</span>
+                                        </span>
+                                </button>
+                                <div class="mobe-list dropdown-menu" aria-labelledby="month-selection-button">
+                                    
+
+
+
+<h2 class="aural">Weitere Monatsberichte</h2>
+
+<div class="teaserband-monatsbericht-row">
+    <div class="teaserband-monatsbericht-col">
+            <div class="slider-wrapper clearfix teaserband-monatsbericht slider-finite">
+            <ul class="slider" data-endless="false">
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/09/monatsbericht-09-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/09/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/08/monatsbericht-08-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/08/Bilder/cover.jpg?__blob=square&v=5" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/07/monatsbericht-07-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/07/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/06/monatsbericht-06-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/06/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/05/monatsbericht-05-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/05/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/04/monatsbericht-04-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/04/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/03/monatsbericht-03-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/03/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/02/monatsbericht-02-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/02/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2026">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2026/01/monatsbericht-01-2026.html">
+    <img src="/Monatsberichte/Ausgabe/2026/01/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2026">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2026</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/12/monatsbericht-12-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/12/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/11/monatsbericht-11-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/11/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/10/monatsbericht-10-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/10/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/09/monatsbericht-09-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/09/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/08/monatsbericht-08-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/08/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/07/monatsbericht-07-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/07/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/06/monatsbericht-06-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/06/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/05/monatsbericht-05-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/05/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/04/monatsbericht-04-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/04/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/03/monatsbericht-03-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/03/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/02/monatsbericht-02-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/02/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2025">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2025/01/monatsbericht-01-2025.html">
+    <img src="/Monatsberichte/Ausgabe/2025/01/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2025">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2025</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/12/monatsbericht-12-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/12/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/11/monatsbericht-11-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/11/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/10/monatsbericht-10-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/10/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/09/monatsbericht-09-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/09/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/08/monatsbericht-08-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/08/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/07/monatsbericht-07-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/07/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/06/monatsbericht-06-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/06/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/05/monatsbericht-05-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/05/Bilder/cover.jpg?__blob=square&v=4" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/04/monatsbericht-04-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/04/Bilder/cover.jpg?__blob=square&v=3" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/03/monatsbericht-03-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/03/Bilder/cover.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/02/monatsbericht-02-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/02/Bilder/cover.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2024">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/Ausgabe/2024/01/monatsbericht-01-2024.html">
+    <img src="/Monatsberichte/Ausgabe/2024/01/Bilder/cover.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2024">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2024</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/12/monatsbericht-12-2023.html">
+    <img src="/Monatsberichte/2023/12/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/11/monatsbericht-11-2023.html">
+    <img src="/Monatsberichte/2023/11/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/10/monatsbericht-10-2023.html">
+    <img src="/Monatsberichte/2023/10/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/09/monatsbericht-09-2023.html">
+    <img src="/Monatsberichte/2023/09/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/08/monatsbericht-08-2023.html">
+    <img src="/Monatsberichte/2023/08/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/07/monatsbericht-07-2023.html">
+    <img src="/Monatsberichte/2023/07/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/06/monatsbericht-06-2023.html">
+    <img src="/Monatsberichte/2023/06/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/05/monatsbericht-05-2023.html">
+    <img src="/Monatsberichte/2023/05/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/04/monatsbericht-04-2023.html">
+    <img src="/Monatsberichte/2023/04/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/03/monatsbericht-03-2023.html">
+    <img src="/Monatsberichte/2023/03/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/02/monatsbericht-02-2023.html">
+    <img src="/Monatsberichte/2023/02/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2023">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2023/01/monatsbericht-01-2023.html">
+    <img src="/Monatsberichte/2023/01/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2023">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2023</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/12/monatsbericht-12-2022.html">
+    <img src="/Monatsberichte/2022/12/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/11/monatsbericht-11-2022.html">
+    <img src="/Monatsberichte/2022/11/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/10/monatsbericht-10-2022.html">
+    <img src="/Monatsberichte/2022/10/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/09/monatsbericht-09-2022.html">
+    <img src="/Monatsberichte/2022/09/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/08/monatsbericht-08-2022.html">
+    <img src="/Monatsberichte/2022/08/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/07/monatsbericht-07-2022.html">
+    <img src="/Monatsberichte/2022/07/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/06/monatsbericht-06-2022.html">
+    <img src="/Monatsberichte/2022/06/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/05/monatsbericht-05-2022.html">
+    <img src="/Monatsberichte/2022/05/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/04/monatsbericht-04-2022.html">
+    <img src="/Monatsberichte/2022/04/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/03/monatsbericht-03-2022.html">
+    <img src="/Monatsberichte/2022/03/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/02/monatsbericht-02-2022.html">
+    <img src="/Monatsberichte/2022/02/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2022">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2022/01/monatsbericht-01-2022.html">
+    <img src="/Monatsberichte/2022/01/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2022">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2022</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/12/monatsbericht-12-2021.html">
+    <img src="/Monatsberichte/2021/12/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/11/monatsbericht-11-2021.html">
+    <img src="/Monatsberichte/2021/11/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/10/monatsbericht-10-2021.html">
+    <img src="/Monatsberichte/2021/10/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/09/monatsbericht-09-2021.html">
+    <img src="/Monatsberichte/2021/09/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/08/monatsbericht-08-2021.html">
+    <img src="/Monatsberichte/2021/08/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/07/monatsbericht-07-2021.html">
+    <img src="/Monatsberichte/2021/07/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/06/monatsbericht-06-2021.html">
+    <img src="/Monatsberichte/2021/06/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/05/monatsbericht-05-2021.html">
+    <img src="/Monatsberichte/2021/05/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/04/monatsbericht-04-2021-vs.html">
+    <img src="/Monatsberichte/2021/04/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/03/monatsbericht-03-2021.html">
+    <img src="/Monatsberichte/2021/03/Bilder/Cover-2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/02/monatsbericht-02-2021.html">
+    <img src="/Monatsberichte/2021/02/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2021">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2021/01/monatsbericht-01-2021.html">
+    <img src="/Monatsberichte/2021/01/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2021">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2021</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/12/monatsbericht-12-2020.html">
+    <img src="/Monatsberichte/2020/12/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Dezember 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/11/monatsbericht-11-2020.html">
+    <img src="/Monatsberichte/2020/11/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht November 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/10/monatsbericht-10-2020.html">
+    <img src="/Monatsberichte/2020/10/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Oktober 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/09/monatsbericht-09-2020.html">
+    <img src="/Monatsberichte/2020/09/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht September 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/08/monatsbericht-08-2020.html">
+    <img src="/Monatsberichte/2020/08/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht August 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/07/monatsbericht-07-2020.html">
+    <img src="/Monatsberichte/2020/07/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juli 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/06/monatsbericht-06-2020.html">
+    <img src="/Monatsberichte/2020/06/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Juni 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/05/monatsbericht-05-2020.html">
+    <img src="/Monatsberichte/2020/05/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Mai 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/04/monatsbericht-04-2020.html">
+    <img src="/Monatsberichte/2020/04/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht April 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/03/monatsbericht-03-2020.html">
+    <img src="/Monatsberichte/2020/03/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht März 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/02/monatsbericht-02-2020.html">
+    <img src="/Monatsberichte/2020/02/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Februar 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2020">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2020/01/monatsbericht-01-2020.html">
+    <img src="/Monatsberichte/2020/01/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;BMF-Monatsbericht Januar 2020">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2020</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/12/monatsbericht-12-2019.html">
+    <img src="/Monatsberichte/2019/12/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Dezember 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/11/monatsbericht-11-2019.html">
+    <img src="/Monatsberichte/2019/11/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht November 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/10/monatsbericht-10-2019.html">
+    <img src="/Monatsberichte/2019/10/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Oktober 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/09/monatsbericht-09-2019.html">
+    <img src="/Monatsberichte/2019/09/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht September 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/08/monatsbericht-08-2019.html">
+    <img src="/Monatsberichte/2019/08/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht August 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/07/monatsbericht-07-2019.html">
+    <img src="/Monatsberichte/2019/07/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Juli 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/06/monatsbericht-06-2019.html">
+    <img src="/Monatsberichte/2019/06/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Juni 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/05/monatsbericht-05-2019.html">
+    <img src="/Monatsberichte/2019/05/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Mai 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Mai 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/04/monatsbericht-04-2019.html">
+    <img src="/Monatsberichte/2019/04/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht April 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        April 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/03/monatsbericht-03-2019.html">
+    <img src="/Monatsberichte/2019/03/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht März 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        März 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/02/monatsbericht-02-2019.html">
+    <img src="/Monatsberichte/2019/02/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Februar 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Februar 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2019">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2019/01/monatsbericht-01-2019.html">
+    <img src="/Monatsberichte/2019/01/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Januar 2019">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Januar 2019</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/12/monatsbericht-12-2018.html">
+    <img src="/Monatsberichte/2018/12/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Dezember 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Dezember 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/11/monatsbericht-11-2018.html">
+    <img src="/Monatsberichte/2018/11/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht November 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        November 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/10/monatsbericht-10-2018.html">
+    <img src="/Monatsberichte/2018/10/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Oktober 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Oktober 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/09/monatsbericht-09-2018.html">
+    <img src="/Monatsberichte/2018/09/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht September 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        September 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/08/monatsbericht-08-2018.html">
+    <img src="/Monatsberichte/2018/08/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht August 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        August 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/07/monatsbericht-07-2018.html">
+    <img src="/Monatsberichte/2018/07/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Juli 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juli 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+                    <li  data-year="2018">
+                        <a class="teaser einzelteaser-monatsbericht " href="Monatsberichte/2018/06/monatsbericht-06-2018.html">
+    <img src="/Monatsberichte/2018/06/Bilder/Cover_2900x2900.jpg?__blob=square&v=1" alt="Öffnet Seite:&#160;Monatsbericht Juni 2018">
+    <!--[if IE ]><span class="ie-table"><span class="ie-row"><span class="ie-cell"><![endif]-->
+    <div class="teaser-text">
+        Juni 2018</div>
+
+    <!--[if IE ]></span></span></span><![endif]-->
+</a>
+
+
+                    </li>
+            </ul>
+            <div class="startstop-wrapper">
+                <ul class="startstop">
+                    <li class="slider-li-next">
+                        <a class="js-next-slide" href="javascript:void(0)">
+                            <span class="aural">Weiter</span>
+                        </a>
+                    </li>
+                    <li class="slider-li-prev">
+                        <a class="js-prev-slide" href="javascript:void(0)">
+                            <span class="aural">Zurück</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="bmf-icon">
+                                <a href="Web/DE/Home/home.html">
+                                    <img src="/SiteGlobals/StyleBundles/Bilder/eMagazin/BMF_logo_small-01.svg?__blob=normal&amp;v=1" alt="Zur Webseite des Bundesfinanzministeriums"
+                                         width="150" height="150"/>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+            </div>
+            <div class="content-outer-box" id="Inhalt" role="main">
+    <div class="container">
+        <div role="main" class="content-box clearfix">
+
+            <div class="wrapperOuterContent">
+                <div >
+                <h1 class="aural">Inhalt</h1>
+                    <ul id="content" class="pager">
+                        <li class="page">
+                            <div class="article-wrapper documentleaf basepage gcjournal">
+    <div class="article-header-wrapper">
+        <div class="article-header-wrapper-inner">
+            <div class="article-header-wrapper-box">
+                <div class="article-header">
+    <div class="chapter-icon">
+                <img src="/Content/DE/Bilder/Monatsberichte/Monatsbericht-Kapitelbild-4-Wirtschafts-und-Finanzlage.svg?__blob=normal&amp;v=1" alt=""
+                     width="40" height="40"/>
+            </div>
+        <div class="article-header-title">
+        <a href="Monatsberichte/2017/08/Kapitel/kapitel-4-wirtschafts-und-finanzlage.html" class="report">
+            
+Aktuelle Wirtschafts- und Finanzlage
+</a>
+    <h1 class="isFirstInSlot">
+                <span>
+                    
+Ent­wick­lung des Bun­des­haus­halts bis ein­schließ­lich Ju­li 2017
+</span>
+            </h1>
+        </div>
+</div>
+
+</div>
+        </div>
+    </div>
+
+    <div class="article-content-wrapper">
+        <div class="article-text-wrapper">
+            <div class="article-text singleview ">
+
+                <div class="subheadline"></div>
+                <p>
+<a name="doc199058bodyText1"></a><h2>Einnahmeentwicklung</h2>
+
+
+<p>Die Einnahmen des Bundeshaushalts 2017 betrugen von Januar bis einschließlich Juli 183,7 <abbr title="Milliarden">Mrd.</abbr> €. Sie überschritten das entsprechende Vorjahresniveau um 1,4 % beziehungsweise um 2,5 Mrd. €. Die Steuereinnahmen, die den größten Anteil an den Gesamteinnahmen ausmachen, erhöhten sich um 4,5 %. Die sonstigen Einnahmen gingen um 27,5 % zurück. Ursache ist insbesondere die Abführung des Bundesbankgewinns, die um 2,1 Mrd. € geringer ausfiel als im Haushaltsplan 2017 veranschlagt.</p>
+
+<a name="doc199058bodyText2"></a><h2>Ausgabenentwicklung</h2>
+
+
+<p>Die Ausgaben des Bundeshaushalts beliefen sich im betrachteten Zeitraum auf 192,1 Mrd. €. Das waren um 4,3 % beziehungsweise 8 Mrd. € höhere Ausgaben als vor einem Jahr.</p>
+
+
+<p>Die Ausgaben des Bundeshaushalts werden nach ökonomischer Gliederung in konsumtive und investive Ausgaben unterschieden. Die konsumtiven Ausgaben nahmen im betrachteten Zeitraum um 4,1 % gegenüber dem Vorjahr zu. Dabei stiegen insbesondere die Personalausgaben (+5,4 %) überdurchschnittlich an. Darüber hinaus waren die laufenden Zuweisungen an Verwaltungen um 6,2 % höher als vor einem Jahr, was vor allem auf einem Anstieg der Ausgaben für laufende Zuweisungen an Länder um 7,9 % beruht. Die Zunahme der Ausgaben für Zuschüsse an andere Bereiche gegenüber 2016 betraf insbesondere die Bereiche Renten und Unterstützungen (<abbr title="zum Beispiel">z. B.</abbr> Arbeitslosengeld II mit +6,3 % und Elterngeld mit +6,6 %) sowie Sozialversicherungen. Die investiven Ausgaben überschritten im betrachteten Zeitraum den entsprechenden Vorjahresstand um 7,8 %. Dies war auf die Zunahme der Ausgaben für Sachinvestitionen um 17,4 % zurückzuführen. Auch die Ausgaben für Finanzierungshilfen stiegen um 4,7 % gegenüber dem Vorjahreszeitraum. Hierzu trug insbesondere der Anstieg der Darlehensgewährungen und Gewährleistungen um 22,7 % bei.</p>
+
+<a name="doc199058bodyText3"></a><h2>Finanzierungssaldo</h2>
+
+
+<p>Bis Juli 2017 überschritten die Ausgaben die Einnahmen um 8,4 Mrd. €.</p>
+
+
+<p>Die Einnahmen und Ausgaben unterliegen im Laufe des Haushaltsjahres starken Schwankungen und beeinflussen somit die eingesetzten Kassenmittel in den einzelnen Monaten in unterschiedlichem Maße. Auch der Kapitalmarktsaldo zeigt im Jahresverlauf in der Regel starke Schwankungen. Die unterjährige Entwicklung des Finanzierungssaldos und des jeweiligen Kapitalmarktsaldos sind daher keine Indikatoren, aus denen sich die erforderliche Nettokreditaufnahme und der Finanzierungssaldo am Jahresende errechnen lassen.</p>
+
+<div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container">
+    <h2 class="generic-table-headline">
+            
+Entwicklung des Bundeshaushalts
+</h2>
+
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable199026">
+                
+<p>
+<table class="MsoNormalTable"><caption>Entwicklung des Bundeshaushalts</caption><tbody><tr class="table-header-row">
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Ist 2016</p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Soll 2017</p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Ist‑Entwicklung<sup>1</sup>
+<br/>
+
+Januar bis Juli 2017</p>
+
+
+</b></td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="4" rowspan="1">
+
+
+<p class="MsoNormal">Abweichungen durch Rundung der Zahlen möglich.</p>
+
+</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="4" rowspan="1">1 Buchungsergebnisse.</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="4" rowspan="1">
+
+
+<p class="MsoNormal">2<sup> </sup>Ohne Einnahmen und Ausgaben aus haushaltstechnischen Verrechnungen.</p>
+
+</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="4" rowspan="1">3 (-) Tilgung; (+) Kreditaufnahme.</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="4" rowspan="1">
+
+
+<p class="MsoNormal">Quelle: Bundesministerium der Finanzen</p>
+
+</td>
+</tr></tbody>
+
+
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Ausgaben<strong> (</strong>Mrd. €<strong>)</strong>
+<sup>2</sup>
+</b></p>
+
+
+</th>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>310,6</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>329,1</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>192,1</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Unterjährige Veränderung gegenüber Vorjahr in <abbr title="Prozent">%</abbr></p>
+
+
+</blockquote>
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">+4,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<b>Einnahmen (Mrd. €)<sup>2</sup>
+</b>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>316,8</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>322,1</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>183,7</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Unterjährige Veränderung gegenüber Vorjahr in %</p>
+
+
+</blockquote>
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">+1,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Steuereinnahmen (Mrd. €)</b></p>
+
+
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>289,0</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>301,0</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>170,6</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Unterjährige Veränderung gegenüber Vorjahr in %</p>
+
+
+</blockquote>
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">+4,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Finanzierungssaldo (Mrd. €)</b></p>
+
+
+</th>
+<td class="xl77" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>6,2</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-7,0</b></p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-8,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Finanzierung/Verwendung:</b></p>
+
+
+</th>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-6,2</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>7,0</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Kassenmittel (<abbr title="Milliarden">Mrd.</abbr> €)</p>
+
+
+</blockquote>
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">-</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">46,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Münzeinnahmen (Mrd. €)</p>
+
+
+</blockquote>
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p>Saldo der Rücklagenbewegungen</p>
+
+
+</blockquote>
+</th>
+<td class="xl78" colspan="1" rowspan="1">
+
+
+<p align="right">-6,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">6,7</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p>
+<b>Nettokreditaufnahme/unterjähriger Kapitalmarktsaldo<sup>3</sup>
+</b></p>
+
+
+
+
+<p>
+<b>(Mrd. €)</b></p>
+
+
+</th>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,0</b></p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,0</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-38,1</b></p>
+
+
+</td>
+</td>
+
+
+
+
+
+
+</table></p>
+
+
+</div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-1.html" class="tableModalButton" data-content="embeddedTable199026" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            </a>
+    </div>
+    <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-1.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable199026" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg><span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    <div class="figcaption">
+            <span class="caption">
+                Tabelle 1</span>
+        </div>
+    </div>
+<div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container">
+    <h2 class="generic-table-headline">
+            
+Entwicklung der Bundesausgaben nach Aufgabenbereichen
+</h2>
+
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable199028">
+                
+<p>
+<table class="MsoNormalTable"><caption>Entwicklung der Bundesausgaben nach Aufgabenbereichen</caption><tbody><tr class="table-header-row">
+<td colspan="1" rowspan="3"></td>
+<td colspan="2" rowspan="2">
+<b><p align="center MsoNormal">Ist 2016</p>
+
+
+</b></td>
+<td colspan="2" rowspan="2">
+<b><p align="center">Soll<sup> </sup>2017</p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">Ist-Entwicklung</p>
+
+
+</b></td>
+<td colspan="1" rowspan="2">
+<b><p align="center MsoNormal">Unterjährige Veränderung</p>
+
+
+
+
+<p align="center MsoNormal">gegenüber Vorjahr</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Januar bis Juli 2016</p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Januar bis Juli 2017</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">1 Ohne Ausgaben durch haushaltstechnische Verrechnungen.</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">
+
+
+<p class="MsoNormal">Quelle: Bundesministerium der Finanzen</p>
+
+</td>
+</tr></tbody>
+
+
+
+
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Allgemeine Dienste</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>72.181</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>23,2</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>77.807</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>23,6</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>40.276</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>41.318</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+2,6</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Wirtschaftliche Zusammenarbeit und Entwicklung</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">7.732</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">2,5</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">8.501</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">2,6</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4.267</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3.744</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">-12,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Verteidigung</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">34.613</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">11,1</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">36.620</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">11,1</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">19.432</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">19.636</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+1,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Politische Führung, zentrale Verwaltung</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">14.580</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">4,7</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">16.326</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">5,0</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">8.684</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">9.429</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+8,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Finanzverwaltung</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4.507</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">1,5</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4.560</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">1,4</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2.451</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2.589</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+5,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Bildung, Wissenschaft, Forschung, Kulturelle Angelegenheiten</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>21.472</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>6,9</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>23.935</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>7,3</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>10.969</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>11.020</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+0,5</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Förderung für Schüler, Studierende, Weiterbildungsteilnehmende</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">3.516</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">1,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">3.977</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">1,2</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.004</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.022</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+0,9</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Wissenschaft, Forschung, Entwicklung außerhalb der Hochschulen</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">11.406</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">12.729</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3,9</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">4.954</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">5.070</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+2,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Soziale Sicherung, Familie und Jugend, Arbeitsmarktpolitik</b></p>
+
+
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>160.593</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>51,7</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>170.486</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>51,8</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>98.369</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>104.193</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+5,9</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Sozialversicherung einschließlich Arbeitslosenversicherung</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">106.939</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">34,4</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">111.943</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">34,0</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">68.485</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">71.663</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+4,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Arbeitsmarktpolitik</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">34.566</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">11,1</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">37.057</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">11,3</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">19.354</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">21.601</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+11,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">darunter:</p>
+
+
+</blockquote>
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Arbeitslosengeld <abbr title="zwei">II</abbr> nach <abbr title="Sozialgesetzbuch">SGB</abbr> <abbr title="zwei">II</abbr></p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">20.349</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">6,6</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">21.000</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">6,4</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">12.111</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">12.873</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+6,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Leistungen des Bundes für Unterkunft und Heizung nach dem <abbr title="Sozialgesetzbuch">SGB</abbr> <abbr title="zwei">II</abbr></p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">5.384</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">1,7</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">6.500</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">2,0</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2.882</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3.777</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+31,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Familienhilfe, Wohlfahrtspflege <abbr title="und Ähnliches">u. ä.</abbr></p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">8.065</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">2,6</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">8.275</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">2,5</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4.815</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4.862</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">+1,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Soziale Leistungen für Folgen von Krieg und politischen Ereignissen</p>
+
+
+</blockquote>
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2.026</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">0,7</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2.111</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">1.241</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">1.239</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">-0,2</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Gesundheit, Umwelt, Sport, Erholung</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2.074</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,7</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2.324</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,7</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>995</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1.073</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+7,8</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Wohnungswesen, Raumordnung und kommunale Gemeinschaftsdienste</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2.427</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,8</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>3.324</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1,0</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1.482</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1.725</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+16,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Wohnungswesen, Wohnungsbauprämie</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.866</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.378</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.339</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.569</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+17,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Ernährung, Landwirtschaft und Forsten</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>900</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,3</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1.250</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,4</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>300</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>345</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+14,8</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Energie- und Wasserwirtschaft, Gewerbe, Dienstleistungen</b></p>
+
+
+</th>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>4.252</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1,4</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>6.039</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>1,8</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2.760</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2.692</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-2,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Regionale Förderungsmaßnahmen</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">719</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,2</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.585</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">356</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">356</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">-0,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Bergbau, verarbeitendes Gewerbe und Baugewerbe</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.705</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.546</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.488</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.301</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">-12,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Verkehrs- und Nachrichtenwesen</b></p>
+
+
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>18.313</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>5,9</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>20.818</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>6,3</b></p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8.708</b></p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>9.862</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+13,2</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Straßen</p>
+
+
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">8.660</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2,8</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">9.154</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2,8</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">3.851</p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">4.316</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+12,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Eisenbahnen und öffentlicher Personennahverkehr</p>
+
+
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">5.623</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1,8</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">6.420</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2,0</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">2.644</p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">2.867</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+8,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Allgemeine Finanzwirtschaft</b></p>
+
+
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>35.232</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>11,3</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>23.117</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>7,0</b></p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>21.062</b></p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>20.012</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-5,0</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Zinsausgaben und Ausgaben im Zusammenhang mit der Schuldenaufnahme</p>
+
+
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">17.501</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">5,6</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">18.471</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">5,6</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">15.784</p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">15.373</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-2,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Ausgaben insgesamt<sup>1</sup>
+</b></p>
+
+
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>310.581</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>329.100</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>184.055</b></p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>192.054</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,3</b></p>
+
+
+</td>
+</td>
+
+
+
+</table></p>
+
+
+</div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-2.html" class="tableModalButton" data-content="embeddedTable199028" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            </a>
+    </div>
+    <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-2.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable199028" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg><span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    <div class="figcaption">
+            <span class="caption">
+                Tabelle 2</span>
+        </div>
+    </div>
+<div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container">
+    <h2 class="generic-table-headline">
+            
+Die Ausgaben des Bundes nach ökonomischen Arten
+</h2>
+
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable199030">
+                
+<p>
+<table class="MsoNormalTable"><caption>Die Ausgaben des Bundes nach ökonomischen Arten</caption><tbody><tr class="table-header-row">
+<td colspan="1" rowspan="3"></td>
+<td colspan="2" rowspan="2">
+<b><p align="center MsoNormal">Ist 2016</p>
+
+
+</b></td>
+<td colspan="2" rowspan="2">
+<b><p align="center MsoNormal">Soll 2017</p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">Ist-Entwicklung</p>
+
+
+</b></td>
+<td colspan="1" rowspan="2">
+<b><p align="center MsoNormal">Unterjährige Veränderung</p>
+
+
+
+
+<p align="center MsoNormal">gegenüber Vorjahr</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td class="center" colspan="1" rowspan="1">
+<b><p align="center">Januar bis </p>
+
+
+
+
+<p align="center">Juli 2016</p>
+
+
+</b></td>
+<td class="center" colspan="1" rowspan="1">
+<b><p>Januar bis</p>
+
+
+
+
+<p align="center">Juli 2017</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">1 Ohne Ausgaben durch haushaltstechnische Verrechnungen.</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">
+
+
+<p class="MsoNormal">Quelle: Bundesministerium der Finanzen</p>
+
+</td>
+</tr></tbody>
+
+
+
+
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Konsumtive Ausgaben</b></p>
+
+
+</th>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>277.398</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>89,3</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>295.969</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>89,9</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>169.770</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>176.656</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,1</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Personalausgaben</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>30.665</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>9,9</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>31.988</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>9,7</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>18.235</b></p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>19.211</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+5,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Aktivbezüge</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">22.269</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">7,2</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">23.433</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">7,1</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">13.041</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">13.778</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+5,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Versorgung</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">8.396</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2,7</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">8.555</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2,6</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">5.194</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">5.432</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+4,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Laufender Sachaufwand</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>26.132</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8,4</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>28.957</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8,8</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>13.233</b></p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>13.549</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+2,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Sächliche Verwaltungsaufgaben</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">1.506</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">1.542</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">761</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">796</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+4,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Militärische Beschaffungen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">9.963</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">3,2</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">11.258</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">3,4</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">4.841</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">4.330</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">-10,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Sonstiger laufender Sachaufwand</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">14.662</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">4,7</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">16.157</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">4,9</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">7.631</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">8.423</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+10,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Zinsausgaben</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>17.498</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>5,6</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>18.462</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>5,6</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>15.781</b></p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>15.370</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-2,6</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Laufende Zuweisungen und Zuschüsse</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>202.339</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>65,1</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>215.728</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>65,6</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>122.021</b></p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>127.981</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,9</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">an Verwaltungen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">23.648</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">7,6</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">26.824</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8,2</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">12.826</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">13.619</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+6,2</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">an andere Bereiche</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">178.691</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">57,5</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">188.904</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">57,4</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">109.194</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">114.363</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+4,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">darunter:</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Unternehmen</p>
+
+
+</blockquote>
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">26.878</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8,7</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">30.044</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9,1</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">15.303</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">15.882</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+3,8</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Renten, Unterstützungen <abbr title="und andere">u. a.</abbr></p>
+
+
+</blockquote>
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">28.957</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9,3</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">29.893</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9,1</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">17.322</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">18.103</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+4,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Sozialversicherungen</p>
+
+
+</blockquote>
+</blockquote>
+</blockquote>
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">112.577</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">36,2</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">116.878</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">35,5</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">71.310</p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">74.655</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">+4,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Sonstige Vermögensübertragungen</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>764</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,2</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>834</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,3</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>500</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>546</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+9,2</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Investive Ausgaben</b></p>
+
+
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>33.183</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>10,7</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>36.071</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>11,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>14.285</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>15.397</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+7,8</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Finanzierungshilfen</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>24.358</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>7,8</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>26.035</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>7,9</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>10.809</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>11.316</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,7</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Zuweisungen und Zuschüsse</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">22.787</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">7,3</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">22.639</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">6,9</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">9.961</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">10.452</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+4,9</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Darlehensgewährungen, Gewährleistungen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">1.069</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">1.927</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">529</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">649</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+22,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Erwerb von Beteiligungen, Kapitaleinlagen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">501</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,2</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">1.469</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,4</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">320</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">215</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">-32,8</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">
+<b>Sachinvestitionen</b></p>
+
+
+</blockquote>
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8.825</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>2,8</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>10.037</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>3,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>3.476</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>4.081</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+17,4</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Baumaßnahmen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">6.846</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2,2</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">7.533</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">2,3</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">2.648</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">3.086</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+16,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Erwerb von beweglichen Sachen</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">1.480</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,5</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">1.846</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">586</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">733</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+25,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Grunderwerb</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">499</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,2</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">658</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,2</p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">242</p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">262</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+8,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Globalansätze</b></p>
+
+
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-2.940</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-0,9</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>0</b></p>
+
+
+</td>
+<td class="xl77" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>X</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Ausgaben insgesamt<sup>1</sup>
+</b></p>
+
+
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>310.581</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>329.100</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>184.055</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>192.054</b></p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,3</b></p>
+
+
+</td>
+</td>
+
+
+
+</table></p>
+
+
+</div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-3.html" class="tableModalButton" data-content="embeddedTable199030" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            </a>
+    </div>
+    <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-3.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable199030" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg><span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    <div class="figcaption">
+            <span class="caption">
+                Tabelle 3</span>
+        </div>
+    </div>
+<div class="print-page-break-before">&#160;</div>
+
+<div class="richtext-table-container">
+    <h2 class="generic-table-headline">
+            
+Entwicklung der Einnahmen des Bundes
+</h2>
+
+    <div class="richtext-table">
+        <div class="embedded-table-link">
+            <div class="embedded-table" id="embeddedTable199032">
+                
+<p>
+<table class="MsoNormalTable"><caption>Entwicklung der Einnahmen des Bundes</caption><tbody><tr class="table-header-row">
+<td colspan="1" rowspan="3"></td>
+<td colspan="2" rowspan="2">
+<b><p align="center MsoNormal">Ist 2016</p>
+
+
+</b></td>
+<td colspan="2" rowspan="2">
+<b><p align="center MsoNormal">Soll 2017</p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">Ist-Entwicklung</p>
+
+
+</b></td>
+<td colspan="1" rowspan="2">
+<b><p align="center MsoNormal">Unterjährige Veränderung</p>
+
+
+
+
+<p align="center MsoNormal">gegenüber Vorjahr</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Januar bis </p>
+
+
+
+
+<p align="center MsoNormal">Juli 2016</p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Januar bis</p>
+
+
+
+
+<p align="center MsoNormal">Juli 2017</p>
+
+
+</b></td>
+</tr><tr class="table-header-row">
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">Anteil</p>
+
+
+
+
+<p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+<td colspan="2" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Millionen">Mio.</abbr> <abbr title="Euro">€</abbr></p>
+
+
+</b></td>
+<td colspan="1" rowspan="1">
+<b><p align="center MsoNormal">in <abbr title="Prozent">%</abbr></p>
+
+
+</b></td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">1 Ohne Einnahmen aus haushaltstechnischen Verrechnungen.</td>
+</tr><tr class="table-footer-row" valign="middle">
+<td colspan="8" rowspan="1">
+
+
+<p class="MsoNormal">Quelle: Bundesministerium der Finanzen</p>
+
+</td>
+</tr></tbody>
+
+
+
+
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Steuern</b></p>
+
+
+</th>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>288.991</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>91,2</b></p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>301.029</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>93,5</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>163.256</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>170.645</b></p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+4,5</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Bundesanteile an Gemeinschaftsteuern:</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">235.747</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">74,4</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">246.469</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">76,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">134.278</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">141.784</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+5,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Einkommen- und Körperschaftsteuer<br/>
+
+(einschließlich Abgeltungsteuer auf Zins- und Veräußerungserträge)</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">127.463</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">40,2</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">130.187</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">40,4</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">70.347</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">75.684</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+7,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">davon:</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right"> </p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Lohnsteuer</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">78.519</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">24,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">82.939</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">25,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">42.485</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">45.238</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+6,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Veranlagte Einkommensteuer</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">22.879</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">7,2</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">23.026</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">7,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">11.601</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">13.449</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+15,9</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Nicht veranlagte Steuer vom Ertrag</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9.731</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9.610</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">3,0</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">6.604</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">6.676</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+1,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Abgeltungsteuer auf Zins- und Veräußerungserträge </p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.613</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.306</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.631</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.036</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+24,8</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+<blockquote>
+
+
+<p align="left MsoNormal">Körperschaftsteuer</p>
+
+
+</blockquote>
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">13.721</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">13.249</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">4,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8.026</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8.285</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+3,2</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Steuern vom Umsatz</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">106.529</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">33,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">114.436</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">35,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">63.181</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">65.258</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">+3,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+<blockquote>
+
+
+<p align="left MsoNormal">Gewerbesteuerumlage</p>
+
+
+</blockquote>
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.755</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.846</p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">750</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">842</p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">+12,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Energiesteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">40.091</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">12,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">39.796</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">12,4</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">17.846</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">18.517</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+3,8</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Tabaksteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">14.186</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">4,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">14.700</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">4,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">7.576</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">7.478</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">-1,3</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Solidaritätszuschlag</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">16.855</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">5,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">17.450</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">5,4</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">9.530</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">10.266</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+7,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Versicherungsteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">12.763</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">4,0</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">13.050</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">4,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8.869</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">9.196</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+3,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Stromsteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">6.569</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">2,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">6.530</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">2,0</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">3.746</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">4.061</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+8,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Kraftfahrzeugsteuer</p>
+
+
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">8.952</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">2,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">8.900</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">2,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">5.623</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">5.628</p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">+0,1</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Kernbrennstoffsteuer</p>
+
+
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">422</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">0</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,0</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">266</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-6.284</p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">X</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Branntweinabgaben</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.072</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">2.051</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.210</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">1.229</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+1,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Kaffeesteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.040</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.050</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">589</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">596</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+1,2</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Luftverkehrsteuer</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.074</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">1.101</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">0,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">521</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">571</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+9,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Ergänzungszuweisungen an Länder</p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-9.845</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-3,1</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-9.228</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-2,9</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-4.803</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-4.761</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">-0,9</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<abbr title="Bruttonationaleinkommen">BNE</abbr>-Eigenmittel der <abbr title="Europäischen Union">EU</abbr></p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-19.911</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-6,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-21.680</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-6,7</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-10.929</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-7.121</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">-34,8</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Mehrwertsteuer-Eigenmittel der <abbr title="Europäischen Union">EU</abbr></p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-4.250</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-1,3</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-2.440</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-0,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-2.479</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-1.378</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">-44,4</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Zuweisungen an Länder für <abbr title="Öffentlichen Personennahverkehr">ÖPNV</abbr></p>
+
+
+</th>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-8.200</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-2,6</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-8.144</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-2,5</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-4.321</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-4.869</p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">+12,7</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Zuweisung an die Länder für <abbr title="Kraftfahrzeug">Kfz</abbr>-Steuer und <abbr title="Lastkraftwagen">Lkw</abbr>-Maut</p>
+
+
+</th>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">-8.992</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-2,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-8.992</p>
+
+
+</td>
+<td class="xl63" colspan="1" rowspan="1">
+
+
+<p align="right">-2,8</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-4.496</p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">-4.496</p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">+0,0</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Sonstige Einnahmen</b></p>
+
+
+</th>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>27.839</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>8,8</b></p>
+
+
+</td>
+<td class="xl70" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>21.021</b></p>
+
+
+</td>
+<td class="xl64" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>6,5</b></p>
+
+
+</td>
+<td class="xl74" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>17.940</b></p>
+
+
+</td>
+<td class="xl75" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>13.007</b></p>
+
+
+</td>
+<td class="xl65" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>-27,5</b></p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Einnahmen aus wirtschaftlicher Tätigkeit</p>
+
+
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">6.847</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">2,2</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">5.468</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">1,7</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">5.610</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">2.826</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-49,6</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Zinseinnahmen</p>
+
+
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">302</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,1</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">300</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,1</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">162</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">192</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">+18,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">Darlehensrückflüsse, Beteiligungen, Privatisierungserlöse</p>
+
+
+</th>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">2.890</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,9</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">1.800</p>
+
+
+</td>
+<td class="xl66" colspan="1" rowspan="1">
+
+
+<p align="right">0,6</p>
+
+
+</td>
+<td class="xl71" colspan="1" rowspan="1">
+
+
+<p align="right">1.826</p>
+
+
+</td>
+<td class="xl73" colspan="1" rowspan="1">
+
+
+<p align="right">886</p>
+
+
+</td>
+<td class="xl67" colspan="1" rowspan="1">
+
+
+<p align="right">-51,5</p>
+
+
+</td>
+</td>
+<td>
+<th colspan="1" rowspan="1" scope="row" td-status="headerrow">
+
+
+<p align="left MsoNormal">
+<b>Einnahmen insgesamt<sup>1</sup>
+</b></p>
+
+
+</th>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>316.829</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl72" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>322.051</b></p>
+
+
+</td>
+<td class="xl68" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>100,0</b></p>
+
+
+</td>
+<td class="xl76" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>181.195</b></p>
+
+
+</td>
+<td class="xl77" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>183.652</b></p>
+
+
+</td>
+<td class="xl69" colspan="1" rowspan="1">
+
+
+<p align="right">
+<b>+1,4</b></p>
+
+
+</td>
+</td>
+
+
+
+</table></p>
+
+
+</div>
+            <div class="table-footer-overlay"></div>
+        </div>
+        <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-4.html" class="tableModalButton" data-content="embeddedTable199032" data-target="#tableModal" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+            <img class="table-image" src="/Content/DE/Bilder/Monatsberichte/TabelleTeaserbild.jpg?__blob=normal&v=1" alt=""/>
+            </a>
+    </div>
+    <a href="Monatsberichte/2017/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/Tabellen/4-3-Tabelle-4.html" class="modalButton tableModalButton bmf-link bmf-link--zoom bmf-link--icononly" data-target="#tableModal" data-content="embeddedTable199032" aria-label="Tabelle vergrößern" title="Tabelle vergrößern">
+        <svg class="bmf-icon bmf-icon--zoom" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Zoomlink</title>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12"/>
+    <path fill="#001826" d="M10.545,4C6.937,4,4.001,6.89,4,10.439c0,3.547,2.937,6.434,6.544,6.434c1.503,0,2.888-0.506,3.993-1.348   l3.342,3.285C18.007,18.938,18.175,19,18.343,19c0.169,0,0.337-0.063,0.464-0.189c0.258-0.252,0.258-0.66,0-0.912l-3.315-3.26   c0.993-1.129,1.6-2.595,1.6-4.201C17.09,6.888,14.15,4,10.545,4L10.545,4z M10.545,5.291c2.885,0,5.23,2.308,5.232,5.146   c0,2.836-2.348,5.143-5.233,5.143c-2.884,0-5.23-2.307-5.23-5.14C5.314,7.602,7.661,5.293,10.545,5.291L10.545,5.291z"/>
+    <path display="none" fill="#001826" d="M10.545,7.174c-0.363,0-0.656,0.29-0.656,0.646v1.897h-1.93   c-0.362,0-0.656,0.289-0.656,0.645s0.294,0.646,0.657,0.646h1.929v1.897c0,0.355,0.293,0.645,0.656,0.645   c0.363,0,0.657-0.29,0.657-0.645v-1.897h1.928c0.363,0,0.656-0.29,0.656-0.646s-0.293-0.645-0.656-0.645h-1.928V7.82   C11.202,7.464,10.908,7.174,10.545,7.174z"/>
+</svg><span class="bmf-link-text">Tabelle vergrößern</span>
+    </a>
+    <div class="figcaption">
+            <span class="caption">
+                Tabelle 4</span>
+        </div>
+    </div></p>
+
+</div>
+        </div>
+    </div>
+
+    </div>
+
+                        </li>
+                    </ul><!-- #content -->
+                    <div class="startstop-wrapper">
+                        <ul class="startstop">
+                            <li class="slider-li-next">
+                                <a class="js-next-slide" href="javascript:void(0)"
+                                    aria-label="Weiter" title="Weiter">
+                                </a>
+                            </li>
+                            <li class="slider-li-prev">
+                                <a class="js-prev-slide" href="javascript:void(0)"
+                                    aria-label="Zurück" title="Zurück">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- #wrapperContent -->
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>    </div></div><h1 class="aural">Fußzeile</h1>
+<div class="modal fade" id="glossarPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">Schließen</button>
+                <h2 class="modal-title aural" id="myModalLabel">Glossar-Hilfe</h2>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade table-modal" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">Schließen</button>
+                <h2 class="modal-title aural" id="myModalLabel2">Tabelle</h2>
+            </div>
+            <div class="modal-body article-wrapper">
+                <div class="table-body">
+                    <div class="table-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade highcharts-modal" id="hcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">Schließen</button>
+                <h2 class="modal-title aural" id="myModalLabel3">Diagramm</h2>
+            </div>
+            <div class="modal-body article-wrapper">
+                <div class="highcharts-body hc-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="SiteGlobals/Functions/JavaScript/lib/jquery-3.3.1.js?v=1&amp;nn=187524"></script>
+<script>$(function() {
+    $('#disclaimerDiv').each(function() {
+        if (getCookieValue('disclaimer') != 'approved') {
+            $(this).show();
+        }
+    });
+})
+
+function getCookieValue(a) {
+    var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+}
+
+function setDisclaimerCookie(){
+    document.cookie = "disclaimer=approved";
+    $('#disclaimerDiv').hide();
+}
+function setDisclaimerRead(){
+    $('#disclaimerDiv').hide();
+}</script>
+    </body>
+    </html>
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+
+
+

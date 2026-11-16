@@ -1,0 +1,20 @@
+{
+ "uk": {
+  "ship": false,
+  "reason": "UK BU not shipped"
+ },
+ "fr": {
+  "ship": true,
+  "origin": "2026-09-01",
+  "source": "fr.bottom_up_macro.category_annuals"
+ },
+ "it": {
+  "ship": false,
+  "reason": "PRE mean MAE macro 6.76 vs production 5.52 (-22.5% better), worse at 1/4 horizons; OOS 11.25 vs 11.27; NGDP clip \u00b12.49pp PRE-support; \u03b2_tax=0.55 \u03b2_pri=0.35; treas\u00d70.94; cap\u00d7NGDP 0.2; interest=isin_curve; need \u22655% PRE edge, \u22641 worse horizon, OOS \u2264+25%"
+ },
+ "de": {
+  "ship": true,
+  "origin": "2026-08-01",
+  "source": "de.bottom_up_macro.revenue_interest_paths"
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "asof": "2026-10-25",
+ "baseline_bp": {
+  "oat_bund": 74.6,
+  "btp_bund": 68.4,
+  "spgb_bund": 44.2
+ },
+ "baseline_date": "2026-06-30",
+ "baseline_source": "CNBC 10y close 2026-06-30 (yield10_cnbc_20261024.csv)",
+ "hist_peak": {
+  "bp": 130.0,
+  "month": "Nov-2011",
+  "source": "BdF TEC10 \u2212 Bundesbank 10y, monthly mean"
+ },
+ "gates": {
+  "europe_problem_oat_bp": 100,
+  "auction_tpi_oat_bp": 150,
+  "systemic_oat_bp": 200,
+  "it_bank_g1_via_sympathy_oat_bp": 75,
+  "it_cushion_irrelevant_btp_bund_bp": 300
+ },
+ "holdings_bn": {
+  "fr": 314.0,
+  "it": 411.2,
+  "es": 264.3,
+  "de": 173.4
+ },
+ "duration_y": {
+  "fr": 4.8,
+  "it": 4.6,
+  "es": 6.8,
+  "de": 5.3
+ },
+ "gdp_bn": {
+  "fr": 3050.0,
+  "it": 2350.0,
+  "es": 1790.0,
+  "de": 4600.0
+ },
+ "fr_bank_g1_oat_bp": 100,
+ "it_bank_g1_via_sympathy_oat_bp": 75,
+ "grid": [
+  {
+   "d_oat_bp": 25,
+   "oat_bund_level": 99.6,
+   "d_btp_bp": 18,
+   "btp_bund_level": 86.4,
+   "d_spgb_bp": 10,
+   "fr_banks_mtm_bn": 3.8,
+   "fr_banks_mtm_pct_gdp": 0.12,
+   "it_banks_mtm_bn": 3.4,
+   "it_banks_mtm_pct_gdp": 0.14,
+   "es_banks_mtm_bn": 1.8,
+   "es_banks_mtm_pct_gdp": 0.1,
+   "gate": "noise"
+  },
+  {
+   "d_oat_bp": 50,
+   "oat_bund_level": 124.6,
+   "d_btp_bp": 35,
+   "btp_bund_level": 103.4,
+   "d_spgb_bp": 20,
+   "fr_banks_mtm_bn": 7.5,
+   "fr_banks_mtm_pct_gdp": 0.25,
+   "it_banks_mtm_bn": 6.6,
+   "it_banks_mtm_pct_gdp": 0.28,
+   "es_banks_mtm_bn": 3.6,
+   "es_banks_mtm_pct_gdp": 0.2,
+   "gate": "noise"
+  },
+  {
+   "d_oat_bp": 75,
+   "oat_bund_level": 149.6,
+   "d_btp_bp": 60,
+   "btp_bund_level": 128.4,
+   "d_spgb_bp": 30,
+   "fr_banks_mtm_bn": 11.3,
+   "fr_banks_mtm_pct_gdp": 0.37,
+   "it_banks_mtm_bn": 11.3,
+   "it_banks_mtm_pct_gdp": 0.48,
+   "es_banks_mtm_bn": 5.4,
+   "es_banks_mtm_pct_gdp": 0.3,
+   "gate": "it_sympathy_g1"
+  },
+  {
+   "d_oat_bp": 100,
+   "oat_bund_level": 174.6,
+   "d_btp_bp": 90,
+   "btp_bund_level": 158.4,
+   "d_spgb_bp": 45,
+   "fr_banks_mtm_bn": 15.1,
+   "fr_banks_mtm_pct_gdp": 0.49,
+   "it_banks_mtm_bn": 17.0,
+   "it_banks_mtm_pct_gdp": 0.72,
+   "es_banks_mtm_bn": 8.1,
+   "es_banks_mtm_pct_gdp": 0.45,
+   "gate": "europe"
+  },
+  {
+   "d_oat_bp": 150,
+   "oat_bund_level": 224.6,
+   "d_btp_bp": 150,
+   "btp_bund_level": 218.4,
+   "d_spgb_bp": 75,
+   "fr_banks_mtm_bn": 22.6,
+   "fr_banks_mtm_pct_gdp": 0.74,
+   "it_banks_mtm_bn": 28.4,
+   "it_banks_mtm_pct_gdp": 1.21,
+   "es_banks_mtm_bn": 13.5,
+   "es_banks_mtm_pct_gdp": 0.75,
+   "gate": "auction_tpi"
+  },
+  {
+   "d_oat_bp": 200,
+   "oat_bund_level": 274.6,
+   "d_btp_bp": 240,
+   "btp_bund_level": 308.4,
+   "d_spgb_bp": 110,
+   "fr_banks_mtm_bn": 30.1,
+   "fr_banks_mtm_pct_gdp": 0.99,
+   "it_banks_mtm_bn": 45.4,
+   "it_banks_mtm_pct_gdp": 1.93,
+   "es_banks_mtm_bn": 19.8,
+   "es_banks_mtm_pct_gdp": 1.1,
+   "gate": "systemic"
+  },
+  {
+   "d_oat_bp": 300,
+   "oat_bund_level": 374.6,
+   "d_btp_bp": 420,
+   "btp_bund_level": 488.4,
+   "d_spgb_bp": 180,
+   "fr_banks_mtm_bn": 45.2,
+   "fr_banks_mtm_pct_gdp": 1.48,
+   "it_banks_mtm_bn": 79.4,
+   "it_banks_mtm_pct_gdp": 3.38,
+   "es_banks_mtm_bn": 32.4,
+   "es_banks_mtm_pct_gdp": 1.81,
+   "gate": "systemic"
+  },
+  {
+   "d_oat_bp": 500,
+   "oat_bund_level": 574.6,
+   "d_btp_bp": 600,
+   "btp_bund_level": 668.4,
+   "d_spgb_bp": 300,
+   "fr_banks_mtm_bn": 75.4,
+   "fr_banks_mtm_pct_gdp": 2.47,
+   "it_banks_mtm_bn": 113.5,
+   "it_banks_mtm_pct_gdp": 4.83,
+   "es_banks_mtm_bn": 53.9,
+   "es_banks_mtm_pct_gdp": 3.01,
+   "gate": "systemic"
+  }
+ ],
+ "claims": [
+  "France\u2192Europe at +100bp OAT\u2013Bund from the 2026-06-30 baseline (75bp, CNBC 10y close 2026-06-30 (yield10_cnbc_20261024.csv)): FR domestic banks \u20ac314bn \u00d7 4.8y \u2248 0.49% GDP MTM.",
+  "Italy bank G1 via sympathy at ~+75bp of OAT (BTP +60bp central path).",
+  "Auction/TPI ~+150bp; systemic ~+200bp; IT cushion irrelevant near BTP\u2013Bund 300bp."
+ ]
+}

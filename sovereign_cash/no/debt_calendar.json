@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {"name": "Norges Bank, Strategy and borrowing programme for 2026 (calendars, programme, bill-stock aim)",
+     "published": "2025-12-12",
+     "url": "https://www.norges-bank.no/contentassets/448f83ba654342209816b66109d78cd9/strategy-and-borrowing-program-2026.pdf"},
+    {"name": "Norges Bank, Quarterly information Q4 2026 (bond borrowing interval)",
+     "published": "2026-09-29",
+     "url": "https://www.norges-bank.no/en/topics/government-debt/borrowing-programme-reports/2026/information-q4-2026/"}
+  ],
+  "programmes": {
+    "2026": {"bonds_bn": [100.0, 110.0], "bill_market_stock_end_bn": 34.0, "bill_market_stock_range_bn": [30.0, 40.0],
+             "published": "2025-12-12"}
+  },
+  "quarter_guidance": [
+    {"year": 2026, "quarter": 4, "bonds_bn": [16.0, 19.0], "published": "2026-09-29"}
+  ],
+  "bond_auctions": [
+    "2026-01-07", "2026-01-28", "2026-02-11", "2026-02-25", "2026-03-04", "2026-03-18", "2026-04-15", "2026-04-29",
+    "2026-05-13", "2026-05-27", "2026-06-03", "2026-06-10", "2026-06-24", "2026-07-01", "2026-08-05", "2026-08-19",
+    "2026-09-02", "2026-09-16", "2026-10-07", "2026-10-14", "2026-10-21", "2026-10-28", "2026-11-11", "2026-11-25",
+    "2026-12-02", "2026-12-09"
+  ],
+  "buybacks": [
+    {"date": "2026-01-07", "bond": "NGB 02/2026", "maturity": "2026-02-19"},
+    {"date": "2026-02-25", "bond": "NGB 02/2027", "maturity": "2027-02-17"},
+    {"date": "2026-06-24", "bond": "NGB 02/2027", "maturity": "2027-02-17"},
+    {"date": "2026-09-16", "bond": "NGB 02/2027", "maturity": "2027-02-17"},
+    {"date": "2026-11-25", "bond": "NGB 02/2027", "maturity": "2027-02-17"}
+  ],
+  "bill_auctions": [
+    {"date": "2026-01-12", "bill": "NTB 03/2026", "maturity": "2026-03-18", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-01-26", "bill": "NTB 06/2026", "maturity": "2026-06-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-02-23", "bill": "NTB 09/2026", "maturity": "2026-09-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-03-16", "bill": "NTB 03/2027", "maturity": "2027-03-17", "market_bn": 6.0, "own_bn": 4.0},
+    {"date": "2026-04-13", "bill": "NTB 06/2026", "maturity": "2026-06-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-04-27", "bill": "NTB 12/2026", "maturity": "2026-12-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-05-11", "bill": "NTB 09/2026", "maturity": "2026-09-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-06-01", "bill": "NTB 12/2026", "maturity": "2026-12-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-06-15", "bill": "NTB 06/2027", "maturity": "2027-06-16", "market_bn": 6.0, "own_bn": 4.0},
+    {"date": "2026-06-29", "bill": "NTB 09/2026", "maturity": "2026-09-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-08-17", "bill": "NTB 03/2027", "maturity": "2027-03-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-08-31", "bill": "NTB 03/2027", "maturity": "2027-03-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-09-14", "bill": "NTB 09/2027", "maturity": "2027-09-15", "market_bn": 6.0, "own_bn": 4.0},
+    {"date": "2026-10-05", "bill": "NTB 12/2026", "maturity": "2026-12-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-10-19", "bill": "NTB 03/2027", "maturity": "2027-03-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-11-02", "bill": "NTB 06/2027", "maturity": "2027-06-16", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-11-16", "bill": "NTB 03/2027", "maturity": "2027-03-17", "market_bn": 2.0, "own_bn": 0.0},
+    {"date": "2026-12-14", "bill": "NTB 12/2027", "maturity": "2027-12-15", "market_bn": 6.0, "own_bn": 4.0}
+  ]
+}

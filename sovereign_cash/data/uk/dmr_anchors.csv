@@ -1,0 +1,19 @@
+# DMO financing arithmetic, GBP bn. Sources: DMR 2026-27 (3 Mar 2026), Revision 23 Apr 2026,
+# and Budget 2026 Annex A (28 Oct 2026) — live 2026-27 plan is the Budget revision.
+# kind=plan is the latest published plan for that FY; kind=outturn is the published outturn.
+# 2024-25 outturn: Revision to the DMO Financing Remit 2025-26 (23 Apr 2025).
+# 2023-24 outturn net cash: Revision to the DMO Financing Remit 2024-25.
+# sukuk_redemption / secondary_purchase_fin are Annex C/A requirement lines.
+# Net cash identity: end = start + gilt_sales + tbill_net_debtfin + nsandi_net + nsandi_green + other_financing
+#                         - cgncr_ex - gilt_redemptions - sukuk_redemption - secondary_purchase_fin
+
+fy,kind,cgncr_ex,gilt_redemptions,financing_adjustment,nsandi_net,nsandi_green,other_financing,gilt_sales,tbill_net_debtfin,net_cash_end_march,sukuk_redemption,secondary_purchase_fin,published,source
+2023-24,outturn,158.8,,,,,,,-5.1,-4.2,,,2024-04-23,sa230424_2 Annex
+2024-25,outturn,180.5,139.9,6.5,9.8,-0.1,5.1,297.7,3.0,-9.3,0.0,0.0,2025-04-23,sa230425 Annex
+2025-26,outturn,135.9,168.2,11.6,12.1,-0.4,-0.7,303.9,11.3,12.9,0.0,0.0,2026-04-23,pr230426_2 Annex C
+2025-26,plan_spring,144.7,168.2,11.6,13.6,-0.3,1.7,303.7,11.0,7.3,0.0,0.0,2026-03-03,DMR 2026-27 Table / sa030326
+2026-27,plan,144.1,140.2,-10.6,15.0,-0.4,1.7,250.6,8.0,2.3,0.5,0.7,2026-10-28,Budget 2026 Annex A
+2027-28,illustrative,146.1,162.6,,,,,,,,,,2026-10-28,Budget 2026 Annex A / OBR Oct
+2028-29,illustrative,149.8,147.9,,,,,,,,,,2026-10-28,Budget 2026 Annex A / OBR Oct
+2029-30,illustrative,83.6,,,,,,,,,,,2026-10-28,Budget 2026 / OBR Oct CGNCR ex NR
+2030-31,illustrative,114.8,,,,,,,,,,,2026-10-28,Budget 2026 / OBR Oct CGNCR ex NR

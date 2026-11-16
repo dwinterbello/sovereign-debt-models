@@ -1,0 +1,4173 @@
+{
+  "uk_stock": {
+    "country": "UK",
+    "status": "ok",
+    "n_stock": 104,
+    "n_matched_within_tol": 104,
+    "match_rate": 1.0,
+    "stock_mn": 2660476.2,
+    "ops_outstanding_mn": 2660476.3,
+    "gap_mn": 0.1,
+    "gap_pct": 0.0,
+    "worst_isins": [
+      {
+        "isin": "GB00BSQNRC93",
+        "name": "4 3/8% Treasury Gilt 2028",
+        "amount_nominal_mn": 47199.093,
+        "ops_outstanding_mn": 47199.189,
+        "gap_mn": 0.0959999999977299
+      },
+      {
+        "isin": "GB00B24FF097",
+        "name": "4\u00be% Treasury Gilt 2030",
+        "amount_nominal_mn": 45823.38057,
+        "ops_outstanding_mn": 45823.3806,
+        "gap_mn": 2.9999995604157448e-05
+      },
+      {
+        "isin": "GB00B3LZBF68",
+        "name": "0 5/8% Index-linked Treasury Gilt 2040",
+        "amount_nominal_mn": 14090.029883,
+        "ops_outstanding_mn": 14090.0299,
+        "gap_mn": 1.700000029813964e-05
+      },
+      {
+        "isin": "GB00B421JZ66",
+        "name": "0\u00bd% Index-linked Treasury Gilt 2050",
+        "amount_nominal_mn": 12221.183199,
+        "ops_outstanding_mn": 12221.1832,
+        "gap_mn": 1.0000003385357559e-06
+      },
+      {
+        "isin": "GB0004893086",
+        "name": "4\u00bc% Treasury Stock 2032",
+        "amount_nominal_mn": 46026.14949908,
+        "ops_outstanding_mn": 46026.1495,
+        "gap_mn": 9.200011845678091e-07
+      },
+      {
+        "isin": "GB0002404191",
+        "name": "6% Treasury Stock 2028",
+        "amount_nominal_mn": 20730.55455982,
+        "ops_outstanding_mn": 20730.55456,
+        "gap_mn": 1.7999991541728377e-07
+      },
+      {
+        "isin": "GB00B6RNH572",
+        "name": "3\u00be% Treasury Gilt 2052",
+        "amount_nominal_mn": 26003.10099997,
+        "ops_outstanding_mn": 26003.101,
+        "gap_mn": 2.9998773243278265e-08
+      },
+      {
+        "isin": "GB00BYMWG366",
+        "name": "0 1/8% Index-linked Treasury Gilt 2046",
+        "amount_nominal_mn": 13485.56799999,
+        "ops_outstanding_mn": 13485.568,
+        "gap_mn": 9.998984751291573e-09
+      }
+    ]
+  },
+  "annual": {
+    "UK": [
+      {
+        "year": 1981,
+        "sec_type": "Linker",
+        "ops_mn": 2000.0
+      },
+      {
+        "year": 1982,
+        "sec_type": "Linker",
+        "ops_mn": 2650.0
+      },
+      {
+        "year": 1983,
+        "sec_type": "Linker",
+        "ops_mn": 2800.0
+      },
+      {
+        "year": 1984,
+        "sec_type": "Linker",
+        "ops_mn": 1050.0
+      },
+      {
+        "year": 1985,
+        "sec_type": "Linker",
+        "ops_mn": 1800.0
+      },
+      {
+        "year": 1985,
+        "sec_type": "Nominal",
+        "ops_mn": 401.48662662
+      },
+      {
+        "year": 1986,
+        "sec_type": "Linker",
+        "ops_mn": 1850.0
+      },
+      {
+        "year": 1986,
+        "sec_type": "Nominal",
+        "ops_mn": 3168.72381805
+      },
+      {
+        "year": 1987,
+        "sec_type": "Linker",
+        "ops_mn": 1100.0
+      },
+      {
+        "year": 1987,
+        "sec_type": "Nominal",
+        "ops_mn": 579.43176607
+      },
+      {
+        "year": 1988,
+        "sec_type": "Linker",
+        "ops_mn": 1800.0
+      },
+      {
+        "year": 1988,
+        "sec_type": "Nominal",
+        "ops_mn": 500.45435611
+      },
+      {
+        "year": 1989,
+        "sec_type": "Nominal",
+        "ops_mn": 75.32772194
+      },
+      {
+        "year": 1990,
+        "sec_type": "Nominal",
+        "ops_mn": 1817.2268440900002
+      },
+      {
+        "year": 1991,
+        "sec_type": "Linker",
+        "ops_mn": 500.0
+      },
+      {
+        "year": 1991,
+        "sec_type": "Nominal",
+        "ops_mn": 4300.0
+      },
+      {
+        "year": 1992,
+        "sec_type": "Linker",
+        "ops_mn": 3400.0
+      },
+      {
+        "year": 1992,
+        "sec_type": "Nominal",
+        "ops_mn": 10100.0
+      },
+      {
+        "year": 1993,
+        "sec_type": "Linker",
+        "ops_mn": 5700.0
+      },
+      {
+        "year": 1993,
+        "sec_type": "Nominal",
+        "ops_mn": 28300.0
+      },
+      {
+        "year": 1994,
+        "sec_type": "Linker",
+        "ops_mn": 2200.0
+      },
+      {
+        "year": 1994,
+        "sec_type": "Nominal",
+        "ops_mn": 12100.0
+      },
+      {
+        "year": 1995,
+        "sec_type": "Linker",
+        "ops_mn": 2500.0
+      },
+      {
+        "year": 1995,
+        "sec_type": "Nominal",
+        "ops_mn": 20650.0
+      },
+      {
+        "year": 1996,
+        "sec_type": "Linker",
+        "ops_mn": 3950.0
+      },
+      {
+        "year": 1996,
+        "sec_type": "Nominal",
+        "ops_mn": 20560.275
+      },
+      {
+        "year": 1997,
+        "sec_type": "Linker",
+        "ops_mn": 3050.0
+      },
+      {
+        "year": 1997,
+        "sec_type": "Nominal",
+        "ops_mn": 18500.0
+      },
+      {
+        "year": 1998,
+        "sec_type": "Linker",
+        "ops_mn": 1450.0
+      },
+      {
+        "year": 1998,
+        "sec_type": "Nominal",
+        "ops_mn": 16323.18383919
+      },
+      {
+        "year": 1999,
+        "sec_type": "Linker",
+        "ops_mn": 1695.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 17999.68665775
+      },
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 16000.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Linker",
+        "ops_mn": 1630.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 13191.87906
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 32850.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Linker",
+        "ops_mn": 2376.4
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 18229.46623199
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 82000.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Linker",
+        "ops_mn": 3840.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 24738.48253124
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 85548.1742
+      },
+      {
+        "year": 2003,
+        "sec_type": "Linker",
+        "ops_mn": 3350.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 43500.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 98196.344135
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 4375.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 39750.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 94447.221565
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 9299.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 53008.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 85595.9257
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 14200.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 44500.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 71497.69033
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 14450.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 44500.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 70440.60526
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 19174.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 150493.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 167496.965165
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 28227.952
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 242936.652
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 202497.532025
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 30675.508
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 146121.285
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 186498.057815
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 33160.245
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 139200.297
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 170498.851945
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 34196.789
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 140533.884
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 120999.15401500001
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 32560.572
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 116457.678
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 180998.721915
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 29331.466
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 107755.965
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 225498.378455
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 23255.088
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 88012.066
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 246497.98175
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 24461.285
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 102377.385
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 174999.24144
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 17561.628
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 100640.486
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 205999.828
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 16031.299
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 91092.826
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 264499.732
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 15627.057
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 92021.49
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 211995.67
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 18500.695
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 409989.093
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 148499.708
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 17731.613
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 216901.649
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 150299.884
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 12398.874
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 205254.01499999998
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 224499.787
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 22361.549
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 216946.405
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 277999.682
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 33641.518
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 269338.358
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 295999.729
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 39833.699
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 323572.589
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 238999.811
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 18294.274
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 216814.33299999998
+      }
+    ],
+    "DE": [
+      {
+        "year": 1999,
+        "sec_type": "Bill",
+        "ops_mn": 20000.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 105987.08
+      },
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 20000.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 110000.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 33000.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 106000.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 50000.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 141000.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 66000.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 154000.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 72000.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 154000.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 72000.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Foreign",
+        "ops_mn": 3968.25396825397
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 150454.39761347
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 72000.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 9000.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 153000.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 72000.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 6000.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 137000.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 75000.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 7000.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 141000.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 176000.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Foreign",
+        "ops_mn": 2735.9781121751
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 5000.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 153000.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 116000.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 11000.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 196000.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 94000.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 8000.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 181000.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 80000.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 9000.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 175000.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 74000.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 10000.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 173000.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 40000.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 11000.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 161000.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 30500.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 12000.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 144000.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 41500.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 6500.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 153000.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 20000.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 6500.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 149000.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 35000.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 6500.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 138000.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 43000.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 6200.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 153000.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 181000.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 5500.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 373500.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 238000.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 7700.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 249500.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 220000.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 7250.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 293500.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 209000.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 5600.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 303500.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 163000.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 276500.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 135000.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 291500.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 157000.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 328500.0
+      }
+    ],
+    "FR": [
+      {
+        "year": 1999,
+        "sec_type": "Bill",
+        "ops_mn": 94133.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Linker",
+        "ops_mn": 5362.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 75422.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 95387.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Linker",
+        "ops_mn": 2590.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 86892.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 121817.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Linker",
+        "ops_mn": 4864.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 83901.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 188329.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Linker",
+        "ops_mn": 7314.856
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 85910.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 233330.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Linker",
+        "ops_mn": 16017.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 102325.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 220697.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 22860.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 108040.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 202196.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 17132.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 108994.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 164425.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 18243.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 102889.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 189588.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 17954.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 89668.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 308408.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 15481.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 114307.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 501636.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 12305.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 166259.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 428905.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 20437.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 190250.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 407259.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 20052.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 187712.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 392979.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 17111.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 184389.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 389714.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 16775.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 175171.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 408141.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 17719.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 185358.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 353735.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 17801.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 202213.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 324719.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 20465.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 193814.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 322568.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 19963.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 193178.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 281447.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 22377.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 203007.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 253938.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 17293.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 228323.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 353011.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 20123.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 269386.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 319632.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 23619.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 261444.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 308938.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 25363.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 260867.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 345426.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 24537.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 278557.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 413280.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 29431.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 310373.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 397984.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 23290.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 324384.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 372777.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 17238.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 331594.0
+      }
+    ],
+    "IT": [
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 137000.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "FRN",
+        "ops_mn": 16750.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 113500.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 161371.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "FRN",
+        "ops_mn": 26750.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 142750.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 193513.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "FRN",
+        "ops_mn": 43315.3
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 159444.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 208220.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "FRN",
+        "ops_mn": 43134.31
+      },
+      {
+        "year": 2003,
+        "sec_type": "Linker",
+        "ops_mn": 7000.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 162672.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 222050.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "FRN",
+        "ops_mn": 33025.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 5781.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 135334.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 203416.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "FRN",
+        "ops_mn": 27698.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 11865.5
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 129298.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 210583.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "FRN",
+        "ops_mn": 19300.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 7792.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 135018.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 220052.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "FRN",
+        "ops_mn": 16397.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 16131.65
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 138474.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 271898.666
+      },
+      {
+        "year": 2008,
+        "sec_type": "FRN",
+        "ops_mn": 16501.742
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 18017.45
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 157955.41
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 265996.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "FRN",
+        "ops_mn": 27433.466
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 16330.956
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 214659.493
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 209837.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "FRN",
+        "ops_mn": 26562.394
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 14844.125
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 212110.254
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 206518.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "FRN",
+        "ops_mn": 19171.032
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 15511.275
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 177205.607
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 239712.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "FRN",
+        "ops_mn": 4348.887
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 10201.5
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 191218.105
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 218261.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "FRN",
+        "ops_mn": 19544.815
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 10757.497
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 190844.474
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 181306.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "FRN",
+        "ops_mn": 26009.125
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 14487.949
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 212431.925
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 163030.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "FRN",
+        "ops_mn": 27584.875
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 13097.872
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 192616.914
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 152594.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "FRN",
+        "ops_mn": 29231.5
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 12422.066
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 191453.257
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 151600.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "FRN",
+        "ops_mn": 31014.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 13551.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 214769.378
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 152303.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "FRN",
+        "ops_mn": 22726.5
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 16666.1
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 196954.8
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 160190.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "FRN",
+        "ops_mn": 13909.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 13870.7
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 217135.35
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 181815.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "FRN",
+        "ops_mn": 16104.4
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 12451.15
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 305916.26
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 152643.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "FRN",
+        "ops_mn": 24499.5
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 15090.77
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 271653.323
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 139370.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "FRN",
+        "ops_mn": 18504.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 35901.518
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 216458.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 156165.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "FRN",
+        "ops_mn": 24634.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 29036.862
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 317748.954
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 171425.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "FRN",
+        "ops_mn": 22530.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 25729.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 312629.5
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 169859.382
+      },
+      {
+        "year": 2025,
+        "sec_type": "FRN",
+        "ops_mn": 29922.23
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 32915.678
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 311023.465
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 163705.205
+      },
+      {
+        "year": 2026,
+        "sec_type": "FRN",
+        "ops_mn": 26036.501
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 31297.263
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 274506.536
+      }
+    ],
+    "ES": [
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 25892.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 30570.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 26970.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 25120.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 7780.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 7782.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 109163.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 126120.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 99397.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 12394.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 126946.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 97868.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 8406.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 131148.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 100997.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 7787.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 111970.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 94437.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 12418.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 126753.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 80981.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 12458.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 119575.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 78813.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 5840.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 106370.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 93600.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 7922.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 166377.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 94427.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 7240.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 152256.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 89891.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 6274.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 144919.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 86840.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 9261.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 171959.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 91724.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 10464.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 164079.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 104337.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 7126.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 168446.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 93744.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 7306.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 157174.0
+      }
+    ],
+    "US": [
+      {
+        "year": 1979,
+        "sec_type": "Bill",
+        "ops_mn": 6606.165
+      },
+      {
+        "year": 1979,
+        "sec_type": "Nominal",
+        "ops_mn": 4716.0
+      },
+      {
+        "year": 1980,
+        "sec_type": "Bill",
+        "ops_mn": 484250.37
+      },
+      {
+        "year": 1980,
+        "sec_type": "Nominal",
+        "ops_mn": 133757.343
+      },
+      {
+        "year": 1981,
+        "sec_type": "Bill",
+        "ops_mn": 551359.91
+      },
+      {
+        "year": 1981,
+        "sec_type": "Nominal",
+        "ops_mn": 148066.77
+      },
+      {
+        "year": 1982,
+        "sec_type": "Bill",
+        "ops_mn": 655562.265
+      },
+      {
+        "year": 1982,
+        "sec_type": "Nominal",
+        "ops_mn": 196447.738
+      },
+      {
+        "year": 1983,
+        "sec_type": "Bill",
+        "ops_mn": 765050.655
+      },
+      {
+        "year": 1983,
+        "sec_type": "Nominal",
+        "ops_mn": 261453.78699999998
+      },
+      {
+        "year": 1984,
+        "sec_type": "Bill",
+        "ops_mn": 813714.529
+      },
+      {
+        "year": 1984,
+        "sec_type": "Nominal",
+        "ops_mn": 276116.044
+      },
+      {
+        "year": 1985,
+        "sec_type": "Bill",
+        "ops_mn": 888776.69
+      },
+      {
+        "year": 1985,
+        "sec_type": "Nominal",
+        "ops_mn": 318532.589
+      },
+      {
+        "year": 1986,
+        "sec_type": "Bill",
+        "ops_mn": 914122.375
+      },
+      {
+        "year": 1986,
+        "sec_type": "Nominal",
+        "ops_mn": 357596.516
+      },
+      {
+        "year": 1987,
+        "sec_type": "Bill",
+        "ops_mn": 840940.63
+      },
+      {
+        "year": 1987,
+        "sec_type": "Nominal",
+        "ops_mn": 344730.802
+      },
+      {
+        "year": 1988,
+        "sec_type": "Bill",
+        "ops_mn": 885399.265
+      },
+      {
+        "year": 1988,
+        "sec_type": "Nominal",
+        "ops_mn": 334395.822
+      },
+      {
+        "year": 1989,
+        "sec_type": "Bill",
+        "ops_mn": 934138.42
+      },
+      {
+        "year": 1989,
+        "sec_type": "Nominal",
+        "ops_mn": 366287.045
+      },
+      {
+        "year": 1990,
+        "sec_type": "Bill",
+        "ops_mn": 1150287.405
+      },
+      {
+        "year": 1990,
+        "sec_type": "Nominal",
+        "ops_mn": 407230.074
+      },
+      {
+        "year": 1991,
+        "sec_type": "Bill",
+        "ops_mn": 1231878.66
+      },
+      {
+        "year": 1991,
+        "sec_type": "Nominal",
+        "ops_mn": 492219.26900000003
+      },
+      {
+        "year": 1992,
+        "sec_type": "Bill",
+        "ops_mn": 1462831.225
+      },
+      {
+        "year": 1992,
+        "sec_type": "Nominal",
+        "ops_mn": 535515.64
+      },
+      {
+        "year": 1993,
+        "sec_type": "Bill",
+        "ops_mn": 1557945.029
+      },
+      {
+        "year": 1993,
+        "sec_type": "Nominal",
+        "ops_mn": 544109.816
+      },
+      {
+        "year": 1994,
+        "sec_type": "Bill",
+        "ops_mn": 1644765.149
+      },
+      {
+        "year": 1994,
+        "sec_type": "Nominal",
+        "ops_mn": 537806.02
+      },
+      {
+        "year": 1995,
+        "sec_type": "Bill",
+        "ops_mn": 1798268.555
+      },
+      {
+        "year": 1995,
+        "sec_type": "Nominal",
+        "ops_mn": 543770.428
+      },
+      {
+        "year": 1996,
+        "sec_type": "Bill",
+        "ops_mn": 1897045.832
+      },
+      {
+        "year": 1996,
+        "sec_type": "Nominal",
+        "ops_mn": 620774.102
+      },
+      {
+        "year": 1997,
+        "sec_type": "Bill",
+        "ops_mn": 1620773.792
+      },
+      {
+        "year": 1997,
+        "sec_type": "Linker",
+        "ops_mn": 32568.418
+      },
+      {
+        "year": 1997,
+        "sec_type": "Nominal",
+        "ops_mn": 532677.138
+      },
+      {
+        "year": 1998,
+        "sec_type": "Bill",
+        "ops_mn": 1506273.473
+      },
+      {
+        "year": 1998,
+        "sec_type": "Linker",
+        "ops_mn": 33615.326
+      },
+      {
+        "year": 1998,
+        "sec_type": "Nominal",
+        "ops_mn": 452025.809
+      },
+      {
+        "year": 1999,
+        "sec_type": "Bill",
+        "ops_mn": 1661966.622
+      },
+      {
+        "year": 1999,
+        "sec_type": "Linker",
+        "ops_mn": 30618.328
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 385519.982
+      },
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 1725093.292
+      },
+      {
+        "year": 2000,
+        "sec_type": "Linker",
+        "ops_mn": 16318.625
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 311099.867
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 2398947.725
+      },
+      {
+        "year": 2001,
+        "sec_type": "Linker",
+        "ops_mn": 16000.445
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 349801.614
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 3258969.883
+      },
+      {
+        "year": 2002,
+        "sec_type": "Linker",
+        "ops_mn": 23010.446
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 549177.258
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 3516724.215
+      },
+      {
+        "year": 2003,
+        "sec_type": "Linker",
+        "ops_mn": 26000.111
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 719155.5
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 3777076.954
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 63000.17
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 790375.553
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 3612686.507
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 69000.015
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 703767.291
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 3621227.952
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 77180.675
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 725646.288
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 3781301.223
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 65013.131
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 646243.616
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 5704736.7042
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 62020.9853
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 967424.3905
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 6301559.7029
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 59375.3346
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 2137836.0895000002
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 6099597.3732
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 87759.7708
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 2231982.797
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 5401661.2845
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 134872.2491
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 2070610.1516
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 5624010.9818
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 149840.6926
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 2052514.9784
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 5792119.007
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 155000.4635
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 1985004.0286
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 4817120.8799
+      },
+      {
+        "year": 2014,
+        "sec_type": "FRN",
+        "ops_mn": 164006.8414
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 155030.368
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 1896433.3905
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 4816095.923
+      },
+      {
+        "year": 2015,
+        "sec_type": "FRN",
+        "ops_mn": 164056.4375
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 155065.9236
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 1803394.7365
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 6131066.9147
+      },
+      {
+        "year": 2016,
+        "sec_type": "FRN",
+        "ops_mn": 171006.4742
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 144602.7456
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 1953536.2781
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 6563072.103
+      },
+      {
+        "year": 2017,
+        "sec_type": "FRN",
+        "ops_mn": 172054.3451
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 138540.848
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 1913545.9726
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 7977099.6955
+      },
+      {
+        "year": 2018,
+        "sec_type": "FRN",
+        "ops_mn": 211774.2793
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 141229.0344
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 2232150.302
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 9068834.1276
+      },
+      {
+        "year": 2019,
+        "sec_type": "FRN",
+        "ops_mn": 229058.1317
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 158749.5524
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 2547671.8332
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 17076882.1105
+      },
+      {
+        "year": 2020,
+        "sec_type": "FRN",
+        "ops_mn": 269462.7553
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 169401.071
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 3456936.185
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 14382062.5355
+      },
+      {
+        "year": 2021,
+        "sec_type": "FRN",
+        "ops_mn": 333922.9484
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 186355.8942
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 4618858.5254999995
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 12894975.5279
+      },
+      {
+        "year": 2022,
+        "sec_type": "FRN",
+        "ops_mn": 283323.2752
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 198692.6341
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 3476812.5314
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 19273212.9336
+      },
+      {
+        "year": 2023,
+        "sec_type": "FRN",
+        "ops_mn": 288343.4629
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 198866.196
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 3066745.6153
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 24685871.7341
+      },
+      {
+        "year": 2024,
+        "sec_type": "FRN",
+        "ops_mn": 345968.0132
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 213468.78759999998
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 3943606.0328
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 25925894.8824
+      },
+      {
+        "year": 2025,
+        "sec_type": "FRN",
+        "ops_mn": 354308.4824
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 243080.2384
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 4222801.5243
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 24781740.7605
+      },
+      {
+        "year": 2026,
+        "sec_type": "FRN",
+        "ops_mn": 300541.5397
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 207038.898
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 3728075.1286
+      }
+    ],
+    "JP": [
+      {
+        "year": 1979,
+        "sec_type": "Nominal",
+        "ops_mn": 276400.0
+      },
+      {
+        "year": 1980,
+        "sec_type": "Nominal",
+        "ops_mn": 253900.0
+      },
+      {
+        "year": 1981,
+        "sec_type": "Nominal",
+        "ops_mn": 1302000.0
+      },
+      {
+        "year": 1982,
+        "sec_type": "Nominal",
+        "ops_mn": 835490.0
+      },
+      {
+        "year": 1983,
+        "sec_type": "Nominal",
+        "ops_mn": 1612997.0
+      },
+      {
+        "year": 1984,
+        "sec_type": "Nominal",
+        "ops_mn": 1904104.0
+      },
+      {
+        "year": 1985,
+        "sec_type": "Nominal",
+        "ops_mn": 1673980.0
+      },
+      {
+        "year": 1986,
+        "sec_type": "Nominal",
+        "ops_mn": 1595110.0
+      },
+      {
+        "year": 1987,
+        "sec_type": "Nominal",
+        "ops_mn": 2820809.0
+      },
+      {
+        "year": 1988,
+        "sec_type": "Nominal",
+        "ops_mn": 3396740.0
+      },
+      {
+        "year": 1989,
+        "sec_type": "Nominal",
+        "ops_mn": 4973929.0
+      },
+      {
+        "year": 1990,
+        "sec_type": "Nominal",
+        "ops_mn": 6098205.0
+      },
+      {
+        "year": 1991,
+        "sec_type": "Nominal",
+        "ops_mn": 8638734.0
+      },
+      {
+        "year": 1992,
+        "sec_type": "Nominal",
+        "ops_mn": 8193515.0
+      },
+      {
+        "year": 1993,
+        "sec_type": "Nominal",
+        "ops_mn": 10142305.0
+      },
+      {
+        "year": 1994,
+        "sec_type": "Nominal",
+        "ops_mn": 16001093.0
+      },
+      {
+        "year": 1995,
+        "sec_type": "Nominal",
+        "ops_mn": 18443511.0
+      },
+      {
+        "year": 1996,
+        "sec_type": "Nominal",
+        "ops_mn": 16880190.0
+      },
+      {
+        "year": 1997,
+        "sec_type": "Nominal",
+        "ops_mn": 15734929.0
+      },
+      {
+        "year": 1998,
+        "sec_type": "Nominal",
+        "ops_mn": 18871461.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 32036918.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "FRN",
+        "ops_mn": 1998000.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 43945160.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "FRN",
+        "ops_mn": 3397000.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 51771785.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "FRN",
+        "ops_mn": 4596200.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 61237571.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "FRN",
+        "ops_mn": 5893300.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 67304100.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "FRN",
+        "ops_mn": 6597200.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 899700.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 72385544.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "FRN",
+        "ops_mn": 8794200.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 1580100.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 76845023.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "FRN",
+        "ops_mn": 7543700.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 2530300.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 81775395.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "FRN",
+        "ops_mn": 3782200.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 3039900.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 82722366.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "FRN",
+        "ops_mn": 1405900.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 2094600.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 83024035.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 350194540.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 99520448.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 360308880.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 112611203.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 350740570.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 114035425.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 401527770.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 117902091.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 391993150.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 343700.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 126128622.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 380094690.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 1657400.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 124675236.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 346635720.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 2155600.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 123628885.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 296677630.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 1857900.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 120131932.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 285307070.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 1731800.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 113939149.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 274276950.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 1741700.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 107488060.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 265977270.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 1676600.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 101337697.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 439346180.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 1014800.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 116345166.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 411394880.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 799000.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 130720407.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 390096440.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 899500.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 131033393.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 395296820.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 999600.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 132345442.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 343097340.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 999600.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 140510739.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 304497990.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 999200.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 133249841.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 256097960.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 749600.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 116425934.0
+      }
+    ],
+    "SE": [
+      {
+        "year": 1990,
+        "sec_type": "Bill",
+        "ops_mn": 232850.0
+      },
+      {
+        "year": 1990,
+        "sec_type": "Linker",
+        "ops_mn": 174668.4723802124
+      },
+      {
+        "year": 1990,
+        "sec_type": "Nominal",
+        "ops_mn": 756837.45
+      },
+      {
+        "year": 1996,
+        "sec_type": "Bill",
+        "ops_mn": 141045.0
+      },
+      {
+        "year": 1996,
+        "sec_type": "Nominal",
+        "ops_mn": 65087.0
+      },
+      {
+        "year": 1997,
+        "sec_type": "Bill",
+        "ops_mn": 663982.0
+      },
+      {
+        "year": 1997,
+        "sec_type": "Nominal",
+        "ops_mn": 49870.0
+      },
+      {
+        "year": 1998,
+        "sec_type": "Bill",
+        "ops_mn": 317669.0
+      },
+      {
+        "year": 1998,
+        "sec_type": "Nominal",
+        "ops_mn": 80964.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Bill",
+        "ops_mn": 327459.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Linker",
+        "ops_mn": 4623.0
+      },
+      {
+        "year": 1999,
+        "sec_type": "Nominal",
+        "ops_mn": 109875.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Bill",
+        "ops_mn": 280442.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Linker",
+        "ops_mn": 6456.0
+      },
+      {
+        "year": 2000,
+        "sec_type": "Nominal",
+        "ops_mn": 46219.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Bill",
+        "ops_mn": 280539.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Linker",
+        "ops_mn": 11440.0
+      },
+      {
+        "year": 2001,
+        "sec_type": "Nominal",
+        "ops_mn": 62991.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Bill",
+        "ops_mn": 310835.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Linker",
+        "ops_mn": 23454.0
+      },
+      {
+        "year": 2002,
+        "sec_type": "Nominal",
+        "ops_mn": 75982.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Bill",
+        "ops_mn": 399403.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Linker",
+        "ops_mn": 18232.0
+      },
+      {
+        "year": 2003,
+        "sec_type": "Nominal",
+        "ops_mn": 104982.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Bill",
+        "ops_mn": 455955.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Linker",
+        "ops_mn": 17668.0
+      },
+      {
+        "year": 2004,
+        "sec_type": "Nominal",
+        "ops_mn": 150164.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Bill",
+        "ops_mn": 407902.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Linker",
+        "ops_mn": 21015.0
+      },
+      {
+        "year": 2005,
+        "sec_type": "Nominal",
+        "ops_mn": 77980.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Bill",
+        "ops_mn": 408579.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Linker",
+        "ops_mn": 14006.0
+      },
+      {
+        "year": 2006,
+        "sec_type": "Nominal",
+        "ops_mn": 84010.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Bill",
+        "ops_mn": 280491.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Linker",
+        "ops_mn": 10341.0
+      },
+      {
+        "year": 2007,
+        "sec_type": "Nominal",
+        "ops_mn": 60984.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Bill",
+        "ops_mn": 451176.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Linker",
+        "ops_mn": 6799.0
+      },
+      {
+        "year": 2008,
+        "sec_type": "Nominal",
+        "ops_mn": 46995.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Bill",
+        "ops_mn": 303479.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Linker",
+        "ops_mn": 7057.0
+      },
+      {
+        "year": 2009,
+        "sec_type": "Nominal",
+        "ops_mn": 109770.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Bill",
+        "ops_mn": 307210.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Linker",
+        "ops_mn": 22232.0
+      },
+      {
+        "year": 2010,
+        "sec_type": "Nominal",
+        "ops_mn": 57850.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Bill",
+        "ops_mn": 229131.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Linker",
+        "ops_mn": 14214.0
+      },
+      {
+        "year": 2011,
+        "sec_type": "Nominal",
+        "ops_mn": 76495.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Bill",
+        "ops_mn": 253913.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Linker",
+        "ops_mn": 9500.0
+      },
+      {
+        "year": 2012,
+        "sec_type": "Nominal",
+        "ops_mn": 98054.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Bill",
+        "ops_mn": 293381.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Linker",
+        "ops_mn": 16100.0
+      },
+      {
+        "year": 2013,
+        "sec_type": "Nominal",
+        "ops_mn": 93500.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Bill",
+        "ops_mn": 307894.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Linker",
+        "ops_mn": 27574.0
+      },
+      {
+        "year": 2014,
+        "sec_type": "Nominal",
+        "ops_mn": 121549.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Bill",
+        "ops_mn": 378837.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Linker",
+        "ops_mn": 30569.0
+      },
+      {
+        "year": 2015,
+        "sec_type": "Nominal",
+        "ops_mn": 116547.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Bill",
+        "ops_mn": 331885.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Linker",
+        "ops_mn": 33080.0
+      },
+      {
+        "year": 2016,
+        "sec_type": "Nominal",
+        "ops_mn": 80500.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Bill",
+        "ops_mn": 235000.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Linker",
+        "ops_mn": 18842.0
+      },
+      {
+        "year": 2017,
+        "sec_type": "Nominal",
+        "ops_mn": 81365.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Bill",
+        "ops_mn": 60000.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Linker",
+        "ops_mn": 8500.0
+      },
+      {
+        "year": 2018,
+        "sec_type": "Nominal",
+        "ops_mn": 54900.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Bill",
+        "ops_mn": 60000.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Linker",
+        "ops_mn": 12960.0
+      },
+      {
+        "year": 2019,
+        "sec_type": "Nominal",
+        "ops_mn": 30000.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Bill",
+        "ops_mn": 252500.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Linker",
+        "ops_mn": 20240.0
+      },
+      {
+        "year": 2020,
+        "sec_type": "Nominal",
+        "ops_mn": 104112.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Bill",
+        "ops_mn": 287483.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Linker",
+        "ops_mn": 27441.0
+      },
+      {
+        "year": 2021,
+        "sec_type": "Nominal",
+        "ops_mn": 82500.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Bill",
+        "ops_mn": 180000.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Linker",
+        "ops_mn": 8560.0
+      },
+      {
+        "year": 2022,
+        "sec_type": "Nominal",
+        "ops_mn": 48000.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Bill",
+        "ops_mn": 275224.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Linker",
+        "ops_mn": 8500.0
+      },
+      {
+        "year": 2023,
+        "sec_type": "Nominal",
+        "ops_mn": 44500.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Bill",
+        "ops_mn": 255000.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Linker",
+        "ops_mn": 11500.0
+      },
+      {
+        "year": 2024,
+        "sec_type": "Nominal",
+        "ops_mn": 79250.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Bill",
+        "ops_mn": 383045.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Linker",
+        "ops_mn": 10305.0
+      },
+      {
+        "year": 2025,
+        "sec_type": "Nominal",
+        "ops_mn": 122800.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Bill",
+        "ops_mn": 353100.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Linker",
+        "ops_mn": 5250.0
+      },
+      {
+        "year": 2026,
+        "sec_type": "Nominal",
+        "ops_mn": 194300.0
+      }
+    ]
+  },
+  "uk_fy": [
+    {
+      "fy": 1980,
+      "Linker": 1000.0,
+      "Nominal": 0.0,
+      "total": 1000.0
+    },
+    {
+      "fy": 1981,
+      "Linker": 2500.0,
+      "Nominal": 0.0,
+      "total": 2500.0
+    },
+    {
+      "fy": 1982,
+      "Linker": 1900.0,
+      "Nominal": 0.0,
+      "total": 1900.0
+    },
+    {
+      "fy": 1983,
+      "Linker": 2350.0,
+      "Nominal": 0.0,
+      "total": 2350.0
+    },
+    {
+      "fy": 1984,
+      "Linker": 1700.0,
+      "Nominal": 0.0,
+      "total": 1700.0
+    },
+    {
+      "fy": 1985,
+      "Linker": 850.0,
+      "Nominal": 2201.4866266199997,
+      "total": 3051.4866266199997
+    },
+    {
+      "fy": 1986,
+      "Linker": 2500.0,
+      "Nominal": 1368.72381805,
+      "total": 3868.72381805
+    },
+    {
+      "fy": 1987,
+      "Linker": 1150.0,
+      "Nominal": 1079.45548388,
+      "total": 2229.45548388
+    },
+    {
+      "fy": 1988,
+      "Linker": 1100.0,
+      "Nominal": 75.64265051999999,
+      "total": 1175.64265052
+    },
+    {
+      "fy": 1989,
+      "Linker": 0.0,
+      "Nominal": 0.26828781,
+      "total": 0.26828781
+    },
+    {
+      "fy": 1990,
+      "Linker": 100.0,
+      "Nominal": 2017.074266,
+      "total": 2117.074266
+    },
+    {
+      "fy": 1991,
+      "Linker": 700.0,
+      "Nominal": 4450.0,
+      "total": 5150.0
+    },
+    {
+      "fy": 1992,
+      "Linker": 4100.0,
+      "Nominal": 15150.0,
+      "total": 19250.0
+    },
+    {
+      "fy": 1993,
+      "Linker": 4700.0,
+      "Nominal": 25650.0,
+      "total": 30350.0
+    },
+    {
+      "fy": 1994,
+      "Linker": 2400.0,
+      "Nominal": 15350.0,
+      "total": 17750.0
+    },
+    {
+      "fy": 1995,
+      "Linker": 3100.0,
+      "Nominal": 17650.0,
+      "total": 20750.0
+    },
+    {
+      "fy": 1996,
+      "Linker": 3650.0,
+      "Nominal": 25060.275,
+      "total": 28710.275
+    },
+    {
+      "fy": 1997,
+      "Linker": 2950.0,
+      "Nominal": 15000.0,
+      "total": 17950.0
+    },
+    {
+      "fy": 1998,
+      "Linker": 1500.0,
+      "Nominal": 15264.51270716,
+      "total": 16764.51270716
+    },
+    {
+      "fy": 1999,
+      "Linker": 1615.0,
+      "Nominal": 16670.01934978,
+      "total": 18285.01934978
+    },
+    {
+      "fy": 2000,
+      "Linker": 1730.0,
+      "Nominal": 13580.217499999999,
+      "total": 15310.217499999999
+    },
+    {
+      "fy": 2001,
+      "Linker": 2513.4,
+      "Nominal": 18947.46703168,
+      "total": 21460.86703168
+    },
+    {
+      "fy": 2002,
+      "Linker": 3658.0,
+      "Nominal": 30020.48173155,
+      "total": 33678.48173155
+    },
+    {
+      "fy": 2003,
+      "Linker": 3925.0,
+      "Nominal": 43750.0,
+      "total": 47675.0
+    },
+    {
+      "fy": 2004,
+      "Linker": 4775.0,
+      "Nominal": 42000.0,
+      "total": 46775.0
+    },
+    {
+      "fy": 2005,
+      "Linker": 10174.0,
+      "Nominal": 53508.0,
+      "total": 63682.0
+    },
+    {
+      "fy": 2006,
+      "Linker": 15700.0,
+      "Nominal": 45750.0,
+      "total": 61450.0
+    },
+    {
+      "fy": 2007,
+      "Linker": 15083.0,
+      "Nominal": 46657.0,
+      "total": 61740.0
+    },
+    {
+      "fy": 2008,
+      "Linker": 20766.0,
+      "Nominal": 225236.0,
+      "total": 246002.0
+    },
+    {
+      "fy": 2009,
+      "Linker": 28527.952,
+      "Nominal": 195536.225,
+      "total": 224064.177
+    },
+    {
+      "fy": 2010,
+      "Linker": 30454.443,
+      "Nominal": 128374.407,
+      "total": 158828.85
+    },
+    {
+      "fy": 2011,
+      "Linker": 34732.157,
+      "Nominal": 148931.832,
+      "total": 183663.989
+    },
+    {
+      "fy": 2012,
+      "Linker": 33389.449,
+      "Nominal": 131916.451,
+      "total": 165305.9
+    },
+    {
+      "fy": 2013,
+      "Linker": 35735.257,
+      "Nominal": 115291.025,
+      "total": 151026.282
+    },
+    {
+      "fy": 2014,
+      "Linker": 25487.264,
+      "Nominal": 102395.46,
+      "total": 127882.724
+    },
+    {
+      "fy": 2015,
+      "Linker": 23654.19,
+      "Nominal": 87547.289,
+      "total": 111201.479
+    },
+    {
+      "fy": 2016,
+      "Linker": 22809.728,
+      "Nominal": 116819.847,
+      "total": 139629.57499999998
+    },
+    {
+      "fy": 2017,
+      "Linker": 18015.333,
+      "Nominal": 85903.73,
+      "total": 103919.063
+    },
+    {
+      "fy": 2018,
+      "Linker": 14735.630000000001,
+      "Nominal": 90053.773,
+      "total": 104789.403
+    },
+    {
+      "fy": 2019,
+      "Linker": 14897.761,
+      "Nominal": 108187.681,
+      "total": 123085.442
+    },
+    {
+      "fy": 2020,
+      "Linker": 20047.945,
+      "Nominal": 440100.358,
+      "total": 460148.303
+    },
+    {
+      "fy": 2021,
+      "Linker": 14673.488000000001,
+      "Nominal": 171582.675,
+      "total": 186256.163
+    },
+    {
+      "fy": 2022,
+      "Linker": 12492.224,
+      "Nominal": 241987.26499999998,
+      "total": 254479.48899999997
+    },
+    {
+      "fy": 2023,
+      "Linker": 29623.724000000002,
+      "Nominal": 223738.897,
+      "total": 253362.62099999998
+    },
+    {
+      "fy": 2024,
+      "Linker": 35037.343,
+      "Nominal": 289939.234,
+      "total": 324976.577
+    },
+    {
+      "fy": 2025,
+      "Linker": 30642.949,
+      "Nominal": 301745.27999999997,
+      "total": 332388.229
+    },
+    {
+      "fy": 2026,
+      "Linker": 16894.274,
+      "Nominal": 156765.027,
+      "total": 173659.301
+    }
+  ],
+  "unallocated_maturity": {
+    "IT": {
+      "n": 3,
+      "amount_mn": 12600.0
+    }
+  },
+  "us_raw": {
+    "status": "ok",
+    "ops_mn": 331875700.5,
+    "raw_accepted_mn": 331875700.5,
+    "gap_mn": 0.0,
+    "tol_mn": 1000.0
+  },
+  "us_coupon_vs_fiscal": {
+    "status": "ok",
+    "tol_pct": 0.03,
+    "total_issuance_bn": 3625.6,
+    "total_fiscal_bn": 3638.7,
+    "quarters": {
+      "2027Q1": {
+        "issuance_bn": 1081.5,
+        "fiscal_bn": 1085.1,
+        "gap_pct": -0.0033
+      },
+      "2027Q2": {
+        "issuance_bn": 1097.8,
+        "fiscal_bn": 1105.6,
+        "gap_pct": -0.0071
+      },
+      "2027Q3": {
+        "issuance_bn": 1080.6,
+        "fiscal_bn": 1083.1,
+        "gap_pct": -0.0022
+      }
+    },
+    "months_flagged": {
+      "2027-02-01": 0.0367,
+      "2027-03-01": -0.03,
+      "2027-07-01": -0.0965
+    }
+  },
+  "official_totals": {
+    "status": "error",
+    "error": "ModuleNotFoundError(\"No module named 'pypdf'\")"
+  }
+}

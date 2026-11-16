@@ -1,0 +1,85 @@
+{
+ "unit": "JPY bn; + adds to the general government deficit. Defence (fiscal years, April-March) is placed in calendar years as 1/4 of the previous and 3/4 of the current fiscal year; tax measures are placed in the calendar year their cost falls in",
+ "items": [
+  {
+   "label": "Defence build-up (2022 plan)",
+   "head": "spend",
+   "kind": "level",
+   "event": "Defence Buildup Program FY2023-27 and the FY2026 budget (enacted April 2026)",
+   "values": {
+    "2023": 6600.1,
+    "2024": 7724.9,
+    "2025": 8474.8,
+    "2026": 8809.3
+   },
+   "source": "MOF, Finance May 2026: FY2026 defence spending on the build-up plan basis 8,809.3bn yen (+3.9%), excluding SACO and US realignment; FY2023-25 initial budgets on the same basis",
+   "url": "https://www.mof.go.jp/public_relations/finance/202605/202605g.html",
+   "fiscal_april": true
+  },
+  {
+   "label": "Defence financing taxes (corporate, tobacco, income)",
+   "head": "tax",
+   "kind": "effect",
+   "event": "FY2025 and FY2026 tax reforms",
+   "values": {
+    "2026": -658.0,
+    "2027": -1302.0,
+    "2028": -1337.0
+   },
+   "source": "MOF, FY2026 tax reform outline, revenue table: defence-related revenue 6,580 / 13,020 / 13,370 (full year) hundred million yen",
+   "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_09.htm"
+  },
+  {
+   "label": "Income tax: higher basic deduction (FY2025 and FY2026 reforms)",
+   "head": "tax",
+   "kind": "effect",
+   "event": "FY2025 and FY2026 tax reforms",
+   "values": {
+    "2025": 680.0,
+    "2026": 1313.4,
+    "2027": 696.4
+   },
+   "source": "MOF revenue tables: FY2025 reform national -6,800 first year / -6,610 full year, local -744 full year; FY2026 reform national -5,780 first year / +390 full year (hundred million yen)",
+   "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2025/07taikou_09.htm"
+  },
+  {
+   "label": "Gasoline tax surcharge abolished (31 Dec 2025)",
+   "head": "tax",
+   "kind": "effect",
+   "event": "Law abolishing the provisional gasoline tax rate (2025)",
+   "values": {
+    "2025": 0.0,
+    "2026": 1000.0
+   },
+   "source": "MOF, FY2026 tax reform outline, note 2: about 1.0 trillion yen a year",
+   "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_09.htm"
+  },
+  {
+   "label": "Diesel tax surcharge abolished (1 Apr 2026)",
+   "head": "tax",
+   "kind": "effect",
+   "event": "FY2026 tax reform (local tax)",
+   "values": {
+    "2026": 429.7,
+    "2027": 468.7
+   },
+   "source": "MOF, FY2026 tax reform outline, local tax table: -4,297 first year / -4,687 full year (hundred million yen)",
+   "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_09.htm"
+  },
+  {
+   "label": "FY2026 first supplementary budget (energy / Middle East response)",
+   "head": "spend",
+   "kind": "effect",
+   "event": "FY2026 supplementary budget (1st), enacted 5 June 2026",
+   "values": {
+    "2026": 3113.5,
+    "2027": 0.0,
+    "2028": 0.0,
+    "2029": 0.0,
+    "2030": 0.0
+   },
+   "source": "MOF, Framework of the First Supplementary Budget for FY2026: ¥3,113.5bn (local grant 100 + contingency restore 513.5 + Middle East response reserve 2,500). Calendar 2026 = FY2026. Zeros after 2026 stop the overlay's last-value hold: this is a one-year appropriation. The 2.5tn line is a reserve; scored in full as authorised appropriation (same treatment as other reserve-funded energy relief)",
+   "url": "https://www.mof.go.jp/english/policy/budget/budget/fy2026/03.pdf"
+  }
+ ]
+}

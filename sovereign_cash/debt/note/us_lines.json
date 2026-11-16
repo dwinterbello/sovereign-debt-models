@@ -1,0 +1,601 @@
+{
+ "basis": "DTS cash, federal, fiscal years; interest = DTS coupon interest",
+ "years": [
+  2026,
+  2027,
+  2028,
+  2029
+ ],
+ "totals": {
+  "model": {
+   "deficit_pct": [
+    5.1604550038054064,
+    6.91783344220971,
+    6.982478590868145,
+    7.780932906579379
+   ],
+   "primary_pct": [
+    2.9872962800623917,
+    4.590343714550449,
+    4.6179485096667365,
+    5.1932059386491
+   ]
+  },
+  "baseline": {
+   "deficit_pct": [
+    5.1604550038054064,
+    5.128192449908252,
+    5.300418502857672,
+    5.759841563159432
+   ],
+   "primary_pct": [
+    2.9872962800623917,
+    2.800702722248989,
+    2.935888421656263,
+    3.1721145952291523
+   ]
+  },
+  "recession": {
+   "deficit_pct": [
+    5.1604550038054064,
+    6.221792805857872,
+    7.512317095218721,
+    7.464354211257122
+   ],
+   "primary_pct": [
+    2.9872962800623917,
+    3.8468032878382146,
+    5.049264927300587,
+    4.768805286329749
+   ]
+  },
+  "recession_fed": {
+   "deficit_pct": [
+    5.1604550038054064,
+    5.912128663626515,
+    7.07182250162285,
+    6.898041634514551
+   ],
+   "primary_pct": [
+    2.9872962800623917,
+    3.8468032878382146,
+    5.049264927300587,
+    4.768805286329749
+   ]
+  },
+  "recession_fed_stimulus": {
+   "deficit_pct": [
+    5.1604550038054064,
+    5.912128663626515,
+    8.071822501622853,
+    7.198041634514552
+   ],
+   "primary_pct": [
+    2.9872962800623917,
+    3.8468032878382146,
+    6.04926492730059,
+    5.0688052863297495
+   ]
+  }
+ },
+ "adjustments": [
+  {
+   "line": "wd_other",
+   "why": "FY2026 carries $147bn of IEEPA tariff refunds (CBP $158bn vs $11bn normal): out of the base, line grown with nominal GDP, $35bn tail in FY2027",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    1467.3,
+    1586.9,
+    1693.0,
+    1820.5
+   ],
+   "adjusted": [
+    1274.5,
+    1297.5,
+    1357.0,
+    1418.3
+   ]
+  },
+  {
+   "line": "wd_refunds",
+   "why": "FY2026 surge $79bn over trend (deductions backdated to TY2025); 60% recurs to FY2029 (the deductions expire after TY2028)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    496.1,
+    668.6,
+    829.1,
+    1036.4
+   ],
+   "adjusted": [
+    401.8,
+    421.9,
+    443.0,
+    407.9
+   ]
+  },
+  {
+   "line": "dep_corporate",
+   "why": "FY2027 = FY2026 +10% (post-reconciliation run-rate), then NGDP",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    376.4,
+    371.2,
+    341.3,
+    316.4
+   ],
+   "adjusted": [
+    469.8,
+    491.8,
+    514.4,
+    537.6
+   ]
+  },
+  {
+   "line": "dep_customs",
+   "why": "run-rate $315bn/yr (last 3 full months; IEEPA collections stopped Feb 2026), imports +4%",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    390.2,
+    511.5,
+    634.3,
+    792.9
+   ],
+   "adjusted": [
+    327.4,
+    340.5,
+    354.1,
+    368.3
+   ]
+  },
+  {
+   "line": "dep_withheld",
+   "why": "wage bill +3.7% a year (payrolls x hourly earnings, last 12m), elasticity 1.0",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    3710.0,
+    3922.1,
+    4058.0,
+    4232.3
+   ],
+   "adjusted": [
+    3696.9,
+    3834.5,
+    3977.3,
+    4125.4
+   ]
+  },
+  {
+   "line": "dep_nonwithheld",
+   "why": "NGDP + 0.7 x (S&P FY-average growth - 7%); S&P flat at the latest month (FY2027 +8.6%), then +7%",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    1167.7,
+    1285.8,
+    1303.7,
+    1332.5
+   ],
+   "adjusted": [
+    1335.7,
+    1398.2,
+    1462.3,
+    1528.4
+   ]
+  },
+  {
+   "line": "wd_ssa",
+   "why": "CBO Feb 2026 Social Security growth",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    1663.4,
+    1769.9,
+    1871.2,
+    1994.0
+   ],
+   "adjusted": [
+    1633.0,
+    1714.6,
+    1800.4,
+    1890.4
+   ]
+  },
+  {
+   "line": "wd_medicare",
+   "why": "CBO Feb 2026 Medicare growth",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    1479.6,
+    1546.2,
+    1644.2,
+    1762.5
+   ],
+   "adjusted": [
+    1396.1,
+    1483.6,
+    1576.6,
+    1675.4
+   ]
+  },
+  {
+   "line": "wd_medicaid",
+   "why": "nominal GDP + 1.5% (the act's cuts in the overlay)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    785.1,
+    849.0,
+    906.8,
+    976.4
+   ],
+   "adjusted": [
+    769.3,
+    816.8,
+    866.5,
+    918.7
+   ]
+  },
+  {
+   "line": "wd_va",
+   "why": "nominal GDP + 2%",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    392.1,
+    413.1,
+    441.6,
+    475.9
+   ],
+   "adjusted": [
+    373.1,
+    398.0,
+    424.3,
+    451.9
+   ]
+  },
+  {
+   "line": "wd_defense",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    890.9,
+    1007.7,
+    1122.0,
+    1259.6
+   ],
+   "adjusted": [
+    811.0,
+    848.9,
+    887.9,
+    928.0
+   ]
+  },
+  {
+   "line": "wd_salaries",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    282.7,
+    310.8,
+    333.7,
+    361.1
+   ],
+   "adjusted": [
+    267.7,
+    280.2,
+    293.1,
+    306.3
+   ]
+  },
+  {
+   "line": "wd_opm",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    186.7,
+    189.3,
+    194.9,
+    202.3
+   ],
+   "adjusted": [
+    181.6,
+    190.1,
+    198.8,
+    207.8
+   ]
+  },
+  {
+   "line": "wd_education",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    174.2,
+    161.5,
+    146.3,
+    133.7
+   ],
+   "adjusted": [
+    201.6,
+    211.1,
+    220.8,
+    230.7
+   ]
+  },
+  {
+   "line": "wd_unemployment",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    41.6,
+    44.8,
+    46.3,
+    48.3
+   ],
+   "adjusted": [
+    43.3,
+    45.4,
+    47.4,
+    49.6
+   ]
+  },
+  {
+   "line": "wd_snap",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    126.7,
+    117.8,
+    109.1,
+    101.9
+   ],
+   "adjusted": [
+    141.2,
+    147.8,
+    154.6,
+    161.6
+   ]
+  },
+  {
+   "line": "wd_hhs_other",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    296.2,
+    287.0,
+    275.2,
+    266.0
+   ],
+   "adjusted": [
+    321.9,
+    337.0,
+    352.5,
+    368.4
+   ]
+  },
+  {
+   "line": "dep_other",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    677.5,
+    768.6,
+    848.9,
+    945.2
+   ],
+   "adjusted": [
+    652.2,
+    682.7,
+    714.0,
+    746.3
+   ]
+  },
+  {
+   "line": "dep_other_tax",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    210.4,
+    228.3,
+    237.9,
+    249.9
+   ],
+   "adjusted": [
+    217.1,
+    227.2,
+    237.6,
+    248.4
+   ]
+  },
+  {
+   "line": "dep_education",
+   "why": "nominal GDP (was trailing growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    82.2,
+    95.5,
+    108.2,
+    123.5
+   ],
+   "adjusted": [
+    75.9,
+    79.4,
+    83.1,
+    86.8
+   ]
+  },
+  {
+   "line": "dep_medicare_prem",
+   "why": "with Medicare (CBO average growth)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    83.5,
+    98.8,
+    115.0,
+    134.8
+   ],
+   "adjusted": [
+    72.6,
+    77.1,
+    81.9,
+    87.1
+   ]
+  },
+  {
+   "line": "dep_fed_earnings",
+   "why": "held at FY26 (Fed deferred asset)",
+   "years": [
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "model": [
+    14.1,
+    17.7,
+    22.0,
+    27.5
+   ],
+   "adjusted": [
+    10.5,
+    10.5,
+    10.5,
+    10.5
+   ]
+  }
+ ],
+ "recession_contrib_fy28_pct": {
+  "dep_withheld": 0.3012644634418718,
+  "dep_nonwithheld": 0.8418545726542594,
+  "dep_corporate": 0.3688506991221845,
+  "dep_customs": 0.07431148548261407,
+  "dep_other_tax": 0.009917834864288757,
+  "dep_other": 0.029798991095951178,
+  "wd_refunds": 0.09821693594187571,
+  "wd_unemployment": 0.09644246216898804,
+  "wd_snap": 0.04193845977986647,
+  "wd_medicaid": 0.04634595022607723,
+  "wd_ssa": 0.024946568921251314,
+  "stimulus": 1.0,
+  "px:dep_withheld": 0.11157943090439697,
+  "px:dep_customs": 0.009908198064348544,
+  "px:dep_other_tax": 0.006611889909525838,
+  "px:dep_medicare_prem": 0.0022439499388150945,
+  "px:dep_education": 0.0023113739990672064,
+  "px:dep_other": 0.01986599406396745,
+  "px:wd_ssa": -0.01995725513700105,
+  "px:wd_medicare": -0.01726831677058137,
+  "px:wd_medicaid": -0.009506861584836355,
+  "px:wd_refunds": -0.004910846797093785,
+  "px:wd_defense": -0.009881032584812877,
+  "px:wd_va": -0.0046330301348215235,
+  "px:wd_salaries": -0.0032619122265742104,
+  "px:wd_opm": -0.002212363603052746,
+  "px:wd_education": -0.0024567642972767984,
+  "px:wd_unemployment": -0.0005279316290463167,
+  "px:wd_snap": -0.001720552196097086,
+  "px:wd_hhs_other": -0.003922502415972633,
+  "px:wd_other": -0.015102069793534026,
+  "wd_interest": -0.4404945935958737
+ }
+}

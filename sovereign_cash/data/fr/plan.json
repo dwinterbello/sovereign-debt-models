@@ -1,0 +1,46 @@
+{
+ "source": "PLF 2027 tableau de financement + AFT besoins/ressources (29-Sep-2026). Ex1c cash plan = déficit à financer (Budget/PLF solde hors FMI) — soft-pins the SMB path. deficit_gg_pct_gdp is Maastricht solde public for Exhibit 1d / politics only — not the cash chart.",
+ "years": {
+  "2026": {
+   "deficit_to_finance": 137.2,
+   "deficit_vintage": "PLF 2027 (révisé; LFI 2026 was 124.4 / −124.2 hors FMI)",
+   "deficit_gg_pct_gdp": 5.4,
+   "deficit_gg_vintage": "PLF 2027 / RESF solde public (LFI 2026 was 5.0; growth 1.0→0.5 + interest/unemployment)",
+   "deficit_gg_lfi_pct_gdp": 5.0,
+   "deficit_lfi_bn": 124.4,
+   "update": "AFT + PLF 2027",
+   "update_date": "2026-10-01",
+   "besoin": 311.7,
+   "besoin_lfi": 310.0,
+   "amortisation": 175.8,
+   "amortisation_vintage": "LFI 2026 / AFT update",
+   "charge_dette_bn": 62.6,
+   "charge_dette_lfi_bn": 59.3,
+   "charge_dette_vintage": "AFT update 29-Sep-2026 (PLF table shows 63.4)",
+   "net_mlt_issuance": 310.0,
+   "net_mlt_done_share": 0.85,
+   "net_mlt_done_asof": "2026-09-30",
+   "btf_change": 9.6,
+   "btf_change_lfi": 2.0,
+   "other_resources": -10.2,
+   "other_resources_lfi": -2.0
+  },
+  "2027": {
+   "deficit_to_finance": 156.4,
+   "deficit_vintage": "PLF 2027 tableau de financement (déficit à financer)",
+   "deficit_gg_pct_gdp": 5.0,
+   "deficit_gg_vintage": "PLF 2027 solde public target (€54bn package; Assembly path risks ~5.4)",
+   "update": "PLF 2027 + AFT besoins",
+   "update_date": "2026-10-01",
+   "besoin": 339.7,
+   "amortisation": 195.2,
+   "amortisation_vintage": "AFT PLF 2027 (2026 amortisation 175.8 + 19.4)",
+   "charge_dette_bn": 72.9,
+   "charge_dette_vintage": "AFT / PLF 2027",
+   "plafond_net_mlt": 160.5,
+   "net_mlt_issuance": 340.0,
+   "btf_change": 2.2,
+   "other_resources": -5.0
+  }
+ }
+}

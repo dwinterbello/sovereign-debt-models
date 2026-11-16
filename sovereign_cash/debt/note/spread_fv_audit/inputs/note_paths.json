@@ -1,0 +1,25 @@
+{
+ "_source": "Note model (sovereign_cash.debt.note): general-government interest / revenue, % (2026 and 2030), primary balance today (current year anchored to the official estimate) and the IMF WEO 2030 plan primary, % of GDP (+ = surplus); OAT-Bund level: the note's benchmark-estimated daily, 13 Nov 2026.",
+ "ir_now": {
+  "fr": 4.937982033994238,
+  "it": 8.624258076865999,
+  "de": 2.449448455204967
+ },
+ "ir_2030": {
+  "fr": 7.79847651879013,
+  "it": 10.365048238528612,
+  "de": 3.927368853628122
+ },
+ "pb_now": {
+  "fr": -2.81768,
+  "it": 1.214709999999999,
+  "de": -2.5251599999999987
+ },
+ "oat_bund_now_bp": 147.5,
+ "oat_bund_asof": "2026-11-13",
+ "pb_plan_2030": {
+  "fr": -0.78,
+  "it": 1.95,
+  "de": -2.59
+ }
+}

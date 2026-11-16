@@ -1,0 +1,30 @@
+{
+ "scenarios": {
+  "ok": true,
+  "secs": 35.4
+ },
+ "components": {
+  "ok": true,
+  "secs": 9.6
+ },
+ "drivers": {
+  "ok": true,
+  "secs": 4.8
+ },
+ "authority": {
+  "ok": true,
+  "secs": 0.0
+ },
+ "rates": {
+  "ok": true,
+  "secs": 0.1
+ },
+ "uk_reckoner": {
+  "ok": true,
+  "secs": 0.6
+ },
+ "debt_sensitivities": {
+  "ok": true,
+  "secs": 1.4
+ }
+}

@@ -1,0 +1,284 @@
+{
+ "de": {
+  "base": {
+   "2026": 3.8645790066981256,
+   "2027": 55.8930286996523,
+   "2028": 52.531365121373945,
+   "2029": 45.56439025214834
+  },
+  "cc": "de",
+  "drivers": {
+   "cpi": {
+    "2026": 2.7,
+    "2027": 3.1,
+    "2028": 2.0,
+    "2029": 2.1
+   },
+   "cpi_source": "IMF WEO CPI",
+   "ngdp": {
+    "2026": 3.0510238461177064,
+    "2027": 3.9021732731337133
+   },
+   "ngdp_source": "AMECO nominal GDP",
+   "rates_source": "debt interest/debt; +100bp from debt_repricing shock case"
+  },
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged.",
+  "ok": true,
+  "origin": "2026-08-01",
+  "shocks": [
+   {
+    "delta": {
+     "2026": -0.14034262182638457,
+     "2027": -3.451386878907087,
+     "2028": -8.439174362833242,
+     "2029": -13.861449792660125
+    },
+    "key": "gdp",
+    "level": {
+     "2026": 3.724236384871741,
+     "2027": 52.44164182074521,
+     "2028": 44.0921907585407,
+     "2029": 31.702940459488218
+    },
+    "shock": {
+     "ngdp": 1.0
+    },
+    "title": "Nominal GDP growth +1pp a year"
+   },
+   {
+    "delta": {
+     "2026": 0.1116995213063845,
+     "2027": 3.4726895688026787,
+     "2028": 8.577056771568188,
+     "2029": 13.923192509419827
+    },
+    "key": "cpi",
+    "level": {
+     "2026": 3.97627852800451,
+     "2027": 59.36571826845498,
+     "2028": 61.10842189294213,
+     "2029": 59.48758276156817
+    },
+    "shock": {
+     "hicp": 1.0
+    },
+    "title": "CPI inflation +1pp a year"
+   },
+   {
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)",
+    "delta": {
+     "2026": 1.3588184370356373,
+     "2027": 3.736968330863121,
+     "2028": 7.720019301913538,
+     "2029": 11.60088884567098
+    },
+    "key": "rates",
+    "level": {
+     "2026": 5.223397443733763,
+     "2027": 59.62999703051542,
+     "2028": 60.25138442328748,
+     "2029": 57.16527909781932
+    },
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "title": "Bond rates +100bp"
+   }
+  ],
+  "spec": "ratio",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ]
+ },
+ "fr": {
+  "base": {
+   "2026": -26.651772138489704,
+   "2027": 132.7318450233723,
+   "2028": 132.39247009995123,
+   "2029": 131.83908977334923
+  },
+  "cc": "fr",
+  "drivers": {
+   "cpi": {
+    "2026": 2.1,
+    "2027": 1.8,
+    "2028": 1.9,
+    "2029": 1.9
+   },
+   "cpi_source": "DG Tr\u00e9sor Rapport \u00e9conomique, social et financier (RESF)",
+   "ngdp": {
+    "2026": 2.6,
+    "2027": 2.8
+   },
+   "ngdp_source": "DG Tr\u00e9sor Rapport \u00e9conomique, social et financier (RESF) (real + CPI)",
+   "rates_source": "AFT +100bp triangle (1y/5y/9y)"
+  },
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged.",
+  "ok": true,
+  "origin": "2026-08-01",
+  "shocks": [
+   {
+    "delta": {
+     "2026": -0.11701077388777037,
+     "2027": -3.003697964435645,
+     "2028": -7.220112846484724,
+     "2029": -11.712785098594708
+    },
+    "key": "gdp",
+    "level": {
+     "2026": -26.768782912377475,
+     "2027": 129.72814705893666,
+     "2028": 125.1723572534665,
+     "2029": 120.12630467475452
+    },
+    "shock": {
+     "ngdp": 1.0
+    },
+    "title": "Nominal GDP growth +1pp a year"
+   },
+   {
+    "delta": {
+     "2026": 0.09750057322982997,
+     "2027": 3.3812985761057064,
+     "2028": 8.34327345316234,
+     "2029": 13.544179560710177
+    },
+    "key": "cpi",
+    "level": {
+     "2026": -26.554271565259874,
+     "2027": 136.113143599478,
+     "2028": 140.73574355311356,
+     "2029": 145.3832693340594
+    },
+    "shock": {
+     "hicp": 1.0
+    },
+    "title": "CPI inflation +1pp a year"
+   },
+   {
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)",
+    "delta": {
+     "2026": 0.26666666666666666,
+     "2027": 3.6229166666666663,
+     "2028": 8.697916666666666,
+     "2029": 13.772916666666669
+    },
+    "key": "rates",
+    "level": {
+     "2026": -26.38510547182304,
+     "2027": 136.35476169003897,
+     "2028": 141.09038676661788,
+     "2029": 145.6120064400159
+    },
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "title": "Bond rates +100bp"
+   }
+  ],
+  "spec": "ratio",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ]
+ },
+ "it": {
+  "base": {
+   "2026": 5.57047889819642,
+   "2027": 97.50897050506713,
+   "2028": 100.27371641899246,
+   "2029": 100.32899219470511
+  },
+  "cc": "it",
+  "drivers": {
+   "cpi": {
+    "2026": 3.3,
+    "2027": 2.8,
+    "2028": 2.3,
+    "2029": 2.0
+   },
+   "cpi_source": "IMF WEO CPI",
+   "ngdp": {
+    "2026": 2.437737503181414,
+    "2027": 2.5810018961615944
+   },
+   "ngdp_source": "AMECO nominal GDP + DFP Tav. II.1.2.2",
+   "rates_source": "debt interest/debt; +100bp from debt_repricing shock case"
+  },
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged.",
+  "ok": true,
+  "origin": "2026-08-01",
+  "shocks": [
+   {
+    "delta": {
+     "2026": -0.20816583244888776,
+     "2027": -4.556701476803269,
+     "2028": -10.791116307527815,
+     "2029": -17.40707735327976
+    },
+    "key": "gdp",
+    "level": {
+     "2026": 5.362313065747532,
+     "2027": 92.95226902826386,
+     "2028": 89.48260011146465,
+     "2029": 82.92191484142535
+    },
+    "shock": {
+     "ngdp": 1.0
+    },
+    "title": "Nominal GDP growth +1pp a year"
+   },
+   {
+    "delta": {
+     "2026": 0.19779240462931114,
+     "2027": 4.860387790381779,
+     "2028": 11.762378149832529,
+     "2029": 19.012400015199773
+    },
+    "key": "cpi",
+    "level": {
+     "2026": 5.768271302825731,
+     "2027": 102.3693582954489,
+     "2028": 112.03609456882499,
+     "2029": 119.34139220990488
+    },
+    "shock": {
+     "hicp": 1.0
+    },
+    "title": "CPI inflation +1pp a year"
+   },
+   {
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)",
+    "delta": {
+     "2026": 2.1345817928487065,
+     "2027": 5.302528007830119,
+     "2028": 8.65867153489917,
+     "2029": 11.608811525545747
+    },
+    "key": "rates",
+    "level": {
+     "2026": 7.7050606910451265,
+     "2027": 102.81149851289724,
+     "2028": 108.93238795389163,
+     "2029": 111.93780372025086
+    },
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "title": "Bond rates +100bp"
+   }
+  ],
+  "spec": "ratio",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ]
+ }
+}

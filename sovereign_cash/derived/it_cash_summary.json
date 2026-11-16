@@ -1,0 +1,2022 @@
+{
+ "country": "IT",
+ "ccy": "EUR",
+ "asof": "2026-10-01",
+ "sources": [
+  {
+   "name": "MEF press releases \u2014 saldo del settore statale (fabbisogno), provisional + year-ago final",
+   "url": "https://www.mef.gov.it/ufficio-stampa/comunicati/",
+   "frequency": "monthly",
+   "lag_days": 2,
+   "verified": true,
+   "history": "2009-11\u21922026-10 (204 months)"
+  },
+  {
+   "name": "MEF Tesoro \u2014 Liquidit\u00e0 del Tesoro (conto disponibilit\u00e0 / depositi governativi + OPTES)",
+   "url": "https://www.dt.mef.gov.it/it/debito_pubblico/gestione_liquidita/dati_liquidita/",
+   "frequency": "monthly",
+   "lag_days": 1,
+   "verified": true,
+   "history": "2011-11\u21922026-10 (180 months)"
+  },
+  {
+   "name": "Banca d'Italia \u2014 Finanza pubblica: fabbisogno e debito, Tavola 1 (AC) and Tavola 2 (AP by instrument)",
+   "url": "https://www.bancaditalia.it/pubblicazioni/finanza-pubblica/",
+   "frequency": "monthly",
+   "lag_days": 45,
+   "verified": true,
+   "history": "2012-12\u21922026-08 (165 months)"
+  },
+  {
+   "name": "MEF Tesoro \u2014 Composizione dei Titoli di Stato (BOT stock)",
+   "url": "https://www.dt.mef.gov.it/it/debito_pubblico/dati_statistici/composizione_titoli_stato/",
+   "frequency": "monthly",
+   "lag_days": 10,
+   "verified": true,
+   "history": "2012-01\u21922026-09 (173 months)"
+  },
+  {
+   "name": "MEF Tesoro \u2014 Titoli in scadenza nei prossimi 12 mesi (forward redemptions)",
+   "url": "https://www.dt.mef.gov.it/it/debito_pubblico/dati_statistici/titoli_scadenza_prossimi_12_mesi/",
+   "frequency": "monthly",
+   "lag_days": 10,
+   "verified": true,
+   "history": "as of 2026-09-30"
+  },
+  {
+   "name": "Issuance tape (auctions, syndications, retail; MEF communiqu\u00e9s)",
+   "url": "local",
+   "frequency": "per auction",
+   "lag_days": 0,
+   "verified": true,
+   "history": "2000-01\u21922026-11-12"
+  },
+  {
+   "name": "Issuance forward (quarterly programme, auction pattern, repeated syndications)",
+   "url": "local",
+   "frequency": "per auction",
+   "lag_days": 0,
+   "verified": true,
+   "history": "through 2027-09-01"
+  },
+  {
+   "name": "Annual plan: state-sector fabbisogno (vintage 2026-04-22, hand-entered)",
+   "url": "https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/previsione/contabilita_e_finanza_pubblica/documento_di_finanza_pubblica/",
+   "frequency": "annual",
+   "lag_days": 0,
+   "verified": true,
+   "history": "2026 \u20ac129.5bn, 2027 \u20ac113.9bn; one vintage, not scored"
+  },
+  {
+   "name": "Known events: BTP Green 4.40% 30-Oct-2038 (syndication); BTP Valore + BTP Valore Insieme 5y (retail, double issue); RRF 10th (final) instalment",
+   "url": "https://www.mef.gov.it/ufficio-stampa/comunicati/",
+   "frequency": "ad hoc",
+   "lag_days": 0,
+   "verified": true,
+   "history": "hand-entered with sources"
+  },
+  {
+   "name": "RRF grant / loan split",
+   "url": "",
+   "frequency": "static",
+   "lag_days": 0,
+   "verified": true,
+   "history": "Council Implementing Decision on Italy's PNRR, amended 8-Dec-2023 (122.6bn loans + 71.8bn grants)"
+  },
+  {
+   "name": "Eurosystem PSPP + PEPP holdings by ISIN (estimated: ECB country stock allocated by maturity)",
+   "url": "local",
+   "frequency": "monthly",
+   "lag_days": 30,
+   "verified": true,
+   "history": "snapshot 2026-10-01"
+  }
+ ],
+ "buffer": "MEF month-end 'disponibilit\u00e0 liquide del Tesoro': Treasury account(s) at Banca d'Italia (conto disponibilit\u00e0; 'saldo dei depositi governativi' from 2025) + money-market deployment (OPTES)",
+ "cash_requirement": "MEF state-sector fabbisogno (saldo del settore statale), positive = borrowing need",
+ "identity_resid_bn": 7.105427357601002e-15,
+ "identity_note": "history closes by construction: other_fin is the residual",
+ "unexplained": {
+  "from": "2012-12",
+  "to": "2026-08",
+  "n": 165,
+  "mean_bn": -0.36,
+  "sd_bn": 6.57,
+  "sd_24m_bn": 7.08,
+  "max_abs_bn": 28.7,
+  "max_abs_month": "2020-05",
+  "other_sd_bn": 8.51
+ },
+ "score": [
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "add_1",
+   "mae_bn": 5.63,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "add_2",
+   "mae_bn": 5.317,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "add_3",
+   "mae_bn": 5.089,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "add_5",
+   "mae_bn": 5.333,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 16.087,
+   "benchmark": "smly / flat",
+   "n": 55,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 9.948,
+   "benchmark": "smly / flat",
+   "n": 55,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "flat",
+   "mae_bn": 9.65,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "mul_3",
+   "mae_bn": 6.439,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "mul_5",
+   "mae_bn": 7.146,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "smly",
+   "mae_bn": 4.991,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": true
+  },
+  {
+   "window": "OOS",
+   "h": 1,
+   "model": "sx_level_exog",
+   "mae_bn": 7.653,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "add_1",
+   "mae_bn": 9.55,
+   "benchmark": "smly / flat",
+   "n": 52,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "add_2",
+   "mae_bn": 9.498,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "add_3",
+   "mae_bn": 9.699,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "add_5",
+   "mae_bn": 9.069,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 36.723,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 22.435,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "flat",
+   "mae_bn": 18.748,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "mul_3",
+   "mae_bn": 14.032,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "mul_5",
+   "mae_bn": 12.928,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "smly",
+   "mae_bn": 8.567,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": true
+  },
+  {
+   "window": "OOS",
+   "h": 3,
+   "model": "sx_level_exog",
+   "mae_bn": 11.637,
+   "benchmark": "smly / flat",
+   "n": 54,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "add_1",
+   "mae_bn": 13.574,
+   "benchmark": "smly / flat",
+   "n": 46,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "add_2",
+   "mae_bn": 15.249,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "add_3",
+   "mae_bn": 14.624,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "add_5",
+   "mae_bn": 12.404,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 60.237,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 38.525,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "flat",
+   "mae_bn": 17.025,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "mul_3",
+   "mae_bn": 17.064,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "mul_5",
+   "mae_bn": 12.918,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "smly",
+   "mae_bn": 11.571,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": true
+  },
+  {
+   "window": "OOS",
+   "h": 6,
+   "model": "sx_level_exog",
+   "mae_bn": 13.837,
+   "benchmark": "smly / flat",
+   "n": 51,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "add_1",
+   "mae_bn": 20.124,
+   "benchmark": "smly / flat",
+   "n": 34,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "add_2",
+   "mae_bn": 23.803,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "add_3",
+   "mae_bn": 20.477,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "add_5",
+   "mae_bn": 18.535,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 106.034,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 71.585,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "flat",
+   "mae_bn": 18.242,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "mul_3",
+   "mae_bn": 26.053,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "mul_5",
+   "mae_bn": 19.69,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "smly",
+   "mae_bn": 18.242,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": true
+  },
+  {
+   "window": "OOS",
+   "h": 12,
+   "model": "sx_level_exog",
+   "mae_bn": 22.621,
+   "benchmark": "smly / flat",
+   "n": 45,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "add_1",
+   "mae_bn": 3.217,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "add_2",
+   "mae_bn": 3.512,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "add_3",
+   "mae_bn": 3.481,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "add_5",
+   "mae_bn": 3.436,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 4.844,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 4.515,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "flat",
+   "mae_bn": 6.826,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "mul_3",
+   "mae_bn": 3.473,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "mul_5",
+   "mae_bn": 3.633,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "smly",
+   "mae_bn": 3.111,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": true
+  },
+  {
+   "window": "PRE",
+   "h": 1,
+   "model": "sx_level_exog",
+   "mae_bn": 3.775,
+   "benchmark": "smly / flat",
+   "n": 61,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "add_1",
+   "mae_bn": 6.353,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "add_2",
+   "mae_bn": 6.177,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "add_3",
+   "mae_bn": 5.801,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "add_5",
+   "mae_bn": 5.509,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 9.208,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 8.352,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "flat",
+   "mae_bn": 15.065,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "mul_3",
+   "mae_bn": 6.051,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "mul_5",
+   "mae_bn": 5.947,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "smly",
+   "mae_bn": 5.2,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": true
+  },
+  {
+   "window": "PRE",
+   "h": 3,
+   "model": "sx_level_exog",
+   "mae_bn": 5.969,
+   "benchmark": "smly / flat",
+   "n": 59,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "add_1",
+   "mae_bn": 9.519,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "add_2",
+   "mae_bn": 9.156,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "add_3",
+   "mae_bn": 8.164,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "add_5",
+   "mae_bn": 7.312,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 13.354,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 12.164,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "flat",
+   "mae_bn": 7.82,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "mul_3",
+   "mae_bn": 7.991,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "mul_5",
+   "mae_bn": 7.389,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "smly",
+   "mae_bn": 6.984,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": true
+  },
+  {
+   "window": "PRE",
+   "h": 6,
+   "model": "sx_level_exog",
+   "mae_bn": 9.066,
+   "benchmark": "smly / flat",
+   "n": 56,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "add_1",
+   "mae_bn": 11.156,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "add_2",
+   "mae_bn": 9.449,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "add_3",
+   "mae_bn": 8.182,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "add_5",
+   "mae_bn": 7.454,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "annual_comp_floor_3",
+   "mae_bn": 17.724,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "annual_comp_unit_3",
+   "mae_bn": 17.82,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "flat",
+   "mae_bn": 6.776,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "mul_3",
+   "mae_bn": 8.322,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "mul_5",
+   "mae_bn": 7.584,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "smly",
+   "mae_bn": 6.776,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": true
+  },
+  {
+   "window": "PRE",
+   "h": 12,
+   "model": "sx_level_exog",
+   "mae_bn": 12.714,
+   "benchmark": "smly / flat",
+   "n": 50,
+   "chosen": false
+  }
+ ],
+ "score_note": "MAE of cumulative fabbisogno, EUR bn",
+ "forward": {
+  "model": "smly",
+  "alt_model": "add_5",
+  "origin": "2026-10-01",
+  "buffer_origin_bn": 56.48,
+  "band_bn": [
+   36.96,
+   70.86
+  ],
+  "bot_stock_origin_bn": 141.3,
+  "bot_stock_end_bn": 1263.6,
+  "bot_rule": "BOT stock held at its current level plus its average calendar-month change (trailing five years, demeaned); raised only to keep liquidity at the floor",
+  "cash_requirement_12m_bn": 539.3,
+  "cash_requirement_12m_alt_bn": 797.2,
+  "cash_requirement_12m_smly_bn": 598.9,
+  "cash_requirement_12m_band80_bn": 18.1,
+  "cash_requirement_12m_plan_bn": 539.3,
+  "rrf_grant_share": 0.369,
+  "rrf_grants_base_12m_bn": 9.3,
+  "rrf_grants_fwd_12m_bn": 10.5,
+  "rrf_loans_fwd_12m_bn": 17.9,
+  "plan_year": 2026,
+  "plan_cash_requirement_bn": 129.5,
+  "plan_pct_gdp": 5.6,
+  "plan_next_year_cash_requirement_bn": 113.9,
+  "plan_source": "DFP 2026 (Documento di finanza pubblica, CdM 22-Apr-2026), Tav. II.1.2.5 settore statale % of GDP \u00d7 Tav. II.1.2.2 nominal GDP; sovereign_cash/data/it/plan/DFP26-file-unico.pdf",
+  "plan_vintage": "2026-04-22",
+  "plan_scored": false,
+  "cash_requirement_ytd_bn": 147.6,
+  "ytd_through": "2026-10",
+  "model_full_year_bn": 129.5,
+  "alt_full_year_bn": 147.5,
+  "plan_minus_model_full_year_bn": 0.0,
+  "net_bonds_12m_bn": -618.7,
+  "bond_gross_12m_bn": 331.1,
+  "bond_gross_known_events_12m_bn": 0.0,
+  "bond_gross_assumed_12m_bn": 102.6,
+  "bond_redemption_12m_bn": 949.9,
+  "cb_held_redemptions_12m_bn": 201.2,
+  "cb_holdings_snapshot": "2026-10-01",
+  "private_net_bonds_12m_bn": -417.5,
+  "net_bills_12m_bn": 1122.3,
+  "bill_gross_12m_bn": 3749.9,
+  "bot_tenor_mix": {
+   "1": 0.024,
+   "2": 0.021,
+   "3": 0.034,
+   "4": 0.019,
+   "5": 0.056,
+   "6": 0.268,
+   "12": 0.578
+  },
+  "other_fin_12m_bn": 16.2,
+  "other_fin_fx_redemption_12m_bn": -1.7,
+  "other_fin_drift_model": "zero",
+  "other_fin_drift_12m_bn": 0.0,
+  "other_fin_drift_pre_mae_bn": {
+   "add_3": 13.98,
+   "flat": 10.52,
+   "smly": 11.47,
+   "zero": 8.85
+  },
+  "liquidity_reconcile_bn": {},
+  "known_events": [
+   {
+    "name": "BTP Green 4.40% 30-Oct-2038 (syndication)",
+    "kind": "bond gross",
+    "settle": "2026-09-29",
+    "cash_bn": 7.97,
+    "already_on_tape": true,
+    "assumption": null,
+    "source": "MEF comunicato 99, 22-Sep-2026 (8bn at 99.591, settlement 29-Sep-2026)"
+   },
+   {
+    "name": "BTP Valore + BTP Valore Insieme 5y (retail, double issue)",
+    "kind": "bond gross",
+    "settle": "2026-10-27",
+    "cash_bn": 16.4,
+    "already_on_tape": true,
+    "assumption": "size = mean of the last two BTP Valore issues on the tape (Oct-2025, Mar-2026); settlement assumed T+2 after the 23-Oct close (Oct-2025 issue: close Fri 24-Oct, settled 28-Oct)",
+    "source": "MEF comunicato 104, 25-Sep-2026 (placement 19\u201323 Oct-2026, 5y, at par)"
+   },
+   {
+    "name": "RRF 10th (final) instalment",
+    "kind": "rrf",
+    "settle": "2026-12-01",
+    "cash_bn": 28.4,
+    "grant_bn": 10.49,
+    "loan_bn": 17.91,
+    "already_on_tape": false,
+    "assumption": "requested 29-Sep-2026; past instalments paid 3\u20139 months after request and the RRF regulation sets 31-Dec-2026 as the last payment date",
+    "source": "Ministro Foti / Italpress 29-Sep-2026; Cabina di regia PNRR 23-Sep-2026 (28.4bn)"
+   }
+  ],
+  "issues": [
+   {
+    "month": "2027-01",
+    "label": "BTP Mar-2034 (syndication)",
+    "cash_bn": 15.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 7-10y 2027-01"
+   },
+   {
+    "month": "2027-01",
+    "label": "BTP Apr-2047 (syndication)",
+    "cash_bn": 5.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 20-30y 2027-01"
+   },
+   {
+    "month": "2027-02",
+    "label": "BTP Sep-2042 (syndication)",
+    "cash_bn": 14.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 15-20y 2027-02"
+   },
+   {
+    "month": "2027-03",
+    "label": "BTP Valore Mar-2033 (retail)",
+    "cash_bn": 16.2,
+    "basis": "assumed",
+    "kind": "retail",
+    "id": "next synd 3-7y 2027-03"
+   },
+   {
+    "month": "2027-04",
+    "label": "BTP Jun-2037 (syndication)",
+    "cash_bn": 14.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 10-15y 2027-04"
+   },
+   {
+    "month": "2027-04",
+    "label": "BTP\u20aci Feb-2047 (syndication)",
+    "cash_bn": 3.5,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 15-20y 2027-04"
+   },
+   {
+    "month": "2027-06",
+    "label": "BTP Jun-2034 (syndication)",
+    "cash_bn": 13.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 7-10y 2027-06"
+   },
+   {
+    "month": "2027-06",
+    "label": "BTP Sep-2056 (syndication)",
+    "cash_bn": 5.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 20-30y 2027-06"
+   },
+   {
+    "month": "2027-06",
+    "label": "BTP Italia Jun-2032 (retail)",
+    "cash_bn": 8.8,
+    "basis": "assumed",
+    "kind": "retail",
+    "id": "next synd 3-7y 2027-06"
+   },
+   {
+    "month": "2027-09",
+    "label": "BTP Oct-2039 (syndication)",
+    "cash_bn": 8.0,
+    "basis": "assumed",
+    "kind": "syndication",
+    "id": "next synd 10-15y 2027-09"
+   }
+  ],
+  "buffer_end_bn": 37.0,
+  "buffer_end_rollover_bn": -1085.3,
+  "buffer_max_bn": 116.5,
+  "liquidity_surplus_max_bn": 45.6,
+  "liquidity_surplus_max_month": "2027-07",
+  "liquidity_surplus_end_bn": 0.0,
+  "months_above_cap": [
+   "2026-12",
+   "2027-01",
+   "2027-02",
+   "2027-03",
+   "2027-04",
+   "2027-05",
+   "2027-06",
+   "2027-07",
+   "2027-08",
+   "2027-09",
+   "2027-10"
+  ],
+  "bond_gross_tape_last_op": "2026-11-12",
+  "bond_gross_forward_last_month": "2027-09-01",
+  "redemption_schedule_asof": "2026-09-30",
+  "bottomup_ship": false,
+  "bottomup_reason": "PRE mean MAE macro 6.76 vs production 5.52 (-22.5% better), worse at 1/4 horizons; OOS 11.25 vs 11.27; NGDP clip \u00b12.49pp PRE-support; \u03b2_tax=0.55 \u03b2_pri=0.35; treas\u00d70.94; cap\u00d7NGDP 0.2; interest=isin_curve; need \u22655% PRE edge, \u22641 worse horizon, OOS \u2264+25%",
+  "bottomup_pre_mean": 6.761757675806145,
+  "bottomup_pre_production_mean": 5.5178509953161585,
+  "bottomup_oos_mean": 11.253345260994235,
+  "bottomup_oos_production_mean": 11.270348837209303,
+  "bottomup_authority": {
+   "dfp_xlsx": "data/it/plan/Tavole-DFP-2026-Sezione-II.xlsx + Tavole_DFP-2025.xlsx",
+   "dfp_pdf": "data/it/plan/DFP26-file-unico.pdf / DFP25-Sez-II.pdf",
+   "def_pdf": "data/it/plan/DEF21-Sez-II.pdf / DEF24-Sez-II.pdf (IV.2-2 hand-entered)",
+   "vintages": "DEF_2021 / DEF_2024 / DFP_2025 / DFP_2026 in authority.json",
+   "authority_json": "data/it/authority.json",
+   "bdi_t1": "data/it/bdi_t1.parquet",
+   "macro": "Eurostat NGDP/HICP via yoy_components.macro; DFP NGDP overlay in macro_authority",
+   "mef_fabbisogno": "MEF provisional state-sector fabbisogno (score target + residual)",
+   "finanze_tax": "data/it/tax/Base_dati_entrate_cassa_agosto2026.xlsx (IRPEF/IRES/IVA; erarial \u2260 BdI)",
+   "rrf": "RRF grant share from Council Implementing Decision (forward subtract)",
+   "ngdp_clip": "tax \u03b2 \u00d7 clip(NGDP YoY, \u00b10.0249) = PRE-support max |YoY|",
+   "treas_scale": "smly \u00d7 0.94",
+   "cap_beta": "smly \u00d7 (1 + 0.2\u00b7clip(NGDP YoY))",
+   "interest": "smly (sx kept as rejected alt under PRE-scaled treasury; stock\u00d7rate PRE \u221211%)",
+   "unused_dfp": "DFP/DEF cash Tributari only \u2014 no IRPEF/IRES/IVA in cash Tavole; Finanze erarial cassa has IRPEF/IRES/IVA but totale ~+4% vs BdI tax_rev (not wired as levels); DEF 2022/2023 Sez II cash Tavole not at probed RGS/DT URLs; partite finanziarie \u2260 treasury_bal; RRF grant in run.forward",
+   "frontier_inventory": "data/it/authority.json \u2192 frontier_inventory_2026_10_20b"
+  },
+  "bottomup_pre_by_h": {
+   "1": {
+    "n": 61,
+    "bottomup": 3.0507157399926883,
+    "production": 3.111475409836065,
+    "smly": 3.111475409836065
+   },
+   "3": {
+    "n": 59,
+    "bottomup": 4.487447051096771,
+    "production": 5.2,
+    "smly": 5.2
+   },
+   "6": {
+    "n": 56,
+    "bottomup": 5.4901203551462485,
+    "production": 6.983928571428571,
+    "smly": 6.983928571428571
+   },
+   "12": {
+    "n": 50,
+    "bottomup": 14.018747556988869,
+    "production": 6.775999999999998,
+    "smly": 6.775999999999998
+   }
+  },
+  "bottomup_oos_by_h": {
+   "1": {
+    "n": 43,
+    "bottomup": 5.645134641623562,
+    "production": 5.26046511627907,
+    "smly": 5.26046511627907
+   },
+   "3": {
+    "n": 43,
+    "bottomup": 9.668226627082088,
+    "production": 9.190697674418605,
+    "smly": 9.190697674418605
+   },
+   "6": {
+    "n": 43,
+    "bottomup": 13.00247737232783,
+    "production": 12.358139534883723,
+    "smly": 12.358139534883723
+   },
+   "12": {
+    "n": 43,
+    "bottomup": 16.697542402943462,
+    "production": 18.272093023255813,
+    "smly": 18.272093023255813
+   }
+  },
+  "bottomup_rejects": [
+   "v1 BdI-line smly + residual \u2014 PRE ~0% edge; rejected by PROMPT_IT",
+   "unit elasticity tax/primary (\u03b2=1) \u2014 PRE ~7% but OOS \u221250%+",
+   "expanding OLS YoY pass-through (yoy_components) \u2014 PRE flat / OOS disaster",
+   "BdI month shares \u00d7 annual macro total \u2014 level blow-up mid-year",
+   "full-basket sx_level_exog \u2014 PRE/OOS fail",
+   "tax+interest SARIMAX only \u2014 PRE \u22129%",
+   "macro surprise (\u0394 YoY) scales \u2014 PRE fail",
+   "expanding macro clip / soft DFP pin \u2014 no OOS rescue under single Apr-2026 vintage (pre-vintages)",
+   "\u03b2=0.5/0.5 unclipped \u2014 PRE ~5.3% but OOS +32% (>+25% band)",
+   "clip NGDP+CPI to PRE support \u2014 PRE flat, OOS +27% (CPI clip removes offsetting primary)",
+   "treasury \u00d70.5/0.75/zero/trail6 \u2014 OOS help or not; PRE \u221215%+ / fails gate",
+   "interest\u2192smly alone (treas\u00d71) \u2014 OOS \u22123% but PRE edge 4.9% (<5%)",
+   "\u03b2=0.25/0.5 grid \u2014 PRE edge <5%",
+   "soft DFP headline pin weight 0\u20131 \u2014 inert on scored origins (no known PLAN years)",
+   "soft tanh / asymm / hard clip\u00d7>1 NGDP \u2014 PRE clearers but OOS worse than hard PRE-support clip",
+   "prior SHIP \u03b2=0.5/0.5 + sx interest + treas\u00d71 \u2014 PRE +5.3% / OOS +4.3%; dominated on OOS by current",
+   "cap_exp / other_rev NGDP \u03b2 \u2014 marginal; no PRE+OOS win over locked (0.45,0.4)+t0.96+smly",
+   "tax\u2190CPI or NGDP/CPI blend \u2014 PRE edge <5%",
+   "accrual direct/indirect tax paths as cash drivers \u2014 agency cash tables publish Tributari only",
+   "tax split 0.55 dirette\u00d7clip(NGDP)+0.45 indirette\u00d7CPI \u03b2 grids \u2014 PRE 2.8\u20134.2% (<5%)",
+   "interest stock\u00d7rate OLS (debt YE \u00d7 eff on macro rates) \u2014 PRE \u221211%, 2 worse h",
+   "interest stock\u00d7trailing-eff + 0.3\u00b7\u0394rates \u2014 PRE +5.1% clear but OOS \u22124.5% vs SHIP \u22127.4%",
+   "DFP cap/tax/interest partial-year share allocation \u2014 OOS \u221290%+ (single Apr-2026 vintage)",
+   "DFP partite finanziarie as treasury_bal \u2014 annual levels mismatch BdI by tens of \u20acbn",
+   "residual smly\u00d70.5\u20130.9 / zero / trail12 / smly\u2212trail \u2014 fail PRE or dominated by smly\u00d71 (overnight 2026-10-20)"
+  ],
+  "bottomup_category_table": [
+   {
+    "category": "tax_rev",
+    "pre_mae_bn": 11.657511994611655,
+    "driver": "ngdp",
+    "rule": "smly \u00d7 (1 + 0.55 \u00d7 clip(NGDP YoY_{t\u22121})); retune 2026-10-20e \u2014 PRE +6.4% / OOS \u22128.6% vs prod",
+    "beta": 0.55
+   },
+   {
+    "category": "other_rev",
+    "pre_mae_bn": 2.858520000000002,
+    "driver": null,
+    "rule": "smly \u2014 DFP other current receipts have no single determinant; transfers/EU volatile",
+    "beta": null
+   },
+   {
+    "category": "primary",
+    "pre_mae_bn": 23.780002690732026,
+    "driver": "cpi",
+    "rule": "smly \u00d7 (1 + 0.35 \u00d7 HICP YoY_{t\u22121}); CPI unclipped",
+    "beta": 0.35
+   },
+   {
+    "category": "interest",
+    "pre_mae_bn": 2.369030049240268,
+    "driver": null,
+    "rule": "smly \u2014 stock\u00d7rate (debt_country_annual \u00d7 eff-rate OLS on macro rates) PRE \u221211%; SARIMAX+rates alone PRE 4.9%; with PRE-scaled treasury both sx and smly clear PRE; smly preferred (lower OOS)",
+    "beta": null
+   },
+   {
+    "category": "cap_exp",
+    "pre_mae_bn": 9.623971454824511,
+    "driver": "ngdp",
+    "rule": "smly \u00d7 (1 + 0.2 \u00d7 clip(NGDP YoY_{t\u22121})); DFP_SHARE=False (share path OOS disaster)",
+    "beta": 0.2
+   },
+   {
+    "category": "treasury_bal",
+    "pre_mae_bn": 32.15066,
+    "driver": null,
+    "rule": "smly \u00d7 0.94 \u2014 no DFP/MEF published treasury path; partite finanziarie \u2260 BdI treasury_bal",
+    "beta": null
+   }
+  ],
+  "bottomup_ngdp_clip": 0.024949766122700057,
+  "bottomup_treas_scale": 0.94,
+  "bottomup_oos_diagnosis": {
+   "dominant_cats_oos_mae_12m": "treasury_bal ~41, cap_exp ~28, tax_rev ~22, primary ~20, interest ~13, residual ~3.7 (EUR bn)",
+   "oos_macro": "NGDP YoY mean ~7.8% (clip 2.5%); CPI ~4.8% \u2014 tax under-forecast under clip",
+   "residual_share_hist": "|resid|/|cash| ~0.10 monthly; residual not the OOS MAE driver",
+   "worst_months": "Apr / Jul (MAE); signed bias most negative Apr",
+   "frontier_block": "IRPEF/IRES/IVA: Finanze erarial \u2260 BdI; DEF 2022/23 Sez II Tavole missing; stock\u00d7rate fails PRE \u2014 see vintages score"
+  },
+  "bottomup_engine": "macro_v2",
+  "bottomup_live_months": 10,
+  "cash_requirement_bottomup_12m_bn": 548.1,
+  "path": [
+   {
+    "month": "2026-11-01",
+    "cash_requirement_bn": 2.7,
+    "cash_requirement_plan_bn": 2.7,
+    "bond_gross_bn": 16.8,
+    "bond_redemption_bn": 12.4,
+    "bond_redemption_cb_bn": 2.1,
+    "net_bonds_bn": 4.4,
+    "net_bills_bn": -0.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 58.2,
+    "buffer_bn": 57.4
+   },
+   {
+    "month": "2026-12-01",
+    "cash_requirement_bn": -20.7,
+    "cash_requirement_plan_bn": -20.7,
+    "bond_gross_bn": 22.1,
+    "bond_redemption_bn": 18.8,
+    "bond_redemption_cb_bn": 10.4,
+    "net_bonds_bn": 3.3,
+    "net_bills_bn": -2.8,
+    "other_fin_bn": 17.8,
+    "buffer_rollover_bn": 100.0,
+    "buffer_bn": 96.5
+   },
+   {
+    "month": "2027-01-01",
+    "cash_requirement_bn": 5.4,
+    "cash_requirement_plan_bn": 5.4,
+    "bond_gross_bn": 30.7,
+    "bond_redemption_bn": 17.9,
+    "bond_redemption_cb_bn": 9.8,
+    "net_bonds_bn": 12.8,
+    "net_bills_bn": -1.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 107.4,
+    "buffer_bn": 102.5
+   },
+   {
+    "month": "2027-02-01",
+    "cash_requirement_bn": 23.2,
+    "cash_requirement_plan_bn": 23.2,
+    "bond_gross_bn": 32.4,
+    "bond_redemption_bn": 34.5,
+    "bond_redemption_cb_bn": 1.1,
+    "net_bonds_bn": -2.1,
+    "net_bills_bn": 1.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 82.1,
+    "buffer_bn": 78.6
+   },
+   {
+    "month": "2027-03-01",
+    "cash_requirement_bn": 23.0,
+    "cash_requirement_plan_bn": 23.0,
+    "bond_gross_bn": 49.2,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 49.2,
+    "net_bills_bn": -0.8,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 108.4,
+    "buffer_bn": 104.1
+   },
+   {
+    "month": "2027-04-01",
+    "cash_requirement_bn": 14.3,
+    "cash_requirement_plan_bn": 14.3,
+    "bond_gross_bn": 36.8,
+    "bond_redemption_bn": 16.6,
+    "bond_redemption_cb_bn": 2.8,
+    "net_bonds_bn": 20.1,
+    "net_bills_bn": 3.1,
+    "other_fin_bn": -0.9,
+    "buffer_rollover_bn": 113.3,
+    "buffer_bn": 112.1
+   },
+   {
+    "month": "2027-05-01",
+    "cash_requirement_bn": 14.4,
+    "cash_requirement_plan_bn": 14.4,
+    "bond_gross_bn": 10.7,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 10.7,
+    "net_bills_bn": -1.0,
+    "other_fin_bn": -0.7,
+    "buffer_rollover_bn": 108.8,
+    "buffer_bn": 106.7
+   },
+   {
+    "month": "2027-06-01",
+    "cash_requirement_bn": 33.7,
+    "cash_requirement_plan_bn": 33.7,
+    "bond_gross_bn": 57.6,
+    "bond_redemption_bn": 37.1,
+    "bond_redemption_cb_bn": 11.4,
+    "net_bonds_bn": 20.5,
+    "net_bills_bn": 2.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 95.7,
+    "buffer_bn": 96.0
+   },
+   {
+    "month": "2027-07-01",
+    "cash_requirement_bn": -15.6,
+    "cash_requirement_plan_bn": -15.6,
+    "bond_gross_bn": 21.8,
+    "bond_redemption_bn": 14.1,
+    "bond_redemption_cb_bn": 0.5,
+    "net_bonds_bn": 7.7,
+    "net_bills_bn": -2.9,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 119.0,
+    "buffer_bn": 116.5
+   },
+   {
+    "month": "2027-08-01",
+    "cash_requirement_bn": -1.4,
+    "cash_requirement_plan_bn": -1.4,
+    "bond_gross_bn": 21.4,
+    "bond_redemption_bn": 35.2,
+    "bond_redemption_cb_bn": 11.0,
+    "net_bonds_bn": -13.9,
+    "net_bills_bn": 2.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 106.5,
+    "buffer_bn": 106.7
+   },
+   {
+    "month": "2027-09-01",
+    "cash_requirement_bn": 24.6,
+    "cash_requirement_plan_bn": 24.6,
+    "bond_gross_bn": 31.8,
+    "bond_redemption_bn": 20.9,
+    "bond_redemption_cb_bn": 7.5,
+    "net_bonds_bn": 10.9,
+    "net_bills_bn": -2.6,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 92.8,
+    "buffer_bn": 90.4
+   },
+   {
+    "month": "2027-10-01",
+    "cash_requirement_bn": 5.9,
+    "cash_requirement_plan_bn": 5.9,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 15.4,
+    "bond_redemption_cb_bn": 0.4,
+    "net_bonds_bn": -15.4,
+    "net_bills_bn": 2.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 71.4,
+    "buffer_bn": 71.4
+   },
+   {
+    "month": "2027-11-01",
+    "cash_requirement_bn": 11.3,
+    "cash_requirement_plan_bn": 11.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 0.0,
+    "net_bills_bn": -0.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 60.1,
+    "buffer_bn": 59.3
+   },
+   {
+    "month": "2027-12-01",
+    "cash_requirement_bn": -7.7,
+    "cash_requirement_plan_bn": -7.7,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 19.6,
+    "bond_redemption_cb_bn": 2.2,
+    "net_bonds_bn": -19.6,
+    "net_bills_bn": -2.8,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 48.1,
+    "buffer_bn": 44.6
+   },
+   {
+    "month": "2028-01-01",
+    "cash_requirement_bn": 5.5,
+    "cash_requirement_plan_bn": 5.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 0.0,
+    "net_bills_bn": -1.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 42.6,
+    "buffer_bn": 37.7
+   },
+   {
+    "month": "2028-02-01",
+    "cash_requirement_bn": 24.5,
+    "cash_requirement_plan_bn": 24.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 40.7,
+    "bond_redemption_cb_bn": 12.8,
+    "net_bonds_bn": -40.7,
+    "net_bills_bn": 64.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -22.6,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-03-01",
+    "cash_requirement_bn": 24.3,
+    "cash_requirement_plan_bn": 24.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 28.9,
+    "bond_redemption_cb_bn": 7.1,
+    "net_bonds_bn": -28.9,
+    "net_bills_bn": 53.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -75.8,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-04-01",
+    "cash_requirement_bn": 15.3,
+    "cash_requirement_plan_bn": 15.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 13.3,
+    "bond_redemption_cb_bn": 1.1,
+    "net_bonds_bn": -13.3,
+    "net_bills_bn": 28.6,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -104.4,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-05-01",
+    "cash_requirement_bn": 15.3,
+    "cash_requirement_plan_bn": 15.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 15.9,
+    "bond_redemption_cb_bn": 9.1,
+    "net_bonds_bn": -15.9,
+    "net_bills_bn": 31.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -135.5,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-06-01",
+    "cash_requirement_bn": 35.4,
+    "cash_requirement_plan_bn": 35.4,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 15.5,
+    "bond_redemption_cb_bn": 0.2,
+    "net_bonds_bn": -15.5,
+    "net_bills_bn": 50.9,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -186.4,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-07-01",
+    "cash_requirement_bn": -15.5,
+    "cash_requirement_plan_bn": -15.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 16.3,
+    "bond_redemption_cb_bn": 4.1,
+    "net_bonds_bn": -16.3,
+    "net_bills_bn": 0.8,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -187.3,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-08-01",
+    "cash_requirement_bn": -1.8,
+    "cash_requirement_plan_bn": -1.8,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 17.6,
+    "bond_redemption_cb_bn": 0.8,
+    "net_bonds_bn": -17.6,
+    "net_bills_bn": 15.8,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -203.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-09-01",
+    "cash_requirement_bn": 25.2,
+    "cash_requirement_plan_bn": 25.2,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 21.4,
+    "bond_redemption_cb_bn": 11.5,
+    "net_bonds_bn": -21.4,
+    "net_bills_bn": 46.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -249.8,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-10-01",
+    "cash_requirement_bn": 6.3,
+    "cash_requirement_plan_bn": 6.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 36.1,
+    "bond_redemption_cb_bn": 1.3,
+    "net_bonds_bn": -36.1,
+    "net_bills_bn": 42.3,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -292.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-11-01",
+    "cash_requirement_bn": 12.1,
+    "cash_requirement_plan_bn": 12.1,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 17.7,
+    "bond_redemption_cb_bn": 3.1,
+    "net_bonds_bn": -17.7,
+    "net_bills_bn": 29.8,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -321.9,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2028-12-01",
+    "cash_requirement_bn": -7.6,
+    "cash_requirement_plan_bn": -7.6,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 20.7,
+    "bond_redemption_cb_bn": 11.0,
+    "net_bonds_bn": -20.7,
+    "net_bills_bn": 13.1,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -335.0,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-01-01",
+    "cash_requirement_bn": 5.2,
+    "cash_requirement_plan_bn": 5.2,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 16.5,
+    "bond_redemption_cb_bn": 0.1,
+    "net_bonds_bn": -16.5,
+    "net_bills_bn": 21.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -356.7,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-02-01",
+    "cash_requirement_bn": 25.0,
+    "cash_requirement_plan_bn": 25.0,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 32.2,
+    "bond_redemption_cb_bn": 3.2,
+    "net_bonds_bn": -32.2,
+    "net_bills_bn": 57.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -413.9,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-03-01",
+    "cash_requirement_bn": 24.8,
+    "cash_requirement_plan_bn": 24.8,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 15.7,
+    "bond_redemption_cb_bn": 0.1,
+    "net_bonds_bn": -15.7,
+    "net_bills_bn": 40.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -454.5,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-04-01",
+    "cash_requirement_bn": 15.6,
+    "cash_requirement_plan_bn": 15.6,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 20.9,
+    "bond_redemption_cb_bn": 3.8,
+    "net_bonds_bn": -20.9,
+    "net_bills_bn": 36.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -491.0,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-05-01",
+    "cash_requirement_bn": 15.6,
+    "cash_requirement_plan_bn": 15.6,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 18.1,
+    "bond_redemption_cb_bn": 0.5,
+    "net_bonds_bn": -18.1,
+    "net_bills_bn": 33.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -524.7,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-06-01",
+    "cash_requirement_bn": 36.4,
+    "cash_requirement_plan_bn": 36.4,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 15.8,
+    "bond_redemption_cb_bn": 1.6,
+    "net_bonds_bn": -15.8,
+    "net_bills_bn": 52.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -576.9,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-07-01",
+    "cash_requirement_bn": -15.8,
+    "cash_requirement_plan_bn": -15.8,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 19.1,
+    "bond_redemption_cb_bn": 0.4,
+    "net_bonds_bn": -19.1,
+    "net_bills_bn": 3.3,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -580.2,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-08-01",
+    "cash_requirement_bn": -2.3,
+    "cash_requirement_plan_bn": -2.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 22.5,
+    "bond_redemption_cb_bn": 11.0,
+    "net_bonds_bn": -22.5,
+    "net_bills_bn": 20.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -600.4,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-09-01",
+    "cash_requirement_bn": 25.5,
+    "cash_requirement_plan_bn": 25.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 16.2,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": -16.2,
+    "net_bills_bn": 41.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -642.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-10-01",
+    "cash_requirement_bn": 6.3,
+    "cash_requirement_plan_bn": 6.3,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 17.4,
+    "bond_redemption_cb_bn": 0.2,
+    "net_bonds_bn": -17.4,
+    "net_bills_bn": 23.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -665.9,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-11-01",
+    "cash_requirement_bn": 12.5,
+    "cash_requirement_plan_bn": 12.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 6.4,
+    "bond_redemption_cb_bn": 4.4,
+    "net_bonds_bn": -6.4,
+    "net_bills_bn": 18.9,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -684.7,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2029-12-01",
+    "cash_requirement_bn": -7.9,
+    "cash_requirement_plan_bn": -7.9,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 21.9,
+    "bond_redemption_cb_bn": 1.1,
+    "net_bonds_bn": -21.9,
+    "net_bills_bn": 14.0,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -698.7,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-01-01",
+    "cash_requirement_bn": 5.2,
+    "cash_requirement_plan_bn": 5.2,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 0.0,
+    "net_bills_bn": 5.2,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -703.9,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-02-01",
+    "cash_requirement_bn": 25.7,
+    "cash_requirement_plan_bn": 25.7,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 0.0,
+    "net_bills_bn": 25.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -729.6,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-03-01",
+    "cash_requirement_bn": 25.6,
+    "cash_requirement_plan_bn": 25.6,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 45.0,
+    "bond_redemption_cb_bn": 14.4,
+    "net_bonds_bn": -45.0,
+    "net_bills_bn": 70.5,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -800.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-04-01",
+    "cash_requirement_bn": 16.2,
+    "cash_requirement_plan_bn": 16.2,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 23.8,
+    "bond_redemption_cb_bn": 11.2,
+    "net_bonds_bn": -23.8,
+    "net_bills_bn": 40.0,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -840.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-05-01",
+    "cash_requirement_bn": 16.1,
+    "cash_requirement_plan_bn": 16.1,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 27.0,
+    "bond_redemption_cb_bn": 5.5,
+    "net_bonds_bn": -27.0,
+    "net_bills_bn": 43.1,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -883.2,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-06-01",
+    "cash_requirement_bn": 37.7,
+    "cash_requirement_plan_bn": 37.7,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 25.8,
+    "bond_redemption_cb_bn": 1.6,
+    "net_bonds_bn": -25.8,
+    "net_bills_bn": 63.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -946.7,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-07-01",
+    "cash_requirement_bn": -15.8,
+    "cash_requirement_plan_bn": -15.8,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 24.2,
+    "bond_redemption_cb_bn": 2.4,
+    "net_bonds_bn": -24.2,
+    "net_bills_bn": 8.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -955.1,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-08-01",
+    "cash_requirement_bn": -2.6,
+    "cash_requirement_plan_bn": -2.6,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 18.9,
+    "bond_redemption_cb_bn": 7.9,
+    "net_bonds_bn": -18.9,
+    "net_bills_bn": 16.3,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -971.4,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-09-01",
+    "cash_requirement_bn": 26.0,
+    "cash_requirement_plan_bn": 26.0,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 0.0,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 0.0,
+    "net_bills_bn": 26.0,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -997.3,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-10-01",
+    "cash_requirement_bn": 6.5,
+    "cash_requirement_plan_bn": 6.5,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 35.5,
+    "bond_redemption_cb_bn": 1.4,
+    "net_bonds_bn": -35.5,
+    "net_bills_bn": 42.1,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -1039.4,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-11-01",
+    "cash_requirement_bn": 13.2,
+    "cash_requirement_plan_bn": 13.2,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 17.4,
+    "bond_redemption_cb_bn": 0.4,
+    "net_bonds_bn": -17.4,
+    "net_bills_bn": 30.6,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -1070.0,
+    "buffer_bn": 37.0
+   },
+   {
+    "month": "2030-12-01",
+    "cash_requirement_bn": -7.8,
+    "cash_requirement_plan_bn": -7.8,
+    "bond_gross_bn": 0.0,
+    "bond_redemption_bn": 23.1,
+    "bond_redemption_cb_bn": 8.7,
+    "net_bonds_bn": -23.1,
+    "net_bills_bn": 15.3,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": -1085.3,
+    "buffer_bn": 37.0
+   }
+  ]
+ },
+ "notes": [
+  "Fabbisogno model chosen on PRE (origins 2015\u20132021) mean MAE: last-year repeat; OOS (origins 2022\u2192) reported only. Scored on the first provisional MEF print, COVID months Mar-2020\u2013Feb-2021 screened out.",
+  "RRF grants lower the fabbisogno; loans are financing. Grants are estimated from Banca d'Italia EU loans at the plan ratio (37% grants). The base months carry \u20ac9.3bn of past grants, stripped before forecasting; next 12m add \u20ac10.5bn of grants to the fabbisogno and \u20ac17.9bn of loans to other financing.",
+  "Cash path = seasonal / annual-level (last-year repeat). Forward drivers: AMECO NGDP (DFP Tav. II.1.2.2 where published) and WEO CPI. The DFP total pins the year in progress (2026: \u20ac129.5bn = 5.6% of GDP, vintage 2026-04-22) for the year in progress. Later years use our component model, the same path as the Shock scenarios page (cash-account lines on the macro paths, interest from the debt book, RRF grants only as scheduled). Scenario card = model-implied \u0394 from \u00b11pp GDP/CPI; live path unchanged.",
+  "BOT: BOT stock held at its current level plus its average calendar-month change (trailing five years, demeaned); raised only to keep liquidity at the floor. Liquidity above the band (P90 of the last 36 month-ends) is a financing surplus: peak \u20ac45.6bn in Jul-27; the Treasury would close it with smaller auctions, buybacks or fewer BOT.",
+  "Other-financing baseline: zero (PRE mean MAE zero 8.85, trailing 12m mean 10.52, last-year repeat 11.47, level-adjusted seasonal, 3y 13.98bn), next 12m \u20ac0.0bn.",
+  "Gross bonds next 12m include \u20ac0.0bn announced syndications / retail and \u20ac102.6bn assumed (last year's syndications and retail issues repeated 52 weeks on by the issuance forward).",
+  "Eurosystem-held redemptions are estimates (holdings by ISIN are not published; snapshot 2026-10-01); next 12m \u20ac201.2bn.",
+  "Identity: history closes by construction (other financing is the residual). Against Banca d'Italia's instrument table (2012-12\u21922026-08), the part not explained by its non-security financing and perimeter has mean \u2212\u20ac0.36bn and sd \u20ac6.6bn a month (last 24m sd \u20ac7.1bn), vs other financing sd \u20ac8.5bn.",
+  "Bottom-up BdI T1 baseline: NO-SHIP \u2014 PRE mean MAE macro 6.76 vs production 5.52 (-22.5% better), worse at 1/4 horizons; OOS 11.25 vs 11.27; NGDP clip \u00b12.49pp PRE-support; \u03b2_tax=0.55 \u03b2_pri=0.35; treas\u00d70.94; cap\u00d7NGDP 0.2; interest=isin_curve; need \u22655% PRE edge, \u22641 worse horizon, OOS \u2264+25%. Alternate column cash_requirement_bottomup_bn does not replace the live path."
+ ],
+ "scenarios": {
+  "cc": "it",
+  "origin": "2026-08-01",
+  "years": [
+   2026,
+   2027,
+   2028,
+   2029
+  ],
+  "ok": true,
+  "base": {
+   "2026": 5.521889040064586,
+   "2027": 95.07916188320695,
+   "2028": 97.0466866862274,
+   "2029": 95.50921221810154
+  },
+  "drivers": {
+   "ngdp_source": "AMECO nominal GDP + DFP Tav. II.1.2.2; IMF WEO real growth compounded with IT house CPI (full, 2028\u20132030)",
+   "cpi_source": "IT house HICP to 2030, IMF WEO CPI beyond [full: house path through 2030]",
+   "rates_source": "debt interest/debt; +100bp from debt_repricing shock case",
+   "ngdp": {
+    "2026": 2.437737503181414,
+    "2027": 2.5810018961615944,
+    "2028": 2.2755521999999972,
+    "2029": 1.8894908000000044
+   },
+   "cpi": {
+    "2026": 3.1969,
+    "2027": 2.7905,
+    "2028": 1.5646,
+    "2029": 1.2818
+   }
+  },
+  "shocks": [
+   {
+    "key": "gdp",
+    "title": "Nominal GDP growth +1pp a year",
+    "shock": {
+     "ngdp": 1.0
+    },
+    "delta": {
+     "2026": -0.20816583248565834,
+     "2027": -4.556701476880022,
+     "2028": -10.77528009482485,
+     "2029": -17.299868797284176
+    },
+    "level": {
+     "2026": 5.313723207578928,
+     "2027": 90.52246040632693,
+     "2028": 86.27140659140255,
+     "2029": 78.20934342081736
+    }
+   },
+   {
+    "key": "cpi",
+    "title": "CPI inflation +1pp a year",
+    "shock": {
+     "hicp": 1.0
+    },
+    "delta": {
+     "2026": 0.19776733248099276,
+     "2027": 4.852963944567833,
+     "2028": 11.701990059318518,
+     "2029": 18.78165871316112
+    },
+    "level": {
+     "2026": 5.719656372545579,
+     "2027": 99.93212582777478,
+     "2028": 108.74867674554592,
+     "2029": 114.29087093126266
+    }
+   },
+   {
+    "key": "rates",
+    "title": "Bond rates +100bp",
+    "shock": {
+     "rates_bp": 100.0
+    },
+    "delta": {
+     "2026": 2.078093006706183,
+     "2027": 5.177231074856664,
+     "2028": 8.263507578998329,
+     "2029": 10.93896459760792
+    },
+    "level": {
+     "2026": 7.599982046770769,
+     "2027": 100.25639295806361,
+     "2028": 105.31019426522573,
+     "2029": 106.44817681570946
+    },
+    "channel": "debt_repricing ISIN book (locked coupons + new issuance)"
+   }
+  ],
+  "spec": "ratio",
+  "note": "\u0394 cash bn. GDP/CPI via component SARIMAX (receipts and spending in proportion to the GDP and price levels); rates via the ISIN book or the AFT triangle (+100bp). Live cash path unchanged."
+ }
+}

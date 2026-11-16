@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "assumption": "full PEPP+PSPP reinvestment / stock freeze from next ECB meeting",
+    "baseline_source": "ecb_no_reinvestment / ecb_es_stock_pace",
+    "halt_source": "ecb_full_reinvestment / ecb_es_full_reinvestment",
+    "api": "issuance.qt_forward.qt_path(ea_reinvest=True)"
+  },
+  "DE": {
+    "runoff_eur_bn": 75.0,
+    "pp_gdp": 1.68,
+    "all_tenor_bp": -3.6,
+    "joint_bp": -3.9,
+    "long_only_upper_bp": -2.8
+  },
+  "ES": {
+    "runoff_eur_bn": 43.9,
+    "pp_gdp": 2.6,
+    "all_tenor_bp": -5.5,
+    "joint_bp": -6.2,
+    "long_only_upper_bp": -4.6
+  },
+  "FR": {
+    "runoff_eur_bn": 68.0,
+    "pp_gdp": 2.28,
+    "all_tenor_bp": -4.8,
+    "joint_bp": -4.3,
+    "long_only_upper_bp": -2.4
+  },
+  "IT": {
+    "runoff_eur_bn": 56.4,
+    "pp_gdp": 2.5,
+    "all_tenor_bp": -5.3,
+    "joint_bp": -5.8,
+    "long_only_upper_bp": -4.2
+  },
+  "EUR4": {
+    "runoff_eur_bn": 243.3,
+    "pp_gdp": 2.13,
+    "all_tenor_bp": -4.5,
+    "joint_bp": -4.7
+  }
+}

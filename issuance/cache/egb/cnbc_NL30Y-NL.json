@@ -1,0 +1,1 @@
+{"requestDetails":{"symbol":"NL30Y-NL","startTime":"20241115210124","endTime":"20261114210124","adjusted":"ADJUSTED"},"status":"ERROR","statusMessage":"Error in getting bars for symbol: NL30Y-NL and barType: ONE_DAY Security Master not found"}

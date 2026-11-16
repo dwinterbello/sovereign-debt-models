@@ -1,0 +1,42 @@
+{
+ "origin": "2026-11-12",
+ "stl_bn": 40409.861,
+ "limit_bn": 41103.996,
+ "headroom_bn": 694.135000000002,
+ "intragov_bn": 7784.121,
+ "intragov_pace_bn_day": 0.4110333333333377,
+ "tga_bn": 933.127,
+ "target_date": "2026-12-31",
+ "target_bn": 850.0,
+ "contact_date": "2027-06-15",
+ "x_date": "2027-10-18",
+ "tga_at_contact_bn": 703.6588160091892,
+ "tga_floor_bn": 50.0,
+ "post_contact_burn_bn_day": 10.47455222867483,
+ "em_capacity_bn": 250.0,
+ "em_floor_bn": 250.0,
+ "em_from_intragov_drop_bn": 197.90799999999945,
+ "em_calibration_runs": [
+  {
+   "start": "2021-10-22",
+   "end": "2021-12-15",
+   "days": 37,
+   "ig_drop_bn": 120.74099999999999
+  },
+  {
+   "start": "2023-01-19",
+   "end": "2023-06-02",
+   "days": 95,
+   "ig_drop_bn": 111.56700000000001
+  },
+  {
+   "start": "2025-01-21",
+   "end": "2025-07-03",
+   "days": 115,
+   "ig_drop_bn": 197.90799999999945
+  }
+ ],
+ "em_source": "desk floor $250bn (last run drop $198bn)",
+ "days_to_contact": 215,
+ "days_contact_to_x": 125
+}

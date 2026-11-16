@@ -1,0 +1,320 @@
+{
+ "asof": "2026-10-25",
+ "shock_years": [
+  2027,
+  2028,
+  2029
+ ],
+ "shocks": {
+  "cpi1_w1": {
+   "cpi": 1.0,
+   "wages": 1.0,
+   "ngdp": 1.0,
+   "rpi": 1.0
+  },
+  "cpi1_w05": {
+   "cpi": 1.0,
+   "wages": 0.5,
+   "ngdp": 1.0,
+   "rpi": 1.0
+  },
+  "cpi1_w0": {
+   "cpi": 1.0,
+   "wages": 0.0,
+   "ngdp": 1.0,
+   "rpi": 1.0
+  },
+  "wage1": {
+   "cpi": 0.0,
+   "wages": 1.0,
+   "ngdp": 0.0,
+   "rpi": 0.0
+  },
+  "rpi1_uk": {
+   "cpi": 0.0,
+   "wages": 0.0,
+   "ngdp": 0.0,
+   "rpi": 1.0
+  }
+ },
+ "uk_linker_mtm_pct_gdp_per_100bp_real": 2.1632396150810194,
+ "maps": {
+  "uk": {
+   "structural": {
+    "it": {
+     "driver": "wages",
+     "beta": 1.1344811884616441,
+     "kind": "receipt"
+    },
+    "nics": {
+     "driver": "wages",
+     "beta": 1.5258970973878352,
+     "kind": "receipt"
+    },
+    "vat": {
+     "driver": "ngdp",
+     "beta": 0.7506710753925061,
+     "kind": "receipt"
+    },
+    "ct": {
+     "driver": "ngdp",
+     "beta": 0.6683340493389829,
+     "kind": "receipt"
+    },
+    "other_tax": {
+     "driver": "ngdp",
+     "beta": 0.75,
+     "kind": "receipt"
+    },
+    "nontax": {
+     "driver": "ngdp",
+     "beta": 0.0,
+     "kind": "receipt"
+    },
+    "welfare": {
+     "driver": "cpi",
+     "beta": 1.5,
+     "kind": "spend"
+    },
+    "rdel_proxy": {
+     "driver": "ngdp",
+     "beta": 0.25,
+     "kind": "spend"
+    },
+    "cap": {
+     "driver": "ngdp",
+     "beta": 0.2,
+     "kind": "spend"
+    }
+   },
+   "shipped": {
+    "it": {
+     "driver": "wages",
+     "beta": 1.1344811884616441,
+     "kind": "receipt"
+    },
+    "nics": {
+     "driver": "wages",
+     "beta": 1.5258970973878352,
+     "kind": "receipt"
+    },
+    "vat": {
+     "driver": "ngdp",
+     "beta": 0.7506710753925061,
+     "kind": "receipt"
+    },
+    "ct": {
+     "driver": "ngdp",
+     "beta": 0.6683340493389829,
+     "kind": "receipt"
+    },
+    "other_tax": {
+     "driver": "ngdp",
+     "beta": 0.75,
+     "kind": "receipt"
+    },
+    "nontax": {
+     "driver": "ngdp",
+     "beta": 0.0,
+     "kind": "receipt"
+    },
+    "welfare": {
+     "driver": "cpi",
+     "beta": 1.5,
+     "kind": "spend"
+    },
+    "rdel_proxy": {
+     "driver": "ngdp",
+     "beta": 0.25,
+     "kind": "spend"
+    },
+    "cap": {
+     "driver": "ngdp",
+     "beta": 0.2,
+     "kind": "spend"
+    }
+   }
+  },
+  "fr": {
+   "structural": {
+    "ir": {
+     "driver": "wages",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "is": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "tva": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "accises": {
+     "driver": "real",
+     "beta": 0.5,
+     "kind": "receipt"
+    },
+    "autres_fiscales": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "credits_ministeriels": {
+     "driver": "cpi",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "cas_pensions": {
+     "driver": "wages",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "remboursements_locaux": {
+     "driver": "cpi",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "psr": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "spend"
+    }
+   },
+   "shipped": {
+    "ir": {
+     "driver": "wages",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "is": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "tva": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "accises": {
+     "driver": "real",
+     "beta": 0.5,
+     "kind": "receipt"
+    },
+    "autres_fiscales": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "credits_ministeriels": {
+     "driver": "cpi",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "cas_pensions": {
+     "driver": "wages",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "remboursements_locaux": {
+     "driver": "cpi",
+     "beta": 1.0,
+     "kind": "spend"
+    },
+    "psr": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "spend"
+    }
+   }
+  },
+  "it": {
+   "structural": {
+    "tax_rev": {
+     "driver": "ngdp",
+     "beta": 0.55,
+     "kind": "receipt"
+    },
+    "primary": {
+     "driver": "cpi",
+     "beta": 0.35,
+     "kind": "spend"
+    }
+   },
+   "shipped": {
+    "tax_rev": {
+     "driver": "ngdp",
+     "beta": 0.55,
+     "kind": "receipt"
+    },
+    "primary": {
+     "driver": "cpi",
+     "beta": 0.35,
+     "kind": "spend"
+    }
+   }
+  },
+  "de": {
+   "structural": {
+    "receipts_total": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "primary": {
+     "driver": "wages",
+     "beta": 0.17682865244920945,
+     "kind": "spend"
+    }
+   },
+   "shipped": {
+    "receipts_total": {
+     "driver": "ngdp",
+     "beta": 1.0,
+     "kind": "receipt"
+    },
+    "primary": {
+     "driver": "cpi",
+     "beta": 0.0,
+     "kind": "spend"
+    }
+   }
+  }
+ },
+ "us_meta": {
+  "indexed_shares": {
+   "wd_ssa": {
+    "full": 1.0,
+    "blend": 0.0
+   },
+   "wd_va": {
+    "full": 0.6588995277127805,
+    "blend": 0.0
+   },
+   "wd_defense": {
+    "full": 0.09548661071920232,
+    "blend": 0.0
+   },
+   "wd_opm": {
+    "full": 0.0,
+    "blend": 0.5214415979157621
+   }
+  },
+  "indexed_base_cy2027_bn": 2049.5155704436793
+ },
+ "claims": [
+  "UK: +1pp CPI (and RPI) for three years improves the primary cash need by \u00a33bn a year by 2029 on the leaves' own elasticities (\u00a3-0bn as wired: receipts +\u00a328bn, welfare and departmental spend +\u00a325bn), against \u00a38bn a year of linker uplift accruing to the stock (counted as interest: +0.7pp of revenue). Debt is \u00a323bn higher in 2029; the ratio falls only through the nominal-GDP denominator (-2.2pp of GDP). The flow channel does not rescue the stock argument (linker MTM 2.2% of GDP per +100bp real).",
+  "US: the DTS stack indexes $2,050bn of outlays to the COLA and nothing on receipts, so +1pp CPI adds $48bn a year to outlays by 2029 and $25bn a year of TIPS uplift to the stock ($140bn more debt by 2029); the board's revenue is WEO share \u00d7 GDP (unit elasticity by construction, weo_gg), so no receipt leaf is tested.",
+  "Euro area: on the shipped bridges +1pp CPI/NGDP improves Germany's primary need by \u20ac-0bn a year by 2029 (revenue \u03b2 1.0, primary spend frozen), Italy's by \u20ac-0bn (tax 0.55 \u00d7 NGDP vs primary 0.35 \u00d7 CPI) and worsens France's by \u20ac0bn (cr\u00e9dits + CAS pensions at \u03b5 1.0 on CPI against receipts whose weighted \u03b5 is below 1); none carries a wage channel. Linker uplift on the board is now tape \u00d7 issuer coefficients (IT/DE/ES/JP); JP has JGBi uplift and no shipped receipt/spend \u03b2."
+ ],
+ "jp_jgbi_board_patch": {
+  "asof": "2026-10-25",
+  "method": "board rows for jp under the cpi1_* shocks: uplift = JGBi indexed principal share of marketable stock (ISIN book face x index ratio / snapshot marketable) x board debt path x 1pp in SHOCK_YEARS; written to d_il_accrual_bn / d_uplift_interest_bn, added to d_interest_bn and cumulated into d_debt_bn. The board run left them at 0 because build._marketable caches the baseline components (_COMP) and _uplift returns il_now = 0 outside UK/OFFICIAL, so the shocked accrual never reached the JP book.",
+  "jgbi_indexed_principal_bn": 13507.577636,
+  "marketable_bn": 1211843.431,
+  "il_share": 0.011146305942223652
+ }
+}

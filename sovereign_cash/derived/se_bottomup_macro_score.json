@@ -1,0 +1,206 @@
+{
+  "ship": false,
+  "ship_reason": "PRE anchored mean MAE macro 10.349 does not beat production 10.045 by ≥5%",
+  "version": "v2_macro",
+  "edge": 0.05,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "production_model": "seas_k5_a0.5_mean",
+  "allocation_method": "uniform",
+  "identity_resid_bn": 0.076,
+  "category_drivers": {
+    "tax_rev": {
+      "driver": "ngdp+wages",
+      "rule": "CAT_SEAS(1, 0.0, 'mean') month shape × lag-1 macro annual; Budgetprop/KI tax rescale when vintage ≤ origin",
+      "pre_mae_macro": 6.503,
+      "pre_mae_smly": 5.144,
+      "series": "SCB BudgetStatForvM total revenue"
+    },
+    "primary_spend": {
+      "driver": "cpi",
+      "rule": "CAT_SEAS(3, 0.5, 'mean') month shape × lag-1 macro annual; Budgetprop/KI tax rescale when vintage ≤ origin",
+      "pre_mae_macro": 4.534,
+      "pre_mae_smly": 3.948,
+      "series": "SCB exp − CH1089 interest − net lending"
+    },
+    "net_lending": {
+      "driver": "None (Budgetprop / KI annual when vintage ≤ origin; else CAT_SEAS)",
+      "rule": "seas_k5_a0_median / authority annual × month shares",
+      "pre_mae_macro": 6.933,
+      "pre_mae_smly": 8.829,
+      "series": "CH1089 Nettoutlåning / Budgetprop nettoutlåning",
+      "justification": "agency deposits/loans are discrete one-offs; no continuous determinant"
+    },
+    "interest": {
+      "driver": "debt_stock × effective_rate (tried); shipped = PRE seas_k3_a0.5_mean",
+      "rule": "CAT_SEAS interest; stock×rate annual → shares rejected on PRE",
+      "pre_mae_macro": 12.662,
+      "pre_mae_smly": 11.319,
+      "pre_mae_seas": 1.645,
+      "series": "CH1089 Räntor på statsskulden"
+    }
+  },
+  "pre_unanchored": {
+    "1": {
+      "bottom_up": 13.863,
+      "production": 11.301,
+      "n": 96
+    },
+    "3": {
+      "bottom_up": 11.01,
+      "production": 11.096,
+      "n": 96
+    },
+    "6": {
+      "bottom_up": 10.391,
+      "production": 11.268,
+      "n": 96
+    },
+    "12": {
+      "bottom_up": 10.043,
+      "production": 11.445,
+      "n": 96
+    }
+  },
+  "oos_unanchored": {
+    "1": {
+      "bottom_up": 22.634,
+      "production": 13.914,
+      "n": 58
+    },
+    "3": {
+      "bottom_up": 17.568,
+      "production": 14.131,
+      "n": 58
+    },
+    "6": {
+      "bottom_up": 15.792,
+      "production": 14.323,
+      "n": 58
+    },
+    "12": {
+      "bottom_up": 15.129,
+      "production": 15.576,
+      "n": 58
+    }
+  },
+  "pre_anchored": {
+    "1": {
+      "bottom_up": 8.571,
+      "production": 8.94,
+      "n": 31
+    },
+    "3": {
+      "bottom_up": 10.895,
+      "production": 9.637,
+      "n": 31
+    },
+    "6": {
+      "bottom_up": 11.581,
+      "production": 11.557,
+      "n": 7
+    }
+  },
+  "oos_anchored": {
+    "1": {
+      "bottom_up": 13.348,
+      "production": 13.536,
+      "n": 16
+    },
+    "3": {
+      "bottom_up": 13.102,
+      "production": 10.338,
+      "n": 16
+    },
+    "6": {
+      "bottom_up": 17.525,
+      "production": 14.916,
+      "n": 4
+    }
+  },
+  "pre_mean_mae_unanchored": {
+    "bottom_up": 11.327,
+    "production": 11.277
+  },
+  "oos_mean_mae_unanchored": {
+    "bottom_up": 17.781,
+    "production": 14.486
+  },
+  "pre_mean_mae_anchored": {
+    "bottom_up": 10.349,
+    "production": 10.045
+  },
+  "oos_mean_mae_anchored": {
+    "bottom_up": 14.658,
+    "production": 12.93
+  },
+  "rejects": [
+    "v1 CH1089 component seasonals under RG pin: anchored PRE 10.567 vs production 10.045",
+    "SCB smly×NGDP/CPI (prior v2): anchored PRE ~16.8; lag-1 NGDP/tax YoY corr ~0.18",
+    "interest stock×rate annual (shares or seasonal renormalised): anchored PRE 11.1–13.2",
+    "category PRE seasonals + macro annual: anchored PRE ~10.35 (best honest; still <5%)",
+    "prod↔v1 shape blend α=0.20: anchored PRE 9.882 — beats prod by ~1.6% only; forbidden as seasonal rebrand",
+    "tax/spend calendar shares × last annual: anchored PRE 10.076",
+    "Statskontoret / KI annuals change open-year levels only; RG-anchored gate is shape-only"
+  ],
+  "cat_seas": {
+    "tax_rev": {
+      "k": 1,
+      "a": 0.0,
+      "f": "mean"
+    },
+    "primary_spend": {
+      "k": 3,
+      "a": 0.5,
+      "f": "mean"
+    },
+    "net_lending": {
+      "k": 5,
+      "a": 0.0,
+      "f": "median"
+    },
+    "interest": {
+      "k": 3,
+      "a": 0.5,
+      "f": "mean"
+    }
+  },
+  "authority_tables": [
+    {
+      "name": "Budgetpropositionen / Ekonomiska vårpropositionen — inkomster, utgifter, UO26, nettoutlåning",
+      "vintage": "Vårpropositionen 2026",
+      "path": "data/se/authority.json#budgetprop"
+    },
+    {
+      "name": "Konjunkturinstitutet F3328 budgetsaldo / F3304 skatter & ränteutgifter",
+      "vintage": "KI prognos September 2026",
+      "path": "data/se/authority.json#ki"
+    },
+    {
+      "name": "Statskontoret prognos statens budget (juni 2026)",
+      "vintage": "Juni 2026 (Tabell 1 / 10)",
+      "path": "data/se/authority.json#statskontoret"
+    },
+    {
+      "name": "SCB BudgetStatForvM central government budget monthly revenue/expenditure",
+      "path": "data/se/scb_budget_monthly.parquet"
+    },
+    {
+      "name": "Riksgälden CH1089 Primärt saldo / Nettoutlåning / Räntor",
+      "path": "data/se/nbr_monthly.csv"
+    },
+    {
+      "name": "Eurostat namq_10_gdp NGDP + D1 wages; prc_hicp_midx CPI; debt-book effective rates",
+      "use": "macro drivers"
+    },
+    {
+      "name": "Riksgälden Statsupplåning annual NBR (pin after category sum)",
+      "use": "RG rest-of-year / annual anchor only after macro category path"
+    }
+  ],
+  "note": "Category×macro alternate; live cash stays RG×seasonal. Anchored PRE gate is shape-only under the RG rest-of-year total — authority annuals do not move it."
+}

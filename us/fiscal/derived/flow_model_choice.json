@@ -1,0 +1,31 @@
+{
+ "selected_on": [
+  "2022-01-01",
+  "2023-12-31"
+ ],
+ "choice": {
+  "dep_corporate": "model",
+  "dep_customs": "customs",
+  "dep_education": "flat",
+  "dep_fed_earnings": "model",
+  "dep_medicare_prem": "model",
+  "dep_nonwithheld": "model",
+  "dep_other": "model",
+  "dep_other_tax": "model",
+  "dep_withheld": "model",
+  "wd_defense": "flat",
+  "wd_education": "model",
+  "wd_hhs_other": "spike",
+  "wd_interest": "model",
+  "wd_medicaid": "model",
+  "wd_medicare": "spike",
+  "wd_opm": "spike",
+  "wd_other": "flat",
+  "wd_refunds": "model",
+  "wd_salaries": "model",
+  "wd_snap": "model",
+  "wd_ssa": "ssa_split",
+  "wd_unemployment": "spike",
+  "wd_va": "spike"
+ }
+}

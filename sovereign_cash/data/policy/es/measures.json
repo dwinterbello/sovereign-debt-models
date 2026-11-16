@@ -1,0 +1,33 @@
+{
+ "unit": "EUR bn, calendar years; + adds to the deficit",
+ "note": "Spain has had no new budget law since 2023 (the 2023 budget is rolled over). Legislated multi-year changes are the pension reform's rising contributions (RDL 2/2023) and the 2026 energy-crisis decree-laws.",
+ "items": [
+  {
+   "label": "Pension reform: rising MEI and solidarity contributions",
+   "head": "tax",
+   "kind": "effect",
+   "event": "Real Decreto-ley 2/2023 (pension reform)",
+   "values": {"2025": 0.0, "2026": -0.70, "2027": -1.40, "2028": -2.11, "2029": -2.81},
+   "source": "AIReF, Informe de seguimiento del Plan Fiscal y Estructural de Medio Plazo: the two contributions add 0.4pp a year to social-contribution growth until 2029, about EUR 0.7bn a year on 2025's EUR 175.6bn (as reported by El Independiente, May 2026)",
+   "url": "https://www.elindependiente.com/economia/2026/05/15/seguridad-social-recaudara-mas-de-3150-millones-adicionales-hasta-2030-por-las-nuevas-cotizaciones/amp/"
+  },
+  {
+   "label": "2026 energy response: fuel, electricity and gas tax cuts",
+   "head": "tax",
+   "kind": "effect",
+   "event": "RDL 7/2026 and subsequent energy RDLs (Middle East price response)",
+   "values": {"2026": 8.0, "2027": 2.0, "2028": 0.0, "2029": 0.0},
+   "source": "AIReF: temporary energy / disaster / Ceuta measures lift the 2026 deficit by ~0.9pp of GDP vs a no-measures path (2.8% vs 1.9%); ~0.3pp remains in 2027 before withdrawal. Afi scores RDL 7/2026 alone at EUR 5.5bn deficit impact (0.3% of GDP), mostly VAT and hydrocarbon cuts. The line here is the AIReF temporary package's tax share (~⅔ of ~EUR 12–16bn in 2026)",
+   "url": "https://www.bolsamania.com/noticias/economia/airef-mejora-prevision-crecimiento-empeora-deficit-medidas-energeticas--24019446.html"
+  },
+  {
+   "label": "2026 energy response: social bonuses and direct support",
+   "head": "spend",
+   "kind": "effect",
+   "event": "RDL 7/2026 and subsequent energy RDLs (Middle East price response)",
+   "values": {"2026": 4.5, "2027": 1.5, "2028": 0.0, "2029": 0.0},
+   "source": "Remainder of the AIReF temporary package after the tax share: social electricity discount, heating allowance, transport and agriculture diesel support. Temporary; withdrawn through 2027",
+   "url": "https://www.hacienda.gob.es/en-GB/Prensa/Noticias/Paginas/2026/20260929-NP-CM-MEDIDAS-FISCALES.aspx"
+  }
+ ]
+}

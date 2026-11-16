@@ -1,0 +1,127 @@
+{
+ "coefficients_shape": [
+  1220,
+  8
+ ],
+ "coefficients_sum": 389086.91656839114,
+ "units": {
+  "Average RPI": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Bank Rate": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "CGNCR": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "CPI index": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Calendar year nominal GDP": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Consumption of durables": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Deposit rate": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Dollar-sterling exchange rate": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Earnings level": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Employment (100,000 change)": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Employment level": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Equity prices": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "FY average earnings growth": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Financial profits": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Gas price (pence per therm)": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "House prices": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Imports": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Long-term interest rates": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Mixed income": {
+   "_error": "DateParseError('month must be in 1..12: 2026-27')"
+  },
+  "Nominal consumption": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Non-oil, non-financial profits": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Non-seasonally adjusted nominal GDP": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Oil price ($10 per barrel change)": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Personal deposits": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Private dwelling investment": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Private non-financial corporations' GFCF": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Property transactions": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Q2 RPI": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Q3 CPI": {
+   "_error": "DateParseError('month must be in 1..12: 2026-27')"
+  },
+  "Q3 CPI (3 per cent cap)": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Q3 CPI (no floor)": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Q3 CPI for benefits (zero floor)": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Q3 average earnings growth": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "RPI inflation": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Real GDP": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Real consumption": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Triple lock": {
+   "_error": "DateParseError('month must be in 1..12: 2023-24')"
+  },
+  "Unemployment (100,000 change)": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  },
+  "Wholesale electricity (\u00a310/MWh increase in price)": {
+   "_error": "DateParseError('month must be in 1..12: 2025-26')"
+  }
+ },
+ "vintage": "OBR ready reckoner, March 2025 EFO (oil corrected 17 March 2026)"
+}

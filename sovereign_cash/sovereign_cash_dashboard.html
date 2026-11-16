@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><title>Sovereign cash</title><style>
+body { font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #1d2433; }
+html, body { height: 100%; }
+.hub { display: flex; flex-direction: column; height: 100%; }
+nav { display: flex; gap: 2px; padding: 6px 12px 0; border-bottom: 1px solid #d8dde6; background: #f5f7fa; }
+nav a { font: 600 11px/1 ui-monospace, Menlo, monospace; letter-spacing: .06em; text-transform: uppercase; color: #6b7385;
+  padding: 8px 12px; border: 1px solid transparent; border-bottom: none; text-decoration: none; cursor: pointer; }
+nav a.on { color: #1d2433; border-color: #d8dde6; background: #fff; margin-bottom: -1px; }
+main { flex: 1; position: relative; }
+main iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: none; }
+main iframe.on { display: block; }
+.wrap { padding: 18px 24px; max-width: 1300px; }
+table { border-collapse: collapse; margin: 10px 0 18px; }
+th, td { padding: 5px 10px; border-bottom: 1px solid #e6e9ef; text-align: right; vertical-align: top; }
+th { font-weight: 600; background: #f5f7fa; }
+td.l, th.l { text-align: left; max-width: 520px; }
+p.sub { color: #4a5263; max-width: 1100px; }
+</style></head>
+<body><div class="hub"><nav><a data-t="overview" href="#overview">Overview</a><a data-t="methods" href="#methods">Methodology</a><a data-t="debt" href="#debt">Debt & supply</a><a data-t="uk" href="#uk">UK</a><a data-t="de" href="#de">Germany</a><a data-t="fr" href="#fr">France</a><a data-t="it" href="#it">Italy</a><a data-t="se" href="#se">Sweden</a><a data-t="no" href="#no">Norway</a><a data-t="es" href="#es">Spain</a></nav><main><iframe id="f-overview" data-src="sovereign_cash_overview.html" title="Overview"></iframe><iframe id="f-methods" data-src="methodology.html" title="Methodology"></iframe><iframe id="f-debt" data-src="debt_supply_dashboard.html" title="Debt & supply"></iframe><iframe id="f-uk" data-src="uk_cash_dashboard.html" title="UK"></iframe><iframe id="f-de" data-src="de_cash_dashboard.html" title="Germany"></iframe><iframe id="f-fr" data-src="fr_cash_dashboard.html" title="France"></iframe><iframe id="f-it" data-src="it_cash_dashboard.html" title="Italy"></iframe><iframe id="f-se" data-src="se_cash_dashboard.html" title="Sweden"></iframe><iframe id="f-no" data-src="no_cash_dashboard.html" title="Norway"></iframe><iframe id="f-es" data-src="es_cash_dashboard.html" title="Spain"></iframe></main></div>
+<script>
+const keys = ['overview', 'methods', 'debt', 'uk', 'de', 'fr', 'it', 'se', 'no', 'es'];
+function show(k) {
+  if (!keys.includes(k)) k = keys[0];
+  document.querySelectorAll('nav a[data-t]').forEach(a => a.classList.toggle('on', a.dataset.t === k));
+  document.querySelectorAll('main iframe').forEach(f => {
+    const on = f.id === 'f-' + k;
+    if (on && !f.src) f.src = f.dataset.src;
+    f.classList.toggle('on', on);
+  });
+}
+window.addEventListener('hashchange', () => show(location.hash.slice(1)));
+show(location.hash.slice(1));
+</script></body></html>
