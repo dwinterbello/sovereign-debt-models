@@ -133,7 +133,7 @@ def _national_row(country: str, series_prefix: str, src: str, freq: str = "M") -
     if freq == "M":
         row["period"] = row["period"].dt.to_period("M").dt.to_timestamp()
     else:
-        row["period"] = row["period"].dt.to_period("Q").dt.to_timestamp(how="end")
+        row["period"] = row["period"].dt.to_period("Q").dt.to_timestamp()  # quarter start, as the ONS rows
     row = row.dropna(subset=["amount_mn"]).sort_values("period").drop_duplicates("period")
     stock = pd.DataFrame({
         "country": country, "period": row["period"],

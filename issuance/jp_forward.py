@@ -88,11 +88,17 @@ def _schedule(tape: pd.DataFrame, asof: pd.Timestamp, horizon: pd.Timestamp) -> 
     cal = _calendar(asof)
     cal_months = set(cal["date"].dt.to_period("M"))
     cal = cal[~cal["product"].astype(str).str.startswith("LEA")]
+    # MoF drops past dates from its calendar, so the first month it lists is partial: there the
+    # calendar replaces the shifted tape only for the products it names.
+    first = cal["date"].min().to_period("M") if len(cal) else None
+    cal_first = set(cal.loc[cal["date"].dt.to_period("M") == first, "product"].astype(str))
     hist = tape[tape["op_type"].astype(str) == "Auction"][["op_dt", "product"]].drop_duplicates()
     shifted = hist.copy()
     shifted["date"] = shifted["op_dt"] + pd.DateOffset(years=1)
     shifted = shifted[(shifted["date"] > asof) & (shifted["date"] <= horizon)]
-    shifted = shifted[~shifted["date"].dt.to_period("M").isin(cal_months)]
+    sm = shifted["date"].dt.to_period("M")
+    partial = (sm == first) & ~shifted["product"].astype(str).isin(cal_first)
+    shifted = shifted[~sm.isin(cal_months) | partial]
     off_plan = [p in PLAN_MONTHS and d.month not in PLAN_MONTHS[p] for p, d in zip(shifted["product"], shifted["date"])]
     shifted = shifted[[not x for x in off_plan]]
     rows = [(r.date, r.product, "calendar") for r in cal.itertuples() if r.date <= horizon]

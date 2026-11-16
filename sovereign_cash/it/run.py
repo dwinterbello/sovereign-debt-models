@@ -282,6 +282,19 @@ def forward(inp: dict, hist: pd.DataFrame, asof: pd.Timestamp, x: pd.Series, cho
     f["other_fin_fx_redemption_bn"] = -red["other_redemption_mn"].to_numpy() / BN
     f["other_fin_drift_bn"] = drift
     f["other_fin_bn"] = f["other_fin_events_bn"] + f["other_fin_fx_redemption_bn"] + f["other_fin_drift_bn"]
+    # Past the board's forward calendar there are no auctions to count, and a zero gross line would
+    # push every maturing BTP and the whole fabbisogno into BOTs (the bill stock passed 50% of GDP by
+    # 2030). There, gross bonds roll redemptions and fund the requirement net of other financing, so
+    # the BOT stock moves only with its seasonal rule and the liquidity floor.
+    last_fwd = gross.attrs.get("forward_last_month")
+    tail = months > pd.Timestamp(last_fwd) if last_fwd else np.zeros(len(months), bool)
+    f["bond_gross_tail_bn"] = 0.0
+    f.loc[tail, "bond_gross_tail_bn"] = (f["bond_redemption_bn"] + f["cash_requirement_bn"]
+                                         - f["other_fin_bn"]).clip(lower=0.0)[tail]
+    f["bond_gross_bn"] = f["bond_gross_bn"] + f["bond_gross_tail_bn"]
+    f["bond_gross_assumed_bn"] = f["bond_gross_assumed_bn"] + f["bond_gross_tail_bn"]
+    f["net_bonds_bn"] = f["bond_gross_bn"] - f["bond_redemption_bn"]
+    f["private_net_bonds_bn"] = f["net_bonds_bn"] + f["bond_redemption_cb_bn"]
     lvl0 = float(hist["buffer_level_bn"].iloc[-1])
     flows = (-f["cash_requirement_bn"] + f["net_bonds_bn"] + f["other_fin_bn"]).to_numpy()
     floor, cap = M.account_band(hist["buffer_level_bn"], asof)

@@ -19,14 +19,14 @@
   "bills_private_bn": 4728.095508699999,
   "coupons_private_bn": 20179.7848252
  },
- "identity_max_resid_bn": 1.7621459846850485e-12,
+ "identity_max_resid_bn": 1.6484591469634324e-12,
  "gap_fy27_28": {
   "start": "2026-10-01",
   "end": "2028-09-01",
   "months": 23,
   "complete": false,
-  "net_bills_bn": 1279.8408215335453,
-  "private_net_bills_bn": 1314.6313000766222,
+  "net_bills_bn": 1279.8408215335462,
+  "private_net_bills_bn": 1314.6313000766231,
   "deficit_bn": 4465.07391333434,
   "net_coupons_bn": 1810.4190922467171
  },

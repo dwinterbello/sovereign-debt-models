@@ -1,1 +1,1 @@
-{"requestDetails":{"symbol":"IE30Y-IE","startTime":"20241115210142","endTime":"20261114210142","adjusted":"ADJUSTED"},"status":"ERROR","statusMessage":"Error in getting bars for symbol: IE30Y-IE and barType: ONE_DAY Security Master not found"}
+{"requestDetails":{"symbol":"IE30Y-IE","startTime":"20241116194806","endTime":"20261115194806","adjusted":"ADJUSTED"},"status":"ERROR","statusMessage":"Error in getting bars for symbol: IE30Y-IE and barType: ONE_DAY Security Master not found"}

@@ -1,7 +1,7 @@
 {
- "asof": "2026-11-15",
+ "asof": "2026-11-16",
  "vintages": {
-  "ameco": "EC AMECO (2026-11-15)",
+  "ameco": "EC AMECO (2026-11-16)",
   "cao_baseline": "CAO 2026-07",
   "cao_growth1": "CAO 2026-07",
   "cao_growth2": "CAO 2026-07",
@@ -15,7 +15,7 @@
   "uk_hist": "ONS public sector finances",
   "uk_uplift": "ONS RPI",
   "us_hist": "Treasury MTS Table 9",
-  "weo": "IMF WEO (datamapper, 2026-11-15)"
+  "weo": "IMF WEO (datamapper, 2026-11-16)"
  },
  "bu_fiscal": {
   "uk": {
@@ -59,19 +59,19 @@
    "source": "Bundesbank BBSIS zero"
   },
   "jp": {
-   "asof": "2026-11-12",
+   "asof": "2026-11-13",
    "source": "MoF JGB par, bootstrapped"
   },
   "es": {
-   "asof": "2026-11-15",
+   "asof": "2026-11-16",
    "source": "TradingView cash par, bootstrapped"
   },
   "fr": {
-   "asof": "2026-11-15",
+   "asof": "2026-11-16",
    "source": "TradingView cash par, bootstrapped"
   },
   "it": {
-   "asof": "2026-11-15",
+   "asof": "2026-11-16",
    "source": "TradingView cash par, bootstrapped"
   },
   "fr_real": {

@@ -5,8 +5,8 @@ import pytest
 
 from issuance.fetch_xborder import OUT, parse_mfh_history, parse_slt_table3
 
-COUNTRIES = {"EA", "DE", "FR", "IT", "US", "UK"}
-UNITS = {"EA": "bn_eur", "DE": "bn_eur", "FR": "bn_eur", "IT": "bn_eur",
+COUNTRIES = {"EA", "DE", "FR", "IT", "ES", "US", "UK"}
+UNITS = {"EA": "bn_eur", "DE": "bn_eur", "FR": "bn_eur", "IT": "bn_eur", "ES": "bn_eur",
          "US": "bn_usd", "UK": "bn_gbp"}
 REQUIRED = {
     ("EA", "ecb_bop_liab_govt_lt_debt"), ("EA", "ecb_bop_liab_govt_st_debt"),

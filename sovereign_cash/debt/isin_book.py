@@ -55,6 +55,10 @@ def outstanding(asof: pd.Timestamp | None = None) -> pd.DataFrame:
     ops = _ops()
     asof = pd.Timestamp(asof or ops["op_dt"].max())
     ops = ops[(ops["op_dt"] <= asof) & (ops["maturity_dt"] > asof) & ops["amount_issued"].notna()].copy()
+    # A country that ships an outstanding snapshot (SE: Riksgälden CH1073, today's face per ISIN) takes
+    # its face from it alone; its auction taps (CH926) are flows already inside that snapshot.
+    snap = ops["source"].astype(str).str.contains("outstanding CH1073", na=False)
+    ops = ops[snap | ~ops["country"].isin(set(ops.loc[snap, "country"]))].copy()
     ops["coupon_pct"] = _coupon(ops)
     ops["key"] = ops["isin"].astype("string")
     missing = ops["key"].isna() | ops["key"].isin(["<NA>", "None", ""])

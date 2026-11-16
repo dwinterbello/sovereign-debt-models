@@ -35,15 +35,8 @@ def test_guidance_does_not_book_private_sales():
     # Rollover is absorption, not a runoff. Face stock stays put.
     assert (us["official_dv01_usd"] >= -1e-9).all()
     assert (us["official_stock_delta_mn"].abs() < 1e-9).all()
-    from issuance.paths import CACHE
-    supply = CACHE / "rv_supply.parquet"
-    if supply.exists():
-        hist = pd.read_parquet(supply)
-        hist = hist[hist["country"].eq("US")].copy()
-        hist["month"] = pd.to_datetime(hist["month"])
-        last_oct = hist[hist["month"].dt.month.eq(10)].sort_values("month").iloc[-1]
-        got = us.loc[us["month"].eq(pd.Timestamp("2026-10-01")), "official_dv01_usd"].iloc[0]
-        assert abs(got - max(0.0, float(last_oct["official_dv01_usd"]))) < 1e-6
+    # SOMA add-ons sit on top of announced sizes the forward already books: no official DV01 forward.
+    assert (us["official_dv01_usd"].abs() < 1e-9).all()
     # APF book has gilts maturing inside the year. They leave the stock only.
     assert uk["official_stock_delta_mn"].sum() < 0
     # PSPP/PEPP are not reinvested, so the allocated book redeems.

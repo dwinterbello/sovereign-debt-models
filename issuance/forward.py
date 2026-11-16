@@ -58,7 +58,9 @@ UK_FY_END = pd.Timestamp("2027-03-31")
 # 12 Nov (was the prior tap, £4,999.999mn). 5¼% 2041 is £3,250mn on 17 Nov
 # (D5D had not sized it; the median £5,000mn fill is no longer the announced size).
 # January–March names are still "Conventional" / "Index-linked" and are not
-# given another gilt.
+# given another gilt. Remit revision of 28 Oct 2026 (Budget): the 12 Jan and 23 Feb
+# index-linked auctions and the 16 Feb conventional auction are cancelled; Q4 is 7
+# conventional (7, 26, 27 Jan; 2, 10 Feb; 4, 23 Mar) and 2 index-linked (9 Feb, 9 Mar).
 # (date, isin, bucket, amount or None, sec)
 UK_CALENDAR = [
     ("2026-09-29", "GB00BWBR1N39", "7-10y", 5_312.5, "Nominal"),
@@ -73,14 +75,11 @@ UK_CALENDAR = [
     ("2026-12-08", "GB00BWBR1N39", "7-10y", 5_312.5, "Nominal"),
     ("2026-12-10", "GB00BWBR1P52", "3-7y", 5_000.0, "Nominal"),
     ("2027-01-07", "", "", None, "Nominal"),
-    ("2027-01-12", "", "", None, "Linker"),
     ("2027-01-26", "", "", None, "Nominal"),
     ("2027-01-27", "", "", None, "Nominal"),
     ("2027-02-02", "", "", None, "Nominal"),
     ("2027-02-09", "", "", None, "Linker"),
     ("2027-02-10", "", "", None, "Nominal"),
-    ("2027-02-16", "", "", None, "Nominal"),
-    ("2027-02-23", "", "", None, "Linker"),
     ("2027-03-04", "", "", None, "Nominal"),
     ("2027-03-09", "", "", None, "Linker"),
     ("2027-03-23", "", "", None, "Nominal"),
@@ -88,14 +87,17 @@ UK_CALENDAR = [
 
 # Syndications. Dates and gilts from the minutes; sizes are set by the cash fit to the remit
 # (`uk_remit`). 24 Aug 2026 minutes: the Q3 syndication is a linker in November, most support for
-# a new 2043; Q3 has no conventional syndication, so both remaining long deals fall in Jan–Mar.
-# Long gilts named for the September deal were a new 20y and 5⅜% 2056. Apr–Sep 2027 has no remit;
+# a new 2043; Q3 has no conventional syndication. The 28 Oct remit revision cancelled one long
+# syndication and added a medium one (medium £33.8bn in three deals, long £12.5bn in two, IL £7.8bn
+# in two): after Apr 2036s, Jun 2041s, Jul IL 2038s and Sep 2056s, one medium and one long deal are
+# left for Jan–Mar. Neither is named yet: a new 20y long in January, a new medium (2039) in March.
+# Apr–Sep 2027 has no remit;
 # it repeats the FY26-27 months (new 10y in April, 15y in June, linker in July, long in September).
 # (date, isin, bucket, nominal mn, sec, maturity, coupon, yield, source)
 UK_SYNDICATIONS = [
     ("2026-11-24", "NEW IL 2043", "15-20y", 4_000.0, "Linker", "2043-11-22", 2.0, 2.15, "syndication"),
     ("2027-01-19", "NEW 2047", "20-30y", 6_000.0, "Nominal", "2047-07-31", 5.5, 5.5, "syndication"),
-    ("2027-03-02", "GB00BT7J0241", "20-30y", 5_250.0, "Nominal", "2056-01-31", 5.375, 5.82, "syndication"),
+    ("2027-03-02", "NEW 2039", "10-15y", 10_000.0, "Nominal", "2039-07-31", 5.0, 5.1, "syndication"),
     ("2027-04-13", "NEW 10y 2037", "10-15y", 15_000.0, "Nominal", "2037-07-31", 4.875, 4.9, "syndication pattern"),
     ("2027-06-08", "NEW 15y 2042", "10-15y", 9_000.0, "Nominal", "2042-01-31", 5.25, 5.3, "syndication pattern"),
     ("2027-07-13", "NEW IL 2043", "15-20y", 4_750.0, "Linker", "2043-11-22", 2.0, 2.15, "syndication pattern"),
@@ -112,12 +114,14 @@ UK_Q4_MENU = {
 }
 # Typical outright size by sector. Only breaks the tie when Q4 quotas exceed the dated slots.
 _UK_TYPICAL_MN = {"short": 5_000.0, "medium": 4_500.0, "long": 2_500.0, "IL": 1_250.0}
-# Gilt tenders. Q3 dates are the 24 Aug minutes (7 Oct, 13 Oct long, 29 Oct, 19 Nov); Q4 is two a
+# Gilt tenders. Q3 dates are the 24 Aug minutes (7 Oct, 13 Oct long, 29 Oct, 19 Nov) plus the fifth
+# programmatic tender the 28 Oct remit revision adds on 3 Dec (a conventional gilt, not named: booked
+# long, where the cancelled auctions were); Q4 is two a
 # month, the cadence the DMO has run since the unallocated pot was created. Cash is the unallocated
 # remainder in equal parts. FY27-28 has none here: the tape carries FY26-27's tenders as auctions,
 # so the H1 replay already repeats them.
 UK_TENDERS = [
-    ("2026-10-07", "short"), ("2026-10-13", "long"), ("2026-10-29", "medium"), ("2026-11-19", "short"),
+    ("2026-10-07", "short"), ("2026-10-13", "long"), ("2026-10-29", "medium"), ("2026-11-19", "short"), ("2026-12-03", "long"),
     ("2027-01-13", "medium"), ("2027-01-28", "long"), ("2027-02-03", "short"),
     ("2027-02-24", "medium"), ("2027-03-10", "long"), ("2027-03-17", "short"),
 ]
@@ -815,9 +819,10 @@ def uk_plan(ops: pd.DataFrame, asof: pd.Timestamp) -> tuple[list[dict], dict]:
         # Strict `<` on the cutoff day. `when <= asof` dropped 0⅛% 2028 on
         # 11 Nov 2026: DMO still showed AmountOnOffer £1,000mn and D2.1E had
         # no result, so the line chart stopped on the 8 Oct tap (£2,500mn).
-        cutoff = max(pd.Timestamp(asof).normalize(), pd.Timestamp(report).normalize())
+        # The remit report's sales to date include operations on its own date, so those go too.
         key = (when.strftime("%Y-%m-%d"), isin)
-        if when.normalize() < cutoff or when > HORIZON or key in seen:
+        if (when.normalize() < pd.Timestamp(asof).normalize() or when.normalize() <= pd.Timestamp(report).normalize()
+                or when > HORIZON or key in seen):
             return
         m = maturity(isin, mat)
         years = (m - when).days / 365.25 if m is not None else 10.0

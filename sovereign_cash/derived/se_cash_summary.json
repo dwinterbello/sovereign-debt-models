@@ -801,7 +801,7 @@
     "liquidity_mgmt_need_12m_bn": -52.5,
     "implied_net_bills_12m_bn_if_liq_mgmt_flat": -30.5,
     "bill_stock": {
-      "snapshot_date": "2026-11-15",
+      "snapshot_date": "2026-11-16",
       "snapshot_bill_stock_bn": 232.8,
       "bill_stock_end_last_outcome_bn": 212.8,
       "bill_stock_end_last_outcome_trade_bn": 212.8,

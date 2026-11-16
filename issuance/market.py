@@ -17,6 +17,8 @@ Sources, freshest first; a source that fails keeps the cached series:
       labelled in `source`. No 2y: the CTZ benchmark ended Aug-2021, so Italy's short leg is the 3y.
   FR, IT  OECD long-term (10y) rate via FRED fills months before the daily series (FR before
       2004-11; IT's OECD rate is the BdI 10y benchmark monthly mean to the bp). See fetch_ea_yields.
+  ES  OECD long-term (10y) rate via FRED only (monthly; no free daily Bonos curve), so its 10y
+      runs a month or two behind and its rvol10 is the DE proxy.
 
 Derived: s1030 = 30y − 10y; spread_de = 10y − Bund 10y (an OECD-filled month against the OECD Bund
 rate, so both legs are one measure); rel10 = 10y − mean of the UK/DE/US/JP 10y (FR/IT are daily
@@ -65,13 +67,13 @@ FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
 FRED_CACHE = CACHE / "fred"
 MOF_ALL = "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv"
 MOF_NOW = "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv"
-OECD = {"FR": "IRLTLT01FRM156N", "IT": "IRLTLT01ITM156N", "DE": "IRLTLT01DEM156N"}
+OECD = {"FR": "IRLTLT01FRM156N", "IT": "IRLTLT01ITM156N", "DE": "IRLTLT01DEM156N", "ES": "IRLTLT01ESM156N"}
 START = "2000-01-01"
 # rel10 peer mean. FR/IT have daily 10y too but are left out: three of six peers would be euro
 # area, and every country's rel10 would change definition.
 PEERS = ("UK", "DE", "US", "JP")
 DAILY = PEERS + ("FR", "IT")
-EURO = ("DE", "FR", "IT")
+EURO = ("DE", "FR", "IT", "ES")
 # Short leg for roll-down and the slope proxy, (series, maturity in years).
 SHORT = {"IT": ("y3", 3.0)}
 # Daily series written to the shared daily-yield caches, per country.
@@ -86,10 +88,12 @@ ACM_CACHE = REPO / "us" / "fiscal" / "data" / "cache" / "acm_daily.parquet"
 GDP_OUT = CACHE / "gdp_quarterly.parquet"
 # FRED id, factor to annualised local-currency bn.
 GDP_FRED = {"US": ("GDP", 1.0), "UK": ("UKNGDP", 4e-3), "DE": ("CPMNACSCAB1GQDE", 4e-3),
-            "FR": ("CPMNACSCAB1GQFR", 4e-3), "IT": ("CPMNACSCAB1GQIT", 4e-3), "JP": ("JPNNGDP", 1.0)}
+            "FR": ("CPMNACSCAB1GQFR", 4e-3), "IT": ("CPMNACSCAB1GQIT", 4e-3),
+            "ES": ("CPMNACSCAB1GQES", 4e-3), "JP": ("JPNNGDP", 1.0)}
 TP10_SOURCE = {"US": "ACM 10y term premium (NY Fed)", "UK": "10y gilt par − 10y SONIA OIS par",
                "DE": "10y − 2y (no free 10y OIS)", "JP": "10y − 2y (no free 10y OIS)",
-               "FR": "10y − 2y TEC (no free 10y OIS)", "IT": "10y − 3y BTP benchmark (no 2y BTP benchmark)"}
+               "FR": "10y − 2y TEC (no free 10y OIS)", "IT": "10y − 3y BTP benchmark (no 2y BTP benchmark)",
+               "ES": "10y (OECD monthly) − Bund 2y (no free daily Bonos curve)"}
 MARKET_META = {
     "rx10_3": {"label": "10y excess return, 3m", "unit": "bp", "scale": 100.0,
                "what": "Return of the 10y over the next 3 months minus the 3m rate: carry − duration × yield change "

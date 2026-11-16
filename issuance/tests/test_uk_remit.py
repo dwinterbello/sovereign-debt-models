@@ -45,7 +45,7 @@ def test_dmo_sectors_and_price():
 
 def test_uk_forward_meets_the_remit_in_cash_by_sector():
     rp = remit_progress()
-    rows, targets = forward.uk_plan(_tape(), pd.Timestamp("2026-09-30"))
+    rows, targets = forward.uk_plan(_tape(), rp["asof"])
     fit = forward._fit_cash([dict(r) for r in rows], targets)
     got: dict = {}
     for r in fit:
@@ -62,7 +62,7 @@ def test_uk_forward_meets_the_remit_in_cash_by_sector():
 
 def test_q4_auction_dates_go_to_the_sectors_with_auctions_left():
     rp = remit_progress()
-    rows, _ = forward.uk_plan(_tape(), pd.Timestamp("2026-09-30"))
+    rows, _ = forward.uk_plan(_tape(), rp["asof"])
     n = {s: 0 for s in SECTORS}
     for r in rows:
         period, s, method = r["_key"]
@@ -72,7 +72,8 @@ def test_q4_auction_dates_go_to_the_sectors_with_auctions_left():
     assert n["IL"] == rp["auctions_remaining"]["IL"]
     q4_long = [r for r in rows if r["_key"] == ("fy", "long", "auction") and r["op_dt"] >= pd.Timestamp("2027-01-01")]
     assert {r["isin"] for r in q4_long} <= set(forward.UK_Q4_MENU["long"])
-    assert len(q4_long) == 3
+    before = [r for r in rows if r["_key"] == ("fy", "long", "auction") and r["op_dt"] < pd.Timestamp("2027-01-01")]
+    assert len(q4_long) == rp["auctions_remaining"]["long"] - len(before)
 
 
 def test_fr_months_meet_the_net_programmes():

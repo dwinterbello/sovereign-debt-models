@@ -11,14 +11,14 @@
  "pb_meas_us_2025": 1.8415,
  "pb_gg_us_2026": 2.8464,
  "pb_meas_us_2026": 1.9662,
- "pb_gg_us_2027": 2.6875,
- "pb_meas_us_2027": 1.8073,
- "pb_gg_us_2028": 2.6705,
- "pb_meas_us_2028": 1.7904,
- "pb_gg_us_2029": 2.7388,
- "pb_meas_us_2029": 1.8586,
- "pb_gg_us_2030": 2.6657,
- "pb_meas_us_2030": 1.7856,
+ "pb_gg_us_2027": 2.68751207023504,
+ "pb_meas_us_2027": 1.8073410300251014,
+ "pb_gg_us_2028": 2.6705467916910255,
+ "pb_meas_us_2028": 1.7903757514810874,
+ "pb_gg_us_2029": 2.738767601528698,
+ "pb_meas_us_2029": 1.8585965613187598,
+ "pb_gg_us_2030": 2.665748279724273,
+ "pb_meas_us_2030": 1.7855772395143348,
  "rule_rec_us": "dts_fy",
  "rule_spend_us": "dts_fy",
  "policy_n_us": 7,
@@ -896,22 +896,22 @@
  "debt_path_n_cc": 0,
  "share_vintage_over_realised": null,
  "y_plan": 2030,
- "pb_gg_us_2027_lo": 2.4027484945912176,
- "pb_gg_us_2027_hi": 3.094235163942845,
- "pb_gg_us_2030_lo": 2.3714784602252115,
- "pb_gg_us_2030_hi": 3.1293539030965434,
+ "pb_gg_us_2027_lo": 2.401101829803367,
+ "pb_gg_us_2027_hi": 3.0929841416172796,
+ "pb_gg_us_2030_lo": 2.3647991849691614,
+ "pb_gg_us_2030_hi": 3.123727835976753,
  "us_sl_gap_2025": 0.07330196632855035,
- "pb_fed_cbo_us_2027": 2.6156929893191285,
+ "pb_fed_cbo_us_2027": 2.6142101039064896,
  "cbo_pb_2027": 2.3,
- "cbo_pb_2027_tariff": 2.5069822326056594,
- "us_rec_pct_2026": 16.796108769225246,
- "us_spend_pct_2026": 18.762281592832984,
- "us_rec_pct_2027": 16.705437416201207,
- "us_spend_pct_2027": 18.514261331638945,
- "us_rec_pct_2029": 16.54310616055835,
- "us_spend_pct_2029": 18.406168984449543,
+ "cbo_pb_2027_tariff": 2.5071006599937617,
+ "us_rec_pct_2026": 16.796527754479058,
+ "us_spend_pct_2026": 18.762749625007775,
+ "us_rec_pct_2027": 16.71195539265733,
+ "us_spend_pct_2027": 18.519296422682434,
+ "us_rec_pct_2029": 16.566879240775627,
+ "us_spend_pct_2029": 18.425475802094386,
  "_framework_sync": {
-  "date": "2026-11-14",
+  "date": "2026-11-16",
   "base": {
    "pb_gg_us_2027": 2.689,
    "pb_meas_us_2027": 1.8088,
@@ -926,50 +926,50 @@
    {
     "key": "pb_gg_us_2027",
     "reviewed": 2.689,
-    "now": 2.689,
-    "data_update": 1.7506,
-    "correction_today": -1.7506
+    "now": 2.6875,
+    "data_update": 1.7535,
+    "correction_today": -1.755
    },
    {
     "key": "pb_meas_us_2027",
     "reviewed": 1.8088,
-    "now": 1.8088
+    "now": 1.8073
    },
    {
     "key": "pb_gg_us_2028",
     "reviewed": 2.6735,
-    "now": 2.6735,
-    "data_update": 1.5641,
-    "correction_today": -1.5641
+    "now": 2.6705,
+    "data_update": 1.5711,
+    "correction_today": -1.574
    },
    {
     "key": "pb_meas_us_2028",
     "reviewed": 1.7934,
-    "now": 1.7934
+    "now": 1.7904
    },
    {
     "key": "pb_gg_us_2029",
     "reviewed": 2.7432,
-    "now": 2.7432,
-    "data_update": 1.6108,
-    "correction_today": -1.6108
+    "now": 2.7388,
+    "data_update": 1.6225,
+    "correction_today": -1.6269
    },
    {
     "key": "pb_meas_us_2029",
     "reviewed": 1.8631,
-    "now": 1.8631
+    "now": 1.8586
    },
    {
     "key": "pb_gg_us_2030",
     "reviewed": 2.6721,
-    "now": 2.6721,
-    "data_and_horizon_update": 1.7799,
-    "correction_today": -1.7799
+    "now": 2.6657,
+    "data_and_horizon_update": 1.7964,
+    "correction_today": -1.8027
    },
    {
     "key": "pb_meas_us_2030",
     "reviewed": 1.7919,
-    "now": 1.7919
+    "now": 1.7856
    }
   ],
   "source": "scenarios.channels.us_dts_adjust + scenarios.primary.US_DTS_TAX_OVERLAY"

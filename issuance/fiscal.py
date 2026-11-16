@@ -35,6 +35,9 @@ ROWS = (
     ("buffer_change_bn", "Change in cash buffer", "Treasury cash: + = builds."),
 )
 NO_FRAMEWORK: dict[str, str] = {}
+# Cash-only frameworks (sovereign_cash.thin_cash): no redemption, central-bank or bill lines, so no
+# private-net-bonds row.
+THIN = ("ES", "JP")
 
 
 def _summary(cc: str) -> dict:
@@ -118,6 +121,12 @@ def _basis(c: str, fw: dict) -> str:
         return (f"BTP gross: tape to {fw.get('bond_gross_tape_last_op', '—')}, then this board's calendar; announced "
                 "MEF issues already on that calendar are counted once. Same calendar as this board: differences are "
                 "timing and cash vs face only.")
+    if c in THIN:
+        what = ("IGAE central-government cash (calendar year)" if c == "ES"
+                else "MoF general-account cash after the tax gross-up (fiscal year April–March)")
+        return (f"Thin framework: {what}, with the whole monthly cash requirement financed by net bonds. "
+                "No bill, redemption or cash-buffer lines, so its gross bonds are net financing, not auctions: "
+                "the gap to this board's gross is redemptions plus bill and buffer moves.")
     return ""
 
 

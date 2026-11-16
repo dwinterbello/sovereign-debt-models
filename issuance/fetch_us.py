@@ -5,6 +5,7 @@ from __future__ import annotations
 import time
 
 import pandas as pd
+import requests
 
 from issuance.http import FetchError, session
 from issuance.paths import CACHE
@@ -194,8 +195,21 @@ def _buyback_ops(raw: pd.DataFrame, auctions: pd.DataFrame) -> pd.DataFrame:
     return b
 
 
+def _pages_or_cache(force: bool = False) -> pd.DataFrame:
+    """Fiscal Data pages; when the API is down (503s and timeouts, Nov-2026) the last cached pull,
+    so the TreasuryDirect top-up still runs instead of the whole US fetch failing."""
+    try:
+        return _pages(force=force)
+    except (requests.RequestException, FetchError) as exc:
+        cached = CACHE / "us_auctions_raw.parquet"
+        if not cached.exists():
+            raise
+        print(f"  WARNING Fiscal Data auctions_query failed ({type(exc).__name__}); using the cached pull")
+        return pd.read_parquet(cached)
+
+
 def fetch_us(force: bool = False) -> pd.DataFrame:
-    raw = _top_up(_pages(force=force))
+    raw = _top_up(_pages_or_cache(force=force))
     last = pd.to_datetime(raw.loc[pd.to_numeric(raw["total_accepted"], errors="coerce") > 0, "auction_date"]).max()
     if pd.notna(last) and (pd.Timestamp.today().normalize() - last).days > 7:
         print(f"  WARNING US auction tape ends {last:%Y-%m-%d} — Fiscal Data and TreasuryDirect both stale")

@@ -4,7 +4,14 @@ from issuance.forward import project
 from issuance.lines import _paint_bucket
 
 
-def test_uk_forward_is_the_d5d_calendar():
+def _pin_sep_remit(monkeypatch):
+    """These cases are the 30 Sep origin; pin the remit report of that date (29 Sep), not the live one."""
+    from issuance import uk_remit
+    monkeypatch.setattr(uk_remit, "remit_progress", lambda *a, **k: dict(uk_remit.FALLBACK))
+
+
+def test_uk_forward_is_the_d5d_calendar(monkeypatch):
+    _pin_sep_remit(monkeypatch)
     from issuance.forward import UK_CALENDAR
     from issuance.uk_remit import remit_progress
 
@@ -156,7 +163,8 @@ def test_uk_syndications_close_the_remit_programmes():
     assert synd["maturity_dt"].notna().all()
 
 
-def test_uk_calendar_does_not_invent_a_gilt():
+def test_uk_calendar_does_not_invent_a_gilt(monkeypatch):
+    _pin_sep_remit(monkeypatch)
     asof = pd.Timestamp("2026-09-30")
     ops = pd.DataFrame({
         "op_dt": [pd.Timestamp("2026-01-15")],

@@ -54,3 +54,20 @@ def test_it_buyback_announcement_and_results_parse():
     # An issuance release (Importo assegnato) is not a buyback.
     assert fetch_it.parse_bdi_buyback_results("ISIN IT0005729931\nImporto assegnato 3.500.000.000",
                                               ["IT0005729931"]) == {}
+
+
+def test_us_fiscal_data_outage_falls_back_to_cache(monkeypatch, tmp_path):
+    import requests
+
+    from issuance import fetch_us as U
+
+    cached = pd.DataFrame({"cusip": ["91282CAA1"], "auction_date": ["2026-10-06"], "total_accepted": [5.9e10]})
+    cached.to_parquet(tmp_path / "us_auctions_raw.parquet", index=False)
+    monkeypatch.setattr(U, "CACHE", tmp_path)
+
+    def down(force=False):
+        raise requests.HTTPError("503 Server Error: Service Unavailable")
+
+    monkeypatch.setattr(U, "_pages", down)
+    got = U._pages_or_cache(force=True)
+    assert list(got["cusip"]) == ["91282CAA1"]

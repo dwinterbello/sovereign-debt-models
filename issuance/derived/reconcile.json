@@ -2191,17 +2191,17 @@
       {
         "year": 2026,
         "sec_type": "Bill",
-        "ops_mn": 93744.0
+        "ops_mn": 102863.41
       },
       {
         "year": 2026,
         "sec_type": "Linker",
-        "ops_mn": 7306.0
+        "ops_mn": 8926.01
       },
       {
         "year": 2026,
         "sec_type": "Nominal",
-        "ops_mn": 157174.0
+        "ops_mn": 162640.13
       }
     ],
     "US": [
@@ -2553,7 +2553,7 @@
       {
         "year": 2008,
         "sec_type": "Bill",
-        "ops_mn": 5704736.7042
+        "ops_mn": 5704736.7042000005
       },
       {
         "year": 2008,
@@ -2883,22 +2883,22 @@
       {
         "year": 2026,
         "sec_type": "Bill",
-        "ops_mn": 24781740.7605
+        "ops_mn": 22277917.6151
       },
       {
         "year": 2026,
         "sec_type": "FRN",
-        "ops_mn": 300541.5397
+        "ops_mn": 267207.9632
       },
       {
         "year": 2026,
         "sec_type": "Linker",
-        "ops_mn": 207038.898
+        "ops_mn": 181038.8695
       },
       {
         "year": 2026,
         "sec_type": "Nominal",
-        "ops_mn": 3728075.1286
+        "ops_mn": 3361384.3349
       }
     ],
     "JP": [
@@ -4133,41 +4133,104 @@
   },
   "us_raw": {
     "status": "ok",
-    "ops_mn": 331875700.5,
-    "raw_accepted_mn": 331875700.5,
+    "ops_mn": 328945853.0,
+    "raw_accepted_mn": 328945853.0,
     "gap_mn": 0.0,
     "tol_mn": 1000.0
   },
   "us_coupon_vs_fiscal": {
     "status": "ok",
     "tol_pct": 0.03,
-    "total_issuance_bn": 3625.6,
+    "total_issuance_bn": 3549.7,
     "total_fiscal_bn": 3638.7,
     "quarters": {
       "2027Q1": {
-        "issuance_bn": 1081.5,
+        "issuance_bn": 1058.7,
         "fiscal_bn": 1085.1,
-        "gap_pct": -0.0033
+        "gap_pct": -0.0243
       },
       "2027Q2": {
-        "issuance_bn": 1097.8,
+        "issuance_bn": 1075.4,
         "fiscal_bn": 1105.6,
-        "gap_pct": -0.0071
+        "gap_pct": -0.0273
       },
       "2027Q3": {
-        "issuance_bn": 1080.6,
+        "issuance_bn": 1057.7,
         "fiscal_bn": 1083.1,
-        "gap_pct": -0.0022
+        "gap_pct": -0.0234
       }
     },
     "months_flagged": {
-      "2027-02-01": 0.0367,
-      "2027-03-01": -0.03,
-      "2027-07-01": -0.0965
+      "2027-01-01": -0.0422,
+      "2027-03-01": -0.0454,
+      "2027-05-01": -0.0462,
+      "2027-07-01": -0.1402
     }
   },
   "official_totals": {
-    "status": "error",
-    "error": "ModuleNotFoundError(\"No module named 'pypdf'\")"
+    "US": {
+      "status": "FAIL",
+      "official": "us/fiscal/data/cache/dts_table3a.parquet",
+      "n": 10,
+      "n_fail": 2,
+      "n_fail_target": 2,
+      "worst_pct": 0.0884
+    },
+    "UK": {
+      "status": "ok",
+      "official": "data/raw/uk/D2_1A.pdf",
+      "n": 93,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0475
+    },
+    "DE": {
+      "status": "ok",
+      "official": "sovereign_cash/data/de/schuldenbericht_dt.xlsx",
+      "n": 36,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0112
+    },
+    "FR": {
+      "status": "ok",
+      "official": "sovereign_cash/data/fr/plan.json",
+      "n": 1,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0153
+    },
+    "IT": {
+      "status": "ok",
+      "official": "data/raw/mef/bdi/storico_aste/Aste dal 2002 al 2025.xlsx",
+      "n": 44,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0087
+    },
+    "ES": {
+      "status": "ok",
+      "official": "data/raw/es/tesoro/13_net_financing.xlsx",
+      "n": 9,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0105
+    },
+    "JP": {
+      "status": "ok",
+      "official": "data/raw/jp/highlight251226.pdf",
+      "n": 2,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0173
+    },
+    "SE": {
+      "status": "ok",
+      "official": "sovereign_cash/data/se/auctions.csv",
+      "n": 36,
+      "n_fail": 0,
+      "n_fail_target": 0,
+      "worst_pct": 0.0
+    }
   }
 }

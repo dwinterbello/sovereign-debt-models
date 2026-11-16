@@ -1524,14 +1524,14 @@
    "sa_equity_it_w": 1.0
   },
   "cgncr_bottomup_reason": "PRE edge inside band or worse at >1 horizon",
-  "gilt_gross_12m_bn": 249.231,
+  "gilt_gross_12m_bn": 249.388,
   "gilt_redemptions_12m_bn": 675.587,
   "cb_held_redemptions_12m_bn": 145.826,
-  "gilt_net_12m_bn": -426.356,
-  "private_net_bonds_12m_bn": -280.531,
+  "gilt_net_12m_bn": -426.2,
+  "private_net_bonds_12m_bn": -280.374,
   "private_net_bonds_fy_bn": 15.153,
-  "private_net_bonds_assumed_bn": -295.683,
-  "gilt_gross_assumed_bn": 140.747,
+  "private_net_bonds_assumed_bn": -295.527,
+  "gilt_gross_assumed_bn": 140.904,
   "remit_remaining_bn": 80.085,
   "remit_window": "Dec-26..Mar-27",
   "remit_per_month_bn": 20.021,
@@ -1540,7 +1540,7 @@
   "net_bills_12m_bn": 12.317,
   "bill_stock_last_obs_bn": 94.193,
   "bill_stock_implied_end_bn": 106.51,
-  "buffer_change_12m_bn": -912.714,
+  "buffer_change_12m_bn": -912.557,
   "redemption_calendar": [
    {
     "month": "2026-10-01",
@@ -1922,19 +1922,19 @@
     "cgncr_model": 13.414,
     "cgncr_official": 14.356,
     "cgncr_bottomup": 10.968,
-    "gilt_gross": 17.969,
+    "gilt_gross": 16.586,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 17.969,
-    "gilt_net_private": 17.969,
+    "gilt_net": 16.586,
+    "gilt_net_private": 16.586,
     "nsandi": 0.395,
     "remit_other": 0.083,
-    "net_bills": 1.319,
-    "net_bills_model": -1.278,
+    "net_bills": 1.65,
+    "net_bills_model": -0.946,
     "net_bills_pinned": false,
-    "bill_stock_implied": 99.406,
-    "buffer_change": 6.352,
-    "buffer_level": 15.172,
+    "bill_stock_implied": 99.737,
+    "buffer_change": 5.301,
+    "buffer_level": 14.12,
     "assumed": false
    },
    {
@@ -1943,19 +1943,19 @@
     "cgncr_model": 15.414,
     "cgncr_official": 16.692,
     "cgncr_bottomup": 11.726,
-    "gilt_gross": 14.297,
+    "gilt_gross": 16.039,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 14.297,
-    "gilt_net_private": 14.297,
+    "gilt_net": 16.039,
+    "gilt_net_private": 16.039,
     "nsandi": 0.76,
     "remit_other": 0.083,
-    "net_bills": 1.584,
-    "net_bills_model": -1.012,
+    "net_bills": 1.167,
+    "net_bills_model": -1.43,
     "net_bills_pinned": false,
-    "bill_stock_implied": 100.99,
-    "buffer_change": 1.311,
-    "buffer_level": 16.482,
+    "bill_stock_implied": 100.904,
+    "buffer_change": 2.635,
+    "buffer_level": 16.755,
     "assumed": false
    },
    {
@@ -1964,19 +1964,19 @@
     "cgncr_model": -26.445,
     "cgncr_official": -25.546,
     "cgncr_bottomup": -25.798,
-    "gilt_gross": 23.136,
+    "gilt_gross": 21.233,
     "redemptions": 31.121,
     "redemptions_cb": 0.0,
-    "gilt_net": -7.985,
-    "gilt_net_private": -7.985,
+    "gilt_net": -9.888,
+    "gilt_net_private": -9.888,
     "nsandi": 0.03,
     "remit_other": 0.083,
-    "net_bills": -5.762,
-    "net_bills_model": -8.359,
+    "net_bills": -5.306,
+    "net_bills_model": -7.903,
     "net_bills_pinned": false,
-    "bill_stock_implied": 95.228,
-    "buffer_change": 12.812,
-    "buffer_level": 29.295,
+    "bill_stock_implied": 95.598,
+    "buffer_change": 11.365,
+    "buffer_level": 28.12,
     "assumed": false
    },
    {
@@ -1985,19 +1985,19 @@
     "cgncr_model": 7.146,
     "cgncr_official": 7.715,
     "cgncr_bottomup": 14.056,
-    "gilt_gross": 15.44,
+    "gilt_gross": 12.493,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 15.44,
-    "gilt_net_private": 15.44,
+    "gilt_net": 12.493,
+    "gilt_net_private": 12.493,
     "nsandi": 1.0,
     "remit_other": 0.083,
-    "net_bills": 1.205,
-    "net_bills_model": -1.391,
+    "net_bills": 1.911,
+    "net_bills_model": -0.686,
     "net_bills_pinned": false,
-    "bill_stock_implied": 96.433,
-    "buffer_change": 10.582,
-    "buffer_level": 39.877,
+    "bill_stock_implied": 97.509,
+    "buffer_change": 8.342,
+    "buffer_level": 36.462,
     "assumed": false
    },
    {
@@ -2006,18 +2006,18 @@
     "cgncr_model": 24.015,
     "cgncr_official": 25.309,
     "cgncr_bottomup": 25.019,
-    "gilt_gross": 18.07,
+    "gilt_gross": 22.56,
     "redemptions": 36.386,
     "redemptions_cb": 0.0,
-    "gilt_net": -18.316,
-    "gilt_net_private": -18.316,
+    "gilt_net": -13.825,
+    "gilt_net_private": -13.825,
     "nsandi": 1.42,
     "remit_other": 0.083,
-    "net_bills": 10.077,
-    "net_bills_model": 7.48,
+    "net_bills": 9.001,
+    "net_bills_model": 6.404,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": -30.751,
+    "buffer_change": -27.336,
     "buffer_level": 9.126,
     "assumed": false
    },
@@ -2027,19 +2027,19 @@
     "cgncr_model": 14.912,
     "cgncr_official": 17.589,
     "cgncr_bottomup": 13.652,
-    "gilt_gross": 27.471,
+    "gilt_gross": 27.42,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 27.471,
-    "gilt_net_private": 27.471,
+    "gilt_net": 27.42,
+    "gilt_net_private": 27.42,
     "nsandi": 0.823,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": -0.929,
+    "net_bills_model": -0.916,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": 10.705,
-    "buffer_level": 19.831,
+    "buffer_change": 10.655,
+    "buffer_level": 19.78,
     "assumed": true
    },
    {
@@ -2048,19 +2048,19 @@
     "cgncr_model": 22.753,
     "cgncr_official": 20.579,
     "cgncr_bottomup": 23.224,
-    "gilt_gross": 17.464,
+    "gilt_gross": 17.532,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 17.464,
-    "gilt_net_private": 17.464,
+    "gilt_net": 17.532,
+    "gilt_net_private": 17.532,
     "nsandi": 0.44,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": 1.878,
+    "net_bills_model": 1.861,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": -2.674,
-    "buffer_level": 17.157,
+    "buffer_change": -2.607,
+    "buffer_level": 17.174,
     "assumed": true
    },
    {
@@ -2069,19 +2069,19 @@
     "cgncr_model": 14.581,
     "cgncr_official": 17.452,
     "cgncr_bottomup": 16.905,
-    "gilt_gross": 31.43,
+    "gilt_gross": 31.616,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 31.43,
-    "gilt_net_private": 31.43,
+    "gilt_net": 31.616,
+    "gilt_net_private": 31.616,
     "nsandi": 0.118,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": -1.628,
+    "net_bills_model": -1.672,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": 14.096,
-    "buffer_level": 31.253,
+    "buffer_change": 14.282,
+    "buffer_level": 31.456,
     "assumed": true
    },
    {
@@ -2090,19 +2090,19 @@
     "cgncr_model": 11.022,
     "cgncr_official": 6.648,
     "cgncr_bottomup": 0.066,
-    "gilt_gross": 26.588,
+    "gilt_gross": 26.628,
     "redemptions": 38.704,
     "redemptions_cb": 23.428,
-    "gilt_net": -12.116,
-    "gilt_net_private": 11.312,
+    "gilt_net": -12.076,
+    "gilt_net_private": 11.352,
     "nsandi": 0.423,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": 8.875,
+    "net_bills_model": 8.865,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": -18.341,
-    "buffer_level": 12.912,
+    "buffer_change": -18.3,
+    "buffer_level": 13.155,
     "assumed": true
    },
    {
@@ -2111,19 +2111,19 @@
     "cgncr_model": 8.963,
     "cgncr_official": 9.254,
     "cgncr_bottomup": 7.914,
-    "gilt_gross": 15.715,
+    "gilt_gross": 15.664,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 15.715,
-    "gilt_net_private": 15.715,
+    "gilt_net": 15.664,
+    "gilt_net_private": 15.664,
     "nsandi": 1.23,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": 3.359,
+    "net_bills_model": 3.371,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": 7.692,
-    "buffer_level": 20.604,
+    "buffer_change": 7.64,
+    "buffer_level": 20.796,
     "assumed": true
    },
    {
@@ -2132,19 +2132,19 @@
     "cgncr_model": 13.512,
     "cgncr_official": 17.047,
     "cgncr_bottomup": 14.896,
-    "gilt_gross": 22.079,
+    "gilt_gross": 22.043,
     "redemptions": 0.0,
     "redemptions_cb": 0.0,
-    "gilt_net": 22.079,
-    "gilt_net_private": 22.079,
+    "gilt_net": 22.043,
+    "gilt_net_private": 22.043,
     "nsandi": 0.635,
     "remit_other": 0.0,
     "net_bills": 0.0,
-    "net_bills_model": -2.856,
+    "net_bills_model": -2.848,
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
-    "buffer_change": 5.667,
-    "buffer_level": 26.271,
+    "buffer_change": 5.632,
+    "buffer_level": 26.427,
     "assumed": true
    },
    {
@@ -2165,7 +2165,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -14.667,
-    "buffer_level": 11.604,
+    "buffer_level": 11.76,
     "assumed": true
    },
    {
@@ -2186,7 +2186,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -30.046,
-    "buffer_level": -18.443,
+    "buffer_level": -18.286,
     "assumed": true
    },
    {
@@ -2207,7 +2207,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -42.348,
-    "buffer_level": -60.791,
+    "buffer_level": -60.634,
     "assumed": true
    },
    {
@@ -2228,7 +2228,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -14.071,
-    "buffer_level": -74.862,
+    "buffer_level": -74.705,
     "assumed": true
    },
    {
@@ -2249,7 +2249,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -7.209,
-    "buffer_level": -82.071,
+    "buffer_level": -81.914,
     "assumed": true
    },
    {
@@ -2270,7 +2270,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -72.463,
-    "buffer_level": -154.534,
+    "buffer_level": -154.378,
     "assumed": true
    },
    {
@@ -2291,7 +2291,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -17.211,
-    "buffer_level": -171.746,
+    "buffer_level": -171.589,
     "assumed": true
    },
    {
@@ -2312,7 +2312,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -20.66,
-    "buffer_level": -192.405,
+    "buffer_level": -192.248,
     "assumed": true
    },
    {
@@ -2333,7 +2333,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -52.185,
-    "buffer_level": -244.59,
+    "buffer_level": -244.433,
     "assumed": true
    },
    {
@@ -2354,7 +2354,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -6.393,
-    "buffer_level": -250.983,
+    "buffer_level": -250.826,
     "assumed": true
    },
    {
@@ -2375,7 +2375,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -26.815,
-    "buffer_level": -277.798,
+    "buffer_level": -277.642,
     "assumed": true
    },
    {
@@ -2396,7 +2396,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -16.843,
-    "buffer_level": -294.642,
+    "buffer_level": -294.485,
     "assumed": true
    },
    {
@@ -2417,7 +2417,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -50.931,
-    "buffer_level": -345.572,
+    "buffer_level": -345.416,
     "assumed": true
    },
    {
@@ -2438,7 +2438,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -15.268,
-    "buffer_level": -360.84,
+    "buffer_level": -360.684,
     "assumed": true
    },
    {
@@ -2459,7 +2459,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -30.898,
-    "buffer_level": -391.738,
+    "buffer_level": -391.581,
     "assumed": true
    },
    {
@@ -2480,7 +2480,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -4.385,
-    "buffer_level": -396.123,
+    "buffer_level": -395.966,
     "assumed": true
    },
    {
@@ -2501,7 +2501,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -7.417,
-    "buffer_level": -403.54,
+    "buffer_level": -403.383,
     "assumed": true
    },
    {
@@ -2522,7 +2522,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -42.266,
-    "buffer_level": -445.806,
+    "buffer_level": -445.649,
     "assumed": true
    },
    {
@@ -2543,7 +2543,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -9.242,
-    "buffer_level": -455.047,
+    "buffer_level": -454.891,
     "assumed": true
    },
    {
@@ -2564,7 +2564,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -53.382,
-    "buffer_level": -508.429,
+    "buffer_level": -508.272,
     "assumed": true
    },
    {
@@ -2585,7 +2585,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -9.868,
-    "buffer_level": -518.297,
+    "buffer_level": -518.14,
     "assumed": true
    },
    {
@@ -2606,7 +2606,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -40.739,
-    "buffer_level": -559.036,
+    "buffer_level": -558.879,
     "assumed": true
    },
    {
@@ -2627,7 +2627,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -4.065,
-    "buffer_level": -563.101,
+    "buffer_level": -562.944,
     "assumed": true
    },
    {
@@ -2648,7 +2648,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -9.119,
-    "buffer_level": -572.22,
+    "buffer_level": -572.063,
     "assumed": true
    },
    {
@@ -2669,7 +2669,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -49.156,
-    "buffer_level": -621.376,
+    "buffer_level": -621.22,
     "assumed": true
    },
    {
@@ -2690,7 +2690,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -8.346,
-    "buffer_level": -629.723,
+    "buffer_level": -629.566,
     "assumed": true
    },
    {
@@ -2711,7 +2711,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -9.404,
-    "buffer_level": -639.126,
+    "buffer_level": -638.97,
     "assumed": true
    },
    {
@@ -2732,7 +2732,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": 15.585,
-    "buffer_level": -623.541,
+    "buffer_level": -623.384,
     "assumed": true
    },
    {
@@ -2753,7 +2753,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -3.697,
-    "buffer_level": -627.238,
+    "buffer_level": -627.081,
     "assumed": true
    },
    {
@@ -2774,7 +2774,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -58.968,
-    "buffer_level": -686.206,
+    "buffer_level": -686.049,
     "assumed": true
    },
    {
@@ -2795,7 +2795,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -12.998,
-    "buffer_level": -699.203,
+    "buffer_level": -699.047,
     "assumed": true
    },
    {
@@ -2816,7 +2816,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -25.73,
-    "buffer_level": -724.933,
+    "buffer_level": -724.776,
     "assumed": true
    },
    {
@@ -2837,7 +2837,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -13.595,
-    "buffer_level": -738.528,
+    "buffer_level": -738.371,
     "assumed": true
    },
    {
@@ -2858,7 +2858,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -10.081,
-    "buffer_level": -748.609,
+    "buffer_level": -748.453,
     "assumed": true
    },
    {
@@ -2879,7 +2879,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -6.041,
-    "buffer_level": -754.651,
+    "buffer_level": -754.494,
     "assumed": true
    },
    {
@@ -2900,7 +2900,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -12.76,
-    "buffer_level": -767.41,
+    "buffer_level": -767.254,
     "assumed": true
    },
    {
@@ -2921,7 +2921,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -50.963,
-    "buffer_level": -818.373,
+    "buffer_level": -818.217,
     "assumed": true
    },
    {
@@ -2942,7 +2942,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -11.608,
-    "buffer_level": -829.982,
+    "buffer_level": -829.825,
     "assumed": true
    },
    {
@@ -2963,7 +2963,7 @@
     "net_bills_pinned": false,
     "bill_stock_implied": 106.51,
     "buffer_change": -50.579,
-    "buffer_level": -880.561,
+    "buffer_level": -880.405,
     "assumed": true
    }
   ]
@@ -2971,7 +2971,7 @@
  "notes": [
   "Next-revision gap +\u00a32.2bn (\u00b1 \u00a319.2bn out-of-sample error): NS&I +\u00a35.6bn, CGNCR \u2212\u00a33.3bn. NS&I at remit: \u2212\u00a33.4bn; CGNCR on the model instead of seasonal, 3y month effects: +\u00a32.2bn.",
   "Assumption: cash-management bills at end-March held at the last FY-end level (\u00a36.8bn); the DMO publishes the split at FY-end only.",
-  "Assumption: months after March use forward-plan gilt nominal \u00d7 realised cash/nominal (\u00a3140.7bn gross); no remit is published for them.",
+  "Assumption: months after March use forward-plan gilt nominal \u00d7 realised cash/nominal (\u00a3140.9bn gross); no remit is published for them.",
   "Bill path to March is solved so DMO net cash meets the remit's \u00a32.3bn; the solve is spread evenly over the free months; Oct-26 pinned from weekly tenders.",
   "Buffer = DMO net cash + cash-management bills; monthly proxy is CG net deposits with banks (ONS ANSZ + ANTB), pinned to the latest DMR end-March outturn.",
   "Gilt cash = clean price \u00d7 nominal \u00d7 index ratio (no accrued). Redemptions net out CRND/DMO holdings; APF-held redemptions are Exchequer cash paid to the Bank, so private net supply adds them back.",
