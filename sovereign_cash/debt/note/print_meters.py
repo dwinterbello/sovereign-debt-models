@@ -23,6 +23,7 @@ DERIVED_DEBT = REPO / "sovereign_cash" / "debt" / "derived"
 UK_PROFILE = REPO / "sovereign_cash" / "data" / "uk" / "obr_psnb_profile_ytd.json"
 PF = REPO / "uk_flows" / "output" / "public_finances.parquet"
 OBR = REPO / "sovereign_cash" / "data" / "debt" / "obr_lines.parquet"
+OBR_A9 = REPO / "sovereign_cash" / "data" / "debt" / "obr.parquet"  # newest EFO Table A.9 (debt sources cache)
 SPIKE_PATH = NOTE / "print_meters_spike.json"
 
 PRE = (pd.Timestamp("2012-04-01"), pd.Timestamp("2019-03-01"))
@@ -50,10 +51,26 @@ def uk_psnb_monthly() -> pd.Series:
 
 
 def uk_obr_annual_psnb() -> dict[int, float]:
-    """OBR EFO PSNB by FY-start year (2026 → FY2026-27)."""
-    obr = pd.read_parquet(OBR)
-    rows = obr[obr["var"].eq("psnb_bn")][["year", "value"]].drop_duplicates()
-    return {int(r.year): float(r.value) for r in rows.itertuples(index=False)}
+    """OBR EFO PSNB by FY-start year (2026 → FY2026-27), from the newest EFO held.
+
+    ``obr_lines`` is the March 2026 table and was never refreshed; the debt-sources A.9 cache
+    (``deficit_bn`` = PSNB) moves with each EFO (October 2026: FY26-27 £133.2bn). The newer vintage
+    wins year by year; the older one fills years it does not cover."""
+    from sovereign_cash.debt.sources import _vintage_date
+
+    frames = []
+    if OBR.exists():
+        o = pd.read_parquet(OBR)
+        frames.append(o[o["var"].eq("psnb_bn")])
+    if OBR_A9.exists():
+        o = pd.read_parquet(OBR_A9)
+        frames.append(o[o["var"].eq("deficit_bn") & o["basis"].eq("fy")])
+    if not frames:
+        return {}
+    d = pd.concat(frames, ignore_index=True)
+    d["_v"] = d["vintage"].map(_vintage_date)
+    d = d.sort_values("_v", na_position="first").drop_duplicates("year", keep="last")
+    return {int(r.year): float(r.value) for r in d.itertuples(index=False)}
 
 
 def uk_profile_stub() -> dict:

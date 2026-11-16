@@ -833,7 +833,12 @@ def build(write: bool = True) -> tuple[pd.DataFrame, dict]:
                                                               if pd.Timestamp(d) > last_obs
                                                               and (pd.Timestamp(d).year, _quarter(pd.Timestamp(d))) == (y, q))),
                                           "path_bn": s(nbm[(nbm["month"].dt.year == y)
-                                                           & ((nbm["month"].dt.month - 1) // 3 + 1 == q)], "bond_gross_bn")}
+                                                           & ((nbm["month"].dt.month - 1) // 3 + 1 == q)], "bond_gross_bn"),
+                                          # issued in the quarter so far: path_bn is the remaining auctions only,
+                                          # so the guidance range applies to issued_bn + path_bn
+                                          "issued_bn": round(float(-fl.loc[(fl.index.year == y)
+                                                                           & ((fl.index.month - 1) // 3 + 1 == q),
+                                                                           "bond_issue"].sum()), 1)}
                                          for (y, q), b in sorted(gq.items())],
                     "next_programme_published": str(yr_now + 1) in CAL["programmes"],
                     "scenario_basis": (scen["ngb_gross_basis"].iloc[0] if len(scen) else None)},
@@ -878,7 +883,7 @@ def build(write: bool = True) -> tuple[pd.DataFrame, dict]:
             (f"Bottom-up Tab4×macro (v2): {'SHIP' if bu_report['ship'] else 'NO-SHIP'} — PRE mean MAE "
              f"{bu_report['pre_mean_mae']['bottom_up']} vs production smly "
              f"{bu_report['pre_mean_mae']['production_smly']} on beyond-NB months "
-             f"({bu_report['ship_reason']}). cash_requirement_bottomup_bn "
+             f"({bu_report['ship_reason']}). The bottom-up path "
              f"{'replaces' if bu_report['ship'] else 'does not replace'} the live path beyond NB. "
              f"v1 Tab4 smly rejected."),
             (f"Buybacks: median share of the market amount bought back in the last {nxt['days_left']} days before "

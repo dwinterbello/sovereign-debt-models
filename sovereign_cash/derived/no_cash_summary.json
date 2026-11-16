@@ -93,7 +93,7 @@
       "2023-01": 4.62,
       "2023-12": -5.5,
       "2024-01": 5.5,
-      "2024-12": -0.86,
+      "2024-12": -0.85,
       "2025-01": 0.86,
       "2025-12": -12.37,
       "2026-01": 12.37
@@ -577,7 +577,8 @@
             19.0
           ],
           "auctions": 4,
-          "path_bn": 7.5
+          "path_bn": 7.5,
+          "issued_bn": 10.0
         }
       ],
       "next_programme_published": false,
@@ -828,7 +829,7 @@
     "History from Jan-2008; Norges Bank forecast vintages from Jan-2014. Nov-2026 is partial: 7 of 21 business days observed; the rest is Norges Bank's realised structural liquidity, booked to fiscal flows.",
     "Inside Norges Bank's path, fiscal flows are a residual: Norges Bank's structural-liquidity change less this page's NGB, T-bill, fund-FX and notes-and-coins paths. Not an official forecast; shown as a total only.",
     "After 31 Dec 2026 the chart shows a scenario: fiscal flows are Tab4×macro (mainland GDP + Brent; SHIP); NGB gross 2026 programme midpoint × 2023–2025 month shares (no 2027 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2028 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2029 programme yet); 2026 programme midpoint × 2023–2025 month shares (no 2030 programme yet); T-bill maturities rolled at constant stock; oil-fund FX at the latest announcement.",
-    "Bottom-up Tab4×macro (v2): SHIP — PRE mean MAE 5.95 vs production smly 6.73 on beyond-NB months (PRE gate passed). cash_requirement_bottomup_bn replaces the live path beyond NB. v1 Tab4 smly rejected.",
+    "Bottom-up Tab4×macro (v2): SHIP — PRE mean MAE 5.95 vs production smly 6.73 on beyond-NB months (PRE gate passed). The bottom-up path replaces the live path beyond NB. v1 Tab4 smly rejected.",
     "Buybacks: median share of the market amount bought back in the last 99 days before maturity, 8 bonds since 2015: 4% (range 0–23%).",
     "Central-bank certificates since May-2026 drain reserves; total liquidity = structural liquidity less certificates and F-deposits plus F-loans.",
     "Norges Bank's two datasets agree month by month: median gap 0.00bn; 27 of 153 months above 0.5bn, 20 of them December/January (31 December is not a statistics business day).",

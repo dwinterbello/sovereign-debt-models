@@ -543,7 +543,11 @@ def forward(d: dict, y: pd.Series, chosen: str, method: str, carry: float) -> tu
             "auction_observed_months": [f"{m:%Y-%m}" for m in observed],
             "tenor_profile_months": {int(kk): round(float(v), 3) for kk, v in p.items()},
             "bill_calendar": bill_meta, "nominal_calendar": nom_meta, "fx_bond_month": fxm,
-            "horizon_end": f"{months_all.max():%Y-%m}"}
+            "horizon_end": f"{months_all.max():%Y-%m}",
+            # unrounded anchors for the implied stock path (the rounded ones above are for display: anchoring on
+            # them left the year-end stock up to 0.05bn off the plan the forward glides to)
+            "_anchor_bn": float(s_origin),
+            "_anchor_trade_bn": float(bill_stock_at(_month_end(origin), snap_stock, snap, lad, on="date"))}
     return fw, meta
 
 
@@ -608,7 +612,7 @@ def build(write: bool = True) -> tuple[pd.DataFrame, dict]:
     # Bill stock: cumulated net bills anchored at the close of the last outcome month. CH1044 history books bills
     # on trade date and the forward path on settlement, so each side takes the anchor on its own basis.
     cum = nb.cumsum() - nb.cumsum()[df["month"] == last_hist].iloc[0]
-    anchor = np.where(hist_mask, meta["bill_stock_end_last_outcome_trade_bn"], meta["bill_stock_end_last_outcome_bn"])
+    anchor = np.where(hist_mask, meta.pop("_anchor_trade_bn"), meta.pop("_anchor_bn"))
     df["bill_stock_implied_bn"] = anchor + cum
     df["buffer_level_implied_bn"] = df["buffer_change_bn"].fillna(0.0).cumsum()
     # Liquidity-management stock (borrowing +): Riksgälden's latest year-end outcome plus cumulated −Δbuffer.

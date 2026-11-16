@@ -122,11 +122,16 @@ def test_zero_shock_is_exactly_zero():
 
 
 def test_growth_leg_is_linear_and_antisymmetric_outside_the_us():
+    # Since 0339d5bc5 corporate tax is stressed in a downturn only (CIT_STRESS; losses carried forward absorb an
+    # upturn), so it is antisymmetric up to that factor; every other line stays exactly antisymmetric.
     for cc in ("de", "fr", "it", "es", "jp"):
-        dn, up = C.response(cc, -2.0, YRS, 2026), C.response(cc, 2.0, YRS, 2026)
+        dn, up = C.lines(cc, -2.0, YRS, 2026), C.lines(cc, 2.0, YRS, 2026)
         for y in YRS:
-            for k in ("d_rev", "d_spend"):
-                assert abs(dn[y][k] + up[y][k]) <= 1e-9 * max(1.0, abs(dn[y][k]))
+            assert set(dn[y]) == set(up[y])
+            for k in dn[y]:
+                a, b = dn[y][k], up[y][k]
+                f = C.CIT_STRESS.get(y - 2026, 1.0) if k == "cit" else 1.0
+                assert abs(a + f * b) <= 1e-9 * max(1.0, abs(a)), (cc, y, k)
 
 
 def test_spain_unemployment_weight_is_rebased_to_today():
@@ -134,10 +139,14 @@ def test_spain_unemployment_weight_is_rebased_to_today():
     assert abs(C.balance_semi_elasticity("es", 2027) - 0.63) < 0.06  # back to OECD / EC semi-elasticity
 
 
-def test_corporate_tax_moves_on_the_common_profit_path():
+def test_corporate_tax_moves_on_the_oecd_gap_elasticity_with_downturn_stress():
+    # 0339d5bc5 moved DE/FR/IT/ES/JP corporate tax off the common profit path (now US and UK only) onto the OECD
+    # output-gap elasticity, today's CIT revenue share, CIT_STRESS in a downturn and the advance-payment timing.
     L = C.lines("de", -2.0, YRS, 2026)
     g = C._gg("de", 2028)
-    want = g["rev"] * C.OECD["de"]["cit"][1] / 100 * C.CORP_PROFIT_ELAST * C.profit_path(2, -2.0)
+    same = C.CIT_SAME_YEAR["de"]
+    real_cit = C.REAL_SHARE * (same * C.gap(2, -2.0) + (1 - same) * C.gap(1, -2.0))
+    want = g["rev"] * C.cit_share("de") / 100 * C.OECD["de"]["cit"][0] * C.CIT_STRESS[2] * real_cit
     assert abs(L[2028]["cit"] - want) < 1e-9
     assert "px:receipts" in L[2028]                                  # price part on the other receipts only
 

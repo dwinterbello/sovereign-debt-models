@@ -123,14 +123,15 @@ def test_rel_edge_unchanged():
 
 
 def test_shipped_open_later_priors():
-    """Soll open-year pin + T1 sozial×wages + coupon×FA-stock interest."""
+    """Soll open-year pin + T1 sozial×wages + ISIN × curve later-year interest (INTEREST_ISIN_CURVE, 80f0b77cc;
+    see experiments/isin_interest_bugfix.md — it replaced coupon × FA-stock)."""
     assert BU.OPEN_MODE == "soll"
     assert BU.OPEN_YTD_WEIGHT_EXP == 0.20
     assert BU.OPEN_YTD_WEIGHT_REV == 0.05
     assert BU.LATER_REV_BETA == 1.0
     assert BU.LATER_PRIMARY_BETA == 0.0
     assert BU.LATER_INTEREST_BETA == 2.0
-    assert BU.LATER_INTEREST_MODE == "coupon_stock"
+    assert BU.INTEREST_ISIN_CURVE and BU.LATER_INTEREST_MODE == "isin_curve"
     assert BU.T1_SOZIAL_WAGES_BETA == 0.35
 
 

@@ -41,15 +41,22 @@ def base_year(cc: str, origin: pd.Timestamp) -> int:
 
 
 def _growth(cc: str, years: list[int], base: int) -> dict[str, pd.Series] | None:
+    """Driver levels for the overlay's base-year netting: the same rule as the pack's ``_policy``
+    (``scenarios.pack``), so a board's outer years equal the pack's ``with_policy`` line. Every country gets
+    the GDP / price levels; only the persist_gdp spending rule (own-annual countries) puts spending on GDP.
+    (Returning None outside ``own_annual.COUNTRIES`` netted base-year measures unscaled: France and Germany's
+    boards ran 0.8-9bn a year above the pack's with_policy line.)"""
     try:
         from sovereign_cash.scenarios.channels import own_annual as OA
     except Exception:  # noqa: BLE001
         return None
-    if cc not in getattr(OA, "COUNTRIES", ()):
-        return None
     span = list(range(base, max(years) + 1))
-    y, p = OA.levels(cc, span)
-    spend = y if OA.method(cc, "primary") == "persist_gdp" else p
+    try:
+        y, p = OA.levels(cc, span)
+    except Exception:  # noqa: BLE001
+        return None
+    own = cc in getattr(OA, "COUNTRIES", ())
+    spend = y if own and OA.method(cc, "primary") == "persist_gdp" else p
     return {"tax": y, "spend": spend}
 
 

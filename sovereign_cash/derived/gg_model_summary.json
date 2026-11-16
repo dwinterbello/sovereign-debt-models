@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-14",
+  "asof": "2026-11-16",
   "rule": "GG balance = held structural primary + \u03b5(g\u2212g*) \u2212 interest; g & interest from WEO",
   "countries": {
     "us": {

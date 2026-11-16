@@ -700,7 +700,7 @@
       "riksgalden_bn": 113.0
     },
     "end_2025": {
-      "implied_bn": 172.7,
+      "implied_bn": 172.8,
       "riksgalden_bn": 173.0
     }
   },
@@ -904,7 +904,7 @@
       },
       "fx_bond_month": 6,
       "horizon_end": "2030-12",
-      "end_2026_path_bn": 237.9,
+      "end_2026_path_bn": 238.0,
       "riksgalden_plan_end_2026_bn": 238.0
     },
     "liq_mgmt_stock": {
@@ -927,7 +927,7 @@
     "Nominal SGBs: settled and announced auctions, then a 7-day auction calendar (breaks 08 Jul–05 Aug; 17 Dec–14 Jan, public holidays skipped) with one size per year that lands on Riksgälden's plan (2026: 5 × SEK 5.14bn, 2027: 44 × SEK 5.46bn, 2028: 44 × SEK 5.46bn, 2029: 43 × SEK 5.58bn, 2030: 43 × SEK 5.58bn).",
     "T-bills: an auction every 14 days on the observed weekday (same breaks rule). Each rolls what matured since the last one plus an even step toward Riksgälden's planned year-end stock; new issues mature on the third Wednesday with the tenor mix of the last 24 months. Liquidity management absorbs the rest.",
     "Linkers: the plan spread over the months that had linker auctions in the past year; one FX bond a year in June (month of the latest FX issue). Redemptions from the outstanding list.",
-    "Stock checks against Riksgälden year-end outcomes: end-2024 bills 112.9 vs 113, liquidity management 133.6 vs 134; end-2025 bills 172.7 vs 173, liquidity management 137.0 vs 137.",
+    "Stock checks against Riksgälden year-end outcomes: end-2024 bills 112.9 vs 113, liquidity management 133.6 vs 134; end-2025 bills 172.8 vs 173, liquidity management 137.0 vs 137.",
     "Timing items excluded from the YTD deviation (SEK +39.8bn balance terms, release 2026-11-06): EU Recovery and Resilience Facility payment SEK 15bn, planned 2026-07, now expected in 2026 (release 2026-08-07).",
     "Bottom-up CH1089 baseline: NO-SHIP — PRE anchored mean MAE 10.567 vs production 10.045 (PRE anchored mean MAE bottom-up 10.567 does not beat production 10.045 by ≥5%). Unanchored PRE 10.104 vs 11.277. Alternate bottom-up cash-requirement column does not replace the live path when NO-SHIP.",
     "Bottom-up macro (Budgetprop/SCB×drivers) v2: NO-SHIP — PRE anchored mean MAE 10.349 vs production 10.045 (PRE anchored mean MAE macro 10.349 does not beat production 10.045 by ≥5%)."

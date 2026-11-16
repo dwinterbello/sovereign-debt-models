@@ -914,11 +914,11 @@
   "bot_stock_origin_bn": 141.3,
   "bot_stock_end_bn": 137.8,
   "bot_rule": "BOT stock held at its current level plus its average calendar-month change (trailing five years, demeaned); raised only to keep liquidity at the floor",
-  "cash_requirement_12m_bn": 539.4,
+  "cash_requirement_12m_bn": 543.4,
   "cash_requirement_12m_alt_bn": 797.2,
   "cash_requirement_12m_smly_bn": 598.9,
   "cash_requirement_12m_band80_bn": 18.1,
-  "cash_requirement_12m_plan_bn": 539.4,
+  "cash_requirement_12m_plan_bn": 543.4,
   "rrf_grant_share": 0.369,
   "rrf_grants_base_12m_bn": 9.3,
   "rrf_grants_fwd_12m_bn": 10.5,
@@ -935,14 +935,14 @@
   "model_full_year_bn": 129.5,
   "alt_full_year_bn": 147.5,
   "plan_minus_model_full_year_bn": 0.0,
-  "net_bonds_12m_bn": 559.5,
-  "bond_gross_12m_bn": 1509.4,
+  "net_bonds_12m_bn": 563.1,
+  "bond_gross_12m_bn": 1513.0,
   "bond_gross_known_events_12m_bn": 0.0,
-  "bond_gross_assumed_12m_bn": 1280.8,
+  "bond_gross_assumed_12m_bn": 1284.4,
   "bond_redemption_12m_bn": 949.9,
   "cb_held_redemptions_12m_bn": 201.2,
   "cb_holdings_snapshot": "2026-10-01",
-  "private_net_bonds_12m_bn": 760.7,
+  "private_net_bonds_12m_bn": 764.3,
   "net_bills_12m_bn": -3.5,
   "bill_gross_12m_bn": 799.8,
   "bot_tenor_mix": {
@@ -1078,12 +1078,12 @@
     "id": "next synd 10-15y 2027-09"
    }
   ],
-  "buffer_end_bn": 89.2,
-  "buffer_end_rollover_bn": 92.8,
-  "buffer_max_bn": 116.5,
-  "liquidity_surplus_max_bn": 45.6,
+  "buffer_end_bn": 88.9,
+  "buffer_end_rollover_bn": 92.4,
+  "buffer_max_bn": 116.2,
+  "liquidity_surplus_max_bn": 45.4,
   "liquidity_surplus_max_month": "2027-07",
-  "liquidity_surplus_end_bn": 18.4,
+  "liquidity_surplus_end_bn": 18.1,
   "months_above_cap": [
    "2026-12",
    "2027-01",
@@ -1296,7 +1296,7 @@
   },
   "bottomup_engine": "macro_v2",
   "bottomup_live_months": 10,
-  "cash_requirement_bottomup_12m_bn": 548.3,
+  "cash_requirement_bottomup_12m_bn": 551.9,
   "path": [
    {
     "month": "2026-11-01",
@@ -1335,12 +1335,12 @@
     "net_bills_bn": -1.4,
     "other_fin_bn": 0.0,
     "buffer_rollover_bn": 107.4,
-    "buffer_bn": 102.5
+    "buffer_bn": 102.4
    },
    {
     "month": "2027-02-01",
-    "cash_requirement_bn": 23.2,
-    "cash_requirement_plan_bn": 23.2,
+    "cash_requirement_bn": 23.3,
+    "cash_requirement_plan_bn": 23.3,
     "bond_gross_bn": 32.4,
     "bond_redemption_bn": 34.5,
     "bond_redemption_cb_bn": 1.1,
@@ -1360,8 +1360,8 @@
     "net_bonds_bn": 49.2,
     "net_bills_bn": -0.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 108.4,
-    "buffer_bn": 104.1
+    "buffer_rollover_bn": 108.3,
+    "buffer_bn": 104.0
    },
    {
     "month": "2027-04-01",
@@ -1373,21 +1373,21 @@
     "net_bonds_bn": 20.1,
     "net_bills_bn": 3.1,
     "other_fin_bn": -0.9,
-    "buffer_rollover_bn": 113.3,
-    "buffer_bn": 112.1
+    "buffer_rollover_bn": 113.1,
+    "buffer_bn": 112.0
    },
    {
     "month": "2027-05-01",
-    "cash_requirement_bn": 14.4,
-    "cash_requirement_plan_bn": 14.4,
+    "cash_requirement_bn": 14.5,
+    "cash_requirement_plan_bn": 14.5,
     "bond_gross_bn": 10.7,
     "bond_redemption_bn": 0.0,
     "bond_redemption_cb_bn": 0.0,
     "net_bonds_bn": 10.7,
     "net_bills_bn": -1.0,
     "other_fin_bn": -0.7,
-    "buffer_rollover_bn": 108.8,
-    "buffer_bn": 106.7
+    "buffer_rollover_bn": 108.6,
+    "buffer_bn": 106.5
    },
    {
     "month": "2027-06-01",
@@ -1399,8 +1399,8 @@
     "net_bonds_bn": 20.5,
     "net_bills_bn": 2.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 95.7,
-    "buffer_bn": 96.0
+    "buffer_rollover_bn": 95.4,
+    "buffer_bn": 95.8
    },
    {
     "month": "2027-07-01",
@@ -1412,8 +1412,8 @@
     "net_bonds_bn": 7.7,
     "net_bills_bn": -2.9,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 119.0,
-    "buffer_bn": 116.5
+    "buffer_rollover_bn": 118.7,
+    "buffer_bn": 116.2
    },
    {
     "month": "2027-08-01",
@@ -1425,8 +1425,8 @@
     "net_bonds_bn": -13.9,
     "net_bills_bn": 2.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 106.5,
-    "buffer_bn": 106.7
+    "buffer_rollover_bn": 106.2,
+    "buffer_bn": 106.4
    },
    {
     "month": "2027-09-01",
@@ -1438,21 +1438,21 @@
     "net_bonds_bn": 10.9,
     "net_bills_bn": -2.6,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.0
    },
    {
     "month": "2027-10-01",
-    "cash_requirement_bn": 5.9,
-    "cash_requirement_plan_bn": 5.9,
-    "bond_gross_bn": 21.3,
+    "cash_requirement_bn": 6.0,
+    "cash_requirement_plan_bn": 6.0,
+    "bond_gross_bn": 21.4,
     "bond_redemption_bn": 15.4,
     "bond_redemption_cb_bn": 0.4,
-    "net_bonds_bn": 5.9,
+    "net_bonds_bn": 6.0,
     "net_bills_bn": 2.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.4
    },
    {
     "month": "2027-11-01",
@@ -1464,8 +1464,8 @@
     "net_bonds_bn": 11.4,
     "net_bills_bn": -0.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.7
    },
    {
     "month": "2027-12-01",
@@ -1477,320 +1477,320 @@
     "net_bonds_bn": -7.6,
     "net_bills_bn": -2.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.2
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.9
    },
    {
     "month": "2028-01-01",
-    "cash_requirement_bn": 5.5,
-    "cash_requirement_plan_bn": 5.5,
-    "bond_gross_bn": 5.5,
+    "cash_requirement_bn": 5.6,
+    "cash_requirement_plan_bn": 5.6,
+    "bond_gross_bn": 5.6,
     "bond_redemption_bn": 0.0,
     "bond_redemption_cb_bn": 0.0,
-    "net_bonds_bn": 5.5,
+    "net_bonds_bn": 5.6,
     "net_bills_bn": -1.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 87.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 87.5
    },
    {
     "month": "2028-02-01",
-    "cash_requirement_bn": 24.5,
-    "cash_requirement_plan_bn": 24.5,
-    "bond_gross_bn": 65.2,
+    "cash_requirement_bn": 24.6,
+    "cash_requirement_plan_bn": 24.6,
+    "bond_gross_bn": 65.3,
     "bond_redemption_bn": 40.7,
     "bond_redemption_cb_bn": 12.8,
-    "net_bonds_bn": 24.5,
+    "net_bonds_bn": 24.6,
     "net_bills_bn": 1.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.0
    },
    {
     "month": "2028-03-01",
-    "cash_requirement_bn": 24.3,
-    "cash_requirement_plan_bn": 24.3,
-    "bond_gross_bn": 53.2,
+    "cash_requirement_bn": 24.4,
+    "cash_requirement_plan_bn": 24.4,
+    "bond_gross_bn": 53.3,
     "bond_redemption_bn": 28.9,
     "bond_redemption_cb_bn": 7.1,
-    "net_bonds_bn": 24.3,
+    "net_bonds_bn": 24.4,
     "net_bills_bn": -0.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 88.5
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.2
    },
    {
     "month": "2028-04-01",
-    "cash_requirement_bn": 15.3,
-    "cash_requirement_plan_bn": 15.3,
-    "bond_gross_bn": 28.6,
+    "cash_requirement_bn": 15.4,
+    "cash_requirement_plan_bn": 15.4,
+    "bond_gross_bn": 28.7,
     "bond_redemption_bn": 13.3,
     "bond_redemption_cb_bn": 1.1,
-    "net_bonds_bn": 15.3,
+    "net_bonds_bn": 15.4,
     "net_bills_bn": 3.1,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 91.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.3
    },
    {
     "month": "2028-05-01",
-    "cash_requirement_bn": 15.3,
-    "cash_requirement_plan_bn": 15.3,
+    "cash_requirement_bn": 15.4,
+    "cash_requirement_plan_bn": 15.4,
     "bond_gross_bn": 31.2,
     "bond_redemption_bn": 15.9,
     "bond_redemption_cb_bn": 9.1,
-    "net_bonds_bn": 15.3,
+    "net_bonds_bn": 15.4,
     "net_bills_bn": -1.0,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.3
    },
    {
     "month": "2028-06-01",
-    "cash_requirement_bn": 35.4,
-    "cash_requirement_plan_bn": 35.4,
-    "bond_gross_bn": 50.9,
+    "cash_requirement_bn": 35.5,
+    "cash_requirement_plan_bn": 35.5,
+    "bond_gross_bn": 51.0,
     "bond_redemption_bn": 15.5,
     "bond_redemption_cb_bn": 0.2,
-    "net_bonds_bn": 35.4,
+    "net_bonds_bn": 35.5,
     "net_bills_bn": 2.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.1
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.8
    },
    {
     "month": "2028-07-01",
-    "cash_requirement_bn": -15.5,
-    "cash_requirement_plan_bn": -15.5,
-    "bond_gross_bn": 0.8,
+    "cash_requirement_bn": -15.4,
+    "cash_requirement_plan_bn": -15.4,
+    "bond_gross_bn": 0.9,
     "bond_redemption_bn": 16.3,
     "bond_redemption_cb_bn": 4.1,
-    "net_bonds_bn": -15.5,
+    "net_bonds_bn": -15.4,
     "net_bills_bn": -2.9,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.9
    },
    {
     "month": "2028-08-01",
-    "cash_requirement_bn": -1.8,
-    "cash_requirement_plan_bn": -1.8,
-    "bond_gross_bn": 15.8,
+    "cash_requirement_bn": -1.7,
+    "cash_requirement_plan_bn": -1.7,
+    "bond_gross_bn": 15.9,
     "bond_redemption_bn": 17.6,
     "bond_redemption_cb_bn": 0.8,
-    "net_bonds_bn": -1.8,
+    "net_bonds_bn": -1.7,
     "net_bills_bn": 2.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.7
    },
    {
     "month": "2028-09-01",
-    "cash_requirement_bn": 25.2,
-    "cash_requirement_plan_bn": 25.2,
-    "bond_gross_bn": 46.7,
+    "cash_requirement_bn": 25.3,
+    "cash_requirement_plan_bn": 25.3,
+    "bond_gross_bn": 46.8,
     "bond_redemption_bn": 21.4,
     "bond_redemption_cb_bn": 11.5,
-    "net_bonds_bn": 25.2,
+    "net_bonds_bn": 25.3,
     "net_bills_bn": -2.6,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.0
    },
    {
     "month": "2028-10-01",
     "cash_requirement_bn": 6.3,
     "cash_requirement_plan_bn": 6.3,
-    "bond_gross_bn": 42.3,
+    "bond_gross_bn": 42.4,
     "bond_redemption_bn": 36.1,
     "bond_redemption_cb_bn": 1.3,
     "net_bonds_bn": 6.3,
     "net_bills_bn": 2.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.4
    },
    {
     "month": "2028-11-01",
-    "cash_requirement_bn": 12.1,
-    "cash_requirement_plan_bn": 12.1,
-    "bond_gross_bn": 29.8,
+    "cash_requirement_bn": 12.2,
+    "cash_requirement_plan_bn": 12.2,
+    "bond_gross_bn": 29.9,
     "bond_redemption_bn": 17.7,
     "bond_redemption_cb_bn": 3.1,
-    "net_bonds_bn": 12.1,
+    "net_bonds_bn": 12.2,
     "net_bills_bn": -0.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.7
    },
    {
     "month": "2028-12-01",
-    "cash_requirement_bn": -7.6,
-    "cash_requirement_plan_bn": -7.6,
-    "bond_gross_bn": 13.1,
+    "cash_requirement_bn": -7.5,
+    "cash_requirement_plan_bn": -7.5,
+    "bond_gross_bn": 13.2,
     "bond_redemption_bn": 20.7,
     "bond_redemption_cb_bn": 11.0,
-    "net_bonds_bn": -7.6,
+    "net_bonds_bn": -7.5,
     "net_bills_bn": -2.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.2
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.9
    },
    {
     "month": "2029-01-01",
-    "cash_requirement_bn": 5.2,
-    "cash_requirement_plan_bn": 5.2,
-    "bond_gross_bn": 21.7,
+    "cash_requirement_bn": 5.3,
+    "cash_requirement_plan_bn": 5.3,
+    "bond_gross_bn": 21.8,
     "bond_redemption_bn": 16.5,
     "bond_redemption_cb_bn": 0.1,
-    "net_bonds_bn": 5.2,
+    "net_bonds_bn": 5.3,
     "net_bills_bn": -1.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 87.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 87.5
    },
    {
     "month": "2029-02-01",
-    "cash_requirement_bn": 25.0,
-    "cash_requirement_plan_bn": 25.0,
+    "cash_requirement_bn": 25.1,
+    "cash_requirement_plan_bn": 25.1,
     "bond_gross_bn": 57.3,
     "bond_redemption_bn": 32.2,
     "bond_redemption_cb_bn": 3.2,
-    "net_bonds_bn": 25.0,
+    "net_bonds_bn": 25.1,
     "net_bills_bn": 1.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.0
    },
    {
     "month": "2029-03-01",
-    "cash_requirement_bn": 24.8,
-    "cash_requirement_plan_bn": 24.8,
-    "bond_gross_bn": 40.5,
+    "cash_requirement_bn": 24.9,
+    "cash_requirement_plan_bn": 24.9,
+    "bond_gross_bn": 40.7,
     "bond_redemption_bn": 15.7,
     "bond_redemption_cb_bn": 0.1,
-    "net_bonds_bn": 24.8,
+    "net_bonds_bn": 24.9,
     "net_bills_bn": -0.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 88.5
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.2
    },
    {
     "month": "2029-04-01",
-    "cash_requirement_bn": 15.6,
-    "cash_requirement_plan_bn": 15.6,
-    "bond_gross_bn": 36.5,
+    "cash_requirement_bn": 15.8,
+    "cash_requirement_plan_bn": 15.8,
+    "bond_gross_bn": 36.7,
     "bond_redemption_bn": 20.9,
     "bond_redemption_cb_bn": 3.8,
-    "net_bonds_bn": 15.6,
+    "net_bonds_bn": 15.8,
     "net_bills_bn": 3.1,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 91.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.3
    },
    {
     "month": "2029-05-01",
-    "cash_requirement_bn": 15.6,
-    "cash_requirement_plan_bn": 15.6,
-    "bond_gross_bn": 33.7,
+    "cash_requirement_bn": 15.7,
+    "cash_requirement_plan_bn": 15.7,
+    "bond_gross_bn": 33.8,
     "bond_redemption_bn": 18.1,
     "bond_redemption_cb_bn": 0.5,
-    "net_bonds_bn": 15.6,
+    "net_bonds_bn": 15.7,
     "net_bills_bn": -1.0,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.3
    },
    {
     "month": "2029-06-01",
-    "cash_requirement_bn": 36.4,
-    "cash_requirement_plan_bn": 36.4,
-    "bond_gross_bn": 52.2,
+    "cash_requirement_bn": 36.6,
+    "cash_requirement_plan_bn": 36.6,
+    "bond_gross_bn": 52.4,
     "bond_redemption_bn": 15.8,
     "bond_redemption_cb_bn": 1.6,
-    "net_bonds_bn": 36.4,
+    "net_bonds_bn": 36.6,
     "net_bills_bn": 2.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.1
-   },
-   {
-    "month": "2029-07-01",
-    "cash_requirement_bn": -15.8,
-    "cash_requirement_plan_bn": -15.8,
-    "bond_gross_bn": 3.3,
-    "bond_redemption_bn": 19.1,
-    "bond_redemption_cb_bn": 0.4,
-    "net_bonds_bn": -15.8,
-    "net_bills_bn": -2.9,
-    "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
-   },
-   {
-    "month": "2029-08-01",
-    "cash_requirement_bn": -2.3,
-    "cash_requirement_plan_bn": -2.3,
-    "bond_gross_bn": 20.2,
-    "bond_redemption_bn": 22.5,
-    "bond_redemption_cb_bn": 11.0,
-    "net_bonds_bn": -2.3,
-    "net_bills_bn": 2.7,
-    "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.0
-   },
-   {
-    "month": "2029-09-01",
-    "cash_requirement_bn": 25.5,
-    "cash_requirement_plan_bn": 25.5,
-    "bond_gross_bn": 41.7,
-    "bond_redemption_bn": 16.2,
-    "bond_redemption_cb_bn": 0.0,
-    "net_bonds_bn": 25.5,
-    "net_bills_bn": -2.6,
-    "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
-   },
-   {
-    "month": "2029-10-01",
-    "cash_requirement_bn": 6.3,
-    "cash_requirement_plan_bn": 6.3,
-    "bond_gross_bn": 23.7,
-    "bond_redemption_bn": 17.4,
-    "bond_redemption_cb_bn": 0.2,
-    "net_bonds_bn": 6.3,
-    "net_bills_bn": 2.4,
-    "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
+    "buffer_rollover_bn": 92.4,
     "buffer_bn": 92.8
    },
    {
+    "month": "2029-07-01",
+    "cash_requirement_bn": -15.6,
+    "cash_requirement_plan_bn": -15.6,
+    "bond_gross_bn": 3.5,
+    "bond_redemption_bn": 19.1,
+    "bond_redemption_cb_bn": 0.4,
+    "net_bonds_bn": -15.6,
+    "net_bills_bn": -2.9,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.9
+   },
+   {
+    "month": "2029-08-01",
+    "cash_requirement_bn": -2.2,
+    "cash_requirement_plan_bn": -2.2,
+    "bond_gross_bn": 20.2,
+    "bond_redemption_bn": 22.5,
+    "bond_redemption_cb_bn": 11.0,
+    "net_bonds_bn": -2.2,
+    "net_bills_bn": 2.7,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.7
+   },
+   {
+    "month": "2029-09-01",
+    "cash_requirement_bn": 25.6,
+    "cash_requirement_plan_bn": 25.6,
+    "bond_gross_bn": 41.8,
+    "bond_redemption_bn": 16.2,
+    "bond_redemption_cb_bn": 0.0,
+    "net_bonds_bn": 25.6,
+    "net_bills_bn": -2.6,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.0
+   },
+   {
+    "month": "2029-10-01",
+    "cash_requirement_bn": 6.4,
+    "cash_requirement_plan_bn": 6.4,
+    "bond_gross_bn": 23.8,
+    "bond_redemption_bn": 17.4,
+    "bond_redemption_cb_bn": 0.2,
+    "net_bonds_bn": 6.4,
+    "net_bills_bn": 2.4,
+    "other_fin_bn": 0.0,
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.4
+   },
+   {
     "month": "2029-11-01",
-    "cash_requirement_bn": 12.5,
-    "cash_requirement_plan_bn": 12.5,
-    "bond_gross_bn": 18.9,
+    "cash_requirement_bn": 12.7,
+    "cash_requirement_plan_bn": 12.7,
+    "bond_gross_bn": 19.0,
     "bond_redemption_bn": 6.4,
     "bond_redemption_cb_bn": 4.4,
-    "net_bonds_bn": 12.5,
+    "net_bonds_bn": 12.7,
     "net_bills_bn": -0.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.7
    },
    {
     "month": "2029-12-01",
-    "cash_requirement_bn": -7.9,
-    "cash_requirement_plan_bn": -7.9,
-    "bond_gross_bn": 14.0,
+    "cash_requirement_bn": -7.7,
+    "cash_requirement_plan_bn": -7.7,
+    "bond_gross_bn": 14.1,
     "bond_redemption_bn": 21.9,
     "bond_redemption_cb_bn": 1.1,
-    "net_bonds_bn": -7.9,
+    "net_bonds_bn": -7.7,
     "net_bills_bn": -2.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.2
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.9
    },
    {
     "month": "2030-01-01",
@@ -1802,86 +1802,86 @@
     "net_bonds_bn": 5.2,
     "net_bills_bn": -1.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 87.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 87.5
    },
    {
     "month": "2030-02-01",
-    "cash_requirement_bn": 25.7,
-    "cash_requirement_plan_bn": 25.7,
-    "bond_gross_bn": 25.7,
+    "cash_requirement_bn": 25.8,
+    "cash_requirement_plan_bn": 25.8,
+    "bond_gross_bn": 25.8,
     "bond_redemption_bn": 0.0,
     "bond_redemption_cb_bn": 0.0,
-    "net_bonds_bn": 25.7,
+    "net_bonds_bn": 25.8,
     "net_bills_bn": 1.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.0
    },
    {
     "month": "2030-03-01",
-    "cash_requirement_bn": 25.6,
-    "cash_requirement_plan_bn": 25.6,
-    "bond_gross_bn": 70.5,
+    "cash_requirement_bn": 25.7,
+    "cash_requirement_plan_bn": 25.7,
+    "bond_gross_bn": 70.6,
     "bond_redemption_bn": 45.0,
     "bond_redemption_cb_bn": 14.4,
-    "net_bonds_bn": 25.6,
+    "net_bonds_bn": 25.7,
     "net_bills_bn": -0.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 88.5
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.2
    },
    {
     "month": "2030-04-01",
-    "cash_requirement_bn": 16.2,
-    "cash_requirement_plan_bn": 16.2,
-    "bond_gross_bn": 40.0,
+    "cash_requirement_bn": 16.4,
+    "cash_requirement_plan_bn": 16.4,
+    "bond_gross_bn": 40.1,
     "bond_redemption_bn": 23.8,
     "bond_redemption_cb_bn": 11.2,
-    "net_bonds_bn": 16.2,
+    "net_bonds_bn": 16.4,
     "net_bills_bn": 3.1,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 91.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.3
    },
    {
     "month": "2030-05-01",
-    "cash_requirement_bn": 16.1,
-    "cash_requirement_plan_bn": 16.1,
-    "bond_gross_bn": 43.1,
+    "cash_requirement_bn": 16.2,
+    "cash_requirement_plan_bn": 16.2,
+    "bond_gross_bn": 43.2,
     "bond_redemption_bn": 27.0,
     "bond_redemption_cb_bn": 5.5,
-    "net_bonds_bn": 16.1,
+    "net_bonds_bn": 16.2,
     "net_bills_bn": -1.0,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.6
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.3
    },
    {
     "month": "2030-06-01",
-    "cash_requirement_bn": 37.7,
-    "cash_requirement_plan_bn": 37.7,
-    "bond_gross_bn": 63.4,
+    "cash_requirement_bn": 37.8,
+    "cash_requirement_plan_bn": 37.8,
+    "bond_gross_bn": 63.6,
     "bond_redemption_bn": 25.8,
     "bond_redemption_cb_bn": 1.6,
-    "net_bonds_bn": 37.7,
+    "net_bonds_bn": 37.8,
     "net_bills_bn": 2.5,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.1
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.8
    },
    {
     "month": "2030-07-01",
-    "cash_requirement_bn": -15.8,
-    "cash_requirement_plan_bn": -15.8,
-    "bond_gross_bn": 8.4,
+    "cash_requirement_bn": -15.6,
+    "cash_requirement_plan_bn": -15.6,
+    "bond_gross_bn": 8.6,
     "bond_redemption_bn": 24.2,
     "bond_redemption_cb_bn": 2.4,
-    "net_bonds_bn": -15.8,
+    "net_bonds_bn": -15.6,
     "net_bills_bn": -2.9,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 89.9
    },
    {
     "month": "2030-08-01",
@@ -1893,60 +1893,60 @@
     "net_bonds_bn": -2.6,
     "net_bills_bn": 2.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 93.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.7
    },
    {
     "month": "2030-09-01",
-    "cash_requirement_bn": 26.0,
-    "cash_requirement_plan_bn": 26.0,
-    "bond_gross_bn": 26.0,
+    "cash_requirement_bn": 26.1,
+    "cash_requirement_plan_bn": 26.1,
+    "bond_gross_bn": 26.1,
     "bond_redemption_bn": 0.0,
     "bond_redemption_cb_bn": 0.0,
-    "net_bonds_bn": 26.0,
+    "net_bonds_bn": 26.1,
     "net_bills_bn": -2.6,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 90.3
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 90.0
    },
    {
     "month": "2030-10-01",
-    "cash_requirement_bn": 6.5,
-    "cash_requirement_plan_bn": 6.5,
-    "bond_gross_bn": 42.1,
+    "cash_requirement_bn": 6.6,
+    "cash_requirement_plan_bn": 6.6,
+    "bond_gross_bn": 42.2,
     "bond_redemption_bn": 35.5,
     "bond_redemption_cb_bn": 1.4,
-    "net_bonds_bn": 6.5,
+    "net_bonds_bn": 6.6,
     "net_bills_bn": 2.4,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.8
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 92.4
    },
    {
     "month": "2030-11-01",
-    "cash_requirement_bn": 13.2,
-    "cash_requirement_plan_bn": 13.2,
-    "bond_gross_bn": 30.6,
+    "cash_requirement_bn": 13.3,
+    "cash_requirement_plan_bn": 13.3,
+    "bond_gross_bn": 30.7,
     "bond_redemption_bn": 17.4,
     "bond_redemption_cb_bn": 0.4,
-    "net_bonds_bn": 13.2,
+    "net_bonds_bn": 13.3,
     "net_bills_bn": -0.7,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 92.0
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 91.7
    },
    {
     "month": "2030-12-01",
-    "cash_requirement_bn": -7.8,
-    "cash_requirement_plan_bn": -7.8,
-    "bond_gross_bn": 15.3,
+    "cash_requirement_bn": -7.7,
+    "cash_requirement_plan_bn": -7.7,
+    "bond_gross_bn": 15.4,
     "bond_redemption_bn": 23.1,
     "bond_redemption_cb_bn": 8.7,
-    "net_bonds_bn": -7.8,
+    "net_bonds_bn": -7.7,
     "net_bills_bn": -2.8,
     "other_fin_bn": 0.0,
-    "buffer_rollover_bn": 92.8,
-    "buffer_bn": 89.2
+    "buffer_rollover_bn": 92.4,
+    "buffer_bn": 88.9
    }
   ]
  },
@@ -1954,9 +1954,9 @@
   "Fabbisogno model chosen on PRE (origins 2015\u20132021) mean MAE: last-year repeat; OOS (origins 2022\u2192) reported only. Scored on the first provisional MEF print, COVID months Mar-2020\u2013Feb-2021 screened out.",
   "RRF grants lower the fabbisogno; loans are financing. Grants are estimated from Banca d'Italia EU loans at the plan ratio (37% grants). The base months carry \u20ac9.3bn of past grants, stripped before forecasting; next 12m add \u20ac10.5bn of grants to the fabbisogno and \u20ac17.9bn of loans to other financing.",
   "Cash path = seasonal / annual-level (last-year repeat). Forward drivers: AMECO NGDP (DFP Tav. II.1.2.2 where published) and WEO CPI. The DFP total pins the year in progress (2026: \u20ac129.5bn = 5.6% of GDP, vintage 2026-04-22) for the year in progress. Later years use our component model, the same path as the Shock scenarios page (cash-account lines on the macro paths, interest from the debt book, RRF grants only as scheduled). Scenario card = model-implied \u0394 from \u00b11pp GDP/CPI; live path unchanged.",
-  "BOT: BOT stock held at its current level plus its average calendar-month change (trailing five years, demeaned); raised only to keep liquidity at the floor. Liquidity above the band (P90 of the last 36 month-ends) is a financing surplus: peak \u20ac45.6bn in Jul-27; the Treasury would close it with smaller auctions, buybacks or fewer BOT.",
+  "BOT: BOT stock held at its current level plus its average calendar-month change (trailing five years, demeaned); raised only to keep liquidity at the floor. Liquidity above the band (P90 of the last 36 month-ends) is a financing surplus: peak \u20ac45.4bn in Jul-27; the Treasury would close it with smaller auctions, buybacks or fewer BOT.",
   "Other-financing baseline: zero (PRE mean MAE zero 8.85, trailing 12m mean 10.52, last-year repeat 11.47, level-adjusted seasonal, 3y 13.98bn), next 12m \u20ac0.0bn.",
-  "Gross bonds next 12m include \u20ac0.0bn announced syndications / retail and \u20ac1,280.8bn assumed (last year's syndications and retail issues repeated 52 weeks on by the issuance forward).",
+  "Gross bonds next 12m include \u20ac0.0bn announced syndications / retail and \u20ac1,284.4bn assumed (last year's syndications and retail issues repeated 52 weeks on by the issuance forward).",
   "Eurosystem-held redemptions are estimates (holdings by ISIN are not published; snapshot 2026-10-01); next 12m \u20ac201.2bn.",
   "Identity: history closes by construction (other financing is the residual). Against Banca d'Italia's instrument table (2012-12\u21922026-08), the part not explained by its non-security financing and perimeter has mean \u2212\u20ac0.36bn and sd \u20ac6.6bn a month (last 24m sd \u20ac7.1bn), vs other financing sd \u20ac8.5bn.",
   "Bottom-up BdI T1 baseline: NO-SHIP \u2014 PRE mean MAE macro 6.76 vs production 5.52 (-22.5% better), worse at 1/4 horizons; OOS 11.25 vs 11.27; NGDP clip \u00b12.49pp PRE-support; \u03b2_tax=0.55 \u03b2_pri=0.35; treas\u00d70.94; cap\u00d7NGDP 0.2; interest=isin_curve; need \u22655% PRE edge, \u22641 worse horizon, OOS \u2264+25%. Alternate column cash_requirement_bottomup_bn does not replace the live path."
@@ -1973,9 +1973,9 @@
   "ok": true,
   "base": {
    "2026": 5.5222446130789535,
-   "2027": 95.09798874304671,
-   "2028": 97.09197811717918,
-   "2029": 95.5599518053608
+   "2027": 94.85366860347739,
+   "2028": 96.65537376619072,
+   "2029": 95.06852052130124
   },
   "drivers": {
    "ngdp_source": "AMECO nominal GDP + DFP Tav. II.1.2.2; IMF WEO real growth compounded with IT house CPI (full, 2028\u20132030)",
@@ -2003,15 +2003,15 @@
     },
     "delta": {
      "2026": -0.20816583248564413,
-     "2027": -4.556701476879994,
-     "2028": -10.775724090790149,
-     "2029": -17.301365768196987
+     "2027": -4.556701476880036,
+     "2028": -10.775724090790177,
+     "2029": -17.301365768197016
     },
     "level": {
      "2026": 5.314078780593309,
-     "2027": 90.54128726616672,
-     "2028": 86.31625402638903,
-     "2029": 78.25858603716381
+     "2027": 90.29696712659735,
+     "2028": 85.87964967540054,
+     "2029": 77.76715475310422
     }
    },
    {
@@ -2022,15 +2022,15 @@
     },
     "delta": {
      "2026": 0.19776765231009108,
-     "2027": 4.8531398070956016,
-     "2028": 11.703223724576148,
-     "2029": 18.78454240420841
+     "2027": 4.853139807095587,
+     "2028": 11.703223724576077,
+     "2029": 18.78454240420838
     },
     "level": {
      "2026": 5.720012265389045,
-     "2027": 99.95112855014231,
-     "2028": 108.79520184175533,
-     "2029": 114.3444942095692
+     "2027": 99.70680841057298,
+     "2028": 108.3585974907668,
+     "2029": 113.85306292550962
     }
    },
    {
@@ -2040,16 +2040,16 @@
      "rates_bp": 100.0
     },
     "delta": {
-     "2026": 2.078093006706183,
-     "2027": 5.177231074856664,
-     "2028": 8.263507578998329,
-     "2029": 10.93896459760792
+     "2026": 2.0588912364168834,
+     "2027": 5.255512064042932,
+     "2028": 8.482030540821341,
+     "2029": 11.196509062278025
     },
     "level": {
-     "2026": 7.600337619785137,
-     "2027": 100.27521981790338,
-     "2028": 105.35548569617751,
-     "2029": 106.49891640296872
+     "2026": 7.581135849495837,
+     "2027": 100.10918066752032,
+     "2028": 105.13740430701206,
+     "2029": 106.26502958357926
     },
     "channel": "debt_repricing ISIN book (locked coupons + new issuance)"
    }

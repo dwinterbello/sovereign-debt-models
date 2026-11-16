@@ -143,14 +143,19 @@ def test_history_runs_up_to_the_forecast_on_the_same_lines(pack):
             assert stub["months"][0][:4] in (first, str(int(first) - 1)), cc
 
 
-@pytest.mark.parametrize("cc", ("fr", "de", "it"))
-def test_boards_after_the_open_year_are_our_model(pack, cc):
-    """After the year in progress each cash board runs on our component path: it equals the scenario baseline."""
+@pytest.mark.parametrize("cc,board_has_policy", (("fr", True), ("de", True), ("it", False)))
+def test_boards_after_the_open_year_are_our_model(pack, cc, board_has_policy):
+    """After the year in progress each cash board runs on our component path: it equals the scenario baseline.
+
+    Since f0623e676 the France and Germany boards take those years from ``sarimax.later_years``, which adds the
+    legislated-policy overlay (``policy.monthly``), so they equal the pack's ``with_policy`` line; the Italy board
+    calls ``our_path`` directly (no overlay; Ex1c adds it), so it equals the no-policy ``total``."""
     c = pack["countries"].get(cc)
     if not c or not c["baseline"].get("board_full_year"):
         pytest.skip("no board")
+    want = c["baseline"]["with_policy"] if board_has_policy else c["baseline"]["total"]
     for i in range(1, len(c["periods"])):
-        assert c["baseline"]["total"][i] == pytest.approx(c["baseline"]["board_full_year"][i], abs=0.05), (cc, i)
+        assert want[i] == pytest.approx(c["baseline"]["board_full_year"][i], abs=0.05), (cc, i)
 
 
 def test_no_authority_total_in_the_baseline(pack):

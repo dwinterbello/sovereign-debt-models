@@ -220,11 +220,15 @@ def monthly_book() -> pd.DataFrame:
     b["month"] = pd.to_datetime(b["month"])
     g = g.merge(b, on=["country", "month"], how="left")
     g["country"] = g["country"].str.lower()
+    # The bond book is for the ladder countries only. The issuance float model also carries Sweden since 14 Nov
+    # (today's CH1073 lines rolled back, no 0-1y bucket in most months); SE and NO stay on their cash frameworks
+    # (``_bills_dec`` + bond redemptions), or their rollovers come out NaN and their debt off the CH1073 face.
+    g = g[g["country"].isin(LADDER)]
     g = g.sort_values(["country", "month"])
     # bills: carry the last published level through the coupon forward
     g["bill_stock_bn"] = g.groupby("country")["bill_stock_bn"].ffill()
     g["bill_source"] = np.where(g["bill_stock_bn"].notna(), "published", None)
-    return g.reset_index(drop=True)
+    return _es_bills(g.reset_index(drop=True))
 
 
 def jp_mof_bills(refresh: bool = False) -> dict:
@@ -283,8 +287,33 @@ def jp_mof_bills(refresh: bool = False) -> dict:
             "asof": asof, "source": "MoF Central Government Debt (short-term JGBs + Financing Bills)"}
 
 
+ES_OUTSTANDING = REPO / "issuance" / "cache" / "es_outstanding.parquet"
+
+
+def es_tesoro_bills() -> dict:
+    """Letras outstanding, EUR bn, from the latest Tesoro 'valores en circulación' snapshot (issuance cache)."""
+    o = pd.read_parquet(ES_OUTSTANDING)
+    asof = pd.Timestamp(o["asof"].max())
+    o = o[pd.to_datetime(o["asof"]) == asof]
+    bills = float(o.loc[o["sec_type"].astype(str).eq("Bill"), "stock_mn"].sum()) / 1e3
+    return {"bills_bn": bills, "asof": asof, "source": "Tesoro valores en circulación (Letras)"}
+
+
 def _es_bills(book: pd.DataFrame, src: pd.DataFrame | None = None) -> pd.DataFrame:
-    """Spain bill stock — not yet in the production book; identity so callers can chain."""
+    """Spain bill stock: no monthly Letras series in the bill book, so the Tesoro's latest published outstanding
+    is held through the book, as Japan's MoF figure (``_jp_bills``). Without it Spain's marketable stock,
+    rollovers and effective rate were NaN. No cache or no Letras: the book is returned unchanged."""
+    es = book["country"] == "es"
+    if not es.any() or book.loc[es, "bill_stock_bn"].notna().any():
+        return book
+    try:
+        m = es_tesoro_bills()
+    except Exception:  # noqa: BLE001 — issuance cache not built: Spain stays without bills
+        return book
+    if not (np.isfinite(m["bills_bn"]) and m["bills_bn"] > 0):
+        return book
+    book.loc[es, "bill_stock_bn"] = m["bills_bn"]
+    book.loc[es, "bill_source"] = m["source"]
     return book
 
 
@@ -682,7 +711,7 @@ def snapshot(book: pd.DataFrame, fl: pd.DataFrame, ann: pd.DataFrame, src: pd.Da
             r["fw_cb_net"] = r["tr_cb_net"]  # forward CB leg missing from the ladder (Spain) → trailing runoff
         if not np.isfinite(r["coupon_01_bn"]):
             r["coupon_01_bn"] = r["fw_bond_red"]
-        if cc in LADDER and cc != "jp":
+        if cc in LADDER and cc not in ("jp", "es"):  # JP and ES bills are one level held flat: no history
             hb = b.loc["2012-01-01":"2019-12-31"]
             r["bill_share_norm"] = float((hb["bill_stock_bn"] / (hb["coupon_bn"] + hb["bill_stock_bn"])).median())
         else:

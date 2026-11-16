@@ -64,9 +64,9 @@ def test_spike_fr_it_de_rejects_monthly_gg():
     assert P.SPIKE_PATH.exists()
 
 
-def test_render_writes_png():
-    png, cap, prose = P.render(out=P.NOTE / "_test_print_meters.png")
+def test_render_writes_png(tmp_path):
+    # write to tmp_path, not the note folder: a stray PNG there is picked up by the note build
+    png, cap, prose = P.render(out=tmp_path / "_test_print_meters.png")
     assert png.exists() and png.stat().st_size > 10_000
     assert "Exhibit 1b" in cap
     assert "PSNB" in prose and "B.9" in prose
-    png.unlink(missing_ok=True)

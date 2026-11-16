@@ -204,7 +204,7 @@ def run(refresh: bool = False) -> dict:
         f"({eur(p_yr['besoin'])}) adds amortisation ({eur(p_yr['amortisation'])}) and other treasury needs "
         f"({eur(other_needs)}).",
         (
-            f"Cash path = bottom-up SMB components (recettes/primary seas_mult_3, AFT charge × month share, "
+            f"Cash path = bottom-up SMB components (recettes/primary {label('seas_mult_3')}, AFT charge × month share, "
             f"speciaux moy) then closed to the published State deficit (PLF/LFI solde hors FMI = déficit à "
             f"financer); {yr} = {eur(p_yr['deficit_to_finance'])} ({p_yr['deficit_vintage']}). "
             if info.get("bottom_up_ship") else

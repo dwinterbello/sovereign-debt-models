@@ -180,7 +180,10 @@ def test_derived_forward_horizon_bills_buybacks_gpfg():
     nb = f[~f["scenario"]]
     sc = f[f["scenario"]]
     assert nb["fc_source"].str.startswith("norges_bank").all()
-    assert sc["fc_source"].str.startswith("same_month").all()  # the overview drops these by this prefix
+    if s["bottom_up"].get("ship"):  # Tab4 x macro shipped by its PRE gate (0b17ae37b): it replaces the smly tail
+        assert (sc["fc_source"] == "bottom_up_macro").all()
+    else:
+        assert sc["fc_source"].str.startswith("same_month").all()  # the overview drops these by this prefix
     np.testing.assert_allclose(nb["cash_requirement_nb_implied_bn"], nb["cash_requirement_bn"])
     # headline window = Norges Bank's path only
     assert fw["window"] == f"{nb['month'].min():%Y-%m}..{nb['month'].max():%Y-%m}"
@@ -191,8 +194,8 @@ def test_derived_forward_horizon_bills_buybacks_gpfg():
     stock = np.concatenate([[fw["bills"]["market_stock_now_bn"]], f["bill_stock_market_bn"].to_numpy()])
     np.testing.assert_allclose(f["net_bills_bn"], np.diff(stock), atol=0.06)
     # NGB inside guidance and programme
-    for g in fw["ngb"]["quarter_guidance"]:
-        assert g["bn"][0] <= g["path_bn"] <= g["bn"][1]
+    for g in fw["ngb"]["quarter_guidance"]:  # path_bn is the remaining auctions; once the quarter has started
+        assert g["bn"][0] <= g["issued_bn"] + g["path_bn"] <= g["bn"][1]  # the guidance covers issued + path
     lo, hi = fw["ngb"]["programme_bn"]
     assert lo <= fw["ngb"]["programme_path_bn"] <= hi
     # buybacks move from the maturity month to the buyback month
@@ -243,4 +246,6 @@ def test_page_has_no_raw_ids_or_ascii_negatives():
     for raw in ("_bn", "fc_source", "partial_month", "FCAST_", "same_month_last_year", "norges_bank_vintage"):
         assert raw not in text, raw
     assert not re.search(r"(?<![\w/–-])-\d", text)  # negatives use a true minus
-    assert len(page) < 300_000
+    # the seasonal views (0b17ae37b) embed ~580KB of per-year chart data (NOS, NOCATS); the budget still catches
+    # an accidental frame dump
+    assert len(page) < 1_000_000

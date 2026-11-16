@@ -146,7 +146,10 @@ def test_ladder_nets_buybacks():
     enc, _ = M.oat_ladder(months)
     ops = pd.read_parquet(M.OPS)
     nov = enc[enc["isin"] == "FR0013200813"]["nominal_bn"].sum()
-    issued = ops[ops["isin"].astype(str) == "FR0013200813"]["amount_issued"].sum() / 1000
+    line = ops[ops["isin"].astype(str) == "FR0013200813"]
+    # the ops tape carries buybacks as negative op_type "Buyback" rows (sums to the AFT outstanding), so the
+    # gross amount issued is the auction / syndication rows only
+    issued = line.loc[line["op_type"].astype(str) != "Buyback", "amount_issued"].sum() / 1000
     assert 0 < nov < issued - 1  # buybacks done are netted
     ei = enc[enc["isin"] == "FR0011008705"].iloc[0]  # OAT€i Jul-2027 at indexed value
     assert 1.3 < ei["coef"] < 1.6 and ei["redemption_bn"] == pytest.approx(ei["nominal_bn"] * ei["coef"])
