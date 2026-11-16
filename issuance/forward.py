@@ -215,7 +215,10 @@ FR_PROGRAMME_ASOF = pd.Timestamp("2026-09-30")
 FR_PROGRAMME_NEXT_MN = 340_000.0
 IT_H2_MN = 137_500.0  # published midpoint; not a licence to reopen stale lines
 IT_LIVE_DAYS = 180
-HORIZON = pd.Timestamp("2027-09-30")
+# Forward book end: rolls with the calendar so every country keeps 12 forward months past its latest outturn
+# (a fixed Sep-2027 end left Japan with 11 once October 2026 printed). Never earlier than the published horizon.
+HORIZON = max(pd.Timestamp("2027-09-30"),
+              (pd.Timestamp.today().normalize() + pd.DateOffset(months=12)) + pd.offsets.MonthEnd(0))
 
 
 def _dmo_bucket(years: float, linker: bool) -> str:

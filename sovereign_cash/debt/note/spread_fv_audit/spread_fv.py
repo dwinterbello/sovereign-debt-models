@@ -121,12 +121,12 @@ def predict(r, row: dict, reg: str = TPI) -> tuple[float, float, float]:
 
 
 def figure(res: dict, A: pd.DataFrame, S: pd.DataFrame, path: Path) -> None:
-    """Exhibit: A. France and Italy against fair value; B. France: equilibrium, premium, scenarios."""
+    """Exhibit: A. France, Italy and Spain against fair value; B. France: equilibrium, premium, scenarios."""
     plt.rcParams.update({"font.family": ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"], "font.size": 10,
                          "axes.spines.top": False, "axes.spines.right": False, "axes.titlesize": 11,
                          "axes.titleweight": "bold", "axes.titlelocation": "left"})
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(13.6, 4.9), gridspec_kw={"width_ratios": [1.1, 1], "wspace": 0.28})
-    for c, col in (("fr", "#1f4e79"), ("it", "#0f766e")):
+    for c, col in (("fr", "#1f4e79"), ("it", "#0f766e"), ("es", "#b45309")):
         d = A[(A.cc == c) & (A.year >= 2005)]
         a1.plot(d.year, d.spread, color=col, lw=2.2, label=f"{NAME[c]}: actual (annual average)")
         a1.plot(d.year, d.fit, color=col, lw=1.4, ls="--", label=f"{NAME[c]}: fiscal fair value")
