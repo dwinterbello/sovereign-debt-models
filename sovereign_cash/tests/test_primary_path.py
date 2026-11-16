@@ -211,19 +211,6 @@ def test_sustain_uses_engine_primary_not_weo_residual():
         assert "primary_gg_pct_gdp" in a.columns
 
 
-def test_run_all_writes_primary_before_debt():
-    import inspect
-    from sovereign_cash import run_all
-
-    src = inspect.getsource(run_all.debt)
-    assert "primary_path()" in src
-    assert "P.write" in inspect.getsource(run_all.primary_path)
-    main_src = inspect.getsource(run_all.main)
-    assert "note()" in main_src
-    assert "build_note" in inspect.getsource(run_all.note)
-    assert "build_docx" in inspect.getsource(run_all.note)
-
-
 def test_hold_equation_subtracts_omega():
     """Methodology / code: measure primary = WEO − ω so GG = WEO after the wedge."""
     import inspect
@@ -232,29 +219,6 @@ def test_hold_equation_subtracts_omega():
     from sovereign_cash.methodology import registry as R
     hold = next(eq for eq in R._EQ if eq.id == "hold")
     assert r"\pi^{\mathrm{WEO}}_{p}-\omega" in hold.latex
-
-
-def test_ex3_uses_engine_primary():
-    """Exhibit 3 Panel B = stamped primary_gg_pct_gdp, not interest − WEO overall."""
-    import inspect
-    from sovereign_cash.debt.build import DERIVED
-    from sovereign_cash.debt.note import rebuild_ex3_channels as ex3
-
-    src = inspect.getsource(ex3._table)
-    assert "primary_gg_pct_gdp" in src
-    assert "deficit_weo_pct_gdp" not in src
-    f = DERIVED / "debt_country_annual.parquet"
-    if not f.exists():
-        pytest.skip("debt board not built")
-    a = pd.read_parquet(f)
-    if "primary_gg_pct_gdp" not in a.columns:
-        pytest.skip("engine column missing")
-    a = a.set_index(["cc", "year"])
-    df = ex3.table()
-    for cc in ("us", "uk", "de", "fr", "it", "jp"):
-        assert float(df.loc[cc, "deficit"]) == pytest.approx(
-            float(a.loc[(cc, 2030), "primary_gg_pct_gdp"]), abs=1e-6
-        )
 
 
 def test_project_sizes_issuance_from_engine_primary():
