@@ -454,7 +454,8 @@ def chart_gaps(df: pd.DataFrame, out: Path) -> None:
 
     g_full = np.array([float(df.at[c, "gap_full"]) for c in order])
     g_cut = np.array([float(df.at[c, "gap_cut"]) for c in order])
-    g_jp = np.array([float(rep.at[c, "gap_after"]) for c in order])
+    # countries outside Japan's IIP destinations (Spain) take no repatriation hit: gap stays at the elastic cut
+    g_jp = np.array([float(rep.at[c, "gap_after"]) if c in rep.index else float(df.at[c, "gap_cut"]) for c in order])
 
     fig, ax = plt.subplots(figsize=(9.8, 3.9))
     ax.set_title(
